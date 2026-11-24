@@ -1717,3 +1717,7 @@ STUDY.update(_HYD)
 from utils.study_notes_ce201 import CON as _CON  # noqa: E402
 
 STUDY.update(_CON)
+
+from utils.study_notes_ce202 import STL as _STL  # noqa: E402
+
+STUDY.update(_STL)

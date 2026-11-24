@@ -209,3 +209,21 @@ def test_concrete_answers():
     assert abs(k - 1.557) < 0.01 and abs(VRdc - 108) < 1.5
     assert abs(0.315 * 30 ** (2 / 3) - 3.04) < 0.01 and abs(16 / 4 * 435 / (0.7 * 0.315 * 30 ** (2 / 3)) - 820) < 15
     assert abs((1.35 * 6 + 1.5 * 5) * 3 * 0.075 * 3 - 10.53) < 0.01
+
+
+def test_steel_answers():
+    import math
+    def chi(lam, a):
+        ph = 0.5 * (1 + a * (lam - 0.2) + lam ** 2)
+        return 1 / (ph + math.sqrt(ph ** 2 - lam ** 2))
+    Ncr = math.pi ** 2 * 210000 * 146e6 / 6000 ** 2 / 1e3
+    lam = math.sqrt(16400 * 265 / 1e3 / Ncr)
+    assert abs(Ncr - 8406) < 5 and abs(lam - 0.719) < 0.002 and abs(chi(lam, 0.49) * 16400 * 265 / 1e3 - 3094) < 5
+    assert abs(0.9 * 3900 * 410 / 1.1 / 1e3 - 1308) < 1 and abs(0.664 * 1690 * 470 / 1.1 / 1e3 - 479) < 1
+    G = 210000 / 2.6
+    Mcr = 1.10 * math.pi ** 2 * 210000 * 1870e4 / 3000 ** 2 * math.sqrt(0.922e12 / 1870e4 + 3000 ** 2 * G * 69.2e4 / (math.pi ** 2 * 210000 * 1870e4)) / 1e6
+    lt = math.sqrt(1830e3 * 275 / (Mcr * 1e6))
+    assert abs(Mcr - 1182) < 5 and abs(lt - 0.653) < 0.003 and abs(chi(lt, 0.34) * 1830 * 0.275 - 408) < 2
+    assert abs(700 * 40 * 265 * (2000 - 40) / 1e6 - 14543) < 1
+    assert abs(0.83 / (1920 / (86.4 * 13 * math.sqrt(235 / 275))) * 13 * 1920 * 275 / math.sqrt(3) / 1e3 - 1779) < 15
+    assert abs(1.35 * 0.9 + 1.5 * 0.4 - 1.815) < 1e-9 and abs(0.5 * 2 * 10.89 * 7 / math.cos(math.radians(15)) - 78.92) < 0.05
