@@ -62,7 +62,7 @@ def sidebar() -> None:
                 codes = ["General"] + [s["code"] for s in subjects()]
                 code = st.selectbox("Subject", codes)
                 note = st.text_input("Note", placeholder="optional")
-                if st.form_submit_button("Log", use_container_width=True):
+                if st.form_submit_button("Log", width="stretch"):
                     p["study_log"].append({"date": dt.isoformat(), "minutes": int(mins),
                                            "code": code, "note": note})
                     save()

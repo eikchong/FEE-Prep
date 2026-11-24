@@ -20,13 +20,13 @@ with st.container(border=True):
     with_index = e1.checkbox("Include binder index (subject → sub-topic → file & page)", value=True)
     idx = export.binder_index() if with_index else {}
     md = export.to_markdown(codes, p["formula_notes"], p["pins"], idx)
-    e2.download_button("⬇️ Markdown", md, "fee2027_formula_sheet.md", "text/markdown", use_container_width=True)
-    if e3.button("Build PDF", use_container_width=True):
+    e2.download_button("⬇️ Markdown", md, "fee2027_formula_sheet.md", "text/markdown", width="stretch")
+    if e3.button("Build PDF", width="stretch"):
         with st.spinner("Rendering formulas…"):
             st.session_state["sheet_pdf"] = export.to_pdf(codes, p["formula_notes"], p["pins"], idx)
     if st.session_state.get("sheet_pdf"):
         e3.download_button("⬇️ PDF", st.session_state["sheet_pdf"], "fee2027_formula_sheet.pdf",
-                           "application/pdf", use_container_width=True, type="primary")
+                           "application/pdf", width="stretch", type="primary")
 
 # ---------------------------------------------------------------- tabs
 subs = subjects()

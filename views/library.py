@@ -8,6 +8,7 @@ import config
 from utils import library
 from utils.state import init, new_id, now_iso, save
 from utils.syllabus import subject_label, subjects, topic_label, topic_map
+from utils.ui import show_pdf_page
 
 p = init()
 st.title("Library")
@@ -18,7 +19,7 @@ con = library.connect()
 # ---------------------------------------------------------------- toolbar
 tb1, tb2 = st.columns([1, 2])
 with tb1:
-    if st.button("🔄 Re-scan materials", type="primary", use_container_width=True):
+    if st.button("🔄 Re-scan materials", type="primary", width="stretch"):
         bar = st.progress(0.0, text="Scanning…")
         rep = library.ingest(con=con, progress_cb=lambda f, n: bar.progress(f, text=n))
         bar.empty()
@@ -27,7 +28,7 @@ with tb1:
     st.caption(f"{len(docs)} files · {sum(d['pages'] for d in docs)} pages indexed")
 with tb2:
     with st.expander("⬆️ Add files to materials/"):
-        dest = st.selectbox("Folder", [s["code"] for s in subjects()] + ["_general", "_unsorted"],
+        dest = st.selectbox("Folder", [s["code"] for s in subjects()] + ["_past_papers", "_general", "_unsorted"],
                             format_func=lambda c: subject_label(c) if c.startswith("CE") else c)
         ups = st.file_uploader("Files", accept_multiple_files=True,
                                type=[e.strip(".") for e in library.SUPPORTED])
@@ -68,7 +69,7 @@ with left:
         tdf = pd.DataFrame([{"id": t["id"], "Sub-topic": t["name"],
                              "Pages": counts.get(t["id"], 0)} for t in s["topics"]])
         tdf["Material"] = tdf["Pages"].map(lambda n: f"{n} pages" if n else "no material yet")
-        st.dataframe(tdf[["id", "Sub-topic", "Material"]], hide_index=True, use_container_width=True,
+        st.dataframe(tdf[["id", "Sub-topic", "Material"]], hide_index=True, width="stretch",
                      height=min(420, 36 * (len(tdf) + 1)))
         tids = [None] + tdf["id"].tolist()
         cur = st.session_state.get("lib_topic")
@@ -83,9 +84,11 @@ with centre:
     st.subheader("Search")
     q = st.text_input("Full-text search", placeholder='e.g. "lateral torsional" or Schmertmann',
                       key="lib_q")
-    fpaths = [None] + [d["path"] for d in docs]
+    pp_only = st.toggle("Past papers only", key="lib_pp_only")
+    fpaths = [None] + [d["path"] for d in docs if not pp_only or d["path"].startswith("_past_papers/")]
     fpath = st.selectbox("File", fpaths, format_func=lambda x: "All files" if x is None else x)
-    results = library.search(con, q, code=code, topic_id=topic, path=fpath, limit=60) if docs else []
+    results = library.search(con, q, code=code, topic_id=topic, path=fpath, limit=60,
+                             prefix="_past_papers/" if pp_only else None) if docs else []
     if not docs:
         st.info("No materials indexed yet. Drop files into `materials/CE2xx/` (or upload above) and click **Re-scan**.")
     elif not results:
@@ -112,27 +115,21 @@ with right:
         doc = next(d for d in docs if d["path"] == path)
         st.subheader(f"{doc['title']}")
         nav1, nav2, nav3 = st.columns([1, 2, 1])
-        if nav1.button("◀", disabled=page_no <= 1, use_container_width=True):
+        if nav1.button("◀", disabled=page_no <= 1, width="stretch"):
             st.session_state["lib_sel"] = (path, page_no - 1)
             st.rerun()
         nav2.markdown(f"<div style='text-align:center'>page <b>{page_no}</b> / {doc['pages']}</div>",
                       unsafe_allow_html=True)
-        if nav3.button("▶", disabled=page_no >= doc["pages"], use_container_width=True):
+        if nav3.button("▶", disabled=page_no >= doc["pages"], width="stretch"):
             st.session_state["lib_sel"] = (path, page_no + 1)
             st.rerun()
 
         fp = library.abs_path(path)
         ext = fp.suffix.lower()
         if ext == ".pdf" and fp.exists():
-            try:
-                from streamlit_pdf_viewer import pdf_viewer
-                pdf_viewer(str(fp), height=620, pages_to_render=[page_no], key=f"pdf_{path}_{page_no}")
-            except Exception:
-                import pymupdf
-                with pymupdf.open(fp) as d:
-                    st.image(d[page_no - 1].get_pixmap(dpi=110).tobytes("png"), use_container_width=True)
+            show_pdf_page(fp, page_no, key=f"pdf_{path}_{page_no}", height=620)
         elif ext in (".png", ".jpg", ".jpeg") and fp.exists():
-            st.image(str(fp), use_container_width=True)
+            st.image(str(fp), width="stretch")
         text = library.page_text(con, path, page_no)
         with st.expander("Extracted text", expanded=ext not in (".pdf", ".png", ".jpg", ".jpeg")):
             st.text(text[:6000] or "(no text)")
@@ -154,7 +151,7 @@ with right:
 
         # actions
         a1, a2 = st.columns(2)
-        with a1.popover("📌 Pin to formula sheet", use_container_width=True):
+        with a1.popover("📌 Pin to formula sheet", width="stretch"):
             pin_topic = st.selectbox("Sub-topic", cur_ids or list(topic_map()), format_func=topic_label,
                                      key="pin_topic")
             excerpt = st.text_area("Excerpt", value=text.strip()[:400], height=150, key="pin_ex")
@@ -163,7 +160,7 @@ with right:
                                   "doc": path, "page": page_no, "excerpt": excerpt, "ts": now_iso()})
                 save()
                 st.toast("Pinned to formula sheet")
-        if a2.button("❓ Make a question from this page", use_container_width=True):
+        if a2.button("❓ Make a question from this page", width="stretch"):
             st.session_state["new_q_source"] = {"doc": path, "page": page_no,
                                                 "topic": cur_ids[0] if cur_ids else None}
             st.switch_page("views/mcq.py")

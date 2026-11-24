@@ -77,7 +77,7 @@ with t1:
             fig = px.bar(by, x="code", y="accuracy", text=by.apply(lambda r: f"{r['sum']}/{r['count']}", axis=1),
                          color_discrete_sequence=[config.COLOR_P1])
             fig.update_layout(height=300, yaxis_tickformat=".0%", yaxis_range=[0, 1.05], margin=dict(t=10, b=0, l=0, r=0))
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
             for k, (q, x) in enumerate(zip(qs, r["rows"]), 1):
                 if not x["correct"]:
                     with st.expander(f"❌ Q{k} {q['id']} — {q['q'][:80]}…"):
@@ -172,4 +172,4 @@ with t3:
     else:
         mr["Part"] = mr["part"].map({1: "Part 1", 2: "Part 2"})
         mr["time"] = mr["seconds"].map(fmt_mmss)
-        st.dataframe(mr[["ts", "Part", "score_pct", "n", "time"]].iloc[::-1], hide_index=True, use_container_width=True)
+        st.dataframe(mr[["ts", "Part", "score_pct", "n", "time"]].iloc[::-1], hide_index=True, width="stretch")

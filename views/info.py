@@ -22,7 +22,7 @@ with c1:
         {"": "Subjects", "Part 1 — Breadth": ", ".join(config.PART1_CODES),
          "Part 2 — Depth": ", ".join(f"{c}×{n}" for c, n in config.PART2_ALLOCATION.items())},
     ])
-    st.dataframe(fmt, hide_index=True, use_container_width=True)
+    st.dataframe(fmt, hide_index=True, width="stretch")
 with c2:
     st.subheader("Key dates")
     st.markdown(f"- **Exam:** Wednesday {config.EXAM_DATE:%d %B %Y} ({days_to_exam()} days)\n"
@@ -46,4 +46,4 @@ if code:
     rl = rl[rl["codes"].map(lambda cs: code in cs)]
 rl["codes"] = rl["codes"].map(", ".join)
 st.dataframe(rl.rename(columns={"codes": "Subject", "title": "Title", "authors": "Authors", "edition": "Ed."}),
-             hide_index=True, use_container_width=True)
+             hide_index=True, width="stretch")

@@ -73,7 +73,7 @@ with tab_g:
     fig.add_vline(x=pd.Timestamp(config.EXAM_DATE).timestamp() * 1000, line_dash="dash", line_color="red",
                   annotation_text="Exam")
     fig.update_layout(height=420, margin=dict(l=0, r=0, t=30, b=0), legend_orientation="h")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 with tab_t:
     week = st.select_slider("Week starting", options=sorted({(d - pd.Timedelta(days=d.weekday())).date()
                                                               for d in df["day"]}),
@@ -93,7 +93,7 @@ with tab_s:
     fig = px.bar(h, x="code", y="hours", color="Part",
                  color_discrete_map={"Part 1": config.COLOR_P1, "Part 2": config.COLOR_P2})
     fig.update_layout(height=340, margin=dict(l=0, r=0, t=10, b=0))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 with tab_log:
     log = pd.DataFrame(p["study_log"])
     if log.empty:
@@ -103,5 +103,5 @@ with tab_log:
         daily = log.groupby(["date", "code"], as_index=False)["minutes"].sum()
         fig = px.bar(daily, x="date", y="minutes", color="code")
         fig.update_layout(height=320, margin=dict(l=0, r=0, t=10, b=0))
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
         st.caption(f"Logged {log['minutes'].sum() / 60:.1f} h in total.")

@@ -29,9 +29,21 @@ progress on a local run until `utils/storage.py` is pointed at SQLite/Supabase. 
 | | Quick calculators | soil phase, EC2 beam, EC3 Mc,Rd/Vpl,Rd, Euler, EC7 factors, Manning, rational, Greenshields/SSD |
 | Practice | Part 1 MCQ drill | practice (instant feedback) / timed sets, add your own questions |
 | | Part 2 workbook | 36-min timer, rubric self-marking, approach revealed after attempt |
+| | Past papers | PEB Annex A questions (2017/2020/2026) + 2019 recollection: attempt against the original PDF page, keyed & worked answers, topic frequency |
 | | Mock exam | Part 1 (40 MCQ, 180 min) and Part 2 (choose 5 of 9, 180 min) |
 | Review | Error log & analytics | mistakes with source links; accuracy, score trend, weekly minutes |
 | | Exam info & reading list | format, rules, dates, reading list, PEB links |
+
+## Past papers
+Put the PEB brochure PDFs in `materials/_past_papers/` with these names (or upload them on the Past papers page):
+`FEE2026_booklet.pdf`, `FEE2017_booklet.pdf`, `FEE2020_annexA.pdf` (the file PEB names *FEE2021_Annex_A…*),
+`FEE2019_recollection.pdf`. They are git-ignored; `data/past_papers.json` holds only metadata, page pointers,
+answer keys and our own worked solutions (checked in `tests/test_past_papers.py`). Fonts with a shifted
+text layer (FEE 2020 Annex) are decoded automatically on ingest.
+
+## Profile & default strategy
+Structural plan-checker (EC2/EC3 + SG NA) with a geomechanics MSc — strongest in CE203 and CE205.
+Default Part 2 slots: CE203 ×2, CE205, CE201, CE202; backups CE201, CE202, CE206 (change in the Study planner).
 
 ## Study materials
 Drop files into `materials/CE101 … CE206/`, `_general/` or `_unsorted/` (.pdf .docx .pptx .md .txt .png .jpg),

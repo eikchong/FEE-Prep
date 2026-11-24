@@ -109,3 +109,18 @@ def test_bad_query_does_not_crash(lib):
     _, con, _ = lib
     library.search(con, 'M_cr (6.3.2) "')
     library.search(con, "AND OR")
+
+
+def test_past_papers_use_index_tags_and_skip_coverage(tmp_path):
+    mats = tmp_path / "materials"
+    # a "brochure" page listing many syllabus names must NOT tag everything
+    make_pdf(mats / "_past_papers" / "FEE2026_booklet.pdf",
+             ["Syllabus: lateral torsional buckling, Manning uniform flow, consolidation, activated sludge"] * 13)
+    con = library.connect(tmp_path / "pp.db")
+    library.ingest(mats, con)
+    p = "_past_papers/FEE2026_booklet.pdf"
+    assert not library.page_tags(con, p, 1)                         # syllabus page: no tags
+    assert "CE102-04" in {t["topic_id"] for t in library.page_tags(con, p, 12)}   # indexed Q3 truss
+    assert library.topic_page_counts(con) == {}                     # excluded from coverage
+    assert library.topic_page_counts(con, include_past=True)
+    con.close()

@@ -1,0 +1,1193 @@
+{
+ "docs": {
+  "_past_papers/FEE2026_booklet.pdf": {
+   "label": "FEE 2026 brochure — Annex A past questions",
+   "kind": "official",
+   "upload_hint": "fee_2026.pdf (PEB brochure, Civil = PDF pages 12–23)"
+  },
+  "_past_papers/FEE2017_booklet.pdf": {
+   "label": "FEE 2017 brochure — Annex A past questions",
+   "kind": "official",
+   "upload_hint": "FEE2017.pdf (Civil = PDF pages 11–21)"
+  },
+  "_past_papers/FEE2020_annexA.pdf": {
+   "label": "FEE 2020 Annex A (file named FEE2021_Annex_A_Past_FEE_Questions)",
+   "kind": "official",
+   "upload_hint": "FEE2021_Annex_A_Past_FEE_Questions.pdf (text layer is font-shifted; OCR recommended)"
+  },
+  "_past_papers/FEE2019_recollection.pdf": {
+   "label": "FEE 2019 candidate recollection (Part I & II, with handwritten Part II sheets)",
+   "kind": "recollection",
+   "upload_hint": "FEE2019_Part_I__II_extra.pdf (12 pages; supersedes the 7-page version)"
+  }
+ },
+ "part1": [
+  {
+   "id": "PP1-cement-seawater",
+   "code": "CE101",
+   "topics": [
+    "CE101-06",
+    "CE101-12"
+   ],
+   "title": "Cement type for seawater / coastal exposure",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 12,
+     "q": 1
+    }
+   ],
+   "answer": 3,
+   "answer_source": "reasoned",
+   "explain": "Slag (GGBS) or pozzolanic blends reduce permeability and bind chlorides/sulfates, improving durability in marine exposure. HAC loses strength by conversion; OPC alone is more vulnerable; quick-setting cement is irrelevant."
+  },
+  {
+   "id": "PP1-carbon-steel",
+   "code": "CE101",
+   "topics": [
+    "CE101-14",
+    "CE101-15"
+   ],
+   "title": "Effect of increasing carbon content in steel",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 12,
+     "q": 2
+    }
+   ],
+   "answer": 0,
+   "answer_source": "reasoned",
+   "explain": "More carbon → more pearlite/hardenability → higher strength and hardness but lower ductility (and weldability)."
+  },
+  {
+   "id": "PP1-truss-elongation",
+   "code": "CE102",
+   "topics": [
+    "CE102-04",
+    "CE101-01"
+   ],
+   "title": "Truss member force by joints → elongation of a rod",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 12,
+     "q": 3
+    }
+   ],
+   "answer": 3,
+   "answer_source": "computed",
+   "explain": "Joint E: vertical of BE = 75 kN → F_BE = 75 × 1.5/0.9 = 125 kN (T). Joint B: horizontal F_AB = 125 × 1.2/1.5 = 100 kN (T). δ = NL/(AE) = 100×10³ × 1200/(314.2 × 200 000) = 1.91 mm."
+  },
+  {
+   "id": "PP1-composite-column",
+   "code": "CE101",
+   "topics": [
+    "CE102-06",
+    "CE101-01"
+   ],
+   "title": "Load sharing in a bonded RC column (compatibility)",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 13,
+     "q": 4
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "Equal strain: ε = N/(E_c A_c,net + E_s A_s) = 10⁶/(25×10⁹ × 0.067 + 200×10⁹ × 0.003) = 4.40×10⁻⁴ → σ_s = E_s ε = 88 MPa."
+  },
+  {
+   "id": "PP1-compound-beam-bm",
+   "code": "CE102",
+   "topics": [
+    "CE102-09"
+   ],
+   "title": "Max BM in a beam carrying a secondary beam on rollers",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 13,
+     "q": 5
+    }
+   ],
+   "answer": 3,
+   "answer_source": "computed",
+   "verify": "Exact max is 1.125 kNm at 0.75 m from A (not exactly 1 kNm). Keyed (d) 'none of the above'; if the examiner only checked B, (c). Check against any official key.",
+   "explain": "Upper beam CD (2 m, 4 kN/m) puts 4 kN on AE at C and at the support. ΣM_A: R(4) = 4×0.5 + 4×2 + 4×4 + 5×6 = 56 → R = 14 kN, R_A = 3 kN. On AB: M = 3x − 2x² → max at x = 0.75 m = 1.125 kNm; M_B = 1.0, M_C = 0."
+  },
+  {
+   "id": "PP1-portal-plastic",
+   "code": "CE103",
+   "topics": [
+    "CE103-06"
+   ],
+   "title": "Portal frame plastic collapse — beam, sway, combined",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 14,
+     "q": 6
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "Beam (hinges B, load, C): P·L·θ = M(θ + 1.5θ + 0.5θ) → 3M/L. Sway (A, B, C; D pinned): P·1.5Lθ = 3Mθ → 2M/L. Combined (A, load, C): P(1.5L + L)θ = M(θ + 1.5θ + 1.5θ) → 4M/2.5L = 1.6M/L ← minimum."
+  },
+  {
+   "id": "PP1-soil-sample",
+   "code": "CE104",
+   "topics": [
+    "CE104-03"
+   ],
+   "title": "Dry unit weight & saturation from sample mass/volume",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 14,
+     "q": 7
+    }
+   ],
+   "answer": 3,
+   "answer_source": "computed",
+   "explain": "γ = 333 g/196 cm³ × 9.81 = 16.67 kN/m³; γ_d = γ/(1 + w) = 11.5 kN/m³; e = G_sγ_w/γ_d − 1 = 1.262; S = wG_s/e = 94.5%."
+  },
+  {
+   "id": "PP1-triaxial-total-effective",
+   "code": "CE104",
+   "topics": [
+    "CE104-05"
+   ],
+   "title": "Which test gives total AND effective strength parameters",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 14,
+     "q": 8
+    }
+   ],
+   "answer": 3,
+   "answer_source": "reasoned",
+   "explain": "UCT/UU give total (undrained) only; CD gives effective only. A CU test with pore-pressure measurement gives both — not listed → (d)."
+  },
+  {
+   "id": "PP1-bernoulli-reducer",
+   "code": "CE105",
+   "topics": [
+    "CE105-04",
+    "CE105-05"
+   ],
+   "title": "Bernoulli across a horizontal pipe reducer",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 15,
+     "q": 9
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "V₂ = V₁(D₁/D₂)² = 4 m/s. P₂ = P₁ − ρ(V₂² − V₁²)/2 = 100 000 − 1000 × 15/2 = 92 500 N/m²."
+  },
+  {
+   "id": "PP1-inclined-circular-gate",
+   "code": "CE105",
+   "topics": [
+    "CE105-02"
+   ],
+   "title": "Thrust on a circular gate in a 45° wall",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 15,
+     "q": 10
+    }
+   ],
+   "answer": 0,
+   "answer_source": "computed",
+   "explain": "Centroid depth h_c = 0.5 + 0.5 sin45° = 0.854 m; A = π/4 m². F = ρgAh_c = 9810 × 0.785 × 0.854 = 6576 N."
+  },
+  {
+   "id": "PP1-stepped-bar-ratio",
+   "code": "CE101",
+   "topics": [
+    "CE101-01",
+    "CE102-06"
+   ],
+   "title": "Stepped bar: ratio of largest to smallest elongation",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 11,
+     "q": 1
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 6,
+     "q": 1
+    }
+   ],
+   "answer": 2,
+   "answer_source": "computed",
+   "explain": "Equal lengths and force → δ ∝ 1/d². Ratio = (35/15)² = 5.44."
+  },
+  {
+   "id": "PP1-truss-determinacy",
+   "code": "CE102",
+   "topics": [
+    "CE102-05"
+   ],
+   "title": "Statical determinacy of three plane trusses",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 11,
+     "q": 2
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 6,
+     "q": 2
+    }
+   ],
+   "answer": 2,
+   "answer_source": "computed",
+   "explain": "m + r vs 2j: (1) 5 + 3 = 8 = 2×4 determinate; (2) 9 + 4 = 13 > 12 indeterminate (1°); (3) 9 + 3 = 12 = 2×6 determinate (stable)."
+  },
+  {
+   "id": "PP1-beam-indeterminacy",
+   "code": "CE103",
+   "topics": [
+    "CE103-02"
+   ],
+   "title": "Static indeterminacy of four beams (supports, spring, hinge)",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 12,
+     "q": 3
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 7,
+     "q": 3
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 5,
+     "q": null
+    }
+   ],
+   "answer": 0,
+   "answer_source": "computed",
+   "verify": "Candidate recollection highlighted (c) 1,4,5,2, but counting gives beam (4) = 1. Keyed (a); confirm the support symbols on the original figure.",
+   "explain": "Degree = r − 3 − (internal releases). (1) pin + 2 rollers: 4 − 3 = 1. (2) fixed 3 + spring 1 + pin 2 + roller 1 = 7 − 3 = 4. (3) 3 pins 6 + fixed 3 = 9 − 3 − 1 hinge = 5. (4) pin 2 + roller 1 + spring 1 = 4 − 3 = 1."
+  },
+  {
+   "id": "PP1-column-steel-force",
+   "code": "CE101",
+   "topics": [
+    "CE102-06"
+   ],
+   "title": "Force carried by reinforcement in a short column",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 12,
+     "q": 4
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 8,
+     "q": 4
+    }
+   ],
+   "answer": 3,
+   "answer_source": "computed",
+   "explain": "N_s = N·E_sA_s/(E_sA_s + E_cA_c) = 10 × 42 000/(42 000 + 200 000) = 1.74 kN."
+  },
+  {
+   "id": "PP1-seawater-opc",
+   "code": "CE101",
+   "topics": [
+    "CE101-06",
+    "CE101-12"
+   ],
+   "title": "Effect of seawater as mixing water for OPC concrete",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 14,
+     "q": 5
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 8,
+     "q": 5
+    }
+   ],
+   "answer": 2,
+   "answer_source": "reasoned",
+   "explain": "Chlorides slightly accelerate early hydration but reduce long-term strength and drive reinforcement corrosion/efflorescence → reduced strength (2) and durability (4)."
+  },
+  {
+   "id": "PP1-overhang-upward-deflection",
+   "code": "CE103",
+   "topics": [
+    "CE103-01",
+    "CE102-09"
+   ],
+   "title": "Location of max upward deflection, beam with overhang",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 14,
+     "q": 6
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 9,
+     "q": 6
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "By moments about B, R_A = P acting downward. Between supports M = −Px, so EI·y = −Px³/6 + C₁x; y(L) = 0 → C₁ = PL²/6. Slope zero where x²/2 = L²/6 → x = L/√3 from A."
+  },
+  {
+   "id": "PP1-riverbed-effective-stress",
+   "code": "CE104",
+   "topics": [
+    "CE104-04"
+   ],
+   "title": "Effective stress below a river bed",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 14,
+     "q": 7
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 9,
+     "q": 7
+    }
+   ],
+   "answer": 0,
+   "answer_source": "computed",
+   "explain": "River depth does not matter for σ′: σ′ = (γ_sat − γ_w) z = (20 − 10) × 3 = 30 kPa (30.6 with γ_w = 9.81)."
+  },
+  {
+   "id": "PP1-si-soft-clay",
+   "code": "CE203",
+   "topics": [
+    "CE203-05"
+   ],
+   "title": "SI: unexpected soft clay at expected pile-toe stratum",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 15,
+     "q": 8
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 9,
+     "q": 8
+    }
+   ],
+   "answer": 2,
+   "answer_source": "reasoned",
+   "explain": "Boreholes for piled foundations must prove competent founding stratum to an adequate depth below the toe — continue boring until competent material is proven (and extend the investigation)."
+  },
+  {
+   "id": "PP1-inclined-manometer",
+   "code": "CE105",
+   "topics": [
+    "CE105-02"
+   ],
+   "title": "Gauge air pressure from an inclined water column",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 15,
+     "q": 9
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 10,
+     "q": 9
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "Water rises 2 m along a tube at 45° to the vertical → Δh = 2cos45° = 1.414 m. p = ρgΔh = 9810 × 1.414 = 13 873 N/m²."
+  },
+  {
+   "id": "PP1-froude-model-velocity",
+   "code": "CE105",
+   "topics": [
+    "CE105-08"
+   ],
+   "title": "Froude-scaled river model velocity",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 15,
+     "q": 10
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 10,
+     "q": 10
+    }
+   ],
+   "answer": 2,
+   "answer_source": "computed",
+   "explain": "V_r = L_r^½ → V_p = 0.5 × √20 = 2.24 m/s."
+  },
+  {
+   "id": "PP1-19-friction-blocks",
+   "code": "CE102",
+   "topics": [
+    "CE102-01",
+    "CE102-02"
+   ],
+   "title": "Stacked blocks, top block tied — min P to slide bottom block",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 2,
+     "q": null
+    }
+   ],
+   "answer": 2,
+   "answer_source": "computed",
+   "explain": "Both interfaces resist: μ_s(100g) + μ_s(250g) = 0.3 × 981 + 0.3 × 2452.5 = 294 + 736 = 1030 N."
+  },
+  {
+   "id": "PP1-19-overhang-n",
+   "code": "CE102",
+   "topics": [
+    "CE102-09"
+   ],
+   "title": "Find n so max span moment is at L/3 from B (overhang load nw)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 1,
+     "q": null
+    }
+   ],
+   "answer": 3,
+   "answer_source": "computed",
+   "explain": "R_B = wL/2 − nwL/18. Max where shear = 0 at R_B/w from B = L/2 − nL/18 = L/3 → n = 3."
+  },
+  {
+   "id": "PP1-19-pitot",
+   "code": "CE105",
+   "topics": [
+    "CE105-05"
+   ],
+   "title": "Velocity from a stagnation (pitot) tube rise of 1 m",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 4,
+     "q": null
+    }
+   ],
+   "answer": 1,
+   "answer_source": "computed",
+   "explain": "V = √(2gΔh) = √(2 × 9.81 × 1) = 4.43 m/s."
+  },
+  {
+   "id": "PP1-19-al-steel-rigid-bar",
+   "code": "CE102",
+   "topics": [
+    "CE102-06",
+    "CE101-01"
+   ],
+   "title": "Rigid bar on two aluminium posts + shorter steel post (gap)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 1,
+     "q": null
+    }
+   ],
+   "answer": null,
+   "answer_source": "computed",
+   "options_missing": true,
+   "explain": "k_Al = 70 000 × 1250/250 = 350 kN/mm (×2); k_st = 210 000 × 1250/249.9 = 1050 kN/mm. 700δ + 1050(δ − 0.1) = 500 → δ = 0.346 mm; steel δ = 0.246 mm → σ_st = 206 MPa."
+  },
+  {
+   "id": "PP1-19-pretension-loss",
+   "code": "CE201",
+   "topics": [
+    "CE201-17"
+   ],
+   "title": "Elastic-shortening loss when a pretensioned bar is released",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 3,
+     "q": null
+    }
+   ],
+   "answer": null,
+   "answer_source": "computed",
+   "options_missing": true,
+   "explain": "ε_c = P/(E_cA_c + E_sA_s) = 120 000/(20 000 × 39 980 + 210 000 × 20) = 1.49×10⁻⁴ → Δσ_p = 31.3 MPa → loss ≈ 0.63 kN (0.52%)."
+  },
+  {
+   "id": "PP1-19-taylor-chart",
+   "code": "CE203",
+   "topics": [
+    "CE203-01"
+   ],
+   "title": "Open-cut clay slope angle for FoS = 3 (Taylor's chart)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 2,
+     "q": null
+    }
+   ],
+   "answer": 0,
+   "answer_source": "candidate",
+   "explain": "N_s = c_u/(F γ H) = 40/(3 × 18 × 3.7) = 0.20 → read Taylor's chart for slope angle (candidate key: 65°)."
+  },
+  {
+   "id": "PP1-19-silica-fume",
+   "code": "CE101",
+   "topics": [
+    "CE101-06",
+    "CE101-13"
+   ],
+   "title": "Ingredient that increases strength (water / air / SP / silica fume)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 3,
+     "q": null
+    }
+   ],
+   "answer": 3,
+   "answer_source": "candidate",
+   "explain": "Silica fume: pozzolanic + micro-filler → denser ITZ, higher strength. Water and entrained air reduce strength; SP alone only enables lower w/c."
+  },
+  {
+   "id": "PP1-19-dfma-ppvc-met",
+   "code": "CE101",
+   "topics": [
+    "CE101-18"
+   ],
+   "title": "BCA DfMA: rank manpower savings; CLT/glulam statements",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 2,
+     "q": null
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 4,
+     "q": null
+    }
+   ],
+   "answer": null,
+   "answer_source": "candidate",
+   "options_missing": true,
+   "explain": "BCA DfMA continuum (manpower savings at project level): precast ~10% < structural steel/advanced precast ~20% < mass engineered timber ~35% < PPVC ~40%. CLT and glulam are both mass engineered timber; glulam is used mainly for beams/columns, CLT mainly for slabs/walls."
+  },
+  {
+   "id": "PP1-19-fvt",
+   "code": "CE203",
+   "topics": [
+    "CE203-05",
+    "CE104-05"
+   ],
+   "title": "In-situ test for undrained shear strength of clay",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 5,
+     "q": null
+    }
+   ],
+   "answer": 2,
+   "answer_source": "candidate",
+   "explain": "Field vane test measures c_u of soft clay directly (SPT/CPT are correlations; pressuremeter gives modulus/limit pressure)."
+  },
+  {
+   "id": "PP1-19-falling-head",
+   "code": "CE104",
+   "topics": [
+    "CE104-07"
+   ],
+   "title": "Falling-head permeability test (0.9 → 0.5 m in 1 h)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 5,
+     "q": null
+    }
+   ],
+   "answer": null,
+   "answer_source": "candidate",
+   "options_missing": true,
+   "explain": "k = (aL/(At)) ln(h₁/h₂); a = π(0.003)²/4. Sample dimensions were not recalled — practise the formula."
+  }
+ ],
+ "part2": [
+  {
+   "id": "PP2-waler-web",
+   "code": "CE202",
+   "topics": [
+    "CE202-05",
+    "CE203-04"
+   ],
+   "title": "Strut–waler connection: web bearing & buckling of unstiffened waler web",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 16,
+     "q": 1
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 11,
+     "q": 1
+    },
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 17,
+     "q": 2
+    }
+   ],
+   "approach": [
+    "Web resistance to transverse force: EN 1993-1-5 §6 (F_Rd = f_yw L_eff t_w/γ_M1); type (c) load applied through one flange next to the diaphragm wall (or type (a) if through both flanges) — justify which.",
+    "s_s from strut flange + 20 mm end plate with 45° dispersion; k_F, F_cr = 0.9 k_F E t_w³/h_w, m₁, m₂, ℓ_y, λ̄_F, χ_F → L_eff = χ_F ℓ_y.",
+    "Compare F_Rd with 3500 kN; if inadequate: full-depth load-bearing stiffeners (EN 1993-1-5 §9.4 cruciform column check), concrete infill/packing between waler flanges, or a heavier waler.",
+    "Use UC 356×406×340 / ×235 section properties from the Blue Book (SCI P363); S355 with f_y by flange thickness (EN 10025)."
+   ]
+  },
+  {
+   "id": "PP2-short-column",
+   "code": "CE201",
+   "topics": [
+    "CE201-09",
+    "CE201-15"
+   ],
+   "title": "Rectangular short column: N only, then N + M (design chart)",
+   "appearances": [
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 12,
+     "q": 2
+    },
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 17,
+     "q": 3
+    }
+   ],
+   "approach": [
+    "350 × 500, f_ck = 32, f_yk = 500, 30 mm cover to links. (a) N_Rd = 0.567f_ck A_c + σ_s A_s with σ_s ≤ E_sε_c2 → A_s; check A_s,min = max(0.10N/f_yd, 0.002A_c) and A_s,max 4%.",
+    "(b) d₂/h from cover + link + ½bar; N/(bhf_ck), M/(bh²f_ck) → EC2 chart → A_s; include e₀ = max(h/30, 20) check.",
+    "Sketch bars, links φ ≥ max(6, φ_l/4), s ≤ min(20φ_l,min, b, 400) ×0.6 near slabs (EC2 9.5.3). Justify bar sizes (spacing, buildability)."
+   ],
+   "key_results": {
+    "N_conc_kN": 3175.2,
+    "note": "for the 3600 kN case: 0.567 × 32 × 175 000 = 3175 kN concrete"
+   }
+  },
+  {
+   "id": "PP2-bored-pile-clay",
+   "code": "CE203",
+   "topics": [
+    "CE203-07"
+   ],
+   "title": "Bored pile in clay (α-method) + negative skin friction from fill",
+   "appearances": [
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 12,
+     "q": 3
+    },
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 18,
+     "q": 4
+    }
+   ],
+   "approach": [
+    "Shaft: Q_s = Σ α c_u πd Δz (α ≈ 0.5 for bored piles in clay — state source, e.g. Tomlinson); c_u = 30 kPa (0–5 m), 40 + 3(z − 5) (5–20 m).",
+    "Base: Q_b = 9 c_u,base A_b (c_u at 20 m = 85 kPa). Subtract net pile self-weight (γ_pile − γ_soil) if asked for net capacity.",
+    "With α = 0.5: shaft 188 + 1178 = 1366 kN; base 385 kN; Q_ult ≈ 1751 kN.",
+    "(b) Fill consolidates clay → downdrag (NSF) above the neutral plane; reduces geotechnical capacity and adds structural load. Upper bound ≈ ∫ β σ′_v πd dz or α c_u along consolidating length."
+   ],
+   "key_results": {
+    "Qs_kN": 1366.6,
+    "Qb_kN": 384.5,
+    "Qult_kN": 1751.1
+   }
+  },
+  {
+   "id": "PP2-vertical-curves-pavement",
+   "code": "CE204",
+   "topics": [
+    "CE204-02",
+    "CE204-03"
+   ],
+   "title": "Crest & sag vertical curves (SSD) + 3-layer AASHTO flexible pavement",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 20,
+     "q": 4
+    },
+    {
+     "year": 2020,
+     "doc": "_past_papers/FEE2020_annexA.pdf",
+     "page": 13,
+     "q": 4
+    },
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 19,
+     "q": 5
+    }
+   ],
+   "approach": [
+    "SSD = vt + v²/(2g(f + G)): 70 km/h, t = 2.5 s, f = 0.30. Crest uses G = −3% → 120.0 m; sag uses G = −4% (approaching from the other side) → 122.7 m.",
+    "Crest (S < L): L = AS²/(200(√h₁ + √h₂)²), A = 5 → 181 m. Sag (S < L): L = AS²/(120 + 3.5S), A = 7 → 192 m.",
+    "Half-lengths 90 + 96 = 186 m > 150 m tangent → curves cannot be fully developed.",
+    "Pavement: D₁ = SN₁/a₁ = 2.3/0.45 = 5.1 in; D₂ = (SN₂ − a₁D₁)/(a₂m₂) = 4.2 in; D₃ = (SN₃ − SN₂)/(a₃m₃) = 7.6 in — round up to practical/minimum thicknesses and recompute.",
+    "Flexible vs rigid: lower initial cost, staged construction, easier repair/utility access, tolerant of differential settlement, smoother riding, faster opening."
+   ],
+   "key_results": {
+    "SSD_crest_m": 120.0,
+    "SSD_sag_m": 122.7,
+    "L_crest_m": 180.6,
+    "L_sag_m": 191.8,
+    "D1_in": 5.11,
+    "D2_in": 4.17,
+    "D3_in": 7.58
+   }
+  },
+  {
+   "id": "PP2-t-column-nm",
+   "code": "CE201",
+   "topics": [
+    "CE201-09",
+    "CE201-02"
+   ],
+   "title": "T-shaped column: N–M interaction diagram from strain compatibility",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 16,
+     "q": 1
+    }
+   ],
+   "approach": [
+    "Pure axial: N = 0.567f_ck A_c,net + 0.87f_yk ΣA_s (or σ_s at ε_c2) with f_ck = 45.",
+    "Pure bending: find neutral axis by force equilibrium (λ = 0.8, η = 1.0 for f_ck ≤ 50), steel stresses from ε_cu = 0.0035.",
+    "Balanced point: x_bal from ε_cu and ε_yd = 435/200 000; tension-failure point at x = 100 mm as specified.",
+    "Take moments about the plastic centroid; plot (M, N) points and join."
+   ]
+  },
+  {
+   "id": "PP2-sluice-jump",
+   "code": "CE205",
+   "topics": [
+    "CE205-05",
+    "CE205-06",
+    "CE205-04"
+   ],
+   "title": "Sluice gate: specific energy, critical flow, hydraulic jump, bed slope",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 21,
+     "q": 6
+    }
+   ],
+   "approach": [
+    "Q = VBy = 4 × 2 × 0.5 = 4 m³/s; E₁ = y + V²/2g = 1.316 m.",
+    "q = 2 m²/s → y_c = (q²/g)^⅓ = 0.742 m, E_c = 1.5y_c = 1.112 m. Fr₁ = 1.81 → supercritical.",
+    "y₂ = (y₁/2)(√(1 + 8Fr₁²) − 1) = 1.05 m.",
+    "Assume y₂ is uniform (normal) depth downstream: S₀ = (nQ/(AR^⅔))² ≈ 0.0035."
+   ],
+   "key_results": {
+    "Q": 4.0,
+    "E1": 1.316,
+    "yc": 0.742,
+    "Ec": 1.112,
+    "Fr1": 1.806,
+    "y2": 1.051,
+    "S0": 0.00353
+   }
+  },
+  {
+   "id": "PP2-clarifier-as",
+   "code": "CE206",
+   "topics": [
+    "CE206-05",
+    "CE206-06"
+   ],
+   "title": "Primary clarifier sizing + sludge volume; activated sludge V, MLVSS, θc",
+   "appearances": [
+    {
+     "year": 2026,
+     "doc": "_past_papers/FEE2026_booklet.pdf",
+     "page": 22,
+     "q": 7
+    }
+   ],
+   "approach": [
+    "Q = 45 000 × 0.55 = 24 750 m³/d; A = Q/55 = 450 m² → D = 23.9 m; V = Q × 2/24 → depth 4.58 m.",
+    "SS removed = 0.75 × 45 000 × 32 g = 1080 kg/d; sludge mass = 1080/0.015 = 72 000 kg/d → volume = 72 000/1005 = 71.6 m³/d.",
+    "Combined Q = 520 m³/d, BOD = 611.5 mg/L → 318 kg/d; V = 318/4 = 79.5 m³; HRT = 3.67 h.",
+    "MLVSS = QS/(V·F/M) = 6667 mg/L. θc = VX/(Q_eX_e + Q_wX_r) with Q_e = 425 m³/d, X_r = 10 000 mg/L → 0.55 d."
+   ],
+   "key_results": {
+    "A": 450.0,
+    "D": 23.94,
+    "depth": 4.58,
+    "sludge_m3d": 71.64,
+    "V": 79.5,
+    "HRT_h": 3.67,
+    "MLVSS": 6667,
+    "theta_c_d": 0.553
+   }
+  },
+  {
+   "id": "PP2-17-bs-column-legacy",
+   "code": "CE201",
+   "topics": [
+    "CE201-09",
+    "CE201-10"
+   ],
+   "title": "Braced columns from a floor plan + sub-frame moment, slenderness",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 17,
+     "q": 2
+    }
+   ],
+   "legacy": true,
+   "approach": [
+    "Set in BS 8110 terms (f_cu, f_y = 460) — legacy, not acceptable in FEE 2027. Re-do in EC2: f_ck = 28/35 equivalent, f_yk = 500.",
+    "EC2: l₀ = 0.85 × 4 m; λ = l₀/i vs λ_lim = 20ABC/√n (5.8.3.1); sub-frame moments for column B; nominal curvature if slender."
+   ]
+  },
+  {
+   "id": "PP2-17-pile-selection-mrt",
+   "code": "CE203",
+   "topics": [
+    "CE203-07",
+    "CE203-08",
+    "CE203-05",
+    "CE104-06"
+   ],
+   "title": "Pile selection next to MRT viaduct; OCR of marine clay; NSF",
+   "appearances": [
+    {
+     "year": 2017,
+     "doc": "_past_papers/FEE2017_booklet.pdf",
+     "page": 18,
+     "q": 3
+    }
+   ],
+   "approach": [
+    "Bored vs driven RC piles: vibration/noise/heave next to MRT piles and bakau-piled shophouses favour bored piles (or jacked); address marine clay, groundwater, boulders.",
+    "Mitigation: monitoring (tiltmeters, settlement markers, vibration limits), casing, sequencing, LTA protection zone requirements.",
+    "Compare p′₀ with p′_c → NC/under-consolidated clay → NSF acts; sketch axial load with neutral plane; toe into competent stratum (Old Alluvium/Jurong)."
+   ]
+  },
+  {
+   "id": "PP2-19-plate-girder",
+   "code": "CE202",
+   "topics": [
+    "CE202-04",
+    "CE202-02",
+    "CE202-10"
+   ],
+   "title": "Plate girder: classification, M_el/M_pl/M_c,Rd, V_pl,Rd, shear flow, weld",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 1
+    }
+   ],
+   "approach": [
+    "EC3 Table 5.2 classification; W_el/W_pl from built-up geometry; EN 1993-1-5 shear buckling if h_w/t_w > 72ε/η; shear flow VQ/I → fillet weld size (EC3-1-8 4.5.3.3)."
+   ]
+  },
+  {
+   "id": "PP2-19-fin-plate",
+   "code": "CE202",
+   "topics": [
+    "CE202-10"
+   ],
+   "title": "Fin plate connection",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 2
+    }
+   ],
+   "approach": [
+    "SCI P358 (Green Book) checks: bolt group shear with eccentricity, bearing on plate/web, plate shear & block tearing, weld to supporting member."
+   ]
+  },
+  {
+   "id": "PP2-19-prestressed-beam",
+   "code": "CE201",
+   "topics": [
+    "CE201-16",
+    "CE201-17",
+    "CE201-18"
+   ],
+   "title": "Prestressed RC beam",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 3
+    }
+   ],
+   "approach": [
+    "Transfer & service stress limits, Magnel diagram, losses (elastic shortening, creep, shrinkage, relaxation)."
+   ]
+  },
+  {
+   "id": "PP2-19-column-fire",
+   "code": "CE201",
+   "topics": [
+    "CE201-09",
+    "CE201-21"
+   ],
+   "title": "400×400 column design + fire resistance with 4H25 (ψ_fi = 0.3)",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 4
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 10,
+     "q": 4
+    }
+   ],
+   "approach": [
+    "Design A_s for N_Ed, M_Ed (γ_G 1.35, γ_Q 1.5), detail links φ8 and cover 30.",
+    "Fire: EN 1992-1-2 §5.3 tabulated data (Method A): μ_fi = N_Ed,fi/N_Rd with η_fi from ψ_fi = 0.3; compare min b and axis distance a for R60/R90/R120."
+   ]
+  },
+  {
+   "id": "PP2-19-pile-da1-load-test",
+   "code": "CE203",
+   "topics": [
+    "CE203-07",
+    "CE203-05"
+   ],
+   "title": "Bored pile DA1 design resistance (α-method, ξ) + static load test",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 5
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 11,
+     "q": 6
+    }
+   ],
+   "approach": [
+    "c_u linear 30 → 120 kPa over 30 m; α-method shaft + 9c_u base; characteristic via ξ = 1.55 (model-pile procedure) → R_c,d with γ_s, γ_b for DA1-C2 (R4 set).",
+    "Working vs test (preliminary/ultimate) piles; characteristic from static tests: R_c,k = min(R_mean/ξ₁, R_min/ξ₂)."
+   ]
+  },
+  {
+   "id": "PP2-19-pad-da1-consolidation",
+   "code": "CE203",
+   "topics": [
+    "CE203-06",
+    "CE203-09",
+    "CE104-06"
+   ],
+   "title": "1.5 m pad on clay: influence depth, ULS DA1, consolidation settlement",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 6
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 12,
+     "q": 5
+    }
+   ],
+   "approach": [
+    "Influence depth where Δσ_z ≈ 0.1–0.2σ′_v0 (2:1 or Boussinesq); if within Clay 1 only, no settlement from Clay 2.",
+    "ULS: undrained (π+2)c_u s_c i_c + q and/or drained Annex D for DA1-C1 & C2.",
+    "Settlement (NC, OCR = 1): s = Σ C_c H/(1+e₀) log(σ′_f/σ′_0) in sub-layers."
+   ]
+  },
+  {
+   "id": "PP2-19-greenshields-curve-pavement",
+   "code": "CE204",
+   "topics": [
+    "CE204-05",
+    "CE204-02",
+    "CE204-03"
+   ],
+   "title": "Greenshields v = 60 − 0.5k; horizontal curve concepts; 2-layer AASHTO",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 7
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 9,
+     "q": 7
+    }
+   ],
+   "approach": [
+    "v_f = 60 km/h, k_j = 120 veh/km → q_max = 1800 veh/h at k = 60, v = 30 km/h.",
+    "Speed-limit considerations: geometry/sight distance, crash history, roadside activity/access, 85th-percentile speed.",
+    "Horizontal curve: superelevation + side friction (R = V²/127(e+f)), transition/spiral curves, sight distance on inside of curve."
+   ],
+   "key_results": {
+    "q_max": 1800,
+    "k_c": 60,
+    "v_c": 30
+   }
+  },
+  {
+   "id": "PP2-19-rect-channel-jump",
+   "code": "CE205",
+   "topics": [
+    "CE205-04",
+    "CE205-05",
+    "CE205-06"
+   ],
+   "title": "3 m rectangular channel (S₀ 0.002, n 0.015): y_c, E_c, y₀, jump",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 8
+    },
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 8,
+     "q": 8
+    }
+   ],
+   "approach": [
+    "Q not recalled — practise with the app's Manning calculator (z = 0). y_c = (q²/g)^⅓, E_c = 1.5y_c; solve y₀ by Manning; compare y₀ vs y_c.",
+    "Jump with y₂ = y₀ (weir): y₁ = (y₂/2)(√(1 + 8Fr₂²) − 1)."
+   ]
+  },
+  {
+   "id": "PP2-19-activated-sludge",
+   "code": "CE206",
+   "topics": [
+    "CE206-06"
+   ],
+   "title": "Activated sludge",
+   "appearances": [
+    {
+     "year": 2019,
+     "doc": "_past_papers/FEE2019_recollection.pdf",
+     "page": 7,
+     "q": 9
+    }
+   ],
+   "approach": [
+    "F/M, V, HRT, MLVSS, θc — see PP2-clarifier-as for the formula set."
+   ]
+  }
+ ]
+}

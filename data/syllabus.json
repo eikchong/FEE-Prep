@@ -90,6 +90,11 @@
      "id": "CE101-17",
      "name": "Corrosion of steel",
      "group": "Steel"
+    },
+    {
+     "id": "CE101-18",
+     "name": "Construction productivity: DfMA, PPVC, precast & mass engineered timber",
+     "group": "Construction technology"
     }
    ]
   },
@@ -408,6 +413,11 @@
      "id": "CE201-20",
      "name": "PSC combined axial + bending",
      "group": "Prestressed concrete"
+    },
+    {
+     "id": "CE201-21",
+     "name": "Fire resistance (EN 1992-1-2)",
+     "group": "Reinforced concrete"
     }
    ]
   },

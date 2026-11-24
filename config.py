@@ -42,8 +42,9 @@ PART_COLORS = {1: COLOR_P1, 2: COLOR_P2, "Part 1": COLOR_P1, "Part 2": COLOR_P2}
 STATUSES = ["Not started", "Learning", "Revised", "Exam-ready"]
 
 DEFAULT_SETTINGS = {
-    "part2_core": ["CE201", "CE201", "CE202", "CE202", "CE203"],
-    "part2_backup": ["CE203"],
+    # Profile: strongest in geotechnical (CE203) and water (CE205); structural plan-checker (CE201/CE202).
+    "part2_core": ["CE203", "CE203", "CE205", "CE201", "CE202"],
+    "part2_backup": ["CE201", "CE202", "CE206"],
     "weekday_hours": 2.5,
     "weekend_hours": 6.0,
     "plan_start": None,  # ISO date; None → today

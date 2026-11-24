@@ -14,6 +14,8 @@ S = [
      "Mixing, placing & curing", "Mix design", "Destructive & non-destructive testing",
      "Quality control", "Durability of concrete", "Special concretes"]),
    ("Steel", ["Basic metallurgy of steel", "Mechanical properties & applications of steel", "Welding", "Corrosion of steel"]),
+   # appended after FEE 2019 recollection (tested in Part 1, not in the printed syllabus)
+   ("Construction technology", ["Construction productivity: DfMA, PPVC, precast & mass engineered timber"]),
  ]),
  ("CE102", "Structural Mechanics", 1, [("", [
    "Statics & kinetics of particles", "Rigid-body equilibrium", "Kinematics & plane motion of rigid bodies",
@@ -37,6 +39,8 @@ S = [
      "Slab systems", "Punching shear", "Foundations", "Retaining walls", "Detailing"]),
    ("Prestressed concrete", ["PSC concepts, materials & systems", "Prestress losses & time-dependent deformation",
      "PSC flexure", "PSC shear", "PSC combined axial + bending"]),
+   # appended after FEE 2019 recollection (Q4 RC column fire resistance)
+   ("Reinforced concrete", ["Fire resistance (EN 1992-1-2)"]),
  ]),
  ("CE202", "Structural Steel Design", 2, [("", [
    "Limit state design & material response", "Local buckling & cross-section classification",

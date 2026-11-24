@@ -1,4 +1,4 @@
-streamlit>=1.40
+streamlit>=1.50          # uses width="stretch" (use_container_width is removed)
 pandas>=2.0
 plotly>=5.20
 pymupdf>=1.24

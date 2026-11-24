@@ -67,6 +67,18 @@ def _ocr_image(img_bytes: bytes) -> str | None:
         return None
 
 
+def unshift_if_garbled(text: str) -> str:
+    """Some PDFs (e.g. the PEB FEE 2020 Annex A) embed fonts whose text layer is shifted by −29 code
+    points (space → \x03, 'P' → '3'). Detect via the share of control characters and shift back."""
+    body = [c for c in text if c != "\n"]
+    if not body:
+        return text
+    ctrl = sum(ord(c) < 32 for c in body) / len(body)
+    if ctrl < 0.08:
+        return text
+    return "".join(c if c in "\n " else chr(ord(c) + 29) if ord(c) <= 97 else c for c in text)
+
+
 def _chunks(text: str) -> list[str]:
     text = text.strip()
     if not text:
@@ -90,7 +102,7 @@ def extract_pages(path: Path) -> list[tuple[str, bool]]:
         pages = []
         with fitz.open(path) as doc:
             for pg in doc:
-                txt = pg.get_text("text") or ""
+                txt = unshift_if_garbled(pg.get_text("text") or "")
                 if len(txt.strip()) < 20:  # scanned / image page → OCR
                     ocr = _ocr_image(pg.get_pixmap(dpi=200).tobytes("png"))
                     pages.append(((ocr or txt), True))
@@ -162,6 +174,25 @@ def auto_tags(text: str, code: str | None, keywords: dict[str, list[str]] | None
     return tags
 
 
+PAST_PREFIX = "_past_papers/"
+
+
+def _past_paper_tags() -> dict[tuple[str, int], dict[str, float]]:
+    """Exact page tags for past papers from data/past_papers.json (keyword auto-tagging would tag the
+    brochures' syllabus pages to every sub-topic)."""
+    try:
+        idx = json.loads((config.STATIC_DATA_DIR / "past_papers.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    out: dict = {}
+    for part in ("part1", "part2"):
+        for q in idx.get(part, []):
+            for a in q["appearances"]:
+                for t in q["topics"]:
+                    out.setdefault((a["doc"], a["page"]), {})[t] = 1.0
+    return out
+
+
 # ------------------------------------------------------------------ ingestion
 @dataclass
 class IngestReport:
@@ -208,6 +239,7 @@ def ingest(materials: Path | None = None, con: sqlite3.Connection | None = None,
     con = con or connect()
     rep = IngestReport()
     kw = _keywords()
+    past_tags = _past_paper_tags()
     files = sorted(p for p in root.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED
                    and not any(part.startswith(".") for part in p.relative_to(root).parts))
     seen = set()
@@ -243,7 +275,9 @@ def ingest(materials: Path | None = None, con: sqlite3.Connection | None = None,
                     rep.ocr_missing += 1
             con.execute("INSERT INTO pages VALUES(?,?,?,?)", (doc_id, n, text, int(ocr)))
             con.execute("INSERT INTO pages_fts(text, doc_id, page_no) VALUES(?,?,?)", (text, doc_id, n))
-            for tid, conf in auto_tags(text, code, kw, forced).items():
+            tags = (past_tags.get((key, n), {}) if key.startswith(PAST_PREFIX)
+                    else auto_tags(text, code, kw, forced))
+            for tid, conf in tags.items():
                 con.execute("INSERT OR REPLACE INTO page_tags VALUES(?,?,?,?,?)", (key, n, tid, "auto", conf))
         con.commit()
     # remove deleted files
@@ -279,9 +313,11 @@ GROUP BY path, page_no, topic_id
 """
 
 
-def topic_page_counts(con) -> dict[str, int]:
+def topic_page_counts(con, include_past: bool = False) -> dict[str, int]:
+    """Linked pages per sub-topic. Past papers are excluded by default: coverage measures study notes."""
+    flt = "" if include_past else f"WHERE e.path NOT LIKE '{PAST_PREFIX}%'"
     rows = con.execute(f"""SELECT e.topic_id, COUNT(*) n FROM ({EFFECTIVE_TAGS}) e
-                           JOIN documents d ON d.path=e.path GROUP BY e.topic_id""").fetchall()
+                           JOIN documents d ON d.path=e.path {flt} GROUP BY e.topic_id""").fetchall()
     return {r["topic_id"]: r["n"] for r in rows}
 
 
@@ -324,8 +360,11 @@ def _fts_query(q: str) -> str:
 
 
 def search(con, query: str = "", code: str | None = None, topic_id: str | None = None,
-           path: str | None = None, limit: int = 50) -> list[dict]:
+           path: str | None = None, limit: int = 50, prefix: str | None = None) -> list[dict]:
     where, args = [], []
+    if prefix:
+        where.append("d.path LIKE ?")
+        args.append(prefix + "%")
     if code and not topic_id:
         where.append(f"(d.code = ? OR EXISTS (SELECT 1 FROM ({EFFECTIVE_TAGS}) e WHERE e.path=d.path "
                      "AND e.page_no=p.page_no AND e.topic_id LIKE ?))")

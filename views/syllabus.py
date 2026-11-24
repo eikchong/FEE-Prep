@@ -42,7 +42,7 @@ def subject_editor(s: dict):
         if df["Group"].nunique() > 1:
             cols.insert(2, "Group")
         edited = st.data_editor(
-            view[cols], key=f"ed_{s['code']}", hide_index=True, use_container_width=True,
+            view[cols], key=f"ed_{s['code']}", hide_index=True, width="stretch",
             disabled=["id", "Sub-topic", "Group", "Materials"],
             column_config={
                 "id": st.column_config.TextColumn(width="small"),
@@ -69,7 +69,7 @@ def subject_editor(s: dict):
                             format_func=lambda i: f"{i} · {df.set_index('id').at[i, 'Sub-topic']} "
                                                   f"({df.set_index('id').at[i, 'Materials']} pages)",
                             label_visibility="collapsed")
-        if c2.button("📚 Open in Library", key=f"open_{s['code']}", use_container_width=True):
+        if c2.button("📚 Open in Library", key=f"open_{s['code']}", width="stretch"):
             open_in_library(topic=pick)
 
 

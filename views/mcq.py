@@ -188,7 +188,7 @@ with tab_bank:
                      "attempts": int(s["count"]) if s is not None else 0,
                      "accuracy": float(s["mean"]) if s is not None else None,
                      "source": (q.get("source") or {}).get("doc") or ""})
-    st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True,
+    st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch",
                  column_config={"accuracy": st.column_config.ProgressColumn(min_value=0, max_value=1, format="percent")})
     mine = p["custom_mcqs"]
     if mine:

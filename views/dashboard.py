@@ -56,7 +56,7 @@ with b.container(border=True):
                            "My core slots": core.count(c),
                            "Backup": "✓" if c in settings["part2_backup"] else ""}
                           for c, n in config.PART2_ALLOCATION.items()])
-    st.dataframe(alloc, hide_index=True, use_container_width=True)
+    st.dataframe(alloc, hide_index=True, width="stretch")
 
 # ---------------------------------------------------------------- readiness + focus
 left, right = st.columns([1, 1])
@@ -72,7 +72,7 @@ with left:
     fig.update_layout(height=380, margin=dict(l=0, r=30, t=10, b=0),
                       xaxis=dict(range=[0, 1.1], tickformat=".0%", title="avg confidence ÷ 5"),
                       plot_bgcolor="rgba(0,0,0,0)")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     st.caption(f"<span style='color:{config.COLOR_P1}'>■</span> Part 1 &nbsp; "
                f"<span style='color:{config.COLOR_P2}'>■</span> Part 2", unsafe_allow_html=True)
 
@@ -84,7 +84,7 @@ with right:
         rows.append({"Sub-topic": f"{tid} {t['name']}", "Status": s["status"], "Conf.": s["confidence"],
                      "Notes": "✓" if counts.get(tid) else "—"})
     df = pd.DataFrame(rows).sort_values(["Conf.", "Sub-topic"]).head(8)
-    st.dataframe(df, hide_index=True, use_container_width=True,
+    st.dataframe(df, hide_index=True, width="stretch",
                  column_config={"Conf.": st.column_config.ProgressColumn(min_value=0, max_value=5, format="%d")})
     st.caption("Lowest-confidence sub-topics across Part 1 and your chosen Part 2 subjects ("
                + ", ".join(chosen_part2(settings)) + ").")

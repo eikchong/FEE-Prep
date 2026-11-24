@@ -6,23 +6,12 @@ import streamlit as st
 import config
 from utils.state import init, new_id, now_iso, part2_bank, save
 from utils.syllabus import subject_label, topic_label
-from utils.ui import countdown, fmt_mmss, open_in_library
+from utils.ui import countdown, fmt_mmss, open_in_library, rubric_form
 
 p = init()
 st.title("Part 2 workbook")
 bank = part2_bank()
 SECS = int(config.PART2["pace_min"] * 60)
-
-
-def rubric_form(key: str):
-    """Self-marking rubric → (scores dict 0–4, score %)."""
-    st.markdown("**Self-mark** (0 = absent · 4 = exam-perfect)")
-    scores = {}
-    cols = st.columns(len(config.RUBRIC))
-    for c, (crit, wt) in zip(cols, config.RUBRIC.items()):
-        scores[crit] = c.select_slider(f"{crit} ({wt}%)", options=[0, 1, 2, 3, 4], value=2, key=f"{key}_{crit}")
-    pct = sum(scores[k] / 4 * w for k, w in config.RUBRIC.items())
-    return scores, pct
 
 
 codes = st.multiselect("Subjects", config.PART2_CODES, default=sorted(set(p["settings"]["part2_core"])),
@@ -100,6 +89,6 @@ else:
     a = attempts.copy()
     a["time"] = a["seconds"].map(fmt_mmss)
     st.dataframe(a[["ts", "qid", "code", "score_pct", "time", "mock", "notes"]].iloc[::-1], hide_index=True,
-                 use_container_width=True,
+                 width="stretch",
                  column_config={"score_pct": st.column_config.ProgressColumn("score", min_value=0, max_value=100,
                                                                               format="%.0f%%")})

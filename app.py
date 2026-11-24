@@ -22,6 +22,7 @@ pages = {
     "Practice": [
         st.Page("views/mcq.py", title="Part 1 MCQ drill", icon="🎯", url_path="mcq"),
         st.Page("views/part2.py", title="Part 2 workbook", icon="📝", url_path="part2"),
+        st.Page("views/past_papers.py", title="Past papers", icon="🗂️", url_path="past-papers"),
         st.Page("views/mock.py", title="Mock exam", icon="⏱️", url_path="mock"),
     ],
     "Review": [

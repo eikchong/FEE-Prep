@@ -4,7 +4,8 @@ import config
 from utils.planner import generate_plan, subject_weights, topic_weights
 from utils.syllabus import all_topics
 
-S = dict(config.DEFAULT_SETTINGS)
+S = dict(config.DEFAULT_SETTINGS, part2_core=["CE201", "CE201", "CE202", "CE202", "CE203"],
+         part2_backup=["CE203"])
 
 
 def test_never_on_or_after_exam():
