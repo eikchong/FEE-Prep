@@ -7417,5 +7417,530 @@
     ]
    }
   ]
+ },
+ "CE103/CE3155/P1-0 SFD and BMD.pdf": {
+  "code": "CE103",
+  "seq": 1,
+  "title": "Analysis 0 · Shear force & bending moment diagrams",
+  "page_count": 71,
+  "sections": [
+   {
+    "title": "Internal forces & sign convention",
+    "pages": [
+     1,
+     22
+    ],
+    "topics": [
+     "CE103-07"
+    ]
+   },
+   {
+    "title": "Load–shear–moment relations",
+    "pages": [
+     23,
+     42
+    ],
+    "topics": [
+     "CE103-07"
+    ]
+   },
+   {
+    "title": "Frames",
+    "pages": [
+     43,
+     71
+    ],
+    "topics": [
+     "CE103-07"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-2a Determinacy.pdf": {
+  "code": "CE103",
+  "seq": 2,
+  "title": "Analysis 1 · Determinacy",
+  "page_count": 29,
+  "sections": [
+   {
+    "title": "Trusses",
+    "pages": [
+     4,
+     10
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Beams & frames",
+    "pages": [
+     11,
+     29
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-2b Stability.pdf": {
+  "code": "CE103",
+  "seq": 3,
+  "title": "Analysis 2 · Stability",
+  "page_count": 37,
+  "sections": [
+   {
+    "title": "Internal & external stability",
+    "pages": [
+     4,
+     8
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Classes of instability",
+    "pages": [
+     9,
+     23
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Determinacy vs stability & exercises",
+    "pages": [
+     24,
+     37
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-3 Virtual work.pdf": {
+  "code": "CE103",
+  "seq": 4,
+  "title": "Analysis 3 · Virtual work (unit load method)",
+  "page_count": 95,
+  "sections": [
+   {
+    "title": "Work & energy",
+    "pages": [
+     6,
+     14
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Principle of virtual work",
+    "pages": [
+     15,
+     30
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Trusses, beams & frames",
+    "pages": [
+     31,
+     95
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-4 Force method.pdf": {
+  "code": "CE103",
+  "seq": 5,
+  "title": "Analysis 4 · Force (flexibility) method",
+  "page_count": 61,
+  "sections": [
+   {
+    "title": "Principle",
+    "pages": [
+     4,
+     10
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Beams, frames, trusses",
+    "pages": [
+     11,
+     61
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-5 Slope-deflection.pdf": {
+  "code": "CE103",
+  "seq": 6,
+  "title": "Analysis 5 · Slope-deflection method",
+  "page_count": 118,
+  "sections": [
+   {
+    "title": "Deflected shapes",
+    "pages": [
+     6,
+     25
+    ],
+    "topics": [
+     "CE103-04"
+    ]
+   },
+   {
+    "title": "Slope-deflection equations & fixed-end moments",
+    "pages": [
+     26,
+     41
+    ],
+    "topics": [
+     "CE103-04"
+    ]
+   },
+   {
+    "title": "Beams",
+    "pages": [
+     42,
+     61
+    ],
+    "topics": [
+     "CE103-04"
+    ]
+   },
+   {
+    "title": "Frames without and with sidesway",
+    "pages": [
+     62,
+     118
+    ],
+    "topics": [
+     "CE103-04"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P1-6 Plastic analysis of continuous beams.pdf": {
+  "code": "CE103",
+  "seq": 7,
+  "title": "Analysis 6 · Plastic analysis of continuous beams",
+  "page_count": 66,
+  "sections": [
+   {
+    "title": "Plastic hinge & section properties",
+    "pages": [
+     6,
+     34
+    ],
+    "topics": [
+     "CE103-06"
+    ]
+   },
+   {
+    "title": "Kinematic (mechanism) method",
+    "pages": [
+     35,
+     51
+    ],
+    "topics": [
+     "CE103-06"
+    ]
+   },
+   {
+    "title": "Continuous beams",
+    "pages": [
+     52,
+     66
+    ],
+    "topics": [
+     "CE103-06"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-0 Introduction.pdf": {
+  "code": "CE103",
+  "seq": 8,
+  "title": "Analysis 7 · Part 2 introduction: idealisation & determinacy",
+  "page_count": 22,
+  "sections": [
+   {
+    "title": "Idealisation, determinacy, stability",
+    "pages": [
+     1,
+     22
+    ],
+    "topics": [
+     "CE103-02",
+     "CE103-07"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-1 Truss analysis.pdf": {
+  "code": "CE103",
+  "seq": 9,
+  "title": "Analysis 8 · Truss analysis by the stiffness method",
+  "page_count": 58,
+  "sections": [
+   {
+    "title": "Member stiffness & transformation",
+    "pages": [
+     18,
+     34
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   },
+   {
+    "title": "Assembly & solution",
+    "pages": [
+     35,
+     58
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-2 Beam analysis.pdf": {
+  "code": "CE103",
+  "seq": 10,
+  "title": "Analysis 9 · Beam analysis by the stiffness method",
+  "page_count": 34,
+  "sections": [
+   {
+    "title": "Beam member stiffness",
+    "pages": [
+     1,
+     20
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   },
+   {
+    "title": "Intermediate loads (fixed-end forces)",
+    "pages": [
+     21,
+     34
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-3 Frame analysis.pdf": {
+  "code": "CE103",
+  "seq": 11,
+  "title": "Analysis 10 · Plane frame analysis by the stiffness method",
+  "page_count": 48,
+  "sections": [
+   {
+    "title": "Frame member (6 dofs) & transformation",
+    "pages": [
+     1,
+     16
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   },
+   {
+    "title": "Worked examples & internal forces",
+    "pages": [
+     17,
+     48
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-4 Influence lines.pdf": {
+  "code": "CE103",
+  "seq": 12,
+  "title": "Analysis 11 · Influence lines (determinate beams)",
+  "page_count": 28,
+  "sections": [
+   {
+    "title": "Construction",
+    "pages": [
+     1,
+     14
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   },
+   {
+    "title": "Using influence lines",
+    "pages": [
+     15,
+     19
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   },
+   {
+    "title": "Müller-Breslau (qualitative)",
+    "pages": [
+     20,
+     28
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/P2-5 Influence lines II.pdf": {
+  "code": "CE103",
+  "seq": 13,
+  "title": "Analysis 12 · Influence lines II: moving load series",
+  "page_count": 28,
+  "sections": [
+   {
+    "title": "Maximum effect of a series of loads",
+    "pages": [
+     1,
+     28
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/tutorials/Tut 1.pdf": {
+  "code": "CE103",
+  "seq": 21,
+  "title": "Analysis practice · Tut 1 Truss stiffness method",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Q1–Q2",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/tutorials/Tut 2.pdf": {
+  "code": "CE103",
+  "seq": 22,
+  "title": "Analysis practice · Tut 2 Beam stiffness method",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Q1 Two-span beam, 15 kN/m (two FEM choices)",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   },
+   {
+    "title": "Q2 3 m fixed–fixed beam with roller at 1 m, deflection limit 0.01 m at x = 2 m",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/tutorials/Tut 3.pdf": {
+  "code": "CE103",
+  "seq": 23,
+  "title": "Analysis practice · Tut 3 Frame stiffness method",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Q1 Two-member frame fixed at A and C",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   },
+   {
+    "title": "Q2 Triangular welded frame using symmetry",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/tutorials/Tut 4.pdf": {
+  "code": "CE103",
+  "seq": 24,
+  "title": "Analysis practice · Tut 4 Influence lines (qualitative)",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Q1–Q3",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   }
+  ]
+ },
+ "CE103/CE3155/tutorials/Tut 5.pdf": {
+  "code": "CE103",
+  "seq": 25,
+  "title": "Analysis practice · Tut 5 Influence lines (quantitative)",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Q1–Q3",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   }
+  ]
  }
 }

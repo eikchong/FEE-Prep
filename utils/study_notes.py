@@ -1721,3 +1721,7 @@ STUDY.update(_CON)
 from utils.study_notes_ce202 import STL as _STL  # noqa: E402
 
 STUDY.update(_STL)
+
+from utils.study_notes_ce103 import ANA as _ANA  # noqa: E402
+
+STUDY.update(_ANA)

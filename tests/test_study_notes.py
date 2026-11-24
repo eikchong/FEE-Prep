@@ -227,3 +227,13 @@ def test_steel_answers():
     assert abs(700 * 40 * 265 * (2000 - 40) / 1e6 - 14543) < 1
     assert abs(0.83 / (1920 / (86.4 * 13 * math.sqrt(235 / 275))) * 13 * 1920 * 275 / math.sqrt(3) / 1e3 - 1779) < 15
     assert abs(1.35 * 0.9 + 1.5 * 0.4 - 1.815) < 1e-9 and abs(0.5 * 2 * 10.89 * 7 / math.cos(math.radians(15)) - 78.92) < 0.05
+
+
+def test_analysis_answers():
+    import numpy as np
+    k = np.array([-0.1667, -0.0729, 0.0938])
+    assert abs(k @ [-47.57, 41.14, -20.57] + 31.5 - 34.5) < 0.05   # Tut 2 Q1(a)
+    assert abs(k @ [-20.57, 41.14, -20.57] + 36 - 34.5) < 0.05     # Tut 2 Q1(b)
+    import math                                                     # plastic: propped cantilever UDL
+    a = min((x for x in np.linspace(0.3, 0.5, 20001)), key=lambda a: 2 * (1 + a) / (a * (1 - a)))
+    assert abs(a - (math.sqrt(2) - 1)) < 1e-3 and abs(2 * (1 + a) / (a * (1 - a)) - 11.66) < 0.01
