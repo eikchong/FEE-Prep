@@ -1,7 +1,6 @@
 """CE202 Structural Steel Design — CE3166 Structural Steel Design and System (Ang K K, Pang S D, Liew J Y R).
 
-Six lecture decks are over 10 MB on Drive, so they were imported as text only (TEXT_ONLY; page numbers are
-slide numbers and the original pages are not stored locally). EC3 (SS EN 1993-1-1/-1-5/-1-8 + Singapore NA).
+EC3 (SS EN 1993-1-1/-1-5/-1-8 + Singapore NA).
 """
 
 
@@ -12,29 +11,28 @@ def sec(title, pages, *blocks):
 S = "CE202/CE3166/"
 T = S + "tutorials/"
 D = {
-    "L0": S + "0 General Information.pdf", "L1": S + "1 Introduction (text).pdf",
-    "L2": S + "2 Local Buckling and Section Classification (text).pdf", "L3": S + "3 Compression Members (text).pdf",
-    "L4": S + "4 Tension Members (text).pdf", "L5": S + "5 Cross Section Moment Resistance.pdf",
-    "L6": S + "6 Restrained Beams.pdf", "L7": S + "7 Unrestrained Beams (text).pdf",
+    "L0": S + "0 General Information.pdf", "L1": S + "1 Introduction.pdf",
+    "L2": S + "2 Local Buckling and Section Classification.pdf", "L3": S + "3 Compression Members.pdf",
+    "L4": S + "4 Tension Members.pdf", "L5": S + "5 Cross Section Moment Resistance.pdf",
+    "L6": S + "6 Restrained Beams.pdf", "L7": S + "7 Unrestrained Beams.pdf",
     "L8a": S + "8 Beam-Columns Set 1.pdf", "L8b": S + "8 Beam-Columns Set 2.pdf",
-    "L9": S + "9 Plate Girders (text).pdf", "L10": S + "10b Welded Connections Set 2.pdf",
+    "L9": S + "9 Plate Girders.pdf", "L10": S + "10b Welded Connections Set 2.pdf",
     "L10a": S + "10a Welded Connections Set 1.pdf", "L11": S + "11 Bolted Connections.pdf",
     "T1": T + "Tut 1 questions.pdf", "T2": T + "Tut 2 section classification soln.pdf",
     "T3": T + "Tut 3 questions.pdf", "T4": T + "Tut 4 questions.pdf", "T5": T + "Tut 5 questions.pdf",
     "T6": T + "Tut 6 soln.pdf", "T6b": T + "Tut 6 part2 soln.pdf", "T7": T + "Tut 7 plate girder soln.pdf",
     "T8w": T + "Tut 8 welds soln.pdf", "T8b": T + "Tut 8 bolts soln.pdf",
 }
-TEXT_ONLY = {D[k] for k in ("L1", "L2", "L3", "L4", "L7", "L9")}
-OUTLINE = [("L0", 11, 1, ["CE202-01"]), ("L1", 88, 2, ["CE202-01"]), ("L2", 75, 3, ["CE202-02"]),
-           ("L3", 83, 4, ["CE202-08"]), ("L4", 54, 5, ["CE202-07"]), ("L5", 27, 6, ["CE202-02", "CE202-03"]),
-           ("L6", 53, 7, ["CE202-03"]), ("L7", 70, 8, ["CE202-06"]), ("L8a", 29, 9, ["CE202-09"]),
+TEXT_ONLY = set()
+OUTLINE = [("L0", 11, 1, ["CE202-01"]), ("L1", 109, 2, ["CE202-01"]), ("L2", 74, 3, ["CE202-02"]),
+           ("L3", 108, 4, ["CE202-08"]), ("L4", 54, 5, ["CE202-07"]), ("L5", 27, 6, ["CE202-02", "CE202-03"]),
+           ("L6", 53, 7, ["CE202-03"]), ("L7", 64, 8, ["CE202-06"]), ("L8a", 29, 9, ["CE202-09"]),
            ("L8b", 38, 10, ["CE202-09"]), ("L9", 68, 11, ["CE202-04", "CE202-05"]),
            ("L10a", 17, 12, ["CE202-10"]), ("L10", 24, 13, ["CE202-10"]), ("L11", 79, 14, ["CE202-10"]),
            ("T1", 6, 21, ["CE202-01"]), ("T2", 41, 22, ["CE202-02"]), ("T3", 4, 23, ["CE202-08"]),
            ("T4", 2, 24, ["CE202-07"]), ("T5", 3, 25, ["CE202-03", "CE202-06"]), ("T6", 31, 26, ["CE202-09"]),
            ("T6b", 86, 27, ["CE202-09"]), ("T7", 74, 28, ["CE202-04", "CE202-05"]), ("T8w", 43, 29, ["CE202-10"]),
            ("T8b", 50, 30, ["CE202-10"])]
-TXT_TIP = ("tip", "This deck is over 10 MB on Drive, so only its text was imported; page numbers are slide numbers.")
 
 STL = {}
 
@@ -47,21 +45,20 @@ STL[D["L0"]] = {"code": "CE202", "title": "Steel 0 · CE3166 course information"
 ]}
 
 STL[D["L1"]] = {"code": "CE202", "title": "Steel 1 · Eurocodes, limit states & load combinations", "sections": [
- sec("Eurocode family & EC3 parts", (11, 14),
+ sec("Eurocode family & EC3 parts", (12, 14),
    ("md", "EN 1990 basis, EN 1991 actions, EN 1993-1-1 general rules, -1-5 plated elements, -1-8 joints. Principles "
           "(P) must be obeyed; application rules may be replaced if shown to satisfy the principles; NA sets NDPs."),
  ),
- sec("Material properties", (32, 37),
+ sec("Material properties", (31, 37),
    ("md", "E = 210 GPa, G = 81 GPa, ν = 0.3, α = 12 × 10⁻⁶/°C. f_y drops with thickness: S275 → 275 (t ≤ 16), 265 "
           "(≤ 40), 255 (≤ 63); S355 → 355, 345, 335; f_u 410 (S275), 470 (S355). Ductility: f_u/f_y ≥ 1.10, ε_f ≥ "
           "15 %, ε_u ≥ 15ε_y. γ_M0 = γ_M1 = 1.0, γ_M2 = 1.1 (Singapore NA)."),
  ),
- sec("Limit states & ULS combinations", (66, 88),
+ sec("Limit states & ULS combinations", (59, 109),
    ("eq", r"\sum\gamma_GG_k + \gamma_{Q,1}Q_{k,1} + \sum_{i>1}\gamma_{Q,i}\psi_{0,i}Q_{k,i}\quad(6.10)\qquad \gamma_G = 1.35/1.0,\ \gamma_Q = 1.5/0"),
    ("md", "ψ₀ = 0.7 for imposed (1.0 storage), 0.5 for wind (Singapore NA). Frames: 1.35G + 1.5Q + 0.75W + EHF and "
           "1.35G + 1.5W + 1.05Q + EHF. **EHF = φN_Ed**, φ = (1/200)α_hα_m, α_h = 2/√h (⅔ ≤ α_h ≤ 1), "
           "α_m = √(0.5(1 + 1/m)); (0.75W + EHF) ≥ 0.015G."),
-   TXT_TIP,
  ),
 ]}
 
@@ -80,7 +77,7 @@ STL[D["L2"]] = {"code": "CE202", "title": "Steel 2 · Local buckling & section c
    ("md", "The section takes the worst class of its elements. Web limits are higher than flange limits because the "
           "web is supported on both edges and usually only partly compressed."),
  ),
- sec("Class 4 effective widths (EN 1993-1-5)", (31, 40),
+ sec("Class 4 effective widths (EN 1993-1-5)", (30, 40),
    ("eq", r"\bar\lambda_p = \frac{\bar b/t}{28.4\varepsilon\sqrt{k_\sigma}},\quad \rho_{int} = \frac{\bar\lambda_p - 0.055(3 + \psi)}{\bar\lambda_p^2},\quad \rho_{out} = \frac{\bar\lambda_p - 0.188}{\bar\lambda_p^2}\ (\le 1)"),
    ("md", "k_σ = 4.0 internal uniform compression (23.9 pure bending), 0.43 outstand uniform. ρ = 1 if λ̄_p ≤ 0.673 "
           "(internal, ψ = 1) or ≤ 0.748 (outstand)."),
@@ -89,12 +86,11 @@ STL[D["L2"]] = {"code": "CE202", "title": "Steel 2 · Local buckling & section c
    ("md", "May be treated as effective Class 2 using 20εt_w of web next to the flange and next to the PNA. SCI tables "
           "give the n = N_Ed/N_pl,Rd limits for Class 2/3 under combined loading."),
  ),
- sec("Worked examples", (47, 75),
+ sec("Worked examples", (47, 74),
    ("ex", "UB 457×152×52 S275", "Bending only: Class 1 (tables say Class 2) · + 800 kN: α 0.97, web Class 3 (n = 0.44 > "
           "0.169) · + 1500 kN: web Class 4 (n = 0.82 > 0.586)."),
    ("ex", "Welded I (400×12 flanges, 424×10 web) S355 in compression", "Flange c/t 15.6 > 14ε → Class 4, ρ_f = 0.795; "
           "web ρ_w = 1.0 → A_eff = 11 756 mm² → N_c,Rd = **4173 kN**."),
-   TXT_TIP,
  ),
 ]}
 
@@ -102,7 +98,7 @@ STL[D["L3"]] = {"code": "CE202", "title": "Steel 3 · Compression members (flexu
  sec("Cross-section resistance", (5, 10),
    ("eq", r"N_{c,Rd} = \frac{Af_y}{\gamma_{M0}}\ (\text{Class 1–3}),\qquad \frac{A_{eff}f_y}{\gamma_{M0}}\ (\text{Class 4})"),
  ),
- sec("Euler buckling & effective length", (11, 24),
+ sec("Euler buckling & effective length", (11, 20),
    ("eq", r"N_{cr} = \frac{\pi^2EI}{L_{cr}^2},\qquad \bar\lambda = \sqrt{\frac{Af_y}{N_{cr}}} = \frac{L_{cr}}{i\lambda_1},\quad \lambda_1 = \pi\sqrt{E/f_y} = 93.9\varepsilon"),
    ("md", "L_cr between inflection points: pinned–pinned 1.0L, fixed–fixed 0.7L (practical), fixed–pinned 0.85L, "
           "cantilever 2.0L; sway modes longer. Intermediate restraints shorten L_cr about one axis only."),
@@ -113,7 +109,7 @@ STL[D["L3"]] = {"code": "CE202", "title": "Steel 3 · Compression members (flexu
           "h/b ≤ 1.2, t_f ≤ 100 → **y–y b, z–z c**. Hot-finished hollow → a; cold-formed → c; welded I → b (y), c (z); "
           "angles, T, channels → b. Ignore buckling if λ̄ ≤ 0.2."),
  ),
- sec("Worked examples", (35, 72),
+ sec("Worked examples", (34, 72),
    ("ex", "CM-1: 6 m pinned UC, N_Ed = 2580 kN, S275", "UC 356×368×129: λ̄_z = 0.719, χ_z = 0.712 → **N_b,Rd = 3094 kN** ✓."),
    ("ex", "CM-2: same with mid-height z-restraint", "UC 254×254×107: λ̄_y 0.598 (χ 0.900), λ̄_z 0.514 (χ 0.835) → "
           "**3009 kN** ✓."),
@@ -121,7 +117,6 @@ STL[D["L3"]] = {"code": "CE202", "title": "Steel 3 · Compression members (flexu
           "**1386 kN** ✓."),
    ("ex", "CM-6: 244.5×10 CHS S355, 4 m, 2400 kN", "χ 0.854 → 2230 kN ✗ → use 244.5×12.5 (2830 kN)."),
    ("ex", "CM-8: UB 406×140×39 S355 Class 4", "A_eff 4217 mm² → N_b,z,Rd = **846 kN** < 1005 kN ✗."),
-   TXT_TIP,
  ),
 ]}
 
@@ -134,7 +129,7 @@ STL[D["L4"]] = {"code": "CE202", "title": "Steel 4 · Tension members", "section
    ("eq", r"N_{t,Rd} = \min\left(N_{pl,Rd} = \frac{Af_y}{\gamma_{M0}},\ N_{u,Rd} = \frac{0.9A_{net}f_u}{\gamma_{M2}}\right),\qquad \gamma_{M2} = 1.1"),
    ("ex", "200 × 25 flat, 6 M20 non-staggered (S275)", "N_pl = 1325, N_u = 0.9 × 3900 × 410/1.1 = **1308 kN** (governs)."),
  ),
- sec("Angles connected by one leg (EN 1993-1-8 3.10.3)", (29, 47),
+ sec("Angles connected by one leg (EN 1993-1-8 3.10.3)", (29, 42),
    ("eq", r"N_{u,Rd} = \frac{\beta A_{net}f_u}{\gamma_{M2}},\quad \beta_2 = 0.4\text{–}0.7,\ \beta_3 = 0.5\text{–}0.7\ (\text{interpolate on } p_1/d_0 \text{ between } 2.5 \text{ and } 5);\quad \text{1 bolt: } A = 2(e_2 - 0.5d_0)t"),
    ("md", "Welded: equal angle or unequal by the long leg → A_eff = A; unequal by the short leg → gross area of an equal "
           "angle with the short leg size."),
@@ -143,7 +138,6 @@ STL[D["L4"]] = {"code": "CE202", "title": "Steel 4 · Tension members", "section
  sec("Slenderness & design", (43, 54),
    ("md", "λ = L/i_min ≤ 300 (main), ≤ 400 (secondary). Example TM-5: 554 kN tie → bolted 150×90×12 (596 kN) but "
           "welded only 100×75×10 (589 kN)."),
-   TXT_TIP,
  ),
 ]}
 
@@ -176,28 +170,27 @@ STL[D["L6"]] = {"code": "CE202", "title": "Steel 6 · Laterally restrained beams
 ]}
 
 STL[D["L7"]] = {"code": "CE202", "title": "Steel 7 · Unrestrained beams (lateral–torsional buckling)", "sections": [
- sec("When LTB matters", (3, 15),
+ sec("When LTB matters", (3, 14),
    ("md", "Slender unrestrained beams in major-axis bending buckle by lateral deflection + twist. Ignore LTB for "
           "CHS/SHS, full lateral restraint, minor-axis bending, or λ̄_LT ≤ 0.4 (rolled) / 0.2 (welded)."),
  ),
- sec("Buckling resistance", (16, 28),
+ sec("Buckling resistance", (15, 24),
    ("eq", r"M_{b,Rd} = \chi_{LT}\frac{W_yf_y}{\gamma_{M1}},\quad \bar\lambda_{LT} = \sqrt{\frac{W_yf_y}{M_{cr}}},\quad \chi_{LT} = \frac{1}{\Phi_{LT} + \sqrt{\Phi_{LT}^2 - \beta\bar\lambda_{LT}^2}}"),
    ("md", "General (6.3.2.2): λ̄_LT,0 = 0.2, β = 1; rolled I curves a (h/b ≤ 2) / b (> 2); welded c / d. Rolled & "
           "equivalent welded (6.3.2.3, less conservative): λ̄_LT,0 = 0.4, β = 0.75, curves b (h/b ≤ 2) / c, "
           "χ_LT ≤ 1/λ̄²_LT."),
  ),
- sec("Elastic critical moment", (29, 39),
+ sec("Elastic critical moment", (25, 34),
    ("eq", r"M_{cr} = C_1\frac{\pi^2EI_z}{L_{cr}^2}\sqrt{\frac{I_w}{I_z} + \frac{L_{cr}^2GI_T}{\pi^2EI_z}}"),
    ("eq", r"C_1 = 1.77 - 1.04\psi + 0.27\psi^2 \le 2.60\ (\text{linear moment},\ \psi = M_2/M_1);\quad \text{UDL } 1.127,\ \text{central point } 1.348"),
    ("md", "L_cr = kL (k from end restraint); **destabilising load** (on the top flange, free to move with it) → "
           "L_cr = 1.2kL; cantilevers use separate k tables with C₁ = 1."),
  ),
- sec("Design procedure & examples", (41, 70),
+ sec("Design procedure & examples", (35, 64),
    ("ex", "URB-1: 9 m beam restrained at load points, S275", "UB 457×191×82: segment BC (3 m, ψ 0.82, C₁ 1.10) → "
           "M_cr 1182 kNm, λ̄_LT 0.653, χ 0.810 → **M_b,Rd = 408 kNm** > 396.5 ✓; deflection 15 mm < L/360."),
    ("ex", "URB-2: 10 m unrestrained, UB 533×210×101 S355", "M_cr 258 kNm, λ̄_LT 1.87, χ 0.277 → M_b,Rd = 249 ≪ 816 kNm ✗ "
           "→ UB 533×312×182 (965 kNm)."),
-   TXT_TIP,
  ),
 ]}
 
@@ -255,7 +248,6 @@ STL[D["L9"]] = {"code": "CE202", "title": "Steel 9 · Plate girders (EN 1993-1-5
           "V_Ed − f_ywdt_w/(√3λ̄_w²γ_M1)."),
    ("ex", "PG-5: two 165×15 stiffeners at the 2000 kN load", "Slenderness 11 < 12 ✓, I ✓, bearing 2373 ≥ 2000 ✓, but "
           "N_Ed = 2000 + 776 = 2776 > N_b,Rd 2630 kN ✗ → enlarge."),
-   TXT_TIP,
  ),
 ]}
 

@@ -5083,7 +5083,7 @@
   "code": "CE203",
   "seq": 0.5,
   "title": "Slopes 0 · Stability of slopes — lecture notes (OAP)",
-  "page_count": 80,
+  "page_count": 153,
   "sections": [
    {
     "title": "Types and causes of slope failure",
@@ -5128,8 +5128,8 @@
    {
     "title": "Groundwater effects",
     "pages": [
-     48,
-     56
+     49,
+     57
     ],
     "topics": [
      "CE203-01"
@@ -5138,8 +5138,8 @@
    {
     "title": "Analysis approaches & factor of safety",
     "pages": [
-     57,
-     62
+     58,
+     65
     ],
     "topics": [
      "CE203-01"
@@ -5148,8 +5148,8 @@
    {
     "title": "EC7 for slopes (Singapore NA: DA1 only)",
     "pages": [
-     63,
-     67
+     66,
+     69
     ],
     "topics": [
      "CE203-01"
@@ -5158,8 +5158,78 @@
    {
     "title": "Infinite slopes",
     "pages": [
-     68,
-     77
+     70,
+     81
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Finite slopes: mass procedure (undrained, c_u)",
+    "pages": [
+     82,
+     91
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Taylor's chart",
+    "pages": [
+     92,
+     92
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Method of slices: general",
+    "pages": [
+     93,
+     98
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Simplified Bishop (circular)",
+    "pages": [
+     99,
+     109
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Non-circular slips & Spencer",
+    "pages": [
+     110,
+     122
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Practical details",
+    "pages": [
+     123,
+     125
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Signs of instability, stabilisation & monitoring",
+    "pages": [
+     126,
+     152
     ],
     "topics": [
      "CE203-01"
@@ -6603,198 +6673,6 @@
    }
   ]
  },
- "CE202/CE3166/1 Introduction (text).pdf": {
-  "code": "CE202",
-  "seq": 2,
-  "title": "Steel 1 · Eurocodes, limit states & load combinations",
-  "page_count": 88,
-  "sections": [
-   {
-    "title": "Eurocode family & EC3 parts",
-    "pages": [
-     11,
-     14
-    ],
-    "topics": [
-     "CE202-01"
-    ]
-   },
-   {
-    "title": "Material properties",
-    "pages": [
-     32,
-     37
-    ],
-    "topics": [
-     "CE202-01"
-    ]
-   },
-   {
-    "title": "Limit states & ULS combinations",
-    "pages": [
-     66,
-     88
-    ],
-    "topics": [
-     "CE202-01"
-    ]
-   }
-  ]
- },
- "CE202/CE3166/2 Local Buckling and Section Classification (text).pdf": {
-  "code": "CE202",
-  "seq": 3,
-  "title": "Steel 2 · Local buckling & section classification",
-  "page_count": 75,
-  "sections": [
-   {
-    "title": "Why classify",
-    "pages": [
-     1,
-     19
-    ],
-    "topics": [
-     "CE202-02"
-    ]
-   },
-   {
-    "title": "c/t limits (Table 5.2), ε = √(235/f_y)",
-    "pages": [
-     20,
-     29
-    ],
-    "topics": [
-     "CE202-02"
-    ]
-   },
-   {
-    "title": "Class 4 effective widths (EN 1993-1-5)",
-    "pages": [
-     31,
-     40
-    ],
-    "topics": [
-     "CE202-02"
-    ]
-   },
-   {
-    "title": "Class 3 web + Class 1/2 flange; design tables",
-    "pages": [
-     41,
-     46
-    ],
-    "topics": [
-     "CE202-02"
-    ]
-   },
-   {
-    "title": "Worked examples",
-    "pages": [
-     47,
-     75
-    ],
-    "topics": [
-     "CE202-02"
-    ]
-   }
-  ]
- },
- "CE202/CE3166/3 Compression Members (text).pdf": {
-  "code": "CE202",
-  "seq": 4,
-  "title": "Steel 3 · Compression members (flexural buckling)",
-  "page_count": 83,
-  "sections": [
-   {
-    "title": "Cross-section resistance",
-    "pages": [
-     5,
-     10
-    ],
-    "topics": [
-     "CE202-08"
-    ]
-   },
-   {
-    "title": "Euler buckling & effective length",
-    "pages": [
-     11,
-     24
-    ],
-    "topics": [
-     "CE202-08"
-    ]
-   },
-   {
-    "title": "Buckling resistance & curves",
-    "pages": [
-     21,
-     33
-    ],
-    "topics": [
-     "CE202-08"
-    ]
-   },
-   {
-    "title": "Worked examples",
-    "pages": [
-     35,
-     72
-    ],
-    "topics": [
-     "CE202-08"
-    ]
-   }
-  ]
- },
- "CE202/CE3166/4 Tension Members (text).pdf": {
-  "code": "CE202",
-  "seq": 5,
-  "title": "Steel 4 · Tension members",
-  "page_count": 54,
-  "sections": [
-   {
-    "title": "Gross & net area; staggered holes",
-    "pages": [
-     6,
-     14
-    ],
-    "topics": [
-     "CE202-07"
-    ]
-   },
-   {
-    "title": "Tension resistance",
-    "pages": [
-     15,
-     19
-    ],
-    "topics": [
-     "CE202-07"
-    ]
-   },
-   {
-    "title": "Angles connected by one leg (EN 1993-1-8 3.10.3)",
-    "pages": [
-     29,
-     47
-    ],
-    "topics": [
-     "CE202-07"
-    ]
-   },
-   {
-    "title": "Slenderness & design",
-    "pages": [
-     43,
-     54
-    ],
-    "topics": [
-     "CE202-07"
-    ]
-   }
-  ]
- },
  "CE202/CE3166/5 Cross Section Moment Resistance.pdf": {
   "code": "CE202",
   "seq": 6,
@@ -6873,54 +6751,6 @@
    }
   ]
  },
- "CE202/CE3166/7 Unrestrained Beams (text).pdf": {
-  "code": "CE202",
-  "seq": 8,
-  "title": "Steel 7 · Unrestrained beams (lateral–torsional buckling)",
-  "page_count": 70,
-  "sections": [
-   {
-    "title": "When LTB matters",
-    "pages": [
-     3,
-     15
-    ],
-    "topics": [
-     "CE202-06"
-    ]
-   },
-   {
-    "title": "Buckling resistance",
-    "pages": [
-     16,
-     28
-    ],
-    "topics": [
-     "CE202-06"
-    ]
-   },
-   {
-    "title": "Elastic critical moment",
-    "pages": [
-     29,
-     39
-    ],
-    "topics": [
-     "CE202-06"
-    ]
-   },
-   {
-    "title": "Design procedure & examples",
-    "pages": [
-     41,
-     70
-    ],
-    "topics": [
-     "CE202-06"
-    ]
-   }
-  ]
- },
  "CE202/CE3166/8 Beam-Columns Set 1.pdf": {
   "code": "CE202",
   "seq": 9,
@@ -6983,58 +6813,6 @@
     ],
     "topics": [
      "CE202-09"
-    ]
-   }
-  ]
- },
- "CE202/CE3166/9 Plate Girders (text).pdf": {
-  "code": "CE202",
-  "seq": 11,
-  "title": "Steel 9 · Plate girders (EN 1993-1-5)",
-  "page_count": 68,
-  "sections": [
-   {
-    "title": "Initial sizing & moment (flanges carry M)",
-    "pages": [
-     1,
-     17
-    ],
-    "topics": [
-     "CE202-04",
-     "CE202-05"
-    ]
-   },
-   {
-    "title": "Web: flange-induced buckling & shear buckling",
-    "pages": [
-     18,
-     31
-    ],
-    "topics": [
-     "CE202-04",
-     "CE202-05"
-    ]
-   },
-   {
-    "title": "Transverse forces (patch loading)",
-    "pages": [
-     32,
-     41
-    ],
-    "topics": [
-     "CE202-04",
-     "CE202-05"
-    ]
-   },
-   {
-    "title": "Stiffeners: slenderness, stiffness, bearing, buckling",
-    "pages": [
-     42,
-     68
-    ],
-    "topics": [
-     "CE202-04",
-     "CE202-05"
     ]
    }
   ]
@@ -7939,6 +7717,298 @@
     ],
     "topics": [
      "CE103-03"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/1 Introduction.pdf": {
+  "code": "CE202",
+  "seq": 2,
+  "title": "Steel 1 · Eurocodes, limit states & load combinations",
+  "page_count": 109,
+  "sections": [
+   {
+    "title": "Eurocode family & EC3 parts",
+    "pages": [
+     12,
+     14
+    ],
+    "topics": [
+     "CE202-01"
+    ]
+   },
+   {
+    "title": "Material properties",
+    "pages": [
+     31,
+     37
+    ],
+    "topics": [
+     "CE202-01"
+    ]
+   },
+   {
+    "title": "Limit states & ULS combinations",
+    "pages": [
+     59,
+     109
+    ],
+    "topics": [
+     "CE202-01"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/2 Local Buckling and Section Classification.pdf": {
+  "code": "CE202",
+  "seq": 3,
+  "title": "Steel 2 · Local buckling & section classification",
+  "page_count": 74,
+  "sections": [
+   {
+    "title": "Why classify",
+    "pages": [
+     1,
+     19
+    ],
+    "topics": [
+     "CE202-02"
+    ]
+   },
+   {
+    "title": "c/t limits (Table 5.2), ε = √(235/f_y)",
+    "pages": [
+     20,
+     29
+    ],
+    "topics": [
+     "CE202-02"
+    ]
+   },
+   {
+    "title": "Class 4 effective widths (EN 1993-1-5)",
+    "pages": [
+     30,
+     40
+    ],
+    "topics": [
+     "CE202-02"
+    ]
+   },
+   {
+    "title": "Class 3 web + Class 1/2 flange; design tables",
+    "pages": [
+     41,
+     46
+    ],
+    "topics": [
+     "CE202-02"
+    ]
+   },
+   {
+    "title": "Worked examples",
+    "pages": [
+     47,
+     74
+    ],
+    "topics": [
+     "CE202-02"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/3 Compression Members.pdf": {
+  "code": "CE202",
+  "seq": 4,
+  "title": "Steel 3 · Compression members (flexural buckling)",
+  "page_count": 108,
+  "sections": [
+   {
+    "title": "Cross-section resistance",
+    "pages": [
+     5,
+     10
+    ],
+    "topics": [
+     "CE202-08"
+    ]
+   },
+   {
+    "title": "Euler buckling & effective length",
+    "pages": [
+     11,
+     20
+    ],
+    "topics": [
+     "CE202-08"
+    ]
+   },
+   {
+    "title": "Buckling resistance & curves",
+    "pages": [
+     21,
+     33
+    ],
+    "topics": [
+     "CE202-08"
+    ]
+   },
+   {
+    "title": "Worked examples",
+    "pages": [
+     34,
+     72
+    ],
+    "topics": [
+     "CE202-08"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/4 Tension Members.pdf": {
+  "code": "CE202",
+  "seq": 5,
+  "title": "Steel 4 · Tension members",
+  "page_count": 54,
+  "sections": [
+   {
+    "title": "Gross & net area; staggered holes",
+    "pages": [
+     6,
+     14
+    ],
+    "topics": [
+     "CE202-07"
+    ]
+   },
+   {
+    "title": "Tension resistance",
+    "pages": [
+     15,
+     19
+    ],
+    "topics": [
+     "CE202-07"
+    ]
+   },
+   {
+    "title": "Angles connected by one leg (EN 1993-1-8 3.10.3)",
+    "pages": [
+     29,
+     42
+    ],
+    "topics": [
+     "CE202-07"
+    ]
+   },
+   {
+    "title": "Slenderness & design",
+    "pages": [
+     43,
+     54
+    ],
+    "topics": [
+     "CE202-07"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/7 Unrestrained Beams.pdf": {
+  "code": "CE202",
+  "seq": 8,
+  "title": "Steel 7 · Unrestrained beams (lateral–torsional buckling)",
+  "page_count": 64,
+  "sections": [
+   {
+    "title": "When LTB matters",
+    "pages": [
+     3,
+     14
+    ],
+    "topics": [
+     "CE202-06"
+    ]
+   },
+   {
+    "title": "Buckling resistance",
+    "pages": [
+     15,
+     24
+    ],
+    "topics": [
+     "CE202-06"
+    ]
+   },
+   {
+    "title": "Elastic critical moment",
+    "pages": [
+     25,
+     34
+    ],
+    "topics": [
+     "CE202-06"
+    ]
+   },
+   {
+    "title": "Design procedure & examples",
+    "pages": [
+     35,
+     64
+    ],
+    "topics": [
+     "CE202-06"
+    ]
+   }
+  ]
+ },
+ "CE202/CE3166/9 Plate Girders.pdf": {
+  "code": "CE202",
+  "seq": 11,
+  "title": "Steel 9 · Plate girders (EN 1993-1-5)",
+  "page_count": 68,
+  "sections": [
+   {
+    "title": "Initial sizing & moment (flanges carry M)",
+    "pages": [
+     1,
+     17
+    ],
+    "topics": [
+     "CE202-04",
+     "CE202-05"
+    ]
+   },
+   {
+    "title": "Web: flange-induced buckling & shear buckling",
+    "pages": [
+     18,
+     31
+    ],
+    "topics": [
+     "CE202-04",
+     "CE202-05"
+    ]
+   },
+   {
+    "title": "Transverse forces (patch loading)",
+    "pages": [
+     32,
+     41
+    ],
+    "topics": [
+     "CE202-04",
+     "CE202-05"
+    ]
+   },
+   {
+    "title": "Stiffeners: slenderness, stiffness, bearing, buckling",
+    "pages": [
+     42,
+     68
+    ],
+    "topics": [
+     "CE202-04",
+     "CE202-05"
     ]
    }
   ]

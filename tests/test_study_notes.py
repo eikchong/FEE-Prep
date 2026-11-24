@@ -237,3 +237,16 @@ def test_analysis_answers():
     import math                                                     # plastic: propped cantilever UDL
     a = min((x for x in np.linspace(0.3, 0.5, 20001)), key=lambda a: 2 * (1 + a) / (a * (1 - a)))
     assert abs(a - (math.sqrt(2) - 1)) < 1e-3 and abs(2 * (1 + a) / (a * (1 - a)) - 11.66) < 0.01
+
+
+def test_slope_mass_procedure_examples():
+    import math
+    MR = 60 * 16.5 ** 2 * math.pi / 2
+    assert abs(MR - 25659) < 5
+    assert abs(MR / (1.35 * 18163) - 1.05) < 0.005 and abs(MR / 1.4 / 18163 - 1.01) < 0.005
+    dc = 2 * 20 / 19
+    assert abs(dc - 2.1) < 0.01 and abs(0.5 * 10 * 2.1 ** 2 - 22.1) < 0.1
+    c1 = 1.35 * (2777 + 64) + 1.5 * 438 - 116
+    c2 = 2777 + 64 + 1.3 * 438 - 116
+    assert abs(c1 - 4376) < 2 and abs(c2 - 3294) < 1
+    assert abs(4518 / c1 - 1.03) < 0.005 and abs(4518 / 1.4 / c2 - 0.98) < 0.005

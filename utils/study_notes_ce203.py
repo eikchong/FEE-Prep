@@ -463,11 +463,11 @@ D.update({
     "E5": L + "ERSS 5 Flexible Retaining Structures.pdf", "E6": L + "ERSS 6 Introduction to Deep Excavations.pdf",
     "E7": L + "ERSS 7 Quiz key points.pdf",
 })
-OUTLINE += [("L0", 7, 0.4, ["CE203-01"]), ("LS", 80, 0.5, ["CE203-01"]), ("LR", 15, 4.5, ["CE203-01"]),
+OUTLINE += [("L0", 7, 0.4, ["CE203-01"]), ("LS", 153, 0.5, ["CE203-01"]), ("LR", 15, 4.5, ["CE203-01"]),
             ("E2", 175, 5.5, ["CE203-02"]), ("E2a", 4, 5.6, ["CE203-02"]), ("E3", 63, 7.5, ["CE203-03"]),
             ("E4", 57, 8.5, ["CE203-03"]), ("E5", 99, 9.5, ["CE203-03", "CE203-04"]), ("E6", 33, 11.5, ["CE203-04"]),
             ("E7", 9, 12.5, ["CE203-02", "CE203-03"])]
-TEXT_ONLY = {D["LS"]}   # > 10 MB on Drive: notes written from its text; original pages not stored locally
+TEXT_ONLY = set()   # docs over 10 MB on Drive: notes written from text only; original pages not stored locally
 
 GEO[D["L0"]] = {"code": "CE203", "title": "CE3115 · Course outline (slopes & earth-retaining structures)", "sections": [
  sec("Scope", (1, 7),
@@ -505,28 +505,85 @@ GEO[D["LS"]] = {"code": "CE203", "title": "Slopes 0 · Stability of slopes — l
           "Sands from (N₁)₆₀: very loose 29–32°, loose 32–35°, medium 35–37°, dense 37–40°, very dense 40–42°; "
           "silty sand −3°, gravelly sand +2°."),
  ),
- sec("Groundwater effects", (48, 56),
+ sec("Groundwater effects", (49, 57),
    ("eq", r"u = \gamma_wh_w\cos^2\alpha_w\ (\text{flowing, parallel seepage}),\qquad \tau_f = c' + (u_a - u_w)\tan\phi^b + (\sigma - u_a)\tan\phi'\ (\text{unsaturated})"),
    ("md", "Suction adds 'apparent cohesion' that is lost when rain saturates the slope. Ponded water at the toe is "
           "**stabilising**."),
  ),
- sec("Analysis approaches & factor of safety", (57, 62),
+ sec("Analysis approaches & factor of safety", (58, 65),
    ("md", "Limit equilibrium (pre-defined surface, ULS only — this module), FEM (φ–c reduction, gives displacement), "
           "limit analysis. Traditional lumped FoS = available strength / mobilised stress: **≥ 1.3 temporary, ≥ 1.5 "
           "permanent**. EC7 uses partial factors instead."),
  ),
- sec("EC7 for slopes (Singapore NA: DA1 only)", (63, 67),
+ sec("EC7 for slopes (Singapore NA: DA1 only)", (66, 69),
    ("md", "DA1-C1: A1 (γ_G 1.35 unfav/1.0 fav, γ_Q 1.5/0) + M1 (all 1.0). DA1-C2: A2 (γ_G 1.0, γ_Q 1.3) + M2 (tan φ′, "
           "c′ ÷ 1.25; c_u ÷ 1.4). FoS = factored resisting / factored disturbing ≥ 1.0. In C1, soil upslope of the "
           "rotation centre (α > 0) is unfavourable ×1.35; downslope (α < 0) favourable ×1.0."),
  ),
- sec("Infinite slopes", (68, 77),
+ sec("Infinite slopes", (70, 81),
    ("eq", r"F = \frac{c' + \left[(1-m)\gamma + m(\gamma_{sat} - \gamma_w)\right]z\cos^2\beta\tan\phi'}{\left[(1-m)\gamma + m\gamma_{sat}\right]z\cos\beta\sin\beta}\quad(\text{GWT at } mz \text{ above the slip plane})"),
    ("md", "Dry sand: F = tan φ′/tan β (independent of z). Saturated with parallel seepage: F = (γ′/γ_sat) tan φ′/tan β "
           "≈ **½** of dry. Slip-plane u: parallel seepage γ_wz cos²β, horizontal seepage γ_wz, downward "
           "drainage 0. For drained infinite slopes **only DA1-C2** matters (C1 scales both sides)."),
-   ("tip", "This deck is 13.7 MB on Drive, so only its text was imported (to slide ~77); finite slopes, Bishop and "
-           "Spencer are covered by the Revision Notes, Tutorial 2 and Assignment 1 pages."),
+ ),
+ sec("Finite slopes: mass procedure (undrained, c_u)", (82, 91),
+   ("eq", r"F = \frac{c_u\,r^2\theta}{\sum W_id_i}\ (\theta \text{ in rad}),\qquad \text{layered: } F = \frac{r^2\sum c_{ui}\theta_i}{\sum W_id_i}"),
+   ("md", "Total-stress, short-term (end of construction) check on saturated clay, circular slip, moments about the "
+          "centre. Split the mass into rectangles/triangles; blocks behind the centre (d < 0) resist."),
+   ("eq", r"\text{tension crack: } d_c = \frac{2c_u}{\gamma},\qquad P_w = \tfrac12\gamma_wd_c^2\ (\text{acts at } d_c/3 \text{ above crack base; no strength along the crack})"),
+   ("md", "EC7: **C1** — unfavourable permanent ×1.35, unfavourable variable ×1.5, favourable permanent ×1.0, favourable "
+          "variable ignored; c_u ÷ 1.0. **C2** — permanent ×1.0, unfavourable variable ×1.3, c_u ÷ 1.4."),
+   ("ex", "Example: 12 m cut, c_uk = 60 kPa, γ = 20", "M_D = 18 163 kNm/m, M_R = 60 × 16.5² × π/2 = "
+          "25 659 kNm/m → **C1 F = 25 659/(1.35 × 18 163) = 1.05**, **C2 F = (25 659/1.4)/18 163 = 1.01** — both OK."),
+   ("ex", "Example: two clay layers c_u 20/40 kPa, 20 kPa surcharge, water-filled crack",
+          "d_c = 2 × 20/19 = 2.1 m, P_w = 22.1 kN; M_D: W₁ 2 777 (unfav), W₂ −116 (fav), Q 438, P_w 64; M_R = 4 518 kNm. "
+          "C1: M_D = 1.35(2 777 + 64) + 1.5(438) − 116 = 4 376 → F = 1.03. **C2: M_D = 3 294, M_R = 4 518/1.4 = 3 227 → "
+          "F = 0.98 (not OK, governs).**"),
+ ),
+ sec("Taylor's chart", (92, 92),
+   ("eq", r"N_s = \frac{c_u}{F\gamma H}\ \Rightarrow\ F = \frac{c_u}{N_s\gamma H}\quad(N_s \text{ from chart for slope angle } \beta \text{ and depth factor})"),
+   ("md", "Quick preliminary FoS for homogeneous clay (φ_u = 0), e.g. temporary cuts."),
+ ),
+ sec("Method of slices: general", (93, 98),
+   ("eq", r"F = \frac{\sum\left(c'l + N'\tan\phi'\right)}{\sum W\sin\alpha}\quad(\text{moments about the circle centre})"),
+   ("md", "Effective-stress analysis handles layering and pore pressure. Search a grid of centres × radii for the "
+          "minimum F. Methods differ in the interslice-force assumption: **Fellenius** (no E, X; moment only), "
+          "**Bishop simplified** (E only, moment), **Janbu** (E only, force), **Spencer** (constant X/E, both), "
+          "**Morgenstern–Price** (X = λf(x)E, both), **Sarma**. EC7: if horizontal equilibrium isn't checked, "
+          "interslice forces must be horizontal → Bishop, Spencer, M-P acceptable. Bishop is within ~5% of M-P."),
+ ),
+ sec("Simplified Bishop (circular)", (99, 109),
+   ("eq", r"F = \frac{1}{\sum W\sin\alpha}\sum\left[c'b + (W - ub)\tan\phi'\right]\frac{\sec\alpha}{1 + \tan\alpha\tan\phi'/F}"),
+   ("steps", ["Slice the mass; get W, u (= γ_w h_w), α for each slice (α < 0 downslope of the centre).",
+              "C1: ×1.35 on W sin α for slices with α > 0 (unfavourable), ×1.0 for α < 0; variable surcharge ×1.5.",
+              "C2: c′ ÷ 1.25 and tan φ′ ÷ 1.25 in the numerator and in n_α; variable surcharge ×1.3.",
+              "Extra moments M_N from external loads/ponded water: add M_N/R to the denominator.",
+              "Assume F (e.g. 1.0), compute n_α, update F; iterate to convergence."]),
+   ("ex", "Example: residual clayey silt c′_k = 8 kPa, φ′_k = 26°, γ = 18", "Five slices on a given "
+          "circle (companion spreadsheet): **DA1.C1 F = 1.20, DA1.C2 F = 1.39**."),
+ ),
+ sec("Non-circular slips & Spencer", (110, 122),
+   ("md", "Thin weak layers, shallow hard strata or geosynthetic interfaces give non-circular/composite surfaces — "
+          "forcing circles **overestimates** F (James Bay dike: circular 1.45 vs non-circular Spencer/FEM ≈ 1.25)."),
+   ("eq", r"X_i = \lambda E_i,\ \lambda = \tan\theta;\qquad N' = W\cos\alpha - ul - Q\sin(\alpha - \theta),\quad Q_i = Z_{i+1} - Z_i"),
+   ("md", "For trial θ, march slice-by-slice from Z₀ = 0 and adjust F until Z_N = 0 (force equilibrium) and, "
+          "separately, until the thrust-line lever arm h_N = 0 (moment equilibrium). Plot F_f(θ) and F_m(θ): the "
+          "intersection gives F and θ. Fredlund & Krahn (1977) example: F ≈ 1.37–1.41."),
+ ),
+ sec("Practical details", (123, 125),
+   ("md", "Slice boundaries at: slip entry/exit, slope breaks, layer and phreatic-line crossings, load edges. Hand "
+          "calcs ~1% accuracy with modest slice numbers; software ≥ 30 slices, ≤ 3° subtended each. Start centres "
+          "1–2H above the slope mid-point. Ponded water: point load γ_w h_w b on each slice (vertical; horizontal "
+          "γ_w h_w b tan β on inclined faces) → moment M_N, add M_N/R to the denominator."),
+ ),
+ sec("Signs of instability, stabilisation & monitoring", (126, 152),
+   ("md", "**Signs**: crest/toe cracks, tilting fences/poles/trees, bulging toe, new seepage, broken pipes, jammed "
+          "doors. **Reduce driving forces**: unload/regrade the crest, flatten, bench/terrace, lightweight fill. "
+          "**Increase resistance**: surface drainage (cut-off/berm drains), sub-surface drainage (horizontal "
+          "drains, wells, trench drains), toe buttress/berm, surface protection (turfing, shotcrete, erosion mats), "
+          "reinforcement (soil nails, ground anchors, micropiles), retaining structures. LTA CDC specs apply in SG."),
+   ("md", "**Monitoring**: inclinometers (lateral movement profile), piezometers/standpipes (pore pressure/GWT), "
+          "settlement markers and surveying, tiltmeters, crack meters, rain gauges; trigger levels with response plans."),
  ),
 ]}
 
