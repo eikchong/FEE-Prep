@@ -3617,5 +3617,967 @@
     ]
    }
   ]
+ },
+ "CE105/CE2134/1 Dimensional homogeneity.pdf": {
+  "code": "CE105",
+  "seq": 11,
+  "title": "Hydraulics 1 · Dimensional homogeneity",
+  "page_count": 4,
+  "sections": [
+   {
+    "title": "Dimensions & the three rules",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE105-07"
+    ]
+   },
+   {
+    "title": "Working habit",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE105-07"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/2 Fluid properties.pdf": {
+  "code": "CE105",
+  "seq": 12,
+  "title": "Hydraulics 2 · Fluid properties",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "Fluid vs solid; stress convention",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE105-01"
+    ]
+   },
+   {
+    "title": "Viscosity & no-slip",
+    "pages": [
+     2,
+     4
+    ],
+    "topics": [
+     "CE105-01"
+    ]
+   },
+   {
+    "title": "Continuum & compressibility",
+    "pages": [
+     4,
+     7
+    ],
+    "topics": [
+     "CE105-01"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/3 Fluid statics.pdf": {
+  "code": "CE105",
+  "seq": 13,
+  "title": "Hydraulics 3 · Fluid statics, forces on surfaces, buoyancy & stability",
+  "page_count": 25,
+  "sections": [
+   {
+    "title": "Pressure at a point & hydrostatic law",
+    "pages": [
+     1,
+     5
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Transmission, piezometer & manometers",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Plane surfaces",
+    "pages": [
+     10,
+     16
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Curved surfaces",
+    "pages": [
+     17,
+     19
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Buoyancy",
+    "pages": [
+     19,
+     20
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Stability of submerged and floating bodies",
+    "pages": [
+     20,
+     25
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-03"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/4 Fluid kinematic.pdf": {
+  "code": "CE105",
+  "seq": 14,
+  "title": "Hydraulics 4 · Fluid kinematics",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Lagrangian vs Eulerian; flow classification",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE105-04"
+    ]
+   },
+   {
+    "title": "Acceleration field",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE105-04"
+    ]
+   },
+   {
+    "title": "Streamlines, stream tubes",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE105-04"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/5 Nature of conservation laws.pdf": {
+  "code": "CE105",
+  "seq": 15,
+  "title": "Hydraulics 5 · Conservation laws: mass & volume",
+  "page_count": 5,
+  "sections": [
+   {
+    "title": "Fluxes & the bank-account analogy",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE105-04"
+    ]
+   },
+   {
+    "title": "Mass and volume conservation",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE105-04"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/6 Bernoulli Equation.pdf": {
+  "code": "CE105",
+  "seq": 16,
+  "title": "Hydraulics 6 · Bernoulli equation & applications",
+  "page_count": 13,
+  "sections": [
+   {
+    "title": "Derivation along and across streamlines",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE105-05"
+    ]
+   },
+   {
+    "title": "Restrictions",
+    "pages": [
+     8,
+     8
+    ],
+    "topics": [
+     "CE105-05"
+    ]
+   },
+   {
+    "title": "Free jets, orifices, vena contracta",
+    "pages": [
+     8,
+     11
+    ],
+    "topics": [
+     "CE105-05"
+    ]
+   },
+   {
+    "title": "Pitot tube",
+    "pages": [
+     12,
+     13
+    ],
+    "topics": [
+     "CE105-05"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/7 Reynolds transport theorem.pdf": {
+  "code": "CE105",
+  "seq": 17,
+  "title": "Hydraulics 7 · Reynolds transport theorem",
+  "page_count": 6,
+  "sections": [
+   {
+    "title": "System vs control volume",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE105-04",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "RTT and mass/volume conservation",
+    "pages": [
+     2,
+     6
+    ],
+    "topics": [
+     "CE105-04",
+     "CE105-06"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/8 Momentum principle.pdf": {
+  "code": "CE105",
+  "seq": 18,
+  "title": "Hydraulics 8 · Momentum principle",
+  "page_count": 13,
+  "sections": [
+   {
+    "title": "Linear momentum for a control volume",
+    "pages": [
+     1,
+     5
+    ],
+    "topics": [
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Steady flow: sum of thrusts + wall force = 0",
+    "pages": [
+     6,
+     7
+    ],
+    "topics": [
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Applications: jet on plate, bend, Borda mouthpiece",
+    "pages": [
+     8,
+     13
+    ],
+    "topics": [
+     "CE105-06"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/9 Energy principle.pdf": {
+  "code": "CE105",
+  "seq": 19,
+  "title": "Hydraulics 9 · Energy principle & head losses",
+  "page_count": 10,
+  "sections": [
+   {
+    "title": "Mechanical energy of a particle",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE105-05",
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Energy equation for a control volume",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE105-05",
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Head losses: friction & expansion",
+    "pages": [
+     5,
+     10
+    ],
+    "topics": [
+     "CE105-05",
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/tutorials/CE2134 Tutorial questions.pdf": {
+  "code": "CE105",
+  "seq": 30,
+  "title": "Hydraulics practice · Tutorials 1–4 (questions & answers)",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Tut 1 Q1 Micromanometer",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 1 Q2 Oil-spill boom (ρ_oil 873, ρ_sw 1030; L 150 m, draft 0.30 m)",
+    "pages": [
+     2,
+     2
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 2 Q1 Thin gate holding oil against seawater",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 2 Q2 Rectangular dam (B 10 m, H 36 m, μ = 1)",
+    "pages": [
+     4,
+     4
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 3 Q1 Sluice gate (h₁ 6 m, h₂ 3 m)",
+    "pages": [
+     5,
+     5
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 3 Q2 Venturi insecticide mixer",
+    "pages": [
+     6,
+     6
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 4 Q1 Plane jet splitting on a floor",
+    "pages": [
+     7,
+     7
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Tut 4 Q2 Semi-circular gate, q = 10 m²/s",
+    "pages": [
+     8,
+     8
+    ],
+    "topics": [
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   }
+  ]
+ },
+ "CE105/CE2134/tutorials/Self_evaluation_questions (solutions).pdf": {
+  "code": "CE105",
+  "seq": 31,
+  "title": "Hydraulics practice · Self-evaluation questions (worked)",
+  "page_count": 20,
+  "sections": [
+   {
+    "title": "1 Viscosity",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "2 Manometers",
+    "pages": [
+     4,
+     5
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "3 Forces on gates & dams",
+    "pages": [
+     6,
+     8
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "4 Kinematics & continuity",
+    "pages": [
+     9,
+     11
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "5 Bernoulli",
+    "pages": [
+     12,
+     15
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "6 Momentum",
+    "pages": [
+     16,
+     18
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "7 Energy",
+    "pages": [
+     19,
+     20
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02",
+     "CE105-05",
+     "CE105-06"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/1 Intro and FlowViews1.pdf": {
+  "code": "CE205",
+  "seq": 1,
+  "title": "Hydraulics II-1 · Course map & ways to view flow",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Scope of Part 2",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Integral vs differential views; real vs ideal",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/1b FlowViews2.pdf": {
+  "code": "CE205",
+  "seq": 2,
+  "title": "Hydraulics II-2 · Stream function & velocity potential",
+  "page_count": 16,
+  "sections": [
+   {
+    "title": "Stream function ψ",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Velocity potential φ",
+    "pages": [
+     10,
+     16
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/1c FlowViews3.pdf": {
+  "code": "CE205",
+  "seq": 3,
+  "title": "Hydraulics II-3 · Elementary flows, vortices & superposition",
+  "page_count": 21,
+  "sections": [
+   {
+    "title": "Uniform flow, sources & sinks",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Curved flow; free & forced vortices",
+    "pages": [
+     7,
+     12
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Superposition: half-body, Rankine oval, cylinder",
+    "pages": [
+     13,
+     21
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/1d FlowViews Examples.pdf": {
+  "code": "CE205",
+  "seq": 4,
+  "title": "Hydraulics II-3a · Flow-view examples",
+  "page_count": 10,
+  "sections": [
+   {
+    "title": "Worked examples",
+    "pages": [
+     1,
+     10
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/2 RealFluids1.pdf": {
+  "code": "CE205",
+  "seq": 5,
+  "title": "Hydraulics II-4 · Viscosity, laminar & turbulent flow",
+  "page_count": 23,
+  "sections": [
+   {
+    "title": "Limits of potential flow",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Viscosity & laminar flow",
+    "pages": [
+     7,
+     12
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Transition & turbulence",
+    "pages": [
+     13,
+     23
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/2b RealFluids2.pdf": {
+  "code": "CE205",
+  "seq": 6,
+  "title": "Hydraulics II-5 · Boundary layers, drag, cavitation",
+  "page_count": 18,
+  "sections": [
+   {
+    "title": "Boundary layer thicknesses",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Momentum integral (von Kármán)",
+    "pages": [
+     7,
+     10
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Bluff bodies, roughness, drag & vibration",
+    "pages": [
+     11,
+     14
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Bounded flows; cavitation & surface tension",
+    "pages": [
+     15,
+     18
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/2c RealFluids Examples Solution.pdf": {
+  "code": "CE205",
+  "seq": 7,
+  "title": "Hydraulics II-5a · Real-fluid examples (solutions)",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Example 1 1/7-power boundary layer in a channel",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Example 2 plate drag",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/3 PipesDucts1.pdf": {
+  "code": "CE205",
+  "seq": 8,
+  "title": "Hydraulics II-6 · Pipe flow: momentum & laminar flow",
+  "page_count": 16,
+  "sections": [
+   {
+    "title": "Insight from mass, energy & momentum",
+    "pages": [
+     5,
+     10
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Laminar (Hagen–Poiseuille)",
+    "pages": [
+     11,
+     15
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Example: oil in a Ø25 mm pipe at 0.3 m/s",
+    "pages": [
+     16,
+     16
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/3b PipesDucts2 corrected.pdf": {
+  "code": "CE205",
+  "seq": 9,
+  "title": "Hydraulics II-7 · Turbulent pipe friction & minor losses",
+  "page_count": 19,
+  "sections": [
+   {
+    "title": "Darcy–Weisbach & friction factor",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Three problem types",
+    "pages": [
+     9,
+     14
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Hazen–Williams (practical)",
+    "pages": [
+     15,
+     15
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Minor (local) losses",
+    "pages": [
+     16,
+     19
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/3c PipesDucts Examples.pdf": {
+  "code": "CE205",
+  "seq": 10,
+  "title": "Hydraulics II-7a · Pipe-flow worked examples",
+  "page_count": 10,
+  "sections": [
+   {
+    "title": "Laminar & Type 1",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Type 2 and Type 3 iterations",
+    "pages": [
+     7,
+     10
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/4 Machinery1.pdf": {
+  "code": "CE205",
+  "seq": 11,
+  "title": "Hydraulics II-8 · Pumps & turbines",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Types of machinery",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE205-02"
+    ]
+   },
+   {
+    "title": "Radial pump: velocity triangles & Euler head",
+    "pages": [
+     8,
+     13
+    ],
+    "topics": [
+     "CE205-02"
+    ]
+   },
+   {
+    "title": "Other rotodynamic pumps; example",
+    "pages": [
+     14,
+     15
+    ],
+    "topics": [
+     "CE205-02"
+    ]
+   }
+  ]
+ },
+ "CE205/CE2134/5 Steps for HW1.pdf": {
+  "code": "CE205",
+  "seq": 12,
+  "title": "Hydraulics II practice · Homework 1 steps",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "HW1 Q9–Q12",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   }
+  ]
  }
 }

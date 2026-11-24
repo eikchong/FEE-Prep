@@ -1709,3 +1709,7 @@ TUTORIALS += [
 from utils.study_notes_ce203 import GEO as _GEO  # noqa: E402
 
 STUDY.update(_GEO)
+
+from utils.study_notes_hyd import HYD as _HYD  # noqa: E402
+
+STUDY.update(_HYD)
