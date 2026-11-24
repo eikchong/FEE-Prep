@@ -213,7 +213,7 @@
    }
   ],
   "page_count": 90,
-  "seq": 1
+  "seq": 20
  },
  "CE102/CE102_Structural_Mechanics.pdf": {
   "code": "CE102",
@@ -1943,6 +1943,484 @@
     ],
     "topics": [
      "CE102-06"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M1_introduction.pdf": {
+  "code": "CE101",
+  "seq": 1,
+  "title": "CE2155 Materials — introduction",
+  "page_count": 17,
+  "sections": [
+   {
+    "title": "Requirements & constituents",
+    "pages": [
+     1,
+     17
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M2_Cement.pdf": {
+  "code": "CE101",
+  "seq": 2,
+  "title": "CE2155 Materials — Cement",
+  "page_count": 28,
+  "sections": [
+   {
+    "title": "Clinker phases & manufacture",
+    "pages": [
+     4,
+     6
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Hydration",
+    "pages": [
+     7,
+     13
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "ASTM types & microstructure",
+    "pages": [
+     14,
+     16
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "SCMs",
+    "pages": [
+     17,
+     28
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-13"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M3_aggregate.pdf": {
+  "code": "CE101",
+  "seq": 3,
+  "title": "CE2155 Materials — aggregate",
+  "page_count": 18,
+  "sections": [
+   {
+    "title": "Role & classification",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Grading & FM",
+    "pages": [
+     6,
+     11
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Moisture, SG, unit weight",
+    "pages": [
+     12,
+     18
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-09"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M4_chemical_admixture.pdf": {
+  "code": "CE101",
+  "seq": 4,
+  "title": "CE2155 Materials — chemical admixture",
+  "page_count": 24,
+  "sections": [
+   {
+    "title": "Water reducers & SP",
+    "pages": [
+     3,
+     11
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Air entrainment",
+    "pages": [
+     12,
+     16
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-12"
+    ]
+   },
+   {
+    "title": "Retarders & accelerators",
+    "pages": [
+     17,
+     24
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M5_fresh_concrete.pdf": {
+  "code": "CE101",
+  "seq": 5,
+  "title": "CE2155 Materials — fresh concrete",
+  "page_count": 23,
+  "sections": [
+   {
+    "title": "Workability & slump",
+    "pages": [
+     3,
+     8
+    ],
+    "topics": [
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Segregation & bleeding",
+    "pages": [
+     9,
+     11
+    ],
+    "topics": [
+     "CE101-07",
+     "CE101-08"
+    ]
+   },
+   {
+    "title": "Factors & slump loss",
+    "pages": [
+     12,
+     17
+    ],
+    "topics": [
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Setting & plastic shrinkage",
+    "pages": [
+     18,
+     23
+    ],
+    "topics": [
+     "CE101-07",
+     "CE101-08"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M6_hardened_concrete.pdf": {
+  "code": "CE101",
+  "seq": 6,
+  "title": "CE2155 Materials — hardened concrete",
+  "page_count": 18,
+  "sections": [
+   {
+    "title": "Structure & compression",
+    "pages": [
+     3,
+     6
+    ],
+    "topics": [
+     "CE101-07",
+     "CE101-10"
+    ]
+   },
+   {
+    "title": "Tensile tests",
+    "pages": [
+     7,
+     10
+    ],
+    "topics": [
+     "CE101-10"
+    ]
+   },
+   {
+    "title": "Factors on strength",
+    "pages": [
+     11,
+     14
+    ],
+    "topics": [
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Modulus of elasticity",
+    "pages": [
+     15,
+     18
+    ],
+    "topics": [
+     "CE101-07"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M7_mix_design.pdf": {
+  "code": "CE101",
+  "seq": 7,
+  "title": "CE2155 Materials — mix design",
+  "page_count": 30,
+  "sections": [
+   {
+    "title": "Fundamentals",
+    "pages": [
+     3,
+     6
+    ],
+    "topics": [
+     "CE101-09"
+    ]
+   },
+   {
+    "title": "Required average strength",
+    "pages": [
+     7,
+     9
+    ],
+    "topics": [
+     "CE101-09",
+     "CE101-11"
+    ]
+   },
+   {
+    "title": "ACI 10 steps",
+    "pages": [
+     10,
+     26
+    ],
+    "topics": [
+     "CE101-09"
+    ]
+   },
+   {
+    "title": "Trial batch",
+    "pages": [
+     27,
+     30
+    ],
+    "topics": [
+     "CE101-09"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M8_creep_and_shrinkage.pdf": {
+  "code": "CE101",
+  "seq": 8,
+  "title": "CE2155 Materials — creep and shrinkage",
+  "page_count": 17,
+  "sections": [
+   {
+    "title": "Autogenous & thermal",
+    "pages": [
+     3,
+     7
+    ],
+    "topics": [
+     "CE101-04",
+     "CE101-08"
+    ]
+   },
+   {
+    "title": "Drying & plastic shrinkage",
+    "pages": [
+     8,
+     11
+    ],
+    "topics": [
+     "CE101-04"
+    ]
+   },
+   {
+    "title": "Creep",
+    "pages": [
+     12,
+     17
+    ],
+    "topics": [
+     "CE101-04"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M9_durability.pdf": {
+  "code": "CE101",
+  "seq": 9,
+  "title": "CE2155 Materials — durability",
+  "page_count": 25,
+  "sections": [
+   {
+    "title": "Frost, fire, wear",
+    "pages": [
+     3,
+     9
+    ],
+    "topics": [
+     "CE101-12"
+    ]
+   },
+   {
+    "title": "Sulfate & ASR",
+    "pages": [
+     10,
+     16
+    ],
+    "topics": [
+     "CE101-12"
+    ]
+   },
+   {
+    "title": "Corrosion & permeability",
+    "pages": [
+     17,
+     25
+    ],
+    "topics": [
+     "CE101-12",
+     "CE101-17"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M10_steel_property.pdf": {
+  "code": "CE101",
+  "seq": 10,
+  "title": "CE2155 Materials — steel property",
+  "page_count": 14,
+  "sections": [
+   {
+    "title": "Steel vs concrete; tensile test",
+    "pages": [
+     3,
+     14
+    ],
+    "topics": [
+     "CE101-15",
+     "CE101-02"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M11_steel_composition_and_structure.pdf": {
+  "code": "CE101",
+  "seq": 11,
+  "title": "CE2155 Materials — steel composition and structure",
+  "page_count": 19,
+  "sections": [
+   {
+    "title": "Unit cells",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE101-14"
+    ]
+   },
+   {
+    "title": "Lever rule",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE101-14"
+    ]
+   },
+   {
+    "title": "Fe–C diagram",
+    "pages": [
+     9,
+     17
+    ],
+    "topics": [
+     "CE101-14"
+    ]
+   },
+   {
+    "title": "Welding",
+    "pages": [
+     18,
+     19
+    ],
+    "topics": [
+     "CE101-16"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_M12_wood.pdf": {
+  "code": "CE101",
+  "seq": 12,
+  "title": "CE2155 Materials — wood",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Wood",
+    "pages": [
+     3,
+     15
+    ],
+    "topics": [
+     "CE101-18"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_MCE2155_material_part_review_session_Spring_2020.pdf": {
+  "code": "CE101",
+  "seq": 13,
+  "title": "CE2155 Materials — review session",
+  "page_count": 14,
+  "sections": [
+   {
+    "title": "Exam checklist",
+    "pages": [
+     2,
+     14
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-09",
+     "CE101-12",
+     "CE101-14"
     ]
    }
   ]

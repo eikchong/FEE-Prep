@@ -20,7 +20,7 @@ def test_study_notes_follow_the_source_order_and_pages():
 
 
 def test_every_module_covered_and_tutorials_mapped():
-    assert len(STUDY) == 16
+    assert len(STUDY) == 29
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
     assert len(TUTORIALS) == 22
@@ -70,3 +70,19 @@ def test_tut4_q5_strain_gauge():
     tau = 80e9 * gamma
     T = tau * (math.pi / 2 * 0.05 ** 4) / 0.05
     assert abs(tau / 1e6 - 57.6) < 0.05 and abs(T / 1e3 - 11.31) < 0.01
+
+
+def test_materials_worked_numbers():
+    # moisture adjustment
+    ca, fa = 1050 * (1 - 0.005), 710 * (1 + 0.045 - 0.013)
+    water = 200 + 1050 * 0.005 - 710 * (0.045 - 0.013)
+    assert abs(ca - 1044.75) < 0.01 and abs(fa - 732.72) < 0.01 and abs(water - 182.53) < 0.01
+    # thermal shrinkage
+    assert abs(10e-6 * 15 * 20000 - 3.0) < 1e-9
+    # lever rules
+    assert abs((58 - 50) / (50 - 46) - 2) < 1e-9
+    r = (6.7 - 0.8) / (0.8 - 0.025)
+    assert abs(r - 7.61) < 0.01 and abs(r / (1 + r) - 0.884) < 0.001
+    # packing factors
+    import math
+    assert round(math.pi / 6, 2) == 0.52 and round(math.sqrt(3) * math.pi / 8, 2) == 0.68 and round(math.sqrt(2) * math.pi / 6, 2) == 0.74

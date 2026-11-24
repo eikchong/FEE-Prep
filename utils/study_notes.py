@@ -731,3 +731,299 @@ TUTORIALS += [
  ("CE102/CE2155_Tut4_Q5_my_solution.pdf", 1, "My solution — Tut 4 Q5 (Mohr's circle for strain)", C4),
  (_TT.format(5), 1, "CE2155 Tut 5 — buckling: 5.55 kN/m, 14.5 kN, 48.0 MPa; W-section columns", C5),
 ]
+
+# ============================================================== CE101 — CE2155 materials part
+_M = "CE101/CE2155_M{}.pdf"
+MAT = {k: _M.format(k) for k in ["1_introduction", "2_Cement", "3_aggregate", "4_chemical_admixture",
+                                  "5_fresh_concrete", "6_hardened_concrete", "7_mix_design",
+                                  "8_creep_and_shrinkage", "9_durability", "10_steel_property",
+                                  "11_steel_composition_and_structure", "12_wood",
+                                  "CE2155_material_part_review_session_Spring_2020"]}
+
+STUDY[MAT["1_introduction"]] = {"code": "CE101", "title": "Materials 1 · Introduction", "sections": [
+ sec("Requirements & constituents", (3, 17),
+   ("md", "Construction materials must satisfy **performance** (strength, shape-ability, volume stability, "
+          "durability), **availability** (local, plentiful, cheap) and **sustainability** (low energy/CO₂, "
+          "recyclable). Concrete = cement + water + fine & coarse aggregate + air (+ admixtures); paste → mortar → "
+          "concrete. 60–90 % of construction material by volume is concrete; cement carries most of its CO₂."),
+ ),
+]}
+
+STUDY[MAT["2_Cement"]] = {"code": "CE101", "title": "Materials 2 · Cement & SCMs", "sections": [
+ sec("Portland cement: raw materials & clinker phases", (4, 6),
+   ("md", "≈ ⅔ limestone (CaO) + ⅓ clay/shale (SiO₂, Al₂O₃) → kiln → clinker, inter-ground with **gypsum**. "
+          "Cement notation: C = CaO, S = SiO₂, A = Al₂O₃, F = Fe₂O₃, H = H₂O, S̄ = SO₃.\n\n"
+          "| Phase | Hydrates | Role |\n|---|---|---|\n| C₃S | fast, high heat | early strength (first 3–4 weeks) |\n"
+          "| C₂S | slow | later strength |\n| C₃A | very fast (flash set) | controlled by gypsum |\n"
+          "| C₄AF | like C₃A, slower | little strength |\n\n"
+          "Cement manufacture ≈ **8 % of human CO₂** (fuel + CaCO₃ → CaO + CO₂). Fineness is critical."),
+ ),
+ sec("Hydration products & stages", (7, 13),
+   ("eq", r"2\mathrm{C_3S} + 11\mathrm{H} \rightarrow \mathrm{C_3S_2H_8} + 3\mathrm{CH} \qquad 2\mathrm{C_2S} + 9\mathrm{H} \rightarrow \mathrm{C_3S_2H_8} + \mathrm{CH}"),
+   ("md", "- **C-S-H**: 50–60 % of paste, huge surface area (100–700 m²/g) → van der Waals bonding → **main source "
+          "of strength**.\n- **CH** (portlandite): 20–25 %, weak, soluble → durability & strength problems.\n"
+          "- **C₃A + gypsum → ettringite (AFt)**; when gypsum is used up, ettringite + C₃A → **monosulfate (AFm)**. "
+          "Later external sulfate converts AFm back to AFt → expansion (sulfate attack).\n"
+          "- Early rate: **C₃A > C₃S > C₄AF > C₂S**.\n- Heat-evolution stages: dissolution → induction (dormant) → "
+          "acceleration (initial set) → deceleration (final set, hardening) → steady state."),
+   ("tip", "Ways to reduce early hydration rate: less C₃A/C₃S (Type IV), coarser cement, SCM replacement, "
+           "retarders, cooler concrete."),
+ ),
+ sec("ASTM cement types & microstructure", (14, 16),
+   ("md", "| ASTM | Name | Use |\n|---|---|---|\n| I | OPC | general |\n| II | modified | moderate sulfate / heat |\n"
+          "| III | rapid hardening | high early strength, cold weather, precast |\n| IV | low heat | mass concrete, hot "
+          "weather |\n| V | sulfate resisting | sulfate soils/groundwater |\n\n"
+          "Hardened paste porosity: **gel pores** (< 10 nm, part of C-S-H) and **capillary pores** (> 10 nm, "
+          "leftover water space — governs permeability). **ITZ** around aggregate is the weak zone. "
+          "EN equivalents: SS EN 197-1 CEM I–V, classes 32.5/42.5/52.5 N or R."),
+ ),
+ sec("Supplementary cementitious materials", (17, 27),
+   ("eq", r"\mathrm{SiO_2 + Ca(OH)_2 + H_2O \rightarrow C\text{-}S\text{-}H}\quad\text{(pozzolanic reaction)}"),
+   ("md", "- **Fly ash** — Class F (bituminous coal, SiO₂ + Al₂O₃ + Fe₂O₃ ≥ 70 %, pozzolanic), Class C (lignite, "
+          "≥ 50 %, some self-cementing); spherical → better flow.\n"
+          "- **Silica fume** — 10–100 nm, very reactive, sticky paste, early strength.\n"
+          "- **GGBS** — quenched blast-furnace slag (CaO 35–45 %, SiO₂ 32–38 %), latent hydraulic, activated by "
+          "cement.\n- Rice husk ash, natural pozzolans (Pozzuoli volcanic ash).\n\n"
+          "**Effects:** lower and slower heat; better cohesion; lower early but good long-term strength; less CH, "
+          "finer pores → **better sulfate and chloride resistance**."),
+ ),
+]}
+
+STUDY[MAT["3_aggregate"]] = {"code": "CE101", "title": "Materials 3 · Aggregate", "sections": [
+ sec("Role & classification", (3, 5),
+   ("md", "Inert granular filler occupying **65–75 %** of concrete volume; controls E, shrinkage, abrasion and "
+          "cost. Coarse ≥ 4.75 mm, fine < 4.75 mm. By origin: igneous (excellent), sedimentary (~80 % of supply), "
+          "metamorphic; recycled/industrial. By density: lightweight to heavyweight (> 2800 kg/m³)."),
+ ),
+ sec("Grading, maximum size & fineness modulus", (6, 11),
+   ("md", "Continuous grading minimises voids → less paste. **Maximum size** = smallest sieve through which all "
+          "passes; nominal max = sieve retaining 5–10 %; limited by member size and bar spacing."),
+   ("eq", r"FM = \frac{\sum\text{cumulative \% retained on standard sieves}}{100}"),
+   ("md", "Fine aggregate FM ≈ 2.3–3.1 (higher = coarser); used in mix design. Same FM ≠ same grading."),
+ ),
+ sec("Moisture states, specific gravity, unit weight", (12, 17),
+   ("md", "OD (oven-dry, 105 °C) → AD (air-dry) → **SSD** (pores full, surface dry) → wet."),
+   ("eq", r"A = \frac{W_{SSD} - W_{OD}}{W_{OD}},\quad MC = \frac{W_{stock} - W_{OD}}{W_{OD}},\quad SM = MC - A"),
+   ("md", "Absorption 1–2 % for normal aggregate; **effective absorption** = water needed AD → SSD. Bulk specific "
+          "gravity 2.5–2.8 (includes pores). Dry-rodded unit weight 1450–1750 kg/m³ (needed for ACI coarse "
+          "aggregate content)."),
+ ),
+]}
+
+STUDY[MAT["4_chemical_admixture"]] = {"code": "CE101", "title": "Materials 4 · Chemical admixtures", "sections": [
+ sec("Water reducers & superplasticisers", (3, 11),
+   ("md", "Cement particles **flocculate** (opposite surface charges) and trap water. WRAs disperse them by "
+          "**electrostatic repulsion** (adsorbed anionic molecules) and/or **steric hindrance** (long side chains, "
+          "PCE superplasticisers) → trapped water released.\n\n"
+          "Use them to (1) raise workability at the same w/c, (2) cut water → lower w/c → strength & durability, "
+          "(3) cut cement at the same w/c and slump (heat, cost, CO₂).\n\n"
+          "ASTM C494: **A** water-reducing, **D** WR + retarding, **E** WR + accelerating, **F** high-range WR "
+          "(superplasticiser), **G** HRWR + retarding."),
+ ),
+ sec("Air-entraining admixtures", (12, 16),
+   ("md", "Freezing water expands ~10 %. AE surfactants (hydrophilic head, hydrophobic tail) stabilise micro air "
+          "bubbles (> 1 µm) that give ice room and relieve pressure (cryo-suction draws water to the voids). "
+          "Side effects: better flow, **lower strength**. Third pore type after gel (< 10 nm) and capillary "
+          "(10 nm–1 µm)."),
+ ),
+ sec("Retarders & accelerators", (17, 23),
+   ("md", "**Retarders** (sugars, phosphates, borates) slow dissolution of Ca²⁺/Al³⁺ → longer plastic stage: hot "
+          "weather, large pours (no cold joints), long transport. **Accelerators**: CaCl₂ is the most effective but "
+          "**chlorides corrode reinforcement** — avoid in RC. Ready-mix concrete depends on admixtures.\n\n"
+          "Canada in winter → accelerator + air-entrainer; Singapore summer → retarder + water reducer."),
+ ),
+]}
+
+STUDY[MAT["5_fresh_concrete"]] = {"code": "CE101", "title": "Materials 5 · Fresh concrete", "sections": [
+ sec("Workability & the slump test", (3, 8),
+   ("md", "Workability = work needed for full compaction **without segregation** (flowability + cohesiveness). "
+          "Slump forms: **true**, **shear** (repeat), **collapse** (very wet/lean). Not for very low/high "
+          "workability; EN 206 recommends slump for 10–210 mm."),
+ ),
+ sec("Segregation & bleeding", (9, 11),
+   ("md", "**Segregation** = components separate (too wet or too dry, few fines, over-vibration) → cannot compact. "
+          "**Bleeding** = water rises before set → weak top layer, voids under bars and stones. Control: grading, "
+          "smaller max size, more/finer sand, SCMs, air entrainment, lower water."),
+ ),
+ sec("Factors affecting workability; slump loss", (12, 17),
+   ("md", "Water content (main factor), aggregate amount/grading/shape (rounded better), temperature (↑T ↓"
+          "workability), cement fineness, admixtures (fly ash ↑, silica fume ↓ without SP). **Slump loss** is "
+          "roughly linear, fastest in the first 0.5–1 h (hydration, adsorption, evaporation) → start higher, use "
+          "retarders/SP, avoid uncontrolled re-tempering water."),
+ ),
+ sec("Setting & plastic shrinkage", (18, 23),
+   ("md", "Setting by penetration resistance (ASTM C403): **initial set 3.5 MPa, final set 27.6 MPa**. "
+          "**Plastic shrinkage** cracking when evaporation rate > bleeding rate (hot, windy, dry) → moisten "
+          "formwork, windbreaks, cool concrete, fog spray, curing membrane."),
+ ),
+]}
+
+STUDY[MAT["6_hardened_concrete"]] = {"code": "CE101", "title": "Materials 6 · Hardened concrete", "sections": [
+ sec("Structure & compressive behaviour", (3, 6),
+   ("md", "Aggregate is linear-brittle, paste is non-linear; concrete is weaker than both because of the **ITZ** "
+          "(20–40 µm, porous, oriented CH, ettringite, pre-existing micro-cracks). Micro-cracks stable to ~30 % of "
+          "ultimate, then grow; unstable near failure. Test ≥ 3 specimens; reject one deviating > 15 % from the "
+          "mean."),
+ ),
+ sec("Tensile strength tests", (7, 10),
+   ("eq", r"f_{t,split} = \frac{2P}{\pi LD} \qquad R = \frac{PL}{bd^2}\ \ \text{(4-point, break in middle third)}"),
+   ("md", "Splitting/f_c ≈ 0.08–0.14; flexural/f_c ≈ 0.11–0.23; the ratio falls as strength rises. Splitting ≈ "
+          "5–12 % above direct tension."),
+ ),
+ sec("Factors affecting strength", (11, 14),
+   ("md", "**w/c** (porosity) dominates; in HSC the ITZ is no longer the weak link. Age: f₂₈/f₇ ≈ 1.3–1.7. Higher "
+          "curing temperature → faster gain but **lower ultimate** strength. Hydration stops below **80 % RH** — "
+          "curing must supply moisture. Early hydration rate: Type III > I > II > V > IV."),
+ ),
+ sec("Modulus of elasticity", (15, 17),
+   ("eq", r"E_c = 0.043\,w^{1.5}\sqrt{f'_c}\ \text{MPa (ACI 318; } w\text{ in kg/m}^3)"),
+   ("md", "Secant modulus (ASTM C469 at 40 % f′c; BS 1881 at 33 %). E rises with aggregate stiffness/volume, falls "
+          "with porosity; **saturated specimens show ~15 % higher E** (opposite to strength). Eurocode: "
+          "E_cm = 22(f_cm/10)^0.3 GPa."),
+ ),
+]}
+
+STUDY[MAT["7_mix_design"]] = {"code": "CE101", "title": "Materials 7 · Mix design (ACI 211)", "sections": [
+ sec("Design aims & fundamentals", (3, 6),
+   ("md", "Design for workability, strength, durability, economy, appearance. **Abrams' law** (empirical): "
+          "f_c = A/B^{w/c} (A ≈ 96.5 MPa, B ≈ 4). Larger, well-graded aggregate → less water; more sand → more "
+          "cohesive."),
+ ),
+ sec("Required average strength", (7, 9),
+   ("eq", r"f'_{cr} = f'_c + 1.34s \qquad f'_{cr} = f'_c + 2.33s - 3.5\ \ (f'_c \le 35\ \text{MPa; use the larger})"),
+   ("md", "No data on s: f′c < 20 → +7.0; 20–35 → +8.5; > 35 → 1.1f′c + 5.0 MPa (conservative). "
+          "Eurocode/SS EN 206 practice uses target mean f_ck + ≈1.64s."),
+ ),
+ sec("The 10 steps", (10, 26),
+   ("steps", ["Required information (gradings, FM, dry-rodded unit weight, specific gravities, absorption, member "
+              "sizes, exposure).",
+              "Choose slump for the member type.",
+              "Max aggregate size ≤ 1/5 narrowest form dimension, ¾ clear bar spacing, ¾ cover, ⅓ slab depth.",
+              "Mixing water & entrapped air from the table (larger aggregate → less water; more slump → more water).",
+              "w/c = lower of strength (table) and durability (exposure) limits; Singapore (SS 544) — go one exposure "
+              "class higher for the hot climate.",
+              "Cement = water ÷ w/c (check minimum cement content).",
+              "Coarse aggregate = (table volume for max size & sand FM) × dry-rodded unit weight.",
+              "Fine aggregate by the mass method (unit weight − others) or the absolute-volume method.",
+              "Adjust for aggregate moisture (SSD basis → as-batched).",
+              "Trial batch and adjust."]),
+   ("ex", "Moisture adjustment (lecture example, worked)",
+    "SSD mix: cement 400, water 200, CA 1050, FA 710 kg/m³. CA air-dry (absorption 1 %, effective absorption 0.5 %) → "
+    "batch 1050 × 0.995 = 1044.8 kg, +5.3 kg water; FA wet (absorption 1.3 %, MC 4.5 % → surface moisture 3.2 %) → "
+    "batch 710 × 1.032 = 732.7 kg, −22.7 kg water → **water ≈ 182.5 kg/m³**."),
+   ("tip", "cube ≈ 1.25 × cylinder strength (course assumption)."),
+ ),
+ sec("Trial-batch adjustments", (27, 29),
+   ("md", "Strength low (workability OK) → lower w/c by adding cement at the same water. Slump low (strength OK) → "
+          "add water **and** cement (~6 kg/m³ water ≈ +25 mm slump) or WRA/SP. Segregation → more fine, less coarse."),
+ ),
+]}
+
+STUDY[MAT["8_creep_and_shrinkage"]] = {"code": "CE101", "title": "Materials 8 · Creep & shrinkage", "sections": [
+ sec("Autogenous & thermal shrinkage", (3, 7),
+   ("md", "**Autogenous**: hydration products occupy less volume than reactants (≈ 15 % less for C₃S), early age, "
+          "no moisture loss; significant at low w/c. **Thermal**: hydration heat then cooling under restraint "
+          "(mass pours, walls cast on old bases)."),
+   ("eq", r"\varepsilon = \alpha\Delta T = 10\times10^{-6}\times15 = 150\times10^{-6},\qquad \sigma = E\varepsilon = 20\,000\times150\times10^{-6} = 3\ \text{MPa}"),
+   ("md", "3 MPa ≈ concrete tensile strength → cracking. Control: chilled water/ice/aggregate, place in the cool of "
+          "the day, low cement / low-heat cement / SCMs, cooling pipes, insulation."),
+ ),
+ sec("Drying & plastic shrinkage", (8, 11),
+   ("md", "Drying shrinkage from **capillary tension** in drying pores. More with more paste (less aggregate), "
+          "softer aggregate, drier air, thinner members. Plastic shrinkage = while still plastic (evaporation > "
+          "bleeding); drying shrinkage = after hardening."),
+ ),
+ sec("Creep", (12, 16),
+   ("md", "Strain increasing with time under constant stress (re-organisation of C-S-H, moisture movement). "
+          "Models: Maxwell (spring + dashpot in series), Kelvin-Voigt (parallel). More creep with more paste, "
+          "softer aggregate, **higher stress**."),
+   ("tip", "Check the figure on p. 15: the slide states *less* creep in drier air and in smaller sizes. The usual "
+           "textbook/EC2 trend (drying creep) is the opposite — creep coefficient φ rises at lower RH and smaller "
+           "notional size h₀ (EC2 Annex B). Confirm which case the slide's data shows before relying on it."),
+ ),
+]}
+
+STUDY[MAT["9_durability"]] = {"code": "CE101", "title": "Materials 9 · Durability", "sections": [
+ sec("Physical attack: frost, fire, wear", (3, 9),
+   ("md", "**Frost** (cracking, scaling) → air entrainment. **Fire**: 40–500 °C C-S-H dries, steam pressure "
+          "(denser concrete spalls more); > 700 °C chemical decomposition → refractory (high-alumina) cement up "
+          "to 1600 °C. **Abrasion/erosion** → low w/c and hard aggregate at the surface, avoid laitance."),
+ ),
+ sec("Chemical attack: sulfate & ASR", (10, 16),
+   ("md", "**Sulfate**: sulfate enters → gypsum (≈ 120 % expansion) and AFm → ettringite (≈ 55 % solid volume "
+          "increase) → spalling. Mitigate: dense low-w/c concrete, SCMs/blended cement, low C₃A, SRPC.\n\n"
+          "**ASR** ('concrete cancer'): alkali pore solution (pH > 13) attacks reactive silica → expansive gel, "
+          "map cracking, no cure. Mitigate: SCMs (pH < 11), non-reactive aggregate, low-alkali cement."),
+ ),
+ sec("Reinforcement corrosion & permeability", (17, 24),
+   ("md", "Corrosion products expand → cracking, spalling, exposed bars. Mitigate: waterproof coatings, adequate "
+          "**cover**, low-permeability concrete (low w/c, SCMs, curing), limit **chlorides** (catalyst) in "
+          "materials and ingress.\n\n**Permeability** is the common thread: depends on porosity, capillary pore "
+          "size and continuity — **w/c is the single most important factor**."),
+ ),
+]}
+
+STUDY[MAT["10_steel_property"]] = {"code": "CE101", "title": "Materials 10 · Steel properties", "sections": [
+ sec("Steel vs concrete; tensile behaviour", (3, 13),
+   ("md", "Steel: ~200× concrete in tension, ~20× in compression, 3× the density, no volume change, ~20× the price "
+          "and ~30× the CO₂ per unit. Tensile test: elastic → yield → strain hardening → necking → fracture. "
+          "Unload/reload follows the same E (strain hardening raises the yield point). Strength and ductility "
+          "trade off; toughness = area under the σ–ε curve."),
+   ("eq", r"\sigma_T = \sigma(1 + \varepsilon),\qquad \varepsilon_T = \ln(1 + \varepsilon)\quad\text{(constant volume)}"),
+ ),
+]}
+
+STUDY[MAT["11_steel_composition_and_structure"]] = {"code": "CE101", "title": "Materials 11 · Steel composition & structure", "sections": [
+ sec("Metallic bonding & unit cells", (3, 4),
+   ("md", "Non-directional metallic bonds let planes slip (ductility); C-S-H's covalent bonds break instead.\n\n"
+          "| Cell | Atoms | a vs r | Packing |\n|---|---|---|---|\n| simple cubic | 1 | a = 2r | 0.52 |\n"
+          "| BCC | 2 | √3a = 4r | 0.68 |\n| FCC | 4 | √2a = 4r | 0.74 |"),
+ ),
+ sec("Phase diagrams & the lever rule", (5, 8),
+   ("eq", r"\frac{M_{solid}}{M_{liquid}} = \frac{w_0 - w_L}{w_S - w_0}"),
+   ("ex", "Cu–50 % Ni at 1300 °C", "Liquid 46 % Ni, solid α 58 % Ni → M_L/M_S = (58 − 50)/(50 − 46) = 2:1 → ⅔ liquid, "
+          "⅓ solid."),
+ ),
+ sec("Fe–C diagram: ferrite, austenite, cementite, pearlite", (9, 17),
+   ("md", "δ-iron (BCC) → 1401 °C → **austenite γ** (FCC) → 908 °C → **ferrite α** (BCC). C solubility: γ 2.0 %, "
+          "δ 0.10 %, α 0.025 %. **Cementite Fe₃C** (6.7 % C) is very hard and brittle. Eutectoid at **727 °C, "
+          "0.8 % C**: γ → α + Fe₃C as thin plates = **pearlite**.\n\n"
+          "- Hypo-eutectoid (< 0.8 % C, structural steels): pro-eutectoid ferrite + pearlite.\n"
+          "- Eutectoid (0.8 %): pearlite.\n- Hyper-eutectoid (> 0.8 %): pro-eutectoid Fe₃C + pearlite."),
+   ("ex", "Eutectoid steel just below 727 °C", "M_α/M_Fe₃C = (6.7 − 0.8)/(0.8 − 0.025) = 7.6 → ≈ 88 % ferrite, 12 % "
+          "cementite."),
+ ),
+ sec("Welding & weldability", (18, 19),
+   ("md", "Metal next to the weld exceeds 727 °C (austenite); on fast cooling the HAZ can form **martensite** "
+          "(brittle). Weldability decreases as carbon and alloy content rise (→ carbon equivalent, preheat)."),
+ ),
+]}
+
+STUDY[MAT["12_wood"]] = {"code": "CE101", "title": "Materials 12 · Wood (not examined in CE2155)", "sections": [
+ sec("Structure, moisture & strength", (3, 14),
+   ("md", "Low-carbon material (mass-timber towers). Sapwood/heartwood; earlywood (large thin cells) vs latewood "
+          "(dense, dominates shrinkage). Directions: longitudinal (strongest), radial, tangential. Softwoods = "
+          "tracheids; hardwoods = fibres + vessels. Moisture as % of oven-dry mass; bound vs free water. **Fibre "
+          "saturation point ≈ 25–30 %**: above it strength is constant; below it strength rises and the wood "
+          "shrinks as it dries. Seasoning: air or kiln."),
+   ("tip", "Linked to CE101-18 (mass engineered timber, CLT, glulam) — tested in FEE 2019 Part 1."),
+ ),
+]}
+
+STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101", "title": "Materials review — exam checklist", "sections": [
+ sec("What you must be able to do", (2, 14),
+   ("md", "- **Cement:** raw materials, clinker phases, hydration products (C-S-H, CH, ettringite, monosulfate — "
+          "no chemical formulae needed), ASTM Types I–V, ITZ & porosity.\n"
+          "- **SCMs:** pozzolanic reaction; fly ash F/C, slag, silica fume, RHA — reactivity, fineness, effect on "
+          "workability, heat, strength, durability.\n"
+          "- **Aggregate:** specific gravity vs unit weight, classification, FM, absorption, total/surface moisture.\n"
+          "- **Admixtures:** WRA/SP, AE, retarder, accelerator — mechanism, effects, applications.\n"
+          "- **Fresh concrete:** workability, slump, segregation & bleeding, slump loss, plastic vs drying shrinkage.\n"
+          "- **Hardened:** factors on strength (w/c, age, curing, humidity, cement, aggregate) and on E.\n"
+          "- **Mix design:** be able to do the **ACI 10-step design**.\n"
+          "- **Dimensional stability:** origin, factors and mitigation of each shrinkage type and creep.\n"
+          "- **Durability:** mechanisms & mitigation; w/c, cement content, permeability.\n"
+          "- **Steel:** tensile test, strength vs ductility, true vs engineering stress; unit cells, lever rule, "
+          "Fe–C diagram (ferrite, cementite, pearlite).\n- Wood: not examined."),
+ ),
+]}
