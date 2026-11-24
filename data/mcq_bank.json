@@ -916,5 +916,41 @@
   ],
   "answer": 2,
   "explain": "M/EI spandrel: h = wL²/2EI, area = (L)(h)/3 = wL³/6EI, centroid 3L/4 from the tip → δ = wL⁴/8EI = 10 × 256/(8 × 20 000) = 0.016 m = 16 mm."
+ },
+ {
+  "id": "M-CE102-016",
+  "code": "CE102",
+  "topic": "CE102-01",
+  "source": {
+   "doc": "CE102/CE1101_S1_Equilibrium_of_Particles.pdf",
+   "page": 18
+  },
+  "q": "Two forces of 80 N and 120 N act at a point with 60° between their lines of action. Using the cosine rule, the resultant is closest to:",
+  "options": [
+   "105.8 N",
+   "144.2 N",
+   "174.4 N",
+   "200.0 N"
+  ],
+  "answer": 2,
+  "explain": "Parallelogram: R² = a² + b² + 2ab cosθ = 6400 + 14 400 + 2 × 80 × 120 × 0.5 = 30 400 → R = 174.4 N. (105.8 N wrongly uses −2ab cosθ with the included angle of the force triangle mistaken.)"
+ },
+ {
+  "id": "M-CE102-017",
+  "code": "CE102",
+  "topic": "CE102-02",
+  "source": {
+   "doc": "CE102/CE1101_S4_Frame_and_Cable_Structures.pdf",
+   "page": 31
+  },
+  "q": "A cable spans 10 m between supports at the same level and carries a single 20 kN load at midspan with a sag of 1.0 m (cable weight neglected). The maximum cable tension is closest to:",
+  "options": [
+   "10.0 kN",
+   "50.0 kN",
+   "51.0 kN",
+   "100 kN"
+  ],
+  "answer": 2,
+  "explain": "Vertical reactions 10 kN each. Moment about the load point for half the cable: H × 1.0 = 10 × 5 → H = 50 kN. T_max = √(50² + 10²) = 51.0 kN (at the supports)."
  }
 ]

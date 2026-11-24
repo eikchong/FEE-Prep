@@ -205,6 +205,10 @@ M2 = "CE102/CE1101_M2_Torsional_Members.pdf"
 M3 = "CE102/CE1101_M3_Flexural_Members.pdf"
 M4 = "CE102/CE1101_M4_Stress_Strain_Bending.pdf"
 M5 = "CE102/CE1101_M5_Deflection_of_Beams.pdf"
+S1 = "CE102/CE1101_S1_Equilibrium_of_Particles.pdf"
+S2_ = "CE102/CE1101_S2_Equilibrium_of_Rigid_Bodies.pdf"
+S3 = "CE102/CE1101_S3_Truss_Structures.pdf"
+S4 = "CE102/CE1101_S4_Frame_and_Cable_Structures.pdf"
 
 CE102 = [
  S("1 · Fundamental principles & laws", D102, 2, [
@@ -217,6 +221,11 @@ CE102 = [
  S("2 · Equilibrium of particles", D102, 4, [
    F("Resultant of concurrent forces", r"R_x = \sum F_x,\quad R_y = \sum F_y,\quad R = \sqrt{R_x^2 + R_y^2}",
      note="particle in equilibrium: R = 0", src=(D102, 4)),
+   F("Parallelogram law: sine & cosine rules (S1)", r"R^2 = a^2 + b^2 + 2ab\cos\theta,\quad \frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{R}{\sin\gamma}",
+     note="θ = angle between the two forces; for > 2 forces use Cartesian components", src=(S1, 18)),
+   F("Free-body diagram (S1)", note="Isolate completely; show all external forces (weights, reactions, cable tensions); "
+     "internal forces appear only where a member is cut; frictionless pulley → equal tension both sides",
+     src=(S1, 5)),
  ]),
  S("3 · Moments & equilibrium of rigid bodies", D102, 5, [
    F("Moment of a force about a point", r"\mathbf{M}_O = \mathbf{r} \times \mathbf{F}",
@@ -228,6 +237,10 @@ CE102 = [
    F("2-D equilibrium", r"\sum F_x = 0,\quad \sum F_y = 0,\quad \sum M_O = 0",
      note="3 equations, 3 unknowns; alternatively ΣF_x + two moment equations, or three moment equations about "
           "non-collinear points", src=(D102, 8)),
+   F("Couple; force–couple equivalence (S2)", r"M = Fd\ \ \mathrm{(same\ about\ every\ point)},\quad F\ \mathrm{at}\ e \equiv F + M = Fe",
+     src=(S2_, 8)),
+   F("Support reactions (S2)", note="A support exerts a force in each direction it prevents translation and a moment if it "
+     "prevents rotation: roller 1, pin 2, fixed 3", src=(S2_, 19)),
  ]),
  S("4 · Free-body diagrams; two- & three-force members", D102, 9, [
    F("Two-force member", note="Forces equal, opposite and collinear (along the line joining the two points)",
@@ -248,6 +261,21 @@ CE102 = [
    F("Method of sections", note="Cut ≤ 3 members with unknown forces; take moments about the intersection of two",
      src=(D102, 18)),
    F("Frames", note="Dismember; identify two-force members first; pins carry forces between parts", src=(D102, 21)),
+   F("Special joints (S3)", note="Unloaded L-joint → both zero; unloaded T-joint → stem zero; collinear pair + load along "
+     "third → third = P", src=(S3, 6)),
+   F("Truss solution strategy (S3)", note="FBD of whole truss → reactions → mark special joints → joints or sections; "
+     "a truss behaves like a beam (top chord compression, bottom chord tension under gravity)", src=(S3, 20)),
+   F("Truss vs frame vs machine (S4)", note="Frames: ≥ 1 multi-force member, loads anywhere, rigid (reactions from overall "
+     "equilibrium); machines: non-rigid, transmit/modify forces, need dismembering for reactions", src=(S4, 3)),
+   F("Frame solution steps (S4)", note="Whole FBD → reactions → dismember → two-force members first → moments about the "
+     "point where all but one unknown intersect", src=(S4, 5)),
+ ]),
+ S("5a · Cables under concentrated loads (S4)", S4, 26, [
+   F("Cable segments", note="Straight between loads (two-force segments); 4 support unknowns → need one extra fact: "
+     "position of a point, tension/slope at a point, or total length", src=(S4, 27)),
+   F("Horizontal tension constant", r"\sum M_{cut} = 0:\ T_x\,y_D = \sum M\ \mathrm{(loads\ and\ reactions\ about\ D)}",
+     note="T_x is the same throughout (no horizontal loads); T_max at the steepest segment", src=(S4, 31)),
+   F("Given cable length", r"L_c = \sum_i \sqrt{(x_i - x_{i-1})^2 + (y_i - y_{i-1})^2}", src=(S4, 34)),
  ]),
  S("6 · Stress, strain & Hooke's law", D102, 24, [
    F("State of stress", note="Six independent components (σx, σy, σz, τxy, τyz, τzx)", src=(D102, 25)),

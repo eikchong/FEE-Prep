@@ -28,8 +28,11 @@ def test_outlines_valid_and_in_order():
 def test_sheet_entries_cite_real_pages_in_lecture_order(code):
     secs = [s for s in sections(code) if s.get("src")]
     assert secs, code
-    pages = [s["src"]["page"] for s in secs]
-    assert pages == sorted(pages), f"{code} sections not in lecture order: {pages}"
+    by_doc = {}
+    for s_ in secs:   # lecture order within each source file
+        by_doc.setdefault(s_["src"]["doc"], []).append(s_["src"]["page"])
+    for doc, pages in by_doc.items():
+        assert pages == sorted(pages), f"{code} sections from {doc} not in lecture order: {pages}"
     for s in secs:
         for f in s["items"]:
             assert f["src"], (code, f["title"])

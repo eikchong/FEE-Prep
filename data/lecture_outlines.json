@@ -1175,5 +1175,207 @@
     ]
    }
   ]
+ },
+ "CE102/CE1101_S1_Equilibrium_of_Particles.pdf": {
+  "code": "CE102",
+  "title": "CE1101 S1 — Statics of particles",
+  "page_count": 43,
+  "sections": [
+   {
+    "title": "Forces as vectors; transmissibility",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   },
+   {
+    "title": "Free-body diagrams; external vs internal forces; FBD examples (trolley, floating crane, landing, walkway)",
+    "pages": [
+     5,
+     17
+    ],
+    "topics": [
+     "CE102-01",
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Resultants: parallelogram, sine & cosine rules, Cartesian components",
+    "pages": [
+     18,
+     30
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   },
+   {
+    "title": "Equilibrium of a particle; rope & pulley examples",
+    "pages": [
+     31,
+     43
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_S2_Equilibrium_of_Rigid_Bodies.pdf": {
+  "code": "CE102",
+  "title": "CE1101 S2 — Equilibrium of rigid bodies",
+  "page_count": 34,
+  "sections": [
+   {
+    "title": "Moment of a force",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Couples; force–couple equivalence; resultants",
+    "pages": [
+     8,
+     16
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Rigid-body equilibrium; supports; two- & three-force members",
+    "pages": [
+     17,
+     25
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Case study: Leaning Tower of Pisa soil pressure",
+    "pages": [
+     26,
+     34
+    ],
+    "topics": [
+     "CE102-02",
+     "CE203-06"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_S3_Truss_Structures.pdf": {
+  "code": "CE102",
+  "title": "CE1101 S3 — Truss structures",
+  "page_count": 59,
+  "sections": [
+   {
+    "title": "Truss assumptions; method of joints; special joints (zero-force members)",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE102-04"
+    ]
+   },
+   {
+    "title": "Method of sections",
+    "pages": [
+     10,
+     19
+    ],
+    "topics": [
+     "CE102-04"
+    ]
+   },
+   {
+    "title": "Solution strategy",
+    "pages": [
+     20,
+     21
+    ],
+    "topics": [
+     "CE102-04",
+     "CE102-05"
+    ]
+   },
+   {
+    "title": "Truss failures; Skagit bridge examples; truss as a beam",
+    "pages": [
+     22,
+     47
+    ],
+    "topics": [
+     "CE102-04"
+    ]
+   },
+   {
+    "title": "Arch roof truss & homework",
+    "pages": [
+     48,
+     59
+    ],
+    "topics": [
+     "CE102-04",
+     "CE102-05"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_S4_Frame_and_Cable_Structures.pdf": {
+  "code": "CE102",
+  "title": "CE1101 S4 — Frames, machines & cables",
+  "page_count": 45,
+  "sections": [
+   {
+    "title": "Trusses vs frames vs machines; solution steps",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Machines & frames examples (backhoe, billboard frame)",
+    "pages": [
+     7,
+     25
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Cables under concentrated loads",
+    "pages": [
+     26,
+     36
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Cable examples (cable car, slack wire, homework)",
+    "pages": [
+     37,
+     45
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   }
+  ]
  }
 }
