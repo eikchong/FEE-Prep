@@ -1,0 +1,22 @@
+[
+ {"codes": ["CE101"], "title": "Mechanics of Materials", "authors": "Hibbeler", "edition": "9e"},
+ {"codes": ["CE102", "CE103"], "title": "Fundamentals of Structural Analysis", "authors": "West & Geschwindner", "edition": "2e"},
+ {"codes": ["CE104", "CE203"], "title": "Craig's Soil Mechanics", "authors": "Knappett & Craig", "edition": "9e"},
+ {"codes": ["CE105"], "title": "Fluid Mechanics with Engineering Applications", "authors": "Finnemore & Franzini", "edition": "10e"},
+ {"codes": ["CE105"], "title": "A Brief Introduction to Fluid Mechanics", "authors": "Young, Munson & Okiishi", "edition": "3e"},
+ {"codes": ["CE201"], "title": "Reinforced and Prestressed Concrete Design to EC2", "authors": "O'Brien, Dixon & Sheils", "edition": "2e"},
+ {"codes": ["CE201"], "title": "Reinforced Concrete Design to Eurocodes", "authors": "Bhatt, MacGinley & Choo", "edition": "4e"},
+ {"codes": ["CE202"], "title": "Designers' Guide to Eurocode 3: EN 1993-1-1", "authors": "Gardner & Nethercot", "edition": "2e"},
+ {"codes": ["CE202"], "title": "SCI P362 — Steel Building Design: Concise Eurocodes", "authors": "SCI", "edition": ""},
+ {"codes": ["CE202"], "title": "SCI P364 — Open Sections in Fire / Design data (Blue Book)", "authors": "SCI", "edition": ""},
+ {"codes": ["CE202"], "title": "Structural Design of Steelwork to EN 1993 and EN 1994", "authors": "Martin & Purkiss", "edition": "3e"},
+ {"codes": ["CE203"], "title": "Foundation Design: Principles and Practices", "authors": "Coduto et al.", "edition": "2e"},
+ {"codes": ["CE203"], "title": "Pile Design and Construction Practice", "authors": "Tomlinson & Woodward", "edition": "6e"},
+ {"codes": ["CE204"], "title": "Principles of Highway Engineering and Traffic Analysis", "authors": "Mannering & Washburn", "edition": "7e"},
+ {"codes": ["CE204"], "title": "Traffic and Highway Engineering", "authors": "Garber & Hoel", "edition": "4e"},
+ {"codes": ["CE204"], "title": "Pavement Design and Materials", "authors": "Papagiannakis & Masad", "edition": ""},
+ {"codes": ["CE205"], "title": "Water Resources Engineering", "authors": "Linsley et al.", "edition": ""},
+ {"codes": ["CE205"], "title": "Applied Hydrology", "authors": "Chow, Maidment & Mays", "edition": ""},
+ {"codes": ["CE205"], "title": "Hydraulics in Civil and Environmental Engineering", "authors": "Chadwick et al.", "edition": "4e"},
+ {"codes": ["CE206"], "title": "Water Supply and Pollution Control", "authors": "Viessman & Hammer", "edition": "7e"}
+]

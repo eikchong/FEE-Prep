@@ -1,0 +1,730 @@
+{
+ "subjects": [
+  {
+   "code": "CE101",
+   "name": "Mechanics of Materials",
+   "part": 1,
+   "themes": [],
+   "topics": [
+    {
+     "id": "CE101-01",
+     "name": "Strength, stiffness & deformability",
+     "group": "Mechanics of materials"
+    },
+    {
+     "id": "CE101-02",
+     "name": "Stress–strain behaviour",
+     "group": "Mechanics of materials"
+    },
+    {
+     "id": "CE101-03",
+     "name": "Ductility & brittle fracture",
+     "group": "Mechanics of materials"
+    },
+    {
+     "id": "CE101-04",
+     "name": "Creep, creep rupture & relaxation",
+     "group": "Mechanics of materials"
+    },
+    {
+     "id": "CE101-05",
+     "name": "Cyclic loading & fatigue",
+     "group": "Mechanics of materials"
+    },
+    {
+     "id": "CE101-06",
+     "name": "Concrete materials (cement, aggregates, admixtures)",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-07",
+     "name": "Fresh & hardened concrete properties",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-08",
+     "name": "Mixing, placing & curing",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-09",
+     "name": "Mix design",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-10",
+     "name": "Destructive & non-destructive testing",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-11",
+     "name": "Quality control",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-12",
+     "name": "Durability of concrete",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-13",
+     "name": "Special concretes",
+     "group": "Concrete technology"
+    },
+    {
+     "id": "CE101-14",
+     "name": "Basic metallurgy of steel",
+     "group": "Steel"
+    },
+    {
+     "id": "CE101-15",
+     "name": "Mechanical properties & applications of steel",
+     "group": "Steel"
+    },
+    {
+     "id": "CE101-16",
+     "name": "Welding",
+     "group": "Steel"
+    },
+    {
+     "id": "CE101-17",
+     "name": "Corrosion of steel",
+     "group": "Steel"
+    }
+   ]
+  },
+  {
+   "code": "CE102",
+   "name": "Structural Mechanics",
+   "part": 1,
+   "themes": [],
+   "topics": [
+    {
+     "id": "CE102-01",
+     "name": "Statics & kinetics of particles",
+     "group": ""
+    },
+    {
+     "id": "CE102-02",
+     "name": "Rigid-body equilibrium",
+     "group": ""
+    },
+    {
+     "id": "CE102-03",
+     "name": "Kinematics & plane motion of rigid bodies",
+     "group": ""
+    },
+    {
+     "id": "CE102-04",
+     "name": "Simple trusses & beams",
+     "group": ""
+    },
+    {
+     "id": "CE102-05",
+     "name": "Compound & complex trusses",
+     "group": ""
+    },
+    {
+     "id": "CE102-06",
+     "name": "Tension & compression members",
+     "group": ""
+    },
+    {
+     "id": "CE102-07",
+     "name": "Torsion",
+     "group": ""
+    },
+    {
+     "id": "CE102-08",
+     "name": "Bending",
+     "group": ""
+    },
+    {
+     "id": "CE102-09",
+     "name": "BM, SF & axial force in beams & frames",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE103",
+   "name": "Structural Analysis",
+   "part": 1,
+   "themes": [],
+   "topics": [
+    {
+     "id": "CE103-01",
+     "name": "Virtual work & energy theorems",
+     "group": ""
+    },
+    {
+     "id": "CE103-02",
+     "name": "Analysis of indeterminate structures",
+     "group": ""
+    },
+    {
+     "id": "CE103-03",
+     "name": "Influence lines",
+     "group": ""
+    },
+    {
+     "id": "CE103-04",
+     "name": "Slope-deflection method",
+     "group": ""
+    },
+    {
+     "id": "CE103-05",
+     "name": "Moment distribution",
+     "group": ""
+    },
+    {
+     "id": "CE103-06",
+     "name": "Plastic analysis",
+     "group": ""
+    },
+    {
+     "id": "CE103-07",
+     "name": "Equilibrium, compatibility & force–displacement",
+     "group": ""
+    },
+    {
+     "id": "CE103-08",
+     "name": "Direct stiffness method (trusses, beams, frames)",
+     "group": ""
+    },
+    {
+     "id": "CE103-09",
+     "name": "Elastic stability of frames",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE104",
+   "name": "Soil Mechanics",
+   "part": 1,
+   "themes": [],
+   "topics": [
+    {
+     "id": "CE104-01",
+     "name": "Basic geology",
+     "group": ""
+    },
+    {
+     "id": "CE104-02",
+     "name": "Unified Soil Classification System (USCS)",
+     "group": ""
+    },
+    {
+     "id": "CE104-03",
+     "name": "Mechanical properties & phase relations",
+     "group": ""
+    },
+    {
+     "id": "CE104-04",
+     "name": "Effective stress",
+     "group": ""
+    },
+    {
+     "id": "CE104-05",
+     "name": "Shear strength & Mohr–Coulomb (drained/undrained)",
+     "group": ""
+    },
+    {
+     "id": "CE104-06",
+     "name": "Compressibility",
+     "group": ""
+    },
+    {
+     "id": "CE104-07",
+     "name": "Seepage",
+     "group": ""
+    },
+    {
+     "id": "CE104-08",
+     "name": "Consolidation & Terzaghi rate theory",
+     "group": ""
+    },
+    {
+     "id": "CE104-09",
+     "name": "Settlement",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE105",
+   "name": "Fluid Mechanics",
+   "part": 1,
+   "themes": [],
+   "topics": [
+    {
+     "id": "CE105-01",
+     "name": "Fluid properties",
+     "group": ""
+    },
+    {
+     "id": "CE105-02",
+     "name": "Hydrostatic pressure & thrust",
+     "group": ""
+    },
+    {
+     "id": "CE105-03",
+     "name": "Buoyancy & floating stability",
+     "group": ""
+    },
+    {
+     "id": "CE105-04",
+     "name": "Continuity",
+     "group": ""
+    },
+    {
+     "id": "CE105-05",
+     "name": "Bernoulli equation",
+     "group": ""
+    },
+    {
+     "id": "CE105-06",
+     "name": "Linear momentum",
+     "group": ""
+    },
+    {
+     "id": "CE105-07",
+     "name": "Dimensional analysis",
+     "group": ""
+    },
+    {
+     "id": "CE105-08",
+     "name": "Hydraulic models & similitude",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE201",
+   "name": "Reinforced & Prestressed Concrete Design",
+   "part": 2,
+   "themes": [
+    "Precast beam M_Rd incl. construction stage",
+    "Short column: N then N + M"
+   ],
+   "topics": [
+    {
+     "id": "CE201-01",
+     "name": "Members & loads",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-02",
+     "name": "Bending",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-03",
+     "name": "Shear",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-04",
+     "name": "Torsion",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-05",
+     "name": "Bond & anchorage",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-06",
+     "name": "Corbels",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-07",
+     "name": "Serviceability (deflection & cracking)",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-08",
+     "name": "Durability & cover",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-09",
+     "name": "Short columns",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-10",
+     "name": "Slender columns",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-11",
+     "name": "Slab systems",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-12",
+     "name": "Punching shear",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-13",
+     "name": "Foundations",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-14",
+     "name": "Retaining walls",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-15",
+     "name": "Detailing",
+     "group": "Reinforced concrete"
+    },
+    {
+     "id": "CE201-16",
+     "name": "PSC concepts, materials & systems",
+     "group": "Prestressed concrete"
+    },
+    {
+     "id": "CE201-17",
+     "name": "Prestress losses & time-dependent deformation",
+     "group": "Prestressed concrete"
+    },
+    {
+     "id": "CE201-18",
+     "name": "PSC flexure",
+     "group": "Prestressed concrete"
+    },
+    {
+     "id": "CE201-19",
+     "name": "PSC shear",
+     "group": "Prestressed concrete"
+    },
+    {
+     "id": "CE201-20",
+     "name": "PSC combined axial + bending",
+     "group": "Prestressed concrete"
+    }
+   ]
+  },
+  {
+   "code": "CE202",
+   "name": "Structural Steel Design",
+   "part": 2,
+   "themes": [
+    "Platform beam SFD/BMD + LTB (S355) + remedies"
+   ],
+   "topics": [
+    {
+     "id": "CE202-01",
+     "name": "Limit state design & material response",
+     "group": ""
+    },
+    {
+     "id": "CE202-02",
+     "name": "Local buckling & cross-section classification",
+     "group": ""
+    },
+    {
+     "id": "CE202-03",
+     "name": "Laterally restrained beams",
+     "group": ""
+    },
+    {
+     "id": "CE202-04",
+     "name": "Shear buckling & plate girders",
+     "group": ""
+    },
+    {
+     "id": "CE202-05",
+     "name": "Web bearing, buckling & stiffeners",
+     "group": ""
+    },
+    {
+     "id": "CE202-06",
+     "name": "Lateral-torsional buckling",
+     "group": ""
+    },
+    {
+     "id": "CE202-07",
+     "name": "Tension members",
+     "group": ""
+    },
+    {
+     "id": "CE202-08",
+     "name": "Compression members",
+     "group": ""
+    },
+    {
+     "id": "CE202-09",
+     "name": "Members with end moments (combined)",
+     "group": ""
+    },
+    {
+     "id": "CE202-10",
+     "name": "Connections (bolted & welded)",
+     "group": ""
+    },
+    {
+     "id": "CE202-11",
+     "name": "Plastic design of portal frames",
+     "group": ""
+    },
+    {
+     "id": "CE202-12",
+     "name": "Continuous multi-storey frames",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE203",
+   "name": "Geotechnical Engineering",
+   "part": 2,
+   "themes": [
+    "Strip footing EC7 DA1 + CPT/Schmertmann settlement"
+   ],
+   "topics": [
+    {
+     "id": "CE203-01",
+     "name": "Slopes & embankments",
+     "group": ""
+    },
+    {
+     "id": "CE203-02",
+     "name": "Active & passive earth pressure",
+     "group": ""
+    },
+    {
+     "id": "CE203-03",
+     "name": "Retaining structures",
+     "group": ""
+    },
+    {
+     "id": "CE203-04",
+     "name": "Deep excavations",
+     "group": ""
+    },
+    {
+     "id": "CE203-05",
+     "name": "Site investigation & soil report interpretation",
+     "group": ""
+    },
+    {
+     "id": "CE203-06",
+     "name": "Shallow foundations",
+     "group": ""
+    },
+    {
+     "id": "CE203-07",
+     "name": "Piles",
+     "group": ""
+    },
+    {
+     "id": "CE203-08",
+     "name": "Foundation selection",
+     "group": ""
+    },
+    {
+     "id": "CE203-09",
+     "name": "Settlement of foundations",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE204",
+   "name": "Transportation Engineering",
+   "part": 2,
+   "themes": [
+    "Shockwave + sight/stopping distance"
+   ],
+   "topics": [
+    {
+     "id": "CE204-01",
+     "name": "Transport systems, planning & management",
+     "group": ""
+    },
+    {
+     "id": "CE204-02",
+     "name": "Geometric design of roads & intersections",
+     "group": ""
+    },
+    {
+     "id": "CE204-03",
+     "name": "Flexible pavement design",
+     "group": ""
+    },
+    {
+     "id": "CE204-04",
+     "name": "Rigid pavement design",
+     "group": ""
+    },
+    {
+     "id": "CE204-05",
+     "name": "Traffic flow studies",
+     "group": ""
+    },
+    {
+     "id": "CE204-06",
+     "name": "Traffic management",
+     "group": ""
+    },
+    {
+     "id": "CE204-07",
+     "name": "Highway & intersection capacity",
+     "group": ""
+    },
+    {
+     "id": "CE204-08",
+     "name": "Traffic signal control",
+     "group": ""
+    },
+    {
+     "id": "CE204-09",
+     "name": "Parking",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE205",
+   "name": "Hydraulics & Hydrology",
+   "part": 2,
+   "themes": [
+    "Trapezoidal Manning, critical depth, slope classification"
+   ],
+   "topics": [
+    {
+     "id": "CE205-01",
+     "name": "Pipe friction & minor losses",
+     "group": ""
+    },
+    {
+     "id": "CE205-02",
+     "name": "Pipe–pump systems",
+     "group": ""
+    },
+    {
+     "id": "CE205-03",
+     "name": "Pipe networks",
+     "group": ""
+    },
+    {
+     "id": "CE205-04",
+     "name": "Manning & uniform flow",
+     "group": ""
+    },
+    {
+     "id": "CE205-05",
+     "name": "Critical flow",
+     "group": ""
+    },
+    {
+     "id": "CE205-06",
+     "name": "Energy, momentum & hydraulic jumps",
+     "group": ""
+    },
+    {
+     "id": "CE205-07",
+     "name": "Gradually varied flow & backwater",
+     "group": ""
+    },
+    {
+     "id": "CE205-08",
+     "name": "Hydrologic cycle & rainfall",
+     "group": ""
+    },
+    {
+     "id": "CE205-09",
+     "name": "Evaporation & infiltration",
+     "group": ""
+    },
+    {
+     "id": "CE205-10",
+     "name": "Runoff",
+     "group": ""
+    },
+    {
+     "id": "CE205-11",
+     "name": "Streamflow measurement",
+     "group": ""
+    },
+    {
+     "id": "CE205-12",
+     "name": "Hydrographs & unit hydrographs",
+     "group": ""
+    },
+    {
+     "id": "CE205-13",
+     "name": "Frequency analysis",
+     "group": ""
+    },
+    {
+     "id": "CE205-14",
+     "name": "Flood routing",
+     "group": ""
+    },
+    {
+     "id": "CE205-15",
+     "name": "Urban drainage & flood peaks",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "code": "CE206",
+   "name": "Environmental Engineering",
+   "part": 2,
+   "themes": [
+    "Primary clarifier, activated sludge volume, F/M, SRT"
+   ],
+   "topics": [
+    {
+     "id": "CE206-01",
+     "name": "Water quality parameters",
+     "group": ""
+    },
+    {
+     "id": "CE206-02",
+     "name": "Water treatment design",
+     "group": ""
+    },
+    {
+     "id": "CE206-03",
+     "name": "Water distribution systems",
+     "group": ""
+    },
+    {
+     "id": "CE206-04",
+     "name": "Wastewater collection & pumping",
+     "group": ""
+    },
+    {
+     "id": "CE206-05",
+     "name": "Pretreatment & primary treatment",
+     "group": ""
+    },
+    {
+     "id": "CE206-06",
+     "name": "Secondary treatment (activated sludge)",
+     "group": ""
+    },
+    {
+     "id": "CE206-07",
+     "name": "Tertiary treatment",
+     "group": ""
+    },
+    {
+     "id": "CE206-08",
+     "name": "Anaerobic digestion",
+     "group": ""
+    }
+   ]
+  }
+ ]
+}

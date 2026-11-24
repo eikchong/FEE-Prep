@@ -1,0 +1,15 @@
+# lecture notes may be copyrighted — keep local
+materials/**
+!materials/*/
+!materials/*/.gitkeep
+
+# personal data / generated index
+data/progress.json
+data/progress.corrupt.json
+data/.progress-*.json
+data/library.db
+
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
