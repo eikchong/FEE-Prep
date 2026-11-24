@@ -1027,3 +1027,109 @@ STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101"
           "Fe–C diagram (ferrite, cementite, pearlite).\n- Wood: not examined."),
  ),
 ]}
+
+# ============================================================== CE101 — materials tutorials (model answers)
+MT = "CE101/CE2155_Mat_Tutorial_{}.pdf"
+STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · questions & model answers", "sections": [
+ sec("Tutorial 1 — Cement (lecture 2)", (1, 1),
+   ("ex", "Q1 What is inter-ground with clinker, and why?", "**Gypsum** (CaSO₄·2H₂O). It supplies sulfate so C₃A forms "
+          "ettringite instead of hydrating instantly → prevents **flash set** and controls setting; amount rises with "
+          "C₃A content (too much affects setting/expansion)."),
+   ("ex", "Q2 Four clinker phases; which gives early strength?", "C₃S, C₂S, C₃A, C₄AF. **C₃S** gives most strength in "
+          "the first 3–4 weeks; C₂S contributes later."),
+   ("ex", "Q3 Type III vs Type I", "Type III has more C₃S (and C₃A) and is ground **finer** → faster hydration, high "
+          "early strength, more early heat; similar long-term strength. Used for precast, cold weather, early striking."),
+   ("ex", "Q4 Two types of porosity", "**Gel pores** (< 10 nm) — intrinsic spaces within C-S-H. **Capillary pores** "
+          "(> 10 nm) — remnants of the original water-filled space between cement grains not filled by hydrates; "
+          "rise with w/c, control permeability and strength."),
+   ("ex", "Q5 Benefits of fly ash; when not beneficial", "Lower heat of hydration (mass pours), better workability "
+          "(spherical particles, less water), better long-term strength and durability (less CH, finer pores, sulfate/"
+          "chloride resistance), lower cost and CO₂. **Not beneficial** when high early strength is needed (early "
+          "striking, cold weather, fast-track/precast) because early strength gain is slower."),
+   ("ex", "Q6 Silica fume vs Class F fly ash", "Silica fume: by-product of silicon metal, ~90 %+ amorphous SiO₂, "
+          "10–100 nm, highly reactive, raises water demand (sticky), adds early strength. Class F fly ash: coal "
+          "combustion residue, SiO₂ + Al₂O₃ + Fe₂O₃ ≥ 70 %, 1–300 µm spheres, slowly pozzolanic, improves flow."),
+ ),
+ sec("Tutorial 2 — Aggregate & admixtures (lectures 3–4)", (1, 1),
+   ("ex", "Q1 Max aggregate size vs paste", "Larger well-graded maximum size → lower total surface area and fewer voids "
+          "→ less water and paste for the same workability (limited by member size and bar spacing)."),
+   ("ex", "Q2 Absorption 1.5 %, total moisture 5 %", "Free (surface) moisture = 5 − 1.5 = **3.5 %** of oven-dry mass "
+          "→ reduce mixing water accordingly."),
+   ("ex", "Q3 Why 'water reducer'; normal vs high-range (ASTM C494)", "They disperse flocculated cement, so the same "
+          "slump needs less water. Type A (normal) ≥ 5 % water reduction; Type F (high-range, superplasticiser) "
+          "≥ 12 %."),
+   ("ex", "Q4 Air-entraining vs water-reducing surfactants", "AE: hydrophilic head + **hydrophobic** tail, acts at the "
+          "**air–water** interface to stabilise small bubbles. WR: anionic polymers adsorbing at the "
+          "**cement–water** interface, dispersing particles by electrostatic repulsion/steric hindrance."),
+   ("ex", "Q5 300 kg water with a 15 % water reducer", "300 × (1 − 0.15) = **255 kg**."),
+   ("ex", "Q6 Setting-time curves", "Plot penetration resistance vs time: an accelerator shifts the curve **left** "
+          "(earlier initial 3.5 MPa and final 27.6 MPa set), a retarder shifts it **right**; the plain mix lies "
+          "between."),
+   ("ex", "Q7 Temperature & setting; cooling fresh concrete", "Higher temperature → faster hydration → shorter setting "
+          "time and faster slump loss. Cool by chilled water or ice, shaded/chilled aggregate, casting at night or "
+          "the coolest part of the day (also low-heat binder, retarder)."),
+ ),
+ sec("Tutorial 3 — Hardened concrete (lecture 6)", (1, 1),
+   ("ex", "Q1 Strength vs porosity", "Strength falls roughly exponentially as porosity rises (capillary porosity "
+          "controlled by w/c and degree of hydration)."),
+   ("ex", "Q2 Dominant factor & two others", "**w/c ratio**; also age/degree of hydration, curing (moisture, "
+          "temperature), cement type, aggregate, air content, test conditions."),
+   ("ex", "Q3 Types I, III, V at the same w/c", "Early age: III > I > V (C₃S content and fineness). Long term: about "
+          "the same, because the degree of hydration converges by ~90 days."),
+   ("ex", "Q4 Curing", "Keeping concrete moist and at a suitable temperature after placing so hydration continues "
+          "(it stops below ~80 % internal RH): strength, low permeability, durability, less plastic/drying "
+          "shrinkage cracking."),
+   ("ex", "Q5 Which gives higher measured 28-day strength?", "(a) w/c **0.4**. (b) **25 °C** to 28 days (10 °C "
+          "slower; very high early temperature lowers ultimate strength). (c) **75 × 150** mm cylinder (size "
+          "effect). (d) **3 MPa/s** (faster loading reads higher). (e) **Air-dry** (saturated reads lower — "
+          "opposite to E)."),
+   ("ex", "Q6 Is concrete truly elastic? Micro-cracking stages", "No — non-linear and inelastic (ITZ micro-cracks, "
+          "creep, residual strain on unloading). < ~30 % f_c: stable ITZ cracks; 30–50 %: ITZ cracks grow; > 50 %: "
+          "matrix cracks start; > 75 %: cracks link up and become unstable → failure."),
+   ("ex", "Q7 Larger coarse aggregate lowers mortar strength & impermeability", "Bigger particles create a thicker, "
+          "more porous **ITZ** with more bleed water and micro-cracking under them → weak, connected paths."),
+ ),
+ sec("Tutorial 4 — Dimensional stability & durability (lectures 8–9)", (1, 1),
+   ("ex", "Q1 Heat of hydration — dams vs slabs", "Mass concrete cannot lose heat (low surface/volume) → large "
+          "internal ΔT and restraint → thermal cracking. Thin slabs and columns dissipate heat quickly."),
+   ("ex", "Q2 Factors on drying shrinkage and creep", "Both rise with paste volume (w/c, cement content) and "
+          "softer aggregate (similar). Stress level affects creep only. Ambient RH and member size: drier air and "
+          "thinner members increase drying shrinkage (check lecture 8 p. 15 for the creep trend shown)."),
+   ("ex", "Q3 Durability", "Ability to resist weathering, chemical attack, abrasion and other deterioration over the "
+          "design life — as important as strength; most repair costs come from durability failures."),
+   ("ex", "Q4 Aggregate size & permeability; other factors", "Larger aggregate → more porous ITZ and micro-cracks → "
+          "higher permeability. Others: w/c, degree of hydration/curing, SCMs, compaction, cracking, air voids."),
+   ("ex", "Q5 Controlling reinforcement corrosion", "Adequate cover; low w/c, SCMs and good curing (low "
+          "permeability); limit chlorides in materials; crack control; coatings/sealers; epoxy-coated or "
+          "galvanised/stainless bars; corrosion inhibitors; cathodic protection."),
+   ("ex", "Q6 Sulfate attack chemistry", "Sulfate + CH → **gypsum** (expansion, softening); sulfate + monosulfate "
+          "(AFm)/C₃A hydrates → **ettringite** (expansive) → cracking, spalling, loss of strength."),
+   ("ex", "Q7 Match the photos", "Map cracking with white gel → **ASR**; scaling/pop-outs in cold climate → **frost**; "
+          "rust staining and spalling over bars → **corrosion**; soft, expanded, spalled surface in contact with "
+          "soil/seawater → **sulfate attack** (see the sheet's figures)."),
+ ),
+ sec("Tutorial 5 — Steel (lectures 10–11)", (1, 1),
+   ("ex", "Q1 Brittle vs ductile objects", "Brittle: glass, ceramic mugs, chalk, concrete, cast iron. Ductile: "
+          "paper clips, aluminium foil, copper wire, mild-steel rebar."),
+   ("ex", "Q2 When concrete beats steel", "Compression-dominated mass structures (foundations, dams); fire "
+          "resistance; corrosive/marine exposure with good cover; mouldability for complex shapes; low cost and "
+          "local materials; mass for stability/acoustics."),
+   ("ex", "Q3 Total strain 0.213 at 600 MPa, plastic 0.210", "Elastic strain = 0.003 → E = 600/0.003 = **200 GPa**."),
+   ("ex", "Q4 Gold FCC, a = 0.408 nm", "Face diagonal √2·a = 4r → r = 0.408 × √2/4 = **0.144 nm**."),
+   ("ex", "Q5 Pro-eutectoid cementite (lever rule, 0.025 / 0.8 / 6.7 % C)",
+    "Pro-eutectoid Fe₃C ⇒ **hyper-eutectoid**. Likely intended **7.5 %**: C₀ = 0.8 + 0.075 × 5.9 = 1.24 % C; "
+    "pearlite = 92.5 %; eutectoid ferrite = 0.925 × 5.9/6.675 = **81.8 %**; eutectoid cementite = **10.7 %**. "
+    "(As printed, 75 % would need 5.2 % C — a cast iron: pearlite 25 %, eutectoid ferrite 22.1 %, eutectoid "
+    "cementite 2.9 %.)"),
+   ("ex", "Q6 Why C and alloying raise strength", "Interstitial/substitutional atoms distort the lattice and pin "
+          "dislocations (solid-solution strengthening); carbon forms hard Fe₃C/pearlite; alloys refine grains and "
+          "raise hardenability — at the cost of ductility and weldability."),
+   ("tip", "Q5 typo check: steel holds ≤ ~2 % C, so pro-eutectoid cementite can't exceed ≈ 20 %."),
+ ),
+]}
+
+TUTORIALS += [(MT.format(1), 1, "Materials Tut 1 — cement (model answers in 'Materials tutorials')", MAT["2_Cement"]),
+              (MT.format(2), 1, "Materials Tut 2 — aggregate & admixtures", MAT["4_chemical_admixture"]),
+              (MT.format(3), 1, "Materials Tut 3 — hardened concrete", MAT["6_hardened_concrete"]),
+              (MT.format(4), 1, "Materials Tut 4 — shrinkage, creep & durability", MAT["9_durability"]),
+              (MT.format(5), 1, "Materials Tut 5 — steel", MAT["11_steel_composition_and_structure"])]

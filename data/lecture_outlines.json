@@ -2424,5 +2424,98 @@
     ]
    }
   ]
+ },
+ "CE101/CE2155_Mat_Tutorial_1.pdf": {
+  "code": "CE101",
+  "seq": 14,
+  "title": "CE2155 Materials Tutorial 1",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Tutorial 1 questions",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_Mat_Tutorial_2.pdf": {
+  "code": "CE101",
+  "seq": 14,
+  "title": "CE2155 Materials Tutorial 2",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Tutorial 2 questions",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_Mat_Tutorial_3.pdf": {
+  "code": "CE101",
+  "seq": 14,
+  "title": "CE2155 Materials Tutorial 3",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Tutorial 3 questions",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE101-07",
+     "CE101-10"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_Mat_Tutorial_4.pdf": {
+  "code": "CE101",
+  "seq": 14,
+  "title": "CE2155 Materials Tutorial 4",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Tutorial 4 questions",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE101-04",
+     "CE101-12"
+    ]
+   }
+  ]
+ },
+ "CE101/CE2155_Mat_Tutorial_5.pdf": {
+  "code": "CE101",
+  "seq": 14,
+  "title": "CE2155 Materials Tutorial 5",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Tutorial 5 questions",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE101-14",
+     "CE101-15"
+    ]
+   }
+  ]
  }
 }

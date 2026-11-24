@@ -20,10 +20,10 @@ def test_study_notes_follow_the_source_order_and_pages():
 
 
 def test_every_module_covered_and_tutorials_mapped():
-    assert len(STUDY) == 29
+    assert len(STUDY) == 30
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
-    assert len(TUTORIALS) == 22
+    assert len(TUTORIALS) == 27
 
 
 def test_quoted_example_numbers_consistent():
@@ -86,3 +86,13 @@ def test_materials_worked_numbers():
     # packing factors
     import math
     assert round(math.pi / 6, 2) == 0.52 and round(math.sqrt(3) * math.pi / 8, 2) == 0.68 and round(math.sqrt(2) * math.pi / 6, 2) == 0.74
+
+
+def test_materials_tutorial_answers():
+    import math
+    assert 5 - 1.5 == 3.5 and 300 * 0.85 == 255
+    assert abs(600 / (0.213 - 0.210) / 1000 - 200) < 1e-6
+    assert abs(0.408 * math.sqrt(2) / 4 - 0.144) < 0.0005
+    pear = 1 - 0.075
+    ef = pear * (6.7 - 0.8) / (6.7 - 0.025)
+    assert abs(0.8 + 0.075 * 5.9 - 1.2425) < 1e-9 and abs(ef - 0.818) < 0.001 and abs(pear - ef - 0.107) < 0.001
