@@ -523,8 +523,8 @@ GEO[D["LS"]] = {"code": "CE203", "title": "Slopes 0 · Stability of slopes — l
  sec("Infinite slopes", (68, 77),
    ("eq", r"F = \frac{c' + \left[(1-m)\gamma + m(\gamma_{sat} - \gamma_w)\right]z\cos^2\beta\tan\phi'}{\left[(1-m)\gamma + m\gamma_{sat}\right]z\cos\beta\sin\beta}\quad(\text{GWT at } mz \text{ above the slip plane})"),
    ("md", "Dry sand: F = tan φ′/tan β (independent of z). Saturated with parallel seepage: F = (γ′/γ_sat) tan φ′/tan β "
-          "≈ **½** of dry. Other seepage: horizontal u = γ_wz/(1 − tan²β)… use u = γ_wz cos²β for parallel, u = 0 for "
-          "vertical downward. For drained infinite slopes **only DA1-C2** matters (C1 scales both sides)."),
+          "≈ **½** of dry. Slip-plane u: parallel seepage γ_wz cos²β, horizontal seepage γ_wz, downward "
+          "drainage 0. For drained infinite slopes **only DA1-C2** matters (C1 scales both sides)."),
    ("tip", "This deck is 13.7 MB on Drive, so only its text was imported (to slide ~77); finite slopes, Bishop and "
            "Spencer are covered by the Revision Notes, Tutorial 2 and Assignment 1 pages."),
  ),
