@@ -250,3 +250,19 @@ def test_slope_mass_procedure_examples():
     c2 = 2777 + 64 + 1.3 * 438 - 116
     assert abs(c1 - 4376) < 2 and abs(c2 - 3294) < 1
     assert abs(4518 / c1 - 1.03) < 0.005 and abs(4518 / 1.4 / c2 - 0.98) < 0.005
+
+
+def test_mathify_inline_symbols():
+    from utils.mathtext import mathify as mx
+    assert mx("e = G_sγ_w/γ_d − 1") == r"$e$ = $G_{s} \gamma_{w}$/$\gamma_{d}$ − 1"
+    assert mx("M_c,Rd and f_ck^{2/3}") == r"$M_{\mathrm{c,Rd}}$ and $f_{\mathrm{ck}}^{2/3}$"
+    assert mx("w, γ, γ_d, e, n, S_r").count("$") == 12
+    for plain in ("Q3(a) — choose", "(e.g. GW-GM)", "k = 2 m/s and 46.8 kN/m", "C₃A", "a typo"):
+        assert "$" not in mx(plain).replace("$k$", "")
+    from utils.study_notes import STUDY
+    for d in STUDY.values():
+        for s in d["sections"]:
+            for b in s["blocks"]:
+                for x in b[1:] if b[0] != "eq" else ():
+                    for t in (x if isinstance(x, list) else [x]):
+                        assert mx(t).count("$") % 2 == 0 and "$$" not in mx(t)

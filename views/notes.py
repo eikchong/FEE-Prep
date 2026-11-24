@@ -2,6 +2,7 @@ import streamlit as st
 
 from utils import library
 from utils.state import init, save
+from utils.mathtext import mathify as mx
 from utils.study_notes import STUDY, TUTORIALS
 from utils.syllabus import subject_label
 from utils.ui import open_in_library, show_pdf_page
@@ -48,22 +49,22 @@ with st.sidebar:
 def render(block):
     kind = block[0]
     if kind == "md":
-        st.markdown(block[1])
+        st.markdown(mx(block[1]))
     elif kind == "eq":
         st.latex(block[1])
     elif kind == "steps":
-        st.markdown("\n".join(f"{i}. {t}" for i, t in enumerate(block[1], 1)))
+        st.markdown("\n".join(f"{i}. {mx(t)}" for i, t in enumerate(block[1], 1)))
     elif kind == "ex":
         with st.container(border=True):
-            st.markdown(f"**📘 {block[1]}**  \n{block[2]}")
+            st.markdown(f"**📘 {mx(block[1])}**  \n{mx(block[2])}")
     elif kind == "tip":
-        st.info(block[1], icon="💡")
+        st.info(mx(block[1]), icon="💡")
     elif kind == "tut":
-        st.markdown(f"✏️ **Practice:** {block[1]}")
+        st.markdown(f"✏️ **Practice:** {mx(block[1])}")
 
 
 sec = secs[cur]
-st.subheader(f"{cur + 1}. {sec['title']}")
+st.subheader(mx(f"{cur + 1}. {sec['title']}"))
 for b in sec["blocks"]:
     render(b)
 
