@@ -630,3 +630,88 @@ STUDY[C4] = {"code": "CE102", "title": "CE2155 4 · Stress & strain transformati
           "Hooke's law (σ₃ = 0) gives the principal stresses (Examples 7–8)."),
  ),
 ]}
+
+C5 = "CE102/CE2155_5_Column_Buckling.pdf"
+C6 = "CE102/CE2155_6_Material_Failure.pdf"
+
+STUDY[C5] = {"code": "CE102", "title": "CE2155 5 · Column buckling", "sections": [
+ sec("Stability & the critical load", (2, 5),
+   ("md", "Equilibrium can be **stable** (returns when disturbed), **neutral** (stays displaced) or **unstable** "
+          "(moves away). A slender compression member can fail by **buckling** (sudden, geometric) before the "
+          "material fails. The **critical load P_cr** is the load at neutral equilibrium — find it from equilibrium "
+          "in the *displaced* shape, not the original one."),
+   ("ex", "Spring–bar model", "Two rigid bars of length L/2 with a lateral spring k: P tanθ balance with the "
+          "spring force kLθ/2 for small θ → P_cr = kL/4. Below P_cr stable, above unstable; P_cr is the "
+          "**bifurcation point**."),
+ ),
+ sec("Ideal pin-ended column — Euler load", (6, 11),
+   ("md", "Ideal column: perfectly straight, load through the centroid, linear elastic. M = −Pv gives "
+          "EI v″ + Pv = 0 (an eigenvalue problem); non-trivial solutions need sin(kL) = 0."),
+   ("eq", r"P_{cr} = \frac{\pi^2EI}{L^2}\ (n = 1),\qquad \text{higher modes } P_n = \frac{n^2\pi^2EI}{L^2}"),
+   ("eq", r"\sigma_{cr} = \frac{P_{cr}}{A} = \frac{\pi^2E}{(L/r)^2},\qquad r = \sqrt{I/A},\quad L/r = \text{slenderness ratio}"),
+   ("md", "Same end conditions both ways → buckles about the **weak axis** (least I). Euler is valid only while "
+          "σ_cr ≤ σ_Y (elastic buckling)."),
+   ("ex", "Example 1 — W200×46 pin-ended column", "Check σ_cr about y–y against σ_Y = 250 MPa: σ_cr > σ_Y, so the "
+          "steel **yields first** and P = σ_Y A governs."),
+   ("tip", "Always check both: P_cr (each axis, with its own effective length) and the squash load σ_Y A — "
+           "the smallest governs."),
+ ),
+ sec("End conditions & effective length", (12, 16),
+   ("eq", r"P_{cr} = \frac{\pi^2EI}{(KL)^2}"),
+   ("md", "| Ends | K | L_e |\n|---|---|---|\n| pinned–pinned | 1.0 | L |\n| fixed–free (cantilever) | 2.0 | 2L |\n"
+          "| fixed–pinned | 0.7 | 0.7L |\n| fixed–fixed | 0.5 | 0.5L |\n\nL_e = distance between points of zero "
+          "moment (inflection points). Cantilever: P_cr = π²EI/4L²."),
+   ("ex", "Example 2 — 8 m column fixed at both ends, braced at mid-height about y–y (E = 200 GPa, σ_Y = 410 MPa)",
+    "x–x: K = 0.5, L_e = 4 m → 1653 kN; y–y: fixed bottom, pinned at the brace, L_e = 0.7 × 4 = 2.8 m → **461 kN**; "
+    "yield 1255 kN → buckling about y–y governs at 461 kN."),
+ ),
+ sec("Eccentric load & the secant formula", (17, 24),
+   ("md", "A load at eccentricity e ≡ P + moment Pe. The column deflects from the start; the deflection grows "
+          "without bound as P → P_cr, so yielding at mid-height usually governs first."),
+   ("eq", r"v_{max} = e\left[\sec\left(\sqrt{\frac{P}{EI}}\frac{L}{2}\right) - 1\right]"),
+   ("eq", r"\sigma_{max} = \frac{P}{A}\left[1 + \frac{ec}{r^2}\sec\left(\frac{L_e}{2r}\sqrt{\frac{P}{EA}}\right)\right]"),
+   ("md", "ec/r² = **eccentricity ratio**; as it → 0 the curve tends to Euler. Solve for P by trial with "
+          "σ_max = σ_Y."),
+   ("ex", "Example 3 — column fixed at the base, braced in x at the top, e = 200 mm about x–x (σ_Y = 250 MPa)",
+    "(1) Weak-axis Euler with fixed–pinned K = 0.7; (2) strong axis: fixed–free (K = 2, L_e = 8 m), secant formula "
+    "with c = 105 mm, r_x = 89.9 mm, trial and error → **419 kN** governs."),
+   ("tip", "Buckling is geometrically non-linear — superposition does not apply."),
+ ),
+]}
+
+STUDY[C6] = {"code": "CE102", "title": "CE2155 6 · Material failure", "sections": [
+ sec("Ductile materials & yield criteria", (2, 7),
+   ("md", "Mild steel in tension: yield → necking → micro-voids coalesce → **cup-and-cone** fracture with ~45° "
+          "shear lips. Ductile failure starts with **yielding**, which is shear-controlled. In multi-axial stress, "
+          "compare with the uniaxial test via principal stresses σ₁, σ₂ (plane stress)."),
+   ("md", "**Tresca (maximum shear stress):** yielding when τ_abs,max = σ_Y/2."),
+   ("eq", r"\text{same sign: } |\sigma_1| \le \sigma_Y,\ |\sigma_2| \le \sigma_Y \qquad \text{opposite signs: } |\sigma_1 - \sigma_2| \le \sigma_Y"),
+   ("md", "**von Mises (maximum distortion energy):** yielding when the distortion strain-energy density reaches "
+          "its uniaxial-yield value."),
+   ("eq", r"\sigma_1^2 - \sigma_1\sigma_2 + \sigma_2^2 \le \sigma_Y^2"),
+   ("md", "Tresca's hexagon lies inside the von Mises ellipse → Tresca is more conservative."),
+   ("ex", "Example 1 — 5 mm-radius steel shaft, axial load + torque (σ_Y = 360 MPa)",
+    "σ from P/A and τ = Tc/J at the surface → principal stresses of opposite sign. Tresca: |σ₁ − σ₂| > 360 → "
+    "**fails**; von Mises: < 360² → **does not fail** — the stress point lies between the two criteria."),
+ ),
+ sec("Brittle materials", (8, 11),
+   ("md", "Little or no yielding; sudden fracture governed by flaws. Weak in tension (cast iron, concrete: "
+          "f_t ≈ 10 % of f_c)."),
+   ("md", "**Maximum normal stress (Rankine):** fracture when the largest principal stress reaches σ_ult."),
+   ("eq", r"|\sigma_1| \le \sigma_{ult},\qquad |\sigma_2| \le \sigma_{ult}"),
+   ("ex", "Example 2 — cast-iron shaft, T = 400 Nm, σ_ult = 150 MPa", "Pure shear → σ₁ = −σ₂ = τ_max = 2T/(πc³). "
+          "Set = 150 MPa → c = 11.9 mm."),
+   ("md", "**Mohr's failure criterion** (different tension/compression strengths): draw the Mohr circles of "
+          "the uniaxial tension, uniaxial compression and torsion tests; their envelope is the failure boundary. "
+          "A stress state is safe if its circle lies inside the envelope."),
+ ),
+ sec("Cyclic loading & fatigue", (12, 14),
+   ("md", "Unloading from the plastic range leaves a **permanent set**; reloading follows E up to a **higher "
+          "yield point** (strain hardening) with reduced ductility.\n\n**Fatigue:** repeated loading can cause "
+          "brittle fracture below the yield stress — the largest cause of failure of metal parts under dynamic "
+          "load. The **S–N curve** gives cycles to failure N against stress amplitude S; the **endurance limit** is "
+          "the amplitude below which no fatigue failure occurs (steels; not aluminium or concrete)."),
+   ("md", "**Course map:** equilibrium → internal actions → stresses (strength check with failure criteria) → "
+          "strains → deflection (serviceability) → buckling (stability)."),
+ ),
+]}

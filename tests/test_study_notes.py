@@ -20,7 +20,7 @@ def test_study_notes_follow_the_source_order_and_pages():
 
 
 def test_every_module_covered_and_tutorials_mapped():
-    assert len(STUDY) == 14
+    assert len(STUDY) == 16
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
     assert len(TUTORIALS) == 12
@@ -55,3 +55,10 @@ def test_ce2155_quoted_numbers():
     assert abs(qB - 1.176) < 0.002 and abs(30 / (qB / 2) - 51) < 0.5 and abs(30 / 0.353 - 85) < 0.5
     # rectangle tau_max = 1.5 V/A
     assert 1.5 == 6 / 4
+
+
+def test_ce2155_buckling_failure_numbers():
+    import math
+    c = (2 * 400 / (math.pi * 150e6)) ** (1 / 3)          # cast-iron shaft radius
+    assert abs(c * 1000 - 11.93) < 0.01
+    assert abs(0.7 * 4.0 - 2.8) < 1e-9                    # Example 2 y-y effective length

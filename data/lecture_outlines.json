@@ -354,7 +354,7 @@
    }
   ],
   "page_count": 65,
-  "seq": 16
+  "seq": 18
  },
  "CE103/CE103_Structural_Analysis.pdf": {
   "code": "CE103",
@@ -1146,7 +1146,7 @@
     ]
    }
   ],
-  "seq": 15
+  "seq": 17
  },
  "CE102/CE1101_T2L_Tutorial_4.pdf": {
   "code": "CE102",
@@ -1185,7 +1185,7 @@
     ]
    }
   ],
-  "seq": 15
+  "seq": 17
  },
  "CE102/CE1101_S1_Equilibrium_of_Particles.pdf": {
   "code": "CE102",
@@ -1395,7 +1395,7 @@
  },
  "CE102/CE1101_T2L_Tutorial_1.pdf": {
   "code": "CE102",
-  "seq": 15,
+  "seq": 17,
   "title": "CE1101 T2L Tutorial 1 (Q1–Q3, statics — goes with S1–S3)",
   "page_count": 3,
   "sections": [
@@ -1434,7 +1434,7 @@
  },
  "CE102/CE1101_T2L_Tutorial_2.pdf": {
   "code": "CE102",
-  "seq": 15,
+  "seq": 17,
   "title": "CE1101 T2L Tutorial 2 (Q4–Q6, frames, cables, rigid bodies — goes with S2–S4)",
   "page_count": 3,
   "sections": [
@@ -1706,6 +1706,96 @@
     "topics": [
      "CE102-06",
      "CE101-02"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_5_Column_Buckling.pdf": {
+  "code": "CE102",
+  "seq": 15,
+  "title": "CE2155 5 — Column buckling",
+  "page_count": 25,
+  "sections": [
+   {
+    "title": "Stability & critical load",
+    "pages": [
+     2,
+     5
+    ],
+    "topics": [
+     "CE103-09"
+    ]
+   },
+   {
+    "title": "Euler load & critical stress",
+    "pages": [
+     6,
+     11
+    ],
+    "topics": [
+     "CE103-09",
+     "CE202-08"
+    ]
+   },
+   {
+    "title": "End conditions & effective length",
+    "pages": [
+     12,
+     16
+    ],
+    "topics": [
+     "CE103-09",
+     "CE202-08"
+    ]
+   },
+   {
+    "title": "Eccentric load & secant formula",
+    "pages": [
+     17,
+     25
+    ],
+    "topics": [
+     "CE103-09",
+     "CE202-09"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_6_Material_Failure.pdf": {
+  "code": "CE102",
+  "seq": 16,
+  "title": "CE2155 6 — Material failure",
+  "page_count": 14,
+  "sections": [
+   {
+    "title": "Ductile materials: Tresca & von Mises",
+    "pages": [
+     2,
+     7
+    ],
+    "topics": [
+     "CE101-03",
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Brittle materials: max normal stress & Mohr",
+    "pages": [
+     8,
+     11
+    ],
+    "topics": [
+     "CE101-03"
+    ]
+   },
+   {
+    "title": "Cyclic loading & fatigue",
+    "pages": [
+     12,
+     14
+    ],
+    "topics": [
+     "CE101-05"
     ]
    }
   ]
