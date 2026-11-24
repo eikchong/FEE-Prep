@@ -3270,5 +3270,352 @@
     ]
    }
   ]
+ },
+ "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf": {
+  "code": "CE203",
+  "seq": 1,
+  "title": "Slopes 1 · Infinite slopes (CE3115 Tut 1)",
+  "page_count": 11,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     11
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf": {
+  "code": "CE203",
+  "seq": 2,
+  "title": "Slopes 2 · Finite slopes: mass procedure, Taylor, Bishop (CE3115 Tut 2)",
+  "page_count": 16,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     16
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf": {
+  "code": "CE203",
+  "seq": 3,
+  "title": "Slopes 3 · River-bank Bishop analysis (CE3115 Assignment 1)",
+  "page_count": 14,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     14
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf": {
+  "code": "CE203",
+  "seq": 4,
+  "title": "Slopes 4 · Slope stabilisation options (CE3115 Assignment 2)",
+  "page_count": 11,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     11
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf": {
+  "code": "CE203",
+  "seq": 5,
+  "title": "Retaining 1 · Underground construction in Singapore (CE3115 PS1)",
+  "page_count": 6,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 6,
+  "title": "Earth pressure 1 · K₀, Rankine, water & layers (CE3115 PS2)",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     15
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 7,
+  "title": "Earth pressure 2 · Cohesion, Coulomb & curved surfaces (CE3115 PS3)",
+  "page_count": 19,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     19
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 8,
+  "title": "Retaining 2 · Gravity & cantilever walls, FoS (CE3115 PS4)",
+  "page_count": 14,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     14
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 9,
+  "title": "Retaining 3 · Same wall to EC7 DA1 (CE3115 PS5)",
+  "page_count": 6,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 10,
+  "title": "Retaining 4 · Cantilever sheet piles (CE3115 PS6)",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     15
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf": {
+  "code": "CE203",
+  "seq": 11,
+  "title": "Retaining 5 · Anchored walls, free-earth support (CE3115 PS7)",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf": {
+  "code": "CE203",
+  "seq": 12,
+  "title": "Retaining 6 · Past-year quiz (earth pressure & walls)",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE203-02",
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf": {
+  "code": "CE203",
+  "seq": 13,
+  "title": "Exam · CE3115 AY19/20 paper (slopes, walls, sheet piles)",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE203-01",
+     "CE203-02",
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf": {
+  "code": "CE203",
+  "seq": 20,
+  "title": "Foundations 1 · Site investigation: SPT, CPTu, PMT, permeability (CE3116 Tut 2)",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Site Investigation/CE3116 Example Problem - Site Investigation R0.pdf": {
+  "code": "CE203",
+  "seq": 21,
+  "title": "Foundations 1a · Site investigation worked example (CE3116)",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf": {
+  "code": "CE203",
+  "seq": 22,
+  "title": "Foundations 2 · Compaction specification (CE3116 Tut 1)",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf": {
+  "code": "CE203",
+  "seq": 23,
+  "title": "Foundations 3 · Pad footings to EC7 — bearing resistance (CE3116)",
+  "page_count": 6,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf": {
+  "code": "CE203",
+  "seq": 24,
+  "title": "Foundations 4 · Stress distribution & settlement (CE3116)",
+  "page_count": 22,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     22
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf": {
+  "code": "CE203",
+  "seq": 25,
+  "title": "Foundations 5 · Piles to EC7: downdrag, load tests, tension (CE3116)",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   }
+  ]
  }
 }

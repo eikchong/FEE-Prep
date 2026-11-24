@@ -137,3 +137,41 @@ def test_ce104_tutorial_answers():
     # assignment Q2/Q3
     assert abs(0.9 * (27 / 17.5 - 1) / 2.7 * 100 / 1.1 - 100 / 1.1 * 0.1 - 7.36) < 0.05
     assert abs((3.5 * 0.5 - 0.5 - 0.24) / 0.5 - 2.02) < 0.01
+
+
+def test_ce203_tutorial_answers():
+    import math
+    r = math.radians
+    # infinite slope
+    F = lambda c, sv_, sv, b, phi: (c + sv_ * math.cos(r(b)) ** 2 * math.tan(r(phi))) / (sv * math.cos(r(b)) * math.sin(r(b)))
+    assert round(F(0, 16.5, 16.5, 18, 30), 2) == 1.78 and round(F(0, 10, 20, 18, 30), 2) == 0.89
+    assert round(F(0, 30, 60, 18, 25), 2) == 0.72  # seam: c′ = 0
+    pd = math.degrees(math.atan(math.tan(r(33)) / 1.25))
+    assert abs(F(0, 29.4, 59.4, 14, pd) - 1.03) < 0.01 and abs(F(0, 29.4, 59.4, 17, pd) - 0.84) < 0.01
+    # mass procedure
+    m = 17 * 25 * r(66) / (8.1 * 16 * 2.03)
+    assert round(m / 1.35, 2) == 1.38 and round(m / 1.4, 2) == 1.33
+    # sheet pile cantilever
+    d0 = 6 / (9 ** (1 / 3) - 1)
+    assert abs(d0 - 5.56) < 0.02 and abs(0.9444 * 9 ** 3 - 8.5 * 27 - 459) < 1
+    # exam Q3 surcharge
+    Ka = (1 - math.sin(r(24))) / (1 + math.sin(r(24)))
+    assert abs(2 * 13 / math.sqrt(Ka) - 40) < 0.5
+    # site investigation
+    Qt = (9.130 - 0.0575) / 0.0475; Fr = 0.017 / (9.130 - 0.0575) * 100
+    Ic = math.sqrt((3.47 - math.log10(Qt)) ** 2 + (1.22 + math.log10(Fr)) ** 2)
+    assert abs(Ic - 1.287) < 0.005 and abs(28 * 70 / 60 * 0.75 * 300 / 247.5 - 29.7) < 0.1
+    assert abs(3 * 936 * 50 / 14 - 10029) < 2 and abs((810.5 - 194) / 20 - 30.8) < 0.1
+    Fh = 2 * math.pi * 0.3 / math.log(3 + math.sqrt(10))
+    assert abs(Fh - 1.04) < 0.01 and abs(math.pi * 0.05 ** 2 / (Fh * 80) - 9.4e-5) < 0.1e-5
+    # compaction
+    lo, hi = 2650 / 1.85, 2650 / 1.4
+    assert abs(lo / (1 - 0.75 * (hi - lo) / hi) - 1750) < 5
+    assert abs(1750 * 270000 * 1.1 / 28000 - 18563) < 1
+    # foundations
+    assert abs(4.84 * (57 * 5.14 * 1.2 + 38.8) - 1889.4) < 0.5
+    assert abs(82 * (1.5 / 0.0135) ** 2 / 525600 - 1.93) < 0.01 and abs(3000 * 0.0035 * math.log10(100 / 1.93) - 18) < 0.1
+    assert abs(0.455 * 36 * 0.649 * 4 - 42.5) < 0.1 and abs(1.35 * (350 + 42.5 + 323.4 + 20.5) + 1.5 * 150 - 1219.1) < 0.1
+    assert abs(4000 / 1.47 - 2721) < 1 and abs(2721 / 1.7 - 1601) < 1
+    U = (math.pi * 25 - 0.35 ** 2) * 9.81 * 5 + 0.35 ** 2 * 9.81 * 21
+    assert abs(U - 3871.6) < 0.5 and abs(1.35 * U - 3200 - 2027) < 1

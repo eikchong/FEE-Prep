@@ -1703,3 +1703,9 @@ TUTORIALS += [
  (CT["T_Shear_A_Solutions"], 1, "CSC Shear A — direct shear, Mohr circles", G2),
  (CT["T_Shear_B_Solutions"], 1, "CSC Shear B — triaxial, UU/CU/CD", G2),
 ]
+
+
+# ---------------------------------------------------------------- CE203 geotechnical (separate module)
+from utils.study_notes_ce203 import GEO as _GEO  # noqa: E402
+
+STUDY.update(_GEO)
