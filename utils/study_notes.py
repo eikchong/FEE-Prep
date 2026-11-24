@@ -1713,3 +1713,7 @@ STUDY.update(_GEO)
 from utils.study_notes_hyd import HYD as _HYD  # noqa: E402
 
 STUDY.update(_HYD)
+
+from utils.study_notes_ce201 import CON as _CON  # noqa: E402
+
+STUDY.update(_CON)

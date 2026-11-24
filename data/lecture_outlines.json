@@ -5981,5 +5981,608 @@
     ]
    }
   ]
+ },
+ "CE201/CE3165/0 Intro.pdf": {
+  "code": "CE201",
+  "seq": 1,
+  "title": "Concrete 0 · CE3165 course outline",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "Scope",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/1 Design Philosophy.pdf": {
+  "code": "CE201",
+  "seq": 2,
+  "title": "Concrete 1 · Design philosophy, actions & materials",
+  "page_count": 33,
+  "sections": [
+   {
+    "title": "Limit-state design",
+    "pages": [
+     3,
+     10
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   },
+   {
+    "title": "Actions & combinations",
+    "pages": [
+     11,
+     20
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   },
+   {
+    "title": "Concrete & steel",
+    "pages": [
+     21,
+     33
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/2 Design for Flexure and Shear.pdf": {
+  "code": "CE201",
+  "seq": 3,
+  "title": "Concrete 2 · Flexure (analysis & design) and shear",
+  "page_count": 68,
+  "sections": [
+   {
+    "title": "Section analysis: elastic uncracked & cracked",
+    "pages": [
+     6,
+     25
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "Collapse (ULS) with the rectangular stress block",
+    "pages": [
+     26,
+     31
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "Design of rectangular sections",
+    "pages": [
+     33,
+     41
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "Flanged sections",
+    "pages": [
+     42,
+     48
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "Shear (variable-strut truss)",
+    "pages": [
+     50,
+     67
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/3 Cracking and Deflection.pdf": {
+  "code": "CE201",
+  "seq": 4,
+  "title": "Concrete 3 · Cracking and deflection (SLS)",
+  "page_count": 22,
+  "sections": [
+   {
+    "title": "Flexural cracking & minimum steel",
+    "pages": [
+     4,
+     9
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "Crack control without calculation",
+    "pages": [
+     10,
+     15
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "Deflection by span/effective depth",
+    "pages": [
+     16,
+     21
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/4 Detailing of Reinforcement.pdf": {
+  "code": "CE201",
+  "seq": 5,
+  "title": "Concrete 4 · Cover, anchorage and laps",
+  "page_count": 26,
+  "sections": [
+   {
+    "title": "Cover: durability & fire",
+    "pages": [
+     3,
+     11
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-08",
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "Bond & anchorage",
+    "pages": [
+     12,
+     19
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-08",
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "Laps",
+    "pages": [
+     20,
+     25
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-08",
+     "CE201-15"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/6 Prestressed Concrete.pdf": {
+  "code": "CE201",
+  "seq": 7,
+  "title": "Concrete 6 · Prestressed concrete",
+  "page_count": 32,
+  "sections": [
+   {
+    "title": "Stress limits & Magnel feasibility",
+    "pages": [
+     1,
+     15
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-17",
+     "CE201-18",
+     "CE201-19"
+    ]
+   },
+   {
+    "title": "Tendon profile, debonding",
+    "pages": [
+     16,
+     18
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-17",
+     "CE201-18",
+     "CE201-19"
+    ]
+   },
+   {
+    "title": "Deflection & losses",
+    "pages": [
+     19,
+     24
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-17",
+     "CE201-18",
+     "CE201-19"
+    ]
+   },
+   {
+    "title": "Ultimate flexure & shear",
+    "pages": [
+     25,
+     31
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-17",
+     "CE201-18",
+     "CE201-19"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/7 Part II Tan KH.pdf": {
+  "code": "CE201",
+  "seq": 8,
+  "title": "Concrete 7 · Part II (Tan K H) outline",
+  "page_count": 4,
+  "sections": [
+   {
+    "title": "Part II scope",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 1 Analysis for Flexure.pdf": {
+  "code": "CE201",
+  "seq": 21,
+  "title": "Concrete practice · Tut 1 Loads & cracked/uncracked sections",
+  "page_count": 16,
+  "sections": [
+   {
+    "title": "1.1 Design loads & patterns (G 25, Q 15 kN/m, two spans)",
+    "pages": [
+     2,
+     6
+    ],
+    "topics": [
+     "CE201-01",
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "1.2 Cracking moment, curvature & steel stress",
+    "pages": [
+     7,
+     16
+    ],
+    "topics": [
+     "CE201-01",
+     "CE201-02"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 2 Design for Flexure.pdf": {
+  "code": "CE201",
+  "seq": 22,
+  "title": "Concrete practice · Tut 2 Design for flexure",
+  "page_count": 16,
+  "sections": [
+   {
+    "title": "2.1 Non-standard section at collapse",
+    "pages": [
+     3,
+     6
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "2.2 Simply supported 8 m beam, h ≤ 650 mm",
+    "pages": [
+     8,
+     11
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "2.3 Inverted L and T sections",
+    "pages": [
+     12,
+     13
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "2.4 Flanged beam capacity",
+    "pages": [
+     14,
+     16
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 3 Design for Shear.pdf": {
+  "code": "CE201",
+  "seq": 23,
+  "title": "Concrete practice · Tut 3 Design for shear",
+  "page_count": 17,
+  "sections": [
+   {
+    "title": "3.1 300 × 700 beam, 3H25, f_ck 35",
+    "pages": [
+     3,
+     6
+    ],
+    "topics": [
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "3.2 Links along a simply supported beam",
+    "pages": [
+     7,
+     12
+    ],
+    "topics": [
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "3.3 Flanged beam, 8 m span, w = 174 kN/m",
+    "pages": [
+     13,
+     17
+    ],
+    "topics": [
+     "CE201-03"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 4 Cracking and Deflection.pdf": {
+  "code": "CE201",
+  "seq": 24,
+  "title": "Concrete practice · Tut 4 Cracking & deflection",
+  "page_count": 11,
+  "sections": [
+   {
+    "title": "4.2 8 m simply supported 300 × 600 beam, 3H25",
+    "pages": [
+     2,
+     7
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "4.3 One-way continuous slab, 100 mm, H10",
+    "pages": [
+     8,
+     11
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 5 Detailing.pdf": {
+  "code": "CE201",
+  "seq": 25,
+  "title": "Concrete practice · Tut 5 Anchorage & laps",
+  "page_count": 12,
+  "sections": [
+   {
+    "title": "5.1 Bent-up H16 bars, poor bond",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "5.2 Curtailment of bars",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "5.3 Anchorage at a simple support",
+    "pages": [
+     10,
+     12
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-15"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 6 Load Path.pdf": {
+  "code": "CE201",
+  "seq": 26,
+  "title": "Concrete practice · Tut 6 Load path & take-down",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Slab → beam → column loads",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf": {
+  "code": "CE201",
+  "seq": 27,
+  "title": "Concrete practice · Tut 6–7 Continuous beams & slabs",
+  "page_count": 32,
+  "sections": [
+   {
+    "title": "6.1 Moment envelope & redistribution",
+    "pages": [
+     1,
+     10
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03",
+     "CE201-11"
+    ]
+   },
+   {
+    "title": "6.2 Design a two-span beam (f_ck 30, f_yk 500)",
+    "pages": [
+     11,
+     24
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03",
+     "CE201-11"
+    ]
+   },
+   {
+    "title": "6.3 Cantilevering roof slab",
+    "pages": [
+     25,
+     32
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-03",
+     "CE201-11"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 8 Columns and Bases.pdf": {
+  "code": "CE201",
+  "seq": 28,
+  "title": "Concrete practice · Tut 8 Columns & pad bases",
+  "page_count": 20,
+  "sections": [
+   {
+    "title": "7.1 Classify columns (braced/unbraced, slenderness)",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10",
+     "CE201-12",
+     "CE201-13"
+    ]
+   },
+   {
+    "title": "7.2 Short braced column, uniaxial & biaxial",
+    "pages": [
+     7,
+     14
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10",
+     "CE201-12",
+     "CE201-13"
+    ]
+   },
+   {
+    "title": "7.3 Pad base 3 × 3 × 0.4 m (N 1800 kN, M 540 kNm)",
+    "pages": [
+     15,
+     20
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10",
+     "CE201-12",
+     "CE201-13"
+    ]
+   }
+  ]
+ },
+ "CE201/CE3165/tutorials/Tut 9 Prestressed.pdf": {
+  "code": "CE201",
+  "seq": 29,
+  "title": "Concrete practice · Tut 9 Prestressed design",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "8.1 Class 1 I-beam, 20 m span — minimum P₀",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-18"
+    ]
+   },
+   {
+    "title": "8.2 Pre-tensioned beam, 28 m, 15.7 mm strands",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE201-16",
+     "CE201-18"
+    ]
+   }
+  ]
  }
 }
