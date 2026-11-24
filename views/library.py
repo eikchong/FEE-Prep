@@ -124,6 +124,18 @@ with right:
             st.session_state["lib_sel"] = (path, page_no + 1)
             st.rerun()
 
+        ol = library.outlines().get(path)
+        if ol:
+            secs = ol["sections"]
+            cur = library.outline_section(path, page_no)
+            labels = [f"{i + 1}. {x['title']} (p. {x['pages'][0]}–{x['pages'][1]})" for i, x in enumerate(secs)]
+            idx = secs.index(cur) if cur in secs else 0
+            pick = st.selectbox("Lecture outline — jump to section", labels, index=idx,
+                                key=f"ol_{path}_{page_no}")
+            tgt = secs[labels.index(pick)]
+            if tgt is not cur and tgt["pages"][0] != page_no:
+                st.session_state["lib_sel"] = (path, tgt["pages"][0])
+                st.rerun()
         fp = library.abs_path(path)
         ext = fp.suffix.lower()
         if ext == ".pdf" and fp.exists():

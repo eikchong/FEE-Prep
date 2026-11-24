@@ -9,7 +9,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import config
-from utils.formulas import FORMULAS, LEGACY_NOTE
+from utils.formulas import LEGACY_NOTE, codes as formula_codes, sections
 from utils.syllabus import subject_map, topic_map
 
 VERIFY = "⚠ verify against Singapore NA"
@@ -48,7 +48,14 @@ def binder_index(min_conf: float = 0.0) -> dict[str, dict[str, dict[str, list[in
 
 
 def _codes(codes):
-    return codes or list(FORMULAS)
+    return codes or formula_codes()
+
+
+def cite(src: dict | None) -> str:
+    """'(CE101_Mechanics_of_Materials.pdf, p. 12)' — the binder-tab reference."""
+    if not src:
+        return ""
+    return f"({Path(src['doc']).name}, p. {src['page']})"
 
 
 def to_markdown(codes: list[str] | None = None, notes: dict | None = None, pins: list | None = None,
@@ -61,9 +68,17 @@ def to_markdown(codes: list[str] | None = None, notes: dict | None = None, pins:
     for code in _codes(codes):
         s = subject_map()[code]
         L += [f"## {code} {s['name']}", ""]
-        for f in FORMULAS.get(code, []):
-            meta = " · ".join(x for x in [f["clause"], f["note"], VERIFY if f["verify"] else ""] if x)
-            L += [f"**{f['title']}**" + (f" — {meta}" if meta else ""), "", f"$$ {f['latex']} $$", ""]
+        for sec in sections(code):
+            if sec["title"]:
+                L += [f"### {sec['title']}" + (f" _{cite(sec.get('src'))}_" if sec.get("src") else ""), ""]
+            for f in sec["items"]:
+                meta = " · ".join(x for x in [f["clause"], f["note"], VERIFY if f["verify"] else "",
+                                              cite(f.get("src"))] if x)
+                if f["latex"]:
+                    L += [f"**{f['title']}**" + (f" — {meta}" if meta else ""), "", f"$$ {f['latex']} $$", ""]
+                else:
+                    L += [f"- **{f['title']}** — {meta}"]
+            L.append("")
         sp = [p for p in pins if p.get("code") == code]
         if sp:
             L += ["### Pinned excerpts", ""]
@@ -151,26 +166,49 @@ def to_pdf(codes: list[str] | None = None, notes: dict | None = None, pins: list
         pdf.cell(0, 8, f"  {code} {s['name']}", fill=True, new_x="LMARGIN", new_y="NEXT")
         pdf.set_text_color(0, 0, 0)
         pdf.ln(1)
-        for f in FORMULAS.get(code, []):
-            png = latex_png(f["latex"])
-            im = Image.open(io.BytesIO(png))
-            w_mm, h_mm = im.width / 220 * 25.4, im.height / 220 * 25.4
-            if w_mm > W:
-                h_mm, w_mm = h_mm * W / w_mm, W
-            meta = " · ".join(x for x in [f["clause"], f["note"]] if x)
-            need = 6 + h_mm + (4 if meta else 0)
-            if pdf.get_y() + need > pdf.h - 14:
-                pdf.add_page()
-            pdf.set_font("DejaVu", "B", 9.5)
-            title = f["title"] + ("  ⚠ verify NA" if f["verify"] else "")
-            pdf.cell(0, 5, title, new_x="LMARGIN", new_y="NEXT")
-            pdf.image(io.BytesIO(png), x=pdf.l_margin + 3, w=w_mm, h=h_mm)
-            if meta:
-                pdf.set_font("DejaVu", "", 8)
-                pdf.set_text_color(90, 90, 90)
-                pdf.multi_cell(0, 4, meta, new_x="LMARGIN", new_y="NEXT")
+        for sec in sections(code):
+            if sec["title"]:
+                if pdf.get_y() > pdf.h - 40:
+                    pdf.add_page()
+                pdf.ln(1)
+                pdf.set_font("DejaVu", "B", 10.5)
+                pdf.set_text_color(r, g, b)
+                pdf.multi_cell(0, 5.5, sec["title"] + (f"   {cite(sec.get('src'))}" if sec.get("src") else ""),
+                               new_x="LMARGIN", new_y="NEXT")
                 pdf.set_text_color(0, 0, 0)
-            pdf.ln(1.5)
+            for f in sec["items"]:
+                meta = " · ".join(x for x in [f["clause"], f["note"], cite(f.get("src"))] if x)
+                title = f["title"] + ("  ⚠ verify NA" if f["verify"] else "")
+                if not f["latex"]:   # text-only key point
+                    if pdf.get_y() + 10 > pdf.h - 14:
+                        pdf.add_page()
+                    pdf.set_font("DejaVu", "B", 9)
+                    pdf.multi_cell(0, 4.4, "• " + title, new_x="LMARGIN", new_y="NEXT")
+                    if meta:
+                        pdf.set_x(pdf.l_margin + 3)
+                        pdf.set_font("DejaVu", "", 8)
+                        pdf.set_text_color(70, 70, 70)
+                        pdf.multi_cell(W - 3, 4, meta, new_x="LMARGIN", new_y="NEXT")
+                        pdf.set_text_color(0, 0, 0)
+                    pdf.ln(0.8)
+                    continue
+                png = latex_png(f["latex"])
+                im = Image.open(io.BytesIO(png))
+                w_mm, h_mm = im.width / 220 * 25.4, im.height / 220 * 25.4
+                if w_mm > W:
+                    h_mm, w_mm = h_mm * W / w_mm, W
+                need = 6 + h_mm + (4 if meta else 0)
+                if pdf.get_y() + need > pdf.h - 14:
+                    pdf.add_page()
+                pdf.set_font("DejaVu", "B", 9.5)
+                pdf.cell(0, 5, title, new_x="LMARGIN", new_y="NEXT")
+                pdf.image(io.BytesIO(png), x=pdf.l_margin + 3, w=w_mm, h=h_mm)
+                if meta:
+                    pdf.set_font("DejaVu", "", 8)
+                    pdf.set_text_color(90, 90, 90)
+                    pdf.multi_cell(0, 4, meta, new_x="LMARGIN", new_y="NEXT")
+                    pdf.set_text_color(0, 0, 0)
+                pdf.ln(1.5)
         sp = [p for p in pins if p.get("code") == code]
         if sp:
             pdf.set_font("DejaVu", "B", 10)

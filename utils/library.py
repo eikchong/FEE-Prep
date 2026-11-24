@@ -13,6 +13,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import os
 import re
 import sqlite3
 from contextlib import closing
@@ -59,6 +60,9 @@ def connect(path: Path | None = None) -> sqlite3.Connection:
 
 # ------------------------------------------------------------------ extraction
 def _ocr_image(img_bytes: bytes) -> str | None:
+    # Tesseract's OpenMP threads thrash badly when several pages/processes run at once
+    # (minutes per page instead of ~1.5 s). One thread per call is far faster overall.
+    os.environ.setdefault("OMP_THREAD_LIMIT", "1")
     try:
         import pytesseract
         from PIL import Image
@@ -99,15 +103,20 @@ def extract_pages(path: Path) -> list[tuple[str, bool]]:
     ext = path.suffix.lower()
     if ext == ".pdf":
         import pymupdf as fitz
-        pages = []
+        from concurrent.futures import ThreadPoolExecutor
+        pages, scans = [], {}
         with fitz.open(path) as doc:
-            for pg in doc:
+            for i, pg in enumerate(doc):
                 txt = unshift_if_garbled(pg.get_text("text") or "")
                 if len(txt.strip()) < 20:  # scanned / image page → OCR
-                    ocr = _ocr_image(pg.get_pixmap(dpi=200).tobytes("png"))
-                    pages.append(((ocr or txt), True))
+                    scans[i] = pg.get_pixmap(dpi=200).tobytes("png")
+                    pages.append((txt, True))
                 else:
                     pages.append((txt, False))
+        if scans:  # tesseract runs as a subprocess, so threads give real parallelism
+            with ThreadPoolExecutor(max_workers=max(1, (os.cpu_count() or 2))) as ex:
+                for i, ocr in zip(scans, ex.map(_ocr_image, scans.values())):
+                    pages[i] = ((ocr or pages[i][0]), True)
         return pages
     if ext == ".docx":
         import docx
@@ -193,6 +202,32 @@ def _past_paper_tags() -> dict[tuple[str, int], dict[str, float]]:
     return out
 
 
+def outlines() -> dict:
+    """data/lecture_outlines.json: {doc: {code, title, sections: [{title, pages: [a, b], topics}]}}."""
+    try:
+        return json.loads((config.STATIC_DATA_DIR / "lecture_outlines.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+
+
+def _outline_tags() -> dict[tuple[str, int], dict[str, float]]:
+    out: dict = {}
+    for doc, o in outlines().items():
+        for sec in o.get("sections", []):
+            a, b = sec["pages"]
+            for pg in range(a, b + 1):
+                for t in sec.get("topics", []):
+                    out.setdefault((doc, pg), {})[t] = 0.9
+    return out
+
+
+def outline_section(doc: str, page: int) -> dict | None:
+    for sec in outlines().get(doc, {}).get("sections", []):
+        if sec["pages"][0] <= page <= sec["pages"][1]:
+            return sec
+    return None
+
+
 # ------------------------------------------------------------------ ingestion
 @dataclass
 class IngestReport:
@@ -240,6 +275,7 @@ def ingest(materials: Path | None = None, con: sqlite3.Connection | None = None,
     rep = IngestReport()
     kw = _keywords()
     past_tags = _past_paper_tags()
+    outline_tags = _outline_tags()
     files = sorted(p for p in root.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED
                    and not any(part.startswith(".") for part in p.relative_to(root).parts))
     seen = set()
@@ -275,8 +311,12 @@ def ingest(materials: Path | None = None, con: sqlite3.Connection | None = None,
                     rep.ocr_missing += 1
             con.execute("INSERT INTO pages VALUES(?,?,?,?)", (doc_id, n, text, int(ocr)))
             con.execute("INSERT INTO pages_fts(text, doc_id, page_no) VALUES(?,?,?)", (text, doc_id, n))
-            tags = (past_tags.get((key, n), {}) if key.startswith(PAST_PREFIX)
-                    else auto_tags(text, code, kw, forced))
+            if key.startswith(PAST_PREFIX):
+                tags = past_tags.get((key, n), {})
+            else:   # lecture outline (curated) + keyword matches within the subject
+                tags = auto_tags(text, code, kw, forced)
+                for t, cf in outline_tags.get((key, n), {}).items():
+                    tags[t] = max(cf, tags.get(t, 0))
             for tid, conf in tags.items():
                 con.execute("INSERT OR REPLACE INTO page_tags VALUES(?,?,?,?,?)", (key, n, tid, "auto", conf))
         con.commit()

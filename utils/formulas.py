@@ -5,8 +5,10 @@ verify=True → value depends on a Nationally Determined Parameter: "verify agai
 """
 from __future__ import annotations
 
-F = lambda title, latex, clause="", note="", verify=False: {  # noqa: E731
-    "title": title, "latex": latex, "clause": clause, "note": note, "verify": verify}
+def F(title, latex="", clause="", note="", verify=False, src=None, legacy=False):
+    """One sheet entry. latex="" → a text-only key point. src=(doc, page) cites the lecture notes."""
+    return {"title": title, "latex": latex, "clause": clause, "note": note, "verify": verify,
+            "src": {"doc": src[0], "page": src[1]} if src else None, "legacy": legacy}
 
 FORMULAS: dict[str, list[dict]] = {
  "CE101": [
@@ -154,3 +156,43 @@ FORMULAS: dict[str, list[dict]] = {
 }
 
 LEGACY_NOTE = "Legacy (BS 8110 / BS 5950) methods are not acceptable in FEE 2027 — Eurocodes + Singapore NA only."
+
+
+# Subjects with lecture notes get sections in lecture order (filled per subject below / in
+# utils/formulas_notes.py). Subjects without notes fall back to the flat FORMULAS list.
+SECTIONS: dict[str, list[dict]] = {}
+
+
+def sections(code: str) -> list[dict]:
+    """[{title, src, items}] in lecture order; legacy items are kept out (see legacy_items)."""
+    if code in SECTIONS:
+        secs = list(SECTIONS[code])
+        if FORMULAS.get(code):   # our original code-reference entries, after the lecture-order sections
+            secs.append({"title": "Quick reference (not from the notes)", "src": None, "items": FORMULAS[code]})
+    else:
+        secs = [{"title": None, "src": None, "items": FORMULAS.get(code, [])}]
+    return [{**sec, "items": [f for f in sec["items"] if not f.get("legacy")]} for sec in secs]
+
+
+LEGACY: dict[str, list[dict]] = {}   # code -> legacy (non-Eurocode) items found in the notes
+
+
+def legacy_items(code: str) -> list[dict]:
+    return ([f for sec in SECTIONS.get(code, []) for f in sec["items"] if f.get("legacy")]
+            + LEGACY.get(code, []))
+
+
+def all_items(code: str) -> list[dict]:
+    return [f for sec in sections(code) for f in sec["items"]]
+
+
+def codes() -> list[str]:
+    return list(dict.fromkeys([*FORMULAS, *SECTIONS]))
+
+
+try:  # lecture-note content lives in its own module to keep this file readable
+    from utils.formulas_notes import NOTES_LEGACY, NOTES_SECTIONS
+    SECTIONS.update(NOTES_SECTIONS)
+    LEGACY.update(NOTES_LEGACY)
+except ImportError:  # pragma: no cover
+    pass

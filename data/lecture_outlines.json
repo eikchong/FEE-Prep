@@ -1,0 +1,812 @@
+{
+ "CE101/CE101_Mechanics_of_Materials.pdf": {
+  "code": "CE101",
+  "title": "CE101 Mechanics of Materials (NUS PE prep, Dr Tam Chat Tim)",
+  "sections": [
+   {
+    "title": "Syllabus & reading",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": []
+   },
+   {
+    "title": "Strength, stiffness & deformability",
+    "pages": [
+     2,
+     4
+    ],
+    "topics": [
+     "CE101-01",
+     "CE101-02"
+    ]
+   },
+   {
+    "title": "Ductile–brittle behaviour, creep & relaxation",
+    "pages": [
+     5,
+     6
+    ],
+    "topics": [
+     "CE101-03",
+     "CE101-04"
+    ]
+   },
+   {
+    "title": "Fatigue",
+    "pages": [
+     7,
+     9
+    ],
+    "topics": [
+     "CE101-05"
+    ]
+   },
+   {
+    "title": "Steel: composition & metallurgy",
+    "pages": [
+     10,
+     13
+    ],
+    "topics": [
+     "CE101-14",
+     "CE101-15"
+    ]
+   },
+   {
+    "title": "Steel: strengthening & weldability",
+    "pages": [
+     14,
+     15
+    ],
+    "topics": [
+     "CE101-15",
+     "CE101-16"
+    ]
+   },
+   {
+    "title": "Reinforcement & prestressing steel",
+    "pages": [
+     16,
+     17
+    ],
+    "topics": [
+     "CE101-15"
+    ]
+   },
+   {
+    "title": "Corrosion & its control",
+    "pages": [
+     18,
+     20
+    ],
+    "topics": [
+     "CE101-17"
+    ]
+   },
+   {
+    "title": "Concrete vs steel properties; concrete as a composite",
+    "pages": [
+     21,
+     22
+    ],
+    "topics": [
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Cement & hydration",
+    "pages": [
+     23,
+     33
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Water",
+    "pages": [
+     34,
+     37
+    ],
+    "topics": [
+     "CE101-06",
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Aggregates",
+    "pages": [
+     37,
+     46
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Chemical admixtures",
+    "pages": [
+     46,
+     50
+    ],
+    "topics": [
+     "CE101-06"
+    ]
+   },
+   {
+    "title": "Mix design & strength",
+    "pages": [
+     51,
+     54
+    ],
+    "topics": [
+     "CE101-09"
+    ]
+   },
+   {
+    "title": "Fresh concrete & workability tests",
+    "pages": [
+     54,
+     58
+    ],
+    "topics": [
+     "CE101-07",
+     "CE101-08"
+    ]
+   },
+   {
+    "title": "Strength testing & conformity",
+    "pages": [
+     59,
+     64
+    ],
+    "topics": [
+     "CE101-10",
+     "CE101-11"
+    ]
+   },
+   {
+    "title": "Non-destructive testing",
+    "pages": [
+     65,
+     69
+    ],
+    "topics": [
+     "CE101-10"
+    ]
+   },
+   {
+    "title": "Stress–strain & time-dependent behaviour",
+    "pages": [
+     69,
+     71
+    ],
+    "topics": [
+     "CE101-02",
+     "CE101-04",
+     "CE101-07"
+    ]
+   },
+   {
+    "title": "Quality control, durability & special concrete",
+    "pages": [
+     71,
+     75
+    ],
+    "topics": [
+     "CE101-11",
+     "CE101-12",
+     "CE101-13",
+     "CE101-08"
+    ]
+   },
+   {
+    "title": "Figure appendix (textbook figures)",
+    "pages": [
+     76,
+     90
+    ],
+    "topics": []
+   }
+  ],
+  "page_count": 90
+ },
+ "CE102/CE102_Structural_Mechanics.pdf": {
+  "code": "CE102",
+  "title": "CE102 Structural Mechanics (NUS PE prep, A/Prof Ang Kok Keng)",
+  "sections": [
+   {
+    "title": "Topics; fundamental principles & laws",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   },
+   {
+    "title": "Equilibrium of particles",
+    "pages": [
+     4,
+     4
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   },
+   {
+    "title": "Moments & equilibrium of rigid bodies",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Free-body diagrams; two- & three-force members",
+    "pages": [
+     9,
+     12
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Pin-jointed structures: trusses (joints & sections) and frames",
+    "pages": [
+     12,
+     23
+    ],
+    "topics": [
+     "CE102-04",
+     "CE102-05"
+    ]
+   },
+   {
+    "title": "Stress, strain & Hooke's law",
+    "pages": [
+     24,
+     26
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Axially loaded members (incl. indeterminate bar)",
+    "pages": [
+     27,
+     29
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Torsion of circular shafts",
+    "pages": [
+     30,
+     33
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Flexural members: internal forces, SFD & BMD",
+    "pages": [
+     34,
+     41
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   },
+   {
+    "title": "Bending stresses & section properties",
+    "pages": [
+     42,
+     49
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Shear stresses in beams",
+    "pages": [
+     50,
+     54
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Deflection: elastic curve & Macaulay",
+    "pages": [
+     55,
+     59
+    ],
+    "topics": [
+     "CE102-08",
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Moment-area method",
+    "pages": [
+     60,
+     65
+    ],
+    "topics": [
+     "CE102-08",
+     "CE103-01"
+    ]
+   }
+  ],
+  "page_count": 65
+ },
+ "CE103/CE103_Structural_Analysis.pdf": {
+  "code": "CE103",
+  "title": "CE103 Structural Analysis (NUS PE prep) — preceded by handwritten summary notes",
+  "sections": [
+   {
+    "title": "Handwritten summary: mechanics (vectors, moments, torsion, bending)",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE102-02",
+     "CE102-07",
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Handwritten summary: frame indeterminacy example",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Handwritten summary: RC beams & columns (BS 8110 — legacy)",
+    "pages": [
+     4,
+     5
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-09",
+     "CE201-10"
+    ]
+   },
+   {
+    "title": "Handwritten summary: fluid mechanics",
+    "pages": [
+     6,
+     6
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-05"
+    ]
+   },
+   {
+    "title": "Handwritten summary: questions to check",
+    "pages": [
+     7,
+     7
+    ],
+    "topics": []
+   },
+   {
+    "title": "Handwritten summary: geotechnical",
+    "pages": [
+     8,
+     9
+    ],
+    "topics": [
+     "CE104-03",
+     "CE203-02",
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Handwritten summary: transport (stopping distance)",
+    "pages": [
+     10,
+     10
+    ],
+    "topics": [
+     "CE204-02"
+    ]
+   },
+   {
+    "title": "Handwritten summary: steel (CE, section classes — BS 5950 naming)",
+    "pages": [
+     11,
+     11
+    ],
+    "topics": [
+     "CE101-16",
+     "CE202-02"
+    ]
+   },
+   {
+    "title": "Slides: contents; statically determinate structures",
+    "pages": [
+     12,
+     14
+    ],
+    "topics": [
+     "CE103-07"
+    ]
+   },
+   {
+    "title": "Stability & determinacy of beams, trusses, frames",
+    "pages": [
+     15,
+     17
+    ],
+    "topics": [
+     "CE103-02",
+     "CE102-05"
+    ]
+   },
+   {
+    "title": "Plane trusses",
+    "pages": [
+     18,
+     25
+    ],
+    "topics": [
+     "CE102-04"
+    ]
+   },
+   {
+    "title": "Beams & frames: internal forces, SFD/BMD",
+    "pages": [
+     26,
+     35
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   },
+   {
+    "title": "Deflections: elastic curve & Macaulay",
+    "pages": [
+     36,
+     40
+    ],
+    "topics": [
+     "CE103-01",
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Deflections: moment-area",
+    "pages": [
+     41,
+     46
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Work–energy & virtual work",
+    "pages": [
+     47,
+     54
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Influence lines & Müller-Breslau",
+    "pages": [
+     55,
+     63
+    ],
+    "topics": [
+     "CE103-03"
+    ]
+   },
+   {
+    "title": "Indeterminate structures: force method",
+    "pages": [
+     64,
+     65
+    ],
+    "topics": [
+     "CE103-02",
+     "CE103-07"
+    ]
+   },
+   {
+    "title": "Castigliano & least work",
+    "pages": [
+     66,
+     69
+    ],
+    "topics": [
+     "CE103-01",
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Slope-deflection method",
+    "pages": [
+     70,
+     75
+    ],
+    "topics": [
+     "CE103-04"
+    ]
+   },
+   {
+    "title": "Moment distribution",
+    "pages": [
+     76,
+     79
+    ],
+    "topics": [
+     "CE103-05"
+    ]
+   },
+   {
+    "title": "Direct stiffness method (trusses, beams, frames)",
+    "pages": [
+     80,
+     91
+    ],
+    "topics": [
+     "CE103-08"
+    ]
+   }
+  ],
+  "page_count": 91
+ },
+ "CE105/CE105_Pressure_and_Fluid_Statics.pdf": {
+  "code": "CE105",
+  "title": "Fluids, hydraulics & hydrology compilation (NUS PE prep) — CE105 + CE205",
+  "sections": [
+   {
+    "title": "Fluids, viscosity & pressure",
+    "pages": [
+     1,
+     5
+    ],
+    "topics": [
+     "CE105-01",
+     "CE105-02"
+    ]
+   },
+   {
+    "title": "Hydrostatics, manometers & barometer",
+    "pages": [
+     6,
+     13
+    ],
+    "topics": [
+     "CE105-02"
+    ]
+   },
+   {
+    "title": "Forces on plane surfaces",
+    "pages": [
+     14,
+     18
+    ],
+    "topics": [
+     "CE105-02"
+    ]
+   },
+   {
+    "title": "Forces on curved surfaces",
+    "pages": [
+     19,
+     19
+    ],
+    "topics": [
+     "CE105-02"
+    ]
+   },
+   {
+    "title": "Buoyancy & stability",
+    "pages": [
+     20,
+     29
+    ],
+    "topics": [
+     "CE105-03"
+    ]
+   },
+   {
+    "title": "Fluids in rigid-body motion",
+    "pages": [
+     30,
+     36
+    ],
+    "topics": [
+     "CE105-02"
+    ]
+   },
+   {
+    "title": "Open channels: specific energy & critical flow",
+    "pages": [
+     37,
+     47
+    ],
+    "topics": [
+     "CE205-05"
+    ]
+   },
+   {
+    "title": "Hydraulic jump",
+    "pages": [
+     48,
+     51
+    ],
+    "topics": [
+     "CE205-06"
+    ]
+   },
+   {
+    "title": "Gradually varied flow & surface profiles",
+    "pages": [
+     52,
+     64
+    ],
+    "topics": [
+     "CE205-07"
+    ]
+   },
+   {
+    "title": "Uniform flow, Chézy & Manning, channel design",
+    "pages": [
+     65,
+     81
+    ],
+    "topics": [
+     "CE205-04"
+    ]
+   },
+   {
+    "title": "Weirs & control gates",
+    "pages": [
+     82,
+     100
+    ],
+    "topics": [
+     "CE205-11"
+    ]
+   },
+   {
+    "title": "Pipe friction & minor losses",
+    "pages": [
+     101,
+     117
+    ],
+    "topics": [
+     "CE205-01"
+    ]
+   },
+   {
+    "title": "Conservation laws: continuity, momentum, Bernoulli, HGL",
+    "pages": [
+     118,
+     131
+    ],
+    "topics": [
+     "CE105-04",
+     "CE105-05",
+     "CE105-06"
+    ]
+   },
+   {
+    "title": "Pipe networks: branched systems",
+    "pages": [
+     132,
+     139
+    ],
+    "topics": [
+     "CE205-03",
+     "CE206-03"
+    ]
+   },
+   {
+    "title": "Single pipes, series & parallel",
+    "pages": [
+     140,
+     158
+    ],
+    "topics": [
+     "CE205-01",
+     "CE205-03"
+    ]
+   },
+   {
+    "title": "Gravity & pumped systems, pump combinations",
+    "pages": [
+     159,
+     190
+    ],
+    "topics": [
+     "CE205-02",
+     "CE206-03"
+    ]
+   },
+   {
+    "title": "Hydrology: frequency analysis & rainfall",
+    "pages": [
+     191,
+     198
+    ],
+    "topics": [
+     "CE205-08",
+     "CE205-13"
+    ]
+   },
+   {
+    "title": "Hydrographs, losses & infiltration",
+    "pages": [
+     199,
+     204
+    ],
+    "topics": [
+     "CE205-09",
+     "CE205-10",
+     "CE205-12"
+    ]
+   },
+   {
+    "title": "Unit hydrograph, S-curve, stage–discharge",
+    "pages": [
+     205,
+     212
+    ],
+    "topics": [
+     "CE205-12",
+     "CE205-11",
+     "CE205-13"
+    ]
+   },
+   {
+    "title": "Flood routing & reservoirs",
+    "pages": [
+     213,
+     220
+    ],
+    "topics": [
+     "CE205-14"
+    ]
+   },
+   {
+    "title": "Groundwater & well hydraulics",
+    "pages": [
+     221,
+     226
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   }
+  ],
+  "page_count": 226
+ }
+}

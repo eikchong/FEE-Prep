@@ -55,7 +55,41 @@ MCQ_CHECKS = {
     "M-CE105-001": lambda: 1000 * 9.81 * 1.5 * 6 / 1000,
     "M-CE105-002": lambda: 1000 * ((0.1 / (math.pi * 0.15 ** 2 / 4)) ** 2 - (0.1 / (math.pi * 0.3 ** 2 / 4)) ** 2) / 2 / 1000,
     "M-CE105-003": lambda: 0.02 * 25 ** 2.5,
+    # ---- from lecture notes
+    "M-CE101-007": lambda: (150 - (-50)) / 2,
+    "M-CE101-008": lambda: 0.18 + 1.20 / 6 + (0.10 + 0.05 + 0.02) / 5 + (0.15 + 0.10) / 15,
+    "M-CE101-009": lambda: math.sqrt(4 * (4.62 / (0.00785 * 1.20)) / math.pi),
+    "M-CE101-011": lambda: 160 / (450 + 3 * 35),
+    "M-CE101-012": lambda: (1 - 0.02 - 350 / 3150 - 175 / 1000 - 750 / 2600) * 2650,
+    "M-CE101-013": lambda: 15 / math.sqrt(9),
+    "M-CE101-014": lambda: 12000 * 300 / (100 * 100 ** 2),
+    "M-CE102-005": lambda: math.hypot(20 + 30 * math.cos(math.radians(60)) + 25 * math.cos(math.radians(150)),
+                                      30 * math.sin(math.radians(60)) + 25 * math.sin(math.radians(150))),
+    "M-CE102-006": lambda: math.sqrt(sum(x * x for x in _cross((4, 1, 0), (2, -3, 6)))),
+    "M-CE102-007": lambda: 400 * (1 / 300) / (1 / 300 + 1 / 500),
+    "M-CE102-008": lambda: 10e6 * 50 / (math.pi * (100 ** 4 - 60 ** 4) / 32),
+    "M-CE102-009": lambda: math.degrees(1e6 * 2000 / (80000 * math.pi * 50 ** 4 / 32)),
+    "M-CE102-010": lambda: 1.5 * 60000 / (100 * 300),
+    "M-CE102-011": lambda: 40 * 6 ** 2 / (16 * 20000),
+    "M-CE103-006": lambda: (0.8 * 50 * 4 + (-0.6) * (-30) * 3) / 200000 * 1000,
+    "M-CE103-007": lambda: 1.25 * 12e-6 * 30 * 5000,
+    "M-CE103-008": lambda: 5 * 0.5 * 10 * (4 * 6 / 10),
+    "M-CE103-009": lambda: 3 * 12 * 8 / 8,
+    "M-CE103-010": lambda: 2 * 40000 / 5 * (2 * 0.002),
+    "M-CE103-011": lambda: 50 * math.cos(math.radians(30)) ** 2,
+    "M-CE105-004": lambda: (13.6 - 1) * 9810 * 0.2 / 1000,
+    "M-CE105-005": lambda: 2.5 + (2 * 3 ** 3 / 12) / (2.5 * 6),
+    "M-CE105-006": lambda: 9.81 * math.pi * 2 ** 2 / 4 * 3,
+    "M-CE105-007": lambda: 650 / 1025 * 0.5,
+    "M-CE105-008": lambda: 0.75 + 6 ** 2 / (12 * 1.5) - 2.0,
+    "M-CE105-009": lambda: math.degrees(math.atan(2 / 9.81)),
+    "M-CE105-010": lambda: 10 ** 2 * 0.3 ** 2 / (2 * 9.81),
+    "M-CE105-011": lambda: math.sqrt(2) * 1000 * 0.2 * (0.2 / (math.pi * 0.3 ** 2 / 4)),
 }
+
+
+def _cross(a, b):
+    return (a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0])
 
 
 @pytest.mark.parametrize("qid", sorted(MCQ_CHECKS))
@@ -66,6 +100,30 @@ def test_mcq_numeric(qid):
     best = min(range(4), key=lambda i: abs(vals[i] - v) / max(abs(v), 1e-9))
     assert best == q["answer"], f"{qid}: computed {v:.4g}, keyed {q['options'][q['answer']]}"
     assert abs(vals[best] - v) / abs(v) < 0.01, f"{qid}: computed {v:.4g} vs option {vals[best]}"
+
+
+def test_mcq_text_answers_from_notes():
+    by = {q["id"]: q for q in MCQ}
+    assert 0.001 * (1 - 2 * 0.3) == pytest.approx(4e-4) and by["M-CE101-006"]["answer"] == 1   # volume increases
+    assert 0.25 + 0.658 * 0.60 == pytest.approx(0.645, abs=1e-3) and by["M-CE101-015"]["answer"] == 1
+    assert 4 * 3 + 4 == 5 * 3 + 1 and by["M-CE103-005"]["answer"] == 0                        # 3m+r = 3j+c
+    assert by["M-CE101-010"]["answer"] == 2                                                    # w/c ≈ 0.38
+    assert 1 / math.sqrt(4) == 0.5 and by["M-CE101-005"]["options"][by["M-CE101-005"]["answer"]] == "one half"
+
+
+def test_every_new_mcq_cites_a_lecture_page():
+    ol = json.loads((DATA / "lecture_outlines.json").read_text(encoding="utf-8"))
+    cited = [q for q in MCQ if q.get("source")]
+    assert len(cited) >= 33
+    for q in cited:
+        doc, page = q["source"]["doc"], q["source"]["page"]
+        assert doc in ol, q["id"]
+        assert 1 <= page <= ol[doc]["page_count"], q["id"]
+
+
+def test_part1_subjects_have_ten_plus_where_notes_exist():
+    for code in ("CE101", "CE102", "CE103", "CE105"):
+        assert sum(q["code"] == code for q in MCQ) >= 10, code
 
 
 def test_mcq_determinacy():
@@ -117,6 +175,35 @@ def p2_values():
     yn = c.normal_depth_trapezoid(12, 3, 2, 0.015, 0.0008)
     m = c.manning_trapezoid(3, 2, yn, 0.015, 0.0008)
     v["P2-CE205-001"] = {"y_n": yn, "V": m["V"], "y_c": c.critical_depth_trapezoid(12, 3, 2), "Fr": m["Fr"]}
+    # ---- CE205 from lecture notes
+    g = 9.81
+    A1, A2 = math.pi * 0.4 ** 2 / 4, math.pi * 0.3 ** 2 / 4
+
+    def solve(n_parallel):
+        def head(Q):
+            v1, v2 = Q / A1, Q / n_parallel / A2
+            return v1 ** 2 / (2 * g) * (0.5 + 0.02 * 800 / 0.4) + v2 ** 2 / (2 * g) * (0.3 + 0.02 * 600 / 0.3 + 1.0) - 30
+        return c._bisect(head, 1e-6, 5.0)
+    Q = solve(1)
+    v1, v2 = Q / A1, Q / A2
+    egl = 100 - v1 ** 2 / (2 * g) * (0.5 + 40)
+    v["P2-CE205-002"] = {"Q": Q, "v1": v1, "v2": v2, "EGL_junction": egl, "HGL_junction": egl - v1 ** 2 / (2 * g),
+                         "Q_parallel": solve(2)}
+    Qw = 0.88 * (2 / 3) ** 1.5 * math.sqrt(g) * 4 * 0.8 ** 1.5
+    q = Qw / 4
+    Fr = q / 0.25 / math.sqrt(g * 0.25)
+    y2 = 0.25 / 2 * (math.sqrt(1 + 8 * Fr ** 2) - 1)
+    v["P2-CE205-003"] = {"Q": Qw, "yc": (q * q / g) ** (1 / 3), "Fr1": Fr, "y2": y2,
+                         "dE": (y2 - 0.25) ** 3 / (4 * 0.25 * y2),
+                         "Q_vnotch": 0.59 * 8 / 15 * math.sqrt(2 * g) * math.tan(math.radians(45)) * 0.3 ** 2.5}
+    UH, P = [0, 25, 60, 45, 30, 15, 5, 0], [2, 3]
+    drh = [sum(P[m] * UH[n - m] for m in range(2) if 0 <= n - m < len(UH)) for n in range(len(UH) + 1)]
+    KT = -math.sqrt(6) / math.pi * (0.5772 + math.log(math.log(50 / 49)))
+    K, X, dt = 12, 0.2, 6
+    Dm = K - K * X + 0.5 * dt
+    v["P2-CE205-004"] = {"area_km2": sum(UH) * 3 * 3600 / 0.01 / 1e6, "DRH_peak": max(drh), "KT": KT,
+                         "Q50": 420 + KT * 130, "risk25": 1 - (1 - 1 / 50) ** 25,
+                         "C0": (-K * X + 0.5 * dt) / Dm, "C1": (K * X + 0.5 * dt) / Dm, "C2": (K - K * X - 0.5 * dt) / Dm}
     cl = c.clarifier(20000, 40, 2)
     a = c.activated_sludge(20000, 180, 0.3, 2500, 150, 8000)
     v["P2-CE206-001"] = {"A": cl["A"], "D": cl["D"], "depth": cl["depth"], "V_aer": a["V"], "HRT_h": a["HRT_h"],
