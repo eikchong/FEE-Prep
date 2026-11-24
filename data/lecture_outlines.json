@@ -3278,10 +3278,20 @@
   "page_count": 11,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Effect of slip depth, water, cohesion & weak seams (β = 18°)",
     "pages": [
-     1,
-     11
+     2,
+     7
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Q2 Sand over OC clay, β 14–17°, EC7 DA1-C2",
+    "pages": [
+     8,
+     10
     ],
     "topics": [
      "CE203-01"
@@ -3296,10 +3306,40 @@
   "page_count": 16,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Short-term seabed trench in soft clay (c_u 17, γ 16, H 3 m, β 60°)",
     "pages": [
-     1,
-     16
+     2,
+     4
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Q2 Two-layer natural slope — Simplified Bishop",
+    "pages": [
+     5,
+     9
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "How to apply EC7 in Bishop",
+    "pages": [
+     10,
+     13
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Ponded water & other details",
+    "pages": [
+     14,
+     15
     ],
     "topics": [
      "CE203-01"
@@ -3314,10 +3354,40 @@
   "page_count": 14,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "1a Trial circle, 3 m tension crack, 50 kPa surcharge",
     "pages": [
-     1,
-     14
+     3,
+     7
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "1b Bed erosion of 3 m (DA1-C1)",
+    "pages": [
+     8,
+     10
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "1c Falling water level",
+    "pages": [
+     11,
+     11
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Worked slice (slice 7, C1)",
+    "pages": [
+     12,
+     13
     ],
     "topics": [
      "CE203-01"
@@ -3332,10 +3402,20 @@
   "page_count": 11,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Strategy (SLIDE, DA1-C2, 50 kPa footing 2 m from crest)",
     "pages": [
-     1,
-     11
+     3,
+     4
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Results by location",
+    "pages": [
+     5,
+     10
     ],
     "topics": [
      "CE203-01"
@@ -3350,10 +3430,20 @@
   "page_count": 6,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Regulatory terms & GBW thresholds",
     "pages": [
      1,
-     6
+     2
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Choosing a wall & wall types",
+    "pages": [
+     4,
+     5
     ],
     "topics": [
      "CE203-04"
@@ -3368,10 +3458,60 @@
   "page_count": 15,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1–Q2 At-rest pressure",
     "pages": [
      1,
-     15
+     2
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q3–Q6 Concepts, tension cut, Rankine thrust",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q7 c′–φ′ backfill (8 m, c′ 20, φ′ 25°, γ 17.5)",
+    "pages": [
+     4,
+     4
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q8–Q10 Water in the backfill",
+    "pages": [
+     5,
+     7
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q11 Two layers + 50 kPa surcharge",
+    "pages": [
+     8,
+     9
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q12 Passive with sloping backfill",
+    "pages": [
+     10,
+     11
     ],
     "topics": [
      "CE203-02"
@@ -3386,9 +3526,49 @@
   "page_count": 19,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1–Q2 Clay backfill & tension cracks",
     "pages": [
      1,
+     3
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q3–Q6 Coulomb, densification, layered",
+    "pages": [
+     4,
+     8
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q7–Q8 Active vs passive moments about the base",
+    "pages": [
+     9,
+     13
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q9–Q10 Surcharge, rough wall, flooding",
+    "pages": [
+     14,
+     15
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Q11–Q13 Plane vs curved passive surfaces",
+    "pages": [
+     16,
      19
     ],
     "topics": [
@@ -3404,9 +3584,39 @@
   "page_count": 14,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Gravity wall 6.6 × 3.2 m, φ′ 35°, no front soil",
     "pages": [
      1,
+     2
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q2–Q3 Adding 2 m of front soil; smooth base",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q4 c′–φ′ backfill with 20 kPa surcharge",
+    "pages": [
+     6,
+     8
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q5–Q6 Cantilever & gravity walls with heel soil",
+    "pages": [
+     9,
      14
     ],
     "topics": [
@@ -3422,9 +3632,29 @@
   "page_count": 6,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "EQU (overturning)",
     "pages": [
      1,
+     2
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "GEO DA1-C1 (sliding, bearing)",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "GEO DA1-C2",
+    "pages": [
+     5,
      6
     ],
     "topics": [
@@ -3440,9 +3670,31 @@
   "page_count": 15,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1–Q2 Cantilever in sand (H 6 m, γ 17, φ 30°)",
     "pages": [
      1,
+     6
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Q3–Q4 Same wall with water at 3 m both sides",
+    "pages": [
+     7,
+     11
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Q5 Layered sand (limiting pressure profile)",
+    "pages": [
+     12,
      15
     ],
     "topics": [
@@ -3459,9 +3711,20 @@
   "page_count": 8,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Free earth support (tie 1 m below top)",
     "pages": [
      1,
+     3
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Q2–Q3 Factor of safety on passive",
+    "pages": [
+     4,
      8
     ],
     "topics": [
@@ -3478,9 +3741,31 @@
   "page_count": 9,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "True/false concepts",
     "pages": [
      1,
+     2
+    ],
+    "topics": [
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "K₀ from OCR; Mohr pole",
+    "pages": [
+     3,
+     5
+    ],
+    "topics": [
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Gravity wall 7 m (c′ 10, φ′ 28°, 2 m front soil, no base friction)",
+    "pages": [
+     6,
      9
     ],
     "topics": [
@@ -3497,9 +3782,45 @@
   "page_count": 9,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 River bank with bench & tension crack (Bishop, DA1-C2)",
     "pages": [
-     1,
+     2,
+     5
+    ],
+    "topics": [
+     "CE203-01",
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q2 Seabed trench (same as Tut 2 Q1)",
+    "pages": [
+     5,
+     6
+    ],
+    "topics": [
+     "CE203-01",
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q3 Cantilever wall, layered backfill, EC7 sliding",
+    "pages": [
+     7,
+     8
+    ],
+    "topics": [
+     "CE203-01",
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Q4 Sheet pile in clay (s_u 30) with sand backfill",
+    "pages": [
+     8,
      9
     ],
     "topics": [
@@ -3517,10 +3838,40 @@
   "page_count": 7,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "a) SPT corrections",
     "pages": [
      1,
-     7
+     2
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "b–c) CPTu: soil type & strength",
+    "pages": [
+     2,
+     3
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "d–e) Menard pressuremeter",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "f–g) Compare s_u; Hvorslev permeability",
+    "pages": [
+     5,
+     5
     ],
     "topics": [
      "CE203-05"
@@ -3535,7 +3886,7 @@
   "page_count": 9,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Classification, SPT, CPTu, PMT, Hvorslev",
     "pages": [
      1,
      9
@@ -3553,9 +3904,49 @@
   "page_count": 7,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "a) Compaction curves & ZAV",
     "pages": [
      1,
+     2
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "b) Target density from D_R = 75 %",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "c–d) Rollers & lift thickness",
+    "pages": [
+     4,
+     4
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Truck trips & water to add",
+    "pages": [
+     4,
+     6
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Sand-cone check",
+    "pages": [
+     6,
      7
     ],
     "topics": [
@@ -3571,9 +3962,29 @@
   "page_count": 6,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Square pad on firm clay (G 800, Q 300 kN, D 2 m)",
     "pages": [
      1,
+     3
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Q2 Inclined load (G 500, Q 1500, H 120 kN)",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Q3 Tall column: large moment (H 75 kN at 5 m)",
+    "pages": [
+     5,
      6
     ],
     "topics": [
@@ -3589,10 +4000,50 @@
   "page_count": 22,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Stress under an L-shaped footing (q 300 kPa, z 4 m)",
     "pages": [
-     1,
-     22
+     2,
+     5
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Q2a Immediate settlement — 6 m tank, 200 kPa",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Q2b–d e–log p′, Casagrande p′_c, Schmertmann correction",
+    "pages": [
+     10,
+     13
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Q2e Consolidation settlement (two sub-layers)",
+    "pages": [
+     14,
+     17
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Q2f–h Secondary compression & totals",
+    "pages": [
+     18,
+     21
     ],
     "topics": [
      "CE203-09"
@@ -3607,9 +4058,39 @@
   "page_count": 9,
   "sections": [
    {
-    "title": "Solutions",
+    "title": "Q1 Downdrag on an end-bearing pile",
     "pages": [
      1,
+     2
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Q2 Resistance from static load tests (CFA Ø600, 11 m)",
+    "pages": [
+     3,
+     4
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Q3 Resistance from ground parameters (same pile)",
+    "pages": [
+     5,
+     6
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Q4–Q5 Tension piles under a flooded tank",
+    "pages": [
+     7,
      9
     ],
     "topics": [
@@ -4576,6 +5057,523 @@
     ],
     "topics": [
      "CE205-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/OAP 0 Introduction.pdf": {
+  "code": "CE203",
+  "seq": 0.4,
+  "title": "CE3115 · Course outline (slopes & earth-retaining structures)",
+  "page_count": 7,
+  "sections": [
+   {
+    "title": "Scope",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/OAP 1 Stability of Slopes R0.pdf": {
+  "code": "CE203",
+  "seq": 0.5,
+  "title": "Slopes 0 · Stability of slopes — lecture notes (OAP)",
+  "page_count": 80,
+  "sections": [
+   {
+    "title": "Types and causes of slope failure",
+    "pages": [
+     9,
+     20
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Geology & Singapore formations",
+    "pages": [
+     21,
+     27
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Soil mechanics for slopes: drained vs undrained, total vs effective",
+    "pages": [
+     28,
+     41
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Getting strength parameters",
+    "pages": [
+     42,
+     47
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Groundwater effects",
+    "pages": [
+     48,
+     56
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Analysis approaches & factor of safety",
+    "pages": [
+     57,
+     62
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "EC7 for slopes (Singapore NA: DA1 only)",
+    "pages": [
+     63,
+     67
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Infinite slopes",
+    "pages": [
+     68,
+     77
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/OAP 9 Revision Notes R0.pdf": {
+  "code": "CE203",
+  "seq": 4.5,
+  "title": "Slopes 5 · Revision notes — slopes checklist (OAP)",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Strength & safety factor",
+    "pages": [
+     2,
+     4
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Infinite slopes",
+    "pages": [
+     5,
+     5
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Mass procedure & Taylor's chart (short term, c_u)",
+    "pages": [
+     6,
+     7
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Simplified Bishop — exam checklist",
+    "pages": [
+     8,
+     12
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   },
+   {
+    "title": "Spencer & stabilisation",
+    "pages": [
+     13,
+     14
+    ],
+    "topics": [
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf": {
+  "code": "CE203",
+  "seq": 5.5,
+  "title": "Earth pressure 0 · Lateral earth pressure theories (ERSS lecture)",
+  "page_count": 175,
+  "sections": [
+   {
+    "title": "At-rest pressure K₀",
+    "pages": [
+     6,
+     22
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Wall movement, active & passive states",
+    "pages": [
+     25,
+     35
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Rankine active (smooth wall, lower-bound)",
+    "pages": [
+     36,
+     74
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Rankine passive",
+    "pages": [
+     75,
+     116
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Coulomb wedge method (upper bound, wall friction)",
+    "pages": [
+     117,
+     161
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   },
+   {
+    "title": "Curved surfaces: Caquot–Kérisel & EC7 Annex C",
+    "pages": [
+     162,
+     175
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 2a Mohr Circle Pole.pdf": {
+  "code": "CE203",
+  "seq": 5.6,
+  "title": "Earth pressure 0a · Mohr circle & the pole method",
+  "page_count": 4,
+  "sections": [
+   {
+    "title": "Pole (origin of planes)",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE203-02"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf": {
+  "code": "CE203",
+  "seq": 7.5,
+  "title": "Retaining 0 · Rigid retaining walls — stability checks (ERSS lecture)",
+  "page_count": 63,
+  "sections": [
+   {
+    "title": "Wall types & failure modes",
+    "pages": [
+     2,
+     11
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Sliding",
+    "pages": [
+     12,
+     22
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Overturning",
+    "pages": [
+     23,
+     26
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Bearing pressure & eccentricity",
+    "pages": [
+     27,
+     40
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Overall slip & seepage",
+    "pages": [
+     41,
+     48
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Worked example",
+    "pages": [
+     49,
+     63
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf": {
+  "code": "CE203",
+  "seq": 8.5,
+  "title": "Retaining 0a · Eurocode 7 for earth-retaining structures (ERSS lecture)",
+  "page_count": 57,
+  "sections": [
+   {
+    "title": "Why limit states",
+    "pages": [
+     4,
+     14
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Limit states & terminology",
+    "pages": [
+     15,
+     30
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Partial factor sets",
+    "pages": [
+     23,
+     26
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Worked example: EQU overturning, GEO sliding & bearing",
+    "pages": [
+     31,
+     57
+    ],
+    "topics": [
+     "CE203-03"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf": {
+  "code": "CE203",
+  "seq": 9.5,
+  "title": "Retaining 0b · Flexible walls: cantilever & anchored (ERSS lecture)",
+  "page_count": 99,
+  "sections": [
+   {
+    "title": "Flexible walls & methods",
+    "pages": [
+     1,
+     13
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Cantilever wall: simplified method",
+    "pages": [
+     14,
+     45
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Cantilever wall: net-pressure (more realistic) method",
+    "pages": [
+     46,
+     65
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Cantilever to EC7 DA1",
+    "pages": [
+     66,
+     78
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Single-propped/anchored walls: free earth support",
+    "pages": [
+     79,
+     98
+    ],
+    "topics": [
+     "CE203-03",
+     "CE203-04"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf": {
+  "code": "CE203",
+  "seq": 11.5,
+  "title": "Retaining 0c · Deep excavations: toe kick-in & basal heave (ERSS lecture)",
+  "page_count": 33,
+  "sections": [
+   {
+    "title": "Multi-propped walls & overall failure modes",
+    "pages": [
+     1,
+     12
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Toe kick-in",
+    "pages": [
+     13,
+     16
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Basal heave: Terzaghi (shallow, B > H_e)",
+    "pages": [
+     17,
+     28
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Basal heave: Bjerrum & Eide (deep excavations)",
+    "pages": [
+     29,
+     31
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   },
+   {
+    "title": "Course wrap-up",
+    "pages": [
+     32,
+     33
+    ],
+    "topics": [
+     "CE203-04"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf": {
+  "code": "CE203",
+  "seq": 12.5,
+  "title": "Retaining 6a · Quiz key points (ERSS, second paper)",
+  "page_count": 9,
+  "sections": [
+   {
+    "title": "Concepts",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE203-02",
+     "CE203-03"
+    ]
+   },
+   {
+    "title": "Gravity wall with 20° sloping backfill (c′ 25, φ′ 20°)",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE203-02",
+     "CE203-03"
     ]
    }
   ]

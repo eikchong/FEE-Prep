@@ -452,3 +452,261 @@ GEO[D["PILE"]] = {"code": "CE203", "title": "Foundations 5 · Piles to EC7: down
 
 for _k in ("T2", "PS5", "ULS"):
     GEO[D[_k]]["sections"][0]["blocks"].append(EC7)
+
+
+# ---------------------------------------------------------------- CE3115 lecture notes (OAP slopes, ERSS walls)
+L = A + "Lectures/"
+D.update({
+    "L0": L + "OAP 0 Introduction.pdf", "LS": L + "OAP 1 Stability of Slopes R0.pdf", "LR": L + "OAP 9 Revision Notes R0.pdf",
+    "E2": L + "ERSS 2 Earth Pressure Theories.pdf", "E2a": L + "ERSS 2a Mohr Circle Pole.pdf",
+    "E3": L + "ERSS 3 Rigid Retaining Structures.pdf", "E4": L + "ERSS 4 Application of EC7 for ERSS.pdf",
+    "E5": L + "ERSS 5 Flexible Retaining Structures.pdf", "E6": L + "ERSS 6 Introduction to Deep Excavations.pdf",
+    "E7": L + "ERSS 7 Quiz key points.pdf",
+})
+OUTLINE += [("L0", 7, 0.4, ["CE203-01"]), ("LS", 80, 0.5, ["CE203-01"]), ("LR", 15, 4.5, ["CE203-01"]),
+            ("E2", 175, 5.5, ["CE203-02"]), ("E2a", 4, 5.6, ["CE203-02"]), ("E3", 63, 7.5, ["CE203-03"]),
+            ("E4", 57, 8.5, ["CE203-03"]), ("E5", 99, 9.5, ["CE203-03", "CE203-04"]), ("E6", 33, 11.5, ["CE203-04"]),
+            ("E7", 9, 12.5, ["CE203-02", "CE203-03"])]
+TEXT_ONLY = {D["LS"]}   # > 10 MB on Drive: notes written from its text; original pages not stored locally
+
+GEO[D["L0"]] = {"code": "CE203", "title": "CE3115 · Course outline (slopes & earth-retaining structures)", "sections": [
+ sec("Scope", (1, 7),
+   ("md", "Part 1 (A/Prof Okky Purwana): stability of natural and man-made slopes — infinite slopes, mass procedure, "
+          "Taylor's chart, Simplified Bishop, Spencer/Morgenstern–Price, stabilisation, all to **EC7 DA1**. Part 2 "
+          "(ERSS): earth-pressure theory, rigid walls, EC7 for walls, flexible (sheet-pile/anchored) walls, deep "
+          "excavations. Main references: Abramson et al. *Slope Stability and Stabilization*; Craig; Ou *Deep Excavation*."),
+ ),
+]}
+
+GEO[D["LS"]] = {"code": "CE203", "title": "Slopes 0 · Stability of slopes — lecture notes (OAP)", "sections": [
+ sec("Types and causes of slope failure", (9, 20),
+   ("md", "Modes: **fall, topple, slide, spread, flow**. Slides: rotational circular (homogeneous fills/clays), "
+          "non-circular (layered), **translational** (shallow plane parallel to the surface — sands, residual soil over "
+          "rock; D/L ≪ 0.1), **compound** (deeper weak stratum; D/L 0.10–0.15); rotational D/L 0.15–0.33."),
+   ("md", "Causes — **more shear stress**: steepening, overloading the crest, removing toe support (excavation, erosion, "
+          "rapid drawdown), water in cracks, swelling clays, earthquakes. **Less strength**: rising GWT/saturation "
+          "(loss of suction), seepage erosion, weathering, progressive/strain-softening failure."),
+ ),
+ sec("Geology & Singapore formations", (21, 27),
+   ("md", "Residual soils (weathering grades VI → I), colluvium, alluvium, marine clays. Singapore: Bukit Timah "
+          "Granite, Jurong Formation (weathered sedimentary rock), Old Alluvium, Kallang Formation (soft marine clay "
+          "up to ~40 m). Rainfall-induced failures cluster in **Dec–Jan** on slopes steeper than ~27° (1V:2H)."),
+ ),
+ sec("Soil mechanics for slopes: drained vs undrained, total vs effective", (28, 41),
+   ("md", "'Three rules': geometry, soil strength, **groundwater**. Dense sand/OC clay dilate (negative Δu when "
+          "undrained → s_u > drained); loose sand/NC clay contract (positive Δu → s_u < drained)."),
+   ("md", "**Embankment on soft clay**: FoS is lowest at end of construction (use s_u, φ_u = 0) and rises with "
+          "consolidation. **Excavation in clay**: negative Δu dissipates → FoS falls with time → long-term drained "
+          "(c′, φ′) analysis governs."),
+ ),
+ sec("Getting strength parameters", (42, 47),
+   ("eq", r"\left(\frac{s_u}{\sigma'_{v0}}\right)_{NC} = 0.11 + 0.0037\,PI\ (\text{Skempton}),\qquad \frac{s_u}{\sigma'_{v0}} = 0.22\,OCR^{0.8}\ (\text{Ladd})"),
+   ("md", "Tests: UU/unconfined → s_u (short term); CU with pore pressure or CD → c′, φ′; ring shear → residual. "
+          "Sands from (N₁)₆₀: very loose 29–32°, loose 32–35°, medium 35–37°, dense 37–40°, very dense 40–42°; "
+          "silty sand −3°, gravelly sand +2°."),
+ ),
+ sec("Groundwater effects", (48, 56),
+   ("eq", r"u = \gamma_wh_w\cos^2\alpha_w\ (\text{flowing, parallel seepage}),\qquad \tau_f = c' + (u_a - u_w)\tan\phi^b + (\sigma - u_a)\tan\phi'\ (\text{unsaturated})"),
+   ("md", "Suction adds 'apparent cohesion' that is lost when rain saturates the slope. Ponded water at the toe is "
+          "**stabilising**."),
+ ),
+ sec("Analysis approaches & factor of safety", (57, 62),
+   ("md", "Limit equilibrium (pre-defined surface, ULS only — this module), FEM (φ–c reduction, gives displacement), "
+          "limit analysis. Traditional lumped FoS = available strength / mobilised stress: **≥ 1.3 temporary, ≥ 1.5 "
+          "permanent**. EC7 uses partial factors instead."),
+ ),
+ sec("EC7 for slopes (Singapore NA: DA1 only)", (63, 67),
+   ("md", "DA1-C1: A1 (γ_G 1.35 unfav/1.0 fav, γ_Q 1.5/0) + M1 (all 1.0). DA1-C2: A2 (γ_G 1.0, γ_Q 1.3) + M2 (tan φ′, "
+          "c′ ÷ 1.25; c_u ÷ 1.4). FoS = factored resisting / factored disturbing ≥ 1.0. In C1, soil upslope of the "
+          "rotation centre (α > 0) is unfavourable ×1.35; downslope (α < 0) favourable ×1.0."),
+ ),
+ sec("Infinite slopes", (68, 77),
+   ("eq", r"F = \frac{c' + \left[(1-m)\gamma + m(\gamma_{sat} - \gamma_w)\right]z\cos^2\beta\tan\phi'}{\left[(1-m)\gamma + m\gamma_{sat}\right]z\cos\beta\sin\beta}\quad(\text{GWT at } mz \text{ above the slip plane})"),
+   ("md", "Dry sand: F = tan φ′/tan β (independent of z). Saturated with parallel seepage: F = (γ′/γ_sat) tan φ′/tan β "
+          "≈ **½** of dry. Other seepage: horizontal u = γ_wz/(1 − tan²β)… use u = γ_wz cos²β for parallel, u = 0 for "
+          "vertical downward. For drained infinite slopes **only DA1-C2** matters (C1 scales both sides)."),
+   ("tip", "This deck is 13.7 MB on Drive, so only its text was imported (to slide ~77); finite slopes, Bishop and "
+           "Spencer are covered by the Revision Notes, Tutorial 2 and Assignment 1 pages."),
+ ),
+]}
+
+GEO[D["LR"]] = {"code": "CE203", "title": "Slopes 5 · Revision notes — slopes checklist (OAP)", "sections": [
+ sec("Strength & safety factor", (2, 4),
+   ("md", "Natural/old slopes: pore pressures steady → **effective stress (c′, φ′)**. New slopes in clay: Δu hard to "
+          "predict → **total stress (s_u, φ_u = 0)**, valid only for NC/lightly OC clay. GWT rise is detrimental; ponded "
+          "water helps."),
+ ),
+ sec("Infinite slopes", (5, 5),
+   ("md", "Check every layer interface; c′ = 0 dry or fully saturated → F independent of z; partially saturated → F "
+          "falls with depth. **Only DA1-C2** applies."),
+ ),
+ sec("Mass procedure & Taylor's chart (short term, c_u)", (6, 7),
+   ("eq", r"F = \frac{c_u\,r^2\theta}{W d},\qquad F = \frac{c_u}{N_s\gamma H}\quad(N_s = f(\beta, D))"),
+   ("md", "DA1-C2 (c_u ÷ 1.4) normally governs. In C1 ideally split the mass into parts up/down-slope of the centre."),
+ ),
+ sec("Simplified Bishop — exam checklist", (8, 12),
+   ("steps", ["Draw slices with numbers and key dimensions; boundaries at slope vertices, layer and GWT crossings.",
+              "W per slice from trapezoids (show h_ave per layer); compute α from geometry (sin α = x/R).",
+              "u = γ_w h_w (don't forget γ_w); one n_α per slice using the parameters at the slice base.",
+              "C2: factor strength first; C1: 1.35/1.0 on W sin α by sign of α; surcharge variable, ponded water permanent.",
+              "Divide external-load and water moments by R; tension crack: no strength but weight remains.",
+              "Start F = 1.0 and iterate."]),
+ ),
+ sec("Spencer & stabilisation", (13, 14),
+   ("md", "Spencer satisfies force **and** moment equilibrium (parallel interslice forces) — good for non-circular "
+          "slips; Morgenstern–Price is more general. Stabilisation: **benching** removes mass where it drives most; "
+          "flattening spreads the cut; **buttressing** adds restoring weight at the toe (less lever arm); **horizontal "
+          "drains** lower the GWT → higher σ′."),
+ ),
+]}
+
+GEO[D["E2"]] = {"code": "CE203", "title": "Earth pressure 0 · Lateral earth pressure theories (ERSS lecture)", "sections": [
+ sec("At-rest pressure K₀", (6, 22),
+   ("eq", r"K_{0,nc} = 1 - \sin\phi'\ (\text{Jaky}),\quad K_{nc} = 0.19 + 0.233\log PI\ (\text{Alpan}),\quad K_0 = K_{nc}\,OCR^{n},\ n = \sin\phi'\ \text{or}\ 0.54\times10^{-PI/281}"),
+   ("md", "K₀ always uses **effective** stresses. Singapore marine clay (φ′ 22°, PI 55): K_nc ≈ 0.60–0.63. Heavily OC "
+          "clays can have K₀ > 1 (Gault clay 2–4 → OCR ≈ 20–180)."),
+ ),
+ sec("Wall movement, active & passive states", (25, 35),
+   ("md", "Wall moves away → σ′_h falls to K_aσ′_v (small movement, ~0.1–0.5 % H); towards the soil → rises to "
+          "K_pσ′_v (much larger movement, several %). Disturbance during construction changes K₀."),
+ ),
+ sec("Rankine active (smooth wall, lower-bound)", (36, 74),
+   ("eq", r"\sigma'_a = K_a\sigma'_v - 2c'\sqrt{K_a},\quad K_a = \frac{1-\sin\phi'}{1+\sin\phi'} = \tan^2\!\left(45^\circ - \frac{\phi'}{2}\right);\qquad \phi = 0:\ \sigma_a = \sigma_v - 2s_u"),
+   ("md", "Slip planes at **45° + φ′/2** to the horizontal. Surcharge q adds K_aq uniformly. Tension depth "
+          "z₀ = 2c′/(γ√K_a); ignore tension (cracks may fill with water). Sloping backfill β (c′ = 0): "
+          "K_a = cos β (cos β − √(cos²β − cos²φ′))/(cos β + √(cos²β − cos²φ′))."),
+ ),
+ sec("Rankine passive", (75, 116),
+   ("eq", r"\sigma'_p = K_p\sigma'_v + 2c'\sqrt{K_p},\quad K_p = \frac{1+\sin\phi'}{1-\sin\phi'} = \frac{1}{K_a};\qquad \phi = 0:\ \sigma_p = \sigma_v + 2s_u"),
+   ("md", "Passive slip planes at 45° − φ′/2. Rankine is a lower bound (safe) but can't handle wall friction."),
+ ),
+ sec("Coulomb wedge method (upper bound, wall friction)", (117, 161),
+   ("md", "Trial planar wedges; maximise P_a (minimise P_p) over the wedge angle; force polygons handle c, c_w, δ, "
+          "sloping walls and backfills. Closed forms exist for cohesionless soil; P_a acts at δ to the wall normal → "
+          "P_ah = P_a sin(α + δ). Usually δ ≈ ⅔φ′ for concrete."),
+ ),
+ sec("Curved surfaces: Caquot–Kérisel & EC7 Annex C", (162, 175),
+   ("md", "Real passive surfaces are curved (log-spiral). Coulomb's plane **overestimates K_p badly when δ > φ′/3**; "
+          "use Caquot–Kérisel tables or **EC7 Annex C** charts (K_ah, K_ph for δ = 0, ⅔φ′, φ′). Active is less "
+          "sensitive."),
+ ),
+]}
+
+GEO[D["E2a"]] = {"code": "CE203", "title": "Earth pressure 0a · Mohr circle & the pole method", "sections": [
+ sec("Pole (origin of planes)", (1, 4),
+   ("steps", ["Plot the stresses on two perpendicular planes and draw the circle.",
+              "From the point for a known plane, draw a line parallel to that plane — it meets the circle at the **pole**.",
+              "A line from the pole parallel to any other plane cuts the circle at the stresses on that plane.",
+              "Principal planes: lines from the pole to σ₁ and σ₃."]),
+   ("ex", "Quiz: σ_x = 12, σ_y = 0, τ = 6 kPa", "Pole at (0, −6); stresses on plane D–D′: σ = 12, τ = 6 kPa."),
+ ),
+]}
+
+GEO[D["E3"]] = {"code": "CE203", "title": "Retaining 0 · Rigid retaining walls — stability checks (ERSS lecture)", "sections": [
+ sec("Wall types & failure modes", (2, 11),
+   ("md", "Gravity (mass), cantilever RC (L/T), counterfort/buttress, crib, gabion, reinforced soil. Failure modes: "
+          "**sliding, overturning, bearing, deep-seated (overall) slip, seepage/piping**, plus structural failure."),
+ ),
+ sec("Sliding", (12, 22),
+   ("eq", r"FoS_{sl} = \frac{N\tan\delta_b + c_bB + P_p}{P_a}\ \ge 1.5\ (\text{effective});\qquad \text{undrained base: } s_uB + P_p"),
+   ("md", "δ_b ≈ ⅔φ′ to φ′. Passive in front is often ignored (it may be excavated or need large movement)."),
+ ),
+ sec("Overturning", (23, 26),
+   ("eq", r"FoS_{OT} = \frac{\sum M_{resisting,\ toe}}{\sum M_{overturning,\ toe}}\ \ge 2"),
+ ),
+ sec("Bearing pressure & eccentricity", (27, 40),
+   ("eq", r"e = \frac{B}{2} - \frac{\sum M_{net,toe}}{N},\qquad p_{max,min} = \frac{N}{B}\left(1 \pm \frac{6e}{B}\right)\ (e \le B/6),\qquad FoS_b = \frac{q_{ult}}{p_{max}}\ \ge 3"),
+   ("md", "Keep the resultant in the **middle third**; if e > B/6 the heel lifts: p_max = 2N/(3(B/2 − e))."),
+ ),
+ sec("Overall slip & seepage", (41, 48),
+   ("md", "Check a deep circular slip around the wall (slope methods). Drain the backfill (weep holes, filter, "
+          "drainage blanket) — water pressure can double the thrust."),
+ ),
+ sec("Worked example", (49, 63),
+   ("md", "Follow PS4: virtual back, Rankine pressures, tabulate forces and lever arms about the toe, then the three "
+          "FoS checks."),
+ ),
+]}
+
+GEO[D["E4"]] = {"code": "CE203", "title": "Retaining 0a · Eurocode 7 for earth-retaining structures (ERSS lecture)", "sections": [
+ sec("Why limit states", (4, 14),
+   ("md", "A single FoS hides where the uncertainty is; EC7 factors actions, materials and resistances separately. "
+          "Singapore: SS EN 1997-1 + NA → **DA1 only**."),
+ ),
+ sec("Limit states & terminology", (15, 30),
+   ("md", "**EQU** (rigid-body overturning), **STR** (structural), **GEO** (ground: sliding, bearing, overall), UPL "
+          "(uplift), HYD (piping). Actions G/Q, favourable vs unfavourable; geometry tolerances (over-dig ΔH = 10 % of "
+          "retained height ≤ 0.5 m); limit earth pressures from Annex C."),
+ ),
+ sec("Partial factor sets", (23, 26),
+   ("md", "EQU: γ_G,dst 1.1, γ_G,stb 0.9, γ_Q 1.5, γ_φ′ = γ_c′ = 1.25 (corrected slide), γ_cu 1.4. GEO C1: γ_G 1.35/1.0, "
+          "γ_Q 1.5, materials 1.0, R1 1.0. GEO C2: γ_G 1.0, γ_Q 1.3, tan φ′ and c′ ÷ 1.25, c_u ÷ 1.4, R1 1.0."),
+ ),
+ sec("Worked example: EQU overturning, GEO sliding & bearing", (31, 57),
+   ("md", "Recompute K_a, K_p with design φ′ where required; factor the active thrust as destabilising and the wall "
+          "weight/passive as stabilising; check E_d ≤ R_d. See PS5 for the full numbers (sliding fails with a smooth "
+          "base in both combinations)."),
+ ),
+]}
+
+GEO[D["E5"]] = {"code": "CE203", "title": "Retaining 0b · Flexible walls: cantilever & anchored (ERSS lecture)", "sections": [
+ sec("Flexible walls & methods", (1, 13),
+   ("md", "Sheet piles, soldier piles, contiguous/secant piles, D-walls — stability from **embedment passive "
+          "resistance**. Numerical (FEM/subgrade reaction) or classical limit-equilibrium methods."),
+ ),
+ sec("Cantilever wall: simplified method", (14, 45),
+   ("steps", ["Active K_aγ(h + d₀) behind, passive K_pγd₀ in front, ignore the toe reversal.",
+              "Moments about the toe C → d₀; **D = 1.2 d₀** to allow for the reaction below C.",
+              "M_max where shear = 0; Z = M_max/f_b."]),
+ ),
+ sec("Cantilever wall: net-pressure (more realistic) method", (46, 65),
+   ("eq", r"a = \frac{p_{a1}}{\gamma(K_p - K_a)},\qquad \text{solve horizontal + moment equilibrium for } Y \text{ and } z;\ D = a + Y"),
+ ),
+ sec("Cantilever to EC7 DA1", (66, 78),
+   ("md", "Apply partial factors to K (via design φ′) and actions, solve simultaneously for embedment; C2 usually "
+          "governs embedment, C1 the bending moment."),
+ ),
+ sec("Single-propped/anchored walls: free earth support", (79, 98),
+   ("md", "Wall rotates about the prop; take moments about the tie for D, then horizontal equilibrium for T. "
+          "Traditional FS ≈ 2 on K_p (or a mobilised trapezoid). Free-earth support over-predicts moments in flexible "
+          "walls — **Rowe/Potts–Fourie** moment-reduction factors depend on wall flexibility."),
+ ),
+]}
+
+GEO[D["E6"]] = {"code": "CE203", "title": "Retaining 0c · Deep excavations: toe kick-in & basal heave (ERSS lecture)", "sections": [
+ sec("Multi-propped walls & overall failure modes", (1, 12),
+   ("md", "Two overall checks for braced excavations (BCA **TR26 (2010)**): **toe kick-in** of the embedded wall "
+          "and **basal heave** of soft clay."),
+ ),
+ sec("Toe kick-in", (13, 16),
+   ("eq", r"F_p = \frac{P_pL_p + M_s}{P_aL_a}\ \ge 1.5\ \text{(gross pressure method, moments about the lowest strut)};\quad F_p \ge 1.2 \text{ if } M_s = 0"),
+ ),
+ sec("Basal heave: Terzaghi (shallow, B > H_e)", (17, 28),
+   ("eq", r"F_b = \frac{5.7s_uB_1 + s_{u}H_e}{(\gamma H_e + q_s)B_1},\quad B_1 = \frac{B}{\sqrt2}\ (\text{or } D \text{ if a hard layer is shallower})"),
+   ("md", "Require F_b ≥ 1.5. Treats heave as a bearing failure with side shear on the vertical plane."),
+ ),
+ sec("Basal heave: Bjerrum & Eide (deep excavations)", (29, 31),
+   ("eq", r"F_b = \frac{s_uN_c}{\gamma H_e + q_s}\quad(N_c \text{ from Skempton: } f(H_e/B, B/L))"),
+ ),
+ sec("Course wrap-up", (32, 33),
+   ("md", "Part 2 learning outcomes: K₀/K_a/K_p, Rankine–Coulomb–Caquot-Kérisel, rigid and flexible wall design to "
+          "EC7, deep-excavation stability."),
+ ),
+]}
+
+GEO[D["E7"]] = {"code": "CE203", "title": "Retaining 6a · Quiz key points (ERSS, second paper)", "sections": [
+ sec("Concepts", (1, 3),
+   ("md", "K uses effective stresses ✓ · buttress walls use thin webs ✓ · Rankine is not the earliest (Coulomb 1776 "
+          "came first) · Coulomb's driving moment is usually smaller because its inclined thrust has a stabilising "
+          "vertical component."),
+   ("ex", "Gault clay (φ′ 22°, PI 45, K₀ 2–4) → OCR", "Alpan: K_nc 0.575, n 0.373 → OCR **28–180** · Mayne–Kulhawy: "
+          "K_nc 0.625, n 0.375 → OCR **22–142**."),
+ ),
+ sec("Gravity wall with 20° sloping backfill (c′ 25, φ′ 20°)", (6, 9),
+   ("ex", "Answers", "β = φ′ → K_a = cos β = 0.94; z₀ = 2.87 m → P_a = 144.6 (horizontal 135.8) kN · K_p 2.04, P_p = "
+          "**379.4 kN** · sliding **2.79** · overturning 822.5/187.2 = **4.39** · e = 0.04 m, p 187.5/148.5 kPa → "
+          "bearing 450/187.5 = **2.4 < 3** ✗ · flattening the backfill drops K_a to 0.49 → both FoS rise."),
+   ("tip", "The answer sheet's line '(2) σ_p = 125.8 kPa' is a copy-over from the other quiz; the base passive stress "
+           "here is 181.5 kPa."),
+ ),
+]}
