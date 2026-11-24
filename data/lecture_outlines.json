@@ -1098,5 +1098,82 @@
     ]
    }
   ]
+ },
+ "CE102/CE1101_T2L_Tutorial_3.pdf": {
+  "code": "CE102",
+  "title": "CE1101 T2L Tutorial 3 (Q1–Q3, axial members — goes with M1)",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Q1 (a) crank–connecting rod allowable force; (b) biaxial fabric strains (Poisson)",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-06",
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Q2 (a) tapered plate elongation; (b) hanging cable strain under self-weight",
+    "pages": [
+     2,
+     2
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Q3 (a) minimum-weight two-bar truss angle; (b) rigid bar on brass & aluminium rods",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE102-04",
+     "CE102-06"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_T2L_Tutorial_4.pdf": {
+  "code": "CE102",
+  "title": "CE1101 T2L Tutorial 4 (Q4–Q6, torsion/flexure/deflection — goes with M2–M5)",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Q4 (a) geared shafts twist & stress; (b) rod with distributed torque reaction",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Q5 (a) SFD/BMD with overhang & deflected shape; (b) aircraft wing cantilever",
+    "pages": [
+     2,
+     2
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   },
+   {
+    "title": "Q6 (a) bending + axial stress at a section (cable-stayed beam); (b) max deflection under combined loads",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE102-08",
+     "CE103-01"
+    ]
+   }
+  ]
  }
 }
