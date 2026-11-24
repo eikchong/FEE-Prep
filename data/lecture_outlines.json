@@ -1185,7 +1185,7 @@
     ]
    }
   ],
-  "seq": 11
+  "seq": 10
  },
  "CE102/CE1101_S1_Equilibrium_of_Particles.pdf": {
   "code": "CE102",
@@ -1392,5 +1392,82 @@
    }
   ],
   "seq": 4
+ },
+ "CE102/CE1101_T2L_Tutorial_1.pdf": {
+  "code": "CE102",
+  "seq": 10,
+  "title": "CE1101 T2L Tutorial 1 (Q1–Q3, statics — goes with S1–S3)",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Q1 Scoreboard on cable ABC (particle equilibrium)",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-01"
+    ]
+   },
+   {
+    "title": "Q2 Jib crane (rigid-body equilibrium, two-force tie)",
+    "pages": [
+     2,
+     2
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Q3 Water-tank truss tower under wind",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE102-04",
+     "CE102-05"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_T2L_Tutorial_2.pdf": {
+  "code": "CE102",
+  "seq": 10,
+  "title": "CE1101 T2L Tutorial 2 (Q4–Q6, frames, cables, rigid bodies — goes with S2–S4)",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Q4 Pin-connected structure, best location of D",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Q5 Traffic-light cable (sag & tension)",
+    "pages": [
+     2,
+     2
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   },
+   {
+    "title": "Q6 Stacked blocks — maximum overhang",
+    "pages": [
+     3,
+     3
+    ],
+    "topics": [
+     "CE102-02"
+    ]
+   }
+  ]
  }
 }
