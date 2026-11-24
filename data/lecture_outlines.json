@@ -2517,5 +2517,613 @@
     ]
    }
   ]
+ },
+ "CE104/CE104_1_Groundwater_Permeability_Seepage.pdf": {
+  "code": "CE104",
+  "seq": 20,
+  "title": "Soil 3 — Groundwater, permeability & seepage (Dr Chian)",
+  "page_count": 112,
+  "sections": [
+   {
+    "title": "Groundwater conditions",
+    "pages": [
+     3,
+     17
+    ],
+    "topics": [
+     "CE104-04",
+     "CE104-07"
+    ]
+   },
+   {
+    "title": "Heads & Darcy",
+    "pages": [
+     18,
+     26
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   },
+   {
+    "title": "Permeability",
+    "pages": [
+     27,
+     32
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   },
+   {
+    "title": "Seepage forces & quick condition",
+    "pages": [
+     33,
+     42
+    ],
+    "topics": [
+     "CE104-07",
+     "CE104-04"
+    ]
+   },
+   {
+    "title": "Flow nets",
+    "pages": [
+     43,
+     66
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   },
+   {
+    "title": "Anisotropic soil",
+    "pages": [
+     67,
+     85
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   },
+   {
+    "title": "Unconfined flow & phreatic surface",
+    "pages": [
+     86,
+     112
+    ],
+    "topics": [
+     "CE104-07",
+     "CE203-01"
+    ]
+   }
+  ]
+ },
+ "CE104/CE104_2_Shear_Strength.pdf": {
+  "code": "CE104",
+  "seq": 21,
+  "title": "Soil 4 — Shear strength of soils (Dr Chian)",
+  "page_count": 142,
+  "sections": [
+   {
+    "title": "Strength & failure",
+    "pages": [
+     2,
+     21
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Mohr circle & pole",
+    "pages": [
+     22,
+     41
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Mohr–Coulomb",
+    "pages": [
+     42,
+     58
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Direct & simple shear",
+    "pages": [
+     59,
+     80
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Triaxial",
+    "pages": [
+     81,
+     101
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "UU, CU, CD",
+    "pages": [
+     102,
+     119
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Drained vs undrained, OCR, A & B",
+    "pages": [
+     120,
+     142
+    ],
+    "topics": [
+     "CE104-05",
+     "CE104-06"
+    ]
+   }
+  ]
+ },
+ "CE104/S00_Specific_arrangements.pdf": {
+  "code": "CE104",
+  "seq": 1,
+  "title": "Course admin (stress–strain, compression, consolidation part)",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Arrangements",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": []
+   }
+  ]
+ },
+ "CE104/S01_Introduction.pdf": {
+  "code": "CE104",
+  "seq": 2,
+  "title": "Soil 0 — Course map",
+  "page_count": 12,
+  "sections": [
+   {
+    "title": "Course map",
+    "pages": [
+     1,
+     12
+    ],
+    "topics": []
+   }
+  ]
+ },
+ "CE104/S02_Basic_Concepts.pdf": {
+  "code": "CE104",
+  "seq": 3,
+  "title": "Soil 1 — Introduction & basic concepts",
+  "page_count": 108,
+  "sections": [
+   {
+    "title": "Geotechnical engineering",
+    "pages": [
+     2,
+     25
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   },
+   {
+    "title": "Rocks, soils, groundwater",
+    "pages": [
+     26,
+     40
+    ],
+    "topics": [
+     "CE104-01",
+     "CE104-04"
+    ]
+   },
+   {
+    "title": "Stress, strain, soil strength",
+    "pages": [
+     41,
+     51
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   },
+   {
+    "title": "Effective stress",
+    "pages": [
+     52,
+     58
+    ],
+    "topics": [
+     "CE104-04"
+    ]
+   },
+   {
+    "title": "Phase relations",
+    "pages": [
+     59,
+     70
+    ],
+    "topics": [
+     "CE104-03"
+    ]
+   },
+   {
+    "title": "Packability, Gs, DR",
+    "pages": [
+     71,
+     79
+    ],
+    "topics": [
+     "CE104-03"
+    ]
+   },
+   {
+    "title": "Particle size",
+    "pages": [
+     80,
+     90
+    ],
+    "topics": [
+     "CE104-02"
+    ]
+   },
+   {
+    "title": "Atterberg & classification",
+    "pages": [
+     91,
+     104
+    ],
+    "topics": [
+     "CE104-02"
+    ]
+   },
+   {
+    "title": "Singapore formations overview",
+    "pages": [
+     105,
+     108
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   }
+  ]
+ },
+ "CE104/S03_Singapore_Soil_Formation.pdf": {
+  "code": "CE104",
+  "seq": 6,
+  "title": "Soil 2 — Singapore soil formations",
+  "page_count": 18,
+  "sections": [
+   {
+    "title": "Formations",
+    "pages": [
+     2,
+     4
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   },
+   {
+    "title": "Bukit Timah Granite",
+    "pages": [
+     5,
+     8
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   },
+   {
+    "title": "Jurong Formation",
+    "pages": [
+     9,
+     11
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   },
+   {
+    "title": "Old Alluvium",
+    "pages": [
+     12,
+     14
+    ],
+    "topics": [
+     "CE104-01"
+    ]
+   },
+   {
+    "title": "Kallang Formation",
+    "pages": [
+     15,
+     18
+    ],
+    "topics": [
+     "CE104-01",
+     "CE104-08"
+    ]
+   }
+  ]
+ },
+ "CE104/S04_Phase_Relationships.pdf": {
+  "code": "CE104",
+  "seq": 4,
+  "title": "Soil 1a — Phase relationships",
+  "page_count": 5,
+  "sections": [
+   {
+    "title": "Phase relationships",
+    "pages": [
+     2,
+     5
+    ],
+    "topics": [
+     "CE104-03"
+    ]
+   }
+  ]
+ },
+ "CE104/S05_Effective_Stress.pdf": {
+  "code": "CE104",
+  "seq": 5,
+  "title": "Soil 1b — Effective stress calculations",
+  "page_count": 5,
+  "sections": [
+   {
+    "title": "Effective stress examples",
+    "pages": [
+     2,
+     5
+    ],
+    "topics": [
+     "CE104-04"
+    ]
+   }
+  ]
+ },
+ "CE104/S06_Stresses_and_Strains.pdf": {
+  "code": "CE104",
+  "seq": 8,
+  "title": "Soil 5 — Stresses, strains & moduli",
+  "page_count": 26,
+  "sections": [
+   {
+    "title": "Why",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE104-04"
+    ]
+   },
+   {
+    "title": "Stress & strain at a point",
+    "pages": [
+     9,
+     15
+    ],
+    "topics": [
+     "CE104-06"
+    ]
+   },
+   {
+    "title": "Moduli",
+    "pages": [
+     16,
+     26
+    ],
+    "topics": [
+     "CE104-06"
+    ]
+   }
+  ]
+ },
+ "CE104/S07_Compression_Behaviour.pdf": {
+  "code": "CE104",
+  "seq": 9,
+  "title": "Soil 6 — Compression behaviour",
+  "page_count": 18,
+  "sections": [
+   {
+    "title": "Isotropic vs 1-D",
+    "pages": [
+     2,
+     7
+    ],
+    "topics": [
+     "CE104-06"
+    ]
+   },
+   {
+    "title": "e–log p′, p′c",
+    "pages": [
+     8,
+     14
+    ],
+    "topics": [
+     "CE104-06"
+    ]
+   },
+   {
+    "title": "1-D settlement",
+    "pages": [
+     15,
+     18
+    ],
+    "topics": [
+     "CE104-06",
+     "CE104-09"
+    ]
+   }
+  ]
+ },
+ "CE104/S08_Consolidation_Time_Dependent.pdf": {
+  "code": "CE104",
+  "seq": 10,
+  "title": "Soil 7 — Consolidation & time-dependent behaviour",
+  "page_count": 75,
+  "sections": [
+   {
+    "title": "Why it takes time",
+    "pages": [
+     2,
+     10
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   },
+   {
+    "title": "Short/long term, excess pwp",
+    "pages": [
+     11,
+     29
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   },
+   {
+    "title": "Terzaghi equation",
+    "pages": [
+     30,
+     37
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   },
+   {
+    "title": "Solutions & isochrones",
+    "pages": [
+     38,
+     54
+    ],
+    "topics": [
+     "CE104-08",
+     "CE104-09"
+    ]
+   },
+   {
+    "title": "Oedometer & curve fitting",
+    "pages": [
+     55,
+     71
+    ],
+    "topics": [
+     "CE104-06",
+     "CE104-08"
+    ]
+   },
+   {
+    "title": "General problems",
+    "pages": [
+     72,
+     75
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   }
+  ]
+ },
+ "CE104/S08a_Consol_curves.pdf": {
+  "code": "CE104",
+  "seq": 12,
+  "title": "Soil 7b — Consolidation curves (Ū vs T)",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Curves",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   }
+  ]
+ },
+ "CE104/S08b_Double_drainage_isochrones.pdf": {
+  "code": "CE104",
+  "seq": 13,
+  "title": "Soil 7c — Double-drainage isochrones",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "Isochrones",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   }
+  ]
+ },
+ "CE104/S08c_1D_consolidation_derivation.pdf": {
+  "code": "CE104",
+  "seq": 11,
+  "title": "Soil 7a — Derivation of 1-D consolidation",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Derivation",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE104-08"
+    ]
+   }
+  ]
+ },
+ "CE104/S99_Summary.pdf": {
+  "code": "CE104",
+  "seq": 7,
+  "title": "Soil — Part 1 summary",
+  "page_count": 13,
+  "sections": [
+   {
+    "title": "Summary",
+    "pages": [
+     2,
+     13
+    ],
+    "topics": [
+     "CE104-01",
+     "CE104-02",
+     "CE104-03",
+     "CE104-04"
+    ]
+   }
+  ]
  }
 }

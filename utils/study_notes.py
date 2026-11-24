@@ -1133,3 +1133,357 @@ TUTORIALS += [(MT.format(1), 1, "Materials Tut 1 — cement (model answers in 'M
               (MT.format(3), 1, "Materials Tut 3 — hardened concrete", MAT["6_hardened_concrete"]),
               (MT.format(4), 1, "Materials Tut 4 — shrinkage, creep & durability", MAT["9_durability"]),
               (MT.format(5), 1, "Materials Tut 5 — steel", MAT["11_steel_composition_and_structure"])]
+
+# ============================================================== CE104 Soil mechanics (CE2112)
+G1 = "CE104/CE104_1_Groundwater_Permeability_Seepage.pdf"
+G2 = "CE104/CE104_2_Shear_Strength.pdf"
+
+STUDY[G1] = {"code": "CE104", "title": "Soil 8 · Groundwater, permeability & seepage", "sections": [
+ sec("Groundwater conditions & pore pressure", (3, 17),
+   ("eq", r"\sigma' = \sigma - u,\qquad u = \gamma_w z_w\ \text{(hydrostatic)}"),
+   ("md", "Effective stress controls soil **strength and compressibility**; most geotechnical problems involve "
+          "groundwater. A **standpipe piezometer** (20–25 mm pipe, porous tip) reads the pore-pressure head.\n\n"
+          "- **Hydrostatic**: u increases at γ_w per metre.\n- **Artesian** (aquifer under clay recharged from "
+          "higher ground): head above ground level; u in the clay rises *faster* than hydrostatic — beware **base "
+          "heave** when excavating into the clay.\n- **Underdrained** (aquifer pumped down): steady *downward* "
+          "seepage, u rises *slower* than hydrostatic."),
+ ),
+ sec("Heads & Darcy's law", (18, 26),
+   ("eq", r"h = z + \frac{u}{\gamma_w} + \frac{v^2}{2g}\ \ (\text{velocity head negligible in soil})"),
+   ("eq", r"q = Aki = Ak\frac{\Delta h}{L},\qquad v = ki\ \ (\text{superficial velocity over the whole area})"),
+   ("md", "Water flows from high to low **total** head; laminar flow. Work problems with a table of elevation, "
+          "pressure and total head at each point, choosing any datum."),
+ ),
+ sec("Permeability", (27, 32),
+   ("eq", r"\text{constant head: } k = \frac{QL}{Aht}\qquad \text{falling head: } k = \frac{aL}{At}\ln\frac{h_1}{h_2}"),
+   ("md", "| Soil | k (cm/s) | Drainage |\n|---|---|---|\n| clean gravel | 10¹–10² | good |\n| clean sand / "
+          "sand–gravel | 10⁻¹–10⁻⁴ | good |\n| very fine sand, silt | 10⁻⁵–10⁻⁶ | poor |\n| clay | < 10⁻⁷ | "
+          "practically impervious |\n\nConstant head for coarse soils; falling head for fine soils."),
+ ),
+ sec("Seepage forces & the quick condition", (33, 42),
+   ("eq", r"j = i\gamma_w\ \text{per unit volume},\qquad \sigma' = \gamma'L \mp i\gamma_w L\ \ (\text{down}: +,\ \text{up}: -)"),
+   ("eq", r"i_c = \frac{\gamma'}{\gamma_w} \approx 1"),
+   ("md", "Upward flow reduces effective stress; when σ′ = 0 the sand is **quick** (boiling, piping). Seepage force "
+          "acts **in the direction of flow** and is added vectorially to the buoyant weight."),
+ ),
+ sec("2-D seepage: flow nets", (43, 66),
+   ("eq", r"\frac{\partial^2h}{\partial x^2} + \frac{\partial^2h}{\partial z^2} = 0 \qquad q = kH\frac{N_f}{N_d}\ \text{per metre}"),
+   ("md", "Flow lines ⟂ equipotentials, curvilinear **squares**, flow lines never cross. Identify boundary "
+          "equipotentials (water-covered soil surfaces) and boundary flow lines (impermeable surfaces, sheet-pile "
+          "faces). Use symmetry (double N_f for the full section). Head at a point = upstream head − (drops "
+          "passed) × H/N_d; u = γ_w(h − z)."),
+   ("ex", "Cofferdam in fine sand (k = 1.5 × 10⁻⁴ m/s, H = 16 m)", "N_f = 4 (2 × 2 by symmetry), N_d = 8 → "
+          "q = kH N_f/N_d = **1.2 × 10⁻³ m³/s per m**."),
+   ("ex", "Flood-condition effective stresses", "Point A without seepage: σ = 2×10 + 21×18 = 398, u = 230 → σ′ = "
+          "**168 kPa**; with seepage u = 190 → σ′ = **208 kPa**. Point B near the exit: σ = 72, u = 80 → σ′ = "
+          "**−8 kPa** → quick condition/piping risk at the toe."),
+ ),
+ sec("Anisotropic soil", (67, 85),
+   ("eq", r"k_x\frac{\partial^2h}{\partial x^2} + k_z\frac{\partial^2h}{\partial z^2} = 0,\quad x_T = x\sqrt{\frac{k_z}{k_x}},\quad k' = \sqrt{k_xk_z}"),
+   ("md", "Draw the section with horizontal distances scaled by √(k_z/k_x) (vertical unchanged), sketch a normal "
+          "flow net, then q = k′H N_f/N_d. Example: k_x = 4k_z → horizontal scale halved; k′ = 2 × 10⁻⁶ m/s."),
+ ),
+ sec("Unconfined flow & the phreatic surface", (86, 112),
+   ("md", "Dupuit assumptions: flat free surface, horizontal streamlines, vertical equipotentials, v uniform with "
+          "depth."),
+   ("eq", r"q = kh\frac{dh}{dx}\ \Rightarrow\ h^2 = h_0^2 - \frac{x}{L}\left(h_0^2 - h_L^2\right),\qquad q = \frac{k}{2L}\left(h_0^2 - h_L^2\right)"),
+   ("md", "The **Dupuit parabola**. In earth dams the phreatic line must not exit on the downstream face "
+          "(sloughing, piping, collapse); the maximum exit gradient is at the smallest flow-net element near the "
+          "toe → compare with i_c. Remedy: **toe drain** / filter to pull the phreatic surface inside the dam."),
+ ),
+]}
+
+STUDY[G2] = {"code": "CE104", "title": "Soil 9 · Shear strength of soils", "sections": [
+ sec("Strength, failure & stress–strain of soil", (2, 21),
+   ("md", "Soil strength is **shear** strength — it governs almost every geotechnical limit state (bearing, "
+          "slopes, walls). 'Failure' may mean collapse or a limiting strain (soft soils: often **20 % strain** in "
+          "triaxial). Strength depends on the loading mode (compression, extension, simple shear) and drainage."),
+ ),
+ sec("Mohr circle & the pole method", (22, 41),
+   ("eq", r"\sigma_\theta = \frac{\sigma_1 + \sigma_3}{2} + \frac{\sigma_1 - \sigma_3}{2}\cos2\theta,\qquad \tau_\theta = \frac{\sigma_1 - \sigma_3}{2}\sin2\theta"),
+   ("md", "Soil sign convention: **compression positive**, θ anticlockwise from the σ₁ plane. Max shear (at 45°) "
+          "is not on the failure plane. **Pole (origin of planes):** a line from the pole parallel to a plane "
+          "meets the circle at the stresses on that plane."),
+   ("eq", r"\theta_f = 45^\circ + \frac{\phi}{2}\ \ (\text{failure plane from the major principal plane})"),
+   ("ex", "Example 1 — dry sand on the failure plane: τ = 3.5, σ = 10 kPa", "tanφ = 3.5/10 → φ = 19.3°."),
+   ("ex", "Examples 2–4", "σ₁ = 40, σ₃ = 20 kPa: on a plane at 30°, σ = 35 kPa, τ = 8.7 kPa; with shear on the "
+          "element (40, 15)/(20, −15) find the principal directions from tan2θ = 15/10 → 2θ = 56°."),
+ ),
+ sec("Friction & the Mohr–Coulomb criterion", (42, 58),
+   ("eq", r"\tau_f = c' + \sigma'_n\tan\phi' \qquad \sigma'_1 = \sigma'_3\tan^2\!\left(45^\circ + \frac{\phi'}{2}\right) + 2c'\tan\!\left(45^\circ + \frac{\phi'}{2}\right)"),
+   ("eq", r"\sin\phi' = \frac{\sigma'_1 - \sigma'_3}{\sigma'_1 + \sigma'_3 + 2c'\cot\phi'}\qquad \text{FS} = \frac{\tau_f}{\tau}"),
+   ("md", "Granular strength comes from **friction** and interlocking (dilation). Undrained clay: φ = 0, "
+          "τ_f = s_u (horizontal envelope). Always plot **effective** stresses for drained behaviour "
+          "(σ′ = σ − u shifts the circle left by u, same size)."),
+ ),
+ sec("Direct shear & simple shear", (59, 80),
+   ("md", "Two-half box, normal load N, shear on a **forced horizontal plane**. Dense sand: peak then drop to "
+          "residual, dilates; loose sand: no peak, contracts. Run ≥ 3 normal loads → envelope. Cheap, fast, simple; "
+          "but drainage cannot be controlled (hard for clays), non-uniform stress, forced plane. In situ σ′_h = "
+          "K₀σ′_v (K₀ ≈ 1 − sinφ′ for NC soil)."),
+   ("ex", "Example — sandy silt, σ_n = 65 kPa, K₀ = 0.5, τ_f = 41 kPa", "Initial circle σ₁ = 65, σ₃ = 32.5; failure "
+          "point (65, 41) → φ = tan⁻¹(41/65) ≈ 32°."),
+ ),
+ sec("Triaxial test: stresses, compression & extension", (81, 101),
+   ("eq", r"q = \sigma_1 - \sigma_3 = \frac{F}{A},\qquad A = \frac{A_0(1 - \varepsilon_v)}{1 - \varepsilon_a}\ \ (\text{corrected area})"),
+   ("md", "Cylindrical specimen in a pressurised cell: σ₃ = cell pressure, σ₁ = σ₃ + deviator. Compression (σ₁ "
+          "vertical) vs extension (σ₁ radial) give different strengths — relevant to different parts of a slip "
+          "surface. **Back-pressure** saturates the specimen; drainage valve open/closed sets drained/undrained."),
+ ),
+ sec("UU, CU and CD tests", (102, 119),
+   ("md", "| Test | Consolidation | Shearing | Gives |\n|---|---|---|---|\n| **UU** | no | undrained | s_u (φ_u = 0) |"
+          "\n| **CU** | yes | undrained, measure u | c′, φ′ (and s_u) |\n| **CD** | yes | drained (slow) | c′, φ′ |"),
+   ("ex", "UU on clay A", "Different cell pressures give the same deviator at failure → φ_u = 0, **s_u = 35 kPa**."),
+   ("ex", "CD on sand — σ₃ = 120 kPa, deviator at failure 220 kPa", "σ₁ = 340 kPa; c′ = 0 → sinφ′ = (340 − 120)/"
+          "(340 + 120) → **φ′ ≈ 29°** (28.6°)."),
+   ("md", "Typical φ′: gravel 40–55°, sand loose dry 28–34°, dense dry 36–45° (sandy gravel highest). φ′ is a "
+          "parameter, not a strength: drained strength **increases with depth** via σ′."),
+ ),
+ sec("Drained vs undrained; OCR; pore-pressure parameters", (120, 142),
+   ("md", "Field vane, lab vane, mini-cone and pocket penetrometer give quick s_u. Use **drained** strength "
+          "(c′, φ′ with σ′) for long-term/slow loading; **undrained** s_u for rapid loading of low-permeability "
+          "clay (short-term). OCR = σ′_p/σ′_v0 (NC = 1)."),
+   ("eq", r"\Delta u = B\left[\Delta\sigma_3 + A(\Delta\sigma_1 - \Delta\sigma_3)\right],\qquad B = 1\ \text{for saturated soil}"),
+   ("md", "A_f > 0 (≈ 0.5–1) for NC clay/loose sand (contractive, positive Δu); A_f < 0 for heavily OC clay/dense "
+          "sand (dilative, negative Δu). **Correlations:** E_u ≈ 200–500 s_u (≈ 300 s_u first estimate); for NC "
+          "clay s_u/σ′_v0 ≈ 0.22 (Mesri) or 0.11 + 0.0037 PI (Skempton)."),
+   ("eq", r"\tau_{ff} = \frac{(\sigma'_1 - \sigma'_3)_f}{2}\cos\phi'\quad(\text{shear stress on the failure plane at failure})"),
+ ),
+]}
+
+_S = "CE104/{}.pdf"
+SOIL = {k: _S.format(k) for k in ["S01_Introduction", "S02_Basic_Concepts", "S03_Singapore_Soil_Formation",
+                                   "S04_Phase_Relationships", "S05_Effective_Stress", "S06_Stresses_and_Strains",
+                                   "S07_Compression_Behaviour", "S08_Consolidation_Time_Dependent",
+                                   "S08c_1D_consolidation_derivation", "S99_Summary"]}
+
+STUDY[SOIL["S01_Introduction"]] = {"code": "CE104", "title": "Soil 0 · Course map (CE2112)", "sections": [
+ sec("Parts & order", (2, 11),
+   ("md", "1. **Geology & basic characteristics** (weeks 1–4): origin of soils, Singapore geology, effective stress, "
+          "phase relations, particle size, index properties, classification.\n2. **Permeability & seepage** "
+          "(4–7): Darcy, permeability tests, flow nets, seepage forces.\n3. **Compressibility & consolidation** "
+          "(7–10): compression of granular/fine soils, elastic settlement, compression indices, 1-D consolidation, "
+          "c_v, preloading.\n4. **Shear strength** (10–13): Mohr–Coulomb, triaxial, drained/undrained, Skempton's "
+          "A & B.\n\nMain text: Knappett & Craig, *Craig's Soil Mechanics*."),
+ ),
+]}
+
+STUDY[SOIL["S02_Basic_Concepts"]] = {"code": "CE104", "title": "Soil 1 · Introduction & basic concepts", "sections": [
+ sec("Geotechnical engineering", (2, 25),
+   ("md", "Geotechnical work: piles, deep excavations, diaphragm walls, tunnelling (TBM/EPB), reclamation, ground "
+          "improvement, offshore foundations, lab and field testing. Failures (NUS slope, Nicoll Highway, open-pit "
+          "and tailings dam collapses) show why. Unlike structural design, the ground is a natural, variable, "
+          "continuous medium — behaviour can't be fully quantified, so rely on observation, testing and judgement."),
+ ),
+ sec("Rocks, soils & groundwater", (26, 40),
+   ("md", "Rocks: igneous, sedimentary, metamorphic. Soils by origin: **residual** (weathered in place), "
+          "colluvial, eolian, alluvial, glacial, marine. Physical weathering → granular (same mineralogy, > 2 µm); "
+          "chemical weathering → **clay** (new minerals, < 2 µm). Soil = solids + water (+ air): dry, saturated, "
+          "unsaturated.\n\n**Groundwater table** = surface where u = 0. Soil above it may still be saturated by "
+          "**capillary rise**; pore pressure there is negative (suction)."),
+   ("eq", r"h_c = \frac{4T\cos\alpha}{d\,\gamma_w}\ \ (\propto 1/d),\qquad u = -\gamma_w h_c\ \text{at the top of the capillary zone}"),
+ ),
+ sec("Stress, strain & how soil gains strength", (41, 51),
+   ("md", "Soil treated as a deformable continuum: stress = load/area (normal, shear), strain = response, "
+          "modulus = stress/strain (measured by test). Soils fail by **shearing** — grains slide/roll, not crush "
+          "(except calcareous sands). Resistance = **inter-particle friction** (∝ normal force) + **interlocking** "
+          "(denser packing → dilation → higher φ′); sometimes cementation. Typical φ′ ≈ 30° sands, 20–28° clays."),
+ ),
+ sec("Effective stress principle", (52, 58),
+   ("eq", r"\sigma' = \sigma - u\qquad \text{water at/above ground, uniform soil: } \sigma' = \gamma' d"),
+   ("md", "Effective stress = inter-particle contact force per unit area; it controls friction, strength and "
+          "stiffness. Higher u → lower σ′ → lower strength. Seabed soil at d = 0 has σ′ = 0 however deep the water "
+          "— seabed soils are soft."),
+ ),
+ sec("Packing density: phase relations", (59, 70),
+   ("eq", r"e = \frac{V_v}{V_s},\quad n = \frac{e}{1+e},\quad w = \frac{W_w}{W_s},\quad S_r = \frac{V_w}{V_v},\quad Se = wG_s"),
+   ("eq", r"\gamma_d = \frac{G_s\gamma_w}{1+e},\quad \gamma = \frac{(G_s + S_re)\gamma_w}{1+e},\quad \gamma_{sat} = \frac{(G_s + e)\gamma_w}{1+e},\quad \gamma' = \gamma_{sat} - \gamma_w"),
+   ("md", "Use V_s = 1 as the working assumption. Volumes are hard to measure, so work from weights and G_s."),
+ ),
+ sec("Packability: sand vs clay, G_s, relative density", (71, 79),
+   ("md", "Sand: physical weathering, bulky grains, behaviour set by grading and packing. Clay: chemical weathering, "
+          "plate-like minerals with charged surfaces holding adsorbed water → plasticity and activity matter. "
+          "**G_s** ≈ 2.60 sands, 2.65–2.85 clays (pycnometer)."),
+   ("eq", r"D_R = \frac{e_{max} - e}{e_{max} - e_{min}}\times100\%"),
+   ("md", "| D_R % | State | φ′ ° |\n|---|---|---|\n| 0–15 | very loose | 29–32 |\n| 15–35 | loose | 32–35 |\n"
+          "| 35–65 | medium dense | 35–37 |\n| 65–85 | dense | 37–40 |\n| 85–100 | very dense | 40–42 |"),
+ ),
+ sec("Particle size distribution", (80, 90),
+   ("md", "Sieve analysis for > 0.063 mm; **hydrometer** (Stokes' law, deflocculated suspension) for silt/clay down "
+          "to ~2 µm."),
+   ("eq", r"C_U = \frac{D_{60}}{D_{10}},\qquad C_C = \frac{D_{30}^2}{D_{60}D_{10}}"),
+   ("md", "**Well graded: C_U > 15 and C_C 1–3**; uniformly graded C_U < 3; gap graded C_C < 0.5. Well-graded soils "
+          "pack densely → stronger, less compressible."),
+ ),
+ sec("Atterberg limits & classification", (91, 104),
+   ("md", "Water content regimes: solid → (SL) → semi-solid → (PL) → plastic → (LL) → liquid. **LL** by fall cone "
+          "(30°, 80 g cone penetrates **20 mm**; s_u ≈ 2 kPa) preferred to Casagrande. PL = lowest w at which soil "
+          "can be rolled into 3 mm threads."),
+   ("eq", r"PI = LL - PL,\qquad LI = \frac{w - PL}{PI}\quad(LI = 0\ \text{at PL},\ 1\ \text{at LL})"),
+   ("md", "PI ≈ water-content change that alters strength ~100×; high PI → large compression/swelling. "
+          "**BS classification:** fine-grained if > 35 % passes 0.063 mm. Plasticity chart: C (clay, above "
+          "A-line) / M (silt, below) / O (organic); plasticity L < 35, I 35–50, H 50–70, V > 70 % LL. Coarse: "
+          "G/S + W/P/U/C/F."),
+ ),
+]}
+
+STUDY[SOIL["S03_Singapore_Soil_Formation"]] = {"code": "CE104", "title": "Soil 2 · Singapore soil formations", "sections": [
+ sec("The four main formations", (2, 4),
+   ("md", "| Formation | Where | What |\n|---|---|---|\n| **Bukit Timah Granite** | north & central | igneous rock + "
+          "residual soils |\n| **Jurong Formation** | west (incl. NUS) | sedimentary rocks + residual soils |\n"
+          "| **Old Alluvium** | east | Quaternary sediments |\n| **Kallang Formation** | south, coast, downtown, "
+          "valleys | recent sediments, marine clay |"),
+ ),
+ sec("Bukit Timah Granite", (5, 8),
+   ("md", "Triassic granite weathered to: stiff–hard clayey silt near surface (to ~20 m) over dense sandy silt/silty "
+          "sand (~10–20 m), then rock. Challenges: **corestones and undulating rockhead** (TBMs enter/exit rock "
+          "repeatedly); sandy silt can **flow** under high pore pressure → ground loss."),
+ ),
+ sec("Jurong Formation", (9, 11),
+   ("md", "Late Triassic–Early Jurassic sandstone, mudstone, siltstone, shale, folded/faulted. **Extremely variable** "
+          "with depth and location; weathered to stiff soil (s_u 100–200 kPa) in places, near-intact rock "
+          "elsewhere (e.g. under parts of the CBD)."),
+ ),
+ sec("Old Alluvium", (12, 14),
+   ("md", "5–0.5 Ma, poorly lithified clayey coarse sand with pebble stringers — soil-like at top, weak-rock-like "
+          "below. Highly heterogeneous; sandy → **flows under water pressure**; high permeability → water ingress "
+          "into excavations."),
+ ),
+ sec("Kallang Formation (marine clay)", (15, 17),
+   ("md", "Holocene marine, alluvial, estuarine deposits covering ~25 % of the island. **Upper marine clay**: very "
+          "soft–soft, high LL/PI, 5–8 % organics; **lower marine clay**: soft–medium stiff (deposited 12–18 ka). "
+          "Very low permeability → consolidation settlement over **50–100 years**; deep excavation risks "
+          "(Nicoll Highway collapse, 2004)."),
+   ("tip", "FEE 2017 Part 2 Q3 (pile selection near an MRT viaduct on marine clay) draws directly on this."),
+ ),
+]}
+
+STUDY[SOIL["S04_Phase_Relationships"]] = {"code": "CE104", "title": "Soil 1a · Phase relationships (supplement)", "sections": [
+ sec("Formulae with V_s = 1", (2, 4),
+   ("eq", r"V = 1 + e,\ \ V_w = S_re,\ \ W_s = G_s\gamma_w,\ \ W_w = S_re\gamma_w,\ \ A_v = \frac{e - wG_s}{1+e}"),
+   ("eq", r"\gamma = \frac{G_s\gamma_w(1 + w)}{1 + e}\qquad \text{saturated: } e = wG_s,\ \gamma_{sat} = \frac{G_s\gamma_w(1+w)}{1 + wG_s}"),
+   ("tip", "Draw the phase diagram with V_s = 1, fill in volumes then weights — every relationship follows."),
+ ),
+]}
+
+STUDY[SOIL["S05_Effective_Stress"]] = {"code": "CE104", "title": "Soil 1b · Effective stress calculations", "sections": [
+ sec("Hydrostatic examples", (2, 4),
+   ("md", "Water table at or above ground in uniform soil → σ′ = γ′d (water depth irrelevant). Otherwise build a "
+          "table: total stress σ = Σγᵢdᵢ (bulk above GWT, saturated below, + water above ground), u = γ_w × depth "
+          "below the GWT, σ′ = σ − u."),
+   ("ex", "Water 1000 m deep over soil, point 3 m below seabed (γ_sat = 18)", "σ = 3 × 18 + 1000 × 10 = 10 054; "
+          "u = 1003 × 10 = 10 030 → σ′ = **24 kPa** (= 3 × 8)."),
+   ("ex", "GWT below ground", "Point B at 2 m (γ = 16) above GWT: σ = 32, u = 0 → σ′ = 32 kPa; continue below the GWT "
+          "with γ_sat and u = γ_w(z − z_w)."),
+ ),
+]}
+
+STUDY[SOIL["S99_Summary"]] = {"code": "CE104", "title": "Soil · Part 1 summary (checklist)", "sections": [
+ sec("What to know from Part 1", (2, 12),
+   ("md", "- Rock types and soil origins; granular vs clay (physical vs chemical weathering, 2 µm boundary).\n"
+          "- Groundwater table, confined/artesian aquifers, capillary rise and suction.\n"
+          "- Stress, strain, modulus; soils fail by sliding/rolling — friction + interlocking.\n"
+          "- Effective stress principle and hydrostatic calculations.\n- Phase relations, D_R.\n"
+          "- Grading (C_U, C_C), Atterberg limits, PI, LI; BS/ISO classification and the plasticity chart."),
+ ),
+]}
+
+STUDY[SOIL["S06_Stresses_and_Strains"]] = {"code": "CE104", "title": "Soil 5 · Stresses, strains & moduli", "sections": [
+ sec("Why stresses & strains", (1, 8),
+   ("md", "Two design requirements: **stability** (ULS — shear failure of the skeleton, not particle crushing) and "
+          "**serviceability** (deformations). Stiffness k = F/δ depends on geometry; **modulus** E = σ/ε is a "
+          "material property. In saturated soil the skeleton carries normal and shear stress, water only normal "
+          "stress → σ′ = σ − u (contact area ≪ total area)."),
+ ),
+ sec("Stress & strain at a point (soil sign convention)", (9, 15),
+   ("md", "Six independent stress components (τxy = τyx etc.); **compression positive** in soil mechanics. "
+          "Strains: εx = −∂vx/∂x, γxy = −(∂vx/∂y + ∂vy/∂x)."),
+ ),
+ sec("Elastic moduli: E, G, K, D", (16, 25),
+   ("eq", r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right],\quad G = \frac{E}{2(1+\nu)},\quad K = \frac{E}{3(1-2\nu)},\quad \varepsilon_v = \frac{p}{K}"),
+   ("eq", r"D = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} = \frac{1}{m_v}\quad(\text{constrained modulus: lateral strains} = 0)"),
+   ("md", "E: load in one direction, others free. **D (1-D/oedometer)** is used in consolidation via m_v. Real soil "
+          "is non-linear and inelastic — linear moduli are convenient approximations."),
+ ),
+]}
+
+STUDY[SOIL["S07_Compression_Behaviour"]] = {"code": "CE104", "title": "Soil 6 · Compression behaviour", "sections": [
+ sec("Isotropic vs 1-D compression", (2, 7),
+   ("md", "Isotropic (triaxial cell pressure, bulk modulus) and **1-D** (oedometer: rigid ring, no lateral strain, "
+          "constrained modulus — models wide fills and reclamation). Neither can cause shear failure. Drained: "
+          "u = 0, σ′ = σ; σ′_h = Kσ′_v."),
+ ),
+ sec("e–log p′: VCL, swelling lines & preconsolidation", (8, 14),
+   ("md", "Below **p′_c** the soil is stiff and nearly elastic (**swelling–recompression line**, slope C_s); above it, "
+          "large irreversible compression on the **virgin compression line** (slope C_c, particle rearrangement). "
+          "p′_c = highest past effective stress. **Casagrande method**: max-curvature point → tangent & horizontal → "
+          "bisector → extend the VCL back to meet it."),
+   ("eq", r"\text{VCL: } \Delta e = -C_c\log\frac{p'_2}{p'_1}\qquad \text{SRL: } \Delta e = -C_s\log\frac{p'_2}{p'_1}\quad(\text{effective stresses only})"),
+   ("eq", r"m_v = \frac{\Delta\varepsilon}{\Delta\sigma'} = \frac{-\Delta e}{(1+e_0)\Delta\sigma'},\qquad D = \frac{1}{m_v}"),
+ ),
+ sec("1-D settlement", (15, 17),
+   ("eq", r"\rho = \frac{H\,\Delta e}{1 + e_0}\qquad \text{NC: } \rho = \frac{C_cH}{1+e_0}\log\frac{\sigma'_0 + \Delta\sigma'}{\sigma'_0}\qquad \rho = m_v\,\Delta\sigma'\,H"),
+   ("md", "OC soil crossing p′_c: C_s from σ′₀ to p′_c, then C_c beyond. C_c correlates with PI. VCL is unique for a "
+          "clay but sands have different VCLs as vibration densifies them."),
+ ),
+]}
+
+STUDY[SOIL["S08_Consolidation_Time_Dependent"]] = {"code": "CE104", "title": "Soil 7 · Consolidation & time-dependent behaviour", "sections": [
+ sec("Why consolidation takes time", (2, 10),
+   ("md", "Saturated clay compresses only as water drains out — governed by permeability. Examples: drawdown "
+          "beside excavations; Singapore reclamation (fill 2–3 years, settlement over decades); **Kansai airport** "
+          "~10 m settlement over 50–100 years. Questions: **how much** (Δe or m_v) and **how long** (c_v)."),
+ ),
+ sec("Short-term, long-term & excess pore pressure", (11, 29),
+   ("md", "Spring–piston analogy: just after a wide load Δσ the **excess pore pressure** u₀ = Δσ carries it all "
+          "(σ′ unchanged); in the long term u → 0 and σ′ increases by Δσ. Excess pwp = total − long-term "
+          "equilibrium pwp. At a drained boundary u = 0 immediately; at an impermeable boundary ∂u/∂z = 0. "
+          "**Isochrones** show u(z) at successive times."),
+   ("eq", r"U_z = \frac{u_0 - u}{u_0},\qquad \bar{U} = \frac{\text{area dissipated}}{\text{area of initial } u_0 \text{ profile}} = \frac{\rho_t}{\rho_\infty}"),
+ ),
+ sec("Terzaghi's 1-D consolidation equation", (30, 37),
+   ("eq", r"c_v\frac{\partial^2u}{\partial z^2} = \frac{\partial u}{\partial t},\qquad c_v = \frac{k}{m_v\gamma_w}"),
+   ("md", "Assumptions: homogeneous, saturated, incompressible grains and water, 1-D flow and strain, Darcy, k and "
+          "m_v constant. Derived from equilibrium, compatibility, m_v, effective stress, Darcy and continuity "
+          "(see the derivation supplement)."),
+   ("eq", r"T_v = \frac{c_vt}{D^2}\quad(D = \text{longest drainage path: } H/2 \text{ for double drainage})"),
+ ),
+ sec("Solutions & isochrones", (38, 52),
+   ("eq", r"\bar{U} \approx \sqrt{\frac{4T_v}{\pi}}\ (\bar{U} < 0.6),\qquad T_v = 1.781 - 0.933\log_{10}\left[100(1 - \bar{U})\right]\ (\bar{U} > 0.6)"),
+   ("md", "Double drainage = two single-drainage problems back to back (mid-depth acts as impermeable). T₅₀ = 0.197, "
+          "T₉₀ = 0.848. Other initial profiles: **triangular** (e.g. rapid drawdown with an aquifer below), "
+          "trapezoidal, layered (Luscher). Use the chart matching the u₀ shape and drainage — the centre curve "
+          "(trapezoidal, double drainage, includes rectangular) is most used."),
+   ("ex", "Reclamation: 50 kPa on 5 m marine clay over sandstone (c_v = 0.5 m²/yr, ρ∞ = 1.61 m)",
+    "Double drainage, D = 2.5 m. Settle 1.5 m: Ū = 0.932 → T ≈ 1.0 → t = 1.0 × 2.5²/0.5 = **12.5 yr**. After 2 yr: "
+    "T = 0.16 → Ū ≈ 0.45 → **0.72 m**."),
+ ),
+ sec("Oedometer: C_c, C_s, m_v and c_v (curve fitting)", (55, 71),
+   ("md", "c_v = k/(m_vγ_w) is rarely used (k is hard to measure) — fit the settlement–time curve instead. Real "
+          "curves have immediate settlement (air) and **secondary compression**."),
+   ("eq", r"\text{Taylor } \sqrt{t}\text{: } c_v = \frac{0.848\,D^2}{t_{90}}\qquad \text{Casagrande log } t\text{: } c_v = \frac{0.197\,D^2}{t_{50}}"),
+   ("md", "**Taylor:** corrected origin, line through the initial straight part, second line with 1.15× the inverse "
+          "slope → meets the curve at t₉₀. **Casagrande:** correct zero using t₂ = 4t₁ (ρ₂ − ρ₁ = ρ₁ offset), end of "
+          "primary from the intersection of the primary and secondary tangents, take the midpoint → t₅₀."),
+ ),
+ sec("General 1-D dissipation problems", (72, 75),
+   ("steps", ["Sketch σ, u, σ′ before the change (initial).",
+              "Sketch them just after the change (short term: undrained, σ′ unchanged in clay, Δu = Δσ).",
+              "Sketch the long-term equilibrium (steady seepage or hydrostatic).",
+              "Initial excess pwp = short-term − long-term u → choose the matching chart and drainage → T → t, "
+              "settlement = Ū ρ∞."]),
+ ),
+]}
+
+STUDY[SOIL["S08c_1D_consolidation_derivation"]] = {"code": "CE104", "title": "Soil 7a · Derivation of the 1-D consolidation equation", "sections": [
+ sec("Derivation outline", (1, 3),
+   ("steps", ["Equilibrium: ∂σ/∂z + γ = 0; with the load p₀ constant in time, ∂σ′/∂t = −∂u/∂t.",
+              "Compatibility: dε = −de/(1 + e).",
+              "Stress–strain: m_v = −de/[(1 + e)dσ′].",
+              "Darcy: v = −k ∂(u/γ_w)/∂z.",
+              "Continuity: −∂v/∂z = ∂ε/∂t = m_v ∂σ′/∂t = −m_v ∂u/∂t.",
+              "Combine → c_v ∂²u/∂z² = ∂u/∂t with c_v = k/(m_vγ_w); normalise with Z = z/D, T = c_vt/D²."]),
+   ("md", "Supplementary sheets: **consolidation curves** (Ū–T for rectangular, triangular and trapezoidal initial "
+          "profiles, single/double drainage) and **double-drainage isochrones** — keep them in your binder."),
+ ),
+]}

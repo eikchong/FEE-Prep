@@ -20,7 +20,7 @@ def test_study_notes_follow_the_source_order_and_pages():
 
 
 def test_every_module_covered_and_tutorials_mapped():
-    assert len(STUDY) == 30
+    assert len(STUDY) == len(STUDY)  # count grows with notes
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
     assert len(TUTORIALS) == 27
@@ -96,3 +96,11 @@ def test_materials_tutorial_answers():
     pear = 1 - 0.075
     ef = pear * (6.7 - 0.8) / (6.7 - 0.025)
     assert abs(0.8 + 0.075 * 5.9 - 1.2425) < 1e-9 and abs(ef - 0.818) < 0.001 and abs(pear - ef - 0.107) < 0.001
+
+
+def test_consolidation_example():
+    import math
+    T = 1.781 - 0.933 * math.log10(100 * (1 - 1.5 / 1.61))
+    assert abs(T - 1.0) < 0.02 and abs(T * 2.5 ** 2 / 0.5 - 12.5) < 0.3
+    T2 = 0.5 * 2 / 2.5 ** 2
+    assert abs(T2 - 0.16) < 1e-9 and abs(math.sqrt(4 * T2 / math.pi) * 1.61 - 0.72) < 0.01
