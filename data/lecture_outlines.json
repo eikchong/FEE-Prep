@@ -212,7 +212,8 @@
     "topics": []
    }
   ],
-  "page_count": 90
+  "page_count": 90,
+  "seq": 1
  },
  "CE102/CE102_Structural_Mechanics.pdf": {
   "code": "CE102",
@@ -352,7 +353,8 @@
     ]
    }
   ],
-  "page_count": 65
+  "page_count": 65,
+  "seq": 12
  },
  "CE103/CE103_Structural_Analysis.pdf": {
   "code": "CE103",
@@ -579,7 +581,8 @@
     ]
    }
   ],
-  "page_count": 91
+  "page_count": 91,
+  "seq": 1
  },
  "CE105/CE105_Pressure_and_Fluid_Statics.pdf": {
   "code": "CE105",
@@ -807,7 +810,8 @@
     ]
    }
   ],
-  "page_count": 226
+  "page_count": 226,
+  "seq": 1
  },
  "CE102/CE1101_M1_Axial_Force_Members.pdf": {
   "code": "CE102",
@@ -898,7 +902,8 @@
      "CE203-07"
     ]
    }
-  ]
+  ],
+  "seq": 5
  },
  "CE102/CE1101_M2_Torsional_Members.pdf": {
   "code": "CE102",
@@ -955,7 +960,8 @@
      "CE102-07"
     ]
    }
-  ]
+  ],
+  "seq": 6
  },
  "CE102/CE1101_M3_Flexural_Members.pdf": {
   "code": "CE102",
@@ -992,7 +998,8 @@
      "CE102-09"
     ]
    }
-  ]
+  ],
+  "seq": 7
  },
  "CE102/CE1101_M4_Stress_Strain_Bending.pdf": {
   "code": "CE102",
@@ -1049,7 +1056,8 @@
      "CE102-08"
     ]
    }
-  ]
+  ],
+  "seq": 8
  },
  "CE102/CE1101_M5_Deflection_of_Beams.pdf": {
   "code": "CE102",
@@ -1097,7 +1105,8 @@
      "CE103-01"
     ]
    }
-  ]
+  ],
+  "seq": 9
  },
  "CE102/CE1101_T2L_Tutorial_3.pdf": {
   "code": "CE102",
@@ -1136,7 +1145,8 @@
      "CE102-06"
     ]
    }
-  ]
+  ],
+  "seq": 10
  },
  "CE102/CE1101_T2L_Tutorial_4.pdf": {
   "code": "CE102",
@@ -1174,7 +1184,8 @@
      "CE103-01"
     ]
    }
-  ]
+  ],
+  "seq": 11
  },
  "CE102/CE1101_S1_Equilibrium_of_Particles.pdf": {
   "code": "CE102",
@@ -1222,7 +1233,8 @@
      "CE102-01"
     ]
    }
-  ]
+  ],
+  "seq": 1
  },
  "CE102/CE1101_S2_Equilibrium_of_Rigid_Bodies.pdf": {
   "code": "CE102",
@@ -1270,7 +1282,8 @@
      "CE203-06"
     ]
    }
-  ]
+  ],
+  "seq": 2
  },
  "CE102/CE1101_S3_Truss_Structures.pdf": {
   "code": "CE102",
@@ -1329,7 +1342,8 @@
      "CE102-05"
     ]
    }
-  ]
+  ],
+  "seq": 3
  },
  "CE102/CE1101_S4_Frame_and_Cable_Structures.pdf": {
   "code": "CE102",
@@ -1376,6 +1390,7 @@
      "CE102-02"
     ]
    }
-  ]
+  ],
+  "seq": 4
  }
 }

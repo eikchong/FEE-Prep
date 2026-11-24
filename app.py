@@ -14,6 +14,7 @@ pages = {
     ],
     "Study": [
         st.Page("views/syllabus.py", title="Syllabus tracker", icon="✅", url_path="syllabus"),
+        st.Page("views/notes.py", title="Study notes", icon="📖", url_path="notes"),
         st.Page("views/library.py", title="Library", icon="📚", url_path="library"),
         st.Page("views/planner.py", title="Study planner", icon="🗓️", url_path="planner"),
         st.Page("views/formulas.py", title="Formula & code sheet", icon="📐", url_path="formulas"),

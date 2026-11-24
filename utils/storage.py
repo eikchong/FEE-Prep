@@ -25,6 +25,7 @@ EMPTY_PROGRESS: dict[str, Any] = {
     "custom_mcqs": [],     # user-added MCQs, same schema as mcq_bank
     "pins": [],            # {id, code, topic_id, doc, page, excerpt, ts}
     "formula_notes": {},   # code -> markdown
+    "notes_read": {},      # notes path -> [studied section indices]
     "settings": copy.deepcopy(config.DEFAULT_SETTINGS),
 }
 
