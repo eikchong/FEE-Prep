@@ -200,6 +200,11 @@ CE101 = [
 ]
 
 D102 = "CE102/CE102_Structural_Mechanics.pdf"
+M1 = "CE102/CE1101_M1_Axial_Force_Members.pdf"
+M2 = "CE102/CE1101_M2_Torsional_Members.pdf"
+M3 = "CE102/CE1101_M3_Flexural_Members.pdf"
+M4 = "CE102/CE1101_M4_Stress_Strain_Bending.pdf"
+M5 = "CE102/CE1101_M5_Deflection_of_Beams.pdf"
 
 CE102 = [
  S("1 · Fundamental principles & laws", D102, 2, [
@@ -248,6 +253,9 @@ CE102 = [
    F("State of stress", note="Six independent components (σx, σy, σz, τxy, τyz, τzx)", src=(D102, 25)),
    F("Generalised Hooke's law", r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right],\quad \gamma_{xy} = \frac{\tau_{xy}}{G},\quad G = \frac{E}{2(1+\nu)}",
      src=(D102, 26)),
+   F("Average normal & shear stress (M1)", r"\sigma = \frac{P}{A},\quad \tau_{avg} = \frac{V}{A},\quad V = \frac{P}{2}\ \mathrm{(double\ shear)}",
+     src=(M1, 9)),
+   F("Factor of safety (M1)", r"n_s = \frac{P_{failure}}{P_{allowable}} = \frac{\sigma_{failure}}{\sigma_{allowable}} \geq 1", src=(M1, 14)),
  ]),
  S("7 · Axially loaded members", D102, 27, [
    F("Elongation of a stepped bar", r"\delta = \sum_i \frac{P_i L_i}{E_i A_i}", src=(D102, 29)),
@@ -255,6 +263,11 @@ CE102 = [
      r"\delta_L + \delta_R = 0 \Rightarrow R_B",
      note="remove redundant support, find free deflection δ_L, add δ_R from R_B, enforce compatibility. "
           "Notes' example: 1125/E = 1.95R_B/E → R_B = 577 kN", src=(D102, 28)),
+   F("Varying section and load (M1)", r"\delta = \int_0^L \frac{P(x)}{E\,A(x)}dx", src=(M1, 29)),
+   F("Degree of indeterminacy (M1)", note="unknowns − equations; solve with equilibrium + compatibility + "
+     "force–displacement", src=(M1, 30)),
+   F("Truss deflection by geometry (M1)", note="member elongations δ = NL/EA must stay compatible at the joints — "
+     "Williot-type sketch", src=(M1, 32)),
  ]),
  S("8 · Torsion of circular shafts", D102, 30, [
    F("Torsion formula & twist", r"\tau = \frac{T\rho}{J},\quad \tau_{max} = \frac{Tc}{J},\quad \phi = \frac{TL}{GJ}",
@@ -263,6 +276,11 @@ CE102 = [
      src=(D102, 32)),
    F("Indeterminate shaft fixed at both ends", r"T_A + T_B = T,\quad \phi_{AC} = \phi_{CB}",
      src=(D102, 33)),
+   F("Varying section/torque (M2)", r"\phi = \int_0^L\frac{T(x)}{G\,J(x)}dx,\quad \phi = \sum\frac{T_iL_i}{G_iJ_i}", src=(M2, 11)),
+   F("Axial ↔ torsion analogy (M2)", r"\delta = \frac{FL}{EA} \leftrightarrow \theta = \frac{TL}{GJ},\quad \sigma = \frac{F}{A} \leftrightarrow \tau = \frac{Tr}{J}",
+     note="circular, linear-elastic only; ignores stress concentrations; right-hand rule sign convention", src=(M2, 12)),
+   F("Power transmission (M2)", r"P = T\omega,\quad \omega = \frac{2\pi N}{60}", src=(M2, 27)),
+   F("Bolted shaft coupling (M2)", note="bolts on the pitch circle carry shear: n·F·r_b = T", src=(M2, 20)),
  ]),
  S("9 · Flexural members: internal forces, SFD & BMD", D102, 34, [
    F("Sign convention", note="Deformation sign convention: +V clockwise on element, +M sagging; tension +ve",
@@ -271,11 +289,18 @@ CE102 = [
      note="point load → jump in V; applied couple → jump in M; M is max where V = 0", src=(D102, 37)),
    F("Drawing diagrams", note="Reactions → segment by segment left to right; V jumps at point loads, M slope = V",
      src=(D102, 38)),
+   F("Jumps at concentrated actions (M3)", note="Point load P: V drops by P, M unchanged (slope changes); "
+     "clockwise couple M₀: M jumps, V unchanged", src=(M3, 10)),
  ]),
  S("10 · Bending (normal) stresses", D102, 42, [
    F("Flexure formula", r"\sigma_x = -\frac{My}{I},\quad \sigma_{max} = \frac{M}{S},\quad S = \frac{I}{c}",
      note="neutral axis through the centroid (linear elastic, no axial force); rectangle S = bh²/6", src=(D102, 44)),
    F("Parallel-axis theorem", r"I = I_c + Ad^2", note="composite areas: sum about common axis", src=(D102, 46)),
+   F("Moment–curvature (M4)", r"\kappa = \frac{1}{\rho} = \frac{M}{EI},\quad \varepsilon_x = -\kappa y", src=(M4, 11)),
+   F("I by superposition (M4)", note="About an axis of symmetry, add/subtract rectangles directly (e.g. I-section = "
+     "outer box − two voids)", src=(M4, 16)),
+   F("Transformed section (M4)", r"n = \frac{E_2}{E_1},\quad b^* = nb,\quad \sigma_1 = -\frac{My}{I_t},\quad \sigma_2 = -n\frac{My}{I_t}",
+     note="scale widths only; N.A. at centroid of transformed section", src=(M4, 18)),
  ]),
  S("11 · Shear stresses in beams", D102, 50, [
    F("Shear formula", r"\tau = \frac{VQ}{Ib}", note="Q = first moment of area beyond the level considered",
@@ -288,12 +313,18 @@ CE102 = [
    F("Elastic curve", r"EI\frac{d^2y}{dx^2} = M,\quad \frac{1}{\rho} = \frac{M}{EI}", src=(D102, 56)),
    F("Macaulay (singularity) functions", r"\langle x - a\rangle^n = 0\ (x < a),\ (x - a)^n\ (x \geq a)",
      note="one equation for the whole beam; integrate twice, constants from supports", src=(D102, 57)),
+   F("Direct integration & continuity (M5)", note="Piecewise M(x) → integrate each segment; boundary conditions at "
+     "supports plus continuity of y and y′ at segment joins", src=(M5, 11)),
+   F("Superposition (M5)", note="Linear ODE → add deflections from standard cases", src=(M5, 14)),
  ]),
  S("13 · Moment-area method", D102, 60, [
    F("1st theorem", r"\theta_{B/A} = \int_A^B \frac{M}{EI}\,dx", note="change in slope = area of M/EI diagram",
      src=(D102, 60)),
    F("2nd theorem", r"t_{B/A} = \int_A^B \frac{M}{EI}\,\bar{x}_B\,dx",
      note="tangential deviation of B from tangent at A = first moment of M/EI area about B", src=(D102, 61)),
+   F("Area & centroid of typical shapes (M5)", r"\mathrm{rectangle}:\ bh,\ \frac{b}{2};\quad \mathrm{triangle}:\ \frac{bh}{2},\ \frac{b}{3};\quad \mathrm{parabolic\ spandrel}:\ \frac{bh}{3},\ \frac{b}{4}",
+     note="x̄ measured from the end with zero ordinate's opposite (see sketch on p. 21); nth-degree spandrel: bh/(n+1)",
+     src=(M5, 21)),
    F("Not covered", note="Kinetics of particles and plane motion of rigid bodies are listed in the syllabus but not in "
                          "these slides — revise from Hibbeler/Beer", src=(D102, 1)),
  ]),

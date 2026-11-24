@@ -77,6 +77,10 @@ MCQ_CHECKS = {
     "M-CE103-009": lambda: 3 * 12 * 8 / 8,
     "M-CE103-010": lambda: 2 * 40000 / 5 * (2 * 0.002),
     "M-CE103-011": lambda: 50 * math.cos(math.radians(30)) ** 2,
+    "M-CE102-012": lambda: 10000 / (math.pi * 16 ** 2 / 4),
+    "M-CE102-013": lambda: 50000 / (2 * math.pi * 300 / 60),
+    "M-CE102-014": lambda: 200 / 10 * 100,
+    "M-CE102-015": lambda: 10 * 4 ** 4 / (8 * 20000) * 1000,
     "M-CE105-004": lambda: (13.6 - 1) * 9810 * 0.2 / 1000,
     "M-CE105-005": lambda: 2.5 + (2 * 3 ** 3 / 12) / (2.5 * 6),
     "M-CE105-006": lambda: 9.81 * math.pi * 2 ** 2 / 4 * 3,
@@ -114,7 +118,7 @@ def test_mcq_text_answers_from_notes():
 def test_every_new_mcq_cites_a_lecture_page():
     ol = json.loads((DATA / "lecture_outlines.json").read_text(encoding="utf-8"))
     cited = [q for q in MCQ if q.get("source")]
-    assert len(cited) >= 33
+    assert len(cited) >= 37
     for q in cited:
         doc, page = q["source"]["doc"], q["source"]["page"]
         assert doc in ol, q["id"]

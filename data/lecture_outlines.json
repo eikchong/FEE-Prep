@@ -808,5 +808,295 @@
    }
   ],
   "page_count": 226
+ },
+ "CE102/CE1101_M1_Axial_Force_Members.pdf": {
+  "code": "CE102",
+  "title": "CE1101 M1 — Introduction & axial force members",
+  "page_count": 48,
+  "sections": [
+   {
+    "title": "Overview: mechanics of materials",
+    "pages": [
+     1,
+     5
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Stress: normal, shear (single/double), sign convention",
+    "pages": [
+     6,
+     9
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Strain, stress–strain, Poisson, generalised Hooke",
+    "pages": [
+     10,
+     13
+    ],
+    "topics": [
+     "CE102-06",
+     "CE101-02"
+    ]
+   },
+   {
+    "title": "Allowable stress & factor of safety; pin/anchor examples",
+    "pages": [
+     14,
+     25
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Axially loaded members: uniform, stepped, varying",
+    "pages": [
+     26,
+     29
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Indeterminacy & compatibility",
+    "pages": [
+     30,
+     31
+    ],
+    "topics": [
+     "CE102-06",
+     "CE103-02"
+    ]
+   },
+   {
+    "title": "Truss deflections by geometry",
+    "pages": [
+     32,
+     35
+    ],
+    "topics": [
+     "CE102-04",
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Pile load test & further examples",
+    "pages": [
+     36,
+     48
+    ],
+    "topics": [
+     "CE102-06",
+     "CE203-07"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_M2_Torsional_Members.pdf": {
+  "code": "CE102",
+  "title": "CE1101 M2 — Torsional members",
+  "page_count": 40,
+  "sections": [
+   {
+    "title": "Torsion formula, polar moment of area",
+    "pages": [
+     1,
+     9
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Angle of twist; axial vs torsional analogy; limitations; sign convention",
+    "pages": [
+     10,
+     14
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Statically determinate shafts & bolted couplings",
+    "pages": [
+     15,
+     26
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Power transmission",
+    "pages": [
+     27,
+     31
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   },
+   {
+    "title": "Statically indeterminate torsional members",
+    "pages": [
+     32,
+     40
+    ],
+    "topics": [
+     "CE102-07"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_M3_Flexural_Members.pdf": {
+  "code": "CE102",
+  "title": "CE1101 M3 — Flexural members (SFD/BMD)",
+  "page_count": 36,
+  "sections": [
+   {
+    "title": "Internal forces & sign convention",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   },
+   {
+    "title": "Load–shear–moment relations",
+    "pages": [
+     7,
+     11
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   },
+   {
+    "title": "Sketching procedure & examples (beams, chair frame, pier cap, ski)",
+    "pages": [
+     12,
+     36
+    ],
+    "topics": [
+     "CE102-09"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_M4_Stress_Strain_Bending.pdf": {
+  "code": "CE102",
+  "title": "CE1101 M4 — Stress & strain due to bending",
+  "page_count": 47,
+  "sections": [
+   {
+    "title": "Curvature & longitudinal strain",
+    "pages": [
+     1,
+     7
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Normal stress, neutral axis, moment–curvature, flexure formula",
+    "pages": [
+     8,
+     13
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Second moment of area, parallel axis, superposition",
+    "pages": [
+     14,
+     16
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Composite beams: transformed section",
+    "pages": [
+     17,
+     20
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Examples: glued boards, section moduli, railway tie, truss girder, castellated beam, composite slab",
+    "pages": [
+     21,
+     47
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE1101_M5_Deflection_of_Beams.pdf": {
+  "code": "CE102",
+  "title": "CE1101 M5 — Deflection of beams",
+  "page_count": 50,
+  "sections": [
+   {
+    "title": "Elastic curve; direct integration & continuity",
+    "pages": [
+     1,
+     13
+    ],
+    "topics": [
+     "CE102-08",
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Superposition",
+    "pages": [
+     14,
+     14
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Moment-area theorems, M/EI by parts, typical shapes",
+    "pages": [
+     15,
+     23
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   },
+   {
+    "title": "Examples: onshore pipeline span, overhangs, δC = δD design",
+    "pages": [
+     24,
+     50
+    ],
+    "topics": [
+     "CE103-01"
+    ]
+   }
+  ]
  }
 }

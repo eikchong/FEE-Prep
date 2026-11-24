@@ -844,5 +844,77 @@
   ],
   "answer": 2,
   "explain": "v = 0.2/(π × 0.3²/4) = 2.83 m/s; ρQv = 1000 × 0.2 × 2.83 = 566 N in each of x and y → resultant √2 × 566 = 800 N."
+ },
+ {
+  "id": "M-CE102-012",
+  "code": "CE102",
+  "topic": "CE102-06",
+  "source": {
+   "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
+   "page": 9
+  },
+  "q": "A 16 mm pin in double shear connects a member carrying 20 kN. The average shear stress in the pin is closest to:",
+  "options": [
+   "24.9 MPa",
+   "49.7 MPa",
+   "99.5 MPa",
+   "198.9 MPa"
+  ],
+  "answer": 1,
+  "explain": "Double shear: V = P/2 = 10 kN on each plane; τ = V/A = 10 000/(π × 16²/4) = 49.7 MPa. (99.5 MPa would be single shear.)"
+ },
+ {
+  "id": "M-CE102-013",
+  "code": "CE102",
+  "topic": "CE102-07",
+  "source": {
+   "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
+   "page": 27
+  },
+  "q": "A shaft transmits 50 kW at 300 rpm. The torque in the shaft is closest to:",
+  "options": [
+   "167 Nm",
+   "1592 Nm",
+   "2653 Nm",
+   "9549 Nm"
+  ],
+  "answer": 1,
+  "explain": "P = Tω, with ω = 2π × 300/60 = 31.4 rad/s → T = 50 000/31.4 = 1592 Nm."
+ },
+ {
+  "id": "M-CE102-014",
+  "code": "CE102",
+  "topic": "CE102-08",
+  "source": {
+   "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
+   "page": 18
+  },
+  "q": "A timber beam (E = 10 GPa) is reinforced with a 100 mm wide steel plate (E = 200 GPa). In the transformed section expressed in timber, the plate's equivalent width is:",
+  "options": [
+   "5 mm",
+   "100 mm",
+   "1000 mm",
+   "2000 mm"
+  ],
+  "answer": 3,
+  "explain": "n = E_steel/E_timber = 20; scale widths only: b* = 20 × 100 = 2000 mm (depth unchanged). Steel stress = n × (My/I) of the transformed section."
+ },
+ {
+  "id": "M-CE102-015",
+  "code": "CE102",
+  "topic": "CE102-08",
+  "source": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "page": 22
+  },
+  "q": "A 4 m cantilever (EI = 20 000 kNm²) carries a UDL of 10 kN/m. Using moment-area (parabolic spandrel: area bh/3, centroid 3b/4 from the vertex), the tip deflection is:",
+  "options": [
+   "8.0 mm",
+   "12.8 mm",
+   "16.0 mm",
+   "32.0 mm"
+  ],
+  "answer": 2,
+  "explain": "M/EI spandrel: h = wL²/2EI, area = (L)(h)/3 = wL³/6EI, centroid 3L/4 from the tip → δ = wL⁴/8EI = 10 × 256/(8 × 20 000) = 0.016 m = 16 mm."
  }
 ]
