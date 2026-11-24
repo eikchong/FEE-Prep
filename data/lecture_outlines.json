@@ -354,7 +354,7 @@
    }
   ],
   "page_count": 65,
-  "seq": 12
+  "seq": 16
  },
  "CE103/CE103_Structural_Analysis.pdf": {
   "code": "CE103",
@@ -1146,7 +1146,7 @@
     ]
    }
   ],
-  "seq": 10
+  "seq": 15
  },
  "CE102/CE1101_T2L_Tutorial_4.pdf": {
   "code": "CE102",
@@ -1185,7 +1185,7 @@
     ]
    }
   ],
-  "seq": 10
+  "seq": 15
  },
  "CE102/CE1101_S1_Equilibrium_of_Particles.pdf": {
   "code": "CE102",
@@ -1395,7 +1395,7 @@
  },
  "CE102/CE1101_T2L_Tutorial_1.pdf": {
   "code": "CE102",
-  "seq": 10,
+  "seq": 15,
   "title": "CE1101 T2L Tutorial 1 (Q1–Q3, statics — goes with S1–S3)",
   "page_count": 3,
   "sections": [
@@ -1434,7 +1434,7 @@
  },
  "CE102/CE1101_T2L_Tutorial_2.pdf": {
   "code": "CE102",
-  "seq": 10,
+  "seq": 15,
   "title": "CE1101 T2L Tutorial 2 (Q4–Q6, frames, cables, rigid bodies — goes with S2–S4)",
   "page_count": 3,
   "sections": [
@@ -1466,6 +1466,246 @@
     ],
     "topics": [
      "CE102-02"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_0_Introduction.pdf": {
+  "code": "CE102",
+  "title": "CE2155 0 — Introduction (course map)",
+  "page_count": 8,
+  "seq": 10,
+  "sections": [
+   {
+    "title": "Course scope; equilibrium; SFD/BMD practice",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE102-02",
+     "CE102-09"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_1_MoM_Revision.pdf": {
+  "code": "CE102",
+  "title": "CE2155 1 — Mechanics of materials revision",
+  "page_count": 32,
+  "seq": 11,
+  "sections": [
+   {
+    "title": "Stress & complementary shear",
+    "pages": [
+     2,
+     5
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Strain & stress–strain",
+    "pages": [
+     6,
+     15
+    ],
+    "topics": [
+     "CE102-06",
+     "CE101-02"
+    ]
+   },
+   {
+    "title": "Axial, torsion, bending",
+    "pages": [
+     16,
+     26
+    ],
+    "topics": [
+     "CE102-06",
+     "CE102-07",
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "SFD/BMD, elastic curve",
+    "pages": [
+     27,
+     32
+    ],
+    "topics": [
+     "CE102-09",
+     "CE103-01"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_2_Shear_Stress.pdf": {
+  "code": "CE102",
+  "title": "CE2155 2 — Shear stress",
+  "page_count": 33,
+  "seq": 12,
+  "sections": [
+   {
+    "title": "Transverse & longitudinal shear",
+    "pages": [
+     3,
+     6
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Shear formula",
+    "pages": [
+     7,
+     12
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Examples",
+    "pages": [
+     13,
+     16
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "Shear flow & fasteners",
+    "pages": [
+     17,
+     23
+    ],
+    "topics": [
+     "CE102-08",
+     "CE202-10"
+    ]
+   },
+   {
+    "title": "Thin-walled members",
+    "pages": [
+     24,
+     33
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_3_Combined_Loading.pdf": {
+  "code": "CE102",
+  "title": "CE2155 3 — Combined loading",
+  "page_count": 16,
+  "seq": 13,
+  "sections": [
+   {
+    "title": "Superposition of P, T, M, V",
+    "pages": [
+     2,
+     3
+    ],
+    "topics": [
+     "CE102-06",
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "2-D examples",
+    "pages": [
+     4,
+     7
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   },
+   {
+    "title": "3-D loading",
+    "pages": [
+     8,
+     16
+    ],
+    "topics": [
+     "CE102-02",
+     "CE102-07",
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_4_Stress_Strain_Transformation.pdf": {
+  "code": "CE102",
+  "title": "CE2155 4 — Stress & strain transformation",
+  "page_count": 38,
+  "seq": 14,
+  "sections": [
+   {
+    "title": "Plane stress",
+    "pages": [
+     2,
+     4
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Transformation equations",
+    "pages": [
+     5,
+     11
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Principal & max shear",
+    "pages": [
+     12,
+     16
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Mohr's circle",
+    "pages": [
+     17,
+     23
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Absolute max shear",
+    "pages": [
+     24,
+     26
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   },
+   {
+    "title": "Hooke's law, plane strain, rosettes",
+    "pages": [
+     27,
+     38
+    ],
+    "topics": [
+     "CE102-06",
+     "CE101-02"
     ]
    }
   ]

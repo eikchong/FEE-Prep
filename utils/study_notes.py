@@ -468,3 +468,165 @@ TUTORIALS = [
  (T4, 2, "Q5 SFD/BMD — overhanging beam; aircraft wing", M3),
  (T4, 3, "Q6 Combined stress at a section; max deflection under combined loads", M5),
 ]
+
+# ============================================================== CE2155 (continuation of CE1101)
+C0 = "CE102/CE2155_0_Introduction.pdf"
+C1 = "CE102/CE2155_1_MoM_Revision.pdf"
+C2 = "CE102/CE2155_2_Shear_Stress.pdf"
+C3 = "CE102/CE2155_3_Combined_Loading.pdf"
+C4 = "CE102/CE2155_4_Stress_Strain_Transformation.pdf"
+
+STUDY[C0] = {"code": "CE102", "title": "CE2155 0 · Course map", "sections": [
+ sec("Where structural mechanics fits", (1, 8),
+   ("md", "CE2155 continues CE1101: **transverse shear stress, combined loading, 2-D stress & strain "
+          "transformation, column buckling and failure criteria** (60 %), plus concrete & steel materials (40 %). "
+          "Static equilibrium in 3-D = 6 equations (ΣF = 0, ΣM = 0 in vector form); revise SFD/BMD of cantilevers "
+          "and simply supported beams before starting."),
+   ("eq", r"\sum\mathbf{F} = \mathbf{0},\qquad \sum\mathbf{M}_O = \mathbf{0}\quad(\text{6 scalar equations in 3-D})"),
+ ),
+]}
+
+STUDY[C1] = {"code": "CE102", "title": "CE2155 1 · Mechanics of materials revision", "sections": [
+ sec("Stress: normal, shear, 3-D state, complementary shear", (2, 5),
+   ("md", "Average normal stress σ = P/A is accurate away from load points (**Saint-Venant's principle**). "
+          "Average shear in double shear τ = F/(2A). The 3-D state has σx, σy, σz and τxy, τyz, τzx. "
+          "**Complementary shear:** shear stresses on adjacent perpendicular faces are equal in magnitude and both "
+          "point towards, or both away from, the common edge."),
+   ("eq", r"\tau_{xy} = \tau_{yx},\quad \tau_{yz} = \tau_{zy},\quad \tau_{zx} = \tau_{xz}"),
+ ),
+ sec("Strain & stress–strain relations", (6, 15),
+   ("md", "Normal strain = change in length per unit length; shear strain = change in the originally right angle "
+          "(+ if the angle becomes smaller). Normal strains change volume, shear strains change shape. Engineering "
+          "stress/strain use the original A₀ and L₀."),
+   ("eq", r"\sigma = E\varepsilon,\qquad \nu = -\frac{\varepsilon_{lat}}{\varepsilon_{long}},\qquad \tau = G\gamma,\qquad G = \frac{E}{2(1+\nu)}"),
+   ("ex", "Example 1 — steel bar, 80 kN, E = 200 GPa, ν = 0.32", "σ = P/A → ε = σ/E → δ = εL; lateral strain −νε "
+          "gives the change of the cross-section dimensions."),
+ ),
+ sec("Axial load, torsion & bending revision", (16, 26),
+   ("eq", r"\delta = \int\frac{P(x)}{A(x)E}dx \qquad \tau = \frac{T\rho}{J},\ \phi = \frac{TL}{GJ} \qquad \sigma = -\frac{My}{I}"),
+   ("md", "Torsion formulae are for **circular** sections only (non-circular sections warp). Euler–Bernoulli "
+          "assumptions: plane sections stay plane and perpendicular to the axis, negligible in-plane distortion, "
+          "axis length unchanged → linear strain → (elastic) linear stress."),
+   ("ex", "Example 2 — I of a built-up section", "Neutral axis by Σ(A·y)/ΣA, then I = Σ(bh³/12 + Ad²) — "
+          "tabulate (an Excel layout is shown)."),
+   ("ex", "Example 3 — simply supported I-beam under UDL", "M_max = 22.5 kNm at midspan; σ_max = Mc/I at the extreme "
+          "fibre; check also the web–flange junction (σ = My_B/I)."),
+ ),
+ sec("SFD/BMD, elastic curve & moment–curvature", (27, 32),
+   ("eq", r"\frac{dV}{dx} = w,\quad \frac{dM}{dx} = V \qquad \frac{1}{\rho} = \frac{M}{EI},\quad EI\frac{d^2v}{dx^2} = M"),
+   ("md", "Signs here: upward load +, sagging moment +. Sketch the **elastic curve** to check the solution "
+          "(supports, points of inflection where M = 0). Integrate with boundary conditions; discontinuity "
+          "(Macaulay) functions handle partial UDLs and point loads."),
+ ),
+]}
+
+STUDY[C2] = {"code": "CE102", "title": "CE2155 2 · Shear stress in beams", "sections": [
+ sec("Transverse & longitudinal shear", (3, 6),
+   ("md", "V produces transverse shear stress on the section; by complementary shear the same stress acts "
+          "**longitudinally**. Three loose boards slide and each carries P/3; glued boards act as one deeper beam "
+          "(much stiffer and stronger) — the glue carries the longitudinal shear. Shear exists because "
+          "V = dM/dx: unequal M on the two faces of a slice must be balanced by shear on the cut."),
+ ),
+ sec("The shear formula", (7, 12),
+   ("eq", r"\tau = \frac{VQ}{It},\qquad Q = \int_{A'}y\,dA = \bar{y}'A'"),
+   ("md", "**A′** = the part of the section beyond the level considered (the part 'held on' by the shear); "
+          "ȳ′ = distance from the N.A. to the centroid of A′; t = width at that level; I = whole section about "
+          "the N.A."),
+   ("eq", r"\text{Rectangle: } \tau = \frac{6V}{bh^3}\left(\frac{h^2}{4} - y^2\right),\qquad \tau_{max} = 1.5\frac{V}{bh}\ \text{at the N.A.}"),
+   ("tip", "The formula assumes τ uniform across the width t — poor for wide, shallow sections and at abrupt "
+           "width changes."),
+ ),
+ sec("Examples: circular sections & glued T-beam", (13, 16),
+   ("ex", "Example 2 — solid shaft vs tube, V = 4 kN", "Q of the semicircle above the diameter (ȳ = 4c/3π); τ at "
+          "mid-height of the solid shaft = 4V/3A, compared with V/A average; the tube has a higher peak."),
+   ("ex", "Example 3 — T-beam from two 150 × 30 mm boards", "V_max = 19.5 kN; A′ = top board, t = 30 mm (glue "
+          "width) → τ_glue = VQ/It ≈ 4.88 MPa (vs 2.17 MPa average)."),
+ ),
+ sec("Shear flow & fastener spacing", (17, 23),
+   ("eq", r"q = \frac{VQ}{I}\ \ (\text{force per unit length}),\qquad s = \frac{F_{fastener}}{q_{per\ fastener\ line}}"),
+   ("md", "Built-up beams need fasteners (glue, welds, bolts, nails, shear studs) to resist q. Split q between "
+          "the number of fastener lines that hold A′ on."),
+   ("ex", "T-beam (above)", "q = 146 kN/m — the glue must resist 146 kN per metre of beam."),
+   ("ex", "Example 4 — nailed box beam, V = 80 N, nail capacity 30 N", "I = 2295 × 10³ mm⁴. At B: q = VQ/I = 1.18 "
+          "N/mm shared by two nail lines (0.59 N/mm each) → s_B ≈ 51 mm; at C: 0.353 N/mm per line → s_C ≈ 85 mm."),
+ ),
+ sec("Thin-walled members", (24, 33),
+   ("md", "In thin walls shear flow runs **along the wall** (normal component negligible). In an I-section it "
+          "flows from the flange tips inward, down the web and out to the bottom tips. Use **centre-line "
+          "dimensions** for I, Q."),
+   ("eq", r"\text{Flange: } q = \frac{Vt\,d}{2I}x\ \ (\text{linear}),\qquad \text{Web: } q = \frac{Vt}{I}\left[\frac{db}{2} + \frac{1}{2}\left(\frac{d^2}{4} - y^2\right)\right]\ \ (\text{quadratic})"),
+   ("md", "q varies **linearly** on segments perpendicular to V and **quadratically** on segments parallel/inclined "
+          "to V; the web carries almost all of V, flange horizontal components cancel."),
+   ("ex", "Example 5 — thin-walled box, V = 10 kN", "q_B = 0 (A′ = 0 at the corner point on the axis of symmetry), "
+          "q_C and q_D from Q of the shaded areas, halved because two walls hold A′ on."),
+ ),
+]}
+
+STUDY[C3] = {"code": "CE102", "title": "CE2155 3 · Combined loading", "sections": [
+ sec("Superposition of P, T, M and V", (2, 3),
+   ("md", "Valid while the material is linear elastic and geometry changes are small. Find the internal P, T, M, V "
+          "**at the centroid of the section**, compute each stress at the point, then add."),
+   ("eq", r"\sigma = \frac{P}{A} \pm \frac{M_zy}{I_z} \pm \frac{M_yz}{I_y} \qquad \tau = \frac{T\rho}{J} + \frac{VQ}{It}"),
+ ),
+ sec("2-D examples", (4, 7),
+   ("ex", "Example 1 — member AB, point C at a top corner", "Internal forces at C: P = −16.45 kN, M = 32.89 kNm "
+          "(sagging), V = 21.93 kN. At the top corner τ = 0 (Q = 0) and σ = −P/A − Mc/I (compression)."),
+   ("ex", "Example 2 — 40 kN at the corner of a block", "Move the force to the centroid: axial 40 kN + two moments; "
+          "superpose the three stress planes → largest 875 kPa compression at corner C."),
+ ),
+ sec("3-D loading with vector mechanics", (8, 16),
+   ("eq", r"\mathbf{M}_O = \mathbf{r}\times\mathbf{F} = \begin{vmatrix}\mathbf{i} & \mathbf{j} & \mathbf{k}\\ r_x & r_y & r_z\\ F_x & F_y & F_z\end{vmatrix}"),
+   ("ex", "Example 3 — 7.5 mm-radius rod fixed at C, 500 N and 800 N loads",
+    "At section A: P = 500 N, V = 800 N, T = 11 200 N·cm, M = 8000 and 7000 N·cm. Point A on the neutral axis "
+    "of the 8000 moment. Superpose: σ = 2.83 + 211.3 = 214.1 MPa, τ = 6.04 + 169 = 175.0 MPa."),
+   ("md", "**The big picture:** equilibrium → internal actions → stress formulae → state of stress → Mohr's "
+          "circle → maximum stresses → failure criteria; and strain → deflection (serviceability), buckling "
+          "(stability)."),
+ ),
+]}
+
+STUDY[C4] = {"code": "CE102", "title": "CE2155 4 · Stress & strain transformation", "sections": [
+ sec("Plane stress & sign convention", (2, 4),
+   ("md", "Why a chalk in torsion breaks on a **45° helix**: the maximum *tensile* stress acts at 45° to the axis. "
+          "Plane stress keeps σx, σy, τxy (out-of-plane components zero). τxy is positive on a +x face in +y "
+          "(or −x face in −y); θ positive anticlockwise."),
+ ),
+ sec("Transformation equations", (5, 11),
+   ("eq", r"\sigma_{x'} = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2}\cos2\theta + \tau_{xy}\sin2\theta"),
+   ("eq", r"\tau_{x'y'} = -\frac{\sigma_x - \sigma_y}{2}\sin2\theta + \tau_{xy}\cos2\theta \qquad \sigma_{y'} = \sigma_x + \sigma_y - \sigma_{x'}"),
+   ("md", "Derived from equilibrium of a wedge cut at θ (forces = stress × area, not stresses)."),
+   ("ex", "Example 1 — element rotated 30° clockwise", "θ = −30° in the equations; plotting σx′ against θ shows a "
+          "max 54.6 MPa and min −84.6 MPa, and τ between ±69.6 MPa."),
+ ),
+ sec("Principal stresses & maximum in-plane shear", (12, 16),
+   ("eq", r"\tan2\theta_p = \frac{2\tau_{xy}}{\sigma_x - \sigma_y} \qquad \sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}"),
+   ("eq", r"\tau_{max,\,in\text{-}plane} = \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2},\quad \sigma_{avg}\ \text{on those planes},\quad \theta_s = \theta_p \pm 45^\circ"),
+   ("md", "No shear on principal planes. Example 2 (bar in tension): σ₁ = P/A, σ₂ = 0; τ_max = P/2A on 45° planes "
+          "— why ductile bars show 45° slip lines."),
+ ),
+ sec("Mohr's circle for plane stress", (17, 23),
+   ("eq", r"(\sigma_{x'} - \sigma_{avg})^2 + \tau_{x'y'}^2 = R^2,\qquad R = \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}"),
+   ("steps", ["Centre C = (σ_avg, 0).", "Plot reference point A = (σx, τxy) with **τ positive downward** (notes' "
+              "convention).", "Radius R = CA.", "A rotation θ of the element = **2θ** on the circle, same sense.",
+              "σ₁, σ₂ where the circle meets the σ axis; τ_max = R at the top/bottom."]),
+   ("ex", "Example 3", "Reference A(−8, −6); element rotated 30° anticlockwise → rotate CA by 60°."),
+   ("ex", "Example 4 — point on a shaft", "A(−12, −6): centre −6, R = √(6² + 6²) = 8.49 → σ₁ = 2.49, σ₂ = −14.49 "
+          "MPa."),
+ ),
+ sec("Absolute maximum shear stress", (24, 26),
+   ("md", "Consider all three planes (σ₃ = 0 in plane stress):\n"
+          "- σ₁, σ₂ **same sign** → τ_abs,max = σ_max/2 (out-of-plane!).\n"
+          "- σ₁, σ₂ **opposite signs** → τ_abs,max = (σ₁ − σ₂)/2 (in-plane)."),
+   ("ex", "Example 5 — thin pressure vessel", "Hoop and longitudinal stresses are principal and both tensile → "
+          "τ_abs,max = σ_hoop/2."),
+ ),
+ sec("Generalised Hooke's law, plane strain & strain rosettes", (27, 38),
+   ("eq", r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right],\qquad \gamma_{xy} = \frac{\tau_{xy}}{G}"),
+   ("md", "**Plane strain** transforms exactly like plane stress with σ → ε and τ → γ/2 (Mohr's circle: γ/2 "
+          "positive downward)."),
+   ("eq", r"\varepsilon_{x'} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2}\cos2\theta + \frac{\gamma_{xy}}{2}\sin2\theta"),
+   ("md", "**Strain rosette:** three gauges a, b, c at known angles each give one equation εᵢ = εx cos²θᵢ + "
+          "εy sin²θᵢ + γxy sinθᵢ cosθᵢ → solve for εx, εy, γxy → Mohr's circle → principal strains; then "
+          "Hooke's law (σ₃ = 0) gives the principal stresses (Examples 7–8)."),
+ ),
+]}
