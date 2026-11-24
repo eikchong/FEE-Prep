@@ -5577,5 +5577,409 @@
     ]
    }
   ]
+ },
+ "CE203/CE3116/Lectures/1 CE3116_Intro.pdf": {
+  "code": "CE203",
+  "seq": 14.1,
+  "title": "CE3116 · Foundation engineering course outline",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Scope",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE203-08"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/5 Site Investigation R1.pdf": {
+  "code": "CE203",
+  "seq": 19.1,
+  "title": "Foundations 0 · Site investigation — lecture notes",
+  "page_count": 100,
+  "sections": [
+   {
+    "title": "Stages: desk study, reconnaissance, subsurface exploration",
+    "pages": [
+     1,
+     15
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Geophysical surveys",
+    "pages": [
+     16,
+     24
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Planning: depth, number, sampling",
+    "pages": [
+     25,
+     35
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "SPT",
+    "pages": [
+     40,
+     54
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "CPT / CPTu",
+    "pages": [
+     55,
+     72
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Pressuremeter & other tests",
+    "pages": [
+     73,
+     100
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/4 Compaction of Soils R1.pdf": {
+  "code": "CE203",
+  "seq": 19.5,
+  "title": "Foundations 0a · Compaction of soils — lecture notes",
+  "page_count": 64,
+  "sections": [
+   {
+    "title": "Principles & phase relations",
+    "pages": [
+     1,
+     13
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Laboratory tests",
+    "pages": [
+     14,
+     25
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Factors & soil types",
+    "pages": [
+     26,
+     37
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Field equipment",
+    "pages": [
+     38,
+     44
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Specification & control",
+    "pages": [
+     45,
+     63
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/6 Revision Lecture (Compaction and SI).pdf": {
+  "code": "CE203",
+  "seq": 19.8,
+  "title": "Foundations 0b · Revision: compaction & site investigation",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Compaction checklist",
+    "pages": [
+     2,
+     6
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   },
+   {
+    "title": "Site-investigation checklist",
+    "pages": [
+     7,
+     14
+    ],
+    "topics": [
+     "CE203-05"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf": {
+  "code": "CE203",
+  "seq": 22.5,
+  "title": "Foundations 1 · Shallow foundations: ULS bearing to EC7 — lecture notes",
+  "page_count": 79,
+  "sections": [
+   {
+    "title": "Foundation types & bearing failure modes",
+    "pages": [
+     1,
+     29
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Limit states & EC7 sets",
+    "pages": [
+     30,
+     42
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Effective area & undrained resistance",
+    "pages": [
+     43,
+     47
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Drained resistance (EC7 Annex D)",
+    "pages": [
+     48,
+     53
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Eccentric load & sliding",
+    "pages": [
+     54,
+     56
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   },
+   {
+    "title": "Worked examples (sand pad, stiff-clay pad)",
+    "pages": [
+     57,
+     79
+    ],
+    "topics": [
+     "CE203-06"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf": {
+  "code": "CE203",
+  "seq": 23.5,
+  "title": "Foundations 2 · Shallow foundations: settlement (SLS) — lecture notes",
+  "page_count": 129,
+  "sections": [
+   {
+    "title": "Components & limits",
+    "pages": [
+     3,
+     28
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Footings on sand — SPT methods",
+    "pages": [
+     29,
+     52
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Footings on sand — Schmertmann (CPT)",
+    "pages": [
+     53,
+     66
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Footings on clay — immediate & consolidation",
+    "pages": [
+     67,
+     84
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Stress distribution",
+    "pages": [
+     85,
+     98
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   },
+   {
+    "title": "Secondary compression & time",
+    "pages": [
+     99,
+     129
+    ],
+    "topics": [
+     "CE203-09"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/2 DeepFoundation.pdf": {
+  "code": "CE203",
+  "seq": 24.5,
+  "title": "Foundations 3 · Piles to EC7 — lecture notes",
+  "page_count": 113,
+  "sections": [
+   {
+    "title": "Pile types & failure modes",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "EC7 procedure",
+    "pages": [
+     7,
+     22
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Characteristic values & model factor",
+    "pages": [
+     23,
+     42
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Resistance factors R4 (C2)",
+    "pages": [
+     43,
+     50
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Calculating resistance",
+    "pages": [
+     51,
+     73
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Downdrag example & SPT-based design",
+    "pages": [
+     77,
+     103
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   },
+   {
+    "title": "Tension piles & structural capacity",
+    "pages": [
+     104,
+     113
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   }
+  ]
+ },
+ "CE203/CE3116/Lectures/2.1 DeepFoundation AdditionalNotes.pdf": {
+  "code": "CE203",
+  "seq": 24.6,
+  "title": "Foundations 3a · Pile design from SPT/CPT (additional notes)",
+  "page_count": 24,
+  "sections": [
+   {
+    "title": "SPT and CPT correlations for piles",
+    "pages": [
+     1,
+     24
+    ],
+    "topics": [
+     "CE203-07"
+    ]
+   }
+  ]
  }
 }

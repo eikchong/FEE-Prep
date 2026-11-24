@@ -710,3 +710,197 @@ GEO[D["E7"]] = {"code": "CE203", "title": "Retaining 6a · Quiz key points (ERSS
            "here is 181.5 kPa."),
  ),
 ]}
+
+
+# ---------------------------------------------------------------- CE3116 lecture notes (foundations)
+FL = F + "Lectures/"
+D.update({
+    "F1": FL + "1 CE3116_Intro.pdf", "F2": FL + "2 DeepFoundation.pdf", "F21": FL + "2.1 DeepFoundation AdditionalNotes.pdf",
+    "F31": FL + "3.1 ShallowFoundation ULS PART1.pdf", "F32": FL + "3.2 ShallowFoundation SLS PART 2.pdf",
+    "F4": FL + "4 Compaction of Soils R1.pdf", "F5": FL + "5 Site Investigation R1.pdf",
+    "F6": FL + "6 Revision Lecture (Compaction and SI).pdf",
+})
+OUTLINE += [("F1", 8, 14.1, ["CE203-08"]), ("F5", 100, 19.1, ["CE203-05"]), ("F4", 64, 19.5, ["CE203-05"]),
+            ("F6", 15, 19.8, ["CE203-05"]), ("F31", 79, 22.5, ["CE203-06"]), ("F32", 129, 23.5, ["CE203-09"]),
+            ("F2", 113, 24.5, ["CE203-07"]), ("F21", 24, 24.6, ["CE203-07"])]
+TEXT_ONLY.add(D["F5"])
+
+GEO[D["F1"]] = {"code": "CE203", "title": "CE3116 · Foundation engineering course outline", "sections": [
+ sec("Scope", (1, 8),
+   ("md", "Shallow foundations (ULS bearing, SLS settlement), deep foundations (piles to EC7), soil compaction and "
+          "site investigation. Design to **EC7 DA1** with the Singapore NA."),
+ ),
+]}
+
+GEO[D["F5"]] = {"code": "CE203", "title": "Foundations 0 · Site investigation — lecture notes", "sections": [
+ sec("Stages: desk study, reconnaissance, subsurface exploration", (1, 15),
+   ("md", "Desk study (geological maps/memoirs, old boreholes, air photos, utilities, adjacent foundations) → "
+          "walk-over (previous grading, landslides, drainage, distress in nearby buildings, access) → geophysics + "
+          "boreholes/in-situ tests → **ground model** → design."),
+ ),
+ sec("Geophysical surveys", (16, 24),
+   ("md", "Seismic refraction/reflection, surface waves (MASW) → stratigraphy and V_s (small-strain stiffness); "
+          "resistivity, EM, GPR → layering, cavities, water (clay low resistivity, rock high); crosshole/downhole/"
+          "suspension logging in boreholes. Use them to position boreholes."),
+ ),
+ sec("Planning: depth, number, sampling", (25, 35),
+   ("md", "EC7-2 minimum depth below founding level: strip footing z_a ≥ max(6 m, 3b_F); raft z_a ≥ 1.5b_B; piles "
+          "z_a ≥ max(b_g, 3D_F, 5 m) below the deepest toe (2 m if competent rock is proven). BCA/IES/ACES Advisory "
+          "Note 1/03 (≥ 10 storeys): e.g. ~5 boreholes for 1200 m², 10 for 3000 m², 26 for 7500 m², placed at heavy "
+          "columns. Sample every **1.5 m** (≤ 3 m) and at every change of stratum."),
+ ),
+ sec("SPT", (40, 54),
+   ("eq", r"N_{60} = N\frac{E_r}{60}\lambda,\qquad (N_1)_{60} = N_{60}C_N,\quad C_N = \frac{200}{100 + \sigma'_v}\ (D_R 40\text{–}60\%),\ \frac{300}{200 + \sigma'_v}\ (60\text{–}80\%),\ \frac{170}{70 + \sigma'_v}\ (OC)\ \le 2"),
+   ("md", "63.5 kg hammer, 760 mm drop, 150 mm seating + 2 × 150 mm counted. Rod-length λ: 0.75 (3–4 m), 0.85 "
+          "(4–6 m), 0.95 (6–10 m), 1.0 (> 10 m). Clay: s_u ≈ 5N₆₀ kPa (Stroud f₁ ≈ 4.5–6 by PI); no C_N for clay. "
+          "Disturbed sample only; unreliable in soft clay, silt and gravel."),
+ ),
+ sec("CPT / CPTu", (55, 72),
+   ("eq", r"q_t = q_c + u_2(1 - a),\quad Q_t = \frac{q_t - \sigma_{v0}}{\sigma'_{v0}},\quad F_r = \frac{f_s}{q_t - \sigma_{v0}},\quad B_q = \frac{u_2 - u_0}{q_t - \sigma_{v0}},\quad s_u = \frac{q_t - \sigma_{v0}}{N_{kt}}"),
+   ("md", "I_c zones: < 1.31 gravelly/dense sand · 1.31–2.05 clean to silty sand · 2.05–2.60 sand mixtures · "
+          "2.60–2.95 silt mixtures · 2.95–3.60 clay · > 3.60 organic. N_kt 15–20 (10 soft, 30 fissured) — calibrate. "
+          "σ′_p ≈ 0.33(q_t − σ_v0). Sands: Baldi D_R, φ′ = 17.6 + 11 log[q_t/(100σ′_v0)^0.5]; q_c 0–2.5 / 2.5–5 / "
+          "5–10 / 10–20 / > 20 MPa ≈ very loose → very dense. Fast, continuous, no sample."),
+ ),
+ sec("Pressuremeter & other tests", (73, 100),
+   ("md", "Ménard (pre-bored), self-boring, push-in. E from an unload–reload loop: E = 2(1 + ν)(V_c + V̄)Δp/ΔV; "
+          "limit pressure p_L at V = V_c + 2V₀; s_u = (p_L − p₀)/N_p. Also vane shear (s_u in soft clay), "
+          "dilatometer, undisturbed sampling (thin-wall, Mazier), field permeability (Hvorslev rising/falling head), "
+          "piezometers."),
+   ("tip", "This deck is 14 MB on Drive, so only its text was imported; page numbers here are approximate slide numbers."),
+ ),
+]}
+
+GEO[D["F4"]] = {"code": "CE203", "title": "Foundations 0a · Compaction of soils — lecture notes", "sections": [
+ sec("Principles & phase relations", (1, 13),
+   ("eq", r"\rho_d = \frac{\rho}{1+w} = \frac{G_s\rho_w}{1+e},\qquad \rho_{d,S_r} = \frac{G_s\rho_w}{1 + wG_s/S_r}"),
+   ("md", "Compaction expels **air** (not water) to raise density, strength and stiffness and cut permeability."),
+ ),
+ sec("Laboratory tests", (14, 25),
+   ("md", "Standard Proctor (2.5 kg rammer, 3 layers × 27 blows) vs Modified (4.5 kg, 5 layers): more energy → higher "
+          "MDD at lower OMC; curves sit left of the zero-air-voids line."),
+ ),
+ sec("Factors & soil types", (26, 37),
+   ("md", "Coarse soils: bulking at low w (3–5 %), best compacted dry or saturated by **vibration**. Fine soils: dry of "
+          "optimum → flocculated, stiffer, more permeable, swell-prone; wet of optimum → dispersed, flexible, less "
+          "permeable (good for liners/cores)."),
+ ),
+ sec("Field equipment", (38, 44),
+   ("md", "Smooth-wheel (crushed rock, sand), **vibratory** (granular), pneumatic-tyred (silts, mixed), sheepsfoot/"
+          "tamping-foot (clays); lift thickness and number of passes from trials."),
+ ),
+ sec("Specification & control", (45, 63),
+   ("md", "Specify relative compaction RC = ρ_d,field/ρ_d,max (typically ≥ 90–95 %) with a w window, or end-product D_R. "
+          "Check by sand cone, nuclear gauge, core cutter, balloon; intelligent compaction monitoring for large fills."),
+ ),
+]}
+
+GEO[D["F6"]] = {"code": "CE203", "title": "Foundations 0b · Revision: compaction & site investigation", "sections": [
+ sec("Compaction checklist", (2, 6),
+   ("steps", ["Plot both compaction curves with ZAV/S_r lines.", "Target ρ_d from D_R, then RC = target/MDD (aim 90–95 %).",
+              "Allowable w range from the curve; pick rollers by soil type; lift thickness from D_R–depth chart.",
+              "Truck trips: mass and volume capacity (with bulking) — the larger governs.", "Sand-cone results → adjust w or energy."]),
+ ),
+ sec("Site-investigation checklist", (7, 14),
+   ("steps", ["SPT: E_r/60, rod λ, C_N only for sand → D_R → φ′ (±2–3° for gravelly/silty).",
+              "CPTu: q_t, Q_t, F_r → I_c → soil type and k range; s_u = (q_t − σ_v0)/N_kt.",
+              "PMT: unload–reload modulus, p_L, s_u = (p_L − p₀)/N_p.",
+              "Hvorslev: T at H/H₀ = 0.37, k = πr²/(F T).", "Compare s_u from all methods with lab UU."]),
+ ),
+]}
+
+GEO[D["F31"]] = {"code": "CE203", "title": "Foundations 1 · Shallow foundations: ULS bearing to EC7 — lecture notes", "sections": [
+ sec("Foundation types & bearing failure modes", (1, 29),
+   ("md", "Shallow (pads, strips, rafts; D/B ≲ 1) vs deep. Failure modes: general shear (dense/stiff), local shear, "
+          "punching (loose/soft)."),
+ ),
+ sec("Limit states & EC7 sets", (30, 42),
+   ("md", "ULS (bearing, sliding, overall) and SLS (settlement, rotation). DA1-C1 A1+M1+R1, DA1-C2 A2+M2+R1; foundation "
+          "self-weight and backfill are permanent unfavourable for bearing."),
+ ),
+ sec("Effective area & undrained resistance", (43, 47),
+   ("eq", r"B' = B - 2e_B,\ L' = L - 2e_L,\ A' = B'L';\qquad \frac{R}{A'} = (\pi + 2)c_ub_cs_ci_c + q,\quad s_c = 1 + 0.2\frac{B'}{L'}"),
+ ),
+ sec("Drained resistance (EC7 Annex D)", (48, 53),
+   ("eq", r"\frac{R}{A'} = c'N_cb_cs_ci_c + q'N_qb_qs_qi_q + \tfrac12\gamma'B'N_\gamma b_\gamma s_\gamma i_\gamma"),
+   ("eq", r"N_q = e^{\pi\tan\phi'}\tan^2\!\left(45^\circ + \frac{\phi'}{2}\right),\ N_c = (N_q - 1)\cot\phi',\ N_\gamma = 2(N_q - 1)\tan\phi',\ s_q = 1 + \frac{B'}{L'}\sin\phi',\ s_\gamma = 1 - 0.3\frac{B'}{L'}"),
+   ("md", "Inclination: i_q = (1 − H/(V + A′c′cot φ′))^m, i_γ = (…)^{m+1}, m = (2 + B′/L′)/(1 + B′/L′)."),
+ ),
+ sec("Eccentric load & sliding", (54, 56),
+   ("md", "Keep e within B/6 for SLS; if e/B > 1/3 take special care (enlarge). Sliding: H_d ≤ V′_d tan δ_d "
+          "(drained) or A′c_u (undrained)."),
+ ),
+ sec("Worked examples (sand pad, stiff-clay pad)", (57, 79),
+   ("md", "See the ULS tutorial page: C2 usually governs drained width; check undrained (c_u/1.4) and drained cases."),
+ ),
+]}
+
+GEO[D["F32"]] = {"code": "CE203", "title": "Foundations 2 · Shallow foundations: settlement (SLS) — lecture notes", "sections": [
+ sec("Components & limits", (3, 28),
+   ("md", "s = s_i (immediate, undrained distortion) + s_c (consolidation) + s_s (secondary). EC7 guide limits: "
+          "**max settlement 50 mm, differential 20 mm, relative rotation 1/500**."),
+ ),
+ sec("Footings on sand — SPT methods", (29, 52),
+   ("md", "Terzaghi–Peck / Peck–Hanson–Thornburn / Meyerhof charts give allowable pressure for 25 mm settlement. "
+          "Meyerhof: s = 7.68C_dq_net/(1.5N) for B < 1.2 m. Water-table and depth corrections (C_w, C_N)."),
+ ),
+ sec("Footings on sand — Schmertmann (CPT)", (53, 66),
+   ("eq", r"s = C_1C_2\,q_{net}\sum\frac{I_z}{E}\Delta z,\quad C_1 = 1 - 0.5\frac{\sigma'_{v0}}{q_{net}},\quad C_2 = 1 + 0.2\log_{10}\frac{t}{0.1},\quad E \approx 2\text{–}4\,q_c"),
+   ("md", "I_z peaks ≈ 0.6 at B/2 below the base (square) and goes to zero at 2B (square) / 4B (strip). Usually "
+          "conservative."),
+ ),
+ sec("Footings on clay — immediate & consolidation", (67, 84),
+   ("eq", r"s_i = \mu_0\mu_1\frac{qB}{E_u};\qquad s_{oed} = \sum\frac{H}{1+e_0}\left[C_r\log\frac{\sigma'_c}{\sigma'_0} + C_c\log\frac{\sigma'_0 + \Delta\sigma}{\sigma'_c}\right],\quad s_c = \mu\,s_{oed}"),
+   ("md", "Janbu–Bjerrum–Kjaernsli μ₀ (D/B), μ₁ (H/B, L/B). Skempton–Bjerrum μ from pore-pressure A and H/B "
+          "(≈ 0.6–1.0)."),
+ ),
+ sec("Stress distribution", (85, 98),
+   ("md", "Boussinesq point load; pressure bulbs (≈ 0.1q at 2B square / 4B strip); overlapping bulbs under adjacent "
+          "footings; Fadum influence factors for rectangle corners (superpose); Newmark chart; 2:1 spread as a check."),
+ ),
+ sec("Secondary compression & time", (99, 129),
+   ("eq", r"s_s = H\,C_\alpha\log\frac{t}{t_p},\qquad t_p = t_{lab}\left(\frac{H_{dr,field}}{H_{dr,lab}}\right)^2"),
+ ),
+]}
+
+GEO[D["F2"]] = {"code": "CE203", "title": "Foundations 3 · Piles to EC7 — lecture notes", "sections": [
+ sec("Pile types & failure modes", (1, 6),
+   ("md", "Driven (precast, steel), bored/cast-in-situ, CFA; end-bearing vs friction. ULS: ground (compression, "
+          "tension), structural; SLS: settlement, downdrag, lateral."),
+ ),
+ sec("EC7 procedure", (7, 22),
+   ("steps", ["Design actions F_c,d: C1 (A1: 1.35G + 1.5Q) and C2 (A2: 1.0G + 1.3Q); downdrag is a permanent action.",
+              "Characteristic resistance from load tests (ξ₁, ξ₂), ground tests (ξ₃, ξ₄) or calculation (model factor).",
+              "Design resistance R_c,d = R_b,k/γ_b + R_s,k/γ_s (R1 in C1, R4 in C2).", "Check F_c,d ≤ R_c,d for both."]),
+ ),
+ sec("Characteristic values & model factor", (23, 42),
+   ("md", "Characteristic ground value = cautious estimate of the mean governing the limit state. Calculated "
+          "resistance ÷ **model factor 1.55** (1.35 if verified by a load test). Load tests: "
+          "R_ck = min(R_mean/ξ₁, R_min/ξ₂) (e.g. two tests: ξ₁ 1.47, ξ₂ 1.35)."),
+ ),
+ sec("Resistance factors R4 (C2)", (43, 50),
+   ("md", "Driven: base 1.7 (1.5 with SLS check), shaft 1.5 (1.3), total 1.7 (1.5), tension 2.0 (1.7). Bored: base "
+          "2.0 (1.7), shaft 1.6 (1.4), total 2.0 (1.7), tension 2.0 (1.7). CFA between the two. R1 (C1) all 1.0."),
+ ),
+ sec("Calculating resistance", (51, 73),
+   ("eq", r"\text{Clay: } q_b = 9c_u + \sigma_{v0},\ q_s = \alpha c_u;\qquad \text{Sand: } q_b = N_q\sigma'_{v0},\ q_s = K_s\sigma'_{v0}\tan\delta'"),
+   ("md", "α ≈ 0.4–0.5 for stiff clay; K_s depends on installation (higher for driven); N_q from Berezantsev. "
+          "Subtract base uplift in drained analyses; include pile weight unless using load-test resistance."),
+ ),
+ sec("Downdrag example & SPT-based design", (77, 103),
+   ("md", "Negative skin friction in settling soft clay adds to the load (full value if the toe is on rock). SPT "
+          "design: cautious N in each stratum (ignore scattered fill values), q_s and q_b from N correlations, then "
+          "factor and size the length."),
+ ),
+ sec("Tension piles & structural capacity", (104, 113),
+   ("md", "R_t,d = R_t,k/γ_s,t; buoyancy and uplift checked with UPL as well as GEO; check the pile section "
+          "structurally (concrete crushing, reinforcement in tension)."),
+ ),
+]}
+
+GEO[D["F21"]] = {"code": "CE203", "title": "Foundations 3a · Pile design from SPT/CPT (additional notes)", "sections": [
+ sec("SPT and CPT correlations for piles", (1, 24),
+   ("md", "Supplementary slides on SPT (energy, corrections, EPRI EL-6800 correlations) and CPT (profiles, "
+          "direct CPT pile design). Use local correlations for shaft and base resistance and calibrate with load tests."),
+ ),
+]}
