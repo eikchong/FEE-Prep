@@ -1487,3 +1487,219 @@ STUDY[SOIL["S08c_1D_consolidation_derivation"]] = {"code": "CE104", "title": "So
           "profiles, single/double drainage) and **double-drainage isochrones** — keep them in your binder."),
  ),
 ]}
+
+# ---------------------------------------------------------------- CE104 tutorials (OAP & CSC) — answers from official solutions
+_T = "CE104/tutorials/{}.pdf"
+CT = {k: _T.format(k) for k in ["T_Tut1_Solutions", "T_Tut2_Solutions", "T_Classification_Examples_R1", "T_Assignment1",
+                                "T_Seepage_A_Solutions", "T_Seepage_B_Solutions", "T_Shear_A_Solutions", "T_Shear_B_Solutions"]}
+
+STUDY[CT["T_Tut1_Solutions"]] = {"code": "CE104", "title": "Practice · Tut 1 Effective stress (OAP)", "sections": [
+ sec("Q1 Vertical stresses (sand, γ = 16 above / 19 below GWT at −5 m)", (2, 2),
+   ("md", "Points A 0 m, B −2 m, C −5 m (GWT), D −8 m. γ_w = 10."),
+   ("ex", "σ_v, u, σ′_v", "A: 0/0/0 · B: 32/0/**32** · C: 80/0/**80** · D: 5×16 + 3×19 = 137, u = 30 → **107 kPa**. "
+          "Capillary rise above the GWT would give negative u (suction) → σ′ > σ there."),
+ ),
+ sec("Q2 Horizontal stresses (K₀ = 0.43)", (3, 4),
+   ("ex", "σ′_h = K₀σ′_v, σ_h = σ′_h + u", "B: 13.76 · C: 34.4 · D: σ′_h = 46.0, σ_h = 46.0 + 30 = **76.0 kPa**. "
+          "Apply K₀ to **effective** stress only; stresses vary linearly between interfaces."),
+ ),
+ sec("Q3 GWT rises to −3 m", (5, 5),
+   ("ex", "σ′_v at C", "σ = 3×16 + 2×19 = 86, u = 20 → σ′ = **66 kPa** (was 80). Lower σ′ → lower frictional strength at C."),
+ ),
+]}
+
+STUDY[CT["T_Tut2_Solutions"]] = {"code": "CE104", "title": "Practice · Tut 2 Phase relationships (OAP)", "sections": [
+ sec("Q1 Moist soil: V = 10 000 cm³, M = 18 kg, M_s = 15.5 kg, G_s = 2.70", (2, 3),
+   ("ex", "w, γ, γ_d, e, n, S_r", "w = 2.5/15.5 = **16.1 %** · γ = 18×9.81/1000/0.01 = **17.66** · γ_d = **15.21 kN/m³** · "
+          "e = G_sγ_w/γ_d − 1 = **0.78** · n = e/(1+e) = **0.44** · S_r = wG_s/e = **56 %**. "
+          "(The solution's 'M_s = 15.1 kg' is a typo — its numbers use 15.5.)"),
+ ),
+ sec("Q2 e_max / e_min (G_s = 2.65, 1000 cm³ mould)", (4, 5),
+   ("ex", "Loose dry 1.4 kg; dense saturated 2.1 kg", "γ_d,min = 13.73 → **e_max = 0.93**. γ_sat = 20.60 → "
+          "e = (G_sγ_w − γ)/(γ − γ_w) = **e_min = 0.56** → γ_d,max = 26.5/1.56 = **17.0 kN/m³**."),
+ ),
+ sec("Q3 In-situ state (w = 15 %, S_r = 55 %)", (6, 7),
+   ("ex", "e, D_R, γ_d", "e = wG_s/S_r = **0.72** · D_R = (0.93 − 0.72)/(0.93 − 0.56) = **57 % → medium dense** "
+          "(35–65 %) · γ_d = 26.5/1.72 = **15.4 kN/m³**."),
+   ("md", "D_R bands: very loose 0–15, loose 15–35, medium 35–65, dense 65–85, very dense 85–100 %."),
+ ),
+ sec("Q4 Borrow pit → compacted fill (e 0.93 → 0.54, 200×200×2 m, G_s = 2.70)", (8, 9),
+   ("ex", "Volumes, γ, air voids, flooded w", "V_s = 80 000/1.54 = 51 948 m³ → borrow **V = 51 948×1.93 ≈ 100 260 m³**. "
+          "w = 14 %: γ = G_sγ_w(1+w)/(1+e) = **20.0 kN/m³**; A_v = (e − wG_s)/(1+e) = **10.5 %** of total volume "
+          "(= 30 % of the voids, which is what the question's definition gives). Flooded: w = e/G_s = **20 %**."),
+ ),
+ sec("Q5 Cement-treated soft clay (w = 75 %, G_s 2.70, G_c 3.1; target 20 % cement, 120 % water)", (10, 14),
+   ("ex", "Per 1 kg soil solids", "Cement **0.20 kg**; water: (0.75 + Δw)/1.2 = 1.2 → **Δw = 0.69 kg**; slurry "
+          "water/cement = **3.45**. γ_d,soil = 27/(1 + 2.025) = 8.92 kN/m³ → slurry per m³ soil = "
+          "0.2(8.92)/31 + 0.69(8.92)/10 = **0.673 m³**. Admixture γ = 2.64/(1/27 + 0.2/31 + 0.144) = **14.1 kN/m³**."),
+ ),
+]}
+
+STUDY[CT["T_Classification_Examples_R1"]] = {"code": "CE104", "title": "Practice · Soil classification examples (USCS & BS EN ISO 14688)", "sections": [
+ sec("USCS (ASTM D2487) rules", (2, 3),
+   ("steps", ["> 50 % passing 0.075 mm → fine-grained (M/C/O by plasticity chart, A-line); else coarse.",
+              "Coarse: G or S by the larger of gravel (75–4.75 mm) / sand (4.75–0.075 mm).",
+              "Fines < 5 %: W or P from grading (GW: C_u > 4, SW: C_u > 6, and 1 ≤ C_c ≤ 3 for both).",
+              "Fines > 12 %: M or C from the plasticity chart. 5–12 %: dual symbol (e.g. GW-GM)."]),
+   ("eq", r"C_u = \frac{D_{60}}{D_{10}},\qquad C_c = \frac{D_{30}^2}{D_{10}D_{60}}"),
+ ),
+ sec("BS EN ISO 14688-2 rules", (4, 6),
+   ("md", "Fine if > **35 %** passes 0.063 mm (soil sticks together when wet). Gravel 63–2 mm, sand 2–0.063 mm. "
+          "Secondary terms by proportion: e.g. 'slightly sandy' (< 20 %), 'sandy', 'very sandy' (> 20 % in coarse "
+          "soils, Table 1A). Grading: well graded C_u > 15 and 1 < C_c < 3; uniform C_u < 3; gap graded C_c < 0.5."),
+ ),
+ sec("Answers — soils A to E", (7, 20),
+   ("ex", "USCS", "A **GM** (gravel, 25 % fines below A-line) · B **CH** · C **ML** · D **SP** (4 % fines, C_u 1.9, "
+          "C_c 0.92) · E dual symbol, 10 % fines, C_u 26, C_c 0.1."),
+   ("tip", "Soil E: the slides call the first symbol 'GW', but C_c = 0.1 fails 1 ≤ C_c ≤ 3, so by ASTM D2487 it is "
+           "**GP-GM**. The BS description below ('gap graded') agrees with the poorly-graded reading."),
+   ("ex", "BS", "A very sandy, well graded GRAVEL · B high plasticity CLAY · C slightly sandy, low plasticity SILT · "
+          "D slightly silty, uniformly graded SAND · E very sandy, gap graded GRAVEL."),
+ ),
+]}
+
+STUDY[CT["T_Assignment1"]] = {"code": "CE104", "title": "Practice · Assignment 1 basic characteristics (my worked answers)", "sections": [
+ sec("Q1 Layered profile with capillary rise & K₀ (figure needed)", (1, 1),
+   ("steps", ["Capillary zone 1 m above the GWT: u = −γ_w·h_c (suction) and σ′ = σ − u > σ.",
+              "σ′_h = K₀σ′_v per layer (K₀ jumps at interfaces), σ_h = σ′_h + u.",
+              "GWT to +1 m: u rises everywhere (and σ gains 10 kPa of ponded water); σ′ falls → lower strength."]),
+   ("md", "Numbers depend on the figure — no official solution was supplied, so work it from the original page."),
+ ),
+ sec("Q2 Compaction material (γ 18, w 10 %, G_s 2.70, LL 25, PL 22)", (1, 2),
+   ("ex", "Water to add per 100 kg in-situ soil for γ_d = 17.5, S_r = 90 %", "Solids 90.9 kg + water 9.1 kg. Target "
+          "e = 27/17.5 − 1 = 0.543 → w = S_re/G_s = **18.1 %** → water needed 16.45 kg → add **≈ 7.4 kg**. "
+          "PI = 3 → non-plastic fines (ML side); the USCS symbol needs the PSD curve."),
+ ),
+ sec("Q3 Sludge + sand + lime landfill (solids 1 : 2 : 0.5)", (3, 4),
+   ("ex", "a–e", "a) e = G_Rγ_w/γ_d − 1 = 12/5 − 1 = **1.4**; S_r = wG/e = **43 %** · b) γ_d,sand = 26.5/2 = "
+          "**13.25 kN/m³** · c) 1 kg sludge = 0.667 kg solids → 1.333 kg sand solids → **1.49 kg** stockpiled sand · "
+          "d) 1 m³ sludge = 5 kN solids → 10 kN sand solids → **0.755 m³** sand · e) per 1 kg sludge solids: "
+          "water needed 0.5 × 3.5 = 1.75 kg, already 0.5 + 0.24 = 0.74 kg → slurry water 1.01 kg per 0.5 kg lime → "
+          "**water : lime ≈ 2.0**."),
+ ),
+]}
+
+STUDY[CT["T_Seepage_A_Solutions"]] = {"code": "CE104", "title": "Practice · Seepage A — gradients, quick condition, permeameters (CSC)", "sections": [
+ sec("Q1 Quick condition (γ_sat 20, L = 5 m, h_w = 2 m)", (1, 2),
+   ("ex", "i_c, h, j, check", "i_c = γ′/γ_w = **1** · h_P − h_Q = h, i = h/5 = 1 → **h = 5 m** · j = γ_wi_c = **10 kN/m³** · "
+          "upward seepage force jAL = 50A = buoyant weight γ′AL = 50A → soil 'floats'."),
+ ),
+ sec("Q2 Left riser at 2 m above A (downward flow)", (3, 3),
+   ("ex", "i, σ′_A, j", "h_P = 2, h_Q = 7 → **i = −1** (downward) · σ_A = 20×5 + 10×2 = 120, u = 20 → **σ′ = 100 kPa** · "
+          "**j = 10 kN/m³ acting downward** (downward flow increases σ′)."),
+ ),
+ sec("Q3 Artesian sand below 4 m clay", (4, 5),
+   ("ex", "σ′ top/base of clay; dry-sand excavation", "Top: σ = 16.5×2 + 19×2 = 71, u = 20 → **51 kPa** · base: σ = 151, "
+          "u = 10×12 = 120 → **31 kPa** · excavate d of dry sand: 31 − 16.5d = 0 → **d = 1.9 m**. "
+          "(The short-answer sheet repeats '51' for the base — it is 31.)"),
+ ),
+ sec("Q4 Base heave of excavation in clay (γ 17.5, 10 m on sand)", (6, 6),
+   ("ex", "Failed at 6.5 m → piezometric head in sand", "17.5×3.5 − 10(10 − d) = 0 → **d = 3.875 m** below ground "
+          "(water rises to 6.125 m above the sand)."),
+ ),
+ sec("Q5–Q6 Constant-head tests", (7, 8),
+   ("eq", r"k = \frac{QL}{hAt},\qquad v_s = \frac{v}{n}"),
+   ("ex", "Q5 sand, Ø50 × 150 mm, n = 0.6, h = 30 cm, 40 cm³ in 5 s", "A = 19.63 cm² → **k = 0.204 cm/s**; v = 0.407 cm/s → "
+          "**v_s = 0.68 cm/s**."),
+   ("ex", "Q6 Ø75 mm cell, tappings at 100 mm", "Six k values from A–B and B–C head differences → **k ≈ 2.70 × 10⁻⁴ m/s**."),
+ ),
+ sec("Q7–Q8 Falling-head tests", (9, 10),
+   ("eq", r"k = \frac{aL}{At}\ln\frac{h_1}{h_2},\qquad k_{20} = k_TR_T,\ R_T = 2.42 - 0.475\ln T"),
+   ("ex", "Q7 silty clay, 22 °C", "a = 0.283 cm² → k₂₂ = 2.70 × 10⁻⁶ cm/s, R = 0.952 → **k₂₀ = 2.57 × 10⁻⁶ cm/s**."),
+   ("ex", "Q8 Ø100 × 127 mm, h 560 → 465 mm in 1081 s, Ø7 mm standpipe", "**k = 1.07 × 10⁻⁷ m/s**; same drop with a Ø4 mm "
+          "standpipe: t ∝ a → **t ≈ 353 s**."),
+ ),
+]}
+
+STUDY[CT["T_Seepage_B_Solutions"]] = {"code": "CE104", "title": "Practice · Seepage B — flow nets, sheet piles, dams (CSC)", "sections": [
+ sec("Q1 Sheet pile (k = 0.02 mm/s, H = 3 m, N_f = 5, N_d = 11)", (1, 3),
+   ("eq", r"q = kH\frac{N_f}{N_d}"),
+   ("ex", "q, element A, pile toe, FoS", "q = 2×10⁻⁵ × 3 × 5/11 = **2.36 m³/day/m** · A: v = ki = 3.64 × 10⁻⁶ m/s "
+          "(0.0131 m/h); head lost 3×2.5/11 = 0.68 m → u = 53.2 → **σ′_A = 51.8 kPa** (45 kPa with no flow) · toe (right "
+          "side): lost 3×6/11 = 1.64 m → u = 43.6, σ = 60 → **σ′ = 17.4 kPa** · exit gradient (7.36 − 6)/3 = 0.453 → "
+          "**FoS = i_c/i = 2.21**. (The question's FoS definition is inverted — use i_c/i.)"),
+ ),
+ sec("Q2 Piezometers around a sheet pile (k = 4.2 × 10⁻³ cm/s, H = 3.5 m, N_d = 6, N_f = 3)", (4, 5),
+   ("ex", "Rise above ground at a, b, c, d; q", "5 − n_d·H/6: a (1 drop) **4.42 m**, b (2) **3.83 m**, c and d (5, same "
+          "equipotential) **2.08 m** · q = 4.2×10⁻⁵ × 3.5 × 3/6 = **7.35 × 10⁻⁵ m³/s/m**."),
+ ),
+ sec("Q3–Q4 Draw your own flow net (k = 4 × 10⁻⁴ cm/s)", (6, 7),
+   ("ex", "Q3 H = 4.5 m, N_f/N_d = 4/8", "q = 4×10⁻⁶ × 4.5 × 0.5 = **0.78 m³/day/m**"),
+   ("ex", "Q4 H = 2.5 m, N_f/N_d = 3/5", "q = **0.52 m³/day/m**"),
+ ),
+ sec("Q5–Q7 Concrete dam on 9.5 m permeable soil (k = 10⁻⁵ m/s, H = 4 m)", (8, 10),
+   ("ex", "Effect of base length and blanket", "Q5 base 11 m, N_f/N_d = 3/6 → **1.73 m³/day** · Q6 base 5 m, 5/8 → "
+          "**2.16 m³/day** · Q7 base 5 m + 5 m upstream impermeable blanket, 4/8 → **1.73 m³/day**. A longer seepage path "
+          "(base or blanket) cuts flow and exit gradient. (The Q5 solution text says '8 m' base/layer — a leftover typo; "
+          "the figure and answer are for 11 m on 9.5 m.)"),
+ ),
+ sec("Q8–Q9 Dam on silty sand: flow and uplift (k = 2 × 10⁻⁵ m/s, H = 10 m)", (11, 13),
+   ("ex", "Q8 flow", "N_f/N_d = 5/12 → q = 2×10⁻⁵ × 10 × 5/12 = **7.2 m³/day/m**."),
+   ("ex", "Q9 uplift", "Each drop 10/12 = 0.833 m. Pressure head at a base point = (H + depth below ground) − n_d × 0.833 "
+          "(e.g. D: 13.33 − 2×0.833 = 11.66 m … I: 5.0 m). Uplift = γ_w × area of the pressure-head diagram = "
+          "**≈ 1752 kN/m**."),
+ ),
+]}
+
+STUDY[CT["T_Shear_A_Solutions"]] = {"code": "CE104", "title": "Practice · Shear strength A — direct shear & Mohr circles (CSC)", "sections": [
+ sec("Q1 Dry sand: σ_n 200, τ_f 135 kPa", (1, 1),
+   ("ex", "φ; τ_f at 145 kPa", "tan φ = 0.675 → **φ = 34°** · τ_f = 145 tan 34° = **97.9 kPa**."),
+ ),
+ sec("Q2 Damp sand, two tests (50/33, 80/51 kPa)", (2, 2),
+   ("ex", "φ, apparent c", "Slope 18/30 = 0.6 → **φ = 31°**, intercept **c = 3 kPa** (apparent cohesion from suction)."),
+ ),
+ sec("Q3 Ø50 mm shear box, N = 200 N, S = 130 N", (3, 3),
+   ("ex", "σ, τ_f, φ, state", "A = 1963 mm² → σ = **102 kPa**, τ_f = **66 kPa** → **φ = 33°** → loose to medium dense."),
+ ),
+ sec("Q4 Strength on a horizontal plane at 4 m (γ 19.6, φ 35°)", (4, 4),
+   ("ex", "Before / after building load", "τ_f = 78.4 tan 35° = **54.9 kPa** · after +60 kPa: τ_f = 138.4 tan 35° = "
+          "**96.9 kPa** > applied 52 kPa → OK."),
+ ),
+ sec("Q5 Mohr circle states", (5, 5),
+   ("md", "Point on the σ axis → isotropic stress · circle inside the envelope → stable · tangent → failure on the "
+          "plane at the tangent point · crossing the envelope → **cannot exist**."),
+ ),
+]}
+
+STUDY[CT["T_Shear_B_Solutions"]] = {"code": "CE104", "title": "Practice · Shear strength B — triaxial, UU/CU/CD (CSC)", "sections": [
+ sec("Q1–Q3 Triaxial on dry sand (c = 0)", (1, 2),
+   ("eq", r"\sin\phi = \frac{\sigma_1 - \sigma_3}{\sigma_1 + \sigma_3},\qquad \sigma_1 = \sigma_3\tan^2\!\left(45^\circ + \frac{\phi}{2}\right) + 2c\tan\!\left(45^\circ + \frac{\phi}{2}\right)"),
+   ("ex", "Q1 σ₃ 50, σ₁ 170", "sin φ = 120/220 → **φ = 33°**."),
+   ("ex", "Q2 φ 36°, σ₃ 40", "**σ₁f = 154 kPa**."),
+   ("ex", "Q3 φ 37°, σ_h 45", "σ_v,max = **181 kPa**; with K₀ = 1 − sin φ = 0.398, σ_v = 113 kPa < 181 → not near failure."),
+ ),
+ sec("Q4 Principal stresses 195 / 70 kPa, φ 34°", (2, 2),
+   ("ex", "Failure?", "Mobilised sin φ_m = 125/265 → φ_m = **28° < 34°** → no shear failure."),
+ ),
+ sec("Q5–Q6 Triaxial → direct shear; c–φ soil", (3, 3),
+   ("ex", "Q5 σ₃ 15, σ₁ 51 → φ = 33°", "τ_f at σ_n 125 = **81 kPa**."),
+   ("ex", "Q6 c 22, φ 28°, σ_n 70", "τ_f = 22 + 70 tan 28° = **59.2 kPa**."),
+ ),
+ sec("Q7–Q8 UU area correction; CIU parameters", (4, 4),
+   ("ex", "Q7 L 110, Ø50, ΔL 8 mm, P 0.145 kN", "ε_a = 0.073, A = A₀/(1 − ε_a) = 0.00212 m² → q_f = 68.5 → "
+          "**s_u = 34.3 kPa**."),
+   ("ex", "Q8 CIU (σ_c 100/200/300; Δσ₁ 238/307/389; Δu 36/108/197)", "Effective circles σ′₃/σ′₁: 64/302, 92/399, "
+          "103/492. My best-fit p′–q line: **φ′ ≈ 40°, c′ ≈ 0**; total: **φ_cu ≈ 16°, c_cu ≈ 60 kPa** (no official "
+          "numbers — check with your own Mohr circles)."),
+ ),
+ sec("Q9–Q10 UU / unconfined; undrained, CU and CD on one clay (σ_c 200, φ′ 24°)", (5, 6),
+   ("ex", "Q9 UU σ₃ 40, σ₁ 106", "c_u = 33 kPa → unconfined compressive strength q_u = 2c_u = **66 kPa** (a stress)."),
+   ("ex", "Q10", "(a) u_f 125 → σ′₃ = 75, σ′₁ = 178 → **q_f = 103 kPa** · (b) q_f 160 → σ′₁ + σ′₃ = 160/sin 24° = 393 → "
+          "σ′₃ = 116.7 → **u_f = 83.3 kPa** · (c) CD, back pressure 80 → σ′₃ = 120 → σ′₁ = 284.5 → **q_f = 164.5 kPa**."),
+ ),
+ sec("Q11 Total-stress parameters c_u 35, φ_u 17°", (7, 8),
+   ("ex", "Cell pressure; unconfined s_u", "tan²(53.5°) = 1.826, 2c tan 53.5° = 94.6 → 360 = 1.826σ₃ + 94.6 → "
+          "**σ₃ = 145.3 kPa** · σ₃ = 0 → σ₁ = 94.6 → **s_u = 47.3 kPa**."),
+ ),
+]}
+
+TUTORIALS += [
+ (CT["T_Tut1_Solutions"], 2, "OAP Tut 1 — effective & horizontal stresses, GWT rise", SOIL["S05_Effective_Stress"]),
+ (CT["T_Tut2_Solutions"], 2, "OAP Tut 2 — phase relationships, D_R, borrow/fill, cement mixing", SOIL["S04_Phase_Relationships"]),
+ (CT["T_Classification_Examples_R1"], 7, "OAP classification examples — USCS & BS for soils A–E", SOIL["S02_Basic_Concepts"]),
+ (CT["T_Assignment1"], 1, "OAP Assignment 1 — stresses, compaction water, sludge–sand–lime mix", SOIL["S02_Basic_Concepts"]),
+ (CT["T_Seepage_A_Solutions"], 1, "CSC Seepage A — quick condition, artesian, permeameters", G1),
+ (CT["T_Seepage_B_Solutions"], 1, "CSC Seepage B — flow nets, sheet piles, dams, uplift", G1),
+ (CT["T_Shear_A_Solutions"], 1, "CSC Shear A — direct shear, Mohr circles", G2),
+ (CT["T_Shear_B_Solutions"], 1, "CSC Shear B — triaxial, UU/CU/CD", G2),
+]

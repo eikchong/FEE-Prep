@@ -3125,5 +3125,150 @@
     ]
    }
   ]
+ },
+ "CE104/tutorials/T_Tut1_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 40,
+  "title": "Practice · Tut 1 Effective stress (OAP)",
+  "page_count": 6,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     6
+    ],
+    "topics": [
+     "CE104-04"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Tut2_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 41,
+  "title": "Practice · Tut 2 Phase relationships (OAP)",
+  "page_count": 15,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     15
+    ],
+    "topics": [
+     "CE104-03"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Classification_Examples_R1.pdf": {
+  "code": "CE104",
+  "seq": 42,
+  "title": "Practice · Soil classification examples",
+  "page_count": 21,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     21
+    ],
+    "topics": [
+     "CE104-02"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Assignment1.pdf": {
+  "code": "CE104",
+  "seq": 43,
+  "title": "Practice · Assignment 1",
+  "page_count": 4,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     4
+    ],
+    "topics": [
+     "CE104-03",
+     "CE104-04"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Seepage_A_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 44,
+  "title": "Practice · Seepage A",
+  "page_count": 10,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     10
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Seepage_B_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 45,
+  "title": "Practice · Seepage B",
+  "page_count": 13,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     13
+    ],
+    "topics": [
+     "CE104-07"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Shear_A_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 46,
+  "title": "Practice · Shear strength A",
+  "page_count": 5,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     5
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   }
+  ]
+ },
+ "CE104/tutorials/T_Shear_B_Solutions.pdf": {
+  "code": "CE104",
+  "seq": 47,
+  "title": "Practice · Shear strength B",
+  "page_count": 8,
+  "sections": [
+   {
+    "title": "Solutions",
+    "pages": [
+     1,
+     8
+    ],
+    "topics": [
+     "CE104-05"
+    ]
+   }
+  ]
  }
 }

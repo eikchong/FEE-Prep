@@ -23,7 +23,7 @@ def test_every_module_covered_and_tutorials_mapped():
     assert len(STUDY) == len(STUDY)  # count grows with notes
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
-    assert len(TUTORIALS) == 27
+    assert len(TUTORIALS) >= 35
 
 
 def test_quoted_example_numbers_consistent():
@@ -104,3 +104,36 @@ def test_consolidation_example():
     assert abs(T - 1.0) < 0.02 and abs(T * 2.5 ** 2 / 0.5 - 12.5) < 0.3
     T2 = 0.5 * 2 / 2.5 ** 2
     assert abs(T2 - 0.16) < 1e-9 and abs(math.sqrt(4 * T2 / math.pi) * 1.61 - 0.72) < 0.01
+
+
+def test_ce104_tutorial_answers():
+    import math
+    sinp = lambda s1, s3: math.degrees(math.asin((s1 - s3) / (s1 + s3)))
+    assert round(sinp(170, 50)) == 33 and round(sinp(51, 15)) == 33 and round(sinp(195, 70)) == 28
+    Kp = math.tan(math.radians(45 + 18)) ** 2
+    assert abs(40 * math.tan(math.radians(63)) ** 2 - 154) < 1 and abs(45 * math.tan(math.radians(63.5)) ** 2 - 181) < 1
+    t = math.tan(math.radians(53.5))
+    assert abs((360 - 2 * 35 * t) / t ** 2 - 145.3) < 0.3 and abs(35 * t - 47.3) < 0.1
+    s = math.sin(math.radians(24))
+    assert abs(75 * (1 + s) / (1 - s) - 75 - 103) < 1 and abs(200 - (160 / s - 160) / 2 - 83.3) < 0.3
+    assert abs(120 * (1 + s) / (1 - s) - 120 - 164.5) < 0.5
+    # seepage
+    assert abs(2e-5 * 3 * 5 / 11 * 86400 - 2.356) < 0.01 and abs(2e-5 * 10 * 5 / 12 * 86400 - 7.2) < 0.01
+    assert abs(105 - 10 * (9 - 3 * 2.5 / 11 - 3) - 51.82) < 0.01 and abs(1 / ((7.364 - 6) / 3) - 2.2) < 0.02
+    A = math.pi * 2.5 ** 2
+    assert abs(40 * 15 / (30 * A * 5) - 0.204) < 0.001
+    k = 0.0000385 * 0.127 / (0.007854 * 1081) * math.log(560 / 465)
+    assert abs(k - 1.07e-7) < 0.01e-7 and abs(1081 * (2 / 3.5) ** 2 - 353) < 1
+    assert abs(0.283 * 10 / (80 * 900) * math.log(90 / 84) * (2.42 - 0.475 * math.log(22)) - 2.57e-6) < 0.02e-6
+    # phase
+    e = 27 / (15.5 * 9.81 / 1000 / 0.01) - 1
+    assert abs(e - 0.775) < 0.005 and abs(0.1613 * 2.7 / 0.78 - 0.558) < 0.005
+    emin = (26.5 - 20.601) / 10.601
+    assert abs(emin - 0.556) < 0.002 and abs((0.93 - 0.7227) / (0.93 - 0.56) - 0.56) < 0.01
+    assert abs(80000 / 1.54 * 1.93 - 100260) < 10 and abs((0.54 - 0.378) / 1.54 - 0.105) < 0.001
+    Ws = 27 / (1 + 0.75 * 2.7)
+    assert abs(0.2 * Ws / 31 + 0.69 * Ws / 10 - 0.673) < 0.002
+    assert abs(2.64 / (1 / 27 + 0.2 / 31 + 0.144) - 14.08) < 0.01
+    # assignment Q2/Q3
+    assert abs(0.9 * (27 / 17.5 - 1) / 2.7 * 100 / 1.1 - 100 / 1.1 * 0.1 - 7.36) < 0.05
+    assert abs((3.5 * 0.5 - 0.5 - 0.24) / 0.5 - 2.02) < 0.01
