@@ -7,7 +7,7 @@ materials/**
 data/progress.json
 data/progress.corrupt.json
 data/.progress-*.json
-data/library.db
+data/library.db*
 
 __pycache__/
 .pytest_cache/
