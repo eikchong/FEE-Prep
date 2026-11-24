@@ -715,3 +715,19 @@ STUDY[C6] = {"code": "CE102", "title": "CE2155 6 · Material failure", "sections
           "strains → deflection (serviceability) → buckling (stability)."),
  ),
 ]}
+
+
+# CE2155 tutorials (question sheets are textbook figures; answers as printed on the sheets)
+_TT = "CE102/CE2155_Tutorial_{}.pdf"
+TUTORIALS += [
+ (_TT.format(1), 1, "CE2155 Tut 1 — revision: stresses (127/129 MPa, 52.8 MPa), strains (0.0168, 0.0116 rad), 410 mm", C1),
+ (_TT.format(2), 1, "CE2155 Tut 2 — shear stress 7.33 MPa, 100 kN; shear flow 65.1/43.6 kN/m (thin-walled 62.4/44.8)", C2),
+ ("CE102/CE2155_Tut2_R7-4_my_solution.pdf", 1, "My solution — Tut 2 R7-4 (shear flow → V ≈ 20.4 kN)", C2),
+ (_TT.format(3), 1, "CE2155 Tut 3 — combined loading: σ_max = 2.34 MPa (C); states of stress", C3),
+ (_TT.format(3), 2, "CE2155 Tut 3 Q4 — bent pipe: fixed-end reactions & stresses at C", C3),
+ ("CE102/CE2155_Tut3_Q4_my_solution.pdf", 1, "My solution — Tut 3 Q4 (re-check torsion: M_z = F·b)", C3),
+ (_TT.format(4), 2, "CE2155 Tut 4 — transformation: 470/592 kPa; strains 1434/−304 µε", C4),
+ (_TT.format(4), 3, "CE2155 Tut 4 Q5 — strain gauge at 15° on a shaft (T = 11.3 kNm, σ = ±57.6 MPa)", C4),
+ ("CE102/CE2155_Tut4_Q5_my_solution.pdf", 1, "My solution — Tut 4 Q5 (Mohr's circle for strain)", C4),
+ (_TT.format(5), 1, "CE2155 Tut 5 — buckling: 5.55 kN/m, 14.5 kN, 48.0 MPa; W-section columns", C5),
+]

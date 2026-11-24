@@ -23,7 +23,7 @@ def test_every_module_covered_and_tutorials_mapped():
     assert len(STUDY) == 16
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
-    assert len(TUTORIALS) == 12
+    assert len(TUTORIALS) == 22
 
 
 def test_quoted_example_numbers_consistent():
@@ -62,3 +62,11 @@ def test_ce2155_buckling_failure_numbers():
     c = (2 * 400 / (math.pi * 150e6)) ** (1 / 3)          # cast-iron shaft radius
     assert abs(c * 1000 - 11.93) < 0.01
     assert abs(0.7 * 4.0 - 2.8) < 1e-9                    # Example 2 y-y effective length
+
+
+def test_tut4_q5_strain_gauge():
+    import math
+    gamma = 2 * 180e-6 / math.sin(math.radians(30))
+    tau = 80e9 * gamma
+    T = tau * (math.pi / 2 * 0.05 ** 4) / 0.05
+    assert abs(tau / 1e6 - 57.6) < 0.05 and abs(T / 1e3 - 11.31) < 0.01

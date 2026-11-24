@@ -1799,5 +1799,152 @@
     ]
    }
   ]
+ },
+ "CE102/CE2155_Tutorial_1.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "CE2155 Tutorial 1",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Revision (stress, strain, SFD/BMD) — answers 127/129 MPa, 52.8 MPa, 0.0168 & 0.0116 rad, 410 mm",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE102-06",
+     "CE102-09"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tutorial_2.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "CE2155 Tutorial 2",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Shear stress & shear flow — answers 7.33 MPa, 100 kN, 65.1/43.6 kN/m (thin-walled: 62.4/44.8)",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tutorial_3.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "CE2155 Tutorial 3",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Combined loading — σ_max = 2.34 MPa (C); Q4 bent pipe reactions & stresses",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE102-08",
+     "CE102-02"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tutorial_4.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "CE2155 Tutorial 4",
+  "page_count": 3,
+  "sections": [
+   {
+    "title": "Stress & strain transformation — 470/592 kPa; strains 1434/−304 µε; Q5 strain gauge on shaft",
+    "pages": [
+     1,
+     3
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tutorial_5.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "CE2155 Tutorial 5",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "Column buckling — 5.55 kN/m, 14.5 kN, 48.0 MPa; W-section columns",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE103-09",
+     "CE202-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tut2_R7-4_my_solution.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "My solution — Tut 2 R7-4 (shear flow)",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "My solution — Tut 2 R7-4 (shear flow)",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tut3_Q4_my_solution.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "My solution — Tut 3 Q4 (bent pipe, combined loading)",
+  "page_count": 1,
+  "sections": [
+   {
+    "title": "My solution — Tut 3 Q4 (bent pipe, combined loading)",
+    "pages": [
+     1,
+     1
+    ],
+    "topics": [
+     "CE102-08"
+    ]
+   }
+  ]
+ },
+ "CE102/CE2155_Tut4_Q5_my_solution.pdf": {
+  "code": "CE102",
+  "seq": 17,
+  "title": "My solution — Tut 4 Q5 (strain gauge, Mohr's circle)",
+  "page_count": 2,
+  "sections": [
+   {
+    "title": "My solution — Tut 4 Q5 (strain gauge, Mohr's circle)",
+    "pages": [
+     1,
+     2
+    ],
+    "topics": [
+     "CE102-06"
+    ]
+   }
+  ]
  }
 }
