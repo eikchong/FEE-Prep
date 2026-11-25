@@ -273,6 +273,9 @@ def render_q(qd: dict, key: str) -> None:
         st.markdown(qd["question"])
         if qd.get("figure"):
             st.caption(f"Figure: {qd['figure']}")
+        if qd["answer_source"] == "none":
+            st.caption(":material/help: " + source_line(qd))
+            return
         with st.expander("Show answer"):
             st.markdown(qd["answer"])
             if qd.get("working"):

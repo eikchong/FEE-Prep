@@ -32,7 +32,7 @@ MECHQ[T.format(1)] = {"code": "CE102", "title": "Statics practice · T2L Tutoria
      r"**Single point fails: $T \le 20\ \mathrm{kN}$ needs $\sin\theta \ge 0.225$ ($\theta \ge 13.0^\circ$), so $d "
      r"\ge 1.5\tan 13.0^\circ = 0.346\ \mathrm{m} > 0.30$. Two points at the board's corners ($x = 1.0\ \mathrm{m}$) "
      r"work: take the cable 3.08 m long → $\theta \approx 15.9^\circ$, $d \approx 0.29\ \mathrm{m}$, $T \approx 16.4\ "
-     r"\mathrm{kN}$** (any length from 3.062 to 3.088 m satisfies both limits).",
+     r"\mathrm{kN}$** (any length from 3.053 to 3.088 m satisfies both limits).",
      r"One point: $2T\sin\theta = 9$. Two points: each carries 4.5 kN and the middle segment is horizontal, so "
      r"$T\sin\theta = 4.5$; with 1.0 m horizontal on each side, $d = \tan\theta$. $T \le 20$ → $d \ge 0.231$; $d \le "
      r"0.30$. Length $= 1 + 2\sqrt{1 + d^2}$. Any $x \ge 0.40\ \mathrm{m}$ can work in principle; hanging at the corners "
@@ -44,10 +44,10 @@ MECHQ[T.format(1)] = {"code": "CE102", "title": "Statics practice · T2L Tutoria
      r"within 0.3 m of the free end. The tie rod must resist 2.5 times the engine's static effect. Choose a, b and h "
      r"to minimise the tie-rod force, and suggest improvements.",
      r"**Beam 5.5 m, tie rod to the beam end ($b = 5.5\ \mathrm{m}$) from $h = 4\ \mathrm{m}$, hoist reach $a = 5.2\ "
-     r"\mathrm{m}$ → $T = 12.2\ \mathrm{kN}$ static, 25.5 kN with the 2.5 factor on the engine.**",
+     r"\mathrm{m}$ → $T = 11.0\ \mathrm{kN}$ static, 25.5 kN with the 2.5 factor on the engine.**",
      r"Moments about the pin: $T \cdot hb/\sqrt{h^2 + b^2} = 6a + 0.3l^2/2$. For fixed h the factor $\sqrt{h^2 + "
      r"b^2}/(hb)$ falls as b grows, so attach at the end; take h at its 4 m limit; a shorter beam lowers the moment "
-     r"($l = 6.5\ \mathrm{m}$ gives 12.8 kN). Design: $(2.5 \times 6 \times 5.2 + 0.15 \times 5.5^2) \times \sqrt{16 + "
+     r"($l = 6.5\ \mathrm{m}$ gives 12.8 kN, against 11.0 for 5.5 m). Design: $(2.5 \times 6 \times 5.2 + 0.15 \times 5.5^2) \times \sqrt{16 + "
      r"30.25}/22$. Improvements: a taller column (larger h), end stops for the trolley, a counterweight or back-stay, "
      r"a lighter beam.", figure="p. 2: jib crane.")),
  sec("Q3 Water-tank tower under wind", (3, 3),

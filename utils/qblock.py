@@ -4,7 +4,8 @@ A question is shown in full; its answer stays hidden until the reader opens "Sho
 
 Fields: id, set (label such as "CSC A Q1"), question, answer (final answers first, in bold), working (steps),
 figure (page reference + one-line description, if the question needs a figure), source {doc, page},
-answer_source ("official" | "mine" | "claude"), checked (numbers recomputed in tests/test_tutorial_answers.py).
+answer_source ("official" | "mine" | "claude" | "none"), checked (numbers recomputed in
+tests/test_tutorial_answers.py). "none" = no answer yet (shown as "not provided yet", to be solved later).
 """
 from __future__ import annotations
 
@@ -15,12 +16,17 @@ SOURCE_LINE = {
     "mine": "My solution",
     "claude": "Worked by Claude — numbers checked, please review",
     "claude_unchecked": "Worked by Claude — please review",
+    "none": "Answer not provided yet — to be solved later",
 }
 
 
 def q(set_: str, question: str, answer: str, working: str = "", *, figure: str | None = None,
       page: int | None = None, src: str = "official", checked: bool = True, id: str | None = None) -> tuple:
-    assert src in ("official", "mine", "claude"), src
+    assert src in ("official", "mine", "claude", "none"), src
+    if src == "none":
+        answer, working = "", ""
+    else:
+        assert answer.strip(), f"{set_}: give an answer or src='none'"
     return ("q", {"id": id, "set": set_, "question": question, "answer": answer, "working": working,
                   "figure": figure, "source": {"doc": None, "page": page}, "answer_source": src,
                   "checked": checked})
