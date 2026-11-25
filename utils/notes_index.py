@@ -14,7 +14,7 @@ from functools import lru_cache
 import config
 from utils.latex_plain import to_plain
 
-PRACTICE_RE = re.compile(r"Practice|Tut|Exam|Quiz|Assignment|Homework|Self-evaluation", re.I)
+PRACTICE_RE = re.compile(r"\b(Practice|Tut\w*|Exam\b|Quiz|Assignment|Homework|Self-evaluation)", re.I)
 COURSE_DOC_RE = re.compile(r"course map|course outline|course information|\boutline\b", re.I)
 COURSE_SEC_RE = re.compile(r"^(scope|part ii scope|scope of part 2|scope & references|parts & order|"
                            r"where .* fits|arrangements|syllabus & reading|course map)\b", re.I)

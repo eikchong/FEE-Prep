@@ -4362,6 +4362,22 @@
    ],
    "kind": "practice"
   },
+  "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-4-two-way-slab-panel": {
+   "doc": "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf",
+   "idx": 3,
+   "title": "6.4 Two-way slab panel",
+   "pages": [
+    29,
+    32
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-02",
+    "CE201-03",
+    "CE201-11"
+   ],
+   "kind": "practice"
+  },
   "CE201/CE3165/tutorials/Tut 8 Columns and Bases.pdf::7-1-classify-columns-braced-unbraced-slenderness": {
    "doc": "CE201/CE3165/tutorials/Tut 8 Columns and Bases.pdf",
    "idx": 0,
@@ -4419,7 +4435,7 @@
    "title": "8.1 Class 1 I-beam, 20 m span — minimum $P_0$",
    "pages": [
     1,
-    4
+    6
    ],
    "topic": "CE201-16",
    "overlaps": [
@@ -4433,7 +4449,7 @@
    "idx": 1,
    "title": "8.2 Pre-tensioned beam, 28 m, 15.7 mm strands",
    "pages": [
-    5,
+    7,
     8
    ],
    "topic": "CE201-16",
@@ -5051,12 +5067,26 @@
    ],
    "kind": "lecture"
   },
-  "CE202/CE3166/tutorials/Tut 1 questions.pdf::questions": {
+  "CE202/CE3166/tutorials/Tut 1 questions.pdf::q1-four-storey-braced-frame-beams-and-columns": {
    "doc": "CE202/CE3166/tutorials/Tut 1 questions.pdf",
    "idx": 0,
-   "title": "Questions",
+   "title": "Q1 Four-storey braced frame: beams and columns",
    "pages": [
-    1,
+    2,
+    4
+   ],
+   "topic": "CE202-01",
+   "overlaps": [
+    "CE202-01"
+   ],
+   "kind": "practice"
+  },
+  "CE202/CE3166/tutorials/Tut 1 questions.pdf::q2-rooftop-crane-boom": {
+   "doc": "CE202/CE3166/tutorials/Tut 1 questions.pdf",
+   "idx": 1,
+   "title": "Q2 Rooftop crane boom",
+   "pages": [
+    5,
     6
    ],
    "topic": "CE202-01",
@@ -5071,7 +5101,7 @@
    "title": "Q1 Welded box 450×330 (10 mm plates, S275)",
    "pages": [
     1,
-    20
+    34
    ],
    "topic": "CE202-02",
    "overlaps": [
@@ -5084,7 +5114,7 @@
    "idx": 1,
    "title": "Q2 Column 254×254×73 S355 under $N + M_y$",
    "pages": [
-    21,
+    35,
     41
    ],
    "topic": "CE202-02",
@@ -6827,7 +6857,7 @@
    "overlaps": [
     "CE203-05"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q1-specification-for-field-compaction": {
    "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
@@ -7415,7 +7445,7 @@
    "overlaps": [
     "CE205-01"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE205/CE2134/2 RealFluids1.pdf::limits-of-potential-flow": {
    "doc": "CE205/CE2134/2 RealFluids1.pdf",
@@ -7527,7 +7557,7 @@
    "overlaps": [
     "CE205-01"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE205/CE2134/2c RealFluids Examples Solution.pdf::example-2-plate-drag": {
    "doc": "CE205/CE2134/2c RealFluids Examples Solution.pdf",
@@ -7541,7 +7571,7 @@
    "overlaps": [
     "CE205-01"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE205/CE2134/3 PipesDucts1.pdf::insight-from-mass-energy-momentum": {
    "doc": "CE205/CE2134/3 PipesDucts1.pdf",
@@ -7653,7 +7683,7 @@
    "overlaps": [
     "CE205-01"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE205/CE2134/3c PipesDucts Examples.pdf::type-2-and-type-3-iterations": {
    "doc": "CE205/CE2134/3c PipesDucts Examples.pdf",
@@ -7667,7 +7697,7 @@
    "overlaps": [
     "CE205-01"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
   "CE205/CE2134/4 Machinery1.pdf::types-of-machinery": {
    "doc": "CE205/CE2134/4 Machinery1.pdf",
@@ -8355,7 +8385,8 @@
     "CE201/CE3165/tutorials/Tut 2 Design for Flexure.pdf::2-4-flanged-beam-capacity",
     "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-1-moment-envelope-redistribution",
     "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-2-design-a-two-span-beam-fck-30-fyk-500",
-    "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-3-cantilevering-roof-slab"
+    "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-3-cantilevering-roof-slab",
+    "CE201/CE3165/tutorials/Tut 6-7 Structural Members.pdf::6-4-two-way-slab-panel"
    ],
    "covered_in": []
   },
@@ -8510,7 +8541,8 @@
     "CE202/CE3166/1 Introduction.pdf::limit-states-uls-combinations"
    ],
    "practice": [
-    "CE202/CE3166/tutorials/Tut 1 questions.pdf::questions"
+    "CE202/CE3166/tutorials/Tut 1 questions.pdf::q1-four-storey-braced-frame-beams-and-columns",
+    "CE202/CE3166/tutorials/Tut 1 questions.pdf::q2-rooftop-crane-boom"
    ],
    "covered_in": []
   },
@@ -8774,14 +8806,14 @@
     "CE203/CE3116/Lectures/4 Compaction of Soils R1.pdf::field-equipment",
     "CE203/CE3116/Lectures/4 Compaction of Soils R1.pdf::specification-control",
     "CE203/CE3116/Lectures/6 Revision Lecture (Compaction and SI).pdf::compaction-checklist",
-    "CE203/CE3116/Lectures/6 Revision Lecture (Compaction and SI).pdf::site-investigation-checklist"
+    "CE203/CE3116/Lectures/6 Revision Lecture (Compaction and SI).pdf::site-investigation-checklist",
+    "CE203/CE3116/Site Investigation/CE3116 Example Problem - Site Investigation R0.pdf::classification-spt-cptu-pmt-hvorslev"
    ],
    "practice": [
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::a-spt-corrections",
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::b-c-cptu-soil-type-strength",
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::d-e-menard-pressuremeter",
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::f-g-compare-su-hvorslev-permeability",
-    "CE203/CE3116/Site Investigation/CE3116 Example Problem - Site Investigation R0.pdf::classification-spt-cptu-pmt-hvorslev",
     "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q1-specification-for-field-compaction",
     "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q2-truck-trips-water",
     "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q3-sand-cone-checks"
@@ -8899,6 +8931,7 @@
     "CE205/CE2134/1c FlowViews3.pdf::uniform-flow-sources-sinks",
     "CE205/CE2134/1c FlowViews3.pdf::curved-flow-free-forced-vortices",
     "CE205/CE2134/1c FlowViews3.pdf::superposition-half-body-rankine-oval-cylinder",
+    "CE205/CE2134/1d FlowViews Examples.pdf::worked-examples",
     "CE205/CE2134/2 RealFluids1.pdf::limits-of-potential-flow",
     "CE205/CE2134/2 RealFluids1.pdf::viscosity-laminar-flow",
     "CE205/CE2134/2 RealFluids1.pdf::transition-turbulence",
@@ -8906,20 +8939,19 @@
     "CE205/CE2134/2b RealFluids2.pdf::momentum-integral-von-k-rm-n",
     "CE205/CE2134/2b RealFluids2.pdf::bluff-bodies-roughness-drag-vibration",
     "CE205/CE2134/2b RealFluids2.pdf::bounded-flows-cavitation-surface-tension",
+    "CE205/CE2134/2c RealFluids Examples Solution.pdf::example-1-1-7-power-boundary-layer-in-a-channel",
+    "CE205/CE2134/2c RealFluids Examples Solution.pdf::example-2-plate-drag",
     "CE205/CE2134/3 PipesDucts1.pdf::insight-from-mass-energy-momentum",
     "CE205/CE2134/3 PipesDucts1.pdf::laminar-hagen-poiseuille",
     "CE205/CE2134/3 PipesDucts1.pdf::example-oil-in-a-25-mm-pipe-at-0-3-m-s",
     "CE205/CE2134/3b PipesDucts2 corrected.pdf::darcy-weisbach-friction-factor",
     "CE205/CE2134/3b PipesDucts2 corrected.pdf::three-problem-types",
     "CE205/CE2134/3b PipesDucts2 corrected.pdf::hazen-williams-practical",
-    "CE205/CE2134/3b PipesDucts2 corrected.pdf::minor-local-losses"
+    "CE205/CE2134/3b PipesDucts2 corrected.pdf::minor-local-losses",
+    "CE205/CE2134/3c PipesDucts Examples.pdf::laminar-type-1",
+    "CE205/CE2134/3c PipesDucts Examples.pdf::type-2-and-type-3-iterations"
    ],
    "practice": [
-    "CE205/CE2134/1d FlowViews Examples.pdf::worked-examples",
-    "CE205/CE2134/2c RealFluids Examples Solution.pdf::example-1-1-7-power-boundary-layer-in-a-channel",
-    "CE205/CE2134/2c RealFluids Examples Solution.pdf::example-2-plate-drag",
-    "CE205/CE2134/3c PipesDucts Examples.pdf::laminar-type-1",
-    "CE205/CE2134/3c PipesDucts Examples.pdf::type-2-and-type-3-iterations",
     "CE205/CE2134/5 Steps for HW1.pdf::hw1-q9-q12"
    ],
    "covered_in": []

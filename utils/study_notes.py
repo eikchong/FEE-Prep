@@ -1787,6 +1787,14 @@ from utils.study_notes_ce203q import GEOQ as _GEOQ  # noqa: E402
 
 STUDY.update(_GEOQ)
 
+from utils.study_notes_ce201q import CONQ as _CONQ  # noqa: E402
+
+STUDY.update(_CONQ)
+
+from utils.study_notes_ce202q import STLQ as _STLQ  # noqa: E402
+
+STUDY.update(_STLQ)
+
 # keep last: give every tutorial question its source doc/page and a stable id
 from utils.qblock import fill_sources as _fill_sources  # noqa: E402
 
