@@ -3,7 +3,7 @@
   "id": "M-CE101-001",
   "code": "CE101",
   "topic": "CE101-01",
-  "q": "A 2.0 m long steel bar of 20 mm diameter carries an axial tension of 50 kN. Taking E = 200 GPa, the elongation is closest to:",
+  "q": "A 2.0 m long steel bar of 20 mm diameter carries an axial tension of 50 kN. Taking $E = 200\\ \\mathrm{GPa}$, the elongation is closest to:",
   "options": [
    "0.80 mm",
    "1.59 mm",
@@ -11,7 +11,7 @@
    "6.37 mm"
   ],
   "answer": 1,
-  "explain": "A = π·20²/4 = 314.2 mm²; σ = 50 000/314.2 = 159.2 N/mm²; δ = σL/E = 159.2 × 2000 / 200 000 = 1.59 mm. 6.37 mm results from mixing up radius and diameter (A = πr²/4 = 78.5 mm²)."
+  "explain": "$A = \\pi \\cdot 20^2/4 = 314.2\\ \\mathrm{mm^2}$; $\\sigma = 50\\,000/314.2 = 159.2\\ \\mathrm{N/mm^2}$; $\\delta = \\sigma L/E = 159.2 \\times 2000 / 200\\,000 = 1.59\\ \\mathrm{mm}$. 6.37 mm results from mixing up radius and diameter ($A = \\pi r^2/4 = 78.5\\ \\mathrm{mm^2}$)."
  },
  {
   "id": "M-CE101-002",
@@ -67,7 +67,7 @@
    "90 kNm"
   ],
   "answer": 1,
-  "explain": "M_max = wL²/8 = 10 × 6² / 8 = 45 kNm at midspan."
+  "explain": "$M_{\\mathrm{max}} = wL^2/8 = 10 \\times 6^2 / 8 = 45\\ \\mathrm{kNm}$ at midspan."
  },
  {
   "id": "M-CE102-002",
@@ -81,7 +81,7 @@
    "114 kNm"
   ],
   "answer": 1,
-  "explain": "M = PL + wL²/2 = 20 × 3 + 4 × 3²/2 = 60 + 18 = 78 kNm."
+  "explain": "$M = PL + wL^2/2 = 20 \\times 3 + 4 \\times 3^2/2 = 60 + 18 = 78\\ \\mathrm{kNm}$."
  },
  {
   "id": "M-CE102-003",
@@ -89,13 +89,13 @@
   "topic": "CE102-07",
   "q": "A solid circular shaft of 50 mm diameter transmits a torque of 1.5 kNm. The maximum shear stress is closest to:",
   "options": [
-   "30.6 N/mm²",
-   "48.9 N/mm²",
-   "61.1 N/mm²",
-   "122.2 N/mm²"
+   "$30.6\\ \\mathrm{N/mm^2}$",
+   "$48.9\\ \\mathrm{N/mm^2}$",
+   "$61.1\\ \\mathrm{N/mm^2}$",
+   "$122.2\\ \\mathrm{N/mm^2}$"
   ],
   "answer": 2,
-  "explain": "τ_max = Tr/J = 16T/(πd³) = 16 × 1.5×10⁶ / (π × 50³) = 61.1 N/mm²."
+  "explain": "$\\tau_{\\mathrm{max}} = Tr/J = 16T/(\\pi d^3) = 16 \\times 1.5 \\times 10^6 / (\\pi \\times 50^3) = 61.1\\ \\mathrm{N/mm^2}$."
  },
  {
   "id": "M-CE102-004",
@@ -109,7 +109,7 @@
    "Indeterminate to degree 2"
   ],
   "answer": 1,
-  "explain": "m + r = 11 + 3 = 14 = 2j = 14 → statically determinate (given stable geometry)."
+  "explain": "$m + r = 11 + 3 = 14 = 2j = 14$ → statically determinate (given stable geometry)."
  },
  {
   "id": "M-CE103-001",
@@ -123,7 +123,7 @@
    "50.0 kNm"
   ],
   "answer": 1,
-  "explain": "FEM = wL²/12 = 12 × 5² / 12 = 25 kNm (37.5 kNm is the propped-cantilever value wL²/8)."
+  "explain": "$\\mathrm{FEM} = wL^2/12 = 12 \\times 5^2 / 12 = 25\\ \\mathrm{kNm}$ (37.5 kNm is the propped-cantilever value $wL^2/8$)."
  },
  {
   "id": "M-CE103-002",
@@ -137,13 +137,13 @@
    "0.67"
   ],
   "answer": 3,
-  "explain": "k_BA = 4EI/4 = 1.0EI; k_BC = 3EI/6 = 0.5EI (far end pinned). DF_BA = 1.0/1.5 = 0.67."
+  "explain": "$k_{\\mathrm{BA}} = 4EI/4 = 1.0EI$; $k_{\\mathrm{BC}} = 3EI/6 = 0.5EI$ (far end pinned). $DF_{\\mathrm{BA}} = 1.0/1.5 = 0.67$."
  },
  {
   "id": "M-CE103-003",
   "code": "CE103",
   "topic": "CE103-06",
-  "q": "A fixed-ended beam of span 6 m with uniform plastic moment Mp = 120 kNm carries a central point load. The plastic collapse load is:",
+  "q": "A fixed-ended beam of span 6 m with uniform plastic moment $M_p = 120\\ \\mathrm{kNm}$ carries a central point load. The plastic collapse load is:",
   "options": [
    "80 kN",
    "120 kN",
@@ -151,13 +151,13 @@
    "240 kN"
   ],
   "answer": 2,
-  "explain": "Three hinges (two supports + midspan). Virtual work: P·(L/2)θ = Mp(θ + 2θ + θ) → P = 8Mp/L = 8 × 120/6 = 160 kN."
+  "explain": "Three hinges (two supports + midspan). Virtual work: $P \\cdot (L/2)\\theta = M_p(\\theta + 2\\theta + \\theta)$ → $P = 8M_p/L = 8 \\times 120/6 = 160\\ \\mathrm{kN}$."
  },
  {
   "id": "M-CE103-004",
   "code": "CE103",
   "topic": "CE103-09",
-  "q": "A vertical column 5 m tall is fixed at its base and completely free at the top. E = 210 GPa and I = 25 × 10⁶ mm⁴. The elastic critical (Euler) load is closest to:",
+  "q": "A vertical column 5 m tall is fixed at its base and completely free at the top. $E = 210\\ \\mathrm{GPa}$ and $I = 25 \\times 10^6\\ \\mathrm{mm^4}$. The elastic critical (Euler) load is closest to:",
   "options": [
    "518 kN",
    "1036 kN",
@@ -165,27 +165,27 @@
    "4145 kN"
   ],
   "answer": 0,
-  "explain": "Fixed–free: L_cr = 2L = 10 m. N_cr = π²EI/L_cr² = π² × 210 000 × 25×10⁶ / 10 000² = 518 kN. 2073 kN results from wrongly using L_cr = L."
+  "explain": "Fixed–free: $L_{\\mathrm{cr}} = 2L = 10\\ \\mathrm{m}$. $N_{\\mathrm{cr}} = \\pi^2EI/L_{\\mathrm{cr}}^2 = \\pi^2 \\times 210\\,000 \\times 25 \\times 10^6 / 10\\,000^2 = 518\\ \\mathrm{kN}$. 2073 kN results from wrongly using $L_{\\mathrm{cr}} = L$."
  },
  {
   "id": "M-CE104-001",
   "code": "CE104",
   "topic": "CE104-03",
-  "q": "A soil has G_s = 2.70, void ratio e = 0.65 and water content w = 18%. Taking γ_w = 9.81 kN/m³, its bulk unit weight is closest to:",
+  "q": "A soil has $G_s = 2.70$, void ratio $e = 0.65$ and water content $w = 18\\,\\%$. Taking $\\gamma_w = 9.81\\ \\mathrm{kN/m^3}$, its bulk unit weight is closest to:",
   "options": [
-   "16.05 kN/m³",
-   "18.94 kN/m³",
-   "19.92 kN/m³",
-   "20.41 kN/m³"
+   "$16.05\\ \\mathrm{kN/m^3}$",
+   "$18.94\\ \\mathrm{kN/m^3}$",
+   "$19.92\\ \\mathrm{kN/m^3}$",
+   "$20.41\\ \\mathrm{kN/m^3}$"
   ],
   "answer": 1,
-  "explain": "Se = wG_s → S = 0.18 × 2.70/0.65 = 0.748. γ = (G_s + Se)γ_w/(1 + e) = (2.70 + 0.486) × 9.81/1.65 = 18.94 kN/m³. 16.05 is γ_d; 19.92 is γ_sat."
+  "explain": "$Se = wG_s$ → $S = 0.18 \\times 2.70/0.65 = 0.748$. $\\gamma = (G_s + Se)\\gamma_w/(1 + e) = (2.70 + 0.486) \\times 9.81/1.65 = 18.94\\ \\mathrm{kN/m^3}$. 16.05 is $\\gamma_d$; 19.92 is $\\gamma_{\\mathrm{sat}}$."
  },
  {
   "id": "M-CE104-002",
   "code": "CE104",
   "topic": "CE104-04",
-  "q": "A uniform deposit has γ = 18 kN/m³ above the water table and γ_sat = 20 kN/m³ below it. The water table is 2 m below ground. The vertical effective stress at 6 m depth is closest to (γ_w = 9.81 kN/m³):",
+  "q": "A uniform deposit has $\\gamma = 18\\ \\mathrm{kN/m^3}$ above the water table and $\\gamma_{\\mathrm{sat}} = 20\\ \\mathrm{kN/m^3}$ below it. The water table is 2 m below ground. The vertical effective stress at 6 m depth is closest to ($\\gamma_w = 9.81\\ \\mathrm{kN/m^3}$):",
   "options": [
    "39.2 kPa",
    "76.8 kPa",
@@ -193,13 +193,13 @@
    "116.0 kPa"
   ],
   "answer": 1,
-  "explain": "σ_v = 2 × 18 + 4 × 20 = 116.0 kPa; u = 4 × 9.81 = 39.2 kPa; σ′_v = 116.0 − 39.2 = 76.8 kPa."
+  "explain": "$\\sigma_v = 2 \\times 18 + 4 \\times 20 = 116.0\\ \\mathrm{kPa}$; $u = 4 \\times 9.81 = 39.2\\ \\mathrm{kPa}$; $\\sigma'_v = 116.0 - 39.2 = 76.8\\ \\mathrm{kPa}$."
  },
  {
   "id": "M-CE104-003",
   "code": "CE104",
   "topic": "CE104-08",
-  "q": "A 6 m thick clay layer is drained at both top and bottom, with c_v = 2 m²/year. The time for 50% average consolidation (T_v = 0.197) is closest to:",
+  "q": "A 6 m thick clay layer is drained at both top and bottom, with $c_v = 2\\ \\mathrm{m^2}$/year. The time for 50% average consolidation ($T_v = 0.197$) is closest to:",
   "options": [
    "0.44 years",
    "0.89 years",
@@ -207,13 +207,13 @@
    "3.55 years"
   ],
   "answer": 1,
-  "explain": "Double drainage → H_dr = 3 m. t = T_v H_dr²/c_v = 0.197 × 9/2 = 0.89 years. 3.55 years results from single drainage (H_dr = 6 m)."
+  "explain": "Double drainage → $H_{\\mathrm{dr}} = 3\\ \\mathrm{m}$. $t = T_v H_{\\mathrm{dr}}^2/c_v = 0.197 \\times 9/2 = 0.89\\ \\mathrm{years}$. 3.55 years results from single drainage ($H_{\\mathrm{dr}} = 6\\ \\mathrm{m}$)."
  },
  {
   "id": "M-CE105-001",
   "code": "CE105",
   "topic": "CE105-02",
-  "q": "A vertical rectangular gate 2 m wide and 3 m high has its top edge at the free water surface. The resultant hydrostatic thrust on the gate is closest to (ρ = 1000 kg/m³, g = 9.81 m/s²):",
+  "q": "A vertical rectangular gate 2 m wide and 3 m high has its top edge at the free water surface. The resultant hydrostatic thrust on the gate is closest to ($\\rho = 1000\\ \\mathrm{kg/m^3}$, $g = 9.81\\ \\mathrm{m/s^2}$):",
   "options": [
    "44.1 kN",
    "58.9 kN",
@@ -221,13 +221,13 @@
    "176.6 kN"
   ],
   "answer": 2,
-  "explain": "F = ρg h_c A = 1000 × 9.81 × 1.5 × (2 × 3) = 88.3 kN, acting at the centre of pressure 2.0 m below the surface (2/3 of the height)."
+  "explain": "$F = \\rho g h_c A = 1000 \\times 9.81 \\times 1.5 \\times (2 \\times 3) = 88.3\\ \\mathrm{kN}$, acting at the centre of pressure 2.0 m below the surface (2/3 of the height)."
  },
  {
   "id": "M-CE105-002",
   "code": "CE105",
   "topic": "CE105-05",
-  "q": "Water (ρ = 1000 kg/m³) flows at 0.10 m³/s through a horizontal pipe that contracts from 300 mm to 150 mm diameter. Neglecting losses, the pressure drop across the contraction is closest to:",
+  "q": "Water ($\\rho = 1000\\ \\mathrm{kg/m^3}$) flows at $0.10\\ \\mathrm{m^3/s}$ through a horizontal pipe that contracts from 300 mm to 150 mm diameter. Neglecting losses, the pressure drop across the contraction is closest to:",
   "options": [
    "2.0 kPa",
    "7.5 kPa",
@@ -235,21 +235,21 @@
    "30.0 kPa"
   ],
   "answer": 2,
-  "explain": "V₁ = 0.10/(π·0.3²/4) = 1.415 m/s; V₂ = 0.10/(π·0.15²/4) = 5.659 m/s. Δp = ρ(V₂² − V₁²)/2 = 1000 × (32.02 − 2.00)/2 = 15.0 kPa."
+  "explain": "$V_1 = 0.10/(\\pi \\cdot 0.3^2/4) = 1.415\\ \\mathrm{m/s}$; $V_2 = 0.10/(\\pi \\cdot 0.15^2/4) = 5.659\\ \\mathrm{m/s}$. $\\Delta p = \\rho(V_2^2 - V_1^2)/2 = 1000 \\times (32.02 - 2.00)/2 = 15.0\\ \\mathrm{kPa}$."
  },
  {
   "id": "M-CE105-003",
   "code": "CE105",
   "topic": "CE105-08",
-  "q": "A 1:25 undistorted Froude-scaled model of a spillway passes 0.02 m³/s. The corresponding prototype discharge is:",
+  "q": "A 1:25 undistorted Froude-scaled model of a spillway passes $0.02\\ \\mathrm{m^3/s}$. The corresponding prototype discharge is:",
   "options": [
-   "0.5 m³/s",
-   "12.5 m³/s",
-   "62.5 m³/s",
-   "312.5 m³/s"
+   "$0.5\\ \\mathrm{m^3/s}$",
+   "$12.5\\ \\mathrm{m^3/s}$",
+   "$62.5\\ \\mathrm{m^3/s}$",
+   "$312.5\\ \\mathrm{m^3/s}$"
   ],
   "answer": 2,
-  "explain": "Froude similarity: Q_r = L_r^{5/2} = 25^{2.5} = 3125. Q_p = 0.02 × 3125 = 62.5 m³/s."
+  "explain": "Froude similarity: $Q_r = L_r^{5/2} = 25^{2.5} = 3125$. $Q_p = 0.02 \\times 3125 = 62.5\\ \\mathrm{m^3/s}$."
  },
  {
   "id": "M-CE101-005",
@@ -267,7 +267,7 @@
    "twice"
   ],
   "answer": 1,
-  "explain": "σ_f = √(2Eγ_s/πc) ∝ 1/√c. Four times the crack length → 1/√4 = ½ of the original strength."
+  "explain": "$\\sigma_f = \\sqrt{2E\\gamma_s/\\pi c} \\propto 1/\\sqrt{c}$. Four times the crack length → $1/\\sqrt{4} = \\tfrac12$ of the original strength."
  },
  {
   "id": "M-CE101-006",
@@ -277,15 +277,15 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 4
   },
-  "q": "A steel bar (ν = 0.30) is stretched to an axial strain of 0.001. The approximate unit volume change is:",
+  "q": "A steel bar ($\\nu = 0.30$) is stretched to an axial strain of 0.001. The approximate unit volume change is:",
   "options": [
-   "−4 × 10⁻⁴ (decrease)",
-   "+4 × 10⁻⁴ (increase)",
-   "+1 × 10⁻³ (increase)",
-   "+1.6 × 10⁻³ (increase)"
+   "$-4 \\times 10^{-4}$ (decrease)",
+   "$+4 \\times 10^{-4}$ (increase)",
+   "$+1 \\times 10^{-3}$ (increase)",
+   "$+1.6 \\times 10^{-3}$ (increase)"
   ],
   "answer": 1,
-  "explain": "ΔV/V ≈ ε(1 − 2ν) = 0.001 × (1 − 0.6) = +4 × 10⁻⁴. Volume increases in tension for ν < 0.5 (the cross-sectional area shrinks, but less than the length grows)."
+  "explain": "$\\Delta V/V \\approx \\varepsilon(1 - 2\\nu) = 0.001 \\times (1 - 0.6) = +4 \\times 10^{-4}$. Volume increases in tension for $\\nu < 0.5$ (the cross-sectional area shrinks, but less than the length grows)."
  },
  {
   "id": "M-CE101-007",
@@ -303,7 +303,7 @@
    "200 MPa"
   ],
   "answer": 1,
-  "explain": "σ_a = (σ_max − σ_min)/2 = (150 − (−50))/2 = 100 MPa. Mean stress = 50 MPa; stress range = 200 MPa; R = σ_min/σ_max = −0.33."
+  "explain": "$\\sigma_a = (\\sigma_{\\mathrm{max}} - \\sigma_{\\mathrm{min}})/2 = (150 - (-50))/2 = 100\\ \\mathrm{MPa}$. Mean stress = 50 MPa; stress range = 200 MPa; $R = \\sigma_{\\mathrm{min}}/\\sigma_{\\mathrm{max}} = -0.33$."
  },
  {
   "id": "M-CE101-008",
@@ -313,7 +313,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 14
   },
-  "q": "A steel has C 0.18 %, Mn 1.20 %, Cr 0.10 %, Mo 0.05 %, V 0.02 %, Cu 0.15 %, Ni 0.10 %. Its carbon equivalent CE = C + Mn/6 + (Cr+Mo+V)/5 + (Cu+Ni)/15 is closest to:",
+  "q": "A steel has C 0.18 %, Mn 1.20 %, Cr 0.10 %, Mo 0.05 %, V 0.02 %, Cu 0.15 %, Ni 0.10 %. Its carbon equivalent $\\mathrm{CE} = \\mathrm{C} + \\mathrm{Mn}/6 + (\\mathrm{Cr} + \\mathrm{Mo} + \\mathrm{V})/5 + (\\mathrm{Cu} + \\mathrm{Ni})/15$ is closest to:",
   "options": [
    "0.33 %",
    "0.43 %",
@@ -321,7 +321,7 @@
    "0.62 %"
   ],
   "answer": 1,
-  "explain": "CE = 0.18 + 1.20/6 + 0.17/5 + 0.25/15 = 0.18 + 0.200 + 0.034 + 0.017 = 0.43 %."
+  "explain": "$\\mathrm{CE} = 0.18 + 1.20/6 + 0.17/5 + 0.25/15 = 0.18 + 0.200 + 0.034 + 0.017 = 0.43\\,\\%$."
  },
  {
   "id": "M-CE101-009",
@@ -331,7 +331,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 16
   },
-  "q": "A 1.20 m length of deformed reinforcing bar weighs 4.62 kg. Using A = M/(0.00785 L), its nominal diameter is:",
+  "q": "A 1.20 m length of deformed reinforcing bar weighs 4.62 kg. Using $A = M/(0.00785 L)$, its nominal diameter is:",
   "options": [
    "20 mm",
    "22 mm",
@@ -339,7 +339,7 @@
    "28 mm"
   ],
   "answer": 2,
-  "explain": "A = 4.62/(0.00785 × 1.20) = 490 mm²; φ = √(4A/π) = 25.0 mm."
+  "explain": "$A = 4.62/(0.00785 \\times 1.20) = 490\\ \\mathrm{mm^2}$; $\\phi = \\sqrt{4A/\\pi} = 25.0\\ \\mathrm{mm}$."
  },
  {
   "id": "M-CE101-010",
@@ -357,7 +357,7 @@
    "0.60"
   ],
   "answer": 2,
-  "explain": "Chemically combined water ≈ 0.20–0.24; with gel water, w/c ≈ 0.36–0.38 is needed to fill the space. Above that, capillary pores persist."
+  "explain": "Chemically combined water ≈ 0.20–0.24; with gel water, $w/c \\approx 0.36\\text{–}0.38$ is needed to fill the space. Above that, capillary pores persist."
  },
  {
   "id": "M-CE101-011",
@@ -367,7 +367,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 52
   },
-  "q": "A mix has 450 kg/m³ OPC, 35 kg/m³ silica fume (efficiency factor k = 3) and 160 kg/m³ free water. The effective water/cement ratio for strength is closest to:",
+  "q": "A mix has $450\\ \\mathrm{kg/m^3}$ OPC, $35\\ \\mathrm{kg/m^3}$ silica fume (efficiency factor $k = 3$) and $160\\ \\mathrm{kg/m^3}$ free water. The effective water/cement ratio for strength is closest to:",
   "options": [
    "0.25",
    "0.29",
@@ -375,7 +375,7 @@
    "0.36"
   ],
   "answer": 1,
-  "explain": "(w/c)_eff = W/(C + kS) = 160/(450 + 3 × 35) = 160/555 = 0.29. (The plain water/binder ratio is 160/485 = 0.33.)"
+  "explain": "$(w/c)_{\\mathrm{eff}} = W/(C + kS) = 160/(450 + 3 \\times 35) = 160/555 = 0.29$. (The plain water/binder ratio is $160/485 = 0.33$.)"
  },
  {
   "id": "M-CE101-012",
@@ -385,7 +385,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 54
   },
-  "q": "Per m³: cement 350 kg (density 3150), water 175 kg, sand 750 kg (density 2600), air 2 %. The mass of coarse aggregate (density 2650 kg/m³) is closest to:",
+  "q": "Per $\\mathrm{m^3}$: cement 350 kg (density 3150), water 175 kg, sand 750 kg (density 2600), air 2 %. The mass of coarse aggregate (density $2650\\ \\mathrm{kg/m^3}$) is closest to:",
   "options": [
    "980 kg",
    "1074 kg",
@@ -393,7 +393,7 @@
    "1200 kg"
   ],
   "answer": 1,
-  "explain": "Volumes: 350/3150 = 0.111, 175/1000 = 0.175, 750/2600 = 0.288; V_G = 1 − 0.02 − 0.111 − 0.175 − 0.288 = 0.405 m³ → 0.405 × 2650 = 1074 kg."
+  "explain": "Volumes: $350/3150 = 0.111$, $175/1000 = 0.175$, $750/2600 = 0.288$; $V_G = 1 - 0.02 - 0.111 - 0.175 - 0.288 = 0.405\\ \\mathrm{m^3}$ → $0.405 \\times 2650 = 1074\\ \\mathrm{kg}$."
  },
  {
   "id": "M-CE101-013",
@@ -411,7 +411,7 @@
    "±15 %"
   ],
   "answer": 1,
-  "explain": "±15/√n % = ±15/√9 = ±5 %."
+  "explain": "$\\pm 15/\\sqrt{n}\\,\\% = \\pm 15/\\sqrt{9} = \\pm 5\\,\\%$."
  },
  {
   "id": "M-CE101-014",
@@ -421,7 +421,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 63
   },
-  "q": "A 100 × 100 mm prism on a 300 mm span fails at 12 kN in four-point bending. Using f = Fl/(d₁d₂²), the flexural strength is:",
+  "q": "A 100 × 100 mm prism on a 300 mm span fails at 12 kN in four-point bending. Using $f = Fl/(d_1d_2^2)$, the flexural strength is:",
   "options": [
    "1.2 MPa",
    "2.7 MPa",
@@ -429,7 +429,7 @@
    "5.4 MPa"
   ],
   "answer": 2,
-  "explain": "f = 12 000 × 300/(100 × 100²) = 3.6 MPa."
+  "explain": "$f = 12\\,000 \\times 300/(100 \\times 100^2) = 3.6\\ \\mathrm{MPa}$."
  },
  {
   "id": "M-CE101-015",
@@ -439,7 +439,7 @@
    "doc": "CE101/CE101_Mechanics_of_Materials.pdf",
    "page": 25
   },
-  "q": "A cement contains 0.25 % Na₂O and 0.60 % K₂O. Its equivalent alkali content and classification are:",
+  "q": "A cement contains $0.25\\,\\% \\mathrm{Na_2O}$ and $0.60\\,\\% \\mathrm{K_2O}$. Its equivalent alkali content and classification are:",
   "options": [
    "0.45 %, low-alkali",
    "0.65 %, not low-alkali",
@@ -447,7 +447,7 @@
    "0.55 %, low-alkali"
   ],
   "answer": 1,
-  "explain": "Na₂O_eq = 0.25 + 0.658 × 0.60 = 0.645 % > 0.60 % → not a low-alkali cement, so take extra ASR precautions with reactive aggregate."
+  "explain": "$\\mathrm{Na_2O_{eq}} = 0.25 + 0.658 \\times 0.60 = 0.645\\,\\% > 0.60\\,\\%$ → not a low-alkali cement, so take extra ASR precautions with reactive aggregate."
  },
  {
   "id": "M-CE102-005",
@@ -465,7 +465,7 @@
    "75.0 kN"
   ],
   "answer": 1,
-  "explain": "R_x = 20 + 30cos60° + 25cos150° = 20 + 15 − 21.65 = 13.35 kN; R_y = 30sin60° + 25sin150° = 25.98 + 12.5 = 38.48 kN; R = √(13.35² + 38.48²) = 40.7 kN."
+  "explain": "$R_x = 20 + 30\\cos 60^\\circ + 25\\cos 150^\\circ = 20 + 15 - 21.65 = 13.35\\ \\mathrm{kN}$; $R_y = 30\\sin 60^\\circ + 25\\sin 150^\\circ = 25.98 + 12.5 = 38.48\\ \\mathrm{kN}$; $R = \\sqrt{13.35^2 + 38.48^2} = 40.7\\ \\mathrm{kN}$."
  },
  {
   "id": "M-CE102-006",
@@ -475,7 +475,7 @@
    "doc": "CE102/CE102_Structural_Mechanics.pdf",
    "page": 5
   },
-  "q": "A force F = (2i − 3j + 6k) kN acts at the point r = (4i + 1j) m from O. The magnitude of its moment about O is closest to:",
+  "q": "A force $F = (2i - 3j + 6k)$ kN acts at the point $r = (4i + 1j)\\ \\mathrm{m}$ from O. The magnitude of its moment about O is closest to:",
   "options": [
    "18.0 kNm",
    "24.0 kNm",
@@ -483,7 +483,7 @@
    "34.5 kNm"
   ],
   "answer": 2,
-  "explain": "M = r × F = (1·6 − 0·(−3))i − (4·6 − 0·2)j + (4·(−3) − 1·2)k = 6i − 24j − 14k; |M| = √(36 + 576 + 196) = 28.4 kNm."
+  "explain": "$M = r \\times F = (1 \\cdot 6 - 0 \\cdot (-3))i - (4 \\cdot 6 - 0 \\cdot 2)j + (4 \\cdot (-3) - 1 \\cdot 2)k = 6i - 24j - 14k$; $|M| = \\sqrt{36 + 576 + 196} = 28.4\\ \\mathrm{kNm}$."
  },
  {
   "id": "M-CE102-007",
@@ -493,7 +493,7 @@
    "doc": "CE102/CE102_Structural_Mechanics.pdf",
    "page": 28
   },
-  "q": "A vertical bar is fixed at top A and bottom B. Segment AC is 300 mm long with A = 300 mm²; segment CB is 300 mm long with A = 500 mm²; same E. A 400 kN downward load acts at C. The reaction at B is:",
+  "q": "A vertical bar is fixed at top A and bottom B. Segment AC is 300 mm long with $A = 300\\ \\mathrm{mm^2}$; segment CB is 300 mm long with $A = 500\\ \\mathrm{mm^2}$; same E. A 400 kN downward load acts at C. The reaction at B is:",
   "options": [
    "150 kN",
    "200 kN",
@@ -501,7 +501,7 @@
    "300 kN"
   ],
   "answer": 2,
-  "explain": "Compatibility (δ_AC = δ_CB): R_A·L/A₁ = R_B·L/A₂ with R_A + R_B = 400. Flexibilities 1/300 : 1/500 → R_B = 400 × (1/300)/(1/300 + 1/500) = 250 kN (compression in CB); R_A = 150 kN."
+  "explain": "Compatibility ($\\delta_{\\mathrm{AC}} = \\delta_{\\mathrm{CB}}$): $R_A \\cdot L/A_1 = R_B \\cdot L/A_2$ with $R_A + R_B = 400$. Flexibilities 1/300 : 1/500 → $R_B = 400 \\times (1/300)/(1/300 + 1/500) = 250\\ \\mathrm{kN}$ (compression in CB); $R_A = 150\\ \\mathrm{kN}$."
  },
  {
   "id": "M-CE102-008",
@@ -519,7 +519,7 @@
    "63.7 MPa"
   ],
   "answer": 2,
-  "explain": "J = π(100⁴ − 60⁴)/32 = 8.55 × 10⁶ mm⁴; τ_max = Tc/J = 10 × 10⁶ × 50/8.55 × 10⁶ = 58.5 MPa. (50.9 MPa is a solid 100 mm shaft.)"
+  "explain": "$J = \\pi(100^4 - 60^4)/32 = 8.55 \\times 10^6\\ \\mathrm{mm^4}$; $\\tau_{\\mathrm{max}} = Tc/J = 10 \\times 10^6 \\times 50/8.55 \\times 10^6 = 58.5\\ \\mathrm{MPa}$. (50.9 MPa is a solid 100 mm shaft.)"
  },
  {
   "id": "M-CE102-009",
@@ -529,7 +529,7 @@
    "doc": "CE102/CE102_Structural_Mechanics.pdf",
    "page": 31
   },
-  "q": "A 50 mm solid steel shaft, 2 m long (G = 80 GPa), carries a torque of 1 kNm. The angle of twist is closest to:",
+  "q": "A 50 mm solid steel shaft, 2 m long ($G = 80\\ \\mathrm{GPa}$), carries a torque of 1 kNm. The angle of twist is closest to:",
   "options": [
    "0.041°",
    "1.17°",
@@ -537,7 +537,7 @@
    "4.67°"
   ],
   "answer": 2,
-  "explain": "J = π × 50⁴/32 = 6.14 × 10⁵ mm⁴; φ = TL/GJ = 10⁶ × 2000/(80 000 × 6.14 × 10⁵) = 0.0407 rad = 2.33°."
+  "explain": "$J = \\pi \\times 50^4/32 = 6.14 \\times 10^5\\ \\mathrm{mm^4}$; $\\phi = TL/(GJ) = 10^6 \\times 2000/(80\\,000 \\times 6.14 \\times 10^5) = 0.0407\\ \\mathrm{rad} = 2.33^\\circ$."
  },
  {
   "id": "M-CE102-010",
@@ -555,7 +555,7 @@
    "6.0 MPa"
   ],
   "answer": 1,
-  "explain": "τ_max = 3V/(2A) = 1.5 × 60 000/(100 × 300) = 3.0 MPa, at the neutral axis."
+  "explain": "$\\tau_{\\mathrm{max}} = 3V/(2A) = 1.5 \\times 60\\,000/(100 \\times 300) = 3.0\\ \\mathrm{MPa}$, at the neutral axis."
  },
  {
   "id": "M-CE102-011",
@@ -565,7 +565,7 @@
    "doc": "CE102/CE102_Structural_Mechanics.pdf",
    "page": 63
   },
-  "q": "A simply supported beam (span 6 m, EI = 20 000 kNm²) carries a central point load of 40 kN. Using moment-area, the end slope is:",
+  "q": "A simply supported beam (span 6 m, $EI = 20\\,000\\ \\mathrm{kNm^2}$) carries a central point load of 40 kN. Using moment-area, the end slope is:",
   "options": [
    "0.0023 rad",
    "0.0045 rad",
@@ -573,7 +573,7 @@
    "0.0180 rad"
   ],
   "answer": 1,
-  "explain": "By symmetry the slope at midspan is zero; θ_A = area of M/EI from A to midspan = ½ × (L/2) × (PL/4)/EI = PL²/(16EI) = 40 × 36/(16 × 20 000) = 0.0045 rad."
+  "explain": "By symmetry the slope at midspan is zero; $\\theta_A$ = area of M/EI from A to midspan = $\\tfrac12 \\times (L/2) \\times (PL/4)/EI = PL^2/(16EI) = 40 \\times 36/(16 \\times 20\\,000) = 0.0045\\ \\mathrm{rad}$."
  },
  {
   "id": "M-CE103-005",
@@ -583,7 +583,7 @@
    "doc": "CE103/CE103_Structural_Analysis.pdf",
    "page": 17
   },
-  "q": "A symmetric gable frame has 4 members and 5 joints, pinned at both bases (r = 4) with an internal hinge at the apex (c = 1). Using 3m + r vs 3j + c, the frame is:",
+  "q": "A symmetric gable frame has 4 members and 5 joints, pinned at both bases ($r = 4$) with an internal hinge at the apex ($c = 1$). Using 3m + r vs 3j + c, the frame is:",
   "options": [
    "statically determinate",
    "indeterminate to degree 1",
@@ -591,7 +591,7 @@
    "unstable"
   ],
   "answer": 0,
-  "explain": "3m + r = 12 + 4 = 16; 3j + c = 15 + 1 = 16 → equal → statically determinate (a three-pinned frame), given no geometric instability."
+  "explain": "$3m + r = 12 + 4 = 16$; $3j + c = 15 + 1 = 16$ → equal → statically determinate (a three-pinned frame), given no geometric instability."
  },
  {
   "id": "M-CE103-006",
@@ -601,7 +601,7 @@
    "doc": "CE103/CE103_Structural_Analysis.pdf",
    "page": 51
   },
-  "q": "For a truss, real member forces N and unit-load forces n are: member 1 (N = +50 kN, n = +0.8, L = 4 m), member 2 (N = −30 kN, n = −0.6, L = 3 m), member 3 (N = +40 kN, n = 0, L = 5 m). AE = 200 000 kN for all. The deflection is:",
+  "q": "For a truss, real member forces N and unit-load forces n are: member 1 ($N = +50\\ \\mathrm{kN}$, $n = +0.8$, $L = 4\\ \\mathrm{m}$), member 2 ($N = -30\\ \\mathrm{kN}$, $n = -0.6$, $L = 3\\ \\mathrm{m}$), member 3 ($N = +40\\ \\mathrm{kN}$, $n = 0$, $L = 5\\ \\mathrm{m}$). $AE = 200\\,000\\ \\mathrm{kN}$ for all. The deflection is:",
   "options": [
    "0.27 mm",
    "1.07 mm",
@@ -609,7 +609,7 @@
    "3.21 mm"
   ],
   "answer": 1,
-  "explain": "Δ = ΣnNL/AE = (0.8 × 50 × 4 + (−0.6)(−30)(3) + 0)/200 000 = (160 + 54)/200 000 = 1.07 × 10⁻³ m = 1.07 mm."
+  "explain": "$\\Delta = \\sum nNL/AE = (0.8 \\times 50 \\times 4 + (-0.6)(-30)(3) + 0)/200\\,000 = (160 + 54)/200\\,000 = 1.07 \\times 10^{-3}\\ \\mathrm{m} = 1.07\\ \\mathrm{mm}$."
  },
  {
   "id": "M-CE103-007",
@@ -619,7 +619,7 @@
    "doc": "CE103/CE103_Structural_Analysis.pdf",
    "page": 51
   },
-  "q": "A 5 m truss member (unit-load force n = 1.25) is heated by 30 °C (α = 12 × 10⁻⁶/°C). The contribution to the joint deflection is:",
+  "q": "A 5 m truss member (unit-load force $n = 1.25$) is heated by $30^\\circ\\mathrm{C}$ ($\\alpha = 12 \\times 10^{-6}\\ /^\\circ\\mathrm{C}$). The contribution to the joint deflection is:",
   "options": [
    "0.45 mm",
    "1.80 mm",
@@ -627,7 +627,7 @@
    "4.50 mm"
   ],
   "answer": 2,
-  "explain": "Δ = n·α·ΔT·L = 1.25 × 12 × 10⁻⁶ × 30 × 5000 mm = 2.25 mm."
+  "explain": "$\\Delta = n \\cdot \\alpha \\cdot \\Delta T \\cdot L = 1.25 \\times 12 \\times 10^{-6} \\times 30 \\times 5000\\ \\mathrm{mm} = 2.25\\ \\mathrm{mm}$."
  },
  {
   "id": "M-CE103-008",
@@ -645,7 +645,7 @@
    "125 kNm"
   ],
   "answer": 2,
-  "explain": "IL peak at C = ab/L = 4 × 6/10 = 2.4. M_C = w × area = 5 × ½ × 10 × 2.4 = 60 kNm (check: R_A·4 − 5·4²/2 = 25 × 4 − 40 = 60)."
+  "explain": "IL peak at $C = ab/L = 4 \\times 6/10 = 2.4$. $M_C = w \\times \\mathrm{area} = 5 \\times \\tfrac12 \\times 10 \\times 2.4 = 60\\ \\mathrm{kNm}$ (check: $R_A \\cdot 4 - 5 \\cdot 4^2/2 = 25 \\times 4 - 40 = 60$)."
  },
  {
   "id": "M-CE103-009",
@@ -663,7 +663,7 @@
    "60 kN"
   ],
   "answer": 1,
-  "explain": "Δ_B0 = wL⁴/8EI; f_BB = L³/3EI → R_B = 3wL/8 = 3 × 12 × 8/8 = 36 kN."
+  "explain": "$\\Delta_{\\mathrm{B0}} = wL^4/(8EI)$; $f_{\\mathrm{BB}} = L^3/(3EI)$ → $R_B = 3wL/8 = 3 \\times 12 \\times 8/8 = 36\\ \\mathrm{kN}$."
  },
  {
   "id": "M-CE103-010",
@@ -673,7 +673,7 @@
    "doc": "CE103/CE103_Structural_Analysis.pdf",
    "page": 71
   },
-  "q": "Member AB (L = 5 m, EI = 40 000 kNm²) is fixed at B, carries no span load and has no sway. Joint A rotates 0.002 rad clockwise. The end moment M_AB is:",
+  "q": "Member AB ($L = 5\\ \\mathrm{m}$, $EI = 40\\,000\\ \\mathrm{kNm^2}$) is fixed at B, carries no span load and has no sway. Joint A rotates 0.002 rad clockwise. The end moment $M_{\\mathrm{AB}}$ is:",
   "options": [
    "16 kNm",
    "32 kNm",
@@ -681,7 +681,7 @@
    "128 kNm"
   ],
   "answer": 2,
-  "explain": "M_AB = (2EI/L)(2θ_A + θ_B − 3ψ) = (2 × 40 000/5)(2 × 0.002) = 64 kNm; and M_BA = 32 kNm (carry-over ½)."
+  "explain": "$M_{\\mathrm{AB}} = (2EI/L)(2\\theta_A + \\theta_B - 3\\psi) = (2 \\times 40\\,000/5)(2 \\times 0.002) = 64\\ \\mathrm{kNm}$; and $M_{\\mathrm{BA}} = 32\\ \\mathrm{kNm}$ (carry-over $\\tfrac12$)."
  },
  {
   "id": "M-CE103-011",
@@ -691,7 +691,7 @@
    "doc": "CE103/CE103_Structural_Analysis.pdf",
    "page": 82
   },
-  "q": "A truss member with EA/L = 50 MN/m is inclined at 30° to the global x-axis. The global stiffness term k₁₁ = (EA/L)λx² is:",
+  "q": "A truss member with $EA/L = 50\\ \\mathrm{MN/m}$ is inclined at 30° to the global x-axis. The global stiffness term $k_{11} = (EA/L)\\lambda_x^2$ is:",
   "options": [
    "25.0 MN/m",
    "37.5 MN/m",
@@ -699,7 +699,7 @@
    "50.0 MN/m"
   ],
   "answer": 1,
-  "explain": "λx = cos30° = 0.866 → k₁₁ = 50 × 0.75 = 37.5 MN/m (k₁₂ = 50 × 0.866 × 0.5 = 21.7)."
+  "explain": "$\\lambda_x = \\cos 30^\\circ = 0.866$ → $k_{11} = 50 \\times 0.75 = 37.5\\ \\mathrm{MN/m}$ ($k_{12} = 50 \\times 0.866 \\times 0.5 = 21.7$)."
  },
  {
   "id": "M-CE105-004",
@@ -717,7 +717,7 @@
    "26.7 kPa"
   ],
   "answer": 2,
-  "explain": "Δp = (ρ_Hg − ρ_w)g·h = (13.6 − 1) × 9810 × 0.2 = 24.7 kPa. (26.7 kPa ignores the water column above the mercury.)"
+  "explain": "$\\Delta p = (\\rho_{\\mathrm{Hg}} - \\rho_w)g \\cdot h = (13.6 - 1) \\times 9810 \\times 0.2 = 24.7\\ \\mathrm{kPa}$. (26.7 kPa ignores the water column above the mercury.)"
  },
  {
   "id": "M-CE105-005",
@@ -735,7 +735,7 @@
    "3.25 m"
   ],
   "answer": 1,
-  "explain": "y_C = 1 + 1.5 = 2.5 m; I_C = 2 × 3³/12 = 4.5 m⁴; y_P = y_C + I_C/(y_C A) = 2.5 + 4.5/(2.5 × 6) = 2.80 m. (F = 9.81 × 2.5 × 6 = 147 kN.)"
+  "explain": "$y_C = 1 + 1.5 = 2.5\\ \\mathrm{m}$; $I_C = 2 \\times 3^3/12 = 4.5\\ \\mathrm{m^4}$; $y_P = y_C + I_C/(y_C A) = 2.5 + 4.5/(2.5 \\times 6) = 2.80\\ \\mathrm{m}$. ($F = 9.81 \\times 2.5 \\times 6 = 147\\ \\mathrm{kN}$.)"
  },
  {
   "id": "M-CE105-006",
@@ -753,7 +753,7 @@
    "117.7 kN"
   ],
   "answer": 1,
-  "explain": "F_V = weight of water above = ρg(πR²/4)w = 9.81 × π × 3 = 92.5 kN. F_H = ρg(R/2)(R·w) = 58.9 kN; resultant 109.6 kN."
+  "explain": "$F_V$ = weight of water above = $\\rho g(\\pi R^2/4)w = 9.81 \\times \\pi \\times 3 = 92.5\\ \\mathrm{kN}$. $F_H = \\rho g(R/2)(R \\cdot w) = 58.9\\ \\mathrm{kN}$; resultant 109.6 kN."
  },
  {
   "id": "M-CE105-007",
@@ -763,7 +763,7 @@
    "doc": "CE105/CE105_Pressure_and_Fluid_Statics.pdf",
    "page": 21
   },
-  "q": "A timber block 2 m × 0.5 m × 0.5 m (density 650 kg/m³) floats in seawater (1025 kg/m³) with its long axis horizontal. Its draft is closest to:",
+  "q": "A timber block 2 m × 0.5 m × 0.5 m (density $650\\ \\mathrm{kg/m^3}$) floats in seawater ($1025\\ \\mathrm{kg/m^3}$) with its long axis horizontal. Its draft is closest to:",
   "options": [
    "0.250 m",
    "0.317 m",
@@ -771,7 +771,7 @@
    "0.500 m"
   ],
   "answer": 1,
-  "explain": "Draft/height = ρ_b/ρ_w = 650/1025 = 0.634 → draft = 0.634 × 0.5 = 0.317 m."
+  "explain": "Draft/height = $\\rho_b/\\rho_w = 650/1025 = 0.634$ → draft = $0.634 \\times 0.5 = 0.317\\ \\mathrm{m}$."
  },
  {
   "id": "M-CE105-008",
@@ -789,7 +789,7 @@
    "2.75 m"
   ],
   "answer": 1,
-  "explain": "BM = I/V = (L·B³/12)/(L·B·d) = B²/(12d) = 36/18 = 2.0 m; KB = d/2 = 0.75 m; GM = KB + BM − KG = 0.75 + 2.0 − 2.0 = 0.75 m (> 0, stable)."
+  "explain": "$\\mathrm{BM} = I/V = (L \\cdot B^3/12)/(L \\cdot B \\cdot d) = B^2/(12d) = 36/18 = 2.0\\ \\mathrm{m}$; $\\mathrm{KB} = d/2 = 0.75\\ \\mathrm{m}$; $\\mathrm{GM} = \\mathrm{KB} + \\mathrm{BM} - \\mathrm{KG} = 0.75 + 2.0 - 2.0 = 0.75\\ \\mathrm{m}$ (> 0, stable)."
  },
  {
   "id": "M-CE105-009",
@@ -799,7 +799,7 @@
    "doc": "CE105/CE105_Pressure_and_Fluid_Statics.pdf",
    "page": 32
   },
-  "q": "An open tank of water accelerates horizontally at 2 m/s². The free surface tilts at an angle to the horizontal of about:",
+  "q": "An open tank of water accelerates horizontally at $2\\ \\mathrm{m/s^2}$. The free surface tilts at an angle to the horizontal of about:",
   "options": [
    "5.8°",
    "11.5°",
@@ -807,7 +807,7 @@
    "78.5°"
   ],
   "answer": 1,
-  "explain": "tan θ = a_x/(g + a_z) = 2/9.81 = 0.204 → θ = 11.5°."
+  "explain": "$\\tan\\theta = a_x/(g + a_z) = 2/9.81 = 0.204$ → $\\theta = 11.5^\\circ$."
  },
  {
   "id": "M-CE105-010",
@@ -825,7 +825,7 @@
    "4.59 m"
   ],
   "answer": 1,
-  "explain": "Δz_max = ω²R²/(2g) = 100 × 0.09/19.62 = 0.459 m."
+  "explain": "$\\Delta z_{\\max} = \\omega^2R^2/(2g) = 100 \\times 0.09/19.62 = 0.459\\ \\mathrm{m}$."
  },
  {
   "id": "M-CE105-011",
@@ -835,7 +835,7 @@
    "doc": "CE105/CE105_Pressure_and_Fluid_Statics.pdf",
    "page": 123
   },
-  "q": "Water flows at 0.2 m³/s round a horizontal 90° bend in a 300 mm pipe. Neglecting pressure and weight, the magnitude of the resultant force on the bend is closest to:",
+  "q": "Water flows at $0.2\\ \\mathrm{m^3/s}$ round a horizontal 90° bend in a 300 mm pipe. Neglecting pressure and weight, the magnitude of the resultant force on the bend is closest to:",
   "options": [
    "400 N",
    "566 N",
@@ -843,7 +843,7 @@
    "1131 N"
   ],
   "answer": 2,
-  "explain": "v = 0.2/(π × 0.3²/4) = 2.83 m/s; ρQv = 1000 × 0.2 × 2.83 = 566 N in each of x and y → resultant √2 × 566 = 800 N."
+  "explain": "$v = 0.2/(\\pi \\times 0.3^2/4) = 2.83\\ \\mathrm{m/s}$; $\\rho Qv = 1000 \\times 0.2 \\times 2.83 = 566\\ \\mathrm{N}$ in each of x and y → resultant $\\sqrt{2} \\times 566 = 800\\ \\mathrm{N}$."
  },
  {
   "id": "M-CE102-012",
@@ -861,7 +861,7 @@
    "198.9 MPa"
   ],
   "answer": 1,
-  "explain": "Double shear: V = P/2 = 10 kN on each plane; τ = V/A = 10 000/(π × 16²/4) = 49.7 MPa. (99.5 MPa would be single shear.)"
+  "explain": "Double shear: $V = P/2 = 10\\ \\mathrm{kN}$ on each plane; $\\tau = V/A = 10\\,000/(\\pi \\times 16^2/4) = 49.7\\ \\mathrm{MPa}$. (99.5 MPa would be single shear.)"
  },
  {
   "id": "M-CE102-013",
@@ -879,7 +879,7 @@
    "9549 Nm"
   ],
   "answer": 1,
-  "explain": "P = Tω, with ω = 2π × 300/60 = 31.4 rad/s → T = 50 000/31.4 = 1592 Nm."
+  "explain": "$P = T\\omega$, with $\\omega = 2\\pi \\times 300/60 = 31.4\\ \\mathrm{rad/s}$ → $T = 50\\,000/31.4 = 1592\\ \\mathrm{Nm}$."
  },
  {
   "id": "M-CE102-014",
@@ -889,7 +889,7 @@
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "page": 18
   },
-  "q": "A timber beam (E = 10 GPa) is reinforced with a 100 mm wide steel plate (E = 200 GPa). In the transformed section expressed in timber, the plate's equivalent width is:",
+  "q": "A timber beam ($E = 10\\ \\mathrm{GPa}$) is reinforced with a 100 mm wide steel plate ($E = 200\\ \\mathrm{GPa}$). In the transformed section expressed in timber, the plate's equivalent width is:",
   "options": [
    "5 mm",
    "100 mm",
@@ -897,7 +897,7 @@
    "2000 mm"
   ],
   "answer": 3,
-  "explain": "n = E_steel/E_timber = 20; scale widths only: b* = 20 × 100 = 2000 mm (depth unchanged). Steel stress = n × (My/I) of the transformed section."
+  "explain": "$n = E_{\\mathrm{steel}}/E_{\\mathrm{timber}} = 20$; scale widths only: $b^* = 20 \\times 100 = 2000\\ \\mathrm{mm}$ (depth unchanged). Steel stress = $n \\times (My/I)$ of the transformed section."
  },
  {
   "id": "M-CE102-015",
@@ -907,7 +907,7 @@
    "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
    "page": 22
   },
-  "q": "A 4 m cantilever (EI = 20 000 kNm²) carries a UDL of 10 kN/m. Using moment-area (parabolic spandrel: area bh/3, centroid 3b/4 from the vertex), the tip deflection is:",
+  "q": "A 4 m cantilever ($EI = 20\\,000\\ \\mathrm{kNm^2}$) carries a UDL of 10 kN/m. Using moment-area (parabolic spandrel: area bh/3, centroid 3b/4 from the vertex), the tip deflection is:",
   "options": [
    "8.0 mm",
    "12.8 mm",
@@ -915,7 +915,7 @@
    "32.0 mm"
   ],
   "answer": 2,
-  "explain": "M/EI spandrel: h = wL²/2EI, area = (L)(h)/3 = wL³/6EI, centroid 3L/4 from the tip → δ = wL⁴/8EI = 10 × 256/(8 × 20 000) = 0.016 m = 16 mm."
+  "explain": "M/EI spandrel: $h = wL^2/(2EI)$, area $= Lh/3 = wL^3/(6EI)$, centroid 3L/4 from the tip → $\\delta = wL^4/(8EI) = 10 \\times 256/(8 \\times 20\\,000) = 0.016\\ \\mathrm{m} = 16\\ \\mathrm{mm}$."
  },
  {
   "id": "M-CE102-016",
@@ -933,7 +933,7 @@
    "200.0 N"
   ],
   "answer": 2,
-  "explain": "Parallelogram: R² = a² + b² + 2ab cosθ = 6400 + 14 400 + 2 × 80 × 120 × 0.5 = 30 400 → R = 174.4 N. (105.8 N wrongly uses −2ab cosθ with the included angle of the force triangle mistaken.)"
+  "explain": "Parallelogram: $R^2 = a^2 + b^2 + 2ab \\cos\\theta = 6400 + 14\\,400 + 2 \\times 80 \\times 120 \\times 0.5 = 30\\,400$ → $R = 174.4\\ \\mathrm{N}$. (105.8 N wrongly uses $-2ab \\cos\\theta$ with the included angle of the force triangle mistaken.)"
  },
  {
   "id": "M-CE102-017",
@@ -951,6 +951,6 @@
    "100 kN"
   ],
   "answer": 2,
-  "explain": "Vertical reactions 10 kN each. Moment about the load point for half the cable: H × 1.0 = 10 × 5 → H = 50 kN. T_max = √(50² + 10²) = 51.0 kN (at the supports)."
+  "explain": "Vertical reactions 10 kN each. Moment about the load point for half the cable: $H \\times 1.0 = 10 \\times 5$ → $H = 50\\ \\mathrm{kN}$. $T_{\\mathrm{max}} = \\sqrt{50^2 + 10^2} = 51.0\\ \\mathrm{kN}$ (at the supports)."
  }
 ]

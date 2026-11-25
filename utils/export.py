@@ -9,6 +9,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import config
+from utils.latex_plain import to_plain
 from utils.formulas import LEGACY_NOTE, codes as formula_codes, sections
 from utils.syllabus import subject_map, topic_map
 
@@ -173,12 +174,12 @@ def to_pdf(codes: list[str] | None = None, notes: dict | None = None, pins: list
                 pdf.ln(1)
                 pdf.set_font("DejaVu", "B", 10.5)
                 pdf.set_text_color(r, g, b)
-                pdf.multi_cell(0, 5.5, sec["title"] + (f"   {cite(sec.get('src'))}" if sec.get("src") else ""),
+                pdf.multi_cell(0, 5.5, to_plain(sec["title"]) + (f"   {cite(sec.get('src'))}" if sec.get("src") else ""),
                                new_x="LMARGIN", new_y="NEXT")
                 pdf.set_text_color(0, 0, 0)
             for f in sec["items"]:
-                meta = " · ".join(x for x in [f["clause"], f["note"], cite(f.get("src"))] if x)
-                title = f["title"] + ("  ⚠ verify NA" if f["verify"] else "")
+                meta = to_plain(" · ".join(x for x in [f["clause"], f["note"], cite(f.get("src"))] if x))
+                title = to_plain(f["title"]) + ("  ⚠ verify NA" if f["verify"] else "")
                 if not f["latex"]:   # text-only key point
                     if pdf.get_y() + 10 > pdf.h - 14:
                         pdf.add_page()

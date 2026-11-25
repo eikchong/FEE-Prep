@@ -41,30 +41,32 @@ HYD = {}
 # ------------------------------------------------------------------ Part 1 → CE105
 HYD[D["H1"]] = {"code": "CE105", "title": "Hydraulics 1 · Dimensional homogeneity", "sections": [
  sec("Dimensions & the three rules", (1, 3),
-   ("md", "Fundamental dimensions **M, L, T**: [V] = L/T, [a] = L/T², [F] = ML/T². A physical equation must be "
-          "dimensionally homogeneous: (A) both sides have the same dimension, (B) every term of a sum has the same "
-          "dimension, (C) arguments of exp, log, trig functions are dimensionless (e.g. the log-law u = (u*/κ) ln(z/z₀))."),
+   ("md", "Fundamental dimensions **M, L, T**: $[V] = L/T$, $[a] = L/T^2$, $[F] = ML/T^2$. A physical "
+          "equation must be dimensionally homogeneous: (A) both sides have the same dimension, (B) every term "
+          "of a sum has the same dimension, (C) arguments of exp, log, trig functions are dimensionless (e.g. "
+          r"the log-law $u = (u_*/\kappa)\ln(z/z_0)$)."),
  ),
  sec("Working habit", (3, 4),
-   ("steps", ["Write symbols (g, ρ), not numbers with units.", "Manipulate symbolically to the end.",
+   ("steps", [r"Write symbols (g, $\rho$), not numbers with units.", "Manipulate symbolically to the end.",
               "Check homogeneity before substituting numbers.", "Always write units with the answer."]),
  ),
 ]}
 
 HYD[D["H2"]] = {"code": "CE105", "title": "Hydraulics 2 · Fluid properties", "sections": [
  sec("Fluid vs solid; stress convention", (1, 2),
-   ("md", "A fluid cannot resist shear at rest, however small. At rest the stress tensor is isotropic: T_ij = −p δ_ij. "
-          "T_ij acts on face i in direction j; positive on a positive face in +j."),
+   ("md", "A fluid cannot resist shear at rest, however small. At rest the stress tensor is isotropic: "
+          r"$T_{ij} = -p \delta_{ij}$. $T_{ij}$ acts on face i in direction j; positive on a positive face in "
+          "+j."),
  ),
  sec("Viscosity & no-slip", (2, 4),
    ("eq", r"\tau = \mu\frac{du}{dn},\qquad \nu = \frac{\mu}{\rho}\ [\mathrm{m^2/s}]"),
-   ("md", "Newtonian fluids (water, air) have constant μ at a given temperature (μ falls with T for liquids). Real fluids "
-          "obey **no-slip** at walls; an ideal fluid has μ = 0 and may slip."),
+   ("md", r"Newtonian fluids (water, air) have constant $\mu$ at a given temperature ($\mu$ falls with T for "
+          r"liquids). Real fluids obey **no-slip** at walls; an ideal fluid has $\mu = 0$ and may slip."),
  ),
  sec("Continuum & compressibility", (4, 7),
    ("eq", r"E_v = -\frac{dp}{dV/V} = \frac{dp}{d\rho/\rho},\qquad Kn = \frac{\lambda_{mfp}}{L} \ll 1"),
-   ("md", "Water E_v = 2.15 GPa: 100 MPa (10 km of water) changes density only ~5 % → treat as **incompressible** "
-          "(conservation of volume)."),
+   ("md", r"Water $E_v = 2.15\ \mathrm{GPa}$: 100 MPa (10 km of water) changes density only ~5 % → treat as "
+          "**incompressible** (conservation of volume)."),
  ),
 ]}
 
@@ -75,8 +77,9 @@ HYD[D["H3"]] = {"code": "CE105", "title": "Hydraulics 3 · Fluid statics, forces
           "level → same pressure."),
  ),
  sec("Transmission, piezometer & manometers", (6, 9),
-   ("md", "Hydraulic jack: F₂ = F₁A₂/A₁. Piezometer: p_A = ρgh (gauge only). U-tube: step through each fluid with "
-          "p + ρgz = const; for a differential manometer between two points of a flowing pipe,"),
+   ("md", r"Hydraulic jack: $F_2 = F_1A_2/A_1$. Piezometer: $p_A = \rho gh$ (gauge only). U-tube: step through "
+          r"each fluid with $p + \rho gz$ = const; for a differential manometer between two points of a "
+          "flowing pipe,"),
    ("eq", r"\left(\frac{p_A}{\rho g} + z_A\right) - \left(\frac{p_F}{\rho g} + z_F\right) = \Delta h\left(\frac{\rho_m}{\rho} - 1\right)"),
  ),
  sec("Plane surfaces", (10, 16),
@@ -86,9 +89,9 @@ HYD[D["H3"]] = {"code": "CE105", "title": "Hydraulics 3 · Fluid statics, forces
           "The centre of pressure approaches the centroid as depth increases."),
  ),
  sec("Curved surfaces", (17, 19),
-   ("md", "F_H = force on the projection onto a vertical plane (acts at its centre of pressure). F_V = weight of the "
-          "(real or imaginary) fluid column above the surface, through its centroid. 2-D resultant passes through the "
-          "intersection of the two lines of action."),
+   ("md", "$F_H$ = force on the projection onto a vertical plane (acts at its centre of pressure). $F_V$ = "
+          "weight of the (real or imaginary) fluid column above the surface, through its centroid. 2-D "
+          "resultant passes through the intersection of the two lines of action."),
  ),
  sec("Buoyancy", (19, 20),
    ("eq", r"F_B = \rho g V_{displaced}\ (\text{acts at the centroid of displaced volume, } B)"),
@@ -102,8 +105,8 @@ HYD[D["H3"]] = {"code": "CE105", "title": "Hydraulics 3 · Fluid statics, forces
 
 HYD[D["H4"]] = {"code": "CE105", "title": "Hydraulics 4 · Fluid kinematics", "sections": [
  sec("Lagrangian vs Eulerian; flow classification", (1, 2),
-   ("md", "Eulerian description: fields V(x, y, z, t). Steady (∂/∂t = 0) vs unsteady; uniform vs non-uniform; "
-          "1-D/2-D/3-D."),
+   ("md", r"Eulerian description: fields V(x, y, z, t). Steady ($\partial /\partial t = 0$) vs unsteady; "
+          "uniform vs non-uniform; 1-D/2-D/3-D."),
  ),
  sec("Acceleration field", (3, 5),
    ("eq", r"\mathbf a = \frac{\partial\mathbf V}{\partial t} + (\mathbf V\cdot\nabla)\mathbf V,\qquad a_s = \frac{\partial V}{\partial t} + V\frac{\partial V}{\partial s},\quad a_n = \frac{V^2}{R}"),
@@ -137,7 +140,8 @@ HYD[D["H6"]] = {"code": "CE105", "title": "Hydraulics 6 · Bernoulli equation & 
  ),
  sec("Free jets, orifices, vena contracta", (8, 11),
    ("eq", r"V = \sqrt{2gh}\ (\text{Torricelli}),\qquad Q = C_cA_o\sqrt{2gh}"),
-   ("md", "Streamlines contract after a sharp orifice: C_c ≈ 0.61 sharp-edged, ≈ 0.5 re-entrant (Borda), ≈ 1 rounded."),
+   ("md", r"Streamlines contract after a sharp orifice: $C_c \approx 0.61$ sharp-edged, ≈ 0.5 re-entrant "
+          "(Borda), ≈ 1 rounded."),
  ),
  sec("Pitot tube", (12, 13),
    ("eq", r"V = \sqrt{2(p_0 - p)/\rho}\quad(\text{stagnation} - \text{static})"),
@@ -151,32 +155,34 @@ HYD[D["H7"]] = {"code": "CE105", "title": "Hydraulics 7 · Reynolds transport th
  ),
  sec("RTT and mass/volume conservation", (2, 6),
    ("eq", r"\frac{dB_{sys}}{dt} = \frac{\partial}{\partial t}\int_{CV}\rho b\,dV + \int_{CS}\rho b\,(\mathbf V\cdot\mathbf n)\,dA"),
-   ("md", "b = 1 gives mass conservation; b = V gives momentum; b = e gives energy."),
+   ("md", "$b = 1$ gives mass conservation; $b = V$ gives momentum; $b = e$ gives energy."),
  ),
 ]}
 
 HYD[D["H8"]] = {"code": "CE105", "title": "Hydraulics 8 · Momentum principle", "sections": [
  sec("Linear momentum for a control volume", (1, 5),
    ("eq", r"\sum\mathbf F = \frac{\partial}{\partial t}\int_{CV}\rho\mathbf V\,dV + \sum_{out}\rho Q K_m\mathbf V - \sum_{in}\rho Q K_m\mathbf V"),
-   ("md", "K_m ≈ 1 for turbulent flow (4/3 laminar). Define the **hydraulic thrust** on a flow area, MP = (p + ρV²)A, "
-          "always pointing into the CV; at a free jet p = 0."),
+   ("md", r"$K_m \approx 1$ for turbulent flow (4/3 laminar). Define the **hydraulic thrust** on a flow area, "
+          r"$\mathrm{MP} = (p + \rho V^2)A$, always pointing into the CV; at a free jet $p = 0$."),
  ),
  sec("Steady flow: sum of thrusts + wall force = 0", (6, 7),
    ("eq", r"\sum MP_i + \mathbf F_{wall\to fluid} = 0\quad(\text{gravity added if relevant})"),
  ),
  sec("Applications: jet on plate, bend, Borda mouthpiece", (8, 13),
    ("eq", r"F_{plate} = \rho QV\ (\text{normal jet}),\qquad F_x = (p_1A_1 + \rho QV_1) - (p_2A_2 + \rho QV_2)\cos\theta"),
-   ("md", "Borda (re-entrant) mouthpiece: wall pressures are hydrostatic, so momentum gives **C_c = 0.5**."),
+   ("md", r"Borda (re-entrant) mouthpiece: wall pressures are hydrostatic, so momentum gives $\boldsymbol{C_c "
+          "= 0.5}$."),
  ),
 ]}
 
 HYD[D["H9"]] = {"code": "CE105", "title": "Hydraulics 9 · Energy principle & head losses", "sections": [
  sec("Mechanical energy of a particle", (1, 3),
-   ("md", "Total head H = p/ρg + V²/2g + z; pumps add H_p, turbines remove H_t, friction dissipates h_L."),
+   ("md", r"Total head $H = p/\rho g + V^2/2g + z$; pumps add $H_p$, turbines remove $H_t$, friction "
+          "dissipates $h_L$."),
  ),
  sec("Energy equation for a control volume", (3, 5),
    ("eq", r"\frac{p_1}{\rho g} + K_e\frac{V_1^2}{2g} + z_1 + H_p = \frac{p_2}{\rho g} + K_e\frac{V_2^2}{2g} + z_2 + H_t + h_L,\qquad P = \rho gQH"),
-   ("md", "Valid for steady flow between well-behaved sections; K_e ≈ 1 turbulent, 2 laminar."),
+   ("md", r"Valid for steady flow between well-behaved sections; $K_e \approx 1$ turbulent, 2 laminar."),
  ),
  sec("Head losses: friction & expansion", (5, 10),
    ("eq", r"h_f = f\frac{L}{D}\frac{V^2}{2g},\qquad h_{exp} = \frac{(V_1 - V_2)^2}{2g}\ (\text{Borda–Carnot}),\qquad h_{exit} = \frac{V^2}{2g}"),
@@ -186,75 +192,103 @@ HYD[D["H9"]] = {"code": "CE105", "title": "Hydraulics 9 · Energy principle & he
 
 HYD[D["TQ"]] = {"code": "CE105", "title": "Hydraulics practice · Tutorials 1–4 (questions & answers)", "sections": [
  sec("Tut 1 Q1 Micromanometer", (1, 1),
-   ("ex", "Answer", "Reservoir levels stay equal (A_t/A_r small) → **p₁ − p₂ = (γ₂ − γ₁)h**, so h = Δp/(γ₂ − γ₁) is "
-          "magnified when the two specific weights are close."),
+   ("ex", "Answer", r"Reservoir levels stay equal ($A_t/A_r$ small) → $\boldsymbol{p_1 - p_2 = (\gamma_2 - "
+                    r"\gamma_1)h}$, so $h = \Delta p/(\gamma_2 - \gamma_1)$ is magnified when the two specific "
+                    "weights are close."),
  ),
- sec("Tut 1 Q2 Oil-spill boom (ρ_oil 873, ρ_sw 1030; L 150 m, draft 0.30 m)", (2, 2),
-   ("ex", "Answers", "Equal pressure under the boom: oil depth = (ρ_w/ρ_o)h_D → V_max = (ρ_w/ρ_o)h_DL²/2π = "
-          "**1267 m³** (1.6 % of 500 000 bbl) · minimum freeboard/draft = ρ_w/ρ_o − 1 = **0.18** (≈ 1 : 5.6, i.e. "
-          "5.4 cm for the 30 cm draft — the extra freeboard covers waves and wind) · lead per extra cm on a 30 m section "
-          "= 1030 × 0.01 × 0.10 × 30 = **30.9 kg**."),
-   ("tip", "The solution prints the volume as 'm²' and says 'for a 40 cm draft' while using 30 cm — read it as m³ and 30 cm."),
+ sec(r"Tut 1 Q2 Oil-spill boom ($\rho_{\mathrm{oil}}$ 873, $\rho_{\mathrm{sw}}$ 1030; L 150 m, draft 0.30 m)", (2, 2),
+   ("ex", "Answers", r"Equal pressure under the boom: oil depth = $(\rho_w/\rho_o)h_D$ → $V_{\mathrm{max}} = "
+                     r"(\rho_w/\rho_o)h_{\mathrm{DL}}^2/2\pi = \boldsymbol{1267\ \mathrm{m^3}}$ (1.6 % of 500 "
+                     r"000 bbl) · minimum freeboard/draft = $\rho_w/\rho_o - 1 = \boldsymbol{0.18}$ (≈ 1 : "
+                     "5.6, i.e. 5.4 cm for the 30 cm draft — the extra freeboard covers waves and wind) · "
+                     r"lead per extra cm on a 30 m section = $1030 \times 0.01 \times 0.10 \times 30 = "
+                     r"\boldsymbol{30.9\ \mathrm{kg}}$."),
+   ("tip", r"The solution prints the volume as '$\mathrm{m^2}$' and says 'for a 40 cm draft' while using 30 cm "
+           r"— read it as $\mathrm{m^3}$ and 30 cm."),
  ),
  sec("Tut 2 Q1 Thin gate holding oil against seawater", (3, 3),
-   ("ex", "Answers", "Oil surface z_B = **+0.2 m** · p_D = 10 kPa both sides · below D the seawater pressures cancel · net "
-          "normal force 8.5 − 7.1 = 1.4 kN/m → **T_A = W ≈ 1.0 kN/m** · moments about A → z_E = −1.0 m."),
+   ("ex", "Answers", r"Oil surface $z_B = \boldsymbol{+0.2\ \mathrm{m}}$ · $p_D = 10\ \mathrm{kPa}$ both sides "
+                     r"· below D the seawater pressures cancel · net normal force $8.5 - 7.1 = 1.4\ "
+                     r"\mathrm{kN/m}$ → $\boldsymbol{T_A = W \approx 1.0\ \mathrm{kN/m}}$ · moments about A → "
+                     r"$z_E = -1.0\ \mathrm{m}$."),
  ),
- sec("Tut 2 Q2 Rectangular dam (B 10 m, H 36 m, μ = 1)", (4, 4),
-   ("ex", "Answers", "F_H = ½ρgH² = **6350 kN/m** at 24 m depth · friction 8467 kN/m > F_H → no sliding · overturning "
-          "moment 76 200 > restoring 42 335 kNm/m → **overturns** · B_min = √(F_H(H/3)/(½ρ_cgH)) = **13.4 m**."),
+ sec(r"Tut 2 Q2 Rectangular dam (B 10 m, H 36 m, $\mu = 1$)", (4, 4),
+   ("ex", "Answers", r"$F_H = \tfrac12 \rho gH^2 = \boldsymbol{6350\ \mathrm{kN/m}}$ at 24 m depth · friction "
+                     r"$8467\ \mathrm{kN/m} > F_H$ → no sliding · overturning moment 76 200 > restoring 42 335 "
+                     r"kNm/m → **overturns** · $B_{\mathrm{min}} = \sqrt{F_H(H/3)/(\tfrac12\rho_c gH)} = "
+                     r"\boldsymbol{13.4\ \mathrm{m}}$."),
  ),
- sec("Tut 3 Q1 Sluice gate (h₁ 6 m, h₂ 3 m)", (5, 5),
+ sec("Tut 3 Q1 Sluice gate ($h_1$ 6 m, $h_2$ 3 m)", (5, 5),
    ("eq", r"q = h_1h_2\sqrt{\frac{2g}{h_1 + h_2}}"),
-   ("ex", "Answer", "q = 18√(19.6/9) = **26.6 m²/s**."),
+   ("ex", "Answer", r"$q = 18\sqrt{19.6/9} = \boldsymbol{26.6\ \mathrm{m^2/s}}$."),
  ),
  sec("Tut 3 Q2 Venturi insecticide mixer", (6, 6),
-   ("ex", "Answers (Q = 1 gpm = 6.31 × 10⁻⁵ m³/s, Q_A = 1.26 × 10⁻⁶ m³/s)", "Feed-line velocity 11.07 m/s → p₁ = "
-          "**−62.7 kPa** (gauge) · nozzle V₃ = 12.7 m/s → V₁ = 16.9 m/s → throat D = **2.2 mm** · for large Q, p₁ ∝ Q² on "
-          "both branches, so Q_A/Q → constant (0.02)."),
-   ("tip", "The solution writes d_h = 2.5 × 10⁻⁴ m and 'Q = 5Q_A'; the working actually uses d_h = 2.54 mm and Q = 50Q_A."),
+   ("ex", r"Answers ($Q = 1$ gpm = $6.31 \times 10^{-5}\ \mathrm{m^3/s}$, $Q_A = 1.26 \times 10^{-6}\ "
+          r"\mathrm{m^3/s}$)", "Feed-line velocity 11.07 m/s → "
+                                                                            r"$p_1 = \boldsymbol{-62.7\ "
+                                                                            r"\mathrm{kPa}}$ (gauge) · nozzle "
+                                                                            r"$V_3 = 12.7\ \mathrm{m/s}$ → "
+                                                                            r"$V_1 = 16.9\ \mathrm{m/s}$ → "
+                                                                            r"throat $D = \boldsymbol{2.2\ "
+                                                                            r"\mathrm{mm}}$ · for large Q, "
+                                                                            r"$p_1 \propto Q^2$ on both "
+                                                                            "branches, so $Q_A/Q$ → constant "
+                                                                            "(0.02)."),
+   ("tip", r"The solution writes $d_h = 2.5 \times 10^{-4}\ \mathrm{m}$ and '$Q = 5Q_A$'; the working actually "
+           r"uses $d_h = 2.54\ \mathrm{mm}$ and $Q = 50Q_A$."),
  ),
  sec("Tut 4 Q1 Plane jet splitting on a floor", (7, 7),
-   ("ex", "Answers", "Vertical force **ρu₀²h₀ sin β** · speeds unchanged (Bernoulli, no gravity) · split "
-          "h_R = ½h₀(1 + cos β), h_L = ½h₀(1 − cos β) · gravity error < 5 % for drops up to **≈ 1 m** at 14 m/s."),
+   ("ex", "Answers", r"Vertical force $\boldsymbol{\rho u_0^2h_0 \sin\beta}$ · speeds unchanged (Bernoulli, no "
+                     r"gravity) · split $h_R = \tfrac12 h_0(1 + \cos\beta)$, $h_L = \tfrac12 h_0(1 - "
+                     r"\cos\beta)$ · gravity error < 5 % for drops up to **≈ 1 m** at 14 m/s."),
  ),
- sec("Tut 4 Q2 Semi-circular gate, q = 10 m²/s", (8, 8),
-   ("ex", "Answers", "C_c = 1.0/1.3 = **0.77** (> 0.6 for a sharp vertical gate — the curved lip turns the flow less) · "
-          "momentum: F = 193 − 105 = **88 kN/m** · if blocked, hydrostatic on the wetted 4.7 m: **108 kN/m** — larger "
-          "because flowing water lowers the pressure near the gate lip."),
+ sec(r"Tut 4 Q2 Semi-circular gate, $q = 10\ \mathrm{m^2/s}$", (8, 8),
+   ("ex", "Answers", r"$C_c = 1.0/1.3 = \boldsymbol{0.77}$ (> 0.6 for a sharp vertical gate — the curved lip "
+                     r"turns the flow less) · momentum: $F = 193 - 105 = \boldsymbol{88\ \mathrm{kN/m}}$ · if "
+                     "blocked, hydrostatic on the wetted 4.7 m: **108 kN/m** — larger because flowing water "
+                     "lowers the pressure near the gate lip."),
  ),
 ]}
 
 HYD[D["SE"]] = {"code": "CE105", "title": "Hydraulics practice · Self-evaluation questions (worked)", "sections": [
  sec("1 Viscosity", (1, 3),
-   ("ex", "1-1 to 1-3", "Film on an incline: τ_wall = 2μU/h = **4 × 10⁻³ Pa** · disc drive head: V = Rω = 532 m/s, "
-          "F = μVA/h = **0.15 N** · shaft in bearing: F = ρνU/δ · πDl = **286 N**."),
+   ("ex", "1-1 to 1-3", r"Film on an incline: $\tau_{\mathrm{wall}} = 2\mu U/h = \boldsymbol{4 \times 10^{-3}\ "
+                        r"\mathrm{Pa}}$ · disc drive head: $V = R\omega = 532\ \mathrm{m/s}$, $F = \mu VA/h = "
+                        r"\boldsymbol{0.15\ \mathrm{N}}$ · shaft in bearing: $F = \rho\nu U/\delta \cdot \pi "
+                        r"Dl = \boldsymbol{286\ \mathrm{N}}$."),
  ),
  sec("2 Manometers", (4, 5),
-   ("ex", "2-1, 2-2", "Pipe B: 60 + 0.8(9.8)(3) + 9.8(2) = **103.1 kPa**; dome C: 30.6 kPa = **229.5 mm Hg** · inverted "
-          "U-tube: step A→C→D→B, h from p_A − p_B = −5 kPa."),
+   ("ex", "2-1, 2-2", r"Pipe B: $60 + 0.8(9.8)(3) + 9.8(2) = \boldsymbol{103.1\ \mathrm{kPa}}$; dome C: 30.6 "
+                      r"kPa = **229.5 mm Hg** · inverted U-tube: step A→C→D→B, h from $p_A - p_B = -5\ "
+                      r"\mathrm{kPa}$."),
  ),
  sec("3 Forces on gates & dams", (6, 8),
-   ("ex", "3-1 hinged hatch / 3-2 dam with uplift", "Air pressure to open the hatch p₁ = p_A + ⅔(p_B − p_A) = "
-          "**104.5 kPa** · dam: with uplift and h = H the overturning side (5304) < resisting (6539) → always stable."),
+   ("ex", "3-1 hinged hatch / 3-2 dam with uplift", r"Air pressure to open the hatch $p_1 = p_A + \tfrac23 "
+                                                    r"(p_B - p_A) = \boldsymbol{104.5\ \mathrm{kPa}}$ · dam: "
+                                                    "with uplift and $h = H$ the overturning side (5304) < "
+                                                    "resisting (6539) → always stable."),
  ),
  sec("4 Kinematics & continuity", (9, 11),
-   ("ex", "4-1 to 4-3", "Diffuser: a = V₀(1 − x/l)[ce^{−ct} − (V₀/l)(1 − e^{−ct})²] → zero at t = 1 s for **c = 0.49 s⁻¹** "
-          "(local and convective terms cancel) · swirl: |V| = K/r, circular streamlines · mixing: ρ = (0.1 + 0.24)/0.4 → "
-          "**850 kg/m³**."),
+   ("ex", "4-1 to 4-3", r"Diffuser: $a = V_0(1 - x/l)[ce^{-ct} - (V_0/l)(1 - e^{-ct})^2]$ → zero at $t = 1\ "
+                        r"\mathrm{s}$ for $\boldsymbol{c = 0.49\ \mathrm{s^{-1}}}$ (local and convective terms "
+                        r"cancel) · swirl: $|V| = K/r$, circular streamlines · mixing: $\rho = (0.1 + "
+                        r"0.24)/0.4$ → $\boldsymbol{850\ \mathrm{kg/m^3}}$."),
  ),
  sec("5 Bernoulli", (12, 15),
-   ("ex", "5-1 to 5-4", "Tank with two outlets: V_B = 7.67, V_D = 11.71 m/s, **Q = 9.1 L/s**, p₁ = 57.8 kPa · jet on plate: "
-          "V = 1.59 m/s, Q = 0.2 L/s, H = 0.134 m · conical plug: **p = 154 Pa** · ramp: two physical depths 0.032 m and "
-          "5.2 m (third root negative)."),
+   ("ex", "5-1 to 5-4", r"Tank with two outlets: $V_B = 7.67$, $V_D = 11.71\ \mathrm{m/s}$, $\boldsymbol{Q = "
+                        r"9.1\ \mathrm{L/s}}$, $p_1 = 57.8\ \mathrm{kPa}$ · jet on plate: $V = 1.59\ "
+                        r"\mathrm{m/s}$, $Q = 0.2\ \mathrm{L/s}$, $H = 0.134\ \mathrm{m}$ · conical plug: "
+                        r"$\boldsymbol{p = 154\ \mathrm{Pa}}$ · ramp: two physical depths 0.032 m and 5.2 m "
+                        "(third root negative)."),
  ),
  sec("6 Momentum", (16, 18),
-   ("ex", "6-1 to 6-3", "Slit device: anchoring **66.7 N** · dredge: thrust ≈ **25.4 kN** · 180° bend: F_x = (2ρV² + p₁ + p₂)A "
-          "= **7.4 kN**, F_y = 0."),
+   ("ex", "6-1 to 6-3", "Slit device: anchoring **66.7 N** · dredge: thrust ≈ **25.4 kN** · 180° bend: $F_x = "
+                        r"(2\rho V^2 + p_1 + p_2)A = \boldsymbol{7.4\ \mathrm{kN}}$, $F_y = 0$."),
  ),
  sec("7 Energy", (19, 20),
-   ("ex", "7-1, 7-2", "Siphon: V = √(2g·2.44/1.8) = 5.16 m/s → **Q = 23.4 L/s** · river over rock pile: H₁ 1.39 > H₂ 1.29 m → "
-          "flows 1 → 2, **h_L = 0.10 m**."),
+   ("ex", "7-1, 7-2", r"Siphon: $V = \sqrt{2g \cdot 2.44/1.8} = 5.16\ \mathrm{m/s}$ → $\boldsymbol{Q = 23.4\ "
+                      r"\mathrm{L/s}}$ · river over rock pile: $H_1 = 1.39 > H_2 = 1.29\ \mathrm{m}$ → flows 1 "
+                      r"→ 2, $\boldsymbol{h_L = 0.10\ \mathrm{m}}$."),
  ),
 ]}
 
@@ -272,11 +306,12 @@ HYD[D["V1"]] = {"code": "CE205", "title": "Hydraulics II-1 · Course map & ways 
 ]}
 
 HYD[D["V2"]] = {"code": "CE205", "title": "Hydraulics II-2 · Stream function & velocity potential", "sections": [
- sec("Stream function ψ", (1, 9),
+ sec(r"Stream function $\psi$", (1, 9),
    ("eq", r"u = \frac{\partial\psi}{\partial y},\quad v = -\frac{\partial\psi}{\partial x};\qquad v_r = \frac{1}{r}\frac{\partial\psi}{\partial\theta},\quad v_\theta = -\frac{\partial\psi}{\partial r};\qquad q_{1\to2} = \psi_2 - \psi_1"),
-   ("md", "ψ = constant along a streamline; it satisfies continuity automatically; numbering is arbitrary."),
+   ("md", r"$\psi$ = constant along a streamline; it satisfies continuity automatically; numbering is "
+          "arbitrary."),
  ),
- sec("Velocity potential φ", (10, 16),
+ sec(r"Velocity potential $\phi$", (10, 16),
    ("eq", r"u = \frac{\partial\phi}{\partial x},\quad v = \frac{\partial\phi}{\partial y},\qquad \nabla^2\phi = 0,\ \nabla^2\psi = 0\ (\text{irrotational})"),
    ("md", "Equipotentials are orthogonal to streamlines → **flow nets** (also used for seepage)."),
  ),
@@ -288,22 +323,26 @@ HYD[D["V3"]] = {"code": "CE205", "title": "Hydraulics II-3 · Elementary flows, 
  ),
  sec("Curved flow; free & forced vortices", (7, 12),
    ("eq", r"\frac{dp}{dr} = \frac{\rho V^2}{r};\qquad \text{free: } V = \frac{C}{r}\ (\text{irrotational}),\qquad \text{forced: } V = \omega r,\ p = \frac{\rho\omega^2r^2}{2}"),
-   ("ex", "Forced vortex: Ø350 mm cylinder at 130 rad/s", "Wall pressure ρω²r²/2 = **258.8 kPa**; integrate over the lid "
-          "for the plate load."),
+   ("ex", "Forced vortex: Ø350 mm cylinder at 130 rad/s", r"Wall pressure $\rho\omega^2r^2/2 = "
+                                                          r"\boldsymbol{258.8\ \mathrm{kPa}}$; integrate over "
+                                                          "the lid for the plate load."),
  ),
  sec("Superposition: half-body, Rankine oval, cylinder", (13, 21),
-   ("md", "Laplace is linear → add solutions. Uniform + source = **half-body** (stagnation where U = Q/2πr). "
-          "Source + sink + uniform = Rankine oval; doublet + uniform = cylinder. Limits: no viscosity → no drag "
-          "(d'Alembert), no separation."),
+   ("md", r"Laplace is linear → add solutions. Uniform + source = **half-body** (stagnation where $U = Q/2\pi "
+          "r$). Source + sink + uniform = Rankine oval; doublet + uniform = cylinder. Limits: no viscosity → "
+          "no drag (d'Alembert), no separation."),
  ),
 ]}
 
 HYD[D["VX"]] = {"code": "CE205", "title": "Hydraulics II-3a · Flow-view examples", "sections": [
  sec("Worked examples", (1, 10),
-   ("ex", "Uniform + source (U 60 m/s in −x, Q_s 160 m³/s)", "Stagnation where U = Q_s/2πr → r = 160/(2π × 60) = "
-          "**0.424 m**; ψ = 0 traces the half-body surface."),
-   ("tip", "The slide text says '106 m³/s' but the working (160θ/2π, r = 0.424 m) uses 160 m³/s."),
-   ("ex", "Uniform 5 m/s in +x plus 5 m/s in −y", "ψ = 5y + 5x."),
+   ("ex", r"Uniform + source (U 60 m/s in −x, $Q_s = 160\ \mathrm{m^3/s}$)", r"Stagnation where $U = Q_s/2\pi r$ → $r = "
+                                                             r"160/(2\pi \times 60) = \boldsymbol{0.424\ "
+                                                             r"\mathrm{m}}$; $\psi = 0$ traces the half-body "
+                                                             "surface."),
+   ("tip", r"The slide text says '$106\ \mathrm{m^3/s}$' but the working ($160\theta/2\pi$, $r = 0.424\ "
+           r"\mathrm{m}$) uses $160\ \mathrm{m^3/s}$."),
+   ("ex", "Uniform 5 m/s in +x plus 5 m/s in −y", r"$\psi = 5y + 5x$."),
  ),
 ]}
 
@@ -316,25 +355,27 @@ HYD[D["R1"]] = {"code": "CE205", "title": "Hydraulics II-4 · Viscosity, laminar
    ("eq", r"\tau = \mu\frac{du}{dy},\qquad Re = \frac{\rho VL}{\mu} = \frac{VL}{\nu}"),
  ),
  sec("Transition & turbulence", (13, 23),
-   ("md", "Disturbances grow when inertia beats viscosity. Pipes: **laminar Re < 2000**, transitional to ~4000, "
-          "turbulent above. Turbulence: random fluctuations u = ū + u′, extra Reynolds stress −ρu′v′, flatter mean "
-          "profile, much higher mixing and losses; eddy-viscosity and mixing-length models (FYI)."),
+   ("md", r"Disturbances grow when inertia beats viscosity. Pipes: **laminar $\mathrm{Re} < 2000$**, "
+          r"transitional to ~4000, turbulent above. Turbulence: random fluctuations $u = \bar{u} + u'$, extra "
+          r"Reynolds stress $-\rho u'v'$, flatter mean profile, much higher mixing and losses; eddy-viscosity "
+          "and mixing-length models (FYI)."),
  ),
 ]}
 
 HYD[D["R2"]] = {"code": "CE205", "title": "Hydraulics II-5 · Boundary layers, drag, cavitation", "sections": [
  sec("Boundary layer thicknesses", (1, 6),
    ("eq", r"\delta^* = \int_0^\delta\left(1 - \frac{u}{U}\right)dy,\qquad \theta = \int_0^\delta\frac{u}{U}\left(1 - \frac{u}{U}\right)dy"),
-   ("md", "δ = where u = 0.99U. Re_x = Ux/ν; laminar to ~5 × 10⁵ on a flat plate."),
+   ("md", r"$\delta$ = where $u = 0.99U$. $Re_x = Ux/\nu$; laminar to ~$5 \times 10^5$ on a flat plate."),
  ),
  sec("Momentum integral (von Kármán)", (7, 10),
    ("eq", r"\tau_0 = \rho U^2\frac{d\theta}{dx}"),
-   ("md", "Pick a velocity profile → θ(δ) → τ₀ → δ(x) → integrate τ₀ for the plate drag."),
+   ("md", r"Pick a velocity profile → $\theta(\delta)$ → $\tau_0$ → $\delta(x)$ → integrate $\tau_0$ for the "
+          "plate drag."),
  ),
  sec("Bluff bodies, roughness, drag & vibration", (11, 14),
    ("eq", r"F_D = C_D\,\tfrac{1}{2}\rho U^2A"),
-   ("md", "Adverse pressure gradient → separation → wake (pressure drag dominates). Vortex shedding can excite "
-          "structures (St = fD/U ≈ 0.2 for cylinders)."),
+   ("md", "Adverse pressure gradient → separation → wake (pressure drag dominates). Vortex shedding can "
+          r"excite structures ($St = fD/U \approx 0.2$ for cylinders)."),
  ),
  sec("Bounded flows; cavitation & surface tension", (15, 18),
    ("md", "In pipes the boundary layers meet → **fully developed** flow after the entrance length. Cavitation when local "
@@ -344,12 +385,17 @@ HYD[D["R2"]] = {"code": "CE205", "title": "Hydraulics II-5 · Boundary layers, d
 
 HYD[D["RX"]] = {"code": "CE205", "title": "Hydraulics II-5a · Real-fluid examples (solutions)", "sections": [
  sec("Example 1 1/7-power boundary layer in a channel", (1, 4),
-   ("ex", "Depth 0.5 m, surface 2 m/s, δ = 0.2 m", "Re = 1000 × 2 × 0.5/1.14 × 10⁻³ = 8.8 × 10⁵ → turbulent · "
-          "δ* = δ/8 = **0.025 m** · θ = 7δ/72 = **0.0194 m**."),
+   ("ex", r"Depth 0.5 m, surface 2 m/s, $\delta = 0.2\ \mathrm{m}$", r"$\mathrm{Re} = 1000 \times 2 \times "
+                                                                     r"0.5/1.14 \times 10^{-3} = 8.8 \times "
+                                                                     r"10^5$ → turbulent · $\delta^* = "
+                                                                     r"\delta/8 = \boldsymbol{0.025\ "
+                                                                     r"\mathrm{m}}$ · $\theta = 7\delta/72 = "
+                                                                     r"\boldsymbol{0.0194\ \mathrm{m}}$."),
  ),
  sec("Example 2 plate drag", (5, 8),
-   ("md", "Momentum-integral method: assume the profile, get θ(δ), substitute an empirical τ₀(Re_δ), solve for δ(x) "
-          "and integrate τ₀ along the plate for the drag — same steps as HW1 Q12."),
+   ("md", r"Momentum-integral method: assume the profile, get $\theta(\delta)$, substitute an empirical "
+          r"$\tau_0(Re_{\delta})$, solve for $\delta(x)$ and integrate $\tau_0$ along the plate for the drag — "
+          "same steps as HW1 Q12."),
  ),
 ]}
 
@@ -361,8 +407,10 @@ HYD[D["Q1"]] = {"code": "CE205", "title": "Hydraulics II-6 · Pipe flow: momentu
    ("eq", r"u(r) = \frac{-dp^*/dx}{4\mu}(R^2 - r^2),\quad u_{max} = 2V,\quad h_f = \frac{32\mu LV}{\rho gD^2},\quad f = \frac{64}{Re}"),
  ),
  sec("Example: oil in a Ø25 mm pipe at 0.3 m/s", (16, 16),
-   ("ex", "ρ 800, μ 0.048, L 45 m", "Re = 125 (laminar) · h_f = **4.23 m** of oil (Δp = 33.2 kPa) · u_max = **0.6 m/s**, "
-          "u at 5 mm from wall = 0.6(1 − 0.6²) = **0.384 m/s**."),
+   ("ex", r"$\rho$ 800, $\mu$ 0.048, L 45 m", r"$\mathrm{Re} = 125$ (laminar) · $h_f = \boldsymbol{4.23\ \mathrm{m}}$ of "
+                                    r"oil ($\Delta p = 33.2\ \mathrm{kPa}$) · $u_{\mathrm{max}} = "
+                                    r"\boldsymbol{0.6\ \mathrm{m/s}}$, u at 5 mm from wall = $0.6(1 - 0.6^2) = "
+                                    r"\boldsymbol{0.384\ \mathrm{m/s}}$."),
  ),
 ]}
 
@@ -370,16 +418,36 @@ HYD[D["Q2"]] = {"code": "CE205", "title": "Hydraulics II-7 · Turbulent pipe fri
  sec("Darcy–Weisbach & friction factor", (1, 8),
    ("eq", r"h_f = f\frac{L}{D}\frac{V^2}{2g},\qquad \frac{1}{\sqrt f} = -2\log_{10}\left(\frac{k_s/D}{3.7} + \frac{2.51}{Re\sqrt f}\right)\ (\text{Colebrook–White})"),
    ("eq", r"\text{Haaland: } \frac{1}{\sqrt f} = -1.8\log_{10}\left[\left(\frac{k_s/D}{3.7}\right)^{1.11} + \frac{6.9}{Re}\right]"),
-   ("md", "Nikuradse: laminar, smooth turbulent (Blasius f = 0.316Re^{-1/4}), transitional, fully rough "
-          "(f depends only on k_s/D). Moody chart combines them; typical k_s: glass/Perspex ~0, new steel 0.045 mm, "
-          "concrete 0.3–3 mm."),
+   ("md", r"Nikuradse: laminar, smooth turbulent (Blasius $f = 0.316\,\mathrm{Re}^{-1/4}$), transitional, "
+          "fully rough (f depends only on $k_s/D$). Moody chart combines them; typical $k_s$: glass/Perspex "
+          "~0, new steel 0.045 mm, concrete 0.3–3 mm."),
  ),
  sec("Three problem types", (9, 14),
-   ("steps", ["Type 1 — find h_f (or pump pressure) given Q, D: direct (Re, k/D → f → h_f).",
-              "Type 2 — find Q given h_f, D: iterate on f, or use the explicit Swamee–Jain form for V.",
-              "Type 3 — find D given Q, h_f: iterate (guess D → f → h_f) until it matches."]),
-   ("ex", "Type 1: 0.01 m³/s through 75 mm smooth pipe, 100 m, into a 10 m reservoir", "V = 2.26 m/s, Re 1.7 × 10⁵, "
-          "f ≈ 0.0164 → p₁/ρg ≈ **15.3 m** → p₁ ≈ 153 kPa (g = 10)."),
+   ("steps", ["Type 1 — find $h_f$ (or pump pressure) given Q, D: direct (Re, k/D → f → $h_f$).",
+              "Type 2 — find Q given $h_f$, D: iterate on f, or use the explicit Swamee–Jain form for V.",
+              "Type 3 — find D given Q, $h_f$: iterate (guess D → f → $h_f$) until it matches."]),
+   ("ex", r"Type 1: $0.01\ \mathrm{m^3/s}$ through 75 mm smooth pipe, 100 m, into a 10 m reservoir", "$V = "
+                                                                                                     r"2.26\ "
+                                                                                                     r"\mathrm{m/s}$, "
+                                                                                                     r"$\mathrm{Re} "
+                                                                                                     "= 1.7 "
+                                                                                                     r"\times "
+                                                                                                     "10^5$, "
+                                                                                                     "$f "
+                                                                                                     r"\approx "
+                                                                                                     "0.0164$ "
+                                                                                                     "→ "
+                                                                                                     r"$p_1/\rho "
+                                                                                                     "g "
+                                                                                                     r"\approx "
+                                                                                                     r"\boldsymbol{15.3\ "
+                                                                                                     r"\mathrm{m}}$ "
+                                                                                                     "→ $p_1 "
+                                                                                                     r"\approx "
+                                                                                                     r"153\ "
+                                                                                                     r"\mathrm{kPa}$ "
+                                                                                                     "($g = "
+                                                                                                     "10$)."),
  ),
  sec("Hazen–Williams (practical)", (15, 15),
    ("eq", r"V = 0.849\,C\,R^{0.63}S^{0.54}\quad(\text{SI},\ R = D/4)"),
@@ -395,8 +463,9 @@ HYD[D["QX"]] = {"code": "CE205", "title": "Hydraulics II-7a · Pipe-flow worked 
    ("ex", "See II-6 (oil) and II-7 (pump pressure 15.3 m)", "Use the Moody chart or Colebrook; check Re first."),
  ),
  sec("Type 2 and Type 3 iterations", (7, 10),
-   ("md", "Type 2 (oil ρ 950, ν 2 × 10⁻⁵): unknown V → guess f, compute V and Re, update f until stable. Type 3 "
-          "(Q = 0.34 m³/s): guess D → V, Re, k/D → f → h_f; repeat until h_f matches the allowed value."),
+   ("md", r"Type 2 (oil $\rho$ 950, $\nu = 2 \times 10^{-5}$): unknown V → guess f, compute V and Re, update f "
+          r"until stable. Type 3 ($Q = 0.34\ \mathrm{m^3/s}$): guess D → V, Re, k/D → f → $h_f$; repeat until "
+          "$h_f$ matches the allowed value."),
  ),
 ]}
 
@@ -407,20 +476,23 @@ HYD[D["M1"]] = {"code": "CE205", "title": "Hydraulics II-8 · Pumps & turbines",
  ),
  sec("Radial pump: velocity triangles & Euler head", (8, 13),
    ("eq", r"T = \rho Q(r_2V_{t2} - r_1V_{t1}),\qquad H_{ideal} = \frac{u_2V_{t2} - u_1V_{t1}}{g},\qquad u = r\omega"),
-   ("md", "Real head < ideal: impeller and volute friction, shock at off-design, leakage/recirculation. Efficiency "
-          "η = ρgQH/P_shaft. Cavitation risk if suction pressure is too low (check NPSH available > required)."),
+   ("md", "Real head < ideal: impeller and volute friction, shock at off-design, leakage/recirculation. "
+          r"Efficiency $\eta = \rho gQH/P_{\mathrm{shaft}}$. Cavitation risk if suction pressure is too low "
+          "(check NPSH available > required)."),
  ),
  sec("Other rotodynamic pumps; example", (14, 15),
-   ("md", "Mixed- and axial-flow pumps for drainage and large flows. Select the pump so the operating point (pump "
-          "H–Q curve ∩ system curve H = Δz + kQ²) lies near peak efficiency."),
+   ("md", "Mixed- and axial-flow pumps for drainage and large flows. Select the pump so the operating point "
+          r"(pump H–Q curve ∩ system curve $H = \Delta z + kQ^2$) lies near peak efficiency."),
  ),
 ]}
 
 HYD[D["HW"]] = {"code": "CE205", "title": "Hydraulics II practice · Homework 1 steps", "sections": [
  sec("HW1 Q9–Q12", (1, 7),
-   ("ex", "Key results", "Q9 uniform 30 m/s + source 60 m³/s → stagnation at r = 60/(2π·30) = **0.318 m** · Q10–11 "
-          "Reynolds-number checks · Q12 turbulent plate drag: Re_δ = 9.98 × 10⁶δ, δ = 0.0148x^{0.8}, "
-          "τ₀ = 165x^{−0.2} → integrate → **F_s ≈ 82.5 N**."),
+   ("ex", "Key results", r"Q9 uniform 30 m/s + source $60\ \mathrm{m^3/s}$ → stagnation at $r = 60/(2\pi \cdot "
+                         r"30) = \boldsymbol{0.318\ \mathrm{m}}$ · Q10–11 Reynolds-number checks · Q12 "
+                         r"turbulent plate drag: $Re_{\delta} = 9.98 \times 10^6\delta$, $\delta = "
+                         r"0.0148x^{0.8}$, $\tau_0 = 165x^{-0.2}$ → integrate → $\boldsymbol{F_s \approx 82.5\ "
+                         r"\mathrm{N}}$."),
    ("md", "HW1 Q1–Q2 (Part 1): forces on a submerged trapezoidal block and a multi-fluid manometer — work them with "
           "the fluid-statics rules."),
  ),

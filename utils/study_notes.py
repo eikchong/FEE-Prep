@@ -57,31 +57,48 @@ STUDY[S1] = {"code": "CE102", "title": "S1 · Statics of particles", "sections":
  sec("Resultant of forces: parallelogram law & Cartesian components", (18, 30),
    ("md", "**Parallelogram law** (two forces at a time) with the triangle rules:"),
    ("eq", r"R^2 = a^2 + b^2 - 2ab\cos\gamma \qquad \frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{R}{\sin\gamma}"),
-   ("md", "γ is the angle *inside the force triangle* opposite R (= 180° − angle between the two forces). "
-          "For several forces, resolve into **Cartesian components** and add:"),
+   ("md", r"$\gamma$ is the angle *inside the force triangle* opposite R (= 180° − angle between the two "
+          "forces). For several forces, resolve into **Cartesian components** and add:"),
    ("eq", r"R_x = \sum F_x,\quad R_y = \sum F_y,\quad R = \sqrt{R_x^2 + R_y^2},\quad \theta = \tan^{-1}\frac{R_y}{R_x}"),
-   ("ex", "Example 1.6", "Two forces 300 N and 350 N combined by cosine then sine rule: R = 175.0 N; direction "
-          "found from the triangle angle 89.13° → 30.87° from the horizontal."),
-   ("ex", "Example 1.8 (eyebolt, three ropes)", "F₁ = 80 N, F₂ = 120 N, F₃ = 50 N resolved with a consistent sign "
-          "convention → ΣFx = 94.34 N, ΣFy = 132.35 N → R = 162.5 N at 54.5° — the object moves in that direction."),
+   ("ex", "Example 1.6", r"Two forces 300 N and 350 N combined by cosine then sine rule: $R = 175.0\ "
+                         r"\mathrm{N}$; direction found from the triangle angle 89.13° → 30.87° from the "
+                         "horizontal."),
+   ("ex", "Example 1.8 (eyebolt, three ropes)", r"$F_1 = 80\ \mathrm{N}$, $F_2 = 120\ \mathrm{N}$, $F_3 = 50\ "
+                                                r"\mathrm{N}$ resolved with a consistent sign convention → "
+                                                r"$\sum F_x = 94.34\ \mathrm{N}$, $\sum F_y = 132.35\ "
+                                                r"\mathrm{N}$ → $R = 162.5\ \mathrm{N}$ at 54.5° — the object "
+                                                "moves in that direction."),
    ("ex", "Example 1.9 (trolley)", "Choose P so that the resultant of P and 1400 N is vertical: sketch the "
-          "parallelogram with R vertical, then sine rule gives P and R (or set ΣFx = 0)."),
+                                   r"parallelogram with R vertical, then sine rule gives P and R (or set $\sum "
+                                   "F_x = 0$)."),
    ("tip", "Always state your sign convention before summing components."),
  ),
  sec("Equilibrium of a particle", (31, 43),
    ("md", "Concurrent forces → the body can be treated as a **particle**. It is in **equilibrium** when the "
           "resultant is zero:"),
    ("eq", r"\sum F_x = 0,\qquad \sum F_y = 0"),
-   ("ex", "Example 1.10 (lifting a 3000 N beam with a 2-leg sling)", "Symmetric legs: 2T sinθ = 3000. With "
-          "T_max = 6500 N, sinθ = 3000/13 000 → θ = 13.34°; shortest total rope = 2 × 1.5/cos13.34° = 3.08 m. "
-          "Smaller angles need less rope but give larger rope forces."),
-   ("ex", "Example 1.11 (100 kg tank, 2 m rope over a pulley)", "Frictionless pulley ⇒ equal tension and equal "
-          "angles. 2T sinθ = 981 N. Points A–B (0.6 m apart): θ = 53.13°, T = 613 N; points C–D (0.3 m): "
-          "θ = 72.54°, T = 514 N → use C–D."),
-   ("ex", "Cable ABC 2.5 m over a pulley, 25 kg", "Geometry gives cosθ = 1.5/2.5 → θ = 53.13°, "
-          "T = 245.3/(2 sin53.13°) = 153.3 N; then x = 0.64 m from the triangle geometry."),
-   ("tut", "Tutorial 1 Q1 — scoreboard (9 kN) on cable ABC: choose the cable length so that T ≤ 20 kN and the "
-           "drop d ≤ 0.3 m (particle equilibrium at B, 2T sinθ = W)."),
+   ("ex", "Example 1.10 (lifting a 3000 N beam with a 2-leg sling)", r"Symmetric legs: $2T \sin\theta = 3000$. "
+                                                                     r"With $T_{\mathrm{max}} = 6500\ "
+                                                                     r"\mathrm{N}$, $\sin\theta = "
+                                                                     r"3000/13\,000$ → $\theta = 13.34^\circ$; "
+                                                                     r"shortest total rope = $2 \times "
+                                                                     r"1.5/\cos 13.34^\circ = 3.08\ "
+                                                                     r"\mathrm{m}$. Smaller angles need less "
+                                                                     "rope but give larger rope forces."),
+   ("ex", "Example 1.11 (100 kg tank, 2 m rope over a pulley)", "Frictionless pulley ⇒ equal tension and "
+                                                                r"equal angles. $2T \sin\theta = 981\ "
+                                                                r"\mathrm{N}$. Points A–B (0.6 m apart): "
+                                                                r"$\theta = 53.13^\circ$, $T = 613\ "
+                                                                r"\mathrm{N}$; points C–D (0.3 m): $\theta = "
+                                                                r"72.54^\circ$, $T = 514\ \mathrm{N}$ → use "
+                                                                "C–D."),
+   ("ex", "Cable ABC 2.5 m over a pulley, 25 kg", r"Geometry gives $\cos\theta = 1.5/2.5$ → $\theta = "
+                                                  r"53.13^\circ$, $T = 245.3/(2 \sin 53.13^\circ) = 153.3\ "
+                                                  r"\mathrm{N}$; then $x = 0.64\ \mathrm{m}$ from the triangle "
+                                                  "geometry."),
+   ("tut", r"Tutorial 1 Q1 — scoreboard (9 kN) on cable ABC: choose the cable length so that $T \le 20\ "
+           r"\mathrm{kN}$ and the drop $d \le 0.3\ \mathrm{m}$ (particle equilibrium at B, $2T \sin\theta = "
+           "W$)."),
  ),
 ]}
 
@@ -97,14 +114,14 @@ STUDY[S2] = {"code": "CE102", "title": "S2 · Equilibrium of rigid bodies", "sec
           "— giving the same answer."),
  ),
  sec("Couples & equivalent force–couple systems", (8, 16),
-   ("md", "A **couple** = two equal, opposite, non-collinear parallel forces. Its moment **M = Fd is the same "
-          "about every point**. A force F acting at distance d from point A ≡ the same force through A **plus** a "
-          "couple M = Fd."),
+   ("md", "A **couple** = two equal, opposite, non-collinear parallel forces. Its moment **$M = Fd$ is the "
+          "same about every point**. A force F acting at distance d from point A ≡ the same force through A "
+          "**plus** a couple $M = Fd$."),
    ("eq", r"\mathbf{R} = \sum \mathbf{F}_i,\qquad M_A^R = \sum M_A(\mathbf{F}_i)"),
    ("ex", "Example 2.2 (traffic light pole)", "Two 20 kg lights replaced at the pole base by a vertical force "
           "392.4 N and a moment 784.8 Nm."),
-   ("ex", "Example 2.3 (canopy beam)", "Forces 5 kN, 10 kN and a 6 kN sling → single resultant 10.3 kN, located "
-          "by equating moments about A: x = 0.87 m."),
+   ("ex", "Example 2.3 (canopy beam)", "Forces 5 kN, 10 kN and a 6 kN sling → single resultant 10.3 kN, "
+                                       r"located by equating moments about A: $x = 0.87\ \mathrm{m}$."),
  ),
  sec("Rigid-body equilibrium, supports, two- & three-force members", (17, 25),
    ("eq", r"\sum F_x = 0,\qquad \sum F_y = 0,\qquad \sum M_O = 0"),
@@ -113,8 +130,11 @@ STUDY[S2] = {"code": "CE102", "title": "S2 · Equilibrium of rigid bodies", "sec
           "- **Two-force member:** the two forces are equal, opposite and **collinear** (along the line joining the "
           "two points).\n"
           "- **Three-force member:** the three forces are **concurrent or parallel**."),
-   ("ex", "Example 2.4 (crane boom with cable CD over a pulley)", "Moments about the pin A → T_CD = 93.8 kN; force "
-          "equations give A along/perpendicular to the boom (112.6 kN, 15.1 kN), i.e. 69.5 kN and 90.0 kN in x–y."),
+   ("ex", "Example 2.4 (crane boom with cable CD over a pulley)", r"Moments about the pin A → $T_{\mathrm{CD}} "
+                                                                  r"= 93.8\ \mathrm{kN}$; force equations give "
+                                                                  "A along/perpendicular to the boom (112.6 "
+                                                                  "kN, 15.1 kN), i.e. 69.5 kN and 90.0 kN in "
+                                                                  "x–y."),
    ("tip", "Take moments about the point where the most unknowns pass — each equation then gives one unknown."),
    ("tut", "Tutorial 1 Q2 — jib crane for a 6 kN engine (with dynamic factor): position of the hoist that "
            "governs the tie-rod force and pin reactions."),
@@ -123,9 +143,9 @@ STUDY[S2] = {"code": "CE102", "title": "S2 · Equilibrium of rigid bodies", "sec
  ),
  sec("Case study: Leaning Tower of Pisa", (26, 34),
    ("md", "Weight 144 MN acting at the C.G. (27.1 m up a 58.2 m tower tilted 5.6°) is eccentric to the 19.6 m "
-          "base → overturning moment. Assume soil pressure p = C + 0.625 r cosθ and integrate over the circular base "
-          "in polar coordinates: ΣF_y = 0 gives C, ΣM_EW = 0 gives the linear term. Maximum pressure at the "
-          "southern edge (r = R = 9.8 m, θ = 0)."),
+          r"base → overturning moment. Assume soil pressure $p = C + 0.625 r \cos\theta$ and integrate over "
+          r"the circular base in polar coordinates: $\sum F_y = 0$ gives C, $\sum M_{\mathrm{EW}} = 0$ gives "
+          r"the linear term. Maximum pressure at the southern edge ($r = R = 9.8\ \mathrm{m}$, $\theta = 0$)."),
  ),
 ]}
 
@@ -150,24 +170,31 @@ STUDY[S3] = {"code": "CE102", "title": "S3 · Truss structures", "sections": [
               "be concurrent or parallel).",
               "Choose the simpler side as the free body.",
               "Take **moments about the intersection of two unknowns** to get the third directly.",
-              "Use ΣF in the remaining direction for the last one."]),
+              r"Use $\sum F$ in the remaining direction for the last one."]),
    ("ex", "Worked example (15 kN, 5 kN loads)", "Cut through CE, CD, BD; moments about D and C give the chord "
-          "forces, ΣF_y gives the diagonal."),
+                                                r"forces, $\sum F_y$ gives the diagonal."),
  ),
  sec("Solution strategy for a whole truss", (20, 21),
    ("steps", ["FBD of the entire truss as one rigid body.",
               "Find the support reactions (as many as needed).",
-              "Inspect every joint — is it special? Mark zero-force members (e.g. F_BC = 0).",
+              r"Inspect every joint — is it special? Mark zero-force members (e.g. $F_{\mathrm{BC}} = 0$).",
               "Use joints or sections for the required members, remembering which reactions are known."]),
  ),
  sec("Real-world truss failures & analysis", (22, 47),
-   ("ex", "Example 3.1 — I-35W Mississippi bridge (2007)", "Causes: under-designed gusset plates, +20 % self-weight "
-          "from added overlay, construction loads during repairs. Modelled as simply supported spans; reactions "
-          "1114.3 kN and 1485.7 kN; by sections: F_DE = 2905 kN (T, most critical), F_KL = 2743 kN (C), "
-          "F_GK = 2118 kN (C) — using moment centres at member intersections, including an imaginary point R."),
-   ("ex", "Skagit River bridge (2013)", "A tall truck load struck upper members. Single span by joints with equal "
-          "loads P: bottom chord all tension, top chord all compression (truss acts like a beam); critical CD and "
-          "DE = 4.80P (T). Homework: add a horizontal impact force F — use superposition."),
+   ("ex", "Example 3.1 — I-35W Mississippi bridge (2007)", "Causes: under-designed gusset plates, +20 % "
+                                                           "self-weight from added overlay, construction "
+                                                           "loads during repairs. Modelled as simply "
+                                                           "supported spans; reactions 1114.3 kN and 1485.7 "
+                                                           r"kN; by sections: $F_{\mathrm{DE}} = 2905\ "
+                                                           r"\mathrm{kN}$ (T, most critical), $F_{\mathrm{KL}} "
+                                                           r"= 2743\ \mathrm{kN}$ (C), $F_{\mathrm{GK}} = "
+                                                           r"2118\ \mathrm{kN}$ (C) — using moment centres at "
+                                                           "member intersections, including an imaginary "
+                                                           "point R."),
+   ("ex", "Skagit River bridge (2013)", "A tall truck load struck upper members. Single span by joints with "
+                                        "equal loads P: bottom chord all tension, top chord all compression "
+                                        "(truss acts like a beam); critical CD and DE ($4.80P$, T). Homework: "
+                                        "add a horizontal impact force F — use superposition."),
    ("tip", "A truss under gravity behaves like a beam: top chord compression, bottom chord tension, largest chord "
            "forces near midspan, largest diagonals near the supports."),
    ("tut", "Tutorial 1 Q3 — water-tank tower under wind (3 kPa): choose the minimum stable bracing pattern that "
@@ -196,10 +223,16 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
  ),
  sec("Machines & frames — examples", (7, 25),
    ("ex", "Example 4.1 — backhoe dislodging a 5 kN slab", "Slab FBD (rough at K, smooth at J) → bucket force "
-          "P = 3.97 kN; bucket GHJ → F_CG = 2.67 kN; arm ABCH → F_AD = 11.45 kN; continue to EF and pin I."),
-   ("ex", "Example 4.2 — billboard frames (240 kg, 3 frames)", "Share the load by tributary length: edge frame takes "
-          "W/4 → P = 294.3 N at each hanger. Entire frame → links BG and DG; frame ABCI → AF; frame CDE → EH. "
-          "Avoid solving pin forces you don't need; check with ΣM about another point."),
+                                                          r"$P = 3.97\ \mathrm{kN}$; bucket GHJ → "
+                                                          r"$F_{\mathrm{CG}} = 2.67\ \mathrm{kN}$; arm ABCH → "
+                                                          r"$F_{\mathrm{AD}} = 11.45\ \mathrm{kN}$; continue "
+                                                          "to EF and pin I."),
+   ("ex", "Example 4.2 — billboard frames (240 kg, 3 frames)", "Share the load by tributary length: edge "
+                                                               r"frame takes W/4 → $P = 294.3\ \mathrm{N}$ at "
+                                                               "each hanger. Entire frame → links BG and DG; "
+                                                               "frame ABCI → AF; frame CDE → EH. Avoid "
+                                                               "solving pin forces you don't need; check with "
+                                                               r"$\sum M$ about another point."),
    ("tut", "Tutorial 2 Q4 — pin-connected structure: tension in rod BD and pin forces; then choose the 'best' "
            "position of D along CE by tabulating the forces against x."),
  ),
@@ -207,23 +240,28 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
    ("md", "Cables resist **tension only**. Between point loads each segment is straight (a two-force member). "
           "There are **4 support unknowns** but only 3 global equations → one extra piece of information is needed: "
           "the **position of one point**, the **tension or slope** somewhere, or the **total length**."),
-   ("steps", ["FBD of the whole cable; write one equation in the chosen primary unknowns (e.g. ΣM_B = 0 for A_x, A_y).",
-              "Cut at the point with extra information and take moments about the cut (position known), or use "
-              "ΣF with the known tension/slope.",
-              "If only the length L_c is known: cut at every load, one moment equation per cut, plus the length "
-              "equation below.",
+   ("steps", [r"FBD of the whole cable; write one equation in the chosen primary unknowns (e.g. $\sum M_B = 0$ "
+              "for $A_x$, $A_y$).",
+              "Cut at the point with extra information and take moments about the cut (position known), or "
+              r"use $\sum F$ with the known tension/slope.",
+              "If only the length $L_c$ is known: cut at every load, one moment equation per cut, plus the "
+              "length equation below.",
               "Then get each segment's slope and tension; the horizontal component is the same everywhere."]),
    ("eq", r"L_c = \sum_{i=1}^{n+1}\sqrt{(x_i - x_{i-1})^2 + (y_i - y_{i-1})^2}"),
-   ("tip", "With no horizontal loads T_x is constant, so the **steepest segment carries the largest tension**."),
+   ("tip", "With no horizontal loads $T_x$ is constant, so the **steepest segment carries the largest "
+           "tension**."),
  ),
  sec("Cable examples", (37, 45),
-   ("ex", "Example 4.3 — crate hung from a cable via beam EF", "All points known → slopes AB 36.87°, BC 26.57°, "
-          "CD 45° (steepest → critical, T_CD = 900 N). Equilibrium at C then B gives the hanger forces; beam EF "
-          "then gives the largest crate weight and its position x."),
-   ("ex", "Example 4.4 (homework)", "Sag y_C unknown → trial T_AB until the first segment reaches 700 N; find the "
-          "largest mass of cylinder F."),
-   ("tut", "Tutorial 2 Q5 — traffic lights (15 kg, 30 kg) on a cable: sag y₂ ≤ 1.0 m and T ≤ 1000 N → minimum "
-           "cable length and the sags at all load points."),
+   ("ex", "Example 4.3 — crate hung from a cable via beam EF", "All points known → slopes AB 36.87°, BC "
+                                                               "26.57°, CD 45° (steepest → critical, "
+                                                               r"$T_{\mathrm{CD}} = 900\ \mathrm{N}$). "
+                                                               "Equilibrium at C then B gives the hanger "
+                                                               "forces; beam EF then gives the largest crate "
+                                                               "weight and its position x."),
+   ("ex", "Example 4.4 (homework)", r"Sag $y_C$ unknown → trial $T_{\mathrm{AB}}$ until the first segment "
+                                    "reaches 700 N; find the largest mass of cylinder F."),
+   ("tut", r"Tutorial 2 Q5 — traffic lights (15 kg, 30 kg) on a cable: sag $y_2 \le 1.0\ \mathrm{m}$ and $T "
+           r"\le 1000\ \mathrm{N}$ → minimum cable length and the sags at all load points."),
  ),
 ]}
 
@@ -231,60 +269,92 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
 STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members", "sections": [
  sec("Statics vs mechanics of materials", (3, 5),
    ("md", "**Statics** gives forces from equilibrium (bodies assumed rigid). **Mechanics of materials** adds "
-          "stress–force, strain–deformation and stress–strain relations so we can find deformation.\n\n"
-          "- Statically **determinate**: FBD + equilibrium → forces; then σ–ε gives deformation.\n"
-          "- Statically **indeterminate**: also need **compatibility** (geometry of the deformed structure)."),
+          "stress–force, strain–deformation and stress–strain relations so we can find deformation.\n\n- "
+          r"Statically **determinate**: FBD + equilibrium → forces; then $\sigma\text{–}\varepsilon$ gives "
+          "deformation.\n- Statically **indeterminate**: also need **compatibility** (geometry of the deformed "
+          "structure)."),
  ),
  sec("Stress, strain & the stress–strain relationship", (6, 13),
-   ("md", "Stress at a point = limit of ΔF/ΔA: **normal** σ (perpendicular) and **shear** τ (in-plane). Sign: a stress "
-          "on a positive face in a positive direction is positive (τ_ij: i = face, j = direction)."),
+   ("md", r"Stress at a point = limit of $\Delta F/\Delta A$: **normal** $\sigma$ (perpendicular) and "
+          r"**shear** $\tau$ (in-plane). Sign: a stress on a positive face in a positive direction is positive "
+          r"($\tau_{ij}$: i = face, j = direction)."),
    ("eq", r"\sigma_{avg} = \frac{P}{A} \qquad \tau_{avg} = \frac{V}{A} \qquad \text{double shear: } V = \frac{P}{2}"),
    ("eq", r"\varepsilon = \frac{\Delta L}{L} \qquad \gamma_{xy} = \text{change of the right angle (rad)}"),
-   ("md", "Mild steel σ–ε: linear elastic (slope **E**) → yield plateau → strain hardening → necking/failure."),
+   ("md", r"Mild steel $\sigma\text{–}\varepsilon$: linear elastic (slope **E**) → yield plateau → strain "
+          "hardening → necking/failure."),
    ("eq", r"\varepsilon_{yy} = \varepsilon_{zz} = -\nu\,\varepsilon_{xx}\quad\text{(uniaxial)};\qquad "
           r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right]"),
    ("md", "The second form (**generalised Hooke's law**) superposes the strains from normal stresses in all three "
           "directions."),
-   ("tut", "Tutorial 3 Q1(b) — air-inflated fabric under biaxial σx = 120 MPa, σz = 160 MPa (E = 87 GPa, ν = 0.34): "
-           "change in length of the sides and the diagonal."),
+   ("tut", r"Tutorial 3 Q1(b) — air-inflated fabric under biaxial $\sigma_x = 120\ \mathrm{MPa}$, $\sigma_z = "
+           r"160\ \mathrm{MPa}$ ($E = 87\ \mathrm{GPa}$, $\nu = 0.34$): change in length of the sides and the "
+           "diagonal."),
  ),
  sec("Allowable stress & factor of safety; design examples", (14, 25),
    ("eq", r"n_s = \frac{P_{failure}}{P_{allowable}} = \frac{\sigma_{failure}}{\sigma_{allowable}} \geq 1"),
-   ("ex", "Example 1.1 — mountain-bike suspension pins (P = 1800 N, τ_ult = 150 MPa)",
-    "Equilibrium of ABD → F_BC = 8858 N. Pins in **double shear** carry V/2 each: minimum d_B = 8.67 mm; "
-    "pin D (resultant 7354.5 N) d_D = 7.9 mm."),
-   ("ex", "Example 1.2 — cast-in anchor (a = 30 mm, h = 100 mm, d = 10 mm)",
+   ("ex", r"Example 1.1 — mountain-bike suspension pins ($P = 1800\ \mathrm{N}$, $\tau_{\mathrm{ult}} = 150\ "
+          r"\mathrm{MPa}$)",
+    r"Equilibrium of ABD → $F_{\mathrm{BC}} = 8858\ \mathrm{N}$. Pins in **double shear** carry V/2 each: "
+    r"minimum $d_B = 8.67\ \mathrm{mm}$; pin D (resultant 7354.5 N) $d_D = 7.9\ \mathrm{mm}$."),
+   ("ex", r"Example 1.2 — cast-in anchor ($a = 30\ \mathrm{mm}$, $h = 100\ \mathrm{mm}$, $d = 10\ "
+          r"\mathrm{mm}$)",
     "Check each failure mode — concrete shear (cylinder surface), concrete cone tension + shear (truncated cone, "
     "45°), concrete tension, bolt tension — compute P for each; the **smallest P governs**."),
-   ("tut", "Tutorial 3 Q1(a) — connecting rod AB: maximum allowable piston force from σ_c on the rod "
+   ("tut", r"Tutorial 3 Q1(a) — connecting rod AB: maximum allowable piston force from $\sigma_c$ on the rod "
            "(depends on the crank geometry R/L)."),
  ),
  sec("Deformation of axially loaded members", (26, 29),
    ("eq", r"\delta = \frac{PL}{EA} \qquad \delta = \sum_i \frac{P_iL_i}{E_iA_i} \qquad \delta = \int_0^L\frac{P(x)}{E\,A(x)}dx"),
    ("md", "Use internal axial force of each segment (cut and draw an FBD), not the applied loads."),
-   ("tut", "Tutorial 3 Q2(a) — tapered plate (width 2a → a): δ = (PL/Eta) ln 2. Q2(b) — hanging mine cable with "
-           "self-weight: strain varies linearly along the cable."),
+   ("tut", r"Tutorial 3 Q2(a) — tapered plate (width 2a → a): $\delta = (PL/Eta) \ln 2$. Q2(b) — hanging mine "
+           "cable with self-weight: strain varies linearly along the cable."),
  ),
  sec("Statically indeterminate members & compatibility", (30, 31),
    ("eq", r"\text{degree of indeterminacy} = \text{no. of unknowns} - \text{no. of equilibrium equations}"),
-   ("steps", ["Equilibrium equation(s).", "Compatibility (e.g. total δ = 0 between fixed ends).",
-              "Force–deformation δ = PL/EA; solve together."]),
+   ("steps", ["Equilibrium equation(s).", r"Compatibility (e.g. total $\delta = 0$ between fixed ends).",
+              r"Force–deformation $\delta = PL/EA$; solve together."]),
  ),
  sec("Truss deflections by geometry", (32, 35),
-   ("md", "Members elongate/shorten by δ = NL/EA and the joint must move so that all members stay connected."),
-   ("ex", "Example 1.3 (P = 15 kN, A = 100 mm², E = 200 GPa)", "Joint C: F_AC = 9.375 kN (C), F_BC from cosθ = 4/5, "
-          "sinθ = 3/5; member shortenings → geometry of the displaced joint C′ → (δ_C)vert ≈ 1.46 mm."),
-   ("tut", "Tutorial 3 Q3(a) — choose the angle θ for a two-bar truss of minimum weight at equal allowable stress."),
+   ("md", r"Members elongate/shorten by $\delta = NL/EA$ and the joint must move so that all members stay "
+          "connected."),
+   ("ex", r"Example 1.3 ($P = 15\ \mathrm{kN}$, $A = 100\ \mathrm{mm^2}$, $E = 200\ \mathrm{GPa}$)", "Joint "
+                                                                                                     "C: "
+                                                                                                     r"$F_{\mathrm{AC}} "
+                                                                                                     "= "
+                                                                                                     r"9.375\ "
+                                                                                                     r"\mathrm{kN}$ "
+                                                                                                     "(C), "
+                                                                                                     r"$F_{\mathrm{BC}}$ "
+                                                                                                     "from "
+                                                                                                     r"$\cos\theta "
+                                                                                                     "= 4/5$, "
+                                                                                                     r"$\sin\theta "
+                                                                                                     "= 3/5$; "
+                                                                                                     "member "
+                                                                                                     "shortenings "
+                                                                                                     "→ "
+                                                                                                     "geometry "
+                                                                                                     "of the "
+                                                                                                     "displaced "
+                                                                                                     "joint "
+                                                                                                     "$C'$ → "
+                                                                                                     r"$(\delta_C)_{\mathrm{vert}} "
+                                                                                                     r"\approx "
+                                                                                                     r"1.46\ "
+                                                                                                     r"\mathrm{mm}$."),
+   ("tut", r"Tutorial 3 Q3(a) — choose the angle $\theta$ for a two-bar truss of minimum weight at equal "
+           "allowable stress."),
  ),
  sec("Pile foundations; rigid bars on cables", (36, 48),
    ("md", "**Pile load test:** kentledge (concrete blocks) and hydraulic jacks check the calculated capacity on a few "
           "piles."),
-   ("ex", "Example 1.4 — 300 mm bored pile, P = 2000 kN, skin friction increasing linearly with depth",
+   ("ex", r"Example 1.4 — 300 mm bored pile, $P = 2000\ \mathrm{kN}$, skin friction increasing linearly with "
+          "depth",
     "Equilibrium → friction intensity 266.7 kN/m at the toe (22.2y kN/m); internal force P(y) varies → "
-    "δ = ∫P(y)dy/AE = 5.28 mm."),
+    r"$\delta = \int P(y)dy/AE = 5.28\ \mathrm{mm}$."),
    ("ex", "Example 1.6 — rigid bar ABD on cables BC and CD (6 kN/m)",
     "One moment equation + compatibility from the rotated rigid bar (similar triangles) and cable geometry "
-    "(δ_cable = δ_vertical cosθ) → solve the two cable forces."),
+    r"($\delta_{\mathrm{cable}} = \delta_{\mathrm{vertical}} \cos\theta$) → solve the two cable forces."),
    ("tut", "Tutorial 3 Q3(b) — rigid ABCD on brass and aluminium rods: displacement of D under 40 kN."),
  ),
 ]}
@@ -292,45 +362,57 @@ STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members
 # ============================================================== M2 Torsion
 STUDY[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
  sec("Torsion formula & polar second moment", (3, 9),
-   ("md", "Assumptions (circular shafts): axis stays straight, sections stay **plane and circular**, radial lines stay "
-          "straight, small rotations, linear elastic. Shear strain γ = r dθ/dx grows linearly with r."),
+   ("md", "Assumptions (circular shafts): axis stays straight, sections stay **plane and circular**, radial "
+          r"lines stay straight, small rotations, linear elastic. Shear strain $\gamma = r\,d\theta/dx$ grows "
+          "linearly with r."),
    ("eq", r"\tau = \frac{T\,r}{J},\qquad \tau_{max} = \frac{T\,c}{J}"),
    ("eq", r"J_{solid} = \frac{\pi R^4}{2} = \frac{\pi D^4}{32},\qquad J_{hollow} = \frac{\pi}{2}(R_2^4 - R_1^4) = \frac{\pi}{32}(D_2^4 - D_1^4)"),
  ),
  sec("Angle of twist; axial–torsion analogy; limitations", (10, 14),
    ("eq", r"\phi = \frac{TL}{GJ},\qquad \phi = \sum_i\frac{T_iL_i}{G_iJ_i},\qquad \phi = \int_0^L\frac{T(x)}{G\,J(x)}dx"),
-   ("md", "| Axial | Torsion |\n|---|---|\n| δ = FL/EA | θ = TL/GJ |\n| σ = F/A | τ = Tr/J |\n\n"
-          "Valid only for **circular** sections, linear elastic; ignores stress concentrations at abrupt changes. "
-          "Sign: **right-hand rule** (thumb outward from the cut face = positive)."),
+   ("md", "| Axial | Torsion |\n|---|---|\n| $\\delta = FL/EA$ | $\\theta = TL/GJ$ |\n| $\\sigma = F/A$ | $\\tau = "
+          "Tr/J$ |\n\nValid only for **circular** sections, linear elastic; ignores stress concentrations at "
+          "abrupt changes. Sign: **right-hand rule** (thumb outward from the cut face = positive)."),
  ),
  sec("Statically determinate shafts; bolted couplings; distributed torque", (15, 26),
-   ("ex", "Example 2.1 — 35 mm shaft, torques 30/25/40/65/80 Nm", "Internal torques by sections: T_AB = −30, "
-          "T_BC = −55, T_CD = −15, T_DE = −80 Nm. J = 147 324 mm⁴; |T|max = 80 Nm → τ_max ≈ 9.5 MPa; "
-          "φ_A/E = ΣTL/JG over the four segments."),
-   ("ex", "Example 2.2 — bolted coupling (shaft r = 30 mm, bolts d = 10 mm on R = 75 mm)",
-    "'Shaft fails before bolts': bolts in shear, T = n·(τ·πd²/4)·R vs shaft T = τ·J/c → n ≥ 7.2 → **8 bolts**."),
-   ("ex", "Example 2.3 — drill pipe with end torque T_A and friction torque rising linearly to t₀",
-    "Equilibrium T_B = T_A + t₀L/2; internal torque varies along the pipe → φ by integration."),
-   ("tut", "Tutorial 4 Q4(a) — geared shafts (G = 80 GPa, d₁ = 40 mm, d₂ = 30 mm, T = 400 Nm): rotation at D and "
-           "τ_max in each shaft (gear ratio transfers torque and rotation). Q4(b) — rod with linearly varying "
-           "distributed torque reaction: t₀ and twist at A."),
+   ("ex", "Example 2.1 — 35 mm shaft, torques 30/25/40/65/80 Nm", "Internal torques by sections: "
+                                                                  r"$T_{\mathrm{AB}} = -30$, $T_{\mathrm{BC}} "
+                                                                  r"= -55$, $T_{\mathrm{CD}} = -15$, "
+                                                                  r"$T_{\mathrm{DE}} = -80\ \mathrm{Nm}$. $J = "
+                                                                  r"147\,324\ \mathrm{mm^4}$; $|T|_{\max} = "
+                                                                  r"80\ \mathrm{Nm}$ → $\tau_{\mathrm{max}} "
+                                                                  r"\approx 9.5\ \mathrm{MPa}$; $\phi_{A/E} = "
+                                                                  r"\sum TL/(JG)$ over the four segments."),
+   ("ex", r"Example 2.2 — bolted coupling (shaft $r = 30\ \mathrm{mm}$, bolts $d = 10\ \mathrm{mm}$ on $R = "
+          r"75\ \mathrm{mm}$)",
+    r"'Shaft fails before bolts': bolts in shear, $T = n \cdot (\tau \cdot \pi d^2/4) \cdot R$ vs shaft $T = "
+    r"\tau \cdot J/c$ → $n \ge 7.2$ → **8 bolts**."),
+   ("ex", "Example 2.3 — drill pipe with end torque $T_A$ and friction torque rising linearly to $t_0$",
+    r"Equilibrium $T_B = T_A + t_0L/2$; internal torque varies along the pipe → $\phi$ by integration."),
+   ("tut", r"Tutorial 4 Q4(a) — geared shafts ($G = 80\ \mathrm{GPa}$, $d_1 = 40\ \mathrm{mm}$, $d_2 = 30\ "
+           r"\mathrm{mm}$, $T = 400\ \mathrm{Nm}$): rotation at D and $\tau_{\mathrm{max}}$ in each shaft "
+           "(gear ratio transfers torque and rotation). Q4(b) — rod with linearly varying distributed torque "
+           "reaction: $t_0$ and twist at A."),
  ),
  sec("Power transmission", (27, 31),
    ("eq", r"P = T\omega,\qquad \omega = \frac{2\pi N}{60}\ \text{rad/s},\qquad 1\ \text{hp} = 0.745\ \text{kW}"),
-   ("ex", "Example 2.4 — car drive shaft (thin tube, d_o = 55 mm, 180 hp at 1500 rpm)",
-    "ω = 157.1 rad/s, P = 134.1 kW → T = 853.6 Nm; τ_allow → d_i ≤ 45.2 mm → minimum wall 4.9 mm; then check the "
-    "twist limit."),
-   ("ex", "Example 2.5 (homework)", "Helicopter rotor shaft: 600 hp at 1200 rpm, τ_allow = 55 MPa (plus twist limit)."),
+   ("ex", r"Example 2.4 — car drive shaft (thin tube, $d_o = 55\ \mathrm{mm}$, 180 hp at 1500 rpm)",
+    r"$\omega = 157.1\ \mathrm{rad/s}$, $P = 134.1\ \mathrm{kW}$ → $T = 853.6\ \mathrm{Nm}$; "
+    r"$\tau_{\mathrm{allow}}$ → $d_i \le 45.2\ \mathrm{mm}$ → minimum wall 4.9 mm; then check the twist limit."),
+   ("ex", "Example 2.5 (homework)", r"Helicopter rotor shaft: 600 hp at 1200 rpm, $\tau_{\mathrm{allow}} = 55\ "
+                                    r"\mathrm{MPa}$ (plus twist limit)."),
  ),
  sec("Statically indeterminate torsion", (32, 40),
-   ("steps", ["Equilibrium: T_A + T_B = applied torques.",
+   ("steps", ["Equilibrium: $T_A + T_B$ = applied torques.",
               "Compatibility: total twist between the fixed ends = 0 (or a known gap/slip).",
-              "Internal torques by sections; φ = ΣTL/GJ; solve."]),
-   ("ex", "Example 2.6 — shower-curtain hanger (d_o = 30 mm, t = 1.5 mm, G = 74 GPa, end A free to rotate 0.005 rad)",
-    "If A were loose the twist would exceed 0.005 rad, so A engages: T_A = 8.43 Nm, T_B = 11.57 Nm; "
-    "τ_max = 15.6 MPa in segment CD (28.4 Nm)."),
-   ("ex", "Example 2.7 — rubber annulus spring", "Shear stress τ = T/(2πr²h) decreases with radius; twist of the "
-          "shaft by integrating γ across the annulus."),
+              r"Internal torques by sections; $\phi = \sum TL/GJ$; solve."]),
+   ("ex", r"Example 2.6 — shower-curtain hanger ($d_o = 30\ \mathrm{mm}$, $t = 1.5\ \mathrm{mm}$, $G = 74\ "
+          r"\mathrm{GPa}$, end A free to rotate 0.005 rad)",
+    r"If A were loose the twist would exceed 0.005 rad, so A engages: $T_A = 8.43\ \mathrm{Nm}$, $T_B = 11.57\ "
+    r"\mathrm{Nm}$; $\tau_{\mathrm{max}} = 15.6\ \mathrm{MPa}$ in segment CD (28.4 Nm)."),
+   ("ex", "Example 2.7 — rubber annulus spring", r"Shear stress $\tau = T/(2\pi r^2h)$ decreases with radius; "
+                                                 r"twist of the shaft by integrating $\gamma$ across the "
+                                                 "annulus."),
  ),
 ]}
 
@@ -343,28 +425,37 @@ STUDY[M3] = {"code": "CE102", "title": "M3 · Flexural members (SFD & BMD)", "se
  ),
  sec("Load–shear–moment relations", (7, 11),
    ("eq", r"\frac{dV}{dx} = -q \qquad \frac{dM}{dx} = V \qquad V_B - V_A = -\int_A^B q\,dx \qquad M_B - M_A = \int_A^B V\,dx"),
-   ("md", "- q = 0 → V constant, M linear. Uniform q → V linear, M parabolic.\n"
-          "- **Point load P (down):** V drops by P; M has a kink (no jump).\n"
-          "- **Applied couple M₀:** V unchanged; M jumps by M₀.\n"
-          "- **M is maximum where V = 0** (or changes sign)."),
+   ("md", "- $q = 0$ → V constant, M linear. Uniform q → V linear, M parabolic.\n- **Point load P (down):** V "
+          "drops by P; M has a kink (no jump).\n- **Applied couple $M_0$:** V unchanged; M jumps by $M_0$.\n- "
+          "**M is maximum where $V = 0$** (or changes sign)."),
  ),
  sec("Sketching procedure", (12, 12),
    ("steps", ["FBD with loads, reactions and dimensions.", "Support reactions from equilibrium.",
               "Vertical construction lines at every load change.",
               "SFD segment by segment, left to right (start = left reaction).",
-              "BMD from the SFD areas; check M = 0 at free/pinned ends."]),
+              "BMD from the SFD areas; check $M = 0$ at free/pinned ends."]),
  ),
  sec("Worked examples", (13, 36),
-   ("ex", "Example 3.1 — gymnast P on a 5 m balance beam, 1.5 m from A", "R_A = 0.7P, R_B = 0.3P; M_max = 1.05P "
-          "under the load. Case 2: general position x → M_max = P x(5 − x)/5."),
+   ("ex", "Example 3.1 — gymnast P on a 5 m balance beam, 1.5 m from A", "$R_A = 0.7P$, $R_B = 0.3P$; "
+                                                                         r"$M_{\mathrm{max}} = 1.05P$ under "
+                                                                         "the load. Case 2: general position "
+                                                                         r"x → $M_{\mathrm{max}} = P x(5 - "
+                                                                         "x)/5$."),
    ("ex", "Example 3.2 — engine crane boom (5 kN)", "Hydraulic cylinder is a two-force member at 68.2° → its "
-          "force from ΣM_A (≈ 17.5 kN), pin A from force equations; SFD/BMD of the boom."),
-   ("ex", "Chair frame ABC–BD (person on the seat)", "Replace by an equivalent FBD; M = 495 Nm at B."),
+                                                    r"force from $\sum M_A$ ($\approx 17.5\ \mathrm{kN}$), pin "
+                                                    "A from force equations; SFD/BMD of the boom."),
+   ("ex", "Chair frame ABC–BD (person on the seat)", r"Replace by an equivalent FBD; $M = 495\ \mathrm{Nm}$ at "
+                                                     "B."),
    ("ex", "Example 3.3 — RC pier cap (stringer loads 60/45 kN, self-weight 8 kN/m)", "Symmetric: reactions "
-          "163.5 kN each; M = −136 kNm over the supports and −54.75 kNm at midspan (hogging throughout)."),
-   ("ex", "Spliced timber beam (8 kN/m)", "V = 0 at 1.5 m from A → M_max(+) = 9 kNm; M = 0 at 3 m → **best "
-          "location for the splice**."),
-   ("ex", "Ski on snow (0.8 kN, trapezoidal reaction)", "Equilibrium → w = 0.533 kN/m, then SFD/BMD."),
+                                                                                     "163.5 kN each; $M = "
+                                                                                     r"-136\ \mathrm{kNm}$ "
+                                                                                     "over the supports and "
+                                                                                     "−54.75 kNm at midspan "
+                                                                                     "(hogging throughout)."),
+   ("ex", "Spliced timber beam (8 kN/m)", r"$V = 0$ at 1.5 m from A → $M_{\mathrm{max}}(+) = 9\ \mathrm{kNm}$; "
+                                          "$M = 0$ at 3 m → **best location for the splice**."),
+   ("ex", "Ski on snow (0.8 kN, trapezoidal reaction)", r"Equilibrium → $w = 0.533\ \mathrm{kN/m}$, then "
+                                                        "SFD/BMD."),
    ("tut", "Tutorial 4 Q5(a) — beam with overhang and point loads: SFD/BMD, maxima and deflected shape. "
            "Q5(b) — aircraft wing as a tapered cantilever: reactions at the fuselage, SFD/BMD."),
  ),
@@ -373,14 +464,14 @@ STUDY[M3] = {"code": "CE102", "title": "M3 · Flexural members (SFD & BMD)", "se
 # ============================================================== M4 Bending stress
 STUDY[M4] = {"code": "CE102", "title": "M4 · Stress & strain due to bending", "sections": [
  sec("Curvature & bending strain", (3, 7),
-   ("md", "Plane sections remain plane and normal to the axis; the beam bends into a circular arc of radius ρ. "
-          "Fibres above the neutral surface shorten, below lengthen (for +M)."),
+   ("md", "Plane sections remain plane and normal to the axis; the beam bends into a circular arc of radius "
+          r"$\rho$. Fibres above the neutral surface shorten, below lengthen (for +M)."),
    ("eq", r"\kappa = \frac{1}{\rho} = \frac{d\theta}{ds},\qquad \varepsilon_x = -\frac{y}{\rho} = -\kappa y"),
  ),
  sec("Normal stress, neutral axis & flexure formula", (8, 12),
    ("eq", r"\sigma_x = E\varepsilon_x = -E\kappa y"),
-   ("md", "ΣF_x = 0 (pure bending) ⇒ ∫y dA = 0 ⇒ **neutral axis through the centroid** (linear elastic). "
-          "ΣM = M gives the moment–curvature relation (EI = flexural rigidity):"),
+   ("md", r"$\sum F_x = 0$ (pure bending) ⇒ $\int y\,dA = 0$ ⇒ **neutral axis through the centroid** (linear "
+          r"elastic). $\sum M = M$ gives the moment–curvature relation ($EI$ = flexural rigidity):"),
    ("eq", r"\kappa = \frac{M}{EI} \qquad \sigma_x = -\frac{My}{I} \qquad \sigma_{max} = \frac{M}{S},\ S = \frac{I}{c}"),
    ("tip", "+M: tension below the N.A., compression above. Under the same M the section with the larger S has "
            "the smaller stress."),
@@ -392,19 +483,32 @@ STUDY[M4] = {"code": "CE102", "title": "M4 · Stress & strain due to bending", "
  ),
  sec("Composite beams — transformed section", (17, 20),
    ("eq", r"n = \frac{E_2}{E_1},\quad b^* = nb \qquad \sigma_1 = -\frac{My}{I_t},\quad \sigma_2 = -n\frac{My}{I_t}"),
-   ("md", "Transform material 2 into material 1 by scaling **widths only** (depth unchanged); find the N.A. and "
-          "I_t of the transformed section. Examples: timber + steel plate, concrete slab on steel beam, RC."),
+   ("md", "Transform material 2 into material 1 by scaling **widths only** (depth unchanged); find the N.A. "
+          "and $I_t$ of the transformed section. Examples: timber + steel plate, concrete slab on steel beam, "
+          "RC."),
  ),
  sec("Worked examples & applications", (21, 47),
    ("ex", "Example 4.1 — glued hollow timber box", "Top and bottom boards resist **85.9 %** of M (force resultant "
           "of the trapezoidal stress block × lever arm) → webs can be thinned."),
    ("ex", "Built-up 15 mm boards — two layouts for 150 kNm", "Compare section moduli; the larger S gives the lower "
           "stress."),
-   ("ex", "Example 4.2 — diving board (80 kg at the tip)", "M_max = 1962 Nm at support B; T-shaped section: "
-          "N.A. 11.4 mm from the top, I = 5.1 × 10⁵ mm⁴ → σ = Mc/I ≈ 43.9 MPa at that face (check the other face too)."),
-   ("ex", "Example 4.3 — timber railway tie (70 kN rails, uniform ballast reaction 60.87 kN/m)", "M_max = 12.25 kNm "
-          "→ required thickness t = 98.4 mm from σ_allow and S = bt²/6."),
-   ("ex", "Composite concrete slab on steel I-beam (σ_c ≤ 15, σ_s ≤ 165 MPa)", "Transform concrete into steel "
+   ("ex", "Example 4.2 — diving board (80 kg at the tip)", r"$M_{\mathrm{max}} = 1962\ \mathrm{Nm}$ at support "
+                                                           "B; T-shaped section: N.A. 11.4 mm from the top, "
+                                                           r"$I = 5.1 \times 10^5\ \mathrm{mm^4}$ → $\sigma = "
+                                                           r"Mc/I \approx 43.9\ \mathrm{MPa}$ at that face "
+                                                           "(check the other face too)."),
+   ("ex", "Example 4.3 — timber railway tie (70 kN rails, uniform ballast reaction 60.87 kN/m)", r"$M_{\mathrm{max}} "
+                                                                                                 r"= 12.25\ "
+                                                                                                 r"\mathrm{kNm}$ "
+                                                                                                 "→ required "
+                                                                                                 "thickness "
+                                                                                                 r"$t = 98.4\ "
+                                                                                                 r"\mathrm{mm}$ "
+                                                                                                 "from "
+                                                                                                 r"$\sigma_{\mathrm{allow}}$ "
+                                                                                                 "and $S = "
+                                                                                                 "bt^2/6$."),
+   ("ex", r"Composite concrete slab on steel I-beam ($\sigma_c \le 15$, $\sigma_s \le 165\ \mathrm{MPa}$)", "Transform concrete into steel "
           "(b/n); N.A. 177 mm/323 mm; check which material reaches its limit first — the smaller moment governs."),
    ("md", "Applications: aluminium truss girders (I by parallel-axis of the chord tubes), **castellated beams** "
           "(cut and re-weld an I-beam → deeper, stiffer for the same steel)."),
@@ -418,16 +522,16 @@ STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": 
  sec("Elastic curve & direct integration", (3, 13),
    ("eq", r"\kappa \approx \frac{d^2y}{dx^2} \quad\Rightarrow\quad EI\,y'' = M(x),\quad EI\,y''' = V,\quad EI\,y'''' = -q"),
    ("steps", ["Write M(x) for each segment (one function per segment).",
-              "Integrate twice: EIy′ = ∫M dx + C₁, EIy = ∫∫M + C₁x + C₂.",
-              "Boundary conditions at supports (y = 0; y′ = 0 at fixed ends).",
-              "Continuity of y and y′ where segments meet."]),
+              r"Integrate twice: $EIy' = \int M\,dx + C_1$, $EIy = \iint M\,dx\,dx + C_1x + C_2$.",
+              "Boundary conditions at supports ($y = 0$; $y' = 0$ at fixed ends).",
+              "Continuity of y and $y'$ where segments meet."]),
    ("ex", "Example 5.1 — garden bench (two equal loads P on overhangs a, span b)",
-    "Three segments; BCs y = 0 at A and B, continuity of slope. Results: θ_A = Pab/2EI, "
-    "δ_mid = Pab²/8EI (upward), δ_end = Pa²(2a + 3b)/6EI."),
+    r"Three segments; BCs $y = 0$ at A and B, continuity of slope. Results: $\theta_A = Pab/(2EI)$, "
+    r"$\delta_{\mathrm{mid}} = Pab^2/(8EI)$ (upward), $\delta_{\mathrm{end}} = Pa^2(2a + 3b)/(6EI)$."),
  ),
  sec("Superposition", (14, 14),
-   ("md", "EIy″ = M is **linear**, so deflections/slopes from separate load cases can be **added** (use standard "
-          "tables)."),
+   ("md", "$EIy'' = M$ is **linear**, so deflections/slopes from separate load cases can be **added** (use "
+          "standard tables)."),
    ("tut", "Tutorial 4 Q6(b) — span 3L with a point load at L and UDL over the last third: maximum deflection and "
            "its location (superposition or integration)."),
  ),
@@ -436,20 +540,36 @@ STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": 
    ("md", "1st theorem: change in slope between A and B = **area** of the M/EI diagram. 2nd theorem: deviation of B "
           "from the tangent at A = **first moment of that area about B**. Angles +ve anticlockwise; B to the right "
           "of A. Draw M/EI **by parts** (one diagram per load) to use standard shapes:"),
-   ("md", "| Shape | Area | Centroid from the zero end |\n|---|---|---|\n| rectangle | bh | b/2 |\n"
-          "| triangle | bh/2 | 2b/3 |\n| parabolic spandrel (y ∝ x²) | bh/3 | 3b/4 |\n| n-th degree spandrel | bh/(n+1) | "
-          "(n+1)b/(n+2) |"),
+   ("md", "| Shape | Area | Centroid from the zero end |\n|---|---|---|\n| rectangle | bh | b/2 |\n| triangle | "
+          "bh/2 | 2b/3 |\n| parabolic spandrel ($y \\propto x^2$) | bh/3 | 3b/4 |\n| n-th degree spandrel | "
+          "bh/(n+1) | (n+1)b/(n+2) |"),
  ),
  sec("Applications & examples", (24, 50),
-   ("ex", "Onshore pipeline span (stainless steel, d_o = 330 mm, t = 6 mm, w = 1.4 kN/m)",
-    "Treat one span as simply supported; M/EI diagram; t_B/A and t_C/A → midspan deflection; maximum span from the "
-    "allowable deflection."),
-   ("ex", "Example 5.3 — fibre-reinforced concrete beam (four-point bending)", "M/EI by parts; deflection at C from "
-          "t_D/A and t_E/A; cross-check with a second measured deflection."),
-   ("ex", "Example 5.4 — RC retaining wall (cantilever, 8.5 kN/m triangular pressure, 6 m)", "Base shear 153 kN, "
-          "moment 306 kNm; M/EI is cubic → θ_A = area, δ_A = t_A/B."),
-   ("ex", "Roller position so that δ_C = δ_D (overhang tip = max span deflection)", "Max in AB where slope = 0; "
-          "equate the two expressions and solve the quadratic for a in terms of L."),
+   ("ex", r"Onshore pipeline span (stainless steel, $d_o = 330\ \mathrm{mm}$, $t = 6\ \mathrm{mm}$, $w = 1.4\ "
+          r"\mathrm{kN/m}$)",
+    "Treat one span as simply supported; M/EI diagram; $t_B/A$ and $t_C/A$ → midspan deflection; maximum span "
+    "from the allowable deflection."),
+   ("ex", "Example 5.3 — fibre-reinforced concrete beam (four-point bending)", "M/EI by parts; deflection at "
+                                                                               "C from $t_D/A$ and $t_E/A$; "
+                                                                               "cross-check with a second "
+                                                                               "measured deflection."),
+   ("ex", "Example 5.4 — RC retaining wall (cantilever, 8.5 kN/m triangular pressure, 6 m)", "Base shear 153 "
+                                                                                             "kN, moment 306 "
+                                                                                             "kNm; M/EI is "
+                                                                                             "cubic → "
+                                                                                             r"$\theta_A$ = "
+                                                                                             r"area, $\delta_A "
+                                                                                             "= t_A/B$."),
+   ("ex", r"Roller position so that $\delta_C = \delta_D$ (overhang tip = max span deflection)", "Max in AB "
+                                                                                                 "where slope "
+                                                                                                 "= 0; equate "
+                                                                                                 "the two "
+                                                                                                 "expressions "
+                                                                                                 "and solve "
+                                                                                                 "the "
+                                                                                                 "quadratic "
+                                                                                                 "for a in "
+                                                                                                 "terms of L."),
  ),
 ]}
 
@@ -479,43 +599,49 @@ C4 = "CE102/CE2155_4_Stress_Strain_Transformation.pdf"
 STUDY[C0] = {"code": "CE102", "title": "CE2155 0 · Course map", "sections": [
  sec("Where structural mechanics fits", (1, 8),
    ("md", "CE2155 continues CE1101: **transverse shear stress, combined loading, 2-D stress & strain "
-          "transformation, column buckling and failure criteria** (60 %), plus concrete & steel materials (40 %). "
-          "Static equilibrium in 3-D = 6 equations (ΣF = 0, ΣM = 0 in vector form); revise SFD/BMD of cantilevers "
-          "and simply supported beams before starting."),
+          "transformation, column buckling and failure criteria** (60 %), plus concrete & steel materials (40 "
+          r"%). Static equilibrium in 3-D: 6 equations ($\sum F = 0$, $\sum M = 0$ in vector form); revise "
+          "SFD/BMD of cantilevers and simply supported beams before starting."),
    ("eq", r"\sum\mathbf{F} = \mathbf{0},\qquad \sum\mathbf{M}_O = \mathbf{0}\quad(\text{6 scalar equations in 3-D})"),
  ),
 ]}
 
 STUDY[C1] = {"code": "CE102", "title": "CE2155 1 · Mechanics of materials revision", "sections": [
  sec("Stress: normal, shear, 3-D state, complementary shear", (2, 5),
-   ("md", "Average normal stress σ = P/A is accurate away from load points (**Saint-Venant's principle**). "
-          "Average shear in double shear τ = F/(2A). The 3-D state has σx, σy, σz and τxy, τyz, τzx. "
-          "**Complementary shear:** shear stresses on adjacent perpendicular faces are equal in magnitude and both "
-          "point towards, or both away from, the common edge."),
+   ("md", r"Average normal stress $\sigma = P/A$ is accurate away from load points (**Saint-Venant's "
+          r"principle**). Average shear in double shear $\tau = F/(2A)$. The 3-D state has $\sigma_x$, "
+          r"$\sigma_y$, $\sigma_z$ and $\tau_{xy}$, $\tau_{yz}$, $\tau_{zx}$. **Complementary shear:** shear "
+          "stresses on adjacent perpendicular faces are equal in magnitude and both point towards, or both "
+          "away from, the common edge."),
    ("eq", r"\tau_{xy} = \tau_{yx},\quad \tau_{yz} = \tau_{zy},\quad \tau_{zx} = \tau_{xz}"),
  ),
  sec("Strain & stress–strain relations", (6, 15),
-   ("md", "Normal strain = change in length per unit length; shear strain = change in the originally right angle "
-          "(+ if the angle becomes smaller). Normal strains change volume, shear strains change shape. Engineering "
-          "stress/strain use the original A₀ and L₀."),
+   ("md", "Normal strain = change in length per unit length; shear strain = change in the originally right "
+          "angle (+ if the angle becomes smaller). Normal strains change volume, shear strains change shape. "
+          "Engineering stress/strain use the original $A_0$ and $L_0$."),
    ("eq", r"\sigma = E\varepsilon,\qquad \nu = -\frac{\varepsilon_{lat}}{\varepsilon_{long}},\qquad \tau = G\gamma,\qquad G = \frac{E}{2(1+\nu)}"),
-   ("ex", "Example 1 — steel bar, 80 kN, E = 200 GPa, ν = 0.32", "σ = P/A → ε = σ/E → δ = εL; lateral strain −νε "
-          "gives the change of the cross-section dimensions."),
+   ("ex", r"Example 1 — steel bar, 80 kN, $E = 200\ \mathrm{GPa}$, $\nu = 0.32$", r"$\sigma = P/A$ → $\varepsilon = \sigma/E$ → "
+                                                                 r"$\delta = \varepsilon L$; lateral strain "
+                                                                 r"$-\nu\varepsilon$ gives the change of the "
+                                                                 "cross-section dimensions."),
  ),
  sec("Axial load, torsion & bending revision", (16, 26),
    ("eq", r"\delta = \int\frac{P(x)}{A(x)E}dx \qquad \tau = \frac{T\rho}{J},\ \phi = \frac{TL}{GJ} \qquad \sigma = -\frac{My}{I}"),
    ("md", "Torsion formulae are for **circular** sections only (non-circular sections warp). Euler–Bernoulli "
           "assumptions: plane sections stay plane and perpendicular to the axis, negligible in-plane distortion, "
           "axis length unchanged → linear strain → (elastic) linear stress."),
-   ("ex", "Example 2 — I of a built-up section", "Neutral axis by Σ(A·y)/ΣA, then I = Σ(bh³/12 + Ad²) — "
-          "tabulate (an Excel layout is shown)."),
-   ("ex", "Example 3 — simply supported I-beam under UDL", "M_max = 22.5 kNm at midspan; σ_max = Mc/I at the extreme "
-          "fibre; check also the web–flange junction (σ = My_B/I)."),
+   ("ex", "Example 2 — I of a built-up section", r"Neutral axis by $\sum(A \cdot y)/\sum A$, then $I = "
+                                                 r"\sum(bh^3/12 + Ad^2)$ — tabulate (an Excel layout is "
+                                                 "shown)."),
+   ("ex", "Example 3 — simply supported I-beam under UDL", r"$M_{\mathrm{max}} = 22.5\ \mathrm{kNm}$ at "
+                                                           r"midspan; $\sigma_{\mathrm{max}} = Mc/I$ at the "
+                                                           "extreme fibre; check also the web–flange junction "
+                                                           r"($\sigma = My_B/I$)."),
  ),
  sec("SFD/BMD, elastic curve & moment–curvature", (27, 32),
    ("eq", r"\frac{dV}{dx} = w,\quad \frac{dM}{dx} = V \qquad \frac{1}{\rho} = \frac{M}{EI},\quad EI\frac{d^2v}{dx^2} = M"),
    ("md", "Signs here: upward load +, sagging moment +. Sketch the **elastic curve** to check the solution "
-          "(supports, points of inflection where M = 0). Integrate with boundary conditions; discontinuity "
+          "(supports, points of inflection where $M = 0$). Integrate with boundary conditions; discontinuity "
           "(Macaulay) functions handle partial UDLs and point loads."),
  ),
 ]}
@@ -523,32 +649,45 @@ STUDY[C1] = {"code": "CE102", "title": "CE2155 1 · Mechanics of materials revis
 STUDY[C2] = {"code": "CE102", "title": "CE2155 2 · Shear stress in beams", "sections": [
  sec("Transverse & longitudinal shear", (3, 6),
    ("md", "V produces transverse shear stress on the section; by complementary shear the same stress acts "
-          "**longitudinally**. Three loose boards slide and each carries P/3; glued boards act as one deeper beam "
-          "(much stiffer and stronger) — the glue carries the longitudinal shear. Shear exists because "
-          "V = dM/dx: unequal M on the two faces of a slice must be balanced by shear on the cut."),
+          "**longitudinally**. Three loose boards slide and each carries P/3; glued boards act as one deeper "
+          "beam (much stiffer and stronger) — the glue carries the longitudinal shear. Shear exists because "
+          "$V = dM/dx$: unequal M on the two faces of a slice must be balanced by shear on the cut."),
  ),
  sec("The shear formula", (7, 12),
    ("eq", r"\tau = \frac{VQ}{It},\qquad Q = \int_{A'}y\,dA = \bar{y}'A'"),
-   ("md", "**A′** = the part of the section beyond the level considered (the part 'held on' by the shear); "
-          "ȳ′ = distance from the N.A. to the centroid of A′; t = width at that level; I = whole section about "
-          "the N.A."),
+   ("md", r"$\boldsymbol{A'}$ = the part of the section beyond the level considered (the part 'held on' by the "
+          r"shear); $\bar{y}'$ = distance from the N.A. to the centroid of $A'$; t = width at that level; I = "
+          "whole section about the N.A."),
    ("eq", r"\text{Rectangle: } \tau = \frac{6V}{bh^3}\left(\frac{h^2}{4} - y^2\right),\qquad \tau_{max} = 1.5\frac{V}{bh}\ \text{at the N.A.}"),
-   ("tip", "The formula assumes τ uniform across the width t — poor for wide, shallow sections and at abrupt "
-           "width changes."),
+   ("tip", r"The formula assumes $\tau$ uniform across the width t — poor for wide, shallow sections and at "
+           "abrupt width changes."),
  ),
  sec("Examples: circular sections & glued T-beam", (13, 16),
-   ("ex", "Example 2 — solid shaft vs tube, V = 4 kN", "Q of the semicircle above the diameter (ȳ = 4c/3π); τ at "
-          "mid-height of the solid shaft = 4V/3A, compared with V/A average; the tube has a higher peak."),
-   ("ex", "Example 3 — T-beam from two 150 × 30 mm boards", "V_max = 19.5 kN; A′ = top board, t = 30 mm (glue "
-          "width) → τ_glue = VQ/It ≈ 4.88 MPa (vs 2.17 MPa average)."),
+   ("ex", r"Example 2 — solid shaft vs tube, $V = 4\ \mathrm{kN}$", r"Q of the semicircle above the diameter ($\bar{y} = "
+                                                       r"4c/3\pi$); $\tau$ at mid-height of the solid shaft = "
+                                                       "4V/3A, compared with V/A average; the tube has a "
+                                                       "higher peak."),
+   ("ex", "Example 3 — T-beam from two 150 × 30 mm boards", r"$V_{\mathrm{max}} = 19.5\ \mathrm{kN}$; $A'$ = "
+                                                            r"top board, $t = 30\ \mathrm{mm}$ (glue width) → "
+                                                            r"$\tau_{\mathrm{glue}} = VQ/(It) \approx 4.88\ "
+                                                            r"\mathrm{MPa}$ (vs 2.17 MPa average)."),
  ),
  sec("Shear flow & fastener spacing", (17, 23),
    ("eq", r"q = \frac{VQ}{I}\ \ (\text{force per unit length}),\qquad s = \frac{F_{fastener}}{q_{per\ fastener\ line}}"),
-   ("md", "Built-up beams need fasteners (glue, welds, bolts, nails, shear studs) to resist q. Split q between "
-          "the number of fastener lines that hold A′ on."),
-   ("ex", "T-beam (above)", "q = 146 kN/m — the glue must resist 146 kN per metre of beam."),
-   ("ex", "Example 4 — nailed box beam, V = 80 N, nail capacity 30 N", "I = 2295 × 10³ mm⁴. At B: q = VQ/I = 1.18 "
-          "N/mm shared by two nail lines (0.59 N/mm each) → s_B ≈ 51 mm; at C: 0.353 N/mm per line → s_C ≈ 85 mm."),
+   ("md", "Built-up beams need fasteners (glue, welds, bolts, nails, shear studs) to resist q. Split q "
+          "between the number of fastener lines that hold $A'$ on."),
+   ("ex", "T-beam (above)", r"$q = 146\ \mathrm{kN/m}$ — the glue must resist 146 kN per metre of beam."),
+   ("ex", r"Example 4 — nailed box beam, $V = 80\ \mathrm{N}$, nail capacity 30 N", r"$I = 2295 \times 10^3\ "
+                                                                                    r"\mathrm{mm^4}$. At B: $q "
+                                                                                    r"= VQ/I = 1.18\ "
+                                                                                    r"\mathrm{N/mm}$ shared by "
+                                                                                    "two nail lines (0.59 "
+                                                                                    "N/mm each) → $s_B "
+                                                                                    r"\approx 51\ "
+                                                                                    r"\mathrm{mm}$; at C: "
+                                                                                    "0.353 N/mm per line → "
+                                                                                    r"$s_C \approx 85\ "
+                                                                                    r"\mathrm{mm}$."),
  ),
  sec("Thin-walled members", (24, 33),
    ("md", "In thin walls shear flow runs **along the wall** (normal component negligible). In an I-section it "
@@ -557,8 +696,9 @@ STUDY[C2] = {"code": "CE102", "title": "CE2155 2 · Shear stress in beams", "sec
    ("eq", r"\text{Flange: } q = \frac{Vt\,d}{2I}x\ \ (\text{linear}),\qquad \text{Web: } q = \frac{Vt}{I}\left[\frac{db}{2} + \frac{1}{2}\left(\frac{d^2}{4} - y^2\right)\right]\ \ (\text{quadratic})"),
    ("md", "q varies **linearly** on segments perpendicular to V and **quadratically** on segments parallel/inclined "
           "to V; the web carries almost all of V, flange horizontal components cancel."),
-   ("ex", "Example 5 — thin-walled box, V = 10 kN", "q_B = 0 (A′ = 0 at the corner point on the axis of symmetry), "
-          "q_C and q_D from Q of the shaded areas, halved because two walls hold A′ on."),
+   ("ex", r"Example 5 — thin-walled box, $V = 10\ \mathrm{kN}$", "$q_B = 0$ ($A' = 0$ at the corner point on the axis of "
+                                                    "symmetry), $q_C$ and $q_D$ from Q of the shaded areas, "
+                                                    "halved because two walls hold $A'$ on."),
  ),
 ]}
 
@@ -569,16 +709,19 @@ STUDY[C3] = {"code": "CE102", "title": "CE2155 3 · Combined loading", "sections
    ("eq", r"\sigma = \frac{P}{A} \pm \frac{M_zy}{I_z} \pm \frac{M_yz}{I_y} \qquad \tau = \frac{T\rho}{J} + \frac{VQ}{It}"),
  ),
  sec("2-D examples", (4, 7),
-   ("ex", "Example 1 — member AB, point C at a top corner", "Internal forces at C: P = −16.45 kN, M = 32.89 kNm "
-          "(sagging), V = 21.93 kN. At the top corner τ = 0 (Q = 0) and σ = −P/A − Mc/I (compression)."),
+   ("ex", "Example 1 — member AB, point C at a top corner", r"Internal forces at C: $P = -16.45\ \mathrm{kN}$, "
+                                                            r"$M = 32.89\ \mathrm{kNm}$ (sagging), $V = 21.93\ "
+                                                            r"\mathrm{kN}$. At the top corner $\tau = 0$ ($Q = "
+                                                            r"0$) and $\sigma = -P/A - Mc/I$ (compression)."),
    ("ex", "Example 2 — 40 kN at the corner of a block", "Move the force to the centroid: axial 40 kN + two moments; "
           "superpose the three stress planes → largest 875 kPa compression at corner C."),
  ),
  sec("3-D loading with vector mechanics", (8, 16),
    ("eq", r"\mathbf{M}_O = \mathbf{r}\times\mathbf{F} = \begin{vmatrix}\mathbf{i} & \mathbf{j} & \mathbf{k}\\ r_x & r_y & r_z\\ F_x & F_y & F_z\end{vmatrix}"),
    ("ex", "Example 3 — 7.5 mm-radius rod fixed at C, 500 N and 800 N loads",
-    "At section A: P = 500 N, V = 800 N, T = 11 200 N·cm, M = 8000 and 7000 N·cm. Point A on the neutral axis "
-    "of the 8000 moment. Superpose: σ = 2.83 + 211.3 = 214.1 MPa, τ = 6.04 + 169 = 175.0 MPa."),
+    r"At section A: $P = 500\ \mathrm{N}$, $V = 800\ \mathrm{N}$, $T = 11\,200\ \mathrm{N\cdot cm}$, $M = "
+    r"8000$ and 7000 N·cm. Point A on the neutral axis of the 8000 moment. Superpose: $\sigma = 2.83 + 211.3 = "
+    r"214.1\ \mathrm{MPa}$, $\tau = 6.04 + 169 = 175.0\ \mathrm{MPa}$."),
    ("md", "**The big picture:** equilibrium → internal actions → stress formulae → state of stress → Mohr's "
           "circle → maximum stresses → failure criteria; and strain → deflection (serviceability), buckling "
           "(stability)."),
@@ -587,47 +730,51 @@ STUDY[C3] = {"code": "CE102", "title": "CE2155 3 · Combined loading", "sections
 
 STUDY[C4] = {"code": "CE102", "title": "CE2155 4 · Stress & strain transformation", "sections": [
  sec("Plane stress & sign convention", (2, 4),
-   ("md", "Why a chalk in torsion breaks on a **45° helix**: the maximum *tensile* stress acts at 45° to the axis. "
-          "Plane stress keeps σx, σy, τxy (out-of-plane components zero). τxy is positive on a +x face in +y "
-          "(or −x face in −y); θ positive anticlockwise."),
+   ("md", "Why a chalk in torsion breaks on a **45° helix**: the maximum *tensile* stress acts at 45° to the "
+          r"axis. Plane stress keeps $\sigma_x$, $\sigma_y$, $\tau_{xy}$ (out-of-plane components zero). "
+          r"$\tau_{xy}$ is positive on a +x face in +y (or −x face in −y); $\theta$ positive anticlockwise."),
  ),
  sec("Transformation equations", (5, 11),
    ("eq", r"\sigma_{x'} = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2}\cos2\theta + \tau_{xy}\sin2\theta"),
    ("eq", r"\tau_{x'y'} = -\frac{\sigma_x - \sigma_y}{2}\sin2\theta + \tau_{xy}\cos2\theta \qquad \sigma_{y'} = \sigma_x + \sigma_y - \sigma_{x'}"),
-   ("md", "Derived from equilibrium of a wedge cut at θ (forces = stress × area, not stresses)."),
-   ("ex", "Example 1 — element rotated 30° clockwise", "θ = −30° in the equations; plotting σx′ against θ shows a "
-          "max 54.6 MPa and min −84.6 MPa, and τ between ±69.6 MPa."),
+   ("md", r"Derived from equilibrium of a wedge cut at $\theta$ (forces = stress × area, not stresses)."),
+   ("ex", "Example 1 — element rotated 30° clockwise", r"$\theta = -30^\circ$ in the equations; plotting "
+                                                       r"$\sigma_{x'}$ against $\theta$ shows a max 54.6 MPa "
+                                                       r"and min −84.6 MPa, and $\tau$ between ±69.6 MPa."),
  ),
  sec("Principal stresses & maximum in-plane shear", (12, 16),
    ("eq", r"\tan2\theta_p = \frac{2\tau_{xy}}{\sigma_x - \sigma_y} \qquad \sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}"),
    ("eq", r"\tau_{max,\,in\text{-}plane} = \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2},\quad \sigma_{avg}\ \text{on those planes},\quad \theta_s = \theta_p \pm 45^\circ"),
-   ("md", "No shear on principal planes. Example 2 (bar in tension): σ₁ = P/A, σ₂ = 0; τ_max = P/2A on 45° planes "
-          "— why ductile bars show 45° slip lines."),
+   ("md", r"No shear on principal planes. Example 2 (bar in tension): $\sigma_1 = P/A$, $\sigma_2 = 0$; "
+          r"$\tau_{\mathrm{max}} = P/2A$ on 45° planes — why ductile bars show 45° slip lines."),
  ),
  sec("Mohr's circle for plane stress", (17, 23),
    ("eq", r"(\sigma_{x'} - \sigma_{avg})^2 + \tau_{x'y'}^2 = R^2,\qquad R = \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}"),
-   ("steps", ["Centre C = (σ_avg, 0).", "Plot reference point A = (σx, τxy) with **τ positive downward** (notes' "
-              "convention).", "Radius R = CA.", "A rotation θ of the element = **2θ** on the circle, same sense.",
-              "σ₁, σ₂ where the circle meets the σ axis; τ_max = R at the top/bottom."]),
+   ("steps", [r"Centre C = ($\sigma_{\mathrm{avg}}$, 0).", r"Plot reference point A = ($\sigma_x$, $\tau_{xy}$) with **$\tau$ "
+                                        "positive downward** (notes' convention).", "Radius $R = CA$.", r"A rotation $\theta$ of the element = $\boldsymbol{2\theta}$ "
+                                                "on the circle, same sense.",
+              r"$\sigma_1$, $\sigma_2$ where the circle meets the $\sigma$ axis; $\tau_{\mathrm{max}} = R$ at "
+              "the top/bottom."]),
    ("ex", "Example 3", "Reference A(−8, −6); element rotated 30° anticlockwise → rotate CA by 60°."),
-   ("ex", "Example 4 — point on a shaft", "A(−12, −6): centre −6, R = √(6² + 6²) = 8.49 → σ₁ = 2.49, σ₂ = −14.49 "
-          "MPa."),
+   ("ex", "Example 4 — point on a shaft", r"A(−12, −6): centre −6, $R = \sqrt{6^2 + 6^2} = 8.49$ → $\sigma_1 = "
+                                          r"2.49$, $\sigma_2 = -14.49\ \mathrm{MPa}$."),
  ),
  sec("Absolute maximum shear stress", (24, 26),
-   ("md", "Consider all three planes (σ₃ = 0 in plane stress):\n"
-          "- σ₁, σ₂ **same sign** → τ_abs,max = σ_max/2 (out-of-plane!).\n"
-          "- σ₁, σ₂ **opposite signs** → τ_abs,max = (σ₁ − σ₂)/2 (in-plane)."),
-   ("ex", "Example 5 — thin pressure vessel", "Hoop and longitudinal stresses are principal and both tensile → "
-          "τ_abs,max = σ_hoop/2."),
+   ("md", "Consider all three planes ($\\sigma_3 = 0$ in plane stress):\n- $\\sigma_1$, $\\sigma_2$ **same sign** "
+          "→ $\\tau_{\\mathrm{abs,max}} = \\sigma_{\\mathrm{max}}/2$ (out-of-plane!).\n- $\\sigma_1$, $\\sigma_2$ "
+          r"**opposite signs** → $\tau_{\mathrm{abs,max}} = (\sigma_1 - \sigma_2)/2$ (in-plane)."),
+   ("ex", "Example 5 — thin pressure vessel", "Hoop and longitudinal stresses are principal and both tensile "
+                                              r"→ $\tau_{\mathrm{abs,max}} = \sigma_{\mathrm{hoop}}/2$."),
  ),
  sec("Generalised Hooke's law, plane strain & strain rosettes", (27, 38),
    ("eq", r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right],\qquad \gamma_{xy} = \frac{\tau_{xy}}{G}"),
-   ("md", "**Plane strain** transforms exactly like plane stress with σ → ε and τ → γ/2 (Mohr's circle: γ/2 "
-          "positive downward)."),
+   ("md", r"**Plane strain** transforms exactly like plane stress with $\sigma$ → $\varepsilon$ and $\tau$ → "
+          r"$\gamma/2$ (Mohr's circle: $\gamma/2$ positive downward)."),
    ("eq", r"\varepsilon_{x'} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2}\cos2\theta + \frac{\gamma_{xy}}{2}\sin2\theta"),
-   ("md", "**Strain rosette:** three gauges a, b, c at known angles each give one equation εᵢ = εx cos²θᵢ + "
-          "εy sin²θᵢ + γxy sinθᵢ cosθᵢ → solve for εx, εy, γxy → Mohr's circle → principal strains; then "
-          "Hooke's law (σ₃ = 0) gives the principal stresses (Examples 7–8)."),
+   ("md", r"**Strain rosette:** three gauges a, b, c at known angles each give one equation $\varepsilon_i = "
+          r"\varepsilon_x \cos^2 \theta_i + \varepsilon_y \sin^2 \theta_i + \gamma_{xy} \sin\theta_i "
+          r"\cos\theta_i$ → solve for $\varepsilon_x$, $\varepsilon_y$, $\gamma_{xy}$ → Mohr's circle → "
+          r"principal strains; then Hooke's law ($\sigma_3 = 0$) gives the principal stresses (Examples 7–8)."),
  ),
 ]}
 
@@ -636,71 +783,99 @@ C6 = "CE102/CE2155_6_Material_Failure.pdf"
 
 STUDY[C5] = {"code": "CE102", "title": "CE2155 5 · Column buckling", "sections": [
  sec("Stability & the critical load", (2, 5),
-   ("md", "Equilibrium can be **stable** (returns when disturbed), **neutral** (stays displaced) or **unstable** "
-          "(moves away). A slender compression member can fail by **buckling** (sudden, geometric) before the "
-          "material fails. The **critical load P_cr** is the load at neutral equilibrium — find it from equilibrium "
-          "in the *displaced* shape, not the original one."),
-   ("ex", "Spring–bar model", "Two rigid bars of length L/2 with a lateral spring k: P tanθ balance with the "
-          "spring force kLθ/2 for small θ → P_cr = kL/4. Below P_cr stable, above unstable; P_cr is the "
-          "**bifurcation point**."),
+   ("md", "Equilibrium can be **stable** (returns when disturbed), **neutral** (stays displaced) or "
+          "**unstable** (moves away). A slender compression member can fail by **buckling** (sudden, "
+          r"geometric) before the material fails. The **critical load $P_{\mathrm{cr}}$** is the load at "
+          "neutral equilibrium — find it from equilibrium in the *displaced* shape, not the original one."),
+   ("ex", "Spring–bar model", r"Two rigid bars of length L/2 with a lateral spring k: $P\tan\theta$ balances "
+                              r"the spring force $kL\theta/2$ for small $\theta$ → $P_{\mathrm{cr}} = kL/4$. "
+                              r"Below $P_{\mathrm{cr}}$ stable, above unstable; $P_{\mathrm{cr}}$ is the "
+                              "**bifurcation point**."),
  ),
  sec("Ideal pin-ended column — Euler load", (6, 11),
-   ("md", "Ideal column: perfectly straight, load through the centroid, linear elastic. M = −Pv gives "
-          "EI v″ + Pv = 0 (an eigenvalue problem); non-trivial solutions need sin(kL) = 0."),
+   ("md", "Ideal column: perfectly straight, load through the centroid, linear elastic. $M = -Pv$ gives "
+          r"$EIv'' + Pv = 0$ (an eigenvalue problem); non-trivial solutions need $\sin(kL) = 0$."),
    ("eq", r"P_{cr} = \frac{\pi^2EI}{L^2}\ (n = 1),\qquad \text{higher modes } P_n = \frac{n^2\pi^2EI}{L^2}"),
    ("eq", r"\sigma_{cr} = \frac{P_{cr}}{A} = \frac{\pi^2E}{(L/r)^2},\qquad r = \sqrt{I/A},\quad L/r = \text{slenderness ratio}"),
-   ("md", "Same end conditions both ways → buckles about the **weak axis** (least I). Euler is valid only while "
-          "σ_cr ≤ σ_Y (elastic buckling)."),
-   ("ex", "Example 1 — W200×46 pin-ended column", "Check σ_cr about y–y against σ_Y = 250 MPa: σ_cr > σ_Y, so the "
-          "steel **yields first** and P = σ_Y A governs."),
-   ("tip", "Always check both: P_cr (each axis, with its own effective length) and the squash load σ_Y A — "
-           "the smallest governs."),
+   ("md", "Same end conditions both ways → buckles about the **weak axis** (least I). Euler is valid only "
+          r"while $\sigma_{\mathrm{cr}} \le \sigma_Y$ (elastic buckling)."),
+   ("ex", "Example 1 — W200×46 pin-ended column", r"Check $\sigma_{\mathrm{cr}}$ about y–y against $\sigma_Y = "
+                                                  r"250\ \mathrm{MPa}$: $\sigma_{\mathrm{cr}} > \sigma_Y$, so "
+                                                  r"the steel **yields first** and $P = \sigma_Y A$ governs."),
+   ("tip", r"Always check both: $P_{\mathrm{cr}}$ (each axis, with its own effective length) and the squash "
+           r"load $\sigma_Y A$ — the smallest governs."),
  ),
  sec("End conditions & effective length", (12, 16),
    ("eq", r"P_{cr} = \frac{\pi^2EI}{(KL)^2}"),
-   ("md", "| Ends | K | L_e |\n|---|---|---|\n| pinned–pinned | 1.0 | L |\n| fixed–free (cantilever) | 2.0 | 2L |\n"
-          "| fixed–pinned | 0.7 | 0.7L |\n| fixed–fixed | 0.5 | 0.5L |\n\nL_e = distance between points of zero "
-          "moment (inflection points). Cantilever: P_cr = π²EI/4L²."),
-   ("ex", "Example 2 — 8 m column fixed at both ends, braced at mid-height about y–y (E = 200 GPa, σ_Y = 410 MPa)",
-    "x–x: K = 0.5, L_e = 4 m → 1653 kN; y–y: fixed bottom, pinned at the brace, L_e = 0.7 × 4 = 2.8 m → **461 kN**; "
-    "yield 1255 kN → buckling about y–y governs at 461 kN."),
+   ("md", "| Ends | K | $L_e$ |\n|---|---|---|\n| pinned–pinned | 1.0 | L |\n| fixed–free (cantilever) | 2.0 | "
+          "2L |\n| fixed–pinned | 0.7 | 0.7L |\n| fixed–fixed | 0.5 | 0.5L |\n\n$L_e$ = distance between points "
+          r"of zero moment (inflection points). Cantilever: $P_{\mathrm{cr}} = \pi^2EI/(4L^2)$."),
+   ("ex", r"Example 2 — 8 m column fixed at both ends, braced at mid-height about y–y ($E = 200\ "
+          r"\mathrm{GPa}$, $\sigma_Y = 410\ \mathrm{MPa}$)",
+    r"x–x: $K = 0.5$, $L_e = 4\ \mathrm{m}$ → 1653 kN; y–y: fixed bottom, pinned at the brace, $L_e = 0.7 "
+    r"\times 4 = 2.8\ \mathrm{m}$ → **461 kN**; yield 1255 kN → buckling about y–y governs at 461 kN."),
  ),
  sec("Eccentric load & the secant formula", (17, 24),
-   ("md", "A load at eccentricity e ≡ P + moment Pe. The column deflects from the start; the deflection grows "
-          "without bound as P → P_cr, so yielding at mid-height usually governs first."),
+   ("md", "A load P at eccentricity e is equivalent to P plus a moment $Pe$. The column deflects from the "
+          r"start; the deflection grows without bound as P → $P_{\mathrm{cr}}$, so yielding at mid-height "
+          "usually governs first."),
    ("eq", r"v_{max} = e\left[\sec\left(\sqrt{\frac{P}{EI}}\frac{L}{2}\right) - 1\right]"),
    ("eq", r"\sigma_{max} = \frac{P}{A}\left[1 + \frac{ec}{r^2}\sec\left(\frac{L_e}{2r}\sqrt{\frac{P}{EA}}\right)\right]"),
-   ("md", "ec/r² = **eccentricity ratio**; as it → 0 the curve tends to Euler. Solve for P by trial with "
-          "σ_max = σ_Y."),
-   ("ex", "Example 3 — column fixed at the base, braced in x at the top, e = 200 mm about x–x (σ_Y = 250 MPa)",
-    "(1) Weak-axis Euler with fixed–pinned K = 0.7; (2) strong axis: fixed–free (K = 2, L_e = 8 m), secant formula "
-    "with c = 105 mm, r_x = 89.9 mm, trial and error → **419 kN** governs."),
+   ("md", "$ec/r^2$ = **eccentricity ratio**; as it → 0 the curve tends to Euler. Solve for P by trial with "
+          r"$\sigma_{\mathrm{max}} = \sigma_Y$."),
+   ("ex", r"Example 3 — column fixed at the base, braced in x at the top, $e = 200\ \mathrm{mm}$ about x–x "
+          r"($\sigma_Y = 250\ \mathrm{MPa}$)",
+    r"(1) Weak-axis Euler with fixed–pinned $K = 0.7$; (2) strong axis: fixed–free ($K = 2$, $L_e = 8\ "
+    r"\mathrm{m}$), secant formula with $c = 105\ \mathrm{mm}$, $r_x = 89.9\ \mathrm{mm}$, trial and error → "
+    "**419 kN** governs."),
    ("tip", "Buckling is geometrically non-linear — superposition does not apply."),
  ),
 ]}
 
 STUDY[C6] = {"code": "CE102", "title": "CE2155 6 · Material failure", "sections": [
  sec("Ductile materials & yield criteria", (2, 7),
-   ("md", "Mild steel in tension: yield → necking → micro-voids coalesce → **cup-and-cone** fracture with ~45° "
-          "shear lips. Ductile failure starts with **yielding**, which is shear-controlled. In multi-axial stress, "
-          "compare with the uniaxial test via principal stresses σ₁, σ₂ (plane stress)."),
-   ("md", "**Tresca (maximum shear stress):** yielding when τ_abs,max = σ_Y/2."),
+   ("md", "Mild steel in tension: yield → necking → micro-voids coalesce → **cup-and-cone** fracture with "
+          "~45° shear lips. Ductile failure starts with **yielding**, which is shear-controlled. In "
+          r"multi-axial stress, compare with the uniaxial test via principal stresses $\sigma_1$, $\sigma_2$ "
+          "(plane stress)."),
+   ("md", r"**Tresca (maximum shear stress):** yielding when $\tau_{\mathrm{abs,max}} = \sigma_Y/2$."),
    ("eq", r"\text{same sign: } |\sigma_1| \le \sigma_Y,\ |\sigma_2| \le \sigma_Y \qquad \text{opposite signs: } |\sigma_1 - \sigma_2| \le \sigma_Y"),
    ("md", "**von Mises (maximum distortion energy):** yielding when the distortion strain-energy density reaches "
           "its uniaxial-yield value."),
    ("eq", r"\sigma_1^2 - \sigma_1\sigma_2 + \sigma_2^2 \le \sigma_Y^2"),
    ("md", "Tresca's hexagon lies inside the von Mises ellipse → Tresca is more conservative."),
-   ("ex", "Example 1 — 5 mm-radius steel shaft, axial load + torque (σ_Y = 360 MPa)",
-    "σ from P/A and τ = Tc/J at the surface → principal stresses of opposite sign. Tresca: |σ₁ − σ₂| > 360 → "
-    "**fails**; von Mises: < 360² → **does not fail** — the stress point lies between the two criteria."),
+   ("ex", r"Example 1 — 5 mm-radius steel shaft, axial load + torque ($\sigma_Y = 360\ \mathrm{MPa}$)",
+    r"$\sigma$ from P/A and $\tau = Tc/J$ at the surface → principal stresses of opposite sign. Tresca: "
+    r"$|\sigma_1 - \sigma_2| > 360$ → **fails**; von Mises: < $360^2$ → **does not fail** — the stress point "
+    "lies between the two criteria."),
  ),
  sec("Brittle materials", (8, 11),
    ("md", "Little or no yielding; sudden fracture governed by flaws. Weak in tension (cast iron, concrete: "
-          "f_t ≈ 10 % of f_c)."),
-   ("md", "**Maximum normal stress (Rankine):** fracture when the largest principal stress reaches σ_ult."),
+          r"$f_t \approx 10\,\%$ of $f_c$)."),
+   ("md", "**Maximum normal stress (Rankine):** fracture when the largest principal stress reaches "
+          r"$\sigma_{\mathrm{ult}}$."),
    ("eq", r"|\sigma_1| \le \sigma_{ult},\qquad |\sigma_2| \le \sigma_{ult}"),
-   ("ex", "Example 2 — cast-iron shaft, T = 400 Nm, σ_ult = 150 MPa", "Pure shear → σ₁ = −σ₂ = τ_max = 2T/(πc³). "
-          "Set = 150 MPa → c = 11.9 mm."),
+   ("ex", r"Example 2 — cast-iron shaft, $T = 400\ \mathrm{Nm}$, $\sigma_{\mathrm{ult}} = 150\ \mathrm{MPa}$", "Pure "
+                                                                                                               "shear "
+                                                                                                               "→ "
+                                                                                                               r"$\sigma_1 "
+                                                                                                               "= "
+                                                                                                               r"-\sigma_2 "
+                                                                                                               "= "
+                                                                                                               r"\tau_{\mathrm{max}} "
+                                                                                                               "= "
+                                                                                                               r"2T/(\pi "
+                                                                                                               "c^3)$. "
+                                                                                                               "Set "
+                                                                                                               "equal "
+                                                                                                               "to "
+                                                                                                               "150 "
+                                                                                                               "MPa "
+                                                                                                               "→ "
+                                                                                                               "$c "
+                                                                                                               "= "
+                                                                                                               r"11.9\ "
+                                                                                                               r"\mathrm{mm}$."),
    ("md", "**Mohr's failure criterion** (different tension/compression strengths): draw the Mohr circles of "
           "the uniaxial tension, uniaxial compression and torsion tests; their envelope is the failure boundary. "
           "A stress state is safe if its circle lies inside the envelope."),
@@ -743,31 +918,35 @@ MAT = {k: _M.format(k) for k in ["1_introduction", "2_Cement", "3_aggregate", "4
 STUDY[MAT["1_introduction"]] = {"code": "CE101", "title": "Materials 1 · Introduction", "sections": [
  sec("Requirements & constituents", (3, 17),
    ("md", "Construction materials must satisfy **performance** (strength, shape-ability, volume stability, "
-          "durability), **availability** (local, plentiful, cheap) and **sustainability** (low energy/CO₂, "
-          "recyclable). Concrete = cement + water + fine & coarse aggregate + air (+ admixtures); paste → mortar → "
-          "concrete. 60–90 % of construction material by volume is concrete; cement carries most of its CO₂."),
+          "durability), **availability** (local, plentiful, cheap) and **sustainability** (low "
+          r"energy/$\mathrm{CO_2}$, recyclable). Concrete = cement + water + fine & coarse aggregate + air (+ "
+          "admixtures); paste → mortar → concrete. 60–90 % of construction material by volume is concrete; "
+          r"cement carries most of its $\mathrm{CO_2}$."),
  ),
 ]}
 
 STUDY[MAT["2_Cement"]] = {"code": "CE101", "title": "Materials 2 · Cement & SCMs", "sections": [
  sec("Portland cement: raw materials & clinker phases", (4, 6),
-   ("md", "≈ ⅔ limestone (CaO) + ⅓ clay/shale (SiO₂, Al₂O₃) → kiln → clinker, inter-ground with **gypsum**. "
-          "Cement notation: C = CaO, S = SiO₂, A = Al₂O₃, F = Fe₂O₃, H = H₂O, S̄ = SO₃.\n\n"
-          "| Phase | Hydrates | Role |\n|---|---|---|\n| C₃S | fast, high heat | early strength (first 3–4 weeks) |\n"
-          "| C₂S | slow | later strength |\n| C₃A | very fast (flash set) | controlled by gypsum |\n"
-          "| C₄AF | like C₃A, slower | little strength |\n\n"
-          "Cement manufacture ≈ **8 % of human CO₂** (fuel + CaCO₃ → CaO + CO₂). Fineness is critical."),
+   ("md", r"$\approx \tfrac23$ limestone (CaO) + $\tfrac13$ clay/shale ($\mathrm{SiO_2}$, $\mathrm{Al_2O_3}$) "
+          r"→ kiln → clinker, inter-ground with **gypsum**. Cement notation: $C = \mathrm{CaO}$, $S = "
+          r"\mathrm{SiO_2}$, $A = \mathrm{Al_2O_3}$, $F = \mathrm{Fe_2O_3}$, $H = \mathrm{H_2O}$, $\bar{S} = "
+          "\\mathrm{SO_3}$.\n\n| Phase | Hydrates | Role |\n|---|---|---|\n| $\\mathrm{C_3S}$ | fast, high heat | "
+          "early strength (first 3–4 weeks) |\n| $\\mathrm{C_2S}$ | slow | later strength |\n| $\\mathrm{C_3A}$ | "
+          "very fast (flash set) | controlled by gypsum |\n| $\\mathrm{C_4AF}$ | like $\\mathrm{C_3A}$, slower | "
+          "little strength |\n\nCement manufacture ≈ **8 % of human $\\mathrm{CO_2}$** (fuel + $\\mathrm{CaCO_3}$ "
+          r"→ CaO + $\mathrm{CO_2}$). Fineness is critical."),
  ),
  sec("Hydration products & stages", (7, 13),
    ("eq", r"2\mathrm{C_3S} + 11\mathrm{H} \rightarrow \mathrm{C_3S_2H_8} + 3\mathrm{CH} \qquad 2\mathrm{C_2S} + 9\mathrm{H} \rightarrow \mathrm{C_3S_2H_8} + \mathrm{CH}"),
-   ("md", "- **C-S-H**: 50–60 % of paste, huge surface area (100–700 m²/g) → van der Waals bonding → **main source "
-          "of strength**.\n- **CH** (portlandite): 20–25 %, weak, soluble → durability & strength problems.\n"
-          "- **C₃A + gypsum → ettringite (AFt)**; when gypsum is used up, ettringite + C₃A → **monosulfate (AFm)**. "
-          "Later external sulfate converts AFm back to AFt → expansion (sulfate attack).\n"
-          "- Early rate: **C₃A > C₃S > C₄AF > C₂S**.\n- Heat-evolution stages: dissolution → induction (dormant) → "
+   ("md", r"- **C-S-H**: 50–60 % of paste, huge surface area ($100\text{–}700\ \mathrm{m^2/g}$) → van der "
+          "Waals bonding → **main source of strength**.\n- **CH** (portlandite): 20–25 %, weak, soluble → "
+          "durability & strength problems.\n- **$\\mathrm{C_3A}$ + gypsum → ettringite (AFt)**; when gypsum is "
+          r"used up, ettringite + $\mathrm{C_3A}$ → **monosulfate (AFm)**. Later external sulfate converts AFm "
+          "back to AFt → expansion (sulfate attack).\n- Early rate: $\\boldsymbol{\\mathrm{C_3A} > \\mathrm{C_3S} "
+          "> \\mathrm{C_4AF} > \\mathrm{C_2S}}$.\n- Heat-evolution stages: dissolution → induction (dormant) → "
           "acceleration (initial set) → deceleration (final set, hardening) → steady state."),
-   ("tip", "Ways to reduce early hydration rate: less C₃A/C₃S (Type IV), coarser cement, SCM replacement, "
-           "retarders, cooler concrete."),
+   ("tip", r"Ways to reduce early hydration rate: less $\mathrm{C_3A}/\mathrm{C_3S}$ (Type IV), coarser "
+           "cement, SCM replacement, retarders, cooler concrete."),
  ),
  sec("ASTM cement types & microstructure", (14, 16),
    ("md", "| ASTM | Name | Use |\n|---|---|---|\n| I | OPC | general |\n| II | modified | moderate sulfate / heat |\n"
@@ -779,58 +958,60 @@ STUDY[MAT["2_Cement"]] = {"code": "CE101", "title": "Materials 2 · Cement & SCM
  ),
  sec("Supplementary cementitious materials", (17, 27),
    ("eq", r"\mathrm{SiO_2 + Ca(OH)_2 + H_2O \rightarrow C\text{-}S\text{-}H}\quad\text{(pozzolanic reaction)}"),
-   ("md", "- **Fly ash** — Class F (bituminous coal, SiO₂ + Al₂O₃ + Fe₂O₃ ≥ 70 %, pozzolanic), Class C (lignite, "
-          "≥ 50 %, some self-cementing); spherical → better flow.\n"
-          "- **Silica fume** — 10–100 nm, very reactive, sticky paste, early strength.\n"
-          "- **GGBS** — quenched blast-furnace slag (CaO 35–45 %, SiO₂ 32–38 %), latent hydraulic, activated by "
-          "cement.\n- Rice husk ash, natural pozzolans (Pozzuoli volcanic ash).\n\n"
-          "**Effects:** lower and slower heat; better cohesion; lower early but good long-term strength; less CH, "
-          "finer pores → **better sulfate and chloride resistance**."),
+   ("md", r"- **Fly ash** — Class F (bituminous coal, $\mathrm{SiO_2} + \mathrm{Al_2O_3} + \mathrm{Fe_2O_3} "
+          r"\ge 70\,\%$, pozzolanic), Class C (lignite, ≥ 50 %, some self-cementing); spherical → better "
+          "flow.\n- **Silica fume** — 10–100 nm, very reactive, sticky paste, early strength.\n- **GGBS** — "
+          r"quenched blast-furnace slag (CaO 35–45 %, $\mathrm{SiO_2} 32\text{–}38\,\%$), latent hydraulic, "
+          "activated by cement.\n- Rice husk ash, natural pozzolans (Pozzuoli volcanic ash).\n\n**Effects:** "
+          "lower and slower heat; better cohesion; lower early but good long-term strength; less CH, finer "
+          "pores → **better sulfate and chloride resistance**."),
  ),
 ]}
 
 STUDY[MAT["3_aggregate"]] = {"code": "CE101", "title": "Materials 3 · Aggregate", "sections": [
  sec("Role & classification", (3, 5),
-   ("md", "Inert granular filler occupying **65–75 %** of concrete volume; controls E, shrinkage, abrasion and "
-          "cost. Coarse ≥ 4.75 mm, fine < 4.75 mm. By origin: igneous (excellent), sedimentary (~80 % of supply), "
-          "metamorphic; recycled/industrial. By density: lightweight to heavyweight (> 2800 kg/m³)."),
+   ("md", "Inert granular filler occupying **65–75 %** of concrete volume; controls E, shrinkage, abrasion "
+          "and cost. Coarse ≥ 4.75 mm, fine < 4.75 mm. By origin: igneous (excellent), sedimentary (~80 % of "
+          r"supply), metamorphic; recycled/industrial. By density: lightweight to heavyweight ($> 2800\ "
+          r"\mathrm{kg/m^3}$)."),
  ),
  sec("Grading, maximum size & fineness modulus", (6, 11),
    ("md", "Continuous grading minimises voids → less paste. **Maximum size** = smallest sieve through which all "
           "passes; nominal max = sieve retaining 5–10 %; limited by member size and bar spacing."),
    ("eq", r"FM = \frac{\sum\text{cumulative \% retained on standard sieves}}{100}"),
-   ("md", "Fine aggregate FM ≈ 2.3–3.1 (higher = coarser); used in mix design. Same FM ≠ same grading."),
+   ("md", r"Fine aggregate $\mathrm{FM} \approx 2.3\text{–}3.1$ (higher = coarser); used in mix design. Same "
+          r"$\mathrm{FM}$ ≠ same grading."),
  ),
  sec("Moisture states, specific gravity, unit weight", (12, 17),
    ("md", "OD (oven-dry, 105 °C) → AD (air-dry) → **SSD** (pores full, surface dry) → wet."),
    ("eq", r"A = \frac{W_{SSD} - W_{OD}}{W_{OD}},\quad MC = \frac{W_{stock} - W_{OD}}{W_{OD}},\quad SM = MC - A"),
-   ("md", "Absorption 1–2 % for normal aggregate; **effective absorption** = water needed AD → SSD. Bulk specific "
-          "gravity 2.5–2.8 (includes pores). Dry-rodded unit weight 1450–1750 kg/m³ (needed for ACI coarse "
-          "aggregate content)."),
+   ("md", "Absorption 1–2 % for normal aggregate; **effective absorption** = water needed AD → SSD. Bulk "
+          r"specific gravity 2.5–2.8 (includes pores). Dry-rodded unit weight $1450\text{–}1750\ "
+          r"\mathrm{kg/m^3}$ (needed for ACI coarse aggregate content)."),
  ),
 ]}
 
 STUDY[MAT["4_chemical_admixture"]] = {"code": "CE101", "title": "Materials 4 · Chemical admixtures", "sections": [
  sec("Water reducers & superplasticisers", (3, 11),
    ("md", "Cement particles **flocculate** (opposite surface charges) and trap water. WRAs disperse them by "
-          "**electrostatic repulsion** (adsorbed anionic molecules) and/or **steric hindrance** (long side chains, "
-          "PCE superplasticisers) → trapped water released.\n\n"
-          "Use them to (1) raise workability at the same w/c, (2) cut water → lower w/c → strength & durability, "
-          "(3) cut cement at the same w/c and slump (heat, cost, CO₂).\n\n"
-          "ASTM C494: **A** water-reducing, **D** WR + retarding, **E** WR + accelerating, **F** high-range WR "
-          "(superplasticiser), **G** HRWR + retarding."),
+          "**electrostatic repulsion** (adsorbed anionic molecules) and/or **steric hindrance** (long side "
+          "chains, PCE superplasticisers) → trapped water released.\n\nUse them to (1) raise workability at the "
+          "same w/c, (2) cut water → lower w/c → strength & durability, (3) cut cement at the same w/c and "
+          "slump (heat, cost, $\\mathrm{CO_2}$).\n\nASTM C494: **A** water-reducing, **D** WR + retarding, **E** "
+          "WR + accelerating, **F** high-range WR (superplasticiser), **G** HRWR + retarding."),
  ),
  sec("Air-entraining admixtures", (12, 16),
-   ("md", "Freezing water expands ~10 %. AE surfactants (hydrophilic head, hydrophobic tail) stabilise micro air "
-          "bubbles (> 1 µm) that give ice room and relieve pressure (cryo-suction draws water to the voids). "
-          "Side effects: better flow, **lower strength**. Third pore type after gel (< 10 nm) and capillary "
-          "(10 nm–1 µm)."),
+   ("md", "Freezing water expands ~10 %. AE surfactants (hydrophilic head, hydrophobic tail) stabilise micro "
+          "air bubbles (> 1 µm) that give ice room and relieve pressure (cryo-suction draws water to the "
+          r"voids). Side effects: better flow, **lower strength**. Third pore type after gel ($< 10\ "
+          r"\mathrm{nm}$) and capillary (10 nm–1 µm)."),
  ),
  sec("Retarders & accelerators", (17, 23),
-   ("md", "**Retarders** (sugars, phosphates, borates) slow dissolution of Ca²⁺/Al³⁺ → longer plastic stage: hot "
-          "weather, large pours (no cold joints), long transport. **Accelerators**: CaCl₂ is the most effective but "
-          "**chlorides corrode reinforcement** — avoid in RC. Ready-mix concrete depends on admixtures.\n\n"
-          "Canada in winter → accelerator + air-entrainer; Singapore summer → retarder + water reducer."),
+   ("md", "**Retarders** (sugars, phosphates, borates) slow dissolution of "
+          r"$\mathrm{Ca^{2+}}/\mathrm{Al^{3+}}$ → longer plastic stage: hot weather, large pours (no cold "
+          r"joints), long transport. **Accelerators**: $\mathrm{CaCl_2}$ is the most effective but **chlorides "
+          "corrode reinforcement** — avoid in RC. Ready-mix concrete depends on admixtures.\n\nCanada in winter "
+          "→ accelerator + air-entrainer; Singapore summer → retarder + water reducer."),
  ),
 ]}
 
@@ -867,38 +1048,40 @@ STUDY[MAT["6_hardened_concrete"]] = {"code": "CE101", "title": "Materials 6 · H
  ),
  sec("Tensile strength tests", (7, 10),
    ("eq", r"f_{t,split} = \frac{2P}{\pi LD} \qquad R = \frac{PL}{bd^2}\ \ \text{(4-point, break in middle third)}"),
-   ("md", "Splitting/f_c ≈ 0.08–0.14; flexural/f_c ≈ 0.11–0.23; the ratio falls as strength rises. Splitting ≈ "
-          "5–12 % above direct tension."),
+   ("md", r"Splitting/$f_c \approx 0.08\text{–}0.14$; flexural/$f_c \approx 0.11\text{–}0.23$; the ratio falls "
+          "as strength rises. Splitting ≈ 5–12 % above direct tension."),
  ),
  sec("Factors affecting strength", (11, 14),
-   ("md", "**w/c** (porosity) dominates; in HSC the ITZ is no longer the weak link. Age: f₂₈/f₇ ≈ 1.3–1.7. Higher "
-          "curing temperature → faster gain but **lower ultimate** strength. Hydration stops below **80 % RH** — "
-          "curing must supply moisture. Early hydration rate: Type III > I > II > V > IV."),
+   ("md", r"**w/c** (porosity) dominates; in HSC the ITZ is no longer the weak link. Age: $f_{28}/f_7 \approx "
+          r"1.3\text{–}1.7$. Higher curing temperature → faster gain but **lower ultimate** strength. "
+          "Hydration stops below **80 % RH** — curing must supply moisture. Early hydration rate: Type III > "
+          "I > II > V > IV."),
  ),
  sec("Modulus of elasticity", (15, 17),
    ("eq", r"E_c = 0.043\,w^{1.5}\sqrt{f'_c}\ \text{MPa (ACI 318; } w\text{ in kg/m}^3)"),
-   ("md", "Secant modulus (ASTM C469 at 40 % f′c; BS 1881 at 33 %). E rises with aggregate stiffness/volume, falls "
-          "with porosity; **saturated specimens show ~15 % higher E** (opposite to strength). Eurocode: "
-          "E_cm = 22(f_cm/10)^0.3 GPa."),
+   ("md", r"Secant modulus (ASTM C469 at $40\,\% f'_c$; BS 1881 at 33 %). E rises with aggregate "
+          "stiffness/volume, falls with porosity; **saturated specimens show ~15 % higher E** (opposite to "
+          r"strength). Eurocode: $E_{\mathrm{cm}} = 22(f_{\mathrm{cm}}/10)^{0.3}\ \mathrm{GPa}$."),
  ),
 ]}
 
 STUDY[MAT["7_mix_design"]] = {"code": "CE101", "title": "Materials 7 · Mix design (ACI 211)", "sections": [
  sec("Design aims & fundamentals", (3, 6),
    ("md", "Design for workability, strength, durability, economy, appearance. **Abrams' law** (empirical): "
-          "f_c = A/B^{w/c} (A ≈ 96.5 MPa, B ≈ 4). Larger, well-graded aggregate → less water; more sand → more "
-          "cohesive."),
+          r"$f_c = A/B^{w/c}$ ($A \approx 96.5\ \mathrm{MPa}$, $B \approx 4$). Larger, well-graded aggregate → "
+          "less water; more sand → more cohesive."),
  ),
  sec("Required average strength", (7, 9),
    ("eq", r"f'_{cr} = f'_c + 1.34s \qquad f'_{cr} = f'_c + 2.33s - 3.5\ \ (f'_c \le 35\ \text{MPa; use the larger})"),
-   ("md", "No data on s: f′c < 20 → +7.0; 20–35 → +8.5; > 35 → 1.1f′c + 5.0 MPa (conservative). "
-          "Eurocode/SS EN 206 practice uses target mean f_ck + ≈1.64s."),
+   ("md", r"No data on s: $f'_c < 20$ → +7.0; 20–35 → +8.5; > 35 → $1.1f'_c + 5.0\ \mathrm{MPa}$ "
+          r"(conservative). Eurocode/SS EN 206 practice uses target mean $\approx f_{\mathrm{ck}} + 1.64s$."),
  ),
  sec("The 10 steps", (10, 26),
    ("steps", ["Required information (gradings, FM, dry-rodded unit weight, specific gravities, absorption, member "
               "sizes, exposure).",
               "Choose slump for the member type.",
-              "Max aggregate size ≤ 1/5 narrowest form dimension, ¾ clear bar spacing, ¾ cover, ⅓ slab depth.",
+              r"Max aggregate size ≤ 1/5 narrowest form dimension, $\tfrac34$ clear bar spacing, $\tfrac34$ "
+              r"cover, $\tfrac13$ slab depth.",
               "Mixing water & entrapped air from the table (larger aggregate → less water; more slump → more water).",
               "w/c = lower of strength (table) and durability (exposure) limits; Singapore (SS 544) — go one exposure "
               "class higher for the hot climate.",
@@ -908,22 +1091,24 @@ STUDY[MAT["7_mix_design"]] = {"code": "CE101", "title": "Materials 7 · Mix desi
               "Adjust for aggregate moisture (SSD basis → as-batched).",
               "Trial batch and adjust."]),
    ("ex", "Moisture adjustment (lecture example, worked)",
-    "SSD mix: cement 400, water 200, CA 1050, FA 710 kg/m³. CA air-dry (absorption 1 %, effective absorption 0.5 %) → "
-    "batch 1050 × 0.995 = 1044.8 kg, +5.3 kg water; FA wet (absorption 1.3 %, MC 4.5 % → surface moisture 3.2 %) → "
-    "batch 710 × 1.032 = 732.7 kg, −22.7 kg water → **water ≈ 182.5 kg/m³**."),
+    r"SSD mix: cement 400, water 200, CA 1050, FA $710\ \mathrm{kg/m^3}$. CA air-dry (absorption 1 %, "
+    r"effective absorption 0.5 %) → batch $1050 \times 0.995 = 1044.8\ \mathrm{kg}$, +5.3 kg water; FA wet "
+    r"(absorption 1.3 %, MC 4.5 % → surface moisture 3.2 %) → batch $710 \times 1.032 = 732.7\ \mathrm{kg}$, "
+    r"−22.7 kg water → **water ≈ $182.5\ \mathrm{kg/m^3}$**."),
    ("tip", "cube ≈ 1.25 × cylinder strength (course assumption)."),
  ),
  sec("Trial-batch adjustments", (27, 29),
-   ("md", "Strength low (workability OK) → lower w/c by adding cement at the same water. Slump low (strength OK) → "
-          "add water **and** cement (~6 kg/m³ water ≈ +25 mm slump) or WRA/SP. Segregation → more fine, less coarse."),
+   ("md", "Strength low (workability OK) → lower w/c by adding cement at the same water. Slump low (strength "
+          r"OK) → add water **and** cement (~$6\ \mathrm{kg/m^3}$ water ≈ +25 mm slump) or WRA/SP. Segregation "
+          "→ more fine, less coarse."),
  ),
 ]}
 
 STUDY[MAT["8_creep_and_shrinkage"]] = {"code": "CE101", "title": "Materials 8 · Creep & shrinkage", "sections": [
  sec("Autogenous & thermal shrinkage", (3, 7),
-   ("md", "**Autogenous**: hydration products occupy less volume than reactants (≈ 15 % less for C₃S), early age, "
-          "no moisture loss; significant at low w/c. **Thermal**: hydration heat then cooling under restraint "
-          "(mass pours, walls cast on old bases)."),
+   ("md", "**Autogenous**: hydration products occupy less volume than reactants (≈ 15 % less for "
+          r"$\mathrm{C_3S}$), early age, no moisture loss; significant at low w/c. **Thermal**: hydration heat "
+          "then cooling under restraint (mass pours, walls cast on old bases)."),
    ("eq", r"\varepsilon = \alpha\Delta T = 10\times10^{-6}\times15 = 150\times10^{-6},\qquad \sigma = E\varepsilon = 20\,000\times150\times10^{-6} = 3\ \text{MPa}"),
    ("md", "3 MPa ≈ concrete tensile strength → cracking. Control: chilled water/ice/aggregate, place in the cool of "
           "the day, low cement / low-heat cement / SCMs, cooling pipes, insulation."),
@@ -937,9 +1122,10 @@ STUDY[MAT["8_creep_and_shrinkage"]] = {"code": "CE101", "title": "Materials 8 ·
    ("md", "Strain increasing with time under constant stress (re-organisation of C-S-H, moisture movement). "
           "Models: Maxwell (spring + dashpot in series), Kelvin-Voigt (parallel). More creep with more paste, "
           "softer aggregate, **higher stress**."),
-   ("tip", "Check the figure on p. 15: the slide states *less* creep in drier air and in smaller sizes. The usual "
-           "textbook/EC2 trend (drying creep) is the opposite — creep coefficient φ rises at lower RH and smaller "
-           "notional size h₀ (EC2 Annex B). Confirm which case the slide's data shows before relying on it."),
+   ("tip", "Check the figure on p. 15: the slide states *less* creep in drier air and in smaller sizes. The "
+           r"usual textbook/EC2 trend (drying creep) is the opposite — creep coefficient $\phi$ rises at lower "
+           "RH and smaller notional size $h_0$ (EC2 Annex B). Confirm which case the slide's data shows "
+           "before relying on it."),
  ),
 ]}
 
@@ -951,9 +1137,10 @@ STUDY[MAT["9_durability"]] = {"code": "CE101", "title": "Materials 9 · Durabili
  ),
  sec("Chemical attack: sulfate & ASR", (10, 16),
    ("md", "**Sulfate**: sulfate enters → gypsum (≈ 120 % expansion) and AFm → ettringite (≈ 55 % solid volume "
-          "increase) → spalling. Mitigate: dense low-w/c concrete, SCMs/blended cement, low C₃A, SRPC.\n\n"
-          "**ASR** ('concrete cancer'): alkali pore solution (pH > 13) attacks reactive silica → expansive gel, "
-          "map cracking, no cure. Mitigate: SCMs (pH < 11), non-reactive aggregate, low-alkali cement."),
+          r"increase) → spalling. Mitigate: dense low-w/c concrete, SCMs/blended cement, low $\mathrm{C_3A}$, "
+          "SRPC.\n\n**ASR** ('concrete cancer'): alkali pore solution ($\\mathrm{pH} > 13$) attacks reactive "
+          r"silica → expansive gel, map cracking, no cure. Mitigate: SCMs ($\mathrm{pH} < 11$), non-reactive "
+          "aggregate, low-alkali cement."),
  ),
  sec("Reinforcement corrosion & permeability", (17, 24),
    ("md", "Corrosion products expand → cracking, spalling, exposed bars. Mitigate: waterproof coatings, adequate "
@@ -965,33 +1152,34 @@ STUDY[MAT["9_durability"]] = {"code": "CE101", "title": "Materials 9 · Durabili
 
 STUDY[MAT["10_steel_property"]] = {"code": "CE101", "title": "Materials 10 · Steel properties", "sections": [
  sec("Steel vs concrete; tensile behaviour", (3, 13),
-   ("md", "Steel: ~200× concrete in tension, ~20× in compression, 3× the density, no volume change, ~20× the price "
-          "and ~30× the CO₂ per unit. Tensile test: elastic → yield → strain hardening → necking → fracture. "
-          "Unload/reload follows the same E (strain hardening raises the yield point). Strength and ductility "
-          "trade off; toughness = area under the σ–ε curve."),
+   ("md", "Steel: ~200× concrete in tension, ~20× in compression, 3× the density, no volume change, ~20× the "
+          r"price and ~30× the $\mathrm{CO_2}$ per unit. Tensile test: elastic → yield → strain hardening → "
+          "necking → fracture. Unload/reload follows the same E (strain hardening raises the yield point). "
+          r"Strength and ductility trade off; toughness = area under the $\sigma\text{–}\varepsilon$ curve."),
    ("eq", r"\sigma_T = \sigma(1 + \varepsilon),\qquad \varepsilon_T = \ln(1 + \varepsilon)\quad\text{(constant volume)}"),
  ),
 ]}
 
 STUDY[MAT["11_steel_composition_and_structure"]] = {"code": "CE101", "title": "Materials 11 · Steel composition & structure", "sections": [
  sec("Metallic bonding & unit cells", (3, 4),
-   ("md", "Non-directional metallic bonds let planes slip (ductility); C-S-H's covalent bonds break instead.\n\n"
-          "| Cell | Atoms | a vs r | Packing |\n|---|---|---|---|\n| simple cubic | 1 | a = 2r | 0.52 |\n"
-          "| BCC | 2 | √3a = 4r | 0.68 |\n| FCC | 4 | √2a = 4r | 0.74 |"),
+   ("md", "Non-directional metallic bonds let planes slip (ductility); C-S-H's covalent bonds break "
+          "instead.\n\n| Cell | Atoms | a vs r | Packing |\n|---|---|---|---|\n| simple cubic | 1 | $a = 2r$ | "
+          "0.52 |\n| BCC | 2 | $\\sqrt{3}a = 4r$ | 0.68 |\n| FCC | 4 | $\\sqrt{2}a = 4r$ | 0.74 |"),
  ),
  sec("Phase diagrams & the lever rule", (5, 8),
    ("eq", r"\frac{M_{solid}}{M_{liquid}} = \frac{w_0 - w_L}{w_S - w_0}"),
-   ("ex", "Cu–50 % Ni at 1300 °C", "Liquid 46 % Ni, solid α 58 % Ni → M_L/M_S = (58 − 50)/(50 − 46) = 2:1 → ⅔ liquid, "
-          "⅓ solid."),
+   ("ex", "Cu–50 % Ni at 1300 °C", r"Liquid 46 % Ni, solid $\alpha$ 58 % Ni → $M_L/M_S = (58 - 50)/(50 - 46) = "
+                                   r"2{:}1$ → $\tfrac23$ liquid, $\tfrac13$ solid."),
  ),
  sec("Fe–C diagram: ferrite, austenite, cementite, pearlite", (9, 17),
-   ("md", "δ-iron (BCC) → 1401 °C → **austenite γ** (FCC) → 908 °C → **ferrite α** (BCC). C solubility: γ 2.0 %, "
-          "δ 0.10 %, α 0.025 %. **Cementite Fe₃C** (6.7 % C) is very hard and brittle. Eutectoid at **727 °C, "
-          "0.8 % C**: γ → α + Fe₃C as thin plates = **pearlite**.\n\n"
-          "- Hypo-eutectoid (< 0.8 % C, structural steels): pro-eutectoid ferrite + pearlite.\n"
-          "- Eutectoid (0.8 %): pearlite.\n- Hyper-eutectoid (> 0.8 %): pro-eutectoid Fe₃C + pearlite."),
-   ("ex", "Eutectoid steel just below 727 °C", "M_α/M_Fe₃C = (6.7 − 0.8)/(0.8 − 0.025) = 7.6 → ≈ 88 % ferrite, 12 % "
-          "cementite."),
+   ("md", r"$\delta$-iron (BCC) → 1401 °C → **austenite $\gamma$** (FCC) → 908 °C → **ferrite $\alpha$** "
+          r"(BCC). C solubility: $\gamma$ 2.0 %, $\delta$ 0.10 %, $\alpha$ 0.025 %. **Cementite "
+          r"$\mathrm{Fe_3C}$** (6.7 % C) is very hard and brittle. Eutectoid at **727 °C, 0.8 % C**: $\gamma$ "
+          "→ $\\alpha + \\mathrm{Fe_3C}$ as thin plates = **pearlite**.\n\n- Hypo-eutectoid (< 0.8 % C, "
+          "structural steels): pro-eutectoid ferrite + pearlite.\n- Eutectoid (0.8 %): pearlite.\n- "
+          r"Hyper-eutectoid ($> 0.8\,\%$): pro-eutectoid $\mathrm{Fe_3C}$ + pearlite."),
+   ("ex", "Eutectoid steel just below 727 °C", r"$M_{\alpha}/M_{\mathrm{Fe_3C}} = (6.7 - 0.8)/(0.8 - 0.025) = "
+                                               "7.6$ → ≈ 88 % ferrite, 12 % cementite."),
  ),
  sec("Welding & weldability", (18, 19),
    ("md", "Metal next to the weld exceeds 727 °C (austenite); on fast cooling the HAZ can form **martensite** "
@@ -1032,36 +1220,55 @@ STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101"
 MT = "CE101/CE2155_Mat_Tutorial_{}.pdf"
 STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · questions & model answers", "sections": [
  sec("Tutorial 1 — Cement (lecture 2)", (1, 1),
-   ("ex", "Q1 What is inter-ground with clinker, and why?", "**Gypsum** (CaSO₄·2H₂O). It supplies sulfate so C₃A forms "
-          "ettringite instead of hydrating instantly → prevents **flash set** and controls setting; amount rises with "
-          "C₃A content (too much affects setting/expansion)."),
-   ("ex", "Q2 Four clinker phases; which gives early strength?", "C₃S, C₂S, C₃A, C₄AF. **C₃S** gives most strength in "
-          "the first 3–4 weeks; C₂S contributes later."),
-   ("ex", "Q3 Type III vs Type I", "Type III has more C₃S (and C₃A) and is ground **finer** → faster hydration, high "
-          "early strength, more early heat; similar long-term strength. Used for precast, cold weather, early striking."),
-   ("ex", "Q4 Two types of porosity", "**Gel pores** (< 10 nm) — intrinsic spaces within C-S-H. **Capillary pores** "
-          "(> 10 nm) — remnants of the original water-filled space between cement grains not filled by hydrates; "
-          "rise with w/c, control permeability and strength."),
-   ("ex", "Q5 Benefits of fly ash; when not beneficial", "Lower heat of hydration (mass pours), better workability "
-          "(spherical particles, less water), better long-term strength and durability (less CH, finer pores, sulfate/"
-          "chloride resistance), lower cost and CO₂. **Not beneficial** when high early strength is needed (early "
-          "striking, cold weather, fast-track/precast) because early strength gain is slower."),
-   ("ex", "Q6 Silica fume vs Class F fly ash", "Silica fume: by-product of silicon metal, ~90 %+ amorphous SiO₂, "
-          "10–100 nm, highly reactive, raises water demand (sticky), adds early strength. Class F fly ash: coal "
-          "combustion residue, SiO₂ + Al₂O₃ + Fe₂O₃ ≥ 70 %, 1–300 µm spheres, slowly pozzolanic, improves flow."),
+   ("ex", "Q1 What is inter-ground with clinker, and why?", r"**Gypsum** ($\mathrm{CaSO_4} \cdot "
+                                                            r"2\mathrm{H_2O}$). It supplies sulfate so "
+                                                            r"$\mathrm{C_3A}$ forms ettringite instead of "
+                                                            "hydrating instantly → prevents **flash set** and "
+                                                            "controls setting; amount rises with "
+                                                            r"$\mathrm{C_3A}$ content (too much affects "
+                                                            "setting/expansion)."),
+   ("ex", "Q2 Four clinker phases; which gives early strength?", r"$\mathrm{C_3S}$, $\mathrm{C_2S}$, "
+                                                                 r"$\mathrm{C_3A}$, $\mathrm{C_4AF}$. "
+                                                                 r"$\boldsymbol{\mathrm{C_3S}}$ gives most "
+                                                                 "strength in the first 3–4 weeks; "
+                                                                 r"$\mathrm{C_2S}$ contributes later."),
+   ("ex", "Q3 Type III vs Type I", r"Type III has more $\mathrm{C_3S}$ (and $\mathrm{C_3A}$) and is ground "
+                                   "**finer** → faster hydration, high early strength, more early heat; "
+                                   "similar long-term strength. Used for precast, cold weather, early "
+                                   "striking."),
+   ("ex", "Q4 Two types of porosity", r"**Gel pores** ($< 10\ \mathrm{nm}$) — intrinsic spaces within C-S-H. "
+                                      r"**Capillary pores** ($> 10\ \mathrm{nm}$) — remnants of the original "
+                                      "water-filled space between cement grains not filled by hydrates; rise "
+                                      "with w/c, control permeability and strength."),
+   ("ex", "Q5 Benefits of fly ash; when not beneficial", "Lower heat of hydration (mass pours), better "
+                                                         "workability (spherical particles, less water), "
+                                                         "better long-term strength and durability (less CH, "
+                                                         "finer pores, sulfate/chloride resistance), lower "
+                                                         r"cost and $\mathrm{CO_2}$. **Not beneficial** when "
+                                                         "high early strength is needed (early striking, cold "
+                                                         "weather, fast-track/precast) because early strength "
+                                                         "gain is slower."),
+   ("ex", "Q6 Silica fume vs Class F fly ash", "Silica fume: by-product of silicon metal, ~90 %+ amorphous "
+                                               r"$\mathrm{SiO_2}$, 10–100 nm, highly reactive, raises water "
+                                               "demand (sticky), adds early strength. Class F fly ash: coal "
+                                               r"combustion residue, $\mathrm{SiO_2} + \mathrm{Al_2O_3} + "
+                                               r"\mathrm{Fe_2O_3} \ge 70\,\%$, 1–300 µm spheres, slowly "
+                                               "pozzolanic, improves flow."),
  ),
  sec("Tutorial 2 — Aggregate & admixtures (lectures 3–4)", (1, 1),
    ("ex", "Q1 Max aggregate size vs paste", "Larger well-graded maximum size → lower total surface area and fewer voids "
           "→ less water and paste for the same workability (limited by member size and bar spacing)."),
-   ("ex", "Q2 Absorption 1.5 %, total moisture 5 %", "Free (surface) moisture = 5 − 1.5 = **3.5 %** of oven-dry mass "
-          "→ reduce mixing water accordingly."),
+   ("ex", "Q2 Absorption 1.5 %, total moisture 5 %", "Free (surface) moisture = $5 - 1.5 = "
+                                                     r"\boldsymbol{3.5\,\%}$ of oven-dry mass → reduce mixing "
+                                                     "water accordingly."),
    ("ex", "Q3 Why 'water reducer'; normal vs high-range (ASTM C494)", "They disperse flocculated cement, so the same "
           "slump needs less water. Type A (normal) ≥ 5 % water reduction; Type F (high-range, superplasticiser) "
           "≥ 12 %."),
    ("ex", "Q4 Air-entraining vs water-reducing surfactants", "AE: hydrophilic head + **hydrophobic** tail, acts at the "
           "**air–water** interface to stabilise small bubbles. WR: anionic polymers adsorbing at the "
           "**cement–water** interface, dispersing particles by electrostatic repulsion/steric hindrance."),
-   ("ex", "Q5 300 kg water with a 15 % water reducer", "300 × (1 − 0.15) = **255 kg**."),
+   ("ex", "Q5 300 kg water with a 15 % water reducer", r"$300 \times (1 - 0.15) = \boldsymbol{255\ "
+                                                       r"\mathrm{kg}}$."),
    ("ex", "Q6 Setting-time curves", "Plot penetration resistance vs time: an accelerator shifts the curve **left** "
           "(earlier initial 3.5 MPa and final 27.6 MPa set), a retarder shifts it **right**; the plain mix lies "
           "between."),
@@ -1074,8 +1281,9 @@ STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · q
           "controlled by w/c and degree of hydration)."),
    ("ex", "Q2 Dominant factor & two others", "**w/c ratio**; also age/degree of hydration, curing (moisture, "
           "temperature), cement type, aggregate, air content, test conditions."),
-   ("ex", "Q3 Types I, III, V at the same w/c", "Early age: III > I > V (C₃S content and fineness). Long term: about "
-          "the same, because the degree of hydration converges by ~90 days."),
+   ("ex", "Q3 Types I, III, V at the same w/c", r"Early age: III > I > V ($\mathrm{C_3S}$ content and "
+                                                "fineness). Long term: about the same, because the degree of "
+                                                "hydration converges by ~90 days."),
    ("ex", "Q4 Curing", "Keeping concrete moist and at a suitable temperature after placing so hydration continues "
           "(it stops below ~80 % internal RH): strength, low permeability, durability, less plastic/drying "
           "shrinkage cracking."),
@@ -1083,15 +1291,19 @@ STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · q
           "slower; very high early temperature lowers ultimate strength). (c) **75 × 150** mm cylinder (size "
           "effect). (d) **3 MPa/s** (faster loading reads higher). (e) **Air-dry** (saturated reads lower — "
           "opposite to E)."),
-   ("ex", "Q6 Is concrete truly elastic? Micro-cracking stages", "No — non-linear and inelastic (ITZ micro-cracks, "
-          "creep, residual strain on unloading). < ~30 % f_c: stable ITZ cracks; 30–50 %: ITZ cracks grow; > 50 %: "
-          "matrix cracks start; > 75 %: cracks link up and become unstable → failure."),
+   ("ex", "Q6 Is concrete truly elastic? Micro-cracking stages", "No — non-linear and inelastic (ITZ "
+                                                                 "micro-cracks, creep, residual strain on "
+                                                                 r"unloading). < ~$30\,\% f_c$: stable ITZ "
+                                                                 "cracks; 30–50 %: ITZ cracks grow; > 50 %: "
+                                                                 "matrix cracks start; > 75 %: cracks link up "
+                                                                 "and become unstable → failure."),
    ("ex", "Q7 Larger coarse aggregate lowers mortar strength & impermeability", "Bigger particles create a thicker, "
           "more porous **ITZ** with more bleed water and micro-cracking under them → weak, connected paths."),
  ),
  sec("Tutorial 4 — Dimensional stability & durability (lectures 8–9)", (1, 1),
-   ("ex", "Q1 Heat of hydration — dams vs slabs", "Mass concrete cannot lose heat (low surface/volume) → large "
-          "internal ΔT and restraint → thermal cracking. Thin slabs and columns dissipate heat quickly."),
+   ("ex", "Q1 Heat of hydration — dams vs slabs", "Mass concrete cannot lose heat (low surface/volume) → "
+                                                  r"large internal $\Delta T$ and restraint → thermal "
+                                                  "cracking. Thin slabs and columns dissipate heat quickly."),
    ("ex", "Q2 Factors on drying shrinkage and creep", "Both rise with paste volume (w/c, cement content) and "
           "softer aggregate (similar). Stress level affects creep only. Ambient RH and member size: drier air and "
           "thinner members increase drying shrinkage (check lecture 8 p. 15 for the creep trend shown)."),
@@ -1102,8 +1314,9 @@ STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · q
    ("ex", "Q5 Controlling reinforcement corrosion", "Adequate cover; low w/c, SCMs and good curing (low "
           "permeability); limit chlorides in materials; crack control; coatings/sealers; epoxy-coated or "
           "galvanised/stainless bars; corrosion inhibitors; cathodic protection."),
-   ("ex", "Q6 Sulfate attack chemistry", "Sulfate + CH → **gypsum** (expansion, softening); sulfate + monosulfate "
-          "(AFm)/C₃A hydrates → **ettringite** (expansive) → cracking, spalling, loss of strength."),
+   ("ex", "Q6 Sulfate attack chemistry", "Sulfate + CH → **gypsum** (expansion, softening); sulfate + "
+                                         r"monosulfate (AFm)/$\mathrm{C_3A}$ hydrates → **ettringite** "
+                                         "(expansive) → cracking, spalling, loss of strength."),
    ("ex", "Q7 Match the photos", "Map cracking with white gel → **ASR**; scaling/pop-outs in cold climate → **frost**; "
           "rust staining and spalling over bars → **corrosion**; soft, expanded, spalled surface in contact with "
           "soil/seawater → **sulfate attack** (see the sheet's figures)."),
@@ -1114,16 +1327,20 @@ STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · q
    ("ex", "Q2 When concrete beats steel", "Compression-dominated mass structures (foundations, dams); fire "
           "resistance; corrosive/marine exposure with good cover; mouldability for complex shapes; low cost and "
           "local materials; mass for stability/acoustics."),
-   ("ex", "Q3 Total strain 0.213 at 600 MPa, plastic 0.210", "Elastic strain = 0.003 → E = 600/0.003 = **200 GPa**."),
-   ("ex", "Q4 Gold FCC, a = 0.408 nm", "Face diagonal √2·a = 4r → r = 0.408 × √2/4 = **0.144 nm**."),
+   ("ex", "Q3 Total strain 0.213 at 600 MPa, plastic 0.210", "Elastic strain = 0.003 → $E = 600/0.003 = "
+                                                             r"\boldsymbol{200\ \mathrm{GPa}}$."),
+   ("ex", r"Q4 Gold FCC, $a = 0.408\ \mathrm{nm}$", r"Face diagonal $\sqrt{2} \cdot a = 4r$ → $r = 0.408 \times \sqrt{2}/4 "
+                                       r"= \boldsymbol{0.144\ \mathrm{nm}}$."),
    ("ex", "Q5 Pro-eutectoid cementite (lever rule, 0.025 / 0.8 / 6.7 % C)",
-    "Pro-eutectoid Fe₃C ⇒ **hyper-eutectoid**. Likely intended **7.5 %**: C₀ = 0.8 + 0.075 × 5.9 = 1.24 % C; "
-    "pearlite = 92.5 %; eutectoid ferrite = 0.925 × 5.9/6.675 = **81.8 %**; eutectoid cementite = **10.7 %**. "
-    "(As printed, 75 % would need 5.2 % C — a cast iron: pearlite 25 %, eutectoid ferrite 22.1 %, eutectoid "
-    "cementite 2.9 %.)"),
-   ("ex", "Q6 Why C and alloying raise strength", "Interstitial/substitutional atoms distort the lattice and pin "
-          "dislocations (solid-solution strengthening); carbon forms hard Fe₃C/pearlite; alloys refine grains and "
-          "raise hardenability — at the cost of ductility and weldability."),
+    r"Pro-eutectoid $\mathrm{Fe_3C}$ ⇒ **hyper-eutectoid**. Likely intended **7.5 %**: $C_0 = 0.8 + 0.075 "
+    r"\times 5.9 = 1.24\,\%\ \mathrm{C}$; pearlite = 92.5 %; eutectoid ferrite = $0.925 \times 5.9/6.675 = "
+    r"\boldsymbol{81.8\,\%}$; eutectoid cementite = **10.7 %**. (As printed, 75 % would need 5.2 % C — a cast "
+    "iron: pearlite 25 %, eutectoid ferrite 22.1 %, eutectoid cementite 2.9 %.)"),
+   ("ex", "Q6 Why C and alloying raise strength", "Interstitial/substitutional atoms distort the lattice and "
+                                                  "pin dislocations (solid-solution strengthening); carbon "
+                                                  r"forms hard $\mathrm{Fe_3C}$/pearlite; alloys refine grains "
+                                                  "and raise hardenability — at the cost of ductility and "
+                                                  "weldability."),
    ("tip", "Q5 typo check: steel holds ≤ ~2 % C, so pro-eutectoid cementite can't exceed ≈ 20 %."),
  ),
 ]}
@@ -1141,12 +1358,13 @@ G2 = "CE104/CE104_2_Shear_Strength.pdf"
 STUDY[G1] = {"code": "CE104", "title": "Soil 8 · Groundwater, permeability & seepage", "sections": [
  sec("Groundwater conditions & pore pressure", (3, 17),
    ("eq", r"\sigma' = \sigma - u,\qquad u = \gamma_w z_w\ \text{(hydrostatic)}"),
-   ("md", "Effective stress controls soil **strength and compressibility**; most geotechnical problems involve "
-          "groundwater. A **standpipe piezometer** (20–25 mm pipe, porous tip) reads the pore-pressure head.\n\n"
-          "- **Hydrostatic**: u increases at γ_w per metre.\n- **Artesian** (aquifer under clay recharged from "
-          "higher ground): head above ground level; u in the clay rises *faster* than hydrostatic — beware **base "
-          "heave** when excavating into the clay.\n- **Underdrained** (aquifer pumped down): steady *downward* "
-          "seepage, u rises *slower* than hydrostatic."),
+   ("md", "Effective stress controls soil **strength and compressibility**; most geotechnical problems "
+          "involve groundwater. A **standpipe piezometer** (20–25 mm pipe, porous tip) reads the "
+          "pore-pressure head.\n\n- **Hydrostatic**: u increases at $\\gamma_w$ per metre.\n- **Artesian** "
+          "(aquifer under clay recharged from higher ground): head above ground level; u in the clay rises "
+          "*faster* than hydrostatic — beware **base heave** when excavating into the clay.\n- "
+          "**Underdrained** (aquifer pumped down): steady *downward* seepage, u rises *slower* than "
+          "hydrostatic."),
  ),
  sec("Heads & Darcy's law", (18, 26),
    ("eq", r"h = z + \frac{u}{\gamma_w} + \frac{v^2}{2g}\ \ (\text{velocity head negligible in soil})"),
@@ -1156,40 +1374,47 @@ STUDY[G1] = {"code": "CE104", "title": "Soil 8 · Groundwater, permeability & se
  ),
  sec("Permeability", (27, 32),
    ("eq", r"\text{constant head: } k = \frac{QL}{Aht}\qquad \text{falling head: } k = \frac{aL}{At}\ln\frac{h_1}{h_2}"),
-   ("md", "| Soil | k (cm/s) | Drainage |\n|---|---|---|\n| clean gravel | 10¹–10² | good |\n| clean sand / "
-          "sand–gravel | 10⁻¹–10⁻⁴ | good |\n| very fine sand, silt | 10⁻⁵–10⁻⁶ | poor |\n| clay | < 10⁻⁷ | "
-          "practically impervious |\n\nConstant head for coarse soils; falling head for fine soils."),
+   ("md", "| Soil | k (cm/s) | Drainage |\n|---|---|---|\n| clean gravel | $10^1\\text{–}10^2$ | good |\n| clean "
+          "sand / sand–gravel | $10^{-1}\\text{–}10^{-4}$ | good |\n| very fine sand, silt | "
+          "$10^{-5}\\text{–}10^{-6}$ | poor |\n| clay | < $10^{-7}$ | practically impervious |\n\nConstant head "
+          "for coarse soils; falling head for fine soils."),
  ),
  sec("Seepage forces & the quick condition", (33, 42),
    ("eq", r"j = i\gamma_w\ \text{per unit volume},\qquad \sigma' = \gamma'L \mp i\gamma_w L\ \ (\text{down}: +,\ \text{up}: -)"),
    ("eq", r"i_c = \frac{\gamma'}{\gamma_w} \approx 1"),
-   ("md", "Upward flow reduces effective stress; when σ′ = 0 the sand is **quick** (boiling, piping). Seepage force "
-          "acts **in the direction of flow** and is added vectorially to the buoyant weight."),
+   ("md", r"Upward flow reduces effective stress; when $\sigma' = 0$ the sand is **quick** (boiling, piping). "
+          "Seepage force acts **in the direction of flow** and is added vectorially to the buoyant weight."),
  ),
  sec("2-D seepage: flow nets", (43, 66),
    ("eq", r"\frac{\partial^2h}{\partial x^2} + \frac{\partial^2h}{\partial z^2} = 0 \qquad q = kH\frac{N_f}{N_d}\ \text{per metre}"),
    ("md", "Flow lines ⟂ equipotentials, curvilinear **squares**, flow lines never cross. Identify boundary "
-          "equipotentials (water-covered soil surfaces) and boundary flow lines (impermeable surfaces, sheet-pile "
-          "faces). Use symmetry (double N_f for the full section). Head at a point = upstream head − (drops "
-          "passed) × H/N_d; u = γ_w(h − z)."),
-   ("ex", "Cofferdam in fine sand (k = 1.5 × 10⁻⁴ m/s, H = 16 m)", "N_f = 4 (2 × 2 by symmetry), N_d = 8 → "
-          "q = kH N_f/N_d = **1.2 × 10⁻³ m³/s per m**."),
-   ("ex", "Flood-condition effective stresses", "Point A without seepage: σ = 2×10 + 21×18 = 398, u = 230 → σ′ = "
-          "**168 kPa**; with seepage u = 190 → σ′ = **208 kPa**. Point B near the exit: σ = 72, u = 80 → σ′ = "
-          "**−8 kPa** → quick condition/piping risk at the toe."),
+          "equipotentials (water-covered soil surfaces) and boundary flow lines (impermeable surfaces, "
+          "sheet-pile faces). Use symmetry (double $N_f$ for the full section). Head at a point = upstream "
+          r"head − (drops passed) × $H/N_d$; $u = \gamma_w(h - z)$."),
+   ("ex", r"Cofferdam in fine sand ($k = 1.5 \times 10^{-4}\ \mathrm{m/s}$, $H = 16\ \mathrm{m}$)", "$N_f = 4$ (2 × 2 by symmetry), $N_d = 8$ "
+                                                                   r"→ $q = kH N_f/N_d$ = **$1.2 \times "
+                                                                   r"10^{-3}\ \mathrm{m^3/s}$ per m**."),
+   ("ex", "Flood-condition effective stresses", r"Point A without seepage: $\sigma = 2 \times 10 + 21 \times "
+                                                r"18 = 398$, $u = 230$ → $\sigma' = \boldsymbol{168\ "
+                                                r"\mathrm{kPa}}$; with seepage $u = 190$ → $\sigma' = "
+                                                r"\boldsymbol{208\ \mathrm{kPa}}$. Point B near the exit: "
+                                                r"$\sigma = 72$, $u = 80$ → $\sigma' = \boldsymbol{-8\ "
+                                                r"\mathrm{kPa}}$ → quick condition/piping risk at the toe."),
  ),
  sec("Anisotropic soil", (67, 85),
    ("eq", r"k_x\frac{\partial^2h}{\partial x^2} + k_z\frac{\partial^2h}{\partial z^2} = 0,\quad x_T = x\sqrt{\frac{k_z}{k_x}},\quad k' = \sqrt{k_xk_z}"),
-   ("md", "Draw the section with horizontal distances scaled by √(k_z/k_x) (vertical unchanged), sketch a normal "
-          "flow net, then q = k′H N_f/N_d. Example: k_x = 4k_z → horizontal scale halved; k′ = 2 × 10⁻⁶ m/s."),
+   ("md", r"Draw the section with horizontal distances scaled by $\sqrt{k_z/k_x}$ (vertical unchanged), sketch "
+          "a normal flow net, then $q = k'H N_f/N_d$. Example: $k_x = 4k_z$ → horizontal scale halved; $k' = "
+          r"2 \times 10^{-6}\ \mathrm{m/s}$."),
  ),
  sec("Unconfined flow & the phreatic surface", (86, 112),
    ("md", "Dupuit assumptions: flat free surface, horizontal streamlines, vertical equipotentials, v uniform with "
           "depth."),
    ("eq", r"q = kh\frac{dh}{dx}\ \Rightarrow\ h^2 = h_0^2 - \frac{x}{L}\left(h_0^2 - h_L^2\right),\qquad q = \frac{k}{2L}\left(h_0^2 - h_L^2\right)"),
    ("md", "The **Dupuit parabola**. In earth dams the phreatic line must not exit on the downstream face "
-          "(sloughing, piping, collapse); the maximum exit gradient is at the smallest flow-net element near the "
-          "toe → compare with i_c. Remedy: **toe drain** / filter to pull the phreatic surface inside the dam."),
+          "(sloughing, piping, collapse); the maximum exit gradient is at the smallest flow-net element near "
+          "the toe → compare with $i_c$. Remedy: **toe drain** / filter to pull the phreatic surface inside "
+          "the dam."),
  ),
 ]}
 
@@ -1201,52 +1426,67 @@ STUDY[G2] = {"code": "CE104", "title": "Soil 9 · Shear strength of soils", "sec
  ),
  sec("Mohr circle & the pole method", (22, 41),
    ("eq", r"\sigma_\theta = \frac{\sigma_1 + \sigma_3}{2} + \frac{\sigma_1 - \sigma_3}{2}\cos2\theta,\qquad \tau_\theta = \frac{\sigma_1 - \sigma_3}{2}\sin2\theta"),
-   ("md", "Soil sign convention: **compression positive**, θ anticlockwise from the σ₁ plane. Max shear (at 45°) "
-          "is not on the failure plane. **Pole (origin of planes):** a line from the pole parallel to a plane "
-          "meets the circle at the stresses on that plane."),
+   ("md", r"Soil sign convention: **compression positive**, $\theta$ anticlockwise from the $\sigma_1$ plane. "
+          "Max shear (at 45°) is not on the failure plane. **Pole (origin of planes):** a line from the pole "
+          "parallel to a plane meets the circle at the stresses on that plane."),
    ("eq", r"\theta_f = 45^\circ + \frac{\phi}{2}\ \ (\text{failure plane from the major principal plane})"),
-   ("ex", "Example 1 — dry sand on the failure plane: τ = 3.5, σ = 10 kPa", "tanφ = 3.5/10 → φ = 19.3°."),
-   ("ex", "Examples 2–4", "σ₁ = 40, σ₃ = 20 kPa: on a plane at 30°, σ = 35 kPa, τ = 8.7 kPa; with shear on the "
-          "element (40, 15)/(20, −15) find the principal directions from tan2θ = 15/10 → 2θ = 56°."),
+   ("ex", r"Example 1 — dry sand on the failure plane: $\tau = 3.5$, $\sigma = 10\ \mathrm{kPa}$", r"$\tan\phi = 3.5/10$ → $\phi = "
+                                                                            r"19.3^\circ$."),
+   ("ex", "Examples 2–4", r"$\sigma_1 = 40$, $\sigma_3 = 20\ \mathrm{kPa}$: on a plane at 30°, $\sigma = 35\ "
+                          r"\mathrm{kPa}$, $\tau = 8.7\ \mathrm{kPa}$; with shear on the element (40, 15)/(20, "
+                          r"−15) find the principal directions from $\tan 2\theta = 15/10$ → $2\theta = "
+                          r"56^\circ$."),
  ),
  sec("Friction & the Mohr–Coulomb criterion", (42, 58),
    ("eq", r"\tau_f = c' + \sigma'_n\tan\phi' \qquad \sigma'_1 = \sigma'_3\tan^2\!\left(45^\circ + \frac{\phi'}{2}\right) + 2c'\tan\!\left(45^\circ + \frac{\phi'}{2}\right)"),
    ("eq", r"\sin\phi' = \frac{\sigma'_1 - \sigma'_3}{\sigma'_1 + \sigma'_3 + 2c'\cot\phi'}\qquad \text{FS} = \frac{\tau_f}{\tau}"),
-   ("md", "Granular strength comes from **friction** and interlocking (dilation). Undrained clay: φ = 0, "
-          "τ_f = s_u (horizontal envelope). Always plot **effective** stresses for drained behaviour "
-          "(σ′ = σ − u shifts the circle left by u, same size)."),
+   ("md", r"Granular strength comes from **friction** and interlocking (dilation). Undrained clay: $\phi = 0$, "
+          r"$\tau_f = s_u$ (horizontal envelope). Always plot **effective** stresses for drained behaviour "
+          r"($\sigma' = \sigma - u$ shifts the circle left by u, same size)."),
  ),
  sec("Direct shear & simple shear", (59, 80),
    ("md", "Two-half box, normal load N, shear on a **forced horizontal plane**. Dense sand: peak then drop to "
-          "residual, dilates; loose sand: no peak, contracts. Run ≥ 3 normal loads → envelope. Cheap, fast, simple; "
-          "but drainage cannot be controlled (hard for clays), non-uniform stress, forced plane. In situ σ′_h = "
-          "K₀σ′_v (K₀ ≈ 1 − sinφ′ for NC soil)."),
-   ("ex", "Example — sandy silt, σ_n = 65 kPa, K₀ = 0.5, τ_f = 41 kPa", "Initial circle σ₁ = 65, σ₃ = 32.5; failure "
-          "point (65, 41) → φ = tan⁻¹(41/65) ≈ 32°."),
+          "residual, dilates; loose sand: no peak, contracts. Run ≥ 3 normal loads → envelope. Cheap, fast, "
+          "simple; but drainage cannot be controlled (hard for clays), non-uniform stress, forced plane. In "
+          r"situ $\sigma'_h = K_0\sigma'_v$ ($K_0 \approx 1 - \sin\phi'$ for NC soil)."),
+   ("ex", r"Example — sandy silt, $\sigma_n = 65\ \mathrm{kPa}$, $K_0 = 0.5$, $\tau_f = 41\ \mathrm{kPa}$", r"Initial circle $\sigma_1 = 65$, "
+                                                                        r"$\sigma_3 = 32.5$; failure point "
+                                                                        r"(65, 41) → $\phi = \tan^{-1} (41/65) "
+                                                                        r"\approx 32^\circ$."),
  ),
  sec("Triaxial test: stresses, compression & extension", (81, 101),
    ("eq", r"q = \sigma_1 - \sigma_3 = \frac{F}{A},\qquad A = \frac{A_0(1 - \varepsilon_v)}{1 - \varepsilon_a}\ \ (\text{corrected area})"),
-   ("md", "Cylindrical specimen in a pressurised cell: σ₃ = cell pressure, σ₁ = σ₃ + deviator. Compression (σ₁ "
-          "vertical) vs extension (σ₁ radial) give different strengths — relevant to different parts of a slip "
-          "surface. **Back-pressure** saturates the specimen; drainage valve open/closed sets drained/undrained."),
+   ("md", r"Cylindrical specimen in a pressurised cell: $\sigma_3$ = cell pressure, $\sigma_1 = \sigma_3$ + "
+          r"deviator. Compression ($\sigma_1$ vertical) vs extension ($\sigma_1$ radial) give different "
+          "strengths — relevant to different parts of a slip surface. **Back-pressure** saturates the "
+          "specimen; drainage valve open/closed sets drained/undrained."),
  ),
  sec("UU, CU and CD tests", (102, 119),
-   ("md", "| Test | Consolidation | Shearing | Gives |\n|---|---|---|---|\n| **UU** | no | undrained | s_u (φ_u = 0) |"
-          "\n| **CU** | yes | undrained, measure u | c′, φ′ (and s_u) |\n| **CD** | yes | drained (slow) | c′, φ′ |"),
-   ("ex", "UU on clay A", "Different cell pressures give the same deviator at failure → φ_u = 0, **s_u = 35 kPa**."),
-   ("ex", "CD on sand — σ₃ = 120 kPa, deviator at failure 220 kPa", "σ₁ = 340 kPa; c′ = 0 → sinφ′ = (340 − 120)/"
-          "(340 + 120) → **φ′ ≈ 29°** (28.6°)."),
-   ("md", "Typical φ′: gravel 40–55°, sand loose dry 28–34°, dense dry 36–45° (sandy gravel highest). φ′ is a "
-          "parameter, not a strength: drained strength **increases with depth** via σ′."),
+   ("md", "| Test | Consolidation | Shearing | Gives |\n|---|---|---|---|\n| **UU** | no | undrained | $s_u$ "
+          "($\\phi_u = 0$) |\n| **CU** | yes | undrained, measure u | $c'$, $\\phi'$ (and $s_u$) |\n| **CD** | "
+          r"yes | drained (slow) | $c'$, $\phi'$ |"),
+   ("ex", "UU on clay A", r"Different cell pressures give the same deviator at failure → $\phi_u = 0$, "
+                          r"$\boldsymbol{s_u = 35\ \mathrm{kPa}}$."),
+   ("ex", r"CD on sand — $\sigma_3 = 120\ \mathrm{kPa}$, deviator at failure 220 kPa", r"$\sigma_1 = 340\ "
+                                                                                       r"\mathrm{kPa}$; $c' = "
+                                                                                       r"0$ → $\sin\phi' = "
+                                                                                       "(340 - 120)/(340 + "
+                                                                                       "120)$ → "
+                                                                                       r"$\boldsymbol{\phi' "
+                                                                                       r"\approx 29^\circ}$ "
+                                                                                       "(28.6°)."),
+   ("md", r"Typical $\phi'$: gravel 40–55°, sand loose dry 28–34°, dense dry 36–45° (sandy gravel highest). "
+          r"$\phi'$ is a parameter, not a strength: drained strength **increases with depth** via $\sigma'$."),
  ),
  sec("Drained vs undrained; OCR; pore-pressure parameters", (120, 142),
-   ("md", "Field vane, lab vane, mini-cone and pocket penetrometer give quick s_u. Use **drained** strength "
-          "(c′, φ′ with σ′) for long-term/slow loading; **undrained** s_u for rapid loading of low-permeability "
-          "clay (short-term). OCR = σ′_p/σ′_v0 (NC = 1)."),
+   ("md", "Field vane, lab vane, mini-cone and pocket penetrometer give quick $s_u$. Use **drained** strength "
+          r"($c'$, $\phi'$ with $\sigma'$) for long-term/slow loading; **undrained** $s_u$ for rapid loading "
+          r"of low-permeability clay (short-term). $\mathrm{OCR} = \sigma'_p/\sigma'_{v0}$ (NC = 1)."),
    ("eq", r"\Delta u = B\left[\Delta\sigma_3 + A(\Delta\sigma_1 - \Delta\sigma_3)\right],\qquad B = 1\ \text{for saturated soil}"),
-   ("md", "A_f > 0 (≈ 0.5–1) for NC clay/loose sand (contractive, positive Δu); A_f < 0 for heavily OC clay/dense "
-          "sand (dilative, negative Δu). **Correlations:** E_u ≈ 200–500 s_u (≈ 300 s_u first estimate); for NC "
-          "clay s_u/σ′_v0 ≈ 0.22 (Mesri) or 0.11 + 0.0037 PI (Skempton)."),
+   ("md", r"$A_f > 0$ (≈ 0.5–1) for NC clay/loose sand (contractive, positive $\Delta u$); $A_f < 0$ for "
+          r"heavily OC clay/dense sand (dilative, negative $\Delta u$). **Correlations:** $E_u \approx "
+          r"200\text{–}500 s_u$ (≈ $300 s_u$ first estimate); for NC clay $s_u/\sigma'_{v0} \approx 0.22$ "
+          "(Mesri) or 0.11 + 0.0037 PI (Skempton)."),
    ("eq", r"\tau_{ff} = \frac{(\sigma'_1 - \sigma'_3)_f}{2}\cos\phi'\quad(\text{shear stress on the failure plane at failure})"),
  ),
 ]}
@@ -1259,12 +1499,13 @@ SOIL = {k: _S.format(k) for k in ["S01_Introduction", "S02_Basic_Concepts", "S03
 
 STUDY[SOIL["S01_Introduction"]] = {"code": "CE104", "title": "Soil 0 · Course map (CE2112)", "sections": [
  sec("Parts & order", (2, 11),
-   ("md", "1. **Geology & basic characteristics** (weeks 1–4): origin of soils, Singapore geology, effective stress, "
-          "phase relations, particle size, index properties, classification.\n2. **Permeability & seepage** "
-          "(4–7): Darcy, permeability tests, flow nets, seepage forces.\n3. **Compressibility & consolidation** "
-          "(7–10): compression of granular/fine soils, elastic settlement, compression indices, 1-D consolidation, "
-          "c_v, preloading.\n4. **Shear strength** (10–13): Mohr–Coulomb, triaxial, drained/undrained, Skempton's "
-          "A & B.\n\nMain text: Knappett & Craig, *Craig's Soil Mechanics*."),
+   ("md", "1. **Geology & basic characteristics** (weeks 1–4): origin of soils, Singapore geology, effective "
+          "stress, phase relations, particle size, index properties, classification.\n2. **Permeability & "
+          "seepage** (4–7): Darcy, permeability tests, flow nets, seepage forces.\n3. **Compressibility & "
+          "consolidation** (7–10): compression of granular/fine soils, elastic settlement, compression "
+          "indices, 1-D consolidation, $c_v$, preloading.\n4. **Shear strength** (10–13): Mohr–Coulomb, "
+          "triaxial, drained/undrained, Skempton's A & B.\n\nMain text: Knappett & Craig, *Craig's Soil "
+          "Mechanics*."),
  ),
 ]}
 
@@ -1277,53 +1518,55 @@ STUDY[SOIL["S02_Basic_Concepts"]] = {"code": "CE104", "title": "Soil 1 · Introd
  ),
  sec("Rocks, soils & groundwater", (26, 40),
    ("md", "Rocks: igneous, sedimentary, metamorphic. Soils by origin: **residual** (weathered in place), "
-          "colluvial, eolian, alluvial, glacial, marine. Physical weathering → granular (same mineralogy, > 2 µm); "
-          "chemical weathering → **clay** (new minerals, < 2 µm). Soil = solids + water (+ air): dry, saturated, "
-          "unsaturated.\n\n**Groundwater table** = surface where u = 0. Soil above it may still be saturated by "
-          "**capillary rise**; pore pressure there is negative (suction)."),
+          "colluvial, eolian, alluvial, glacial, marine. Physical weathering → granular (same mineralogy, > 2 "
+          "µm); chemical weathering → **clay** (new minerals, < 2 µm). Soil = solids + water (+ air): dry, "
+          "saturated, unsaturated.\n\n**Groundwater table** = surface where $u = 0$. Soil above it may still be "
+          "saturated by **capillary rise**; pore pressure there is negative (suction)."),
    ("eq", r"h_c = \frac{4T\cos\alpha}{d\,\gamma_w}\ \ (\propto 1/d),\qquad u = -\gamma_w h_c\ \text{at the top of the capillary zone}"),
  ),
  sec("Stress, strain & how soil gains strength", (41, 51),
    ("md", "Soil treated as a deformable continuum: stress = load/area (normal, shear), strain = response, "
-          "modulus = stress/strain (measured by test). Soils fail by **shearing** — grains slide/roll, not crush "
-          "(except calcareous sands). Resistance = **inter-particle friction** (∝ normal force) + **interlocking** "
-          "(denser packing → dilation → higher φ′); sometimes cementation. Typical φ′ ≈ 30° sands, 20–28° clays."),
+          "modulus = stress/strain (measured by test). Soils fail by **shearing** — grains slide/roll, not "
+          "crush (except calcareous sands). Resistance = **inter-particle friction** (∝ normal force) + "
+          r"**interlocking** (denser packing → dilation → higher $\phi'$); sometimes cementation. Typical "
+          r"$\phi' \approx 30^\circ$ sands, 20–28° clays."),
  ),
  sec("Effective stress principle", (52, 58),
    ("eq", r"\sigma' = \sigma - u\qquad \text{water at/above ground, uniform soil: } \sigma' = \gamma' d"),
    ("md", "Effective stress = inter-particle contact force per unit area; it controls friction, strength and "
-          "stiffness. Higher u → lower σ′ → lower strength. Seabed soil at d = 0 has σ′ = 0 however deep the water "
-          "— seabed soils are soft."),
+          r"stiffness. Higher u → lower $\sigma'$ → lower strength. Seabed soil at $d = 0$ has $\sigma' = 0$ "
+          "however deep the water — seabed soils are soft."),
  ),
  sec("Packing density: phase relations", (59, 70),
    ("eq", r"e = \frac{V_v}{V_s},\quad n = \frac{e}{1+e},\quad w = \frac{W_w}{W_s},\quad S_r = \frac{V_w}{V_v},\quad Se = wG_s"),
    ("eq", r"\gamma_d = \frac{G_s\gamma_w}{1+e},\quad \gamma = \frac{(G_s + S_re)\gamma_w}{1+e},\quad \gamma_{sat} = \frac{(G_s + e)\gamma_w}{1+e},\quad \gamma' = \gamma_{sat} - \gamma_w"),
-   ("md", "Use V_s = 1 as the working assumption. Volumes are hard to measure, so work from weights and G_s."),
+   ("md", "Use $V_s = 1$ as the working assumption. Volumes are hard to measure, so work from weights and "
+          "$G_s$."),
  ),
- sec("Packability: sand vs clay, G_s, relative density", (71, 79),
-   ("md", "Sand: physical weathering, bulky grains, behaviour set by grading and packing. Clay: chemical weathering, "
-          "plate-like minerals with charged surfaces holding adsorbed water → plasticity and activity matter. "
-          "**G_s** ≈ 2.60 sands, 2.65–2.85 clays (pycnometer)."),
+ sec("Packability: sand vs clay, $G_s$, relative density", (71, 79),
+   ("md", "Sand: physical weathering, bulky grains, behaviour set by grading and packing. Clay: chemical "
+          "weathering, plate-like minerals with charged surfaces holding adsorbed water → plasticity and "
+          r"activity matter. $\boldsymbol{G_s} \approx 2.60$ sands, 2.65–2.85 clays (pycnometer)."),
    ("eq", r"D_R = \frac{e_{max} - e}{e_{max} - e_{min}}\times100\%"),
-   ("md", "| D_R % | State | φ′ ° |\n|---|---|---|\n| 0–15 | very loose | 29–32 |\n| 15–35 | loose | 32–35 |\n"
-          "| 35–65 | medium dense | 35–37 |\n| 65–85 | dense | 37–40 |\n| 85–100 | very dense | 40–42 |"),
+   ("md", "| $D_R\\,\\%$ | State | $\\phi'$ (°) |\n|---|---|---|\n| 0–15 | very loose | 29–32 |\n| 15–35 | loose | "
+          "32–35 |\n| 35–65 | medium dense | 35–37 |\n| 65–85 | dense | 37–40 |\n| 85–100 | very dense | 40–42 |"),
  ),
  sec("Particle size distribution", (80, 90),
    ("md", "Sieve analysis for > 0.063 mm; **hydrometer** (Stokes' law, deflocculated suspension) for silt/clay down "
           "to ~2 µm."),
    ("eq", r"C_U = \frac{D_{60}}{D_{10}},\qquad C_C = \frac{D_{30}^2}{D_{60}D_{10}}"),
-   ("md", "**Well graded: C_U > 15 and C_C 1–3**; uniformly graded C_U < 3; gap graded C_C < 0.5. Well-graded soils "
-          "pack densely → stronger, less compressible."),
+   ("md", "**Well graded: $C_U > 15$ and $C_C$ 1–3**; uniformly graded $C_U < 3$; gap graded $C_C < 0.5$. "
+          "Well-graded soils pack densely → stronger, less compressible."),
  ),
  sec("Atterberg limits & classification", (91, 104),
-   ("md", "Water content regimes: solid → (SL) → semi-solid → (PL) → plastic → (LL) → liquid. **LL** by fall cone "
-          "(30°, 80 g cone penetrates **20 mm**; s_u ≈ 2 kPa) preferred to Casagrande. PL = lowest w at which soil "
-          "can be rolled into 3 mm threads."),
+   ("md", "Water content regimes: solid → (SL) → semi-solid → (PL) → plastic → (LL) → liquid. **LL** by fall "
+          r"cone (30°, 80 g cone penetrates **20 mm**; $s_u \approx 2\ \mathrm{kPa}$) preferred to Casagrande. "
+          r"$\mathrm{PL}$ = lowest w at which soil can be rolled into 3 mm threads."),
    ("eq", r"PI = LL - PL,\qquad LI = \frac{w - PL}{PI}\quad(LI = 0\ \text{at PL},\ 1\ \text{at LL})"),
-   ("md", "PI ≈ water-content change that alters strength ~100×; high PI → large compression/swelling. "
-          "**BS classification:** fine-grained if > 35 % passes 0.063 mm. Plasticity chart: C (clay, above "
-          "A-line) / M (silt, below) / O (organic); plasticity L < 35, I 35–50, H 50–70, V > 70 % LL. Coarse: "
-          "G/S + W/P/U/C/F."),
+   ("md", r"$\mathrm{PI}$ ≈ water-content change that alters strength ~100×; high PI → large "
+          "compression/swelling. **BS classification:** fine-grained if > 35 % passes 0.063 mm. Plasticity "
+          "chart: C (clay, above A-line) / M (silt, below) / O (organic); plasticity L < 35, I 35–50, H "
+          "50–70, V > 70 % LL. Coarse: G/S + W/P/U/C/F."),
  ),
 ]}
 
@@ -1340,9 +1583,9 @@ STUDY[SOIL["S03_Singapore_Soil_Formation"]] = {"code": "CE104", "title": "Soil 2
           "repeatedly); sandy silt can **flow** under high pore pressure → ground loss."),
  ),
  sec("Jurong Formation", (9, 11),
-   ("md", "Late Triassic–Early Jurassic sandstone, mudstone, siltstone, shale, folded/faulted. **Extremely variable** "
-          "with depth and location; weathered to stiff soil (s_u 100–200 kPa) in places, near-intact rock "
-          "elsewhere (e.g. under parts of the CBD)."),
+   ("md", "Late Triassic–Early Jurassic sandstone, mudstone, siltstone, shale, folded/faulted. **Extremely "
+          "variable** with depth and location; weathered to stiff soil ($s_u$ 100–200 kPa) in places, "
+          "near-intact rock elsewhere (e.g. under parts of the CBD)."),
  ),
  sec("Old Alluvium", (12, 14),
    ("md", "5–0.5 Ma, poorly lithified clayey coarse sand with pebble stringers — soil-like at top, weak-rock-like "
@@ -1359,132 +1602,156 @@ STUDY[SOIL["S03_Singapore_Soil_Formation"]] = {"code": "CE104", "title": "Soil 2
 ]}
 
 STUDY[SOIL["S04_Phase_Relationships"]] = {"code": "CE104", "title": "Soil 1a · Phase relationships (supplement)", "sections": [
- sec("Formulae with V_s = 1", (2, 4),
+ sec("Formulae with $V_s = 1$", (2, 4),
    ("eq", r"V = 1 + e,\ \ V_w = S_re,\ \ W_s = G_s\gamma_w,\ \ W_w = S_re\gamma_w,\ \ A_v = \frac{e - wG_s}{1+e}"),
    ("eq", r"\gamma = \frac{G_s\gamma_w(1 + w)}{1 + e}\qquad \text{saturated: } e = wG_s,\ \gamma_{sat} = \frac{G_s\gamma_w(1+w)}{1 + wG_s}"),
-   ("tip", "Draw the phase diagram with V_s = 1, fill in volumes then weights — every relationship follows."),
+   ("tip", "Draw the phase diagram with $V_s = 1$, fill in volumes then weights — every relationship follows."),
  ),
 ]}
 
 STUDY[SOIL["S05_Effective_Stress"]] = {"code": "CE104", "title": "Soil 1b · Effective stress calculations", "sections": [
  sec("Hydrostatic examples", (2, 4),
-   ("md", "Water table at or above ground in uniform soil → σ′ = γ′d (water depth irrelevant). Otherwise build a "
-          "table: total stress σ = Σγᵢdᵢ (bulk above GWT, saturated below, + water above ground), u = γ_w × depth "
-          "below the GWT, σ′ = σ − u."),
-   ("ex", "Water 1000 m deep over soil, point 3 m below seabed (γ_sat = 18)", "σ = 3 × 18 + 1000 × 10 = 10 054; "
-          "u = 1003 × 10 = 10 030 → σ′ = **24 kPa** (= 3 × 8)."),
-   ("ex", "GWT below ground", "Point B at 2 m (γ = 16) above GWT: σ = 32, u = 0 → σ′ = 32 kPa; continue below the GWT "
-          "with γ_sat and u = γ_w(z − z_w)."),
+   ("md", r"Water table at or above ground in uniform soil → $\sigma' = \gamma'd$ (water depth irrelevant). "
+          r"Otherwise build a table: total stress $\sigma = \sum\gamma_id_i$ (bulk above GWT, saturated below, "
+          r"+ water above ground), $u = \gamma_w$ × depth below the GWT, $\sigma' = \sigma - u$."),
+   ("ex", r"Water 1000 m deep over soil, point 3 m below seabed ($\gamma_{\mathrm{sat}} = 18$)", r"$\sigma = 3 "
+                                                                                                 r"\times 18 + "
+                                                                                                 r"1000 \times "
+                                                                                                 "10 = "
+                                                                                                 r"10\,054$; "
+                                                                                                 "$u = 1003 "
+                                                                                                 r"\times 10 = "
+                                                                                                 r"10\,030$ → "
+                                                                                                 r"$\sigma' = "
+                                                                                                 r"\boldsymbol{24\ "
+                                                                                                 r"\mathrm{kPa}}$ "
+                                                                                                 "($= 3 "
+                                                                                                 r"\times 8$)."),
+   ("ex", "GWT below ground", r"Point B at 2 m ($\gamma = 16$) above GWT: $\sigma = 32$, $u = 0$ → $\sigma' = "
+                              r"32\ \mathrm{kPa}$; continue below the GWT with $\gamma_{\mathrm{sat}}$ and $u "
+                              r"= \gamma_w(z - z_w)$."),
  ),
 ]}
 
 STUDY[SOIL["S99_Summary"]] = {"code": "CE104", "title": "Soil · Part 1 summary (checklist)", "sections": [
  sec("What to know from Part 1", (2, 12),
-   ("md", "- Rock types and soil origins; granular vs clay (physical vs chemical weathering, 2 µm boundary).\n"
-          "- Groundwater table, confined/artesian aquifers, capillary rise and suction.\n"
-          "- Stress, strain, modulus; soils fail by sliding/rolling — friction + interlocking.\n"
-          "- Effective stress principle and hydrostatic calculations.\n- Phase relations, D_R.\n"
-          "- Grading (C_U, C_C), Atterberg limits, PI, LI; BS/ISO classification and the plasticity chart."),
+   ("md", "- Rock types and soil origins; granular vs clay (physical vs chemical weathering, 2 µm "
+          "boundary).\n- Groundwater table, confined/artesian aquifers, capillary rise and suction.\n- Stress, "
+          "strain, modulus; soils fail by sliding/rolling — friction + interlocking.\n- Effective stress "
+          "principle and hydrostatic calculations.\n- Phase relations, $D_R$.\n- Grading ($C_U$, $C_C$), "
+          "Atterberg limits, PI, LI; BS/ISO classification and the plasticity chart."),
  ),
 ]}
 
 STUDY[SOIL["S06_Stresses_and_Strains"]] = {"code": "CE104", "title": "Soil 5 · Stresses, strains & moduli", "sections": [
  sec("Why stresses & strains", (1, 8),
-   ("md", "Two design requirements: **stability** (ULS — shear failure of the skeleton, not particle crushing) and "
-          "**serviceability** (deformations). Stiffness k = F/δ depends on geometry; **modulus** E = σ/ε is a "
-          "material property. In saturated soil the skeleton carries normal and shear stress, water only normal "
-          "stress → σ′ = σ − u (contact area ≪ total area)."),
+   ("md", "Two design requirements: **stability** (ULS — shear failure of the skeleton, not particle "
+          r"crushing) and **serviceability** (deformations). Stiffness $k = F/\delta$ depends on geometry; "
+          r"**modulus** $E = \sigma/\varepsilon$ is a material property. In saturated soil the skeleton "
+          r"carries normal and shear stress, water only normal stress → $\sigma' = \sigma - u$ (contact area ≪ "
+          "total area)."),
  ),
  sec("Stress & strain at a point (soil sign convention)", (9, 15),
-   ("md", "Six independent stress components (τxy = τyx etc.); **compression positive** in soil mechanics. "
-          "Strains: εx = −∂vx/∂x, γxy = −(∂vx/∂y + ∂vy/∂x)."),
+   ("md", r"Six independent stress components ($\tau_{xy} = \tau_{yx}$ etc.); **compression positive** in soil "
+          r"mechanics. Strains: $\varepsilon_x = -\partial v_x/\partial x$, $\gamma_{xy} = -(\partial "
+          r"v_x/\partial y + \partial v_y/\partial x)$."),
  ),
  sec("Elastic moduli: E, G, K, D", (16, 25),
    ("eq", r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right],\quad G = \frac{E}{2(1+\nu)},\quad K = \frac{E}{3(1-2\nu)},\quad \varepsilon_v = \frac{p}{K}"),
    ("eq", r"D = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} = \frac{1}{m_v}\quad(\text{constrained modulus: lateral strains} = 0)"),
-   ("md", "E: load in one direction, others free. **D (1-D/oedometer)** is used in consolidation via m_v. Real soil "
-          "is non-linear and inelastic — linear moduli are convenient approximations."),
+   ("md", "E: load in one direction, others free. **D (1-D/oedometer)** is used in consolidation via $m_v$. "
+          "Real soil is non-linear and inelastic — linear moduli are convenient approximations."),
  ),
 ]}
 
 STUDY[SOIL["S07_Compression_Behaviour"]] = {"code": "CE104", "title": "Soil 6 · Compression behaviour", "sections": [
  sec("Isotropic vs 1-D compression", (2, 7),
-   ("md", "Isotropic (triaxial cell pressure, bulk modulus) and **1-D** (oedometer: rigid ring, no lateral strain, "
-          "constrained modulus — models wide fills and reclamation). Neither can cause shear failure. Drained: "
-          "u = 0, σ′ = σ; σ′_h = Kσ′_v."),
+   ("md", "Isotropic (triaxial cell pressure, bulk modulus) and **1-D** (oedometer: rigid ring, no lateral "
+          "strain, constrained modulus — models wide fills and reclamation). Neither can cause shear failure. "
+          r"Drained: $u = 0$, $\sigma' = \sigma$; $\sigma'_h = K\sigma'_v$."),
  ),
- sec("e–log p′: VCL, swelling lines & preconsolidation", (8, 14),
-   ("md", "Below **p′_c** the soil is stiff and nearly elastic (**swelling–recompression line**, slope C_s); above it, "
-          "large irreversible compression on the **virgin compression line** (slope C_c, particle rearrangement). "
-          "p′_c = highest past effective stress. **Casagrande method**: max-curvature point → tangent & horizontal → "
-          "bisector → extend the VCL back to meet it."),
+ sec(r"$e\text{–}\log p'$: VCL, swelling lines & preconsolidation", (8, 14),
+   ("md", r"Below $\boldsymbol{p'_c}$ the soil is stiff and nearly elastic (**swelling–recompression line**, "
+          "slope $C_s$); above it, large irreversible compression on the **virgin compression line** (slope "
+          "$C_c$, particle rearrangement). $p'_c$ = highest past effective stress. **Casagrande method**: "
+          "max-curvature point → tangent & horizontal → bisector → extend the VCL back to meet it."),
    ("eq", r"\text{VCL: } \Delta e = -C_c\log\frac{p'_2}{p'_1}\qquad \text{SRL: } \Delta e = -C_s\log\frac{p'_2}{p'_1}\quad(\text{effective stresses only})"),
    ("eq", r"m_v = \frac{\Delta\varepsilon}{\Delta\sigma'} = \frac{-\Delta e}{(1+e_0)\Delta\sigma'},\qquad D = \frac{1}{m_v}"),
  ),
  sec("1-D settlement", (15, 17),
    ("eq", r"\rho = \frac{H\,\Delta e}{1 + e_0}\qquad \text{NC: } \rho = \frac{C_cH}{1+e_0}\log\frac{\sigma'_0 + \Delta\sigma'}{\sigma'_0}\qquad \rho = m_v\,\Delta\sigma'\,H"),
-   ("md", "OC soil crossing p′_c: C_s from σ′₀ to p′_c, then C_c beyond. C_c correlates with PI. VCL is unique for a "
-          "clay but sands have different VCLs as vibration densifies them."),
+   ("md", r"OC soil crossing $p'_c$: $C_s$ from $\sigma'_0$ to $p'_c$, then $C_c$ beyond. $C_c$ correlates "
+          "with PI. VCL is unique for a clay but sands have different VCLs as vibration densifies them."),
  ),
 ]}
 
 STUDY[SOIL["S08_Consolidation_Time_Dependent"]] = {"code": "CE104", "title": "Soil 7 · Consolidation & time-dependent behaviour", "sections": [
  sec("Why consolidation takes time", (2, 10),
    ("md", "Saturated clay compresses only as water drains out — governed by permeability. Examples: drawdown "
-          "beside excavations; Singapore reclamation (fill 2–3 years, settlement over decades); **Kansai airport** "
-          "~10 m settlement over 50–100 years. Questions: **how much** (Δe or m_v) and **how long** (c_v)."),
+          "beside excavations; Singapore reclamation (fill 2–3 years, settlement over decades); **Kansai "
+          r"airport** ~10 m settlement over 50–100 years. Questions: **how much** ($\Delta e$ or $m_v$) and "
+          "**how long** ($c_v$)."),
  ),
  sec("Short-term, long-term & excess pore pressure", (11, 29),
-   ("md", "Spring–piston analogy: just after a wide load Δσ the **excess pore pressure** u₀ = Δσ carries it all "
-          "(σ′ unchanged); in the long term u → 0 and σ′ increases by Δσ. Excess pwp = total − long-term "
-          "equilibrium pwp. At a drained boundary u = 0 immediately; at an impermeable boundary ∂u/∂z = 0. "
+   ("md", r"Spring–piston analogy: just after a wide load $\Delta \sigma$ the **excess pore pressure** $u_0 = "
+          r"\Delta \sigma$ carries it all ($\sigma'$ unchanged); in the long term u → 0 and $\sigma'$ "
+          r"increases by $\Delta \sigma$. Excess pwp = total − long-term equilibrium pwp. At a drained "
+          r"boundary $u = 0$ immediately; at an impermeable boundary $\partial u/\partial z = 0$. "
           "**Isochrones** show u(z) at successive times."),
    ("eq", r"U_z = \frac{u_0 - u}{u_0},\qquad \bar{U} = \frac{\text{area dissipated}}{\text{area of initial } u_0 \text{ profile}} = \frac{\rho_t}{\rho_\infty}"),
  ),
  sec("Terzaghi's 1-D consolidation equation", (30, 37),
    ("eq", r"c_v\frac{\partial^2u}{\partial z^2} = \frac{\partial u}{\partial t},\qquad c_v = \frac{k}{m_v\gamma_w}"),
-   ("md", "Assumptions: homogeneous, saturated, incompressible grains and water, 1-D flow and strain, Darcy, k and "
-          "m_v constant. Derived from equilibrium, compatibility, m_v, effective stress, Darcy and continuity "
-          "(see the derivation supplement)."),
+   ("md", "Assumptions: homogeneous, saturated, incompressible grains and water, 1-D flow and strain, Darcy, "
+          "k and $m_v$ constant. Derived from equilibrium, compatibility, $m_v$, effective stress, Darcy and "
+          "continuity (see the derivation supplement)."),
    ("eq", r"T_v = \frac{c_vt}{D^2}\quad(D = \text{longest drainage path: } H/2 \text{ for double drainage})"),
  ),
  sec("Solutions & isochrones", (38, 52),
    ("eq", r"\bar{U} \approx \sqrt{\frac{4T_v}{\pi}}\ (\bar{U} < 0.6),\qquad T_v = 1.781 - 0.933\log_{10}\left[100(1 - \bar{U})\right]\ (\bar{U} > 0.6)"),
-   ("md", "Double drainage = two single-drainage problems back to back (mid-depth acts as impermeable). T₅₀ = 0.197, "
-          "T₉₀ = 0.848. Other initial profiles: **triangular** (e.g. rapid drawdown with an aquifer below), "
-          "trapezoidal, layered (Luscher). Use the chart matching the u₀ shape and drainage — the centre curve "
-          "(trapezoidal, double drainage, includes rectangular) is most used."),
-   ("ex", "Reclamation: 50 kPa on 5 m marine clay over sandstone (c_v = 0.5 m²/yr, ρ∞ = 1.61 m)",
-    "Double drainage, D = 2.5 m. Settle 1.5 m: Ū = 0.932 → T ≈ 1.0 → t = 1.0 × 2.5²/0.5 = **12.5 yr**. After 2 yr: "
-    "T = 0.16 → Ū ≈ 0.45 → **0.72 m**."),
+   ("md", "Double drainage = two single-drainage problems back to back (mid-depth acts as impermeable). "
+          "$T_{50} = 0.197$, $T_{90} = 0.848$. Other initial profiles: **triangular** (e.g. rapid drawdown "
+          "with an aquifer below), trapezoidal, layered (Luscher). Use the chart matching the $u_0$ shape and "
+          "drainage — the centre curve (trapezoidal, double drainage, includes rectangular) is most used."),
+   ("ex", r"Reclamation: 50 kPa on 5 m marine clay over sandstone ($c_v = 0.5\ \mathrm{m^2/yr}$, $\rho_\infty "
+          r"= 1.61\ \mathrm{m}$)",
+    r"Double drainage, $D = 2.5\ \mathrm{m}$. Settle 1.5 m: $\bar{U} = 0.932$ → $T \approx 1.0$ → $t = 1.0 "
+    r"\times 2.5^2/0.5 = \boldsymbol{12.5\ \mathrm{yr}}$. After 2 yr: $T = 0.16$ → $\bar{U} \approx 0.45$ → "
+    "**0.72 m**."),
  ),
- sec("Oedometer: C_c, C_s, m_v and c_v (curve fitting)", (55, 71),
-   ("md", "c_v = k/(m_vγ_w) is rarely used (k is hard to measure) — fit the settlement–time curve instead. Real "
-          "curves have immediate settlement (air) and **secondary compression**."),
+ sec("Oedometer: $C_c$, $C_s$, $m_v$ and $c_v$ (curve fitting)", (55, 71),
+   ("md", r"$c_v = k/(m_v\gamma_w)$ is rarely used (k is hard to measure) — fit the settlement–time curve "
+          "instead. Real curves have immediate settlement (air) and **secondary compression**."),
    ("eq", r"\text{Taylor } \sqrt{t}\text{: } c_v = \frac{0.848\,D^2}{t_{90}}\qquad \text{Casagrande log } t\text{: } c_v = \frac{0.197\,D^2}{t_{50}}"),
-   ("md", "**Taylor:** corrected origin, line through the initial straight part, second line with 1.15× the inverse "
-          "slope → meets the curve at t₉₀. **Casagrande:** correct zero using t₂ = 4t₁ (ρ₂ − ρ₁ = ρ₁ offset), end of "
-          "primary from the intersection of the primary and secondary tangents, take the midpoint → t₅₀."),
+   ("md", "**Taylor:** corrected origin, line through the initial straight part, second line with 1.15× the "
+          "inverse slope → meets the curve at $t_{90}$. **Casagrande:** correct zero using $t_2 = 4t_1$ "
+          r"($\rho_2 - \rho_1 = \rho_1$ offset), end of primary from the intersection of the primary and "
+          "secondary tangents, take the midpoint → $t_{50}$."),
  ),
  sec("General 1-D dissipation problems", (72, 75),
-   ("steps", ["Sketch σ, u, σ′ before the change (initial).",
-              "Sketch them just after the change (short term: undrained, σ′ unchanged in clay, Δu = Δσ).",
+   ("steps", [r"Sketch $\sigma$, $u$, $\sigma'$ before the change (initial).",
+              r"Sketch them just after the change (short term: undrained, $\sigma'$ unchanged in clay, $\Delta "
+              r"u = \Delta \sigma$).",
               "Sketch the long-term equilibrium (steady seepage or hydrostatic).",
-              "Initial excess pwp = short-term − long-term u → choose the matching chart and drainage → T → t, "
-              "settlement = Ū ρ∞."]),
+              "Initial excess pwp = short-term − long-term u → choose the matching chart and drainage → T → "
+              r"t, settlement = $\bar{U}\rho_\infty$."]),
  ),
 ]}
 
 STUDY[SOIL["S08c_1D_consolidation_derivation"]] = {"code": "CE104", "title": "Soil 7a · Derivation of the 1-D consolidation equation", "sections": [
  sec("Derivation outline", (1, 3),
-   ("steps", ["Equilibrium: ∂σ/∂z + γ = 0; with the load p₀ constant in time, ∂σ′/∂t = −∂u/∂t.",
-              "Compatibility: dε = −de/(1 + e).",
-              "Stress–strain: m_v = −de/[(1 + e)dσ′].",
-              "Darcy: v = −k ∂(u/γ_w)/∂z.",
-              "Continuity: −∂v/∂z = ∂ε/∂t = m_v ∂σ′/∂t = −m_v ∂u/∂t.",
-              "Combine → c_v ∂²u/∂z² = ∂u/∂t with c_v = k/(m_vγ_w); normalise with Z = z/D, T = c_vt/D²."]),
-   ("md", "Supplementary sheets: **consolidation curves** (Ū–T for rectangular, triangular and trapezoidal initial "
-          "profiles, single/double drainage) and **double-drainage isochrones** — keep them in your binder."),
+   ("steps", [r"Equilibrium: $\partial \sigma/\partial z + \gamma = 0$; with the load $p_0$ constant in time, "
+              r"$\partial \sigma'/\partial t = -\partial u/\partial t$.",
+              r"Compatibility: $d\varepsilon = -de/(1 + e)$.",
+              r"Stress–strain: $m_v = -de/[(1 + e)d\sigma']$.",
+              r"Darcy: $v = -k \partial (u/\gamma_w)/\partial z$.",
+              r"Continuity: $-\partial v/\partial z = \partial \varepsilon/\partial t = m_v \partial "
+              r"\sigma'/\partial t = -m_v \partial u/\partial t$.",
+              r"Combine → $c_v\,\partial^2u/\partial z^2 = \partial u/\partial t$ with $c_v = "
+              r"k/(m_v\gamma_w)$; normalise with $Z = z/D$, $T = c_vt/D^2$."]),
+   ("md", r"Supplementary sheets: **consolidation curves** ($\bar{U}\text{–}T$ for rectangular, triangular and "
+          "trapezoidal initial profiles, single/double drainage) and **double-drainage isochrones** — keep "
+          "them in your binder."),
  ),
 ]}
 
@@ -1494,44 +1761,64 @@ CT = {k: _T.format(k) for k in ["T_Tut1_Solutions", "T_Tut2_Solutions", "T_Class
                                 "T_Seepage_A_Solutions", "T_Seepage_B_Solutions", "T_Shear_A_Solutions", "T_Shear_B_Solutions"]}
 
 STUDY[CT["T_Tut1_Solutions"]] = {"code": "CE104", "title": "Practice · Tut 1 Effective stress (OAP)", "sections": [
- sec("Q1 Vertical stresses (sand, γ = 16 above / 19 below GWT at −5 m)", (2, 2),
-   ("md", "Points A 0 m, B −2 m, C −5 m (GWT), D −8 m. γ_w = 10."),
-   ("ex", "σ_v, u, σ′_v", "A: 0/0/0 · B: 32/0/**32** · C: 80/0/**80** · D: 5×16 + 3×19 = 137, u = 30 → **107 kPa**. "
-          "Capillary rise above the GWT would give negative u (suction) → σ′ > σ there."),
+ sec(r"Q1 Vertical stresses (sand, $\gamma = 16$ above / 19 below GWT at −5 m)", (2, 2),
+   ("md", r"Points A 0 m, B −2 m, C −5 m (GWT), D −8 m. $\gamma_w = 10$."),
+   ("ex", r"$\sigma_v$, $u$, $\sigma'_v$", r"A: 0/0/0 · B: 32/0/**32** · C: 80/0/**80** · D: $5 \times 16 + 3 \times 19 = 137$, "
+                          "$u = 30$ → **107 kPa**. Capillary rise above the GWT would give negative u "
+                          r"(suction) → $\sigma' > \sigma$ there."),
  ),
- sec("Q2 Horizontal stresses (K₀ = 0.43)", (3, 4),
-   ("ex", "σ′_h = K₀σ′_v, σ_h = σ′_h + u", "B: 13.76 · C: 34.4 · D: σ′_h = 46.0, σ_h = 46.0 + 30 = **76.0 kPa**. "
-          "Apply K₀ to **effective** stress only; stresses vary linearly between interfaces."),
+ sec("Q2 Horizontal stresses ($K_0 = 0.43$)", (3, 4),
+   ("ex", r"$\sigma'_h = K_0\sigma'_v$, $\sigma_h = \sigma'_h + u$", r"B: 13.76 · C: 34.4 · D: $\sigma'_h = 46.0$, $\sigma_h = 46.0 + 30 "
+                                           r"= \boldsymbol{76.0\ \mathrm{kPa}}$. Apply $K_0$ to **effective** "
+                                           "stress only; stresses vary linearly between interfaces."),
  ),
  sec("Q3 GWT rises to −3 m", (5, 5),
-   ("ex", "σ′_v at C", "σ = 3×16 + 2×19 = 86, u = 20 → σ′ = **66 kPa** (was 80). Lower σ′ → lower frictional strength at C."),
+   ("ex", r"$\sigma'_v$ at C", r"$\sigma = 3 \times 16 + 2 \times 19 = 86$, $u = 20$ → $\sigma' = \boldsymbol{66\ "
+                       r"\mathrm{kPa}}$ (was 80). Lower $\sigma'$ → lower frictional strength at C."),
  ),
 ]}
 
 STUDY[CT["T_Tut2_Solutions"]] = {"code": "CE104", "title": "Practice · Tut 2 Phase relationships (OAP)", "sections": [
- sec("Q1 Moist soil: V = 10 000 cm³, M = 18 kg, M_s = 15.5 kg, G_s = 2.70", (2, 3),
-   ("ex", "w, γ, γ_d, e, n, S_r", "w = 2.5/15.5 = **16.1 %** · γ = 18×9.81/1000/0.01 = **17.66** · γ_d = **15.21 kN/m³** · "
-          "e = G_sγ_w/γ_d − 1 = **0.78** · n = e/(1+e) = **0.44** · S_r = wG_s/e = **56 %**. "
-          "(The solution's 'M_s = 15.1 kg' is a typo — its numbers use 15.5.)"),
+ sec(r"Q1 Moist soil: $V = 10\,000\ \mathrm{cm^3}$, $M = 18\ \mathrm{kg}$, $M_s = 15.5\ \mathrm{kg}$, $G_s = "
+     "2.70$", (2, 3),
+   ("ex", r"$w$, $\gamma$, $\gamma_d$, $e$, $n$, $S_r$", r"$w = 2.5/15.5 = \boldsymbol{16.1\,\%}$ · $\gamma = 18 \times "
+                                  r"9.81/1000/0.01 = \boldsymbol{17.66}$ · $\gamma_d = \boldsymbol{15.21\ "
+                                  r"\mathrm{kN/m^3}}$ · $e = G_s\gamma_w/\gamma_d - 1 = \boldsymbol{0.78}$ · "
+                                  r"$n = e/(1 + e) = \boldsymbol{0.44}$ · $S_r = wG_s/e = "
+                                  r"\boldsymbol{56\,\%}$. (The solution's '$M_s = 15.1\ \mathrm{kg}$' is a "
+                                  "typo — its numbers use 15.5.)"),
  ),
- sec("Q2 e_max / e_min (G_s = 2.65, 1000 cm³ mould)", (4, 5),
-   ("ex", "Loose dry 1.4 kg; dense saturated 2.1 kg", "γ_d,min = 13.73 → **e_max = 0.93**. γ_sat = 20.60 → "
-          "e = (G_sγ_w − γ)/(γ − γ_w) = **e_min = 0.56** → γ_d,max = 26.5/1.56 = **17.0 kN/m³**."),
+ sec(r"Q2 $e_{\mathrm{max}} / e_{\mathrm{min}}$ ($G_s = 2.65$, $1000\ \mathrm{cm^3}$ mould)", (4, 5),
+   ("ex", "Loose dry 1.4 kg; dense saturated 2.1 kg", r"$\gamma_{\mathrm{d,min}} = 13.73$ → "
+                                                      r"$\boldsymbol{e_{\mathrm{max}} = 0.93}$. "
+                                                      r"$\gamma_{\mathrm{sat}} = 20.60$ → $e = (G_s\gamma_w - "
+                                                      r"\gamma)/(\gamma - \gamma_w) = "
+                                                      r"\boldsymbol{e_{\mathrm{min}} = 0.56}$ → "
+                                                      r"$\gamma_{\mathrm{d,max}} = 26.5/1.56 = "
+                                                      r"\boldsymbol{17.0\ \mathrm{kN/m^3}}$."),
  ),
- sec("Q3 In-situ state (w = 15 %, S_r = 55 %)", (6, 7),
-   ("ex", "e, D_R, γ_d", "e = wG_s/S_r = **0.72** · D_R = (0.93 − 0.72)/(0.93 − 0.56) = **57 % → medium dense** "
-          "(35–65 %) · γ_d = 26.5/1.72 = **15.4 kN/m³**."),
-   ("md", "D_R bands: very loose 0–15, loose 15–35, medium 35–65, dense 65–85, very dense 85–100 %."),
+ sec(r"Q3 In-situ state ($w = 15\,\%$, $S_r = 55\,\%$)", (6, 7),
+   ("ex", r"$e$, $D_R$, $\gamma_d$", r"$e = wG_s/S_r = \boldsymbol{0.72}$ · $D_R = (0.93 - 0.72)/(0.93 - 0.56) "
+                                     r"= \boldsymbol{57\,\%}$ → **medium dense** (35–65 %) · $\gamma_d = "
+                                     r"26.5/1.72 = \boldsymbol{15.4\ \mathrm{kN/m^3}}$."),
+   ("md", "$D_R$ bands: very loose 0–15, loose 15–35, medium 35–65, dense 65–85, very dense 85–100 %."),
  ),
- sec("Q4 Borrow pit → compacted fill (e 0.93 → 0.54, 200×200×2 m, G_s = 2.70)", (8, 9),
-   ("ex", "Volumes, γ, air voids, flooded w", "V_s = 80 000/1.54 = 51 948 m³ → borrow **V = 51 948×1.93 ≈ 100 260 m³**. "
-          "w = 14 %: γ = G_sγ_w(1+w)/(1+e) = **20.0 kN/m³**; A_v = (e − wG_s)/(1+e) = **10.5 %** of total volume "
-          "(= 30 % of the voids, which is what the question's definition gives). Flooded: w = e/G_s = **20 %**."),
+ sec("Q4 Borrow pit → compacted fill (e 0.93 → 0.54, 200×200×2 m, $G_s = 2.70$)", (8, 9),
+   ("ex", r"Volumes, $\gamma$, air voids, flooded w", r"$V_s = 80\,000/1.54 = 51\,948\ \mathrm{m^3}$ → borrow "
+                                              r"$\boldsymbol{V = 51\,948 \times 1.93 \approx 100\,260\ "
+                                              r"\mathrm{m^3}}$. $w = 14\,\%$: $\gamma = G_s\gamma_w(1 + w)/(1 "
+                                              r"+ e) = \boldsymbol{20.0\ \mathrm{kN/m^3}}$; $A_v = (e - "
+                                              r"wG_s)/(1 + e) = \boldsymbol{10.5\,\%}$ of total volume (= 30 % "
+                                              "of the voids, which is what the question's definition gives). "
+                                              r"Flooded: $w = e/G_s = \boldsymbol{20\,\%}$."),
  ),
- sec("Q5 Cement-treated soft clay (w = 75 %, G_s 2.70, G_c 3.1; target 20 % cement, 120 % water)", (10, 14),
-   ("ex", "Per 1 kg soil solids", "Cement **0.20 kg**; water: (0.75 + Δw)/1.2 = 1.2 → **Δw = 0.69 kg**; slurry "
-          "water/cement = **3.45**. γ_d,soil = 27/(1 + 2.025) = 8.92 kN/m³ → slurry per m³ soil = "
-          "0.2(8.92)/31 + 0.69(8.92)/10 = **0.673 m³**. Admixture γ = 2.64/(1/27 + 0.2/31 + 0.144) = **14.1 kN/m³**."),
+ sec(r"Q5 Cement-treated soft clay ($w = 75\,\%$, $G_s$ 2.70, $G_c$ 3.1; target 20 % cement, 120 % water)", (10, 14),
+   ("ex", "Per 1 kg soil solids", r"Cement **0.20 kg**; water: $(0.75 + \Delta w)/1.2 = 1.2$ → "
+                                  r"$\boldsymbol{\Delta w = 0.69\ \mathrm{kg}}$; slurry water/cement = "
+                                  r"**3.45**. $\gamma_{\mathrm{d,soil}} = 27/(1 + 2.025) = 8.92\ "
+                                  r"\mathrm{kN/m^3}$ → slurry per $\mathrm{m^3}$ soil = $0.2(8.92)/31 + "
+                                  r"0.69(8.92)/10 = \boldsymbol{0.673\ \mathrm{m^3}}$. Admixture $\gamma = "
+                                  r"2.64/(1/27 + 0.2/31 + 0.144) = \boldsymbol{14.1\ \mathrm{kN/m^3}}$."),
  ),
 ]}
 
@@ -1539,157 +1826,248 @@ STUDY[CT["T_Classification_Examples_R1"]] = {"code": "CE104", "title": "Practice
  sec("USCS (ASTM D2487) rules", (2, 3),
    ("steps", ["> 50 % passing 0.075 mm → fine-grained (M/C/O by plasticity chart, A-line); else coarse.",
               "Coarse: G or S by the larger of gravel (75–4.75 mm) / sand (4.75–0.075 mm).",
-              "Fines < 5 %: W or P from grading (GW: C_u > 4, SW: C_u > 6, and 1 ≤ C_c ≤ 3 for both).",
+              r"Fines < 5 %: W or P from grading (GW: $C_u > 4$, SW: $C_u > 6$, and $1 \le C_c \le 3$ for "
+              "both).",
               "Fines > 12 %: M or C from the plasticity chart. 5–12 %: dual symbol (e.g. GW-GM)."]),
    ("eq", r"C_u = \frac{D_{60}}{D_{10}},\qquad C_c = \frac{D_{30}^2}{D_{10}D_{60}}"),
  ),
  sec("BS EN ISO 14688-2 rules", (4, 6),
-   ("md", "Fine if > **35 %** passes 0.063 mm (soil sticks together when wet). Gravel 63–2 mm, sand 2–0.063 mm. "
-          "Secondary terms by proportion: e.g. 'slightly sandy' (< 20 %), 'sandy', 'very sandy' (> 20 % in coarse "
-          "soils, Table 1A). Grading: well graded C_u > 15 and 1 < C_c < 3; uniform C_u < 3; gap graded C_c < 0.5."),
+   ("md", "Fine if > **35 %** passes 0.063 mm (soil sticks together when wet). Gravel 63–2 mm, sand 2–0.063 "
+          r"mm. Secondary terms by proportion: e.g. 'slightly sandy' ($< 20\,\%$), 'sandy', 'very sandy' (> 20 "
+          "% in coarse soils, Table 1A). Grading: well graded $C_u > 15$ and $1 < C_c < 3$; uniform $C_u < "
+          "3$; gap graded $C_c < 0.5$."),
  ),
  sec("Answers — soils A to E", (7, 20),
-   ("ex", "USCS", "A **GM** (gravel, 25 % fines below A-line) · B **CH** · C **ML** · D **SP** (4 % fines, C_u 1.9, "
-          "C_c 0.92) · E dual symbol, 10 % fines, C_u 26, C_c 0.1."),
-   ("tip", "Soil E: the slides call the first symbol 'GW', but C_c = 0.1 fails 1 ≤ C_c ≤ 3, so by ASTM D2487 it is "
-           "**GP-GM**. The BS description below ('gap graded') agrees with the poorly-graded reading."),
+   ("ex", "USCS", "A **GM** (gravel, 25 % fines below A-line) · B **CH** · C **ML** · D **SP** (4 % fines, "
+                  "$C_u$ 1.9, $C_c$ 0.92) · E dual symbol, 10 % fines, $C_u$ 26, $C_c$ 0.1."),
+   ("tip", r"Soil E: the slides call the first symbol 'GW', but $C_c = 0.1$ fails $1 \le C_c \le 3$, so by "
+           "ASTM D2487 it is **GP-GM**. The BS description below ('gap graded') agrees with the poorly-graded "
+           "reading."),
    ("ex", "BS", "A very sandy, well graded GRAVEL · B high plasticity CLAY · C slightly sandy, low plasticity SILT · "
           "D slightly silty, uniformly graded SAND · E very sandy, gap graded GRAVEL."),
  ),
 ]}
 
 STUDY[CT["T_Assignment1"]] = {"code": "CE104", "title": "Practice · Assignment 1 basic characteristics (my worked answers)", "sections": [
- sec("Q1 Layered profile with capillary rise & K₀ (figure needed)", (1, 1),
-   ("steps", ["Capillary zone 1 m above the GWT: u = −γ_w·h_c (suction) and σ′ = σ − u > σ.",
-              "σ′_h = K₀σ′_v per layer (K₀ jumps at interfaces), σ_h = σ′_h + u.",
-              "GWT to +1 m: u rises everywhere (and σ gains 10 kPa of ponded water); σ′ falls → lower strength."]),
+ sec("Q1 Layered profile with capillary rise & $K_0$ (figure needed)", (1, 1),
+   ("steps", [r"Capillary zone 1 m above the GWT: $u = -\gamma_w \cdot h_c$ (suction) and $\sigma' = \sigma - "
+              r"u > \sigma$.",
+              r"$\sigma'_h = K_0\sigma'_v$ per layer ($K_0$ jumps at interfaces), $\sigma_h = \sigma'_h + u$.",
+              r"GWT to +1 m: u rises everywhere (and $\sigma$ gains 10 kPa of ponded water); $\sigma'$ falls → "
+              "lower strength."]),
    ("md", "Numbers depend on the figure — no official solution was supplied, so work it from the original page."),
  ),
- sec("Q2 Compaction material (γ 18, w 10 %, G_s 2.70, LL 25, PL 22)", (1, 2),
-   ("ex", "Water to add per 100 kg in-situ soil for γ_d = 17.5, S_r = 90 %", "Solids 90.9 kg + water 9.1 kg. Target "
-          "e = 27/17.5 − 1 = 0.543 → w = S_re/G_s = **18.1 %** → water needed 16.45 kg → add **≈ 7.4 kg**. "
-          "PI = 3 → non-plastic fines (ML side); the USCS symbol needs the PSD curve."),
+ sec(r"Q2 Compaction material ($\gamma$ 18, w 10 %, $G_s$ 2.70, LL 25, PL 22)", (1, 2),
+   ("ex", r"Water to add per 100 kg in-situ soil for $\gamma_d = 17.5$, $S_r = 90\,\%$", "Solids 90.9 kg + "
+                                                                                         "water 9.1 kg. "
+                                                                                         "Target $e = 27/17.5 "
+                                                                                         "- 1 = 0.543$ → $w = "
+                                                                                         "S_re/G_s = "
+                                                                                         r"\boldsymbol{18.1\,\%}$ "
+                                                                                         "→ water needed "
+                                                                                         "16.45 kg → add **≈ "
+                                                                                         "7.4 kg**. "
+                                                                                         r"$\mathrm{PI} = 3$ → "
+                                                                                         "non-plastic fines "
+                                                                                         "(ML side); the USCS "
+                                                                                         "symbol needs the "
+                                                                                         "PSD curve."),
  ),
  sec("Q3 Sludge + sand + lime landfill (solids 1 : 2 : 0.5)", (3, 4),
-   ("ex", "a–e", "a) e = G_Rγ_w/γ_d − 1 = 12/5 − 1 = **1.4**; S_r = wG/e = **43 %** · b) γ_d,sand = 26.5/2 = "
-          "**13.25 kN/m³** · c) 1 kg sludge = 0.667 kg solids → 1.333 kg sand solids → **1.49 kg** stockpiled sand · "
-          "d) 1 m³ sludge = 5 kN solids → 10 kN sand solids → **0.755 m³** sand · e) per 1 kg sludge solids: "
-          "water needed 0.5 × 3.5 = 1.75 kg, already 0.5 + 0.24 = 0.74 kg → slurry water 1.01 kg per 0.5 kg lime → "
-          "**water : lime ≈ 2.0**."),
+   ("ex", "a–e", r"a) $e = G_R\gamma_w/\gamma_d - 1 = 12/5 - 1 = \boldsymbol{1.4}$; $S_r = wG/e = "
+                 r"\boldsymbol{43\,\%}$ · b) $\gamma_{\mathrm{d,sand}} = 26.5/2 = \boldsymbol{13.25\ "
+                 r"\mathrm{kN/m^3}}$ · c) 1 kg sludge = 0.667 kg solids → 1.333 kg sand solids → **1.49 kg** "
+                 r"stockpiled sand · d) $1\ \mathrm{m^3}$ sludge = 5 kN solids → 10 kN sand solids → "
+                 r"$\boldsymbol{0.755\ \mathrm{m^3}}$ sand · e) per 1 kg sludge solids: water needed $0.5 "
+                 r"\times 3.5 = 1.75\ \mathrm{kg}$, already $0.5 + 0.24 = 0.74\ \mathrm{kg}$ → slurry water "
+                 "1.01 kg per 0.5 kg lime → **water : lime ≈ 2.0**."),
  ),
 ]}
 
 STUDY[CT["T_Seepage_A_Solutions"]] = {"code": "CE104", "title": "Practice · Seepage A — gradients, quick condition, permeameters (CSC)", "sections": [
- sec("Q1 Quick condition (γ_sat 20, L = 5 m, h_w = 2 m)", (1, 2),
-   ("ex", "i_c, h, j, check", "i_c = γ′/γ_w = **1** · h_P − h_Q = h, i = h/5 = 1 → **h = 5 m** · j = γ_wi_c = **10 kN/m³** · "
-          "upward seepage force jAL = 50A = buoyant weight γ′AL = 50A → soil 'floats'."),
+ sec(r"Q1 Quick condition ($\gamma_{\mathrm{sat}}$ 20, $L = 5\ \mathrm{m}$, $h_w = 2\ \mathrm{m}$)", (1, 2),
+   ("ex", "$i_c$, $h$, $j$, check", r"$i_c = \gamma'/\gamma_w = \boldsymbol{1}$ · $h_P - h_Q = h$, $i = h/5 = "
+                                    r"1$ → $\boldsymbol{h = 5\ \mathrm{m}}$ · $j = \gamma_wi_c = "
+                                    r"\boldsymbol{10\ \mathrm{kN/m^3}}$ · upward seepage force $jAL = 50A$ = "
+                                    r"buoyant weight $\gamma'AL = 50A$ → soil 'floats'."),
  ),
  sec("Q2 Left riser at 2 m above A (downward flow)", (3, 3),
-   ("ex", "i, σ′_A, j", "h_P = 2, h_Q = 7 → **i = −1** (downward) · σ_A = 20×5 + 10×2 = 120, u = 20 → **σ′ = 100 kPa** · "
-          "**j = 10 kN/m³ acting downward** (downward flow increases σ′)."),
+   ("ex", r"$i$, $\sigma'_A$, $j$", r"$h_P = 2$, $h_Q = 7$ → $\boldsymbol{i = -1}$ (downward) · $\sigma_A = 20 \times 5 + "
+                        r"10 \times 2 = 120$, $u = 20$ → $\boldsymbol{\sigma' = 100\ \mathrm{kPa}}$ · **$j = "
+                        r"10\ \mathrm{kN/m^3}$ acting downward** (downward flow increases $\sigma'$)."),
  ),
  sec("Q3 Artesian sand below 4 m clay", (4, 5),
-   ("ex", "σ′ top/base of clay; dry-sand excavation", "Top: σ = 16.5×2 + 19×2 = 71, u = 20 → **51 kPa** · base: σ = 151, "
-          "u = 10×12 = 120 → **31 kPa** · excavate d of dry sand: 31 − 16.5d = 0 → **d = 1.9 m**. "
-          "(The short-answer sheet repeats '51' for the base — it is 31.)"),
+   ("ex", r"$\sigma'$ top/base of clay; dry-sand excavation", r"Top: $\sigma = 16.5 \times 2 + 19 \times 2 = 71$, $u = "
+                                                      r"20$ → **51 kPa** · base: $\sigma = 151$, $u = 10 "
+                                                      r"\times 12 = 120$ → **31 kPa** · excavate d of dry "
+                                                      r"sand: $31 - 16.5d = 0$ → $\boldsymbol{d = 1.9\ "
+                                                      r"\mathrm{m}}$. (The short-answer sheet repeats '51' for "
+                                                      "the base — it is 31.)"),
  ),
- sec("Q4 Base heave of excavation in clay (γ 17.5, 10 m on sand)", (6, 6),
-   ("ex", "Failed at 6.5 m → piezometric head in sand", "17.5×3.5 − 10(10 − d) = 0 → **d = 3.875 m** below ground "
-          "(water rises to 6.125 m above the sand)."),
+ sec(r"Q4 Base heave of excavation in clay ($\gamma$ 17.5, 10 m on sand)", (6, 6),
+   ("ex", "Failed at 6.5 m → piezometric head in sand", r"$17.5 \times 3.5 - 10(10 - d) = 0$ → $\boldsymbol{d "
+                                                        r"= 3.875\ \mathrm{m}}$ below ground (water rises to "
+                                                        "6.125 m above the sand)."),
  ),
  sec("Q5–Q6 Constant-head tests", (7, 8),
    ("eq", r"k = \frac{QL}{hAt},\qquad v_s = \frac{v}{n}"),
-   ("ex", "Q5 sand, Ø50 × 150 mm, n = 0.6, h = 30 cm, 40 cm³ in 5 s", "A = 19.63 cm² → **k = 0.204 cm/s**; v = 0.407 cm/s → "
-          "**v_s = 0.68 cm/s**."),
-   ("ex", "Q6 Ø75 mm cell, tappings at 100 mm", "Six k values from A–B and B–C head differences → **k ≈ 2.70 × 10⁻⁴ m/s**."),
+   ("ex", r"Q5 sand, Ø50 × 150 mm, $n = 0.6$, $h = 30\ \mathrm{cm}$, $40\ \mathrm{cm^3}$ in 5 s", r"$A = 19.63\ \mathrm{cm^2}$ → "
+                                                                      r"$\boldsymbol{k = 0.204\ "
+                                                                      r"\mathrm{cm/s}}$; $v = 0.407\ "
+                                                                      r"\mathrm{cm/s}$ → $\boldsymbol{v_s = "
+                                                                      r"0.68\ \mathrm{cm/s}}$."),
+   ("ex", "Q6 Ø75 mm cell, tappings at 100 mm", "Six k values from A–B and B–C head differences → "
+                                                r"$\boldsymbol{k \approx 2.70 \times 10^{-4}\ \mathrm{m/s}}$."),
  ),
  sec("Q7–Q8 Falling-head tests", (9, 10),
    ("eq", r"k = \frac{aL}{At}\ln\frac{h_1}{h_2},\qquad k_{20} = k_TR_T,\ R_T = 2.42 - 0.475\ln T"),
-   ("ex", "Q7 silty clay, 22 °C", "a = 0.283 cm² → k₂₂ = 2.70 × 10⁻⁶ cm/s, R = 0.952 → **k₂₀ = 2.57 × 10⁻⁶ cm/s**."),
-   ("ex", "Q8 Ø100 × 127 mm, h 560 → 465 mm in 1081 s, Ø7 mm standpipe", "**k = 1.07 × 10⁻⁷ m/s**; same drop with a Ø4 mm "
-          "standpipe: t ∝ a → **t ≈ 353 s**."),
+   ("ex", "Q7 silty clay, 22 °C", r"$a = 0.283\ \mathrm{cm^2}$ → $k_{22} = 2.70 \times 10^{-6}\ "
+                                  r"\mathrm{cm/s}$, $R = 0.952$ → $\boldsymbol{k_{20} = 2.57 \times 10^{-6}\ "
+                                  r"\mathrm{cm/s}}$."),
+   ("ex", "Q8 Ø100 × 127 mm, h 560 → 465 mm in 1081 s, Ø7 mm standpipe", r"$\boldsymbol{k = 1.07 \times "
+                                                                         r"10^{-7}\ \mathrm{m/s}}$; same drop "
+                                                                         r"with a Ø4 mm standpipe: $t \propto "
+                                                                         r"a$ → $\boldsymbol{t \approx 353\ "
+                                                                         r"\mathrm{s}}$."),
  ),
 ]}
 
 STUDY[CT["T_Seepage_B_Solutions"]] = {"code": "CE104", "title": "Practice · Seepage B — flow nets, sheet piles, dams (CSC)", "sections": [
- sec("Q1 Sheet pile (k = 0.02 mm/s, H = 3 m, N_f = 5, N_d = 11)", (1, 3),
+ sec(r"Q1 Sheet pile ($k = 0.02\ \mathrm{mm/s}$, $H = 3\ \mathrm{m}$, $N_f = 5$, $N_d = 11$)", (1, 3),
    ("eq", r"q = kH\frac{N_f}{N_d}"),
-   ("ex", "q, element A, pile toe, FoS", "q = 2×10⁻⁵ × 3 × 5/11 = **2.36 m³/day/m** · A: v = ki = 3.64 × 10⁻⁶ m/s "
-          "(0.0131 m/h); head lost 3×2.5/11 = 0.68 m → u = 53.2 → **σ′_A = 51.8 kPa** (45 kPa with no flow) · toe (right "
-          "side): lost 3×6/11 = 1.64 m → u = 43.6, σ = 60 → **σ′ = 17.4 kPa** · exit gradient (7.36 − 6)/3 = 0.453 → "
-          "**FoS = i_c/i = 2.21**. (The question's FoS definition is inverted — use i_c/i.)"),
+   ("ex", "q, element A, pile toe, FoS", r"$q = 2 \times 10^{-5} \times 3 \times 5/11 = \boldsymbol{2.36\ "
+                                         r"\mathrm{m^3/day/m}}$ · A: $v = ki = 3.64 \times 10^{-6}\ "
+                                         r"\mathrm{m/s}$ ($0.0131\ \mathrm{m/h}$); head lost $3 \times 2.5/11 "
+                                         r"= 0.68\ \mathrm{m}$ → $u = 53.2$ → $\boldsymbol{\sigma'_A = 51.8\ "
+                                         r"\mathrm{kPa}}$ (45 kPa with no flow) · toe (right side): lost $3 "
+                                         r"\times 6/11 = 1.64\ \mathrm{m}$ → $u = 43.6$, $\sigma = 60$ → "
+                                         r"$\boldsymbol{\sigma' = 17.4\ \mathrm{kPa}}$ · exit gradient $(7.36 "
+                                         r"- 6)/3 = 0.453$ → $\boldsymbol{\mathrm{FoS} = i_c/i = 2.21}$. (The "
+                                         "question's FoS definition is inverted — use $i_c/i$.)"),
  ),
- sec("Q2 Piezometers around a sheet pile (k = 4.2 × 10⁻³ cm/s, H = 3.5 m, N_d = 6, N_f = 3)", (4, 5),
-   ("ex", "Rise above ground at a, b, c, d; q", "5 − n_d·H/6: a (1 drop) **4.42 m**, b (2) **3.83 m**, c and d (5, same "
-          "equipotential) **2.08 m** · q = 4.2×10⁻⁵ × 3.5 × 3/6 = **7.35 × 10⁻⁵ m³/s/m**."),
+ sec(r"Q2 Piezometers around a sheet pile ($k = 4.2 \times 10^{-3}\ \mathrm{cm/s}$, $H = 3.5\ \mathrm{m}$, "
+     "$N_d = 6$, $N_f = 3$)", (4, 5),
+   ("ex", "Rise above ground at a, b, c, d; q", r"$5 - n_d \cdot H/6$: a (1 drop) **4.42 m**, b (2) **3.83 "
+                                                "m**, c and d (5, same equipotential) **2.08 m** · $q = 4.2 "
+                                                r"\times 10^{-5} \times 3.5 \times 3/6 = \boldsymbol{7.35 "
+                                                r"\times 10^{-5}\ \mathrm{m^3/s/m}}$."),
  ),
- sec("Q3–Q4 Draw your own flow net (k = 4 × 10⁻⁴ cm/s)", (6, 7),
-   ("ex", "Q3 H = 4.5 m, N_f/N_d = 4/8", "q = 4×10⁻⁶ × 4.5 × 0.5 = **0.78 m³/day/m**"),
-   ("ex", "Q4 H = 2.5 m, N_f/N_d = 3/5", "q = **0.52 m³/day/m**"),
+ sec(r"Q3–Q4 Draw your own flow net ($k = 4 \times 10^{-4}\ \mathrm{cm/s}$)", (6, 7),
+   ("ex", r"Q3 $H = 4.5\ \mathrm{m}$, $N_f/N_d = 4/8$", r"$q = 4 \times 10^{-6} \times 4.5 \times 0.5 = \boldsymbol{0.78\ "
+                                         r"\mathrm{m^3/day/m}}$"),
+   ("ex", r"Q4 $H = 2.5\ \mathrm{m}$, $N_f/N_d = 3/5$", r"$q = \boldsymbol{0.52\ \mathrm{m^3/day/m}}$"),
  ),
- sec("Q5–Q7 Concrete dam on 9.5 m permeable soil (k = 10⁻⁵ m/s, H = 4 m)", (8, 10),
-   ("ex", "Effect of base length and blanket", "Q5 base 11 m, N_f/N_d = 3/6 → **1.73 m³/day** · Q6 base 5 m, 5/8 → "
-          "**2.16 m³/day** · Q7 base 5 m + 5 m upstream impermeable blanket, 4/8 → **1.73 m³/day**. A longer seepage path "
-          "(base or blanket) cuts flow and exit gradient. (The Q5 solution text says '8 m' base/layer — a leftover typo; "
-          "the figure and answer are for 11 m on 9.5 m.)"),
+ sec(r"Q5–Q7 Concrete dam on 9.5 m permeable soil ($k = 10^{-5}\ \mathrm{m/s}$, $H = 4\ \mathrm{m}$)", (8, 10),
+   ("ex", "Effect of base length and blanket", r"Q5 base 11 m, $N_f/N_d = 3/6$ → $\boldsymbol{1.73\ "
+                                               r"\mathrm{m^3/day}}$ · Q6 base 5 m, 5/8 → $\boldsymbol{2.16\ "
+                                               r"\mathrm{m^3/day}}$ · Q7 base 5 m + 5 m upstream impermeable "
+                                               r"blanket, 4/8 → $\boldsymbol{1.73\ \mathrm{m^3/day}}$. A "
+                                               "longer seepage path (base or blanket) cuts flow and exit "
+                                               "gradient. (The Q5 solution text says '8 m' base/layer — a "
+                                               "leftover typo; the figure and answer are for 11 m on 9.5 m.)"),
  ),
- sec("Q8–Q9 Dam on silty sand: flow and uplift (k = 2 × 10⁻⁵ m/s, H = 10 m)", (11, 13),
-   ("ex", "Q8 flow", "N_f/N_d = 5/12 → q = 2×10⁻⁵ × 10 × 5/12 = **7.2 m³/day/m**."),
-   ("ex", "Q9 uplift", "Each drop 10/12 = 0.833 m. Pressure head at a base point = (H + depth below ground) − n_d × 0.833 "
-          "(e.g. D: 13.33 − 2×0.833 = 11.66 m … I: 5.0 m). Uplift = γ_w × area of the pressure-head diagram = "
-          "**≈ 1752 kN/m**."),
+ sec(r"Q8–Q9 Dam on silty sand: flow and uplift ($k = 2 \times 10^{-5}\ \mathrm{m/s}$, $H = 10\ \mathrm{m}$)", (11, 13),
+   ("ex", "Q8 flow", r"$N_f/N_d = 5/12$ → $q = 2 \times 10^{-5} \times 10 \times 5/12 = \boldsymbol{7.2\ "
+                     r"\mathrm{m^3/day/m}}$."),
+   ("ex", "Q9 uplift", r"Each drop $10/12 = 0.833\ \mathrm{m}$. Pressure head at a base point = (H + depth "
+                       r"below ground) $-n_d \times 0.833$ (e.g. D: $13.33 - 2 \times 0.833 = 11.66\ "
+                       r"\mathrm{m}$ … I: 5.0 m). Uplift = $\gamma_w$ × area of the pressure-head diagram = "
+                       "**≈ 1752 kN/m**."),
  ),
 ]}
 
 STUDY[CT["T_Shear_A_Solutions"]] = {"code": "CE104", "title": "Practice · Shear strength A — direct shear & Mohr circles (CSC)", "sections": [
- sec("Q1 Dry sand: σ_n 200, τ_f 135 kPa", (1, 1),
-   ("ex", "φ; τ_f at 145 kPa", "tan φ = 0.675 → **φ = 34°** · τ_f = 145 tan 34° = **97.9 kPa**."),
+ sec(r"Q1 Dry sand: $\sigma_n$ 200, $\tau_f$ 135 kPa", (1, 1),
+   ("ex", r"$\phi$; $\tau_f$ at 145 kPa", r"$\tan\phi = 0.675$ → $\boldsymbol{\phi = 34^\circ}$ · $\tau_f = 145 \tan "
+                               r"34^\circ = \boldsymbol{97.9\ \mathrm{kPa}}$."),
  ),
  sec("Q2 Damp sand, two tests (50/33, 80/51 kPa)", (2, 2),
-   ("ex", "φ, apparent c", "Slope 18/30 = 0.6 → **φ = 31°**, intercept **c = 3 kPa** (apparent cohesion from suction)."),
+   ("ex", r"$\phi$, apparent c", r"Slope $18/30 = 0.6$ → $\boldsymbol{\phi = 31^\circ}$, intercept $\boldsymbol{c = "
+                           r"3\ \mathrm{kPa}}$ (apparent cohesion from suction)."),
  ),
- sec("Q3 Ø50 mm shear box, N = 200 N, S = 130 N", (3, 3),
-   ("ex", "σ, τ_f, φ, state", "A = 1963 mm² → σ = **102 kPa**, τ_f = **66 kPa** → **φ = 33°** → loose to medium dense."),
+ sec(r"Q3 Ø50 mm shear box, $N = 200\ \mathrm{N}$, $S = 130\ \mathrm{N}$", (3, 3),
+   ("ex", r"$\sigma$, $\tau_f$, $\phi$, state", r"$A = 1963\ \mathrm{mm^2}$ → $\sigma = \boldsymbol{102\ \mathrm{kPa}}$, $\tau_f "
+                              r"= \boldsymbol{66\ \mathrm{kPa}}$ → $\boldsymbol{\phi = 33^\circ}$ → loose to "
+                              "medium dense."),
  ),
- sec("Q4 Strength on a horizontal plane at 4 m (γ 19.6, φ 35°)", (4, 4),
-   ("ex", "Before / after building load", "τ_f = 78.4 tan 35° = **54.9 kPa** · after +60 kPa: τ_f = 138.4 tan 35° = "
-          "**96.9 kPa** > applied 52 kPa → OK."),
+ sec(r"Q4 Strength on a horizontal plane at 4 m ($\gamma$ 19.6, $\phi$ 35°)", (4, 4),
+   ("ex", "Before / after building load", r"$\tau_f = 78.4 \tan 35^\circ = \boldsymbol{54.9\ \mathrm{kPa}}$ · "
+                                          r"after +60 kPa: $\tau_f = 138.4 \tan 35^\circ = \boldsymbol{96.9\ "
+                                          r"\mathrm{kPa}}$ > applied 52 kPa → OK."),
  ),
  sec("Q5 Mohr circle states", (5, 5),
-   ("md", "Point on the σ axis → isotropic stress · circle inside the envelope → stable · tangent → failure on the "
-          "plane at the tangent point · crossing the envelope → **cannot exist**."),
+   ("md", r"Point on the $\sigma$ axis → isotropic stress · circle inside the envelope → stable · tangent → "
+          "failure on the plane at the tangent point · crossing the envelope → **cannot exist**."),
  ),
 ]}
 
 STUDY[CT["T_Shear_B_Solutions"]] = {"code": "CE104", "title": "Practice · Shear strength B — triaxial, UU/CU/CD (CSC)", "sections": [
- sec("Q1–Q3 Triaxial on dry sand (c = 0)", (1, 2),
+ sec("Q1–Q3 Triaxial on dry sand ($c = 0$)", (1, 2),
    ("eq", r"\sin\phi = \frac{\sigma_1 - \sigma_3}{\sigma_1 + \sigma_3},\qquad \sigma_1 = \sigma_3\tan^2\!\left(45^\circ + \frac{\phi}{2}\right) + 2c\tan\!\left(45^\circ + \frac{\phi}{2}\right)"),
-   ("ex", "Q1 σ₃ 50, σ₁ 170", "sin φ = 120/220 → **φ = 33°**."),
-   ("ex", "Q2 φ 36°, σ₃ 40", "**σ₁f = 154 kPa**."),
-   ("ex", "Q3 φ 37°, σ_h 45", "σ_v,max = **181 kPa**; with K₀ = 1 − sin φ = 0.398, σ_v = 113 kPa < 181 → not near failure."),
+   ("ex", r"Q1 $\sigma_3$ 50, $\sigma_1$ 170", r"$\sin\phi = 120/220$ → $\boldsymbol{\phi = 33^\circ}$."),
+   ("ex", r"Q2 $\phi$ 36°, $\sigma_3$ 40", r"$\boldsymbol{\sigma_{1f} = 154\ \mathrm{kPa}}$."),
+   ("ex", r"Q3 $\phi$ 37°, $\sigma_h$ 45", r"$\sigma_{\mathrm{v,max}} = \boldsymbol{181\ \mathrm{kPa}}$; with $K_0 = 1 - "
+                              r"\sin\phi = 0.398$, $\sigma_v = 113\ \mathrm{kPa} < 181$ → not near failure."),
  ),
- sec("Q4 Principal stresses 195 / 70 kPa, φ 34°", (2, 2),
-   ("ex", "Failure?", "Mobilised sin φ_m = 125/265 → φ_m = **28° < 34°** → no shear failure."),
+ sec(r"Q4 Principal stresses 195 / 70 kPa, $\phi$ 34°", (2, 2),
+   ("ex", "Failure?", r"Mobilised $\sin\phi_m = 125/265$ → $\phi_m = \boldsymbol{28^\circ < 34^\circ}$ → no "
+                      "shear failure."),
  ),
- sec("Q5–Q6 Triaxial → direct shear; c–φ soil", (3, 3),
-   ("ex", "Q5 σ₃ 15, σ₁ 51 → φ = 33°", "τ_f at σ_n 125 = **81 kPa**."),
-   ("ex", "Q6 c 22, φ 28°, σ_n 70", "τ_f = 22 + 70 tan 28° = **59.2 kPa**."),
+ sec(r"Q5–Q6 Triaxial → direct shear; $c\text{–}\phi$ soil", (3, 3),
+   ("ex", r"Q5 $\sigma_3$ 15, $\sigma_1$ 51 → $\phi = 33^\circ$", r"$\tau_f$ at $\sigma_n = 125$: "
+                                                                  r"$\boldsymbol{81\ \mathrm{kPa}}$."),
+   ("ex", r"Q6 c 22, $\phi$ 28°, $\sigma_n$ 70", r"$\tau_f = 22 + 70 \tan 28^\circ = \boldsymbol{59.2\ \mathrm{kPa}}$."),
  ),
  sec("Q7–Q8 UU area correction; CIU parameters", (4, 4),
-   ("ex", "Q7 L 110, Ø50, ΔL 8 mm, P 0.145 kN", "ε_a = 0.073, A = A₀/(1 − ε_a) = 0.00212 m² → q_f = 68.5 → "
-          "**s_u = 34.3 kPa**."),
-   ("ex", "Q8 CIU (σ_c 100/200/300; Δσ₁ 238/307/389; Δu 36/108/197)", "Effective circles σ′₃/σ′₁: 64/302, 92/399, "
-          "103/492. My best-fit p′–q line: **φ′ ≈ 40°, c′ ≈ 0**; total: **φ_cu ≈ 16°, c_cu ≈ 60 kPa** (no official "
-          "numbers — check with your own Mohr circles)."),
+   ("ex", r"Q7 L 110, Ø50, $\Delta L$ 8 mm, P 0.145 kN", r"$\varepsilon_a = 0.073$, $A = A_0/(1 - \varepsilon_a) = "
+                                                r"0.00212\ \mathrm{m^2}$ → $q_f = 68.5$ → $\boldsymbol{s_u = "
+                                                r"34.3\ \mathrm{kPa}}$."),
+   ("ex", r"Q8 CIU ($\sigma_c$ 100/200/300; $\Delta \sigma_1$ 238/307/389; $\Delta u$ 36/108/197)", "Effective "
+                                                                                                    "circles "
+                                                                                                    r"$\sigma'_3/\sigma'_1$: "
+                                                                                                    "64/302, "
+                                                                                                    "92/399, "
+                                                                                                    "103/492. "
+                                                                                                    "My "
+                                                                                                    "best-fit "
+                                                                                                    r"$p'\text{–}q$ "
+                                                                                                    "line: "
+                                                                                                    r"**$\phi' "
+                                                                                                    r"\approx "
+                                                                                                    r"40^\circ$, "
+                                                                                                    "$c' "
+                                                                                                    r"\approx "
+                                                                                                    "0$**; "
+                                                                                                    "total: "
+                                                                                                    r"**$\phi_{\mathrm{cu}} "
+                                                                                                    r"\approx "
+                                                                                                    r"16^\circ$, "
+                                                                                                    r"$c_{\mathrm{cu}} "
+                                                                                                    r"\approx "
+                                                                                                    r"60\ "
+                                                                                                    r"\mathrm{kPa}$** "
+                                                                                                    "(no "
+                                                                                                    "official "
+                                                                                                    "numbers "
+                                                                                                    "— check "
+                                                                                                    "with "
+                                                                                                    "your own "
+                                                                                                    "Mohr "
+                                                                                                    "circles)."),
  ),
- sec("Q9–Q10 UU / unconfined; undrained, CU and CD on one clay (σ_c 200, φ′ 24°)", (5, 6),
-   ("ex", "Q9 UU σ₃ 40, σ₁ 106", "c_u = 33 kPa → unconfined compressive strength q_u = 2c_u = **66 kPa** (a stress)."),
-   ("ex", "Q10", "(a) u_f 125 → σ′₃ = 75, σ′₁ = 178 → **q_f = 103 kPa** · (b) q_f 160 → σ′₁ + σ′₃ = 160/sin 24° = 393 → "
-          "σ′₃ = 116.7 → **u_f = 83.3 kPa** · (c) CD, back pressure 80 → σ′₃ = 120 → σ′₁ = 284.5 → **q_f = 164.5 kPa**."),
+ sec(r"Q9–Q10 UU / unconfined; undrained, CU and CD on one clay ($\sigma_c$ 200, $\phi'$ 24°)", (5, 6),
+   ("ex", r"Q9 UU $\sigma_3$ 40, $\sigma_1$ 106", r"$c_u = 33\ \mathrm{kPa}$ → unconfined compressive strength $q_u = 2c_u = "
+                                 r"\boldsymbol{66\ \mathrm{kPa}}$ (a stress)."),
+   ("ex", "Q10", r"(a) $u_f$ 125 → $\sigma'_3 = 75$, $\sigma'_1 = 178$ → $\boldsymbol{q_f = 103\ "
+                 r"\mathrm{kPa}}$ · (b) $q_f$ 160 → $\sigma'_1 + \sigma'_3 = 160/\sin 24^\circ = 393$ → "
+                 r"$\sigma'_3 = 116.7$ → $\boldsymbol{u_f = 83.3\ \mathrm{kPa}}$ · (c) CD, back pressure 80 → "
+                 r"$\sigma'_3 = 120$ → $\sigma'_1 = 284.5$ → $\boldsymbol{q_f = 164.5\ \mathrm{kPa}}$."),
  ),
- sec("Q11 Total-stress parameters c_u 35, φ_u 17°", (7, 8),
-   ("ex", "Cell pressure; unconfined s_u", "tan²(53.5°) = 1.826, 2c tan 53.5° = 94.6 → 360 = 1.826σ₃ + 94.6 → "
-          "**σ₃ = 145.3 kPa** · σ₃ = 0 → σ₁ = 94.6 → **s_u = 47.3 kPa**."),
+ sec(r"Q11 Total-stress parameters $c_u$ 35, $\phi_u$ 17°", (7, 8),
+   ("ex", "Cell pressure; unconfined $s_u$", r"$\tan^2 (53.5^\circ) = 1.826$, $2c \tan 53.5^\circ = 94.6$ → $360 "
+                                           r"= 1.826\sigma_3 + 94.6$ → $\boldsymbol{\sigma_3 = 145.3\ "
+                                           r"\mathrm{kPa}}$ · $\sigma_3 = 0$ → $\sigma_1 = 94.6$ → "
+                                           r"$\boldsymbol{s_u = 47.3\ \mathrm{kPa}}$."),
  ),
 ]}
 

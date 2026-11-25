@@ -32,7 +32,7 @@ ANA[D["P0"]] = {"code": "CE103", "title": "Analysis 0 · Shear force & bending m
  ),
  sec("Load–shear–moment relations", (23, 42),
    ("eq", r"\frac{dV}{dx} = -w(x),\qquad \frac{dM}{dx} = V,\qquad \Delta V = -\int w\,dx,\quad \Delta M = \int V\,dx"),
-   ("md", "M is maximum where V = 0; point loads jump V; point moments jump M; UDL → parabolic M."),
+   ("md", "M is maximum where $V = 0$; point loads jump V; point moments jump M; UDL → parabolic M."),
  ),
  sec("Frames", (43, 71),
    ("md", "Draw BMD on the tension side member by member; at rigid joints moments balance."),
@@ -52,8 +52,8 @@ ANA[D["P2a"]] = {"code": "CE103", "title": "Analysis 1 · Determinacy", "section
 
 ANA[D["P2b"]] = {"code": "CE103", "title": "Analysis 2 · Stability", "sections": [
  sec("Internal & external stability", (4, 8),
-   ("md", "A structure is unstable if it can move as a mechanism without deforming. Counting (r < 3 or i < 0) is "
-          "necessary but not sufficient."),
+   ("md", "A structure is unstable if it can move as a mechanism without deforming. Counting ($r < 3$ or $i < "
+          "0$) is necessary but not sufficient."),
  ),
  sec("Classes of instability", (9, 23),
    ("md", "**Partial constraint** (too few reactions); **improper constraint** (reactions all concurrent or all "
@@ -66,7 +66,7 @@ ANA[D["P2b"]] = {"code": "CE103", "title": "Analysis 2 · Stability", "sections"
 
 ANA[D["P3"]] = {"code": "CE103", "title": "Analysis 3 · Virtual work (unit load method)", "sections": [
  sec("Work & energy", (6, 14),
-   ("md", "External work ½PΔ = internal strain energy (real work, one load only)."),
+   ("md", r"External work $\tfrac12 P\Delta$ = internal strain energy (real work, one load only)."),
  ),
  sec("Principle of virtual work", (15, 30),
    ("eq", r"1\cdot\Delta = \sum\frac{nNL}{AE}\ (\text{trusses}),\qquad 1\cdot\Delta = \int\frac{mM}{EI}dx,\qquad 1\cdot\theta = \int\frac{m_\theta M}{EI}dx"),
@@ -74,9 +74,9 @@ ANA[D["P3"]] = {"code": "CE103", "title": "Analysis 3 · Virtual work (unit load
           "n, m are internal forces from it, N, M from the real loads."),
  ),
  sec("Trusses, beams & frames", (31, 95),
-   ("md", "Trusses: tabulate n, N, L per member (temperature: Δ = Σnα ΔT L; fabrication error: Σn ΔL). Beams/frames: "
-          "use the product-integral table (e.g. ∫ rectangle × triangle = ½ab L, triangle × triangle same sign = ⅓abL, "
-          "parabola etc.)."),
+   ("md", r"Trusses: tabulate n, N, L per member (temperature: $\Delta = \sum n\alpha \Delta T L$; fabrication "
+          r"error: $\sum n \Delta L$). Beams/frames: use the product-integral table (e.g. ∫ rectangle × "
+          r"triangle = $\tfrac12 abL$, triangle × triangle same sign = $\tfrac13 abL$, parabola etc.)."),
  ),
 ]}
 
@@ -87,8 +87,8 @@ ANA[D["P4"]] = {"code": "CE103", "title": "Analysis 4 · Force (flexibility) met
           "compatibility to solve for the redundants, superpose."),
  ),
  sec("Beams, frames, trusses", (11, 61),
-   ("md", "Choose redundants that keep the primary structure stable and the integrals easy. Trusses use "
-          "f = ΣnnL/AE. Supports settlement: right-hand side equals the known displacement."),
+   ("md", "Choose redundants that keep the primary structure stable and the integrals easy. Trusses use $f = "
+          r"\sum nnL/AE$. Supports settlement: right-hand side equals the known displacement."),
  ),
 ]}
 
@@ -101,11 +101,11 @@ ANA[D["P5"]] = {"code": "CE103", "title": "Analysis 5 · Slope-deflection method
    ("eq", r"\text{Pin at far end: } M_{AB} = \frac{3EI}{L}(\theta_A - \psi) + FEM'_{AB};\qquad FEM_{UDL} = \frac{wL^2}{12},\ FEM_{P,mid} = \frac{PL}{8}"),
  ),
  sec("Beams", (42, 61),
-   ("md", "Unknowns: joint rotations; equations: ΣM = 0 at each joint. Then end moments → shears → BMD."),
+   ("md", r"Unknowns: joint rotations; equations: $\sum M = 0$ at each joint. Then end moments → shears → BMD."),
  ),
  sec("Frames without and with sidesway", (62, 118),
-   ("md", "Sway frames add Δ as an unknown and a **shear (storey) equation**: Σ column shears = applied horizontal "
-          "load, column shear V = −(M_top + M_bot)/h."),
+   ("md", r"Sway frames add $\Delta$ as an unknown and a **shear (storey) equation**: $\sum$ column shears = "
+          r"applied horizontal load, column shear $V = -(M_{\mathrm{top}} + M_{\mathrm{bot}})/h$."),
  ),
 ]}
 
@@ -114,13 +114,14 @@ ANA[D["P6"]] = {"code": "CE103", "title": "Analysis 6 · Plastic analysis of con
    ("eq", r"M_p = f_yW_{pl},\qquad f = \frac{W_{pl}}{W_{el}}\ (\text{rectangle } 1.5,\ \text{I-section} \approx 1.12)"),
  ),
  sec("Kinematic (mechanism) method", (35, 51),
-   ("md", "Assume hinge positions, give a virtual rotation θ, equate external work Σ P δ to internal work Σ M_p θ_i. "
-          "The upper-bound theorem: the true collapse load is the **lowest** of all mechanism loads."),
+   ("md", r"Assume hinge positions, give a virtual rotation $\theta$, equate external work $\sum P \delta$ to "
+          r"internal work $\sum M_p \theta_i$. The upper-bound theorem: the true collapse load is the "
+          "**lowest** of all mechanism loads."),
    ("eq", r"\text{fixed-ended beam, UDL: } w_c = \frac{16M_p}{L^2};\qquad \text{propped cantilever, UDL: } w_c \approx \frac{11.66M_p}{L^2}"),
  ),
  sec("Continuous beams", (52, 66),
-   ("md", "Check a beam mechanism in each span (hinges at supports and under/near the loads); the governing span gives "
-          "the collapse load. Then check M ≤ M_p everywhere (equilibrium check)."),
+   ("md", "Check a beam mechanism in each span (hinges at supports and under/near the loads); the governing "
+          r"span gives the collapse load. Then check $M \le M_p$ everywhere (equilibrium check)."),
  ),
 ]}
 
@@ -134,11 +135,12 @@ ANA[D["Q0"]] = {"code": "CE103", "title": "Analysis 7 · Part 2 introduction: id
 ANA[D["Q1"]] = {"code": "CE103", "title": "Analysis 8 · Truss analysis by the stiffness method", "sections": [
  sec("Member stiffness & transformation", (18, 34),
    ("eq", r"\mathbf k' = \frac{AE}{L}\begin{bmatrix}1 & -1\\ -1 & 1\end{bmatrix},\qquad \mathbf k = \mathbf T^T\mathbf k'\mathbf T = \frac{AE}{L}\begin{bmatrix}\lambda_x^2 & \lambda_x\lambda_y & -\lambda_x^2 & -\lambda_x\lambda_y\\ & \lambda_y^2 & -\lambda_x\lambda_y & -\lambda_y^2\\ & & \lambda_x^2 & \lambda_x\lambda_y\\ \text{sym} & & & \lambda_y^2\end{bmatrix}"),
-   ("md", "λ_x = cos θ_x, λ_y = cos θ_y from the near to the far node."),
+   ("md", r"$\lambda_x = \cos\theta_x$, $\lambda_y = \cos\theta_y$ from the near to the far node."),
  ),
  sec("Assembly & solution", (35, 58),
    ("eq", r"\begin{bmatrix}\mathbf Q_k\\ \mathbf Q_u\end{bmatrix} = \begin{bmatrix}\mathbf K_{11} & \mathbf K_{12}\\ \mathbf K_{21} & \mathbf K_{22}\end{bmatrix}\begin{bmatrix}\mathbf D_u\\ \mathbf D_k\end{bmatrix}\ \Rightarrow\ \mathbf D_u = \mathbf K_{11}^{-1}(\mathbf Q_k - \mathbf K_{12}\mathbf D_k),\quad \mathbf Q_u = \mathbf K_{21}\mathbf D_u + \mathbf K_{22}\mathbf D_k"),
-   ("md", "Number unknown dofs first. Member force q = (AE/L)[−λ_x −λ_y λ_x λ_y]·D."),
+   ("md", r"Number unknown dofs first. Member force $q = (AE/L)[-\lambda_x\ \ {-\lambda_y}\ \ \lambda_x\ \ "
+          r"\lambda_y] \cdot D$."),
  ),
 ]}
 
@@ -154,11 +156,12 @@ ANA[D["Q2"]] = {"code": "CE103", "title": "Analysis 9 · Beam analysis by the st
 
 ANA[D["Q3"]] = {"code": "CE103", "title": "Analysis 10 · Plane frame analysis by the stiffness method", "sections": [
  sec("Frame member (6 dofs) & transformation", (1, 16),
-   ("md", "Combine the axial (AE/L) and flexural (12EI/L³, 6EI/L², 4EI/L, 2EI/L) terms in local axes, then rotate "
-          "with T (λ_x, λ_y). Watch units (kN, m, kNm)."),
+   ("md", "Combine the axial (AE/L) and flexural ($12EI/L^3$, $6EI/L^2$, 4EI/L, 2EI/L) terms in local axes, "
+          r"then rotate with T ($\lambda_x$, $\lambda_y$). Watch units (kN, m, kNm)."),
  ),
  sec("Worked examples & internal forces", (17, 48),
-   ("md", "Solve D_u, reactions Q_u, then member end forces q = k′TD (+ fixed-end forces). Check with FBDs."),
+   ("md", "Solve $D_u$, reactions $Q_u$, then member end forces $q = k'TD$ (+ fixed-end forces). Check with "
+          "FBDs."),
  ),
 ]}
 
@@ -179,53 +182,61 @@ ANA[D["Q4"]] = {"code": "CE103", "title": "Analysis 11 · Influence lines (deter
 
 ANA[D["Q5"]] = {"code": "CE103", "title": "Analysis 12 · Influence lines II: moving load series", "sections": [
  sec("Maximum effect of a series of loads", (1, 28),
-   ("md", "Trial positions with one load at the peak ordinate, or use the change rules: move the group until ΔV or "
-          "ΔM changes sign — for moment, ΔM = Σ(P × slope change × distance). The position giving the largest value "
-          "is critical."),
+   ("md", "Trial positions with one load at the peak ordinate, or use the change rules: move the group until "
+          r"$\Delta V$ or $\Delta M$ changes sign — for moment, $\Delta M = \sum(P \times \text{slope change} "
+          r"\times \text{distance})$. The position giving the largest value is critical."),
  ),
 ]}
 
 # ------------------------------------------------------------------ tutorials (official answer sheets)
 ANA[D["T1"]] = {"code": "CE103", "title": "Analysis practice · Tut 1 Truss stiffness method", "sections": [
  sec("Q1–Q2", (1, 2),
-   ("ex", "Answers", "Q1 (three-member truss, 1 kN at C): stiffness solution → Q₃ = 0 at B; by statics V_C = 1 kN, "
-          "V_A = −1 kN, H_A = −1 kN · Q2 (six-member truss, loads P at d, e, f): reaction at node a: horizontal "
-          "**0.207P** (right), vertical **1.207P** (up)."),
+   ("ex", "Answers", "Q1 (three-member truss, 1 kN at C): stiffness solution → $Q_3 = 0$ at B; by statics "
+                     r"$V_C = 1\ \mathrm{kN}$, $V_A = -1\ \mathrm{kN}$, $H_A = -1\ \mathrm{kN}$ · Q2 "
+                     "(six-member truss, loads P at d, e, f): reaction at node a: horizontal **0.207P** "
+                     "(right), vertical **1.207P** (up)."),
  ),
 ]}
 
 ANA[D["T2"]] = {"code": "CE103", "title": "Analysis practice · Tut 2 Beam stiffness method", "sections": [
  sec("Q1 Two-span beam, 15 kN/m (two FEM choices)", (1, 2),
-   ("ex", "Answers", "Both fixed-end systems give the same **reaction at node 2 = 34.5 kN** (3 + 31.5 or −1.5 + 36); "
-          "rotations D = EI⁻¹[−47.6, 41.1, −20.6] vs [−20.6, 41.1, −20.6] — the second system leaves node 1's true "
-          "rotation unknown."),
+   ("ex", "Answers", "Both fixed-end systems give the same **reaction at node 2 = 34.5 kN** (3 + 31.5 or −1.5 "
+                     r"+ 36); rotations $D = EI^{-1}[-47.6,\ 41.1,\ -20.6]$ vs $EI^{-1}[-20.6,\ 41.1,\ -20.6]$ "
+                     "— the second system leaves node 1's true rotation unknown."),
  ),
- sec("Q2 3 m fixed–fixed beam with roller at 1 m, deflection limit 0.01 m at x = 2 m", (1, 2),
-   ("ex", "Answer", "Set D₃ = −0.01 m in the unlocked system → **P_max = 0.4EI + 1.68 kN**."),
+ sec(r"Q2 3 m fixed–fixed beam with roller at 1 m, deflection limit 0.01 m at $x = 2\ \mathrm{m}$", (1, 2),
+   ("ex", "Answer", r"Set $D_3 = -0.01\ \mathrm{m}$ in the unlocked system → $\boldsymbol{P_{\mathrm{max}} = "
+                    r"0.4EI + 1.68\ \mathrm{kN}}$."),
  ),
 ]}
 
 ANA[D["T3"]] = {"code": "CE103", "title": "Analysis practice · Tut 3 Frame stiffness method", "sections": [
  sec("Q1 Two-member frame fixed at A and C", (1, 2),
-   ("ex", "Answers", "D_B = [7.02 × 10⁻⁵ m, −2.53 × 10⁻⁵ m, −1.56 × 10⁻⁴ rad] · horizontal reaction at C = **−60.8 kN**."),
+   ("ex", "Answers", r"$D_B = [7.02 \times 10^{-5}\ \mathrm{m},\ -2.53 \times 10^{-5}\ \mathrm{m},\ -1.56 "
+                     r"\times 10^{-4}\ \mathrm{rad}]$ · horizontal reaction at C = $\boldsymbol{-60.8\ "
+                     r"\mathrm{kN}}$."),
  ),
  sec("Q2 Triangular welded frame using symmetry", (1, 2),
-   ("ex", "Answers", "Unknowns D₁, D₂ only; D_u = [−1.3 × 10⁻⁶ m, 2.48 × 10⁻⁵ rad]; reaction at D = **851.6 kN** (for the "
-          "given w). Use symmetry to halve the stiffness matrix."),
+   ("ex", "Answers", r"Unknowns $D_1$, $D_2$ only; $D_u = [-1.3 \times 10^{-6}\ \mathrm{m},\ 2.48 \times "
+                     r"10^{-5}\ \mathrm{rad}]$; reaction at D = $\boldsymbol{851.6\ \mathrm{kN}}$ (for the "
+                     "given w). Use symmetry to halve the stiffness matrix."),
  ),
 ]}
 
 ANA[D["T4"]] = {"code": "CE103", "title": "Analysis practice · Tut 4 Influence lines (qualitative)", "sections": [
  sec("Q1–Q3", (1, 2),
-   ("md", "Draw ILs for M_C, R_B, V_C on an overhanging beam; V_C, M_C and V at an internal hinge D; then for a beam "
-          "with dead 0.8 kN/m, live 4 kN/m and a 20 kN live point load find the critical arrangements (live load only "
-          "on regions of the same sign). Answers are sketches — see the answer sheet."),
+   ("md", "Draw ILs for $M_C$, $R_B$, $V_C$ on an overhanging beam; $V_C$, $M_C$ and V at an internal hinge "
+          "D; then for a beam with dead 0.8 kN/m, live 4 kN/m and a 20 kN live point load find the critical "
+          "arrangements (live load only on regions of the same sign). Answers are sketches — see the answer "
+          "sheet."),
  ),
 ]}
 
 ANA[D["T5"]] = {"code": "CE103", "title": "Analysis practice · Tut 5 Influence lines (quantitative)", "sections": [
  sec("Q1–Q3", (1, 2),
-   ("ex", "Answers", "Q2 moving loads: **M_C,max = 201 kNm** · Q3 (fixed at A, hinge at C, roller at D; Müller-Breslau): "
-          "**M_A,max = 7 kNm** (5 kN/m live + 1 kN/m dead + 2 kN live) · **R_D,max = 10.667 kN**."),
+   ("ex", "Answers", r"Q2 moving loads: $\boldsymbol{M_{\mathrm{C,max}} = 201\ \mathrm{kNm}}$ · Q3 (fixed at "
+                     r"A, hinge at C, roller at D; Müller-Breslau): $\boldsymbol{M_{\mathrm{A,max}} = 7\ "
+                     r"\mathrm{kNm}}$ (5 kN/m live + 1 kN/m dead + 2 kN live) · "
+                     r"$\boldsymbol{R_{\mathrm{D,max}} = 10.667\ \mathrm{kN}}$."),
  ),
 ]}

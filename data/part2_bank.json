@@ -8,15 +8,15 @@
    "CE201-15"
   ],
   "title": "Precast T-beam: in-service flexure and construction stage",
-  "prompt": "A simply supported precast RC beam, 300 mm wide × 600 mm deep (effective depth d = 540 mm), spans 7.5 m between bearings. Beams are placed at 2.5 m centres and later receive a 100 mm cast-in-situ topping. Concrete C30/37, reinforcement B500B, normal-weight concrete 25 kN/m³.\n\nIn service (composite) the beam carries characteristic permanent load g_k = 18 kN/m (including self-weight, topping and finishes) and imposed load q_k = 12 kN/m.\n\n(a) Determine the ULS design moment using EC0 Eq. 6.10. [4]\n(b) Design the tension reinforcement for the in-service condition, ignoring any flange contribution, and select bars. Check minimum steel. [8]\n(c) During construction the precast beam alone must support its own weight, the wet topping and a construction load of 0.75 kN/m² over the tributary width. Determine the construction-stage design moment and comment on whether the in-service reinforcement is adequate. [6]\n(d) State two detailing requirements for the bottom bars at the bearings. [2]",
+  "prompt": "A simply supported precast RC beam, 300 mm wide × 600 mm deep (effective depth $d = 540\\ \\mathrm{mm}$), spans 7.5 m between bearings. Beams are placed at 2.5 m centres and later receive a 100 mm cast-in-situ topping. Concrete C30/37, reinforcement B500B, normal-weight concrete $25\\ \\mathrm{kN/m^3}$.\n\nIn service (composite) the beam carries characteristic permanent load $g_k = 18\\ \\mathrm{kN/m}$ (including self-weight, topping and finishes) and imposed load $q_k = 12\\ \\mathrm{kN/m}$.\n\n(a) Determine the ULS design moment using EC0 Eq. 6.10. [4]\n(b) Design the tension reinforcement for the in-service condition, ignoring any flange contribution, and select bars. Check minimum steel. [8]\n(c) During construction the precast beam alone must support its own weight, the wet topping and a construction load of $0.75\\ \\mathrm{kN/m^2}$ over the tributary width. Determine the construction-stage design moment and comment on whether the in-service reinforcement is adequate. [6]\n(d) State two detailing requirements for the bottom bars at the bearings. [2]",
   "approach": [
-   "(a) w_Ed = 1.35 × 18 + 1.5 × 12 = 42.3 kN/m → M_Ed = w L²/8 = 42.3 × 7.5²/8 = 297.4 kNm.",
-   "(b) K = M/(b d² f_ck) = 297.4×10⁶/(300 × 540² × 30) = 0.113 < K′ = 0.167 (verify K′ against Singapore NA) → singly reinforced.",
-   "z = d[0.5 + √(0.25 − K/1.134)] = 479 mm (< 0.95d = 513 mm).",
-   "A_s = M/(0.87 f_yk z) = 1428 mm² → provide 3H25 (1473 mm²). A_s,min = 0.26 f_ctm/f_yk · b d = 244 mm² (f_ctm = 2.90 N/mm²) — OK. EC2 9.2.1.1.",
-   "(c) Beam SW = 0.3 × 0.6 × 25 = 4.5 kN/m; wet topping = 2.5 × 0.1 × 25 = 6.25 kN/m → g_k = 10.75 kN/m; construction q_k = 0.75 × 2.5 = 1.875 kN/m.",
-   "w_Ed = 1.35 × 10.75 + 1.5 × 1.875 = 17.3 kN/m → M_Ed = 121.8 kNm; check the precast section (b = 300, d = 540) — the 3H25 is more than adequate, but check props/lifting points and top steel for hogging at lifting.",
-   "(d) EC2 9.2.1.4: at least 25% of span steel anchored at supports; anchorage beyond bearing face from l_bd with α factors; consider bearing nib/dowel detailing for precast."
+   "(a) $w_{\\mathrm{Ed}} = 1.35 \\times 18 + 1.5 \\times 12 = 42.3\\ \\mathrm{kN/m}$ → $M_{\\mathrm{Ed}} = w L^2/8 = 42.3 \\times 7.5^2/8 = 297.4\\ \\mathrm{kNm}$.",
+   "(b) $K = M/(b d^2 f_{\\mathrm{ck}}) = 297.4 \\times 10^6/(300 \\times 540^2 \\times 30) = 0.113 < K' = 0.167$ (verify $K'$ against Singapore NA) → singly reinforced.",
+   "$z = d[0.5 + \\sqrt{0.25 - K/1.134}] = 479\\ \\mathrm{mm}$ ($< 0.95d = 513\\ \\mathrm{mm}$).",
+   "$A_s = M/(0.87 f_{\\mathrm{yk}} z) = 1428\\ \\mathrm{mm^2}$ → provide 3H25 ($1473\\ \\mathrm{mm^2}$). $A_{\\mathrm{s,min}} = 0.26 f_{\\mathrm{ctm}}/f_{\\mathrm{yk}} \\cdot bd = 244\\ \\mathrm{mm^2}$ ($f_{\\mathrm{ctm}} = 2.90\\ \\mathrm{N/mm^2}$) — OK. EC2 9.2.1.1.",
+   "(c) Beam $\\mathrm{SW} = 0.3 \\times 0.6 \\times 25 = 4.5\\ \\mathrm{kN/m}$; wet topping = $2.5 \\times 0.1 \\times 25 = 6.25\\ \\mathrm{kN/m}$ → $g_k = 10.75\\ \\mathrm{kN/m}$; construction $q_k = 0.75 \\times 2.5 = 1.875\\ \\mathrm{kN/m}$.",
+   "$w_{\\mathrm{Ed}} = 1.35 \\times 10.75 + 1.5 \\times 1.875 = 17.3\\ \\mathrm{kN/m}$ → $M_{\\mathrm{Ed}} = 121.8\\ \\mathrm{kNm}$; check the precast section ($b = 300$, $d = 540$) — the 3H25 is more than adequate, but check props/lifting points and top steel for hogging at lifting.",
+   "(d) EC2 9.2.1.4: at least 25% of span steel anchored at supports; anchorage beyond bearing face from $l_{\\mathrm{bd}}$ with $\\alpha$ factors; consider bearing nib/dowel detailing for precast."
   ],
   "key_results": {
    "w_Ed": 42.3,
@@ -37,14 +37,14 @@
    "CE201-15"
   ],
   "title": "Short braced column: axial, then axial + moment",
-  "prompt": "A braced short column, 400 mm × 400 mm, is cast in C35/45 concrete with B500 reinforcement. Cover to main bars gives d₂ = 60 mm (d₂/h = 0.15).\n\n(a) The column carries N_Ed = 3800 kN axially. Determine the area of longitudinal reinforcement required, stating the steel stress you adopt and why. [6]\n(b) Determine the minimum design moment due to geometric imperfections, EC2 6.1(4). [3]\n(c) The column is now also subject to a first-order design moment M_Ed = 120 kNm about one axis. Calculate N/(b h f_ck) and M/(b h² f_ck) and describe how you would use a column design chart to determine A_s. [7]\n(d) Check the steel against EC2 9.5.2 limits and specify link size and spacing. [4]",
+  "prompt": "A braced short column, 400 mm × 400 mm, is cast in C35/45 concrete with B500 reinforcement. Cover to main bars gives $d_2 = 60\\ \\mathrm{mm}$ ($d_2/h = 0.15$).\n\n(a) The column carries $N_{\\mathrm{Ed}} = 3800\\ \\mathrm{kN}$ axially. Determine the area of longitudinal reinforcement required, stating the steel stress you adopt and why. [6]\n(b) Determine the minimum design moment due to geometric imperfections, EC2 6.1(4). [3]\n(c) The column is now also subject to a first-order design moment $M_{\\mathrm{Ed}} = 120\\ \\mathrm{kNm}$ about one axis. Calculate $N/(b h f_{\\mathrm{ck}})$ and $M/(b h^2 f_{\\mathrm{ck}})$ and describe how you would use a column design chart to determine $A_s$. [7]\n(d) Check the steel against EC2 9.5.2 limits and specify link size and spacing. [4]",
   "approach": [
-   "(a) Pure compression: strain limited to ε_c2 = 0.002 → σ_s = E_s ε_c2 = 400 N/mm² (< f_yd = 435). N_Rd = 0.567 f_ck (A_c − A_s) + 400 A_s.",
-   "0.567 × 35 × 160 000 = 3175 kN → A_s = (3800 − 3175)×10³/(400 − 19.8) = 1644 mm² (≈1562 mm² if displaced concrete ignored) → 4H25 (1963 mm²).",
-   "(b) e₀ = max(h/30, 20 mm) = 20 mm → M_min = 3800 × 0.020 = 76 kNm.",
-   "(c) M_Ed = 120 kNm > 76 kNm governs. N/(bhf_ck) = 3.8×10⁶/(400 × 400 × 35) = 0.679; M/(bh²f_ck) = 120×10⁶/(400 × 400² × 35) = 0.054.",
-   "Read the d₂/h = 0.15 symmetric-reinforcement chart → A_s f_yk/(b h f_ck), then A_s,tot. Note chart assumptions (αcc, rectangular block) — verify αcc against Singapore NA.",
-   "(d) A_s,min = max(0.10 N_Ed/f_yd, 0.002 A_c) = max(874, 320) mm²; A_s,max = 0.04 A_c = 6400 mm². Links ≥ max(6, φ/4); spacing ≤ min(20φ_min, b, 400 mm) reduced by 0.6 near beams/slabs (9.5.3)."
+   "(a) Pure compression: strain limited to $\\varepsilon_{c2} = 0.002$ → $\\sigma_s = E_s \\varepsilon_{c2} = 400\\ \\mathrm{N/mm^2}$ ($< f_{\\mathrm{yd}} = 435$). $N_{\\mathrm{Rd}} = 0.567 f_{\\mathrm{ck}} (A_c - A_s) + 400 A_s$.",
+   "$0.567 \\times 35 \\times 160\\,000 = 3175\\ \\mathrm{kN}$ → $A_s = (3800 - 3175) \\times 10^3/(400 - 19.8) = 1644\\ \\mathrm{mm^2}$ (≈$1562\\ \\mathrm{mm^2}$ if displaced concrete ignored) → 4H25 ($1963\\ \\mathrm{mm^2}$).",
+   "(b) $e_0 = \\max(h/30,\\ 20\\ \\mathrm{mm}) = 20\\ \\mathrm{mm}$ → $M_{\\mathrm{min}} = 3800 \\times 0.020 = 76\\ \\mathrm{kNm}$.",
+   "(c) $M_{\\mathrm{Ed}} = 120\\ \\mathrm{kNm} > 76\\ \\mathrm{kNm}$ governs. $N/(bhf_{\\mathrm{ck}}) = 3.8 \\times 10^6/(400 \\times 400 \\times 35) = 0.679$; $M/(bh^2f_{\\mathrm{ck}}) = 120 \\times 10^6/(400 \\times 400^2 \\times 35) = 0.054$.",
+   "Read the $d_2/h = 0.15$ symmetric-reinforcement chart → $A_s f_{\\mathrm{yk}}/(b h f_{\\mathrm{ck}})$, then $A_{\\mathrm{s,tot}}$. Note chart assumptions ($\\alpha_{\\mathrm{cc}}$, rectangular block) — verify $\\alpha_{\\mathrm{cc}}$ against Singapore NA.",
+   "(d) $A_{\\mathrm{s,min}} = \\max(0.10 N_{\\mathrm{Ed}}/f_{\\mathrm{yd}},\\ 0.002 A_c) = \\max(874,\\ 320)\\ \\mathrm{mm^2}$; $A_{\\mathrm{s,max}} = 0.04 A_c = 6400\\ \\mathrm{mm^2}$. Links $\\ge \\max(6,\\ \\phi/4)$; spacing $\\le \\min(20\\phi_{\\min},\\ b,\\ 400\\ \\mathrm{mm})$ reduced by 0.6 near beams/slabs (9.5.3)."
   ],
   "key_results": {
    "N_conc": 3175.2,
@@ -64,14 +64,14 @@
    "CE202-01"
   ],
   "title": "Unrestrained platform beam: LTB check and remedies",
-  "prompt": "A steel platform beam spans 8.0 m between simple supports that provide torsional and lateral restraint at the ends only. The beam is a UKB 457×191×67 in S355 with: h = 453.4 mm, b = 189.9 mm, t_w = 8.5 mm, t_f = 12.7 mm, r = 10.2 mm, A = 8550 mm², W_pl,y = 1471×10³ mm³, I_z = 1452×10⁴ mm⁴, I_t = 37.1×10⁴ mm⁴, I_w = 0.705×10¹² mm⁶. Section is Class 1 in bending. E = 210 000, G = 81 000 N/mm².\n\nLoading (UDL, applied at the shear centre): g_k = 12 kN/m (incl. self-weight), q_k = 10 kN/m.\n\n(a) Sketch the SFD and BMD with ULS values (EC0 6.10). [4]\n(b) Check cross-section bending and shear resistance. [5]\n(c) Calculate M_cr (C₁ = 1.127) and the LTB resistance M_b,Rd using EC3 6.3.2.3 for rolled sections. [8]\n(d) The beam fails the LTB check. Propose two remedies and quantify one. [3]",
+  "prompt": "A steel platform beam spans 8.0 m between simple supports that provide torsional and lateral restraint at the ends only. The beam is a UKB 457×191×67 in S355 with: $h = 453.4\\ \\mathrm{mm}$, $b = 189.9\\ \\mathrm{mm}$, $t_w = 8.5\\ \\mathrm{mm}$, $t_f = 12.7\\ \\mathrm{mm}$, $r = 10.2\\ \\mathrm{mm}$, $A = 8550\\ \\mathrm{mm^2}$, $W_{\\mathrm{pl,y}} = 1471 \\times 10^3\\ \\mathrm{mm^3}$, $I_z = 1452 \\times 10^4\\ \\mathrm{mm^4}$, $I_t = 37.1 \\times 10^4\\ \\mathrm{mm^4}$, $I_w = 0.705 \\times 10^{12}\\ \\mathrm{mm^6}$. Section is Class 1 in bending. $E = 210\\,000$, $G = 81\\,000\\ \\mathrm{N/mm^2}$.\n\nLoading (UDL, applied at the shear centre): $g_k = 12\\ \\mathrm{kN/m}$ (incl. self-weight), $q_k = 10\\ \\mathrm{kN/m}$.\n\n(a) Sketch the SFD and BMD with ULS values (EC0 6.10). [4]\n(b) Check cross-section bending and shear resistance. [5]\n(c) Calculate $M_{\\mathrm{cr}}$ ($C_1 = 1.127$) and the LTB resistance $M_{\\mathrm{b,Rd}}$ using EC3 6.3.2.3 for rolled sections. [8]\n(d) The beam fails the LTB check. Propose two remedies and quantify one. [3]",
   "approach": [
-   "(a) w_Ed = 1.35 × 12 + 1.5 × 10 = 31.2 kN/m → V_Ed = 124.8 kN at supports, M_Ed = 31.2 × 8²/8 = 249.6 kNm at midspan (parabolic BMD).",
-   "(b) t_f = 12.7 ≤ 16 → f_y = 355. M_c,Rd = W_pl f_y/γ_M0 = 522.2 kNm ≥ 249.6 OK. A_v = A − 2bt_f + (t_w + 2r)t_f = 4094 mm² → V_pl,Rd = A_v f_y/√3 = 839 kN OK; V_Ed < 0.5V_pl,Rd so no M–V interaction.",
-   "(c) M_cr = C₁π²EI_z/L² √(I_w/I_z + L²GI_t/(π²EI_z)) = 177.7 kNm.",
-   "λ̄_LT = √(W_pl f_y/M_cr) = 1.714; h/b = 2.39 > 2 → curve c, α_LT = 0.49; λ̄_LT,0 = 0.4, β = 0.75 (NA choice — verify Singapore NA).",
-   "Φ_LT = 0.5[1 + 0.49(1.714 − 0.4) + 0.75 × 1.714²] = 1.924 → χ_LT = 0.318 → M_b,Rd = 165.9 kNm < 249.6 kNm ✗ FAIL.",
-   "(d) Remedies: intermediate lateral restraint (bracing/floor connection to compression flange), a heavier/wider section, or a closed/hollow section. With a midspan restraint (L = 4.0 m, conservatively C₁ = 1.0): M_cr = 477.8 kNm, λ̄_LT = 1.045, χ_LT = 0.612, M_b,Rd = 319.5 kNm ≥ 249.6 OK."
+   "(a) $w_{\\mathrm{Ed}} = 1.35 \\times 12 + 1.5 \\times 10 = 31.2\\ \\mathrm{kN/m}$ → $V_{\\mathrm{Ed}} = 124.8\\ \\mathrm{kN}$ at supports, $M_{\\mathrm{Ed}} = 31.2 \\times 8^2/8 = 249.6\\ \\mathrm{kNm}$ at midspan (parabolic BMD).",
+   "(b) $t_f = 12.7 \\le 16$ → $f_y = 355$. $M_{\\mathrm{c,Rd}} = W_{\\mathrm{pl}} f_y/\\gamma_{\\mathrm{M0}} = 522.2\\ \\mathrm{kNm} \\ge 249.6$ OK. $A_v = A - 2bt_f + (t_w + 2r)t_f = 4094\\ \\mathrm{mm^2}$ → $V_{\\mathrm{pl,Rd}} = A_v f_y/\\sqrt{3} = 839\\ \\mathrm{kN}$ OK; $V_{\\mathrm{Ed}} < 0.5V_{\\mathrm{pl,Rd}}$ so no M–V interaction.",
+   "(c) $M_{\\mathrm{cr}} = C_1\\pi^2EI_z/L^2 \\sqrt{I_w/I_z + L^2GI_t/(\\pi^2EI_z)} = 177.7\\ \\mathrm{kNm}$.",
+   "$\\bar{\\lambda}_{\\mathrm{LT}} = \\sqrt{W_{\\mathrm{pl}} f_y/M_{\\mathrm{cr}}} = 1.714$; $h/b = 2.39 > 2$ → curve c, $\\alpha_{\\mathrm{LT}} = 0.49$; $\\bar{\\lambda}_{\\mathrm{LT,0}} = 0.4$, $\\beta = 0.75$ (NA choice — verify Singapore NA).",
+   "$\\Phi_{\\mathrm{LT}} = 0.5[1 + 0.49(1.714 - 0.4) + 0.75 \\times 1.714^2] = 1.924$ → $\\chi_{\\mathrm{LT}} = 0.318$ → $M_{\\mathrm{b,Rd}} = 165.9\\ \\mathrm{kNm} < 249.6\\ \\mathrm{kNm}$ ✗ FAIL.",
+   "(d) Remedies: intermediate lateral restraint (bracing/floor connection to compression flange), a heavier/wider section, or a closed/hollow section. With a midspan restraint ($L = 4.0\\ \\mathrm{m}$, conservatively $C_1 = 1.0$): $M_{\\mathrm{cr}} = 477.8\\ \\mathrm{kNm}$, $\\bar{\\lambda}_{\\mathrm{LT}} = 1.045$, $\\chi_{\\mathrm{LT}} = 0.612$, $M_{\\mathrm{b,Rd}} = 319.5\\ \\mathrm{kNm} \\ge 249.6$ OK."
   ],
   "key_results": {
    "w_Ed": 31.2,
@@ -96,13 +96,13 @@
    "CE202-09"
   ],
   "title": "Pinned column buckling and bolted splice",
-  "prompt": "A UKC 254×254×73 in S355 is used as a pin-ended column of system length 5.0 m about both axes. A = 9310 mm², i_y = 110 mm, i_z = 64.6 mm, t_f = 14.2 mm, h/b = 0.98. Section is Class 1 under compression.\n\n(a) Determine the flexural buckling resistance N_b,Rd about both axes and state which governs. [10]\n(b) The column is spliced with M20 class 8.8 bolts in single shear, threads in the shear plane (A_s = 245 mm²). Determine the shear resistance per bolt (EC3-1-8 Table 3.4) and the number of bolts if the splice must transfer 25% of N_b,Rd. [6]\n(c) Briefly explain how the check changes if the column also carries end moments. [4]",
+  "prompt": "A UKC 254×254×73 in S355 is used as a pin-ended column of system length 5.0 m about both axes. $A = 9310\\ \\mathrm{mm^2}$, $i_y = 110\\ \\mathrm{mm}$, $i_z = 64.6\\ \\mathrm{mm}$, $t_f = 14.2\\ \\mathrm{mm}$, $h/b = 0.98$. Section is Class 1 under compression.\n\n(a) Determine the flexural buckling resistance $N_{\\mathrm{b,Rd}}$ about both axes and state which governs. [10]\n(b) The column is spliced with M20 class 8.8 bolts in single shear, threads in the shear plane ($A_s = 245\\ \\mathrm{mm^2}$). Determine the shear resistance per bolt (EC3-1-8 Table 3.4) and the number of bolts if the splice must transfer 25% of $N_{\\mathrm{b,Rd}}$. [6]\n(c) Briefly explain how the check changes if the column also carries end moments. [4]",
   "approach": [
-   "(a) ε = √(235/355) = 0.814; λ₁ = 93.9ε = 76.4.",
-   "y–y: λ̄ = 5000/110/76.4 = 0.595; h/b ≤ 1.2, t_f ≤ 100 → curve b (α = 0.34) → Φ = 0.744, χ = 0.840 → N_b,y,Rd = 2775 kN.",
-   "z–z: λ̄ = 5000/64.6/76.4 = 1.013; curve c (α = 0.49) → Φ = 1.212, χ = 0.532 → N_b,z,Rd = 1760 kN — governs.",
-   "(b) F_v,Rd = α_v f_ub A_s/γ_M2 = 0.6 × 800 × 245/1.25 = 94.1 kN (γ_M2 — verify Singapore NA). 0.25 × 1760 = 440 kN → n = 440/94.1 = 4.7 → 6 bolts (symmetrical). Also check bearing F_b,Rd.",
-   "(c) Combined: EC3 6.3.3 Eqs 6.61/6.62 with interaction factors k_yy, k_zy (Annex A or B); check cross-section 6.2.9 and LTB χ_LT for M_y."
+   "(a) $\\varepsilon = \\sqrt{235/355} = 0.814$; $\\lambda_1 = 93.9\\varepsilon = 76.4$.",
+   "y–y: $\\bar{\\lambda} = 5000/110/76.4 = 0.595$; $h/b \\le 1.2$, $t_f \\le 100$ → curve b ($\\alpha = 0.34$) → $\\Phi = 0.744$, $\\chi = 0.840$ → $N_{\\mathrm{b,y,Rd}} = 2775\\ \\mathrm{kN}$.",
+   "z–z: $\\bar{\\lambda} = 5000/64.6/76.4 = 1.013$; curve c ($\\alpha = 0.49$) → $\\Phi = 1.212$, $\\chi = 0.532$ → $N_{\\mathrm{b,z,Rd}} = 1760\\ \\mathrm{kN}$ — governs.",
+   "(b) $F_{\\mathrm{v,Rd}} = \\alpha_v f_{\\mathrm{ub}} A_s/\\gamma_{\\mathrm{M2}} = 0.6 \\times 800 \\times 245/1.25 = 94.1\\ \\mathrm{kN}$ ($\\gamma_{\\mathrm{M2}}$ — verify Singapore NA). $0.25 \\times 1760 = 440\\ \\mathrm{kN}$ → $n = 440/94.1 = 4.7$ → 6 bolts (symmetrical). Also check bearing $F_{\\mathrm{b,Rd}}$.",
+   "(c) Combined: EC3 6.3.3 Eqs 6.61/6.62 with interaction factors $k_{yy}$, $k_{zy}$ (Annex A or B); check cross-section 6.2.9 and LTB $\\chi_{\\mathrm{LT}}$ for $M_y$."
   ],
   "key_results": {
    "lambda1": 76.4,
@@ -125,14 +125,14 @@
    "CE203-05"
   ],
   "title": "Strip footing on sand: EC7 DA1 and Schmertmann settlement",
-  "prompt": "A 2.0 m wide strip footing is founded at 1.0 m depth in a medium-dense sand (γ = 19 kN/m³, c′ = 0, φ′_k = 32°). The water table is well below the zone of influence. The footing carries a central vertical line load G_k = 250 kN/m and Q_k = 100 kN/m (both including footing self-weight and backfill).\n\nCPT results below founding level: 0–2 m q_c = 6 MPa; 2–4 m q_c = 8 MPa; 4–6 m q_c = 10 MPa; 6–8 m q_c = 12 MPa.\n\n(a) Verify bearing resistance to EC7 Design Approach 1, Combinations 1 and 2, using Annex D. [10]\n(b) Estimate the settlement under characteristic (SLS) loads using Schmertmann's method with E = 3.5 q_c (strip), ignoring creep (C₂ = 1). [8]\n(c) Comment on which limit state governs the design. [2]",
+  "prompt": "A 2.0 m wide strip footing is founded at 1.0 m depth in a medium-dense sand ($\\gamma = 19\\ \\mathrm{kN/m^3}$, $c' = 0$, $\\phi'_k = 32^\\circ$). The water table is well below the zone of influence. The footing carries a central vertical line load $G_k = 250\\ \\mathrm{kN/m}$ and $Q_k = 100\\ \\mathrm{kN/m}$ (both including footing self-weight and backfill).\n\nCPT results below founding level: 0–2 m $q_c = 6\\ \\mathrm{MPa}$; 2–4 m $q_c = 8\\ \\mathrm{MPa}$; 4–6 m $q_c = 10\\ \\mathrm{MPa}$; 6–8 m $q_c = 12\\ \\mathrm{MPa}$.\n\n(a) Verify bearing resistance to EC7 Design Approach 1, Combinations 1 and 2, using Annex D. [10]\n(b) Estimate the settlement under characteristic (SLS) loads using Schmertmann's method with $E = 3.5 q_c$ (strip), ignoring creep ($C_2 = 1$). [8]\n(c) Comment on which limit state governs the design. [2]",
   "approach": [
-   "(a) DA1-C1 (A1+M1+R1): V_d = 1.35 × 250 + 1.5 × 100 = 487.5 kN/m; φ′_d = 32°. N_q = 23.18, N_γ = 27.72 (2(N_q − 1)tanφ). q′ = 19 kPa.",
-   "R/A′ = q′N_q + 0.5γB′N_γ = 19 × 23.18 + 0.5 × 19 × 2 × 27.72 = 967 kPa → R_d = 1934 kN/m ≥ 487.5 ✓.",
-   "DA1-C2 (A2+M2+R1): V_d = 1.0 × 250 + 1.3 × 100 = 380 kN/m; φ′_d = atan(tan32°/1.25) = 26.56° → N_q = 12.59, N_γ = 11.59 → R_d = 919 kN/m ≥ 380 ✓ (C2 is critical in utilisation, 41%).",
-   "(b) Δp = (250 + 100)/2 − 19 × 1 = 156 kPa; σ′_v0 = 19 kPa; σ′_vp at z = B = 2 m below base (3 m depth) = 57 kPa.",
-   "I_zp = 0.5 + 0.1√(156/57) = 0.665; C₁ = 1 − 0.5 × 19/156 = 0.939. Iz at sub-layer mid-depths 1, 3, 5, 7 m = 0.433, 0.555, 0.333, 0.111.",
-   "s = C₁C₂Δp Σ(I_z/E)Δz = 0.939 × 156 × 1.051×10⁻⁴ ≈ 15.4 mm.",
+   "(a) DA1-C1 (A1+M1+R1): $V_d = 1.35 \\times 250 + 1.5 \\times 100 = 487.5\\ \\mathrm{kN/m}$; $\\phi'_d = 32^\\circ$. $N_q = 23.18$, $N_{\\gamma} = 27.72$ ($= 2(N_q - 1)\\tan\\phi$). $q' = 19\\ \\mathrm{kPa}$.",
+   "$R/A' = q'N_q + 0.5\\gamma B'N_{\\gamma} = 19 \\times 23.18 + 0.5 \\times 19 \\times 2 \\times 27.72 = 967\\ \\mathrm{kPa}$ → $R_d = 1934\\ \\mathrm{kN/m} \\ge 487.5$ ✓.",
+   "DA1-C2 (A2+M2+R1): $V_d = 1.0 \\times 250 + 1.3 \\times 100 = 380\\ \\mathrm{kN/m}$; $\\phi'_d = \\arctan(\\tan 32^\\circ/1.25) = 26.56^\\circ$ → $N_q = 12.59$, $N_{\\gamma} = 11.59$ → $R_d = 919\\ \\mathrm{kN/m} \\ge 380$ ✓ (C2 is critical in utilisation, 41%).",
+   "(b) $\\Delta p = (250 + 100)/2 - 19 \\times 1 = 156\\ \\mathrm{kPa}$; $\\sigma'_{v0} = 19\\ \\mathrm{kPa}$; $\\sigma'_{\\mathrm{vp}}$ at $z = B = 2\\ \\mathrm{m}$ below base (3 m depth) = 57 kPa.",
+   "$I_{\\mathrm{zp}} = 0.5 + 0.1\\sqrt{156/57} = 0.665$; $C_1 = 1 - 0.5 \\times 19/156 = 0.939$. $I_z$ at sub-layer mid-depths 1, 3, 5, 7 m = 0.433, 0.555, 0.333, 0.111.",
+   "$s = C_1C_2\\Delta p \\sum(I_z/E)\\Delta z = 0.939 \\times 156 \\times 1.051 \\times 10^{-4} \\approx 15.4\\ \\mathrm{mm}$.",
    "(c) ULS has large reserve; settlement (≈15 mm, acceptable vs typical 25 mm limit) is the more relevant criterion — confirm with structure's tolerance to differential settlement."
   ],
   "key_results": {
@@ -156,13 +156,13 @@
    "CE203-03"
   ],
   "title": "Cantilever retaining wall: earth pressure and sliding (DA1)",
-  "prompt": "A cast-in-situ RC cantilever retaining wall retains 5.0 m of dry granular backfill (γ = 18 kN/m³, c′ = 0, φ′_k = 30°) with a horizontal ground surface carrying a variable surcharge q_k = 10 kPa. The wall base is 3.5 m wide and the total characteristic vertical load on the base (wall + soil over heel) is W_k = 220 kN/m. Base friction δ = φ′ (cast against soil). Ignore passive resistance in front of the toe. Use Rankine pressures on a vertical virtual back.\n\n(a) Calculate the design horizontal thrust for DA1-C1 and DA1-C2. [8]\n(b) Verify sliding for both combinations. [6]\n(c) If sliding is not satisfied, propose two practical measures. [3]\n(d) Sketch the pressure distribution with values. [3]",
+  "prompt": "A cast-in-situ RC cantilever retaining wall retains 5.0 m of dry granular backfill ($\\gamma = 18\\ \\mathrm{kN/m^3}$, $c' = 0$, $\\phi'_k = 30^\\circ$) with a horizontal ground surface carrying a variable surcharge $q_k = 10\\ \\mathrm{kPa}$. The wall base is 3.5 m wide and the total characteristic vertical load on the base (wall + soil over heel) is $W_k = 220\\ \\mathrm{kN/m}$. Base friction $\\delta = \\phi'$ (cast against soil). Ignore passive resistance in front of the toe. Use Rankine pressures on a vertical virtual back.\n\n(a) Calculate the design horizontal thrust for DA1-C1 and DA1-C2. [8]\n(b) Verify sliding for both combinations. [6]\n(c) If sliding is not satisfied, propose two practical measures. [3]\n(d) Sketch the pressure distribution with values. [3]",
   "approach": [
-   "(a) C1: φ′_d = 30°, K_a = 1/3. H_soil = 1.35 × 0.5 × K_a γ H² = 1.35 × 75 = 101.3 kN/m; H_q = 1.5 × K_a q H = 1.5 × 16.7 = 25.0 kN/m → H_d = 126.3 kN/m.",
-   "C2: φ′_d = atan(tan30°/1.25) = 24.79°, K_a = 0.409. H_soil = 1.0 × 0.5 × 0.409 × 18 × 25 = 92.1; H_q = 1.3 × 0.409 × 10 × 5 = 26.6 → H_d = 118.6 kN/m.",
-   "(b) Sliding R_d = V_d tanδ_d with favourable W at γ_G = 1.0: C1 R_d = 220 tan30° = 127.0 ≥ 126.3 ✓ (marginal); C2 R_d = 220 tan24.79° = 101.6 < 118.6 ✗ FAIL.",
+   "(a) C1: $\\phi'_d = 30^\\circ$, $K_a = 1/3$. $H_{\\mathrm{soil}} = 1.35 \\times 0.5 \\times K_a \\gamma H^2 = 1.35 \\times 75 = 101.3\\ \\mathrm{kN/m}$; $H_q = 1.5 \\times K_a q H = 1.5 \\times 16.7 = 25.0\\ \\mathrm{kN/m}$ → $H_d = 126.3\\ \\mathrm{kN/m}$.",
+   "C2: $\\phi'_d = \\arctan(\\tan 30^\\circ/1.25) = 24.79^\\circ$, $K_a = 0.409$. $H_{\\mathrm{soil}} = 1.0 \\times 0.5 \\times 0.409 \\times 18 \\times 25 = 92.1$; $H_q = 1.3 \\times 0.409 \\times 10 \\times 5 = 26.6$ → $H_d = 118.6\\ \\mathrm{kN/m}$.",
+   "(b) Sliding $R_d = V_d \\tan\\delta_d$ with favourable W at $\\gamma_G = 1.0$: C1 $R_d = 220 \\tan 30^\\circ = 127.0 \\ge 126.3$ ✓ (marginal); C2 $R_d = 220 \\tan 24.79^\\circ = 101.6 < 118.6$ ✗ FAIL.",
    "(c) Add a shear key below the base (mobilises passive resistance), widen the heel to increase W, or use a sloping base.",
-   "(d) Triangular soil pressure 0 → K_aγH (C2 char.: 36.8 kPa at base) plus rectangular K_a q block (4.1 kPa)."
+   "(d) Triangular soil pressure 0 → $K_a\\gamma H$ (C2 char.: 36.8 kPa at base) plus rectangular $K_a q$ block (4.1 kPa)."
   ],
   "key_results": {
    "Ka_C1": 0.333,
@@ -183,13 +183,13 @@
    "CE204-02"
   ],
   "title": "Expressway incident shockwave and stopping sight distance",
-  "prompt": "An expressway lane group follows Greenshields' model with free-flow speed v_f = 100 km/h and jam density k_j = 120 veh/km (per lane).\n\n(a) Determine capacity, critical density and speed at capacity. [3]\n(b) Upstream traffic flows at 1800 veh/h/lane (uncongested). A lane-blocking incident causes a queue that discharges at 1200 veh/h/lane in the congested regime. Find the densities of both states and the speed and direction of the resulting shockwave. [8]\n(c) Using AASHTO, determine the stopping sight distance for a design speed of 100 km/h (t = 2.5 s, a = 3.4 m/s²) on (i) a level road and (ii) a 3% downgrade. [7]\n(d) State one traffic-management measure to reduce secondary crashes at the queue tail. [2]",
+  "prompt": "An expressway lane group follows Greenshields' model with free-flow speed $v_f = 100\\ \\mathrm{km/h}$ and jam density $k_j = 120\\ \\mathrm{veh/km}$ (per lane).\n\n(a) Determine capacity, critical density and speed at capacity. [3]\n(b) Upstream traffic flows at 1800 veh/h/lane (uncongested). A lane-blocking incident causes a queue that discharges at 1200 veh/h/lane in the congested regime. Find the densities of both states and the speed and direction of the resulting shockwave. [8]\n(c) Using AASHTO, determine the stopping sight distance for a design speed of 100 km/h ($t = 2.5\\ \\mathrm{s}$, $a = 3.4\\ \\mathrm{m/s^2}$) on (i) a level road and (ii) a 3% downgrade. [7]\n(d) State one traffic-management measure to reduce secondary crashes at the queue tail. [2]",
   "approach": [
-   "(a) q_max = v_f k_j/4 = 3000 veh/h; k_c = k_j/2 = 60 veh/km; v_c = v_f/2 = 50 km/h.",
-   "(b) k = (k_j/2)[1 ∓ √(1 − 4q/(v_f k_j))]. State A (uncongested, 1800): k_A = 22.1 veh/km. State B (congested, 1200): k_B = 106.5 veh/km.",
-   "u_w = (q_B − q_A)/(k_B − k_A) = (1200 − 1800)/(106.5 − 22.1) = −7.1 km/h → backward-forming shockwave moving upstream at 7.1 km/h.",
-   "(c)(i) SSD = 0.278Vt + 0.039V²/a = 69.5 + 114.7 = 184.2 m (AASHTO Green Book).",
-   "(ii) braking = V²/[254(a/9.81 + G)] with G = −0.03 → 124.4 m → SSD = 193.9 m.",
+   "(a) $q_{\\mathrm{max}} = v_f k_j/4 = 3000\\ \\mathrm{veh/h}$; $k_c = k_j/2 = 60\\ \\mathrm{veh/km}$; $v_c = v_f/2 = 50\\ \\mathrm{km/h}$.",
+   "(b) $k = (k_j/2)[1 \\mp \\sqrt{1 - 4q/(v_f k_j)}]$. State A (uncongested, 1800): $k_A = 22.1\\ \\mathrm{veh/km}$. State B (congested, 1200): $k_B = 106.5\\ \\mathrm{veh/km}$.",
+   "$u_w = (q_B - q_A)/(k_B - k_A) = (1200 - 1800)/(106.5 - 22.1) = -7.1\\ \\mathrm{km/h}$ → backward-forming shockwave moving upstream at 7.1 km/h.",
+   "(c)(i) $\\mathrm{SSD} = 0.278Vt + 0.039V^2/a = 69.5 + 114.7 = 184.2\\ \\mathrm{m}$ (AASHTO Green Book).",
+   "(ii) braking = $V^2/[254(a/9.81 + G)]$ with $G = -0.03$ → 124.4 m → $\\mathrm{SSD} = 193.9\\ \\mathrm{m}$.",
    "(d) Queue-tail warning via VMS / advance warning signs, variable speed limits, or traffic-incident management to clear quickly."
   ],
   "key_results": {
@@ -213,11 +213,11 @@
    "CE205-07"
   ],
   "title": "Trapezoidal canal: normal depth, critical depth and profile",
-  "prompt": "A long concrete-lined trapezoidal drainage canal has bottom width b = 3.0 m, side slopes 2H:1V, Manning n = 0.015 and bed slope S₀ = 0.0008. Design discharge Q = 12 m³/s.\n\n(a) Determine the normal depth y_n and the mean velocity at normal depth. [7]\n(b) Determine the critical depth y_c and the Froude number at normal depth. [6]\n(c) Classify the channel slope. A downstream weir raises the water depth to 2.2 m. Name and sketch the resulting water-surface profile. [5]\n(d) State one PUB Code of Practice on Surface Water Drainage consideration for such an open drain. [2]",
+  "prompt": "A long concrete-lined trapezoidal drainage canal has bottom width $b = 3.0\\ \\mathrm{m}$, side slopes 2H:1V, Manning $n = 0.015$ and bed slope $S_0 = 0.0008$. Design discharge $Q = 12\\ \\mathrm{m^3/s}$.\n\n(a) Determine the normal depth $y_n$ and the mean velocity at normal depth. [7]\n(b) Determine the critical depth $y_c$ and the Froude number at normal depth. [6]\n(c) Classify the channel slope. A downstream weir raises the water depth to 2.2 m. Name and sketch the resulting water-surface profile. [5]\n(d) State one PUB Code of Practice on Surface Water Drainage consideration for such an open drain. [2]",
   "approach": [
-   "(a) A = (b + zy)y, P = b + 2y√(1 + z²), R = A/P; solve Q = (1/n)AR^{2/3}S₀^{1/2} by trial → y_n = 1.295 m (A = 7.24 m², R = 0.824 m), V = 1.66 m/s.",
-   "(b) Critical: Q²T/(gA³) = 1 with T = b + 2zy → y_c = 0.947 m. Fr at normal depth = V/√(gD), D = A/T = 0.885 m → Fr = 0.56 (subcritical).",
-   "(c) y_n > y_c → mild slope. Weir depth 2.2 m > y_n > y_c → M1 backwater curve, asymptotic to y_n upstream and rising towards the weir.",
+   "(a) $A = (b + zy)y$, $P = b + 2y\\sqrt{1 + z^2}$, $R = A/P$; solve $Q = (1/n)AR^{2/3}S_0^{1/2}$ by trial → $y_n = 1.295\\ \\mathrm{m}$ ($A = 7.24\\ \\mathrm{m^2}$, $R = 0.824\\ \\mathrm{m}$), $V = 1.66\\ \\mathrm{m/s}$.",
+   "(b) Critical: $Q^2T/(gA^3) = 1$ with $T = b + 2zy$ → $y_c = 0.947\\ \\mathrm{m}$. Fr at normal depth = $V/\\sqrt{gD}$, $D = A/T = 0.885\\ \\mathrm{m}$ → $\\mathrm{Fr} = 0.56$ (subcritical).",
+   "(c) $y_n > y_c$ → mild slope. Weir depth $2.2\\ \\mathrm{m} > y_n > y_c$ → M1 backwater curve, asymptotic to $y_n$ upstream and rising towards the weir.",
    "(d) e.g. freeboard requirement, minimum self-cleansing velocity, maintenance access — check current PUB COP."
   ],
   "key_results": {
@@ -236,11 +236,11 @@
    "CE206-06"
   ],
   "title": "Primary clarifier and activated sludge sizing",
-  "prompt": "A water reclamation plant treats an average flow of 20 000 m³/d.\n\n(a) Size circular primary clarifiers for a surface overflow rate of 40 m³/m²·d and a hydraulic detention time of 2.0 h, using a single tank: determine the area, diameter and side-water depth. [6]\n(b) The primary effluent BOD₅ is 180 mg/L. Determine the aeration tank volume for an F/M ratio of 0.30 d⁻¹ with MLVSS = 2500 mg/L, and the hydraulic retention time. [6]\n(c) Waste activated sludge is withdrawn from the return line at 150 m³/d with a VSS of 8000 mg/L. Neglecting effluent solids, calculate the solids retention time (SRT). [4]\n(d) Explain the effect on effluent quality and sludge settleability of operating at a much lower SRT. [4]",
+  "prompt": "A water reclamation plant treats an average flow of $20\\,000\\ \\mathrm{m^3/d}$.\n\n(a) Size circular primary clarifiers for a surface overflow rate of $40\\ \\mathrm{m^3/(m^2\\cdot d)}$ and a hydraulic detention time of 2.0 h, using a single tank: determine the area, diameter and side-water depth. [6]\n(b) The primary effluent $\\mathrm{BOD_5}$ is 180 mg/L. Determine the aeration tank volume for an F/M ratio of $0.30\\ \\mathrm{d^{-1}}$ with MLVSS = 2500 mg/L, and the hydraulic retention time. [6]\n(c) Waste activated sludge is withdrawn from the return line at $150\\ \\mathrm{m^3/d}$ with a VSS of 8000 mg/L. Neglecting effluent solids, calculate the solids retention time (SRT). [4]\n(d) Explain the effect on effluent quality and sludge settleability of operating at a much lower SRT. [4]",
   "approach": [
-   "(a) A = Q/OR = 20 000/40 = 500 m² → D = √(4A/π) = 25.2 m; V = Q·t = 20 000 × 2/24 = 1667 m³ → depth = 3.33 m. Check weir loading and peak-flow overflow rate.",
-   "(b) V = Q S₀/((F/M) X) = 20 000 × 180/(0.30 × 2500) = 4800 m³; HRT = V/Q = 0.24 d = 5.76 h.",
-   "(c) θ_c = VX/(Q_w X_r) = 4800 × 2500/(150 × 8000) = 10.0 d.",
+   "(a) $A = Q/\\mathrm{OR} = 20\\,000/40 = 500\\ \\mathrm{m^2}$ → $D = \\sqrt{4A/\\pi} = 25.2\\ \\mathrm{m}$; $V = Q \\cdot t = 20\\,000 \\times 2/24 = 1667\\ \\mathrm{m^3}$ → depth = 3.33 m. Check weir loading and peak-flow overflow rate.",
+   "(b) $V = Q S_0/((F/M) X) = 20\\,000 \\times 180/(0.30 \\times 2500) = 4800\\ \\mathrm{m^3}$; $\\mathrm{HRT} = V/Q = 0.24\\ \\mathrm{d} = 5.76\\ \\mathrm{h}$.",
+   "(c) $\\theta_c = VX/(Q_w X_r) = 4800 \\times 2500/(150 \\times 8000) = 10.0\\ \\mathrm{d}$.",
    "(d) Low SRT → higher F/M, dispersed growth / poor flocculation, poorer settleability, little or no nitrification, higher effluent BOD/SS."
   ],
   "key_results": {
@@ -265,11 +265,11 @@
    "page": 102
   },
   "title": "Reservoir-to-reservoir pipeline in series; upgrade with a parallel pipe",
-  "prompt": "Reservoir A (water level 100.0 m) supplies reservoir B (70.0 m) through two pipes in series: pipe 1, 800 m long, 400 mm diameter; pipe 2, 600 m long, 300 mm diameter. Take Darcy f = 0.02 for both. Minor loss coefficients: entrance 0.5 (on v₁), sudden contraction 0.3 (on v₂), exit 1.0 (on v₂).\n\n(a) Determine the discharge. [8]\n(b) Determine the hydraulic grade line elevation at the end of pipe 1 and sketch the EGL and HGL. [5]\n(c) Pipe 2 is duplicated by an identical parallel 300 mm pipe (each with the same contraction and exit losses). Determine the new discharge. [5]\n(d) Why might Hazen–Williams be preferred for a water-supply network check? [2]",
+  "prompt": "Reservoir A (water level 100.0 m) supplies reservoir B (70.0 m) through two pipes in series: pipe 1, 800 m long, 400 mm diameter; pipe 2, 600 m long, 300 mm diameter. Take Darcy $f = 0.02$ for both. Minor loss coefficients: entrance 0.5 (on $v_1$), sudden contraction 0.3 (on $v_2$), exit 1.0 (on $v_2$).\n\n(a) Determine the discharge. [8]\n(b) Determine the hydraulic grade line elevation at the end of pipe 1 and sketch the EGL and HGL. [5]\n(c) Pipe 2 is duplicated by an identical parallel 300 mm pipe (each with the same contraction and exit losses). Determine the new discharge. [5]\n(d) Why might Hazen–Williams be preferred for a water-supply network check? [2]",
   "approach": [
-   "Energy A → B: 30 = (v₁²/2g)(0.5 + fL₁/D₁) + (v₂²/2g)(0.3 + fL₂/D₂ + 1.0), with v = Q/A. Coefficients 40.5 and 41.3 → Q = 0.233 m³/s (v₁ = 1.86 m/s, v₂ = 3.30 m/s).",
-   "EGL at the end of pipe 1 = 100 − (v₁²/2g)(0.5 + 40) = 92.90 m; HGL = EGL − v₁²/2g = 92.72 m. EGL drops in steps at each minor loss, with steeper slope in pipe 2.",
-   "Parallel pipes share the head and each carries Q/2: 30 = (v₁²/2g)(40.5) + ((Q/2A₂)²/2g)(41.3) → Q = 0.357 m³/s (+53 %).",
+   "Energy A → B: $30 = (v_1^2/2g)(0.5 + fL_1/D_1) + (v_2^2/2g)(0.3 + fL_2/D_2 + 1.0)$, with $v = Q/A$. Coefficients 40.5 and 41.3 → $Q = 0.233\\ \\mathrm{m^3/s}$ ($v_1 = 1.86\\ \\mathrm{m/s}$, $v_2 = 3.30\\ \\mathrm{m/s}$).",
+   "EGL at the end of pipe 1 = $100 - (v_1^2/2g)(0.5 + 40) = 92.90\\ \\mathrm{m}$; $\\mathrm{HGL} = \\mathrm{EGL} - v_1^2/2g = 92.72\\ \\mathrm{m}$. EGL drops in steps at each minor loss, with steeper slope in pipe 2.",
+   "Parallel pipes share the head and each carries Q/2: $30 = (v_1^2/2g)(40.5) + ((Q/2A_2)^2/2g)(41.3)$ → $Q = 0.357\\ \\mathrm{m^3/s}$ (+53 %).",
    "Hazen–Williams is explicit in Q, C tables by material and age (notes p. 106); good for water at normal temperatures, not for other fluids or laminar flow."
   ],
   "key_results": {
@@ -294,11 +294,11 @@
    "page": 92
   },
   "title": "Broad-crested weir, jump at the toe, V-notch for low flows",
-  "prompt": "A broad-crested weir spans a 4.0 m wide rectangular channel. The upstream head over the crest is 0.80 m (approach velocity negligible, free discharge, C_d = 0.88).\n\n(a) Calculate the discharge and the critical depth on the crest. [6]\n(b) At the toe of the weir the flow depth is 0.25 m. Show that a hydraulic jump can form, and calculate the sequent depth and the head loss. [8]\n(c) For dry-weather flows a 90° V-notch (C_d = 0.59) is installed. Calculate the flow at a head of 0.30 m. [4]\n(d) State one condition under which the weir becomes drowned and its rating no longer applies. [2]",
+  "prompt": "A broad-crested weir spans a 4.0 m wide rectangular channel. The upstream head over the crest is 0.80 m (approach velocity negligible, free discharge, $C_d = 0.88$).\n\n(a) Calculate the discharge and the critical depth on the crest. [6]\n(b) At the toe of the weir the flow depth is 0.25 m. Show that a hydraulic jump can form, and calculate the sequent depth and the head loss. [8]\n(c) For dry-weather flows a 90° V-notch ($C_d = 0.59$) is installed. Calculate the flow at a head of 0.30 m. [4]\n(d) State one condition under which the weir becomes drowned and its rating no longer applies. [2]",
   "approach": [
-   "Q = C_d(2/3)^{3/2}√g·B·h^{3/2} = 0.88 × 0.544 × 3.13 × 4 × 0.8^{1.5} = 4.29 m³/s; q = 1.07 m²/s → y_c = (q²/g)^{1/3} = 0.49 m (= 2/3 of the head on the crest).",
-   "Toe: v₁ = q/0.25 = 4.29 m/s, Fr₁ = 2.74 > 1 (supercritical) → y₂ = (y₁/2)(√(1 + 8Fr₁²) − 1) = 0.85 m; ΔE = (y₂ − y₁)³/(4y₁y₂) = 0.26 m.",
-   "V-notch: Q = C_d(8/15)√(2g)·tan45°·h^{5/2} = 0.59 × 0.533 × 4.43 × 0.3^{2.5} = 0.069 m³/s.",
+   "$Q = C_d(2/3)^{3/2}\\sqrt{g} \\cdot B \\cdot h^{3/2} = 0.88 \\times 0.544 \\times 3.13 \\times 4 \\times 0.8^{1.5} = 4.29\\ \\mathrm{m^3/s}$; $q = 1.07\\ \\mathrm{m^2/s}$ → $y_c = (q^2/g)^{1/3} = 0.49\\ \\mathrm{m}$ (= 2/3 of the head on the crest).",
+   "Toe: $v_1 = q/0.25 = 4.29\\ \\mathrm{m/s}$, $\\mathrm{Fr}_1 = 2.74 > 1$ (supercritical) → $y_2 = (y_1/2)(\\sqrt{1 + 8\\mathrm{Fr}_1^2} - 1) = 0.85\\ \\mathrm{m}$; $\\Delta E = (y_2 - y_1)^3/(4y_1y_2) = 0.26\\ \\mathrm{m}$.",
+   "V-notch: $Q = C_d(8/15)\\sqrt{2g} \\cdot \\tan 45^\\circ \\cdot h^{5/2} = 0.59 \\times 0.533 \\times 4.43 \\times 0.3^{2.5} = 0.069\\ \\mathrm{m^3/s}$.",
    "Drowning when the tailwater rises above about the critical-depth level on the crest (modular limit) — the downstream level then controls."
   ],
   "key_results": {
@@ -323,12 +323,12 @@
    "page": 205
   },
   "title": "Unit hydrograph convolution, Gumbel design flood, Muskingum coefficients",
-  "prompt": "The 3-hour unit hydrograph (1 cm of excess rain) of a catchment has ordinates at 3-hour intervals: 0, 25, 60, 45, 30, 15, 5, 0 m³/s.\n\n(a) Determine the catchment area. [3]\n(b) A storm produces 2 cm then 3 cm of excess rainfall in two successive 3-hour periods. Determine the direct-runoff hydrograph and its peak. [7]\n(c) Annual maximum floods have mean 420 m³/s and standard deviation 130 m³/s (long record). Estimate the 50-year flood by Gumbel and the risk that it is exceeded at least once in 25 years. [6]\n(d) For routing through a downstream reach, K = 12 h and X = 0.2 with Δt = 6 h. Calculate the Muskingum coefficients and check their sum. [4]",
+  "prompt": "The 3-hour unit hydrograph (1 cm of excess rain) of a catchment has ordinates at 3-hour intervals: 0, 25, 60, 45, 30, 15, 5, $0\\ \\mathrm{m^3/s}$.\n\n(a) Determine the catchment area. [3]\n(b) A storm produces 2 cm then 3 cm of excess rainfall in two successive 3-hour periods. Determine the direct-runoff hydrograph and its peak. [7]\n(c) Annual maximum floods have mean $420\\ \\mathrm{m^3/s}$ and standard deviation $130\\ \\mathrm{m^3/s}$ (long record). Estimate the 50-year flood by Gumbel and the risk that it is exceeded at least once in 25 years. [6]\n(d) For routing through a downstream reach, $K = 12\\ \\mathrm{h}$ and $X = 0.2$ with $\\Delta t = 6\\ \\mathrm{h}$. Calculate the Muskingum coefficients and check their sum. [4]",
   "approach": [
-   "Area = ΣU·Δt/1 cm = 180 × 3 × 3600/0.01 = 1.944 × 10⁸ m² = 194 km².",
-   "DRH_n = Σ P_m U_{n−m+1}: 0, 50, 195, 270, 195, 120, 55, 15, 0 m³/s → peak 270 m³/s at 9 h (add base flow if required).",
-   "K_T = −(√6/π)[0.5772 + ln ln(T/(T − 1))] = 2.59 → Q₅₀ = 420 + 2.59 × 130 = 757 m³/s. Risk = 1 − (1 − 1/50)²⁵ = 0.40.",
-   "D = K − KX + 0.5Δt = 12.6; C₀ = (−KX + 0.5Δt)/D = 0.048, C₁ = (KX + 0.5Δt)/D = 0.429, C₂ = (K − KX − 0.5Δt)/D = 0.524; sum = 1; 2KX = 4.8 h < Δt = 6 h < K ✓."
+   "Area = $\\sum U \\cdot \\Delta t/1\\ \\mathrm{cm} = 180 \\times 3 \\times 3600/0.01 = 1.944 \\times 10^8\\ \\mathrm{m^2} = 194\\ \\mathrm{km^2}$.",
+   "$\\mathrm{DRH}_n = \\sum P_m U_{n-m+1}$: 0, 50, 195, 270, 195, 120, 55, 15, $0\\ \\mathrm{m^3/s}$ → peak $270\\ \\mathrm{m^3/s}$ at 9 h (add base flow if required).",
+   "$K_T = -(\\sqrt{6}/\\pi)[0.5772 + \\ln\\ln(T/(T - 1))] = 2.59$ → $Q_{50} = 420 + 2.59 \\times 130 = 757\\ \\mathrm{m^3/s}$. Risk = $1 - (1 - 1/50)^{25} = 0.40$.",
+   "$D = K - KX + 0.5\\Delta t = 12.6$; $C_0 = (-KX + 0.5\\Delta t)/D = 0.048$, $C_1 = (KX + 0.5\\Delta t)/D = 0.429$, $C_2 = (K - KX - 0.5\\Delta t)/D = 0.524$; sum = 1; $2KX = 4.8\\ \\mathrm{h} < \\Delta t = 6\\ \\mathrm{h} < K$ ✓."
   ],
   "key_results": {
    "area_km2": 194.4,

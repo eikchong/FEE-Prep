@@ -13,3 +13,6 @@ __pycache__/
 .pytest_cache/
 *.pyc
 .venv/
+
+node_modules/
+package-lock.json

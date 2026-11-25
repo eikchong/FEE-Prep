@@ -1,0 +1,9 @@
+{
+  "name": "fee-prep-checks",
+  "private": true,
+  "description": "Dev-only: KaTeX check for the notes (scripts/check_katex.mjs). The app itself does not use Node.",
+  "type": "module",
+  "devDependencies": {
+    "katex": "0.16.11"
+  }
+}
