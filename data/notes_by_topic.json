@@ -1969,6 +1969,20 @@
    ],
    "kind": "practice"
   },
+  "CE103/CE3155/tutorials/Tut 1.pdf::q2-six-member-truss": {
+   "doc": "CE103/CE3155/tutorials/Tut 1.pdf",
+   "idx": 1,
+   "title": "Q2 Six-member truss",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE103-08",
+   "overlaps": [
+    "CE103-08"
+   ],
+   "kind": "practice"
+  },
   "CE103/CE3155/tutorials/Tut 2.pdf::q1-two-span-beam-15-kn-m-two-fem-choices": {
    "doc": "CE103/CE3155/tutorials/Tut 2.pdf",
    "idx": 0,
@@ -2025,12 +2039,40 @@
    ],
    "kind": "practice"
   },
-  "CE103/CE3155/tutorials/Tut 4.pdf::q1-q3": {
+  "CE103/CE3155/tutorials/Tut 4.pdf::q1-q2-influence-line-shapes": {
    "doc": "CE103/CE3155/tutorials/Tut 4.pdf",
    "idx": 0,
-   "title": "Q1–Q3",
+   "title": "Q1–Q2 Influence-line shapes",
    "pages": [
     1,
+    2
+   ],
+   "topic": "CE103-03",
+   "overlaps": [
+    "CE103-03"
+   ],
+   "kind": "practice"
+  },
+  "CE103/CE3155/tutorials/Tut 4.pdf::q2-beam-with-an-internal-hinge-see-tut-5-q1-for-ordinates": {
+   "doc": "CE103/CE3155/tutorials/Tut 4.pdf",
+   "idx": 1,
+   "title": "Q2 Beam with an internal hinge (see Tut 5 Q1 for ordinates)",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE103-03",
+   "overlaps": [
+    "CE103-03"
+   ],
+   "kind": "practice"
+  },
+  "CE103/CE3155/tutorials/Tut 4.pdf::q3-critical-load-arrangements": {
+   "doc": "CE103/CE3155/tutorials/Tut 4.pdf",
+   "idx": 2,
+   "title": "Q3 Critical load arrangements",
+   "pages": [
+    2,
     2
    ],
    "topic": "CE103-03",
@@ -8058,7 +8100,9 @@
     "CE103/CE3155/P2-5 Influence lines II.pdf::maximum-effect-of-a-series-of-loads"
    ],
    "practice": [
-    "CE103/CE3155/tutorials/Tut 4.pdf::q1-q3",
+    "CE103/CE3155/tutorials/Tut 4.pdf::q1-q2-influence-line-shapes",
+    "CE103/CE3155/tutorials/Tut 4.pdf::q2-beam-with-an-internal-hinge-see-tut-5-q1-for-ordinates",
+    "CE103/CE3155/tutorials/Tut 4.pdf::q3-critical-load-arrangements",
     "CE103/CE3155/tutorials/Tut 5.pdf::q1-q3"
    ],
    "covered_in": []
@@ -8107,6 +8151,7 @@
    ],
    "practice": [
     "CE103/CE3155/tutorials/Tut 1.pdf::q1-q2",
+    "CE103/CE3155/tutorials/Tut 1.pdf::q2-six-member-truss",
     "CE103/CE3155/tutorials/Tut 2.pdf::q1-two-span-beam-15-kn-m-two-fem-choices",
     "CE103/CE3155/tutorials/Tut 2.pdf::q2-3-m-fixed-fixed-beam-with-roller-at-1-m-deflection-limit-",
     "CE103/CE3155/tutorials/Tut 3.pdf::q1-two-member-frame-fixed-at-a-and-c",
