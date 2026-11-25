@@ -383,25 +383,7 @@ GEO[D["E6"]] = {"code": "CE203", "title": "Retaining 0c · Deep excavations: toe
  ),
 ]}
 
-GEO[D["E7"]] = {"code": "CE203", "title": "Retaining 6a · Quiz key points (ERSS, second paper)", "sections": [
- sec("Concepts", (1, 3),
-   ("md", "K uses effective stresses ✓ · buttress walls use thin webs ✓ · Rankine is not the earliest (Coulomb 1776 "
-          "came first) · Coulomb's driving moment is usually smaller because its inclined thrust has a stabilising "
-          "vertical component."),
-   ("ex", r"Gault clay ($\phi'$ 22°, PI 45, $K_0$ 2–4) → OCR", r"Alpan: $K_{\mathrm{nc}}$ 0.575, n 0.373 → OCR "
-                                                      r"**28–180** · Mayne–Kulhawy: $K_{\mathrm{nc}}$ 0.625, n "
-                                                      "0.375 → OCR **22–142**."),
- ),
- sec(r"Gravity wall with 20° sloping backfill ($c'$ 25, $\phi'$ 20°)", (6, 9),
-   ("ex", "Answers", r"$\beta = \phi'$ → $K_a = \cos\beta = 0.94$; $z_0 = 2.87\ \mathrm{m}$ → $P_a = 144.6$ "
-                     r"(horizontal 135.8) kN · $K_p$ 2.04, $P_p = \boldsymbol{379.4\ \mathrm{kN}}$ · sliding "
-                     r"**2.79** · overturning $822.5/187.2 = \boldsymbol{4.39}$ · $e = 0.04\ \mathrm{m}$, p "
-                     r"187.5/148.5 kPa → bearing $450/187.5 = \boldsymbol{2.4 < 3}$ ✗ · flattening the "
-                     "backfill drops $K_a$ to 0.49 → both FoS rise."),
-   ("tip", r"The answer sheet's line '(2) $\sigma_p = 125.8\ \mathrm{kPa}$' is a copy-over from the other "
-           "quiz; the base passive stress here is 181.5 kPa."),
- ),
-]}
+# E7 (quiz key points) is a practice page: see utils/study_notes_ce203q.py.
 
 
 # ---------------------------------------------------------------- CE3116 lecture notes (foundations)

@@ -7,7 +7,6 @@ Block types:
   ("steps", [..])       numbered procedure
   ("ex", title, text)   worked-example summary (results as given in the notes)
   ("tip", text)         exam tip / common trap
-  ("tut", text)         tutorial question that practises this section
 Section "pages" are the PDF pages of the source file (for 'open original').
 """
 from __future__ import annotations
@@ -96,9 +95,6 @@ STUDY[S1] = {"code": "CE102", "title": "S1 · Statics of particles", "sections":
                                                   r"53.13^\circ$, $T = 245.3/(2 \sin 53.13^\circ) = 153.3\ "
                                                   r"\mathrm{N}$; then $x = 0.64\ \mathrm{m}$ from the triangle "
                                                   "geometry."),
-   ("tut", r"Tutorial 1 Q1 — scoreboard (9 kN) on cable ABC: choose the cable length so that $T \le 20\ "
-           r"\mathrm{kN}$ and the drop $d \le 0.3\ \mathrm{m}$ (particle equilibrium at B, $2T \sin\theta = "
-           "W$)."),
  ),
 ]}
 
@@ -136,10 +132,6 @@ STUDY[S2] = {"code": "CE102", "title": "S2 · Equilibrium of rigid bodies", "sec
                                                                   "kN, 15.1 kN), i.e. 69.5 kN and 90.0 kN in "
                                                                   "x–y."),
    ("tip", "Take moments about the point where the most unknowns pass — each equation then gives one unknown."),
-   ("tut", "Tutorial 1 Q2 — jib crane for a 6 kN engine (with dynamic factor): position of the hoist that "
-           "governs the tie-rod force and pin reactions."),
-   ("tut", "Tutorial 2 Q6 — stack of blocks: maximum overhang x before tipping (moment equilibrium about each "
-           "edge, block by block from the top)."),
  ),
  sec("Case study: Leaning Tower of Pisa", (26, 34),
    ("md", "Weight 144 MN acting at the C.G. (27.1 m up a 58.2 m tower tilted 5.6°) is eccentric to the 19.6 m "
@@ -197,8 +189,6 @@ STUDY[S3] = {"code": "CE102", "title": "S3 · Truss structures", "sections": [
                                         "add a horizontal impact force F — use superposition."),
    ("tip", "A truss under gravity behaves like a beam: top chord compression, bottom chord tension, largest chord "
            "forces near midspan, largest diagonals near the supports."),
-   ("tut", "Tutorial 1 Q3 — water-tank tower under wind (3 kPa): choose the minimum stable bracing pattern that "
-           "minimises the main-leg forces (GH critical)."),
  ),
  sec("Arch roof truss (non-parallel chords)", (48, 59),
    ("md", "Use symmetry for the reaction (15 kN), then a section through BC, CK, KL. With non-parallel chords, find "
@@ -233,8 +223,6 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
                                                                "frame ABCI → AF; frame CDE → EH. Avoid "
                                                                "solving pin forces you don't need; check with "
                                                                r"$\sum M$ about another point."),
-   ("tut", "Tutorial 2 Q4 — pin-connected structure: tension in rod BD and pin forces; then choose the 'best' "
-           "position of D along CE by tabulating the forces against x."),
  ),
  sec("Cables under concentrated loads", (26, 36),
    ("md", "Cables resist **tension only**. Between point loads each segment is straight (a two-force member). "
@@ -260,8 +248,6 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
                                                                "weight and its position x."),
    ("ex", "Example 4.4 (homework)", r"Sag $y_C$ unknown → trial $T_{\mathrm{AB}}$ until the first segment "
                                     "reaches 700 N; find the largest mass of cylinder F."),
-   ("tut", r"Tutorial 2 Q5 — traffic lights (15 kg, 30 kg) on a cable: sag $y_2 \le 1.0\ \mathrm{m}$ and $T "
-           r"\le 1000\ \mathrm{N}$ → minimum cable length and the sags at all load points."),
  ),
 ]}
 
@@ -286,9 +272,6 @@ STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members
           r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right]"),
    ("md", "The second form (**generalised Hooke's law**) superposes the strains from normal stresses in all three "
           "directions."),
-   ("tut", r"Tutorial 3 Q1(b) — air-inflated fabric under biaxial $\sigma_x = 120\ \mathrm{MPa}$, $\sigma_z = "
-           r"160\ \mathrm{MPa}$ ($E = 87\ \mathrm{GPa}$, $\nu = 0.34$): change in length of the sides and the "
-           "diagonal."),
  ),
  sec("Allowable stress & factor of safety; design examples", (14, 25),
    ("eq", r"n_s = \frac{P_{failure}}{P_{allowable}} = \frac{\sigma_{failure}}{\sigma_{allowable}} \geq 1"),
@@ -300,14 +283,10 @@ STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members
           r"\mathrm{mm}$)",
     "Check each failure mode — concrete shear (cylinder surface), concrete cone tension + shear (truncated cone, "
     "45°), concrete tension, bolt tension — compute P for each; the **smallest P governs**."),
-   ("tut", r"Tutorial 3 Q1(a) — connecting rod AB: maximum allowable piston force from $\sigma_c$ on the rod "
-           "(depends on the crank geometry R/L)."),
  ),
  sec("Deformation of axially loaded members", (26, 29),
    ("eq", r"\delta = \frac{PL}{EA} \qquad \delta = \sum_i \frac{P_iL_i}{E_iA_i} \qquad \delta = \int_0^L\frac{P(x)}{E\,A(x)}dx"),
    ("md", "Use internal axial force of each segment (cut and draw an FBD), not the applied loads."),
-   ("tut", r"Tutorial 3 Q2(a) — tapered plate (width 2a → a): $\delta = (PL/Eta) \ln 2$. Q2(b) — hanging mine "
-           "cable with self-weight: strain varies linearly along the cable."),
  ),
  sec("Statically indeterminate members & compatibility", (30, 31),
    ("eq", r"\text{degree of indeterminacy} = \text{no. of unknowns} - \text{no. of equilibrium equations}"),
@@ -342,8 +321,6 @@ STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members
                                                                                                      r"\approx "
                                                                                                      r"1.46\ "
                                                                                                      r"\mathrm{mm}$."),
-   ("tut", r"Tutorial 3 Q3(a) — choose the angle $\theta$ for a two-bar truss of minimum weight at equal "
-           "allowable stress."),
  ),
  sec("Pile foundations; rigid bars on cables", (36, 48),
    ("md", "**Pile load test:** kentledge (concrete blocks) and hydraulic jacks check the calculated capacity on a few "
@@ -355,7 +332,6 @@ STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members
    ("ex", "Example 1.6 — rigid bar ABD on cables BC and CD (6 kN/m)",
     "One moment equation + compatibility from the rotated rigid bar (similar triangles) and cable geometry "
     r"($\delta_{\mathrm{cable}} = \delta_{\mathrm{vertical}} \cos\theta$) → solve the two cable forces."),
-   ("tut", "Tutorial 3 Q3(b) — rigid ABCD on brass and aluminium rods: displacement of D under 40 kN."),
  ),
 ]}
 
@@ -389,10 +365,6 @@ STUDY[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
     r"\tau \cdot J/c$ → $n \ge 7.2$ → **8 bolts**."),
    ("ex", "Example 2.3 — drill pipe with end torque $T_A$ and friction torque rising linearly to $t_0$",
     r"Equilibrium $T_B = T_A + t_0L/2$; internal torque varies along the pipe → $\phi$ by integration."),
-   ("tut", r"Tutorial 4 Q4(a) — geared shafts ($G = 80\ \mathrm{GPa}$, $d_1 = 40\ \mathrm{mm}$, $d_2 = 30\ "
-           r"\mathrm{mm}$, $T = 400\ \mathrm{Nm}$): rotation at D and $\tau_{\mathrm{max}}$ in each shaft "
-           "(gear ratio transfers torque and rotation). Q4(b) — rod with linearly varying distributed torque "
-           "reaction: $t_0$ and twist at A."),
  ),
  sec("Power transmission", (27, 31),
    ("eq", r"P = T\omega,\qquad \omega = \frac{2\pi N}{60}\ \text{rad/s},\qquad 1\ \text{hp} = 0.745\ \text{kW}"),
@@ -456,8 +428,6 @@ STUDY[M3] = {"code": "CE102", "title": "M3 · Flexural members (SFD & BMD)", "se
                                           "$M = 0$ at 3 m → **best location for the splice**."),
    ("ex", "Ski on snow (0.8 kN, trapezoidal reaction)", r"Equilibrium → $w = 0.533\ \mathrm{kN/m}$, then "
                                                         "SFD/BMD."),
-   ("tut", "Tutorial 4 Q5(a) — beam with overhang and point loads: SFD/BMD, maxima and deflected shape. "
-           "Q5(b) — aircraft wing as a tapered cantilever: reactions at the fuselage, SFD/BMD."),
  ),
 ]}
 
@@ -512,8 +482,6 @@ STUDY[M4] = {"code": "CE102", "title": "M4 · Stress & strain due to bending", "
           "(b/n); N.A. 177 mm/323 mm; check which material reaches its limit first — the smaller moment governs."),
    ("md", "Applications: aluminium truss girders (I by parallel-axis of the chord tubes), **castellated beams** "
           "(cut and re-weld an I-beam → deeper, stiffer for the same steel)."),
-   ("tut", "Tutorial 4 Q6(a) — beam AB pinned at A and held by cable BC: combined axial + bending stress at "
-           "section D."),
  ),
 ]}
 
@@ -532,8 +500,6 @@ STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": 
  sec("Superposition", (14, 14),
    ("md", "$EIy'' = M$ is **linear**, so deflections/slopes from separate load cases can be **added** (use "
           "standard tables)."),
-   ("tut", "Tutorial 4 Q6(b) — span 3L with a point load at L and UDL over the last third: maximum deflection and "
-           "its location (superposition or integration)."),
  ),
  sec("Moment-area method", (15, 23),
    ("eq", r"\theta_{B/A} = \int_A^B\frac{M}{EI}dx \qquad t_{B/A} = \int_A^B\frac{M}{EI}\,\bar{x}_B\,dx"),
@@ -573,21 +539,6 @@ STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": 
  ),
 ]}
 
-# ============================================================== tutorials 1–4 (question index)
-TUTORIALS = [
- (T1, 1, "Q1 Scoreboard on cable ABC — length for T ≤ 20 kN, drop ≤ 0.3 m", S1),
- (T1, 2, "Q2 Jib crane for a 6 kN engine — tie-rod force & pin reactions", S2),
- (T1, 3, "Q3 Water-tank tower under wind — minimal bracing, main-leg forces", S3),
- (T2, 1, "Q4 Pin-connected structure — rod BD tension, best position of D", S4),
- (T2, 2, "Q5 Traffic-light cable — minimum length for sag ≤ 1 m, T ≤ 1000 N", S4),
- (T2, 3, "Q6 Stacked blocks — maximum overhang", S2),
- (T3, 1, "Q1 Connecting rod allowable force; biaxial fabric strains", M1),
- (T3, 2, "Q2 Tapered plate elongation; hanging mine cable strains", M1),
- (T3, 3, "Q3 Minimum-weight two-bar truss; rigid bar on brass & aluminium rods", M1),
- (T4, 1, "Q4 Geared shafts; rod with distributed torque", M2),
- (T4, 2, "Q5 SFD/BMD — overhanging beam; aircraft wing", M3),
- (T4, 3, "Q6 Combined stress at a section; max deflection under combined loads", M5),
-]
 
 # ============================================================== CE2155 (continuation of CE1101)
 C0 = "CE102/CE2155_0_Introduction.pdf"
@@ -892,20 +843,6 @@ STUDY[C6] = {"code": "CE102", "title": "CE2155 6 · Material failure", "sections
 ]}
 
 
-# CE2155 tutorials (question sheets are textbook figures; answers as printed on the sheets)
-_TT = "CE102/CE2155_Tutorial_{}.pdf"
-TUTORIALS += [
- (_TT.format(1), 1, "CE2155 Tut 1 — revision: stresses (127/129 MPa, 52.8 MPa), strains (0.0168, 0.0116 rad), 410 mm", C1),
- (_TT.format(2), 1, "CE2155 Tut 2 — shear stress 7.33 MPa, 100 kN; shear flow 65.1/43.6 kN/m (thin-walled 62.4/44.8)", C2),
- ("CE102/CE2155_Tut2_R7-4_my_solution.pdf", 1, "My solution — Tut 2 R7-4 (shear flow → V ≈ 20.4 kN)", C2),
- (_TT.format(3), 1, "CE2155 Tut 3 — combined loading: σ_max = 2.34 MPa (C); states of stress", C3),
- (_TT.format(3), 2, "CE2155 Tut 3 Q4 — bent pipe: fixed-end reactions & stresses at C", C3),
- ("CE102/CE2155_Tut3_Q4_my_solution.pdf", 1, "My solution — Tut 3 Q4 (re-check torsion: M_z = F·b)", C3),
- (_TT.format(4), 2, "CE2155 Tut 4 — transformation: 470/592 kPa; strains 1434/−304 µε", C4),
- (_TT.format(4), 3, "CE2155 Tut 4 Q5 — strain gauge at 15° on a shaft (T = 11.3 kNm, σ = ±57.6 MPa)", C4),
- ("CE102/CE2155_Tut4_Q5_my_solution.pdf", 1, "My solution — Tut 4 Q5 (Mohr's circle for strain)", C4),
- (_TT.format(5), 1, "CE2155 Tut 5 — buckling: 5.55 kN/m, 14.5 kN, 48.0 MPa; W-section columns", C5),
-]
 
 # ============================================================== CE101 — CE2155 materials part
 _M = "CE101/CE2155_M{}.pdf"
@@ -1198,7 +1135,7 @@ STUDY[MAT["12_wood"]] = {"code": "CE101", "title": "Materials 12 · Wood (not ex
  ),
 ]}
 
-STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101", "title": "Materials review — exam checklist", "sections": [
+STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101", "title": "Materials review — checklist for the paper", "sections": [
  sec("What you must be able to do", (2, 14),
    ("md", "- **Cement:** raw materials, clinker phases, hydration products (C-S-H, CH, ettringite, monosulfate — "
           "no chemical formulae needed), ASTM Types I–V, ITZ & porosity.\n"
@@ -1216,140 +1153,7 @@ STUDY[MAT["CE2155_material_part_review_session_Spring_2020"]] = {"code": "CE101"
  ),
 ]}
 
-# ============================================================== CE101 — materials tutorials (model answers)
-MT = "CE101/CE2155_Mat_Tutorial_{}.pdf"
-STUDY[MT.format(1)] = {"code": "CE101", "title": "Materials tutorials 1–5 · questions & model answers", "sections": [
- sec("Tutorial 1 — Cement (lecture 2)", (1, 1),
-   ("ex", "Q1 What is inter-ground with clinker, and why?", r"**Gypsum** ($\mathrm{CaSO_4} \cdot "
-                                                            r"2\mathrm{H_2O}$). It supplies sulfate so "
-                                                            r"$\mathrm{C_3A}$ forms ettringite instead of "
-                                                            "hydrating instantly → prevents **flash set** and "
-                                                            "controls setting; amount rises with "
-                                                            r"$\mathrm{C_3A}$ content (too much affects "
-                                                            "setting/expansion)."),
-   ("ex", "Q2 Four clinker phases; which gives early strength?", r"$\mathrm{C_3S}$, $\mathrm{C_2S}$, "
-                                                                 r"$\mathrm{C_3A}$, $\mathrm{C_4AF}$. "
-                                                                 r"$\boldsymbol{\mathrm{C_3S}}$ gives most "
-                                                                 "strength in the first 3–4 weeks; "
-                                                                 r"$\mathrm{C_2S}$ contributes later."),
-   ("ex", "Q3 Type III vs Type I", r"Type III has more $\mathrm{C_3S}$ (and $\mathrm{C_3A}$) and is ground "
-                                   "**finer** → faster hydration, high early strength, more early heat; "
-                                   "similar long-term strength. Used for precast, cold weather, early "
-                                   "striking."),
-   ("ex", "Q4 Two types of porosity", r"**Gel pores** ($< 10\ \mathrm{nm}$) — intrinsic spaces within C-S-H. "
-                                      r"**Capillary pores** ($> 10\ \mathrm{nm}$) — remnants of the original "
-                                      "water-filled space between cement grains not filled by hydrates; rise "
-                                      "with w/c, control permeability and strength."),
-   ("ex", "Q5 Benefits of fly ash; when not beneficial", "Lower heat of hydration (mass pours), better "
-                                                         "workability (spherical particles, less water), "
-                                                         "better long-term strength and durability (less CH, "
-                                                         "finer pores, sulfate/chloride resistance), lower "
-                                                         r"cost and $\mathrm{CO_2}$. **Not beneficial** when "
-                                                         "high early strength is needed (early striking, cold "
-                                                         "weather, fast-track/precast) because early strength "
-                                                         "gain is slower."),
-   ("ex", "Q6 Silica fume vs Class F fly ash", "Silica fume: by-product of silicon metal, ~90 %+ amorphous "
-                                               r"$\mathrm{SiO_2}$, 10–100 nm, highly reactive, raises water "
-                                               "demand (sticky), adds early strength. Class F fly ash: coal "
-                                               r"combustion residue, $\mathrm{SiO_2} + \mathrm{Al_2O_3} + "
-                                               r"\mathrm{Fe_2O_3} \ge 70\,\%$, 1–300 µm spheres, slowly "
-                                               "pozzolanic, improves flow."),
- ),
- sec("Tutorial 2 — Aggregate & admixtures (lectures 3–4)", (1, 1),
-   ("ex", "Q1 Max aggregate size vs paste", "Larger well-graded maximum size → lower total surface area and fewer voids "
-          "→ less water and paste for the same workability (limited by member size and bar spacing)."),
-   ("ex", "Q2 Absorption 1.5 %, total moisture 5 %", "Free (surface) moisture = $5 - 1.5 = "
-                                                     r"\boldsymbol{3.5\,\%}$ of oven-dry mass → reduce mixing "
-                                                     "water accordingly."),
-   ("ex", "Q3 Why 'water reducer'; normal vs high-range (ASTM C494)", "They disperse flocculated cement, so the same "
-          "slump needs less water. Type A (normal) ≥ 5 % water reduction; Type F (high-range, superplasticiser) "
-          "≥ 12 %."),
-   ("ex", "Q4 Air-entraining vs water-reducing surfactants", "AE: hydrophilic head + **hydrophobic** tail, acts at the "
-          "**air–water** interface to stabilise small bubbles. WR: anionic polymers adsorbing at the "
-          "**cement–water** interface, dispersing particles by electrostatic repulsion/steric hindrance."),
-   ("ex", "Q5 300 kg water with a 15 % water reducer", r"$300 \times (1 - 0.15) = \boldsymbol{255\ "
-                                                       r"\mathrm{kg}}$."),
-   ("ex", "Q6 Setting-time curves", "Plot penetration resistance vs time: an accelerator shifts the curve **left** "
-          "(earlier initial 3.5 MPa and final 27.6 MPa set), a retarder shifts it **right**; the plain mix lies "
-          "between."),
-   ("ex", "Q7 Temperature & setting; cooling fresh concrete", "Higher temperature → faster hydration → shorter setting "
-          "time and faster slump loss. Cool by chilled water or ice, shaded/chilled aggregate, casting at night or "
-          "the coolest part of the day (also low-heat binder, retarder)."),
- ),
- sec("Tutorial 3 — Hardened concrete (lecture 6)", (1, 1),
-   ("ex", "Q1 Strength vs porosity", "Strength falls roughly exponentially as porosity rises (capillary porosity "
-          "controlled by w/c and degree of hydration)."),
-   ("ex", "Q2 Dominant factor & two others", "**w/c ratio**; also age/degree of hydration, curing (moisture, "
-          "temperature), cement type, aggregate, air content, test conditions."),
-   ("ex", "Q3 Types I, III, V at the same w/c", r"Early age: III > I > V ($\mathrm{C_3S}$ content and "
-                                                "fineness). Long term: about the same, because the degree of "
-                                                "hydration converges by ~90 days."),
-   ("ex", "Q4 Curing", "Keeping concrete moist and at a suitable temperature after placing so hydration continues "
-          "(it stops below ~80 % internal RH): strength, low permeability, durability, less plastic/drying "
-          "shrinkage cracking."),
-   ("ex", "Q5 Which gives higher measured 28-day strength?", "(a) w/c **0.4**. (b) **25 °C** to 28 days (10 °C "
-          "slower; very high early temperature lowers ultimate strength). (c) **75 × 150** mm cylinder (size "
-          "effect). (d) **3 MPa/s** (faster loading reads higher). (e) **Air-dry** (saturated reads lower — "
-          "opposite to E)."),
-   ("ex", "Q6 Is concrete truly elastic? Micro-cracking stages", "No — non-linear and inelastic (ITZ "
-                                                                 "micro-cracks, creep, residual strain on "
-                                                                 r"unloading). < ~$30\,\% f_c$: stable ITZ "
-                                                                 "cracks; 30–50 %: ITZ cracks grow; > 50 %: "
-                                                                 "matrix cracks start; > 75 %: cracks link up "
-                                                                 "and become unstable → failure."),
-   ("ex", "Q7 Larger coarse aggregate lowers mortar strength & impermeability", "Bigger particles create a thicker, "
-          "more porous **ITZ** with more bleed water and micro-cracking under them → weak, connected paths."),
- ),
- sec("Tutorial 4 — Dimensional stability & durability (lectures 8–9)", (1, 1),
-   ("ex", "Q1 Heat of hydration — dams vs slabs", "Mass concrete cannot lose heat (low surface/volume) → "
-                                                  r"large internal $\Delta T$ and restraint → thermal "
-                                                  "cracking. Thin slabs and columns dissipate heat quickly."),
-   ("ex", "Q2 Factors on drying shrinkage and creep", "Both rise with paste volume (w/c, cement content) and "
-          "softer aggregate (similar). Stress level affects creep only. Ambient RH and member size: drier air and "
-          "thinner members increase drying shrinkage (check lecture 8 p. 15 for the creep trend shown)."),
-   ("ex", "Q3 Durability", "Ability to resist weathering, chemical attack, abrasion and other deterioration over the "
-          "design life — as important as strength; most repair costs come from durability failures."),
-   ("ex", "Q4 Aggregate size & permeability; other factors", "Larger aggregate → more porous ITZ and micro-cracks → "
-          "higher permeability. Others: w/c, degree of hydration/curing, SCMs, compaction, cracking, air voids."),
-   ("ex", "Q5 Controlling reinforcement corrosion", "Adequate cover; low w/c, SCMs and good curing (low "
-          "permeability); limit chlorides in materials; crack control; coatings/sealers; epoxy-coated or "
-          "galvanised/stainless bars; corrosion inhibitors; cathodic protection."),
-   ("ex", "Q6 Sulfate attack chemistry", "Sulfate + CH → **gypsum** (expansion, softening); sulfate + "
-                                         r"monosulfate (AFm)/$\mathrm{C_3A}$ hydrates → **ettringite** "
-                                         "(expansive) → cracking, spalling, loss of strength."),
-   ("ex", "Q7 Match the photos", "Map cracking with white gel → **ASR**; scaling/pop-outs in cold climate → **frost**; "
-          "rust staining and spalling over bars → **corrosion**; soft, expanded, spalled surface in contact with "
-          "soil/seawater → **sulfate attack** (see the sheet's figures)."),
- ),
- sec("Tutorial 5 — Steel (lectures 10–11)", (1, 1),
-   ("ex", "Q1 Brittle vs ductile objects", "Brittle: glass, ceramic mugs, chalk, concrete, cast iron. Ductile: "
-          "paper clips, aluminium foil, copper wire, mild-steel rebar."),
-   ("ex", "Q2 When concrete beats steel", "Compression-dominated mass structures (foundations, dams); fire "
-          "resistance; corrosive/marine exposure with good cover; mouldability for complex shapes; low cost and "
-          "local materials; mass for stability/acoustics."),
-   ("ex", "Q3 Total strain 0.213 at 600 MPa, plastic 0.210", "Elastic strain = 0.003 → $E = 600/0.003 = "
-                                                             r"\boldsymbol{200\ \mathrm{GPa}}$."),
-   ("ex", r"Q4 Gold FCC, $a = 0.408\ \mathrm{nm}$", r"Face diagonal $\sqrt{2} \cdot a = 4r$ → $r = 0.408 \times \sqrt{2}/4 "
-                                       r"= \boldsymbol{0.144\ \mathrm{nm}}$."),
-   ("ex", "Q5 Pro-eutectoid cementite (lever rule, 0.025 / 0.8 / 6.7 % C)",
-    r"Pro-eutectoid $\mathrm{Fe_3C}$ ⇒ **hyper-eutectoid**. Likely intended **7.5 %**: $C_0 = 0.8 + 0.075 "
-    r"\times 5.9 = 1.24\,\%\ \mathrm{C}$; pearlite = 92.5 %; eutectoid ferrite = $0.925 \times 5.9/6.675 = "
-    r"\boldsymbol{81.8\,\%}$; eutectoid cementite = **10.7 %**. (As printed, 75 % would need 5.2 % C — a cast "
-    "iron: pearlite 25 %, eutectoid ferrite 22.1 %, eutectoid cementite 2.9 %.)"),
-   ("ex", "Q6 Why C and alloying raise strength", "Interstitial/substitutional atoms distort the lattice and "
-                                                  "pin dislocations (solid-solution strengthening); carbon "
-                                                  r"forms hard $\mathrm{Fe_3C}$/pearlite; alloys refine grains "
-                                                  "and raise hardenability — at the cost of ductility and "
-                                                  "weldability."),
-   ("tip", "Q5 typo check: steel holds ≤ ~2 % C, so pro-eutectoid cementite can't exceed ≈ 20 %."),
- ),
-]}
-
-TUTORIALS += [(MT.format(1), 1, "Materials Tut 1 — cement (model answers in 'Materials tutorials')", MAT["2_Cement"]),
-              (MT.format(2), 1, "Materials Tut 2 — aggregate & admixtures", MAT["4_chemical_admixture"]),
-              (MT.format(3), 1, "Materials Tut 3 — hardened concrete", MAT["6_hardened_concrete"]),
-              (MT.format(4), 1, "Materials Tut 4 — shrinkage, creep & durability", MAT["9_durability"]),
-              (MT.format(5), 1, "Materials Tut 5 — steel", MAT["11_steel_composition_and_structure"])]
+# CE101 materials tutorials (q blocks, one page per sheet) live in utils/study_notes_ce101q.py.
 
 # ============================================================== CE104 Soil mechanics (CE2112)
 G1 = "CE104/CE104_1_Groundwater_Permeability_Seepage.pdf"
@@ -1802,6 +1606,14 @@ STUDY.update(_ANAQ)
 from utils.study_notes_hydq import HYDQ as _HYDQ  # noqa: E402
 
 STUDY.update(_HYDQ)
+
+from utils.study_notes_ce101q import MATQ as _MATQ  # noqa: E402
+
+STUDY.update(_MATQ)
+
+from utils.study_notes_ce102q import MECHQ as _MECHQ  # noqa: E402
+
+STUDY.update(_MECHQ)
 
 # keep last: give every tutorial question its source doc/page and a stable id
 from utils.qblock import fill_sources as _fill_sources  # noqa: E402

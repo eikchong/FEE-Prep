@@ -502,12 +502,12 @@
     "CE101-12",
     "CE101-14"
    ],
-   "kind": "practice"
+   "kind": "lecture"
   },
-  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-1-cement-lecture-2": {
+  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-1-cement": {
    "doc": "CE101/CE2155_Mat_Tutorial_1.pdf",
    "idx": 0,
-   "title": "Tutorial 1 — Cement (lecture 2)",
+   "title": "Tutorial 1 — Cement",
    "pages": [
     1,
     1
@@ -518,10 +518,10 @@
    ],
    "kind": "practice"
   },
-  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-2-aggregate-admixtures-lectures-3-4": {
-   "doc": "CE101/CE2155_Mat_Tutorial_1.pdf",
-   "idx": 1,
-   "title": "Tutorial 2 — Aggregate & admixtures (lectures 3–4)",
+  "CE101/CE2155_Mat_Tutorial_2.pdf::tutorial-2-aggregate-admixtures": {
+   "doc": "CE101/CE2155_Mat_Tutorial_2.pdf",
+   "idx": 0,
+   "title": "Tutorial 2 — Aggregate & admixtures",
    "pages": [
     1,
     1
@@ -532,45 +532,48 @@
    ],
    "kind": "practice"
   },
-  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-3-hardened-concrete-lecture-6": {
-   "doc": "CE101/CE2155_Mat_Tutorial_1.pdf",
-   "idx": 2,
-   "title": "Tutorial 3 — Hardened concrete (lecture 6)",
+  "CE101/CE2155_Mat_Tutorial_3.pdf::tutorial-3-hardened-concrete": {
+   "doc": "CE101/CE2155_Mat_Tutorial_3.pdf",
+   "idx": 0,
+   "title": "Tutorial 3 — Hardened concrete",
    "pages": [
     1,
     1
    ],
-   "topic": "CE101-06",
+   "topic": "CE101-07",
    "overlaps": [
-    "CE101-06"
+    "CE101-07",
+    "CE101-10"
    ],
    "kind": "practice"
   },
-  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-4-dimensional-stability-durability-lectures-8-9": {
-   "doc": "CE101/CE2155_Mat_Tutorial_1.pdf",
-   "idx": 3,
-   "title": "Tutorial 4 — Dimensional stability & durability (lectures 8–9)",
+  "CE101/CE2155_Mat_Tutorial_4.pdf::tutorial-4-shrinkage-creep-durability": {
+   "doc": "CE101/CE2155_Mat_Tutorial_4.pdf",
+   "idx": 0,
+   "title": "Tutorial 4 — Shrinkage, creep & durability",
    "pages": [
     1,
     1
    ],
-   "topic": "CE101-06",
+   "topic": "CE101-04",
    "overlaps": [
-    "CE101-06"
+    "CE101-04",
+    "CE101-12"
    ],
    "kind": "practice"
   },
-  "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-5-steel-lectures-10-11": {
-   "doc": "CE101/CE2155_Mat_Tutorial_1.pdf",
-   "idx": 4,
-   "title": "Tutorial 5 — Steel (lectures 10–11)",
+  "CE101/CE2155_Mat_Tutorial_5.pdf::tutorial-5-steel": {
+   "doc": "CE101/CE2155_Mat_Tutorial_5.pdf",
+   "idx": 0,
+   "title": "Tutorial 5 — Steel",
    "pages": [
     1,
     1
    ],
-   "topic": "CE101-06",
+   "topic": "CE101-14",
    "overlaps": [
-    "CE101-06"
+    "CE101-14",
+    "CE101-15"
    ],
    "kind": "practice"
   },
@@ -1519,6 +1522,280 @@
     "CE101-05"
    ],
    "kind": "lecture"
+  },
+  "CE102/CE1101_T2L_Tutorial_1.pdf::q1-scoreboard-on-cable-abc": {
+   "doc": "CE102/CE1101_T2L_Tutorial_1.pdf",
+   "idx": 0,
+   "title": "Q1 Scoreboard on cable ABC",
+   "pages": [
+    1,
+    1
+   ],
+   "topic": "CE102-01",
+   "overlaps": [
+    "CE102-01"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_1.pdf::q2-jib-crane": {
+   "doc": "CE102/CE1101_T2L_Tutorial_1.pdf",
+   "idx": 1,
+   "title": "Q2 Jib crane",
+   "pages": [
+    2,
+    2
+   ],
+   "topic": "CE102-02",
+   "overlaps": [
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_1.pdf::q3-water-tank-tower-under-wind": {
+   "doc": "CE102/CE1101_T2L_Tutorial_1.pdf",
+   "idx": 2,
+   "title": "Q3 Water-tank tower under wind",
+   "pages": [
+    3,
+    3
+   ],
+   "topic": "CE102-04",
+   "overlaps": [
+    "CE102-04",
+    "CE102-05"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_2.pdf::q4-pin-connected-structure-best-position-of-d": {
+   "doc": "CE102/CE1101_T2L_Tutorial_2.pdf",
+   "idx": 0,
+   "title": "Q4 Pin-connected structure, best position of D",
+   "pages": [
+    1,
+    1
+   ],
+   "topic": "CE102-02",
+   "overlaps": [
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_2.pdf::q5-traffic-light-cable": {
+   "doc": "CE102/CE1101_T2L_Tutorial_2.pdf",
+   "idx": 1,
+   "title": "Q5 Traffic-light cable",
+   "pages": [
+    2,
+    2
+   ],
+   "topic": "CE102-02",
+   "overlaps": [
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_2.pdf::q6-stack-of-blocks": {
+   "doc": "CE102/CE1101_T2L_Tutorial_2.pdf",
+   "idx": 2,
+   "title": "Q6 Stack of blocks",
+   "pages": [
+    3,
+    3
+   ],
+   "topic": "CE102-02",
+   "overlaps": [
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_3.pdf::q1-connecting-rod-biaxial-fabric": {
+   "doc": "CE102/CE1101_T2L_Tutorial_3.pdf",
+   "idx": 0,
+   "title": "Q1 Connecting rod; biaxial fabric",
+   "pages": [
+    1,
+    1
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06",
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_3.pdf::q2-tapered-plate-mine-shaft-cable": {
+   "doc": "CE102/CE1101_T2L_Tutorial_3.pdf",
+   "idx": 1,
+   "title": "Q2 Tapered plate; mine-shaft cable",
+   "pages": [
+    2,
+    2
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_3.pdf::q3-minimum-weight-two-bar-truss-rigid-bar-on-two-rods": {
+   "doc": "CE102/CE1101_T2L_Tutorial_3.pdf",
+   "idx": 2,
+   "title": "Q3 Minimum-weight two-bar truss; rigid bar on two rods",
+   "pages": [
+    3,
+    3
+   ],
+   "topic": "CE102-04",
+   "overlaps": [
+    "CE102-04",
+    "CE102-06"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_4.pdf::q4-geared-shafts-rod-with-distributed-torque": {
+   "doc": "CE102/CE1101_T2L_Tutorial_4.pdf",
+   "idx": 0,
+   "title": "Q4 Geared shafts; rod with distributed torque",
+   "pages": [
+    1,
+    1
+   ],
+   "topic": "CE102-07",
+   "overlaps": [
+    "CE102-07"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_4.pdf::q5-sfd-bmd-bracket-cantilever-aircraft-wing": {
+   "doc": "CE102/CE1101_T2L_Tutorial_4.pdf",
+   "idx": 1,
+   "title": "Q5 SFD/BMD: bracket cantilever; aircraft wing",
+   "pages": [
+    2,
+    2
+   ],
+   "topic": "CE102-09",
+   "overlaps": [
+    "CE102-09"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE1101_T2L_Tutorial_4.pdf::q6-combined-stress-maximum-deflection": {
+   "doc": "CE102/CE1101_T2L_Tutorial_4.pdf",
+   "idx": 2,
+   "title": "Q6 Combined stress; maximum deflection",
+   "pages": [
+    3,
+    3
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08",
+    "CE103-01"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_1.pdf::stress-strain-torsion-beams": {
+   "doc": "CE102/CE2155_Tutorial_1.pdf",
+   "idx": 0,
+   "title": "Stress, strain, torsion, beams",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06",
+    "CE102-09"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_2.pdf::shear-stress-and-shear-flow": {
+   "doc": "CE102/CE2155_Tutorial_2.pdf",
+   "idx": 0,
+   "title": "Shear stress and shear flow",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_3.pdf::combined-loading": {
+   "doc": "CE102/CE2155_Tutorial_3.pdf",
+   "idx": 0,
+   "title": "Combined loading",
+   "pages": [
+    1,
+    1
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08",
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_3.pdf::q4-bent-pipe-reactions-and-stresses-at-c": {
+   "doc": "CE102/CE2155_Tutorial_3.pdf",
+   "idx": 1,
+   "title": "Q4 Bent pipe: reactions and stresses at C",
+   "pages": [
+    2,
+    2
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08",
+    "CE102-02"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_4.pdf::stress-transformation": {
+   "doc": "CE102/CE2155_Tutorial_4.pdf",
+   "idx": 0,
+   "title": "Stress transformation",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_4.pdf::q5-strain-gauge-on-a-shaft": {
+   "doc": "CE102/CE2155_Tutorial_4.pdf",
+   "idx": 1,
+   "title": "Q5 Strain gauge on a shaft",
+   "pages": [
+    3,
+    3
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06"
+   ],
+   "kind": "practice"
+  },
+  "CE102/CE2155_Tutorial_5.pdf::buckling": {
+   "doc": "CE102/CE2155_Tutorial_5.pdf",
+   "idx": 0,
+   "title": "Buckling",
+   "pages": [
+    1,
+    2
+   ],
+   "topic": "CE103-09",
+   "overlaps": [
+    "CE103-09",
+    "CE202-08"
+   ],
+   "kind": "practice"
   },
   "CE103/CE3155/P1-0 SFD and BMD.pdf::internal-forces-sign-convention": {
    "doc": "CE103/CE3155/P1-0 SFD and BMD.pdf",
@@ -6570,9 +6847,24 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::gravity-wall-with-20-sloping-backfill-c-25-20": {
+  "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::mohr-circle-and-the-pole": {
    "doc": "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf",
    "idx": 1,
+   "title": "Mohr circle and the pole",
+   "pages": [
+    3,
+    5
+   ],
+   "topic": "CE203-02",
+   "overlaps": [
+    "CE203-02",
+    "CE203-03"
+   ],
+   "kind": "practice"
+  },
+  "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::gravity-wall-with-20-sloping-backfill-c-25-20": {
+   "doc": "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf",
+   "idx": 2,
    "title": "Gravity wall with 20° sloping backfill ($c'$ 25, $\\phi'$ 20°)",
    "pages": [
     6,
@@ -7840,7 +8132,9 @@
     "CE101/CE2155_M8_creep_and_shrinkage.pdf::drying-plastic-shrinkage",
     "CE101/CE2155_M8_creep_and_shrinkage.pdf::creep"
    ],
-   "practice": [],
+   "practice": [
+    "CE101/CE2155_Mat_Tutorial_4.pdf::tutorial-4-shrinkage-creep-durability"
+   ],
    "covered_in": []
   },
   "CE101-05": {
@@ -7862,15 +8156,12 @@
     "CE101/CE2155_M3_aggregate.pdf::moisture-states-specific-gravity-unit-weight",
     "CE101/CE2155_M4_chemical_admixture.pdf::water-reducers-superplasticisers",
     "CE101/CE2155_M4_chemical_admixture.pdf::air-entraining-admixtures",
-    "CE101/CE2155_M4_chemical_admixture.pdf::retarders-accelerators"
+    "CE101/CE2155_M4_chemical_admixture.pdf::retarders-accelerators",
+    "CE101/CE2155_MCE2155_material_part_review_session_Spring_2020.pdf::what-you-must-be-able-to-do"
    ],
    "practice": [
-    "CE101/CE2155_MCE2155_material_part_review_session_Spring_2020.pdf::what-you-must-be-able-to-do",
-    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-1-cement-lecture-2",
-    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-2-aggregate-admixtures-lectures-3-4",
-    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-3-hardened-concrete-lecture-6",
-    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-4-dimensional-stability-durability-lectures-8-9",
-    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-5-steel-lectures-10-11"
+    "CE101/CE2155_Mat_Tutorial_1.pdf::tutorial-1-cement",
+    "CE101/CE2155_Mat_Tutorial_2.pdf::tutorial-2-aggregate-admixtures"
    ],
    "covered_in": []
   },
@@ -7884,7 +8175,9 @@
     "CE101/CE2155_M6_hardened_concrete.pdf::factors-affecting-strength",
     "CE101/CE2155_M6_hardened_concrete.pdf::modulus-of-elasticity"
    ],
-   "practice": [],
+   "practice": [
+    "CE101/CE2155_Mat_Tutorial_3.pdf::tutorial-3-hardened-concrete"
+   ],
    "covered_in": []
   },
   "CE101-08": {
@@ -7941,7 +8234,9 @@
     "CE101/CE2155_M11_steel_composition_and_structure.pdf::phase-diagrams-the-lever-rule",
     "CE101/CE2155_M11_steel_composition_and_structure.pdf::fe-c-diagram-ferrite-austenite-cementite-pearlite"
    ],
-   "practice": [],
+   "practice": [
+    "CE101/CE2155_Mat_Tutorial_5.pdf::tutorial-5-steel"
+   ],
    "covered_in": []
   },
   "CE101-15": {
@@ -7976,7 +8271,9 @@
     "CE102/CE1101_S1_Equilibrium_of_Particles.pdf::resultant-of-forces-parallelogram-law-cartesian-components",
     "CE102/CE1101_S1_Equilibrium_of_Particles.pdf::equilibrium-of-a-particle"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_1.pdf::q1-scoreboard-on-cable-abc"
+   ],
    "covered_in": []
   },
   "CE102-02": {
@@ -7991,7 +8288,12 @@
     "CE102/CE1101_S4_Frame_and_Cable_Structures.pdf::cable-examples",
     "CE102/CE2155_3_Combined_Loading.pdf::3-d-loading-with-vector-mechanics"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_1.pdf::q2-jib-crane",
+    "CE102/CE1101_T2L_Tutorial_2.pdf::q4-pin-connected-structure-best-position-of-d",
+    "CE102/CE1101_T2L_Tutorial_2.pdf::q5-traffic-light-cable",
+    "CE102/CE1101_T2L_Tutorial_2.pdf::q6-stack-of-blocks"
+   ],
    "covered_in": []
   },
   "CE102-03": {
@@ -8008,7 +8310,10 @@
     "CE102/CE1101_S3_Truss_Structures.pdf::arch-roof-truss-non-parallel-chords",
     "CE102/CE1101_M1_Axial_Force_Members.pdf::truss-deflections-by-geometry"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_1.pdf::q3-water-tank-tower-under-wind",
+    "CE102/CE1101_T2L_Tutorial_3.pdf::q3-minimum-weight-two-bar-truss-rigid-bar-on-two-rods"
+   ],
    "covered_in": []
   },
   "CE102-05": {
@@ -8037,7 +8342,13 @@
     "CE102/CE2155_4_Stress_Strain_Transformation.pdf::absolute-maximum-shear-stress",
     "CE102/CE2155_4_Stress_Strain_Transformation.pdf::generalised-hooke-s-law-plane-strain-strain-rosettes"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_3.pdf::q1-connecting-rod-biaxial-fabric",
+    "CE102/CE1101_T2L_Tutorial_3.pdf::q2-tapered-plate-mine-shaft-cable",
+    "CE102/CE2155_Tutorial_1.pdf::stress-strain-torsion-beams",
+    "CE102/CE2155_Tutorial_4.pdf::stress-transformation",
+    "CE102/CE2155_Tutorial_4.pdf::q5-strain-gauge-on-a-shaft"
+   ],
    "covered_in": []
   },
   "CE102-07": {
@@ -8048,7 +8359,9 @@
     "CE102/CE1101_M2_Torsional_Members.pdf::power-transmission",
     "CE102/CE1101_M2_Torsional_Members.pdf::statically-indeterminate-torsion"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_4.pdf::q4-geared-shafts-rod-with-distributed-torque"
+   ],
    "covered_in": []
   },
   "CE102-08": {
@@ -8066,7 +8379,12 @@
     "CE102/CE2155_2_Shear_Stress.pdf::thin-walled-members",
     "CE102/CE2155_3_Combined_Loading.pdf::2-d-examples"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_4.pdf::q6-combined-stress-maximum-deflection",
+    "CE102/CE2155_Tutorial_2.pdf::shear-stress-and-shear-flow",
+    "CE102/CE2155_Tutorial_3.pdf::combined-loading",
+    "CE102/CE2155_Tutorial_3.pdf::q4-bent-pipe-reactions-and-stresses-at-c"
+   ],
    "covered_in": []
   },
   "CE102-09": {
@@ -8077,7 +8395,9 @@
     "CE102/CE1101_M3_Flexural_Members.pdf::worked-examples",
     "CE102/CE2155_1_MoM_Revision.pdf::sfd-bmd-elastic-curve-moment-curvature"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE1101_T2L_Tutorial_4.pdf::q5-sfd-bmd-bracket-cantilever-aircraft-wing"
+   ],
    "covered_in": []
   },
   "CE103-01": {
@@ -8180,7 +8500,9 @@
     "CE102/CE2155_5_Column_Buckling.pdf::end-conditions-effective-length",
     "CE102/CE2155_5_Column_Buckling.pdf::eccentric-load-the-secant-formula"
    ],
-   "practice": [],
+   "practice": [
+    "CE102/CE2155_Tutorial_5.pdf::buckling"
+   ],
    "covered_in": []
   },
   "CE104-01": {
@@ -8802,6 +9124,7 @@
     "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::k0-from-ocr-mohr-pole",
     "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::gravity-wall-7-m",
     "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::concepts",
+    "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::mohr-circle-and-the-pole",
     "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::gravity-wall-with-20-sloping-backfill-c-25-20"
    ],
    "covered_in": []

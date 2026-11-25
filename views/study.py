@@ -263,8 +263,6 @@ def render_block(b, key: str) -> None:
             st.markdown(f"**{b[1]}**  \n{b[2]}")
     elif k == "tip":
         st.info(b[1], icon=":material/lightbulb:")
-    elif k == "tut":
-        st.markdown(f"**Tutorial:** {b[1]}")
     elif k == "q":
         render_q(b[1], key)
 

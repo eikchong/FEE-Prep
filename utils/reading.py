@@ -23,7 +23,7 @@ EQ_WORDS = 6
 
 def block_words(b) -> int:
     k = b[0]
-    if k in ("md", "tip", "tut"):
+    if k in ("md", "tip"):
         return len(to_plain(b[1]).split())
     if k == "ex":
         return len(to_plain(b[1]).split()) + len(to_plain(b[2]).split())

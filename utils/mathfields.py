@@ -13,7 +13,7 @@ import config
 
 def block_text_fields(b) -> list[tuple[str, str]]:
     k = b[0]
-    if k in ("md", "tip", "tut"):
+    if k in ("md", "tip"):
         return [(k, b[1])]
     if k == "ex":
         return [("ex.title", b[1]), ("ex.body", b[2])]

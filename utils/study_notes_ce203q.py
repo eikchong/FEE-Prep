@@ -489,6 +489,43 @@ GEOQ[D["EX"]] = {"code": "CE203", "title": "Exam · CE3115 AY19/20 paper (slopes
      figure="p. 8, Figure Q4.")),
 ]}
 
+GEOQ[D["E7"]] = {"code": "CE203", "title": "Retaining 6a · Quiz key points (ERSS, second paper)", "sections": [
+ sec("Concepts", (1, 3),
+   q("CE3115 Quiz 2 P1–P4",
+     r"True or false, with reasons: (1) earth pressure coefficients such as $K_0$ are defined on effective stresses; "
+     r"(2) buttress walls gain strength from thin vertical concrete webs; (3) the Rankine (lower-bound) method is the "
+     r"earliest analytical approach to retaining walls; (4) explain why Coulomb's driving moment is usually less "
+     r"critical than Rankine's.",
+     r"**(1) True · (2) True · (3) False — Coulomb (1776) came first · (4) Coulomb allows wall friction, so its thrust "
+     r"is inclined and the vertical component helps resist overturning.**", ""),
+   q("CE3115 Quiz 2 P5",
+     r"Gault clay (heavily overconsolidated, Madingley UK) has $\phi' = 22^\circ$, LL = 72 %, PI = 45 %, w = 28 % and "
+     r"$K_0 = 2$ to 4. Estimate the probable range of OCR.",
+     r"**Alpan: OCR ≈ 28–180 · Mayne–Kulhawy: OCR ≈ 22–142.**",
+     r"$K_0 = K_{\mathrm{nc}}\,OCR^n$. Alpan: $K_{\mathrm{nc}} = 0.19 + 0.233\log PI = 0.575$, $n = 0.54 \times "
+     r"10^{-PI/281} = 0.373$. Mayne–Kulhawy: $K_{\mathrm{nc}} = 1 - \sin\phi' = 0.625$, $n = \sin\phi' = 0.375$.")),
+ sec("Mohr circle and the pole", (3, 5),
+   q("CE3115 Quiz 2 P7",
+     r"(A) For the stress block with $\sigma = 12$ and 0 kPa on its faces and $\tau = 6\ \mathrm{kPa}$, find the pole "
+     r"of Mohr's circle. (B) Find the normal and shear stresses on the 45° plane D–D′ in Figure B.",
+     r"**(A) pole at (0, −6) kPa · (B) $\sigma = 12\ \mathrm{kPa}$, $\tau = 6\ \mathrm{kPa}$.**",
+     r"Centre (6, 0), radius $\sqrt{6^2 + 6^2} = 8.49$. From the pole draw a line parallel to D–D′; it cuts the circle at "
+     r"(12, 6).", figure="pp. 3–5, Figures A and B.")),
+ sec(r"Gravity wall with 20° sloping backfill ($c'$ 25, $\phi'$ 20°)", (6, 9),
+   q("CE3115 Quiz 2 P8–P9",
+     r"A 7 m gravity wall ($24\ \mathrm{kN/m^3}$, smooth) retains backfill with $c' = 25\ \mathrm{kPa}$, $\phi' = "
+     r"20^\circ$, $\gamma = 18\ \mathrm{kN/m^3}$ sloping at 20°, with 3 m of soil in front; no base friction or "
+     r"adhesion, no water, ignore vertical components of earth pressure. Find the active and passive thrusts, the "
+     r"factors of safety against sliding and overturning, and check bearing (ultimate 450 kPa).",
+     r"**$K_a = \cos\beta = 0.94$, $z_0 = 2.87\ \mathrm{m}$ → $P_a = 144.6\ \mathrm{kN}$ (horizontal 135.8) · $K_p = "
+     r"2.04$, $P_p = 379.4\ \mathrm{kN}$ · sliding 2.79 · overturning $822.5/187.2 = 4.39$ · $e = 0.04\ \mathrm{m}$, "
+     r"$p = 187.5/148.5\ \mathrm{kPa}$ → bearing $450/187.5 = 2.4 < 3$ ✗.**",
+     r"With $\beta = \phi'$ the Rankine sloping-backfill $K_a$ reduces to $\cos\beta$. Passive: $\sigma_p = 2c'\sqrt{K_p} "
+     r"= 71.4$ at the surface and 181.5 kPa at the base. The answer sheet's line '(2) $\sigma_p = 125.8\ "
+     r"\mathrm{kPa}$' is copied from the other quiz. A flatter backfill drops $K_a$ to 0.49 and both factors rise.",
+     figure="pp. 6–9: wall section.")),
+]}
+
 # ======================================================================== CE3116 foundations
 GEOQ[D["SI"]] = {"code": "CE203", "title": "Foundations 1 · Site investigation: SPT, CPTu, PMT, permeability (CE3116 Tut 2)", "sections": [
  sec("a) SPT corrections", (1, 2),

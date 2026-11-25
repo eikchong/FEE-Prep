@@ -1,10 +1,11 @@
 import json
 from pathlib import Path
 
-from utils.study_notes import STUDY, TUTORIALS
+from utils.notes_index import PRACTICE_RE
+from utils.study_notes import STUDY
 
 OL = json.loads((Path(__file__).resolve().parents[1] / "data" / "lecture_outlines.json").read_text(encoding="utf-8"))
-KINDS = {"md", "eq", "steps", "ex", "tip", "tut", "q"}
+KINDS = {"md", "eq", "steps", "ex", "tip", "q"}
 
 
 def test_study_notes_follow_the_source_order_and_pages():
@@ -19,10 +20,13 @@ def test_study_notes_follow_the_source_order_and_pages():
             assert s["blocks"] and all(bl[0] in KINDS for bl in s["blocks"]), s["title"]
 
 
-def test_every_module_covered_and_tutorials_mapped():
-    assert len(STUDY) == len(STUDY)  # count grows with notes
-    for tdoc, page, title, target in TUTORIALS:
-        assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
+def test_practice_pages_use_question_blocks():
+    """Tutorial / exam / quiz pages show questions with hidden answers, not open worked examples."""
+    for doc, d in STUDY.items():
+        if not PRACTICE_RE.search(d["title"]):
+            continue
+        kinds = [bl[0] for s in d["sections"] for bl in s["blocks"]]
+        assert "q" in kinds and "ex" not in kinds, (doc, d["title"])
 
 
 def test_quoted_example_numbers_consistent():
