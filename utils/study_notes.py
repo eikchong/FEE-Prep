@@ -1799,6 +1799,10 @@ from utils.study_notes_ce103q import ANAQ as _ANAQ  # noqa: E402
 
 STUDY.update(_ANAQ)
 
+from utils.study_notes_hydq import HYDQ as _HYDQ  # noqa: E402
+
+STUDY.update(_HYDQ)
+
 # keep last: give every tutorial question its source doc/page and a stable id
 from utils.qblock import fill_sources as _fill_sources  # noqa: E402
 

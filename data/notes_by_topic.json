@@ -7783,10 +7783,24 @@
    ],
    "kind": "lecture"
   },
-  "CE205/CE2134/5 Steps for HW1.pdf::hw1-q9-q12": {
+  "CE205/CE2134/5 Steps for HW1.pdf::hw1-q1-q2-statics-part-1": {
    "doc": "CE205/CE2134/5 Steps for HW1.pdf",
    "idx": 0,
-   "title": "HW1 Q9–Q12",
+   "title": "HW1 Q1–Q2 Statics (Part 1)",
+   "pages": [
+    1,
+    7
+   ],
+   "topic": "CE205-01",
+   "overlaps": [
+    "CE205-01"
+   ],
+   "kind": "practice"
+  },
+  "CE205/CE2134/5 Steps for HW1.pdf::hw1-q9-q12-part-2": {
+   "doc": "CE205/CE2134/5 Steps for HW1.pdf",
+   "idx": 1,
+   "title": "HW1 Q9–Q12 (Part 2)",
    "pages": [
     1,
     7
@@ -8997,7 +9011,8 @@
     "CE205/CE2134/3c PipesDucts Examples.pdf::type-2-and-type-3-iterations"
    ],
    "practice": [
-    "CE205/CE2134/5 Steps for HW1.pdf::hw1-q9-q12"
+    "CE205/CE2134/5 Steps for HW1.pdf::hw1-q1-q2-statics-part-1",
+    "CE205/CE2134/5 Steps for HW1.pdf::hw1-q9-q12-part-2"
    ],
    "covered_in": []
   },
