@@ -12,6 +12,17 @@ from utils.ui import show_pdf_page
 
 p = init()
 st.title("Library")
+_qp = st.query_params
+if _qp.get("doc"):
+    try:
+        st.session_state["lib_sel"] = (_qp["doc"], int(_qp.get("page", 1)))
+        st.session_state["lib_code"] = _qp["doc"].split("/")[0]
+        st.session_state["lib_topic"] = None
+    except ValueError:
+        pass
+    del st.query_params["doc"]
+    if "page" in st.query_params:
+        del st.query_params["page"]
 st.caption("Your lecture notes & references in `materials/`. Search, open at the hit page, and tag pages to sub-topics.")
 
 con = library.connect()

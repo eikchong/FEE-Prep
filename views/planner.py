@@ -7,7 +7,8 @@ import streamlit as st
 import config
 from utils.planner import generate_plan, subject_weights
 from utils.state import init, save
-from utils.syllabus import all_topics, subject_label, topic_map, topic_state
+from utils.reading import topic_stats
+from utils.syllabus import all_topics, subject_label, topic_map
 
 p = init()
 s = p["settings"]
@@ -47,7 +48,7 @@ sw = subject_weights(s)
 st.caption("Subject weights → " + " · ".join(f"{c} {w:g}" for c, w in sw.items() if w))
 
 # ---------------------------------------------------------------- plan
-conf = {t: topic_state(p, t)["confidence"] for t in topic_map()}
+conf = {t: round(5 * topic_stats(p, t)["pct"]) for t in topic_map()}   # read % on the 0–5 scale the planner uses
 names = {t: f"{t} {v['name']}" for t, v in topic_map().items()}
 blocks = generate_plan(all_topics(), conf, s, start=start, topic_names=names)
 if not blocks:

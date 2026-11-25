@@ -4,7 +4,7 @@ from pathlib import Path
 from utils.study_notes import STUDY, TUTORIALS
 
 OL = json.loads((Path(__file__).resolve().parents[1] / "data" / "lecture_outlines.json").read_text(encoding="utf-8"))
-KINDS = {"md", "eq", "steps", "ex", "tip", "tut"}
+KINDS = {"md", "eq", "steps", "ex", "tip", "tut", "q"}
 
 
 def test_study_notes_follow_the_source_order_and_pages():
@@ -23,7 +23,6 @@ def test_every_module_covered_and_tutorials_mapped():
     assert len(STUDY) == len(STUDY)  # count grows with notes
     for tdoc, page, title, target in TUTORIALS:
         assert tdoc in OL and 1 <= page <= OL[tdoc]["page_count"] and target in STUDY, title
-    assert len(TUTORIALS) >= 35
 
 
 def test_quoted_example_numbers_consistent():

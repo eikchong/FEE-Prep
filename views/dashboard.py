@@ -6,38 +6,36 @@ import streamlit as st
 
 import config
 from utils import library
-from utils.state import days_to_exam, init
-from utils.syllabus import (chosen_part2, focus_codes, readiness_by_subject, subject_map, subjects,
-                            topic_map, topic_state)
+from utils.latex_plain import to_plain
+from utils.reading import overall_stats
+from utils.state import days_to_exam, init, log_study_time_form
+from utils.syllabus import (chosen_part2, focus_codes, mcq_accuracy, readiness_by_subject, subject_map, subjects,
+                            topic_map, topic_mcq_accuracy)
 from utils.ui import metric, part_color, pill
 
 p = init()
 settings = p["settings"]
 
-st.title("FEE 2027 (Civil) — Dashboard")
+st.title("Dashboard")
 st.caption(f"Wed {config.EXAM_DATE:%d %B %Y} · results {config.RESULTS}")
 
 # ---------------------------------------------------------------- metrics
-all_ids = list(topic_map())
-states = {t: topic_state(p, t) for t in all_ids}
-started = sum(s["status"] != "Not started" for s in states.values())
-ready = sum(s["status"] == "Exam-ready" for s in states.values())
+ov = overall_stats(p)
 att = p["mcq_attempts"]
 acc = (sum(a["correct"] for a in att) / len(att)) if att else None
 week_ago = (date.today() - timedelta(days=6)).isoformat()
 hrs7 = sum(l["minutes"] for l in p["study_log"] if l["date"] >= week_ago) / 60
 counts = library.safe_counts()
 focus_ids = [t["id"] for c in focus_codes(settings) for t in subject_map()[c]["topics"]]
-gaps = [t for t in focus_ids if counts.get(t, 0) == 0]
 
 c = st.columns(6)
 c[0].metric("Days to exam", days_to_exam())
-metric(c[1], "Topics started", f"{started / len(all_ids):.0%}", f"{started}/{len(all_ids)}")
-c[2].metric("Exam-ready", ready)
+metric(c[1], "Notes read", f"{ov['pct']:.0%}", f"{ov['n_topics_read']}/{ov['n_topics_with_notes']} topics")
+metric(c[2], "Readiness", f"{sum(readiness_by_subject(p)[x] for x in focus_codes(settings)) / len(focus_codes(settings)):.0%}",
+       "read % + MCQ accuracy")
 metric(c[3], "MCQ accuracy", f"{acc:.0%}" if acc is not None else "—", f"{len(att)} attempts")
 c[4].metric("Study hrs (7 d)", f"{hrs7:.1f}")
-metric(c[5], "Material gaps", len(gaps), "focus sub-topics with no notes",
-            help="Sub-topics (Part 1 + your chosen Part 2 subjects) with no linked pages in the Library")
+metric(c[5], "Revisit flags", len(p.get("revisit", {})), "topics flagged")
 
 # ---------------------------------------------------------------- format cards
 a, b = st.columns(2)
@@ -63,14 +61,16 @@ left, right = st.columns([1, 1])
 with left:
     st.subheader("Readiness by subject")
     rb = readiness_by_subject(p)
+    accs = mcq_accuracy(p)
     codes = [s["code"] for s in subjects()][::-1]
     fig = go.Figure(go.Bar(
-        x=[rb[c] for c in codes], y=[f"{c}" for c in codes], orientation="h",
+        x=[rb[c] for c in codes], y=codes, orientation="h",
         marker_color=[part_color(c) for c in codes],
         text=[f"{rb[c]:.0%}" for c in codes], textposition="outside",
-        hovertext=[subject_map()[c]["name"] for c in codes]))
+        hovertext=[f"{subject_map()[c]['name']} · read {ov['subjects'][c]['pct']:.0%}"
+                   + (f" · MCQ {accs[c]:.0%}" if accs[c] is not None else "") for c in codes]))
     fig.update_layout(height=380, margin=dict(l=0, r=30, t=10, b=0),
-                      xaxis=dict(range=[0, 1.1], tickformat=".0%", title="avg confidence ÷ 5"),
+                      xaxis=dict(range=[0, 1.1], tickformat=".0%", title="read % of notes, averaged with MCQ accuracy"),
                       plot_bgcolor="rgba(0,0,0,0)")
     st.plotly_chart(fig, width="stretch")
     st.caption(f"<span style='color:{config.COLOR_P1}'>■</span> Part 1 &nbsp; "
@@ -78,20 +78,29 @@ with left:
 
 with right:
     st.subheader("Focus next")
+    tacc = topic_mcq_accuracy(p)
+    plan_codes = set(focus_codes(settings))
     rows = []
+    for tid, d in p.get("revisit", {}).items():
+        if tid in topic_map():
+            rows.append((0, tid, f"Flagged to revisit ({d})"))
+    for tid, a in sorted(tacc.items(), key=lambda x: x[1]):
+        if a < 0.6 and tid in topic_map() and tid not in p.get("revisit", {}):
+            rows.append((1, tid, f"MCQ accuracy {a:.0%}"))
+    seen = {r[1] for r in rows}
     for tid in focus_ids:
-        t, s = topic_map()[tid], states[tid]
-        rows.append({"Sub-topic": f"{tid} {t['name']}", "Status": s["status"], "Conf.": s["confidence"],
-                     "Notes": "✓" if counts.get(tid) else "—"})
-    df = pd.DataFrame(rows).sort_values(["Conf.", "Sub-topic"]).head(8)
-    st.dataframe(df, hide_index=True, width="stretch",
-                 column_config={"Conf.": st.column_config.ProgressColumn(min_value=0, max_value=5, format="%d")})
-    st.caption("Lowest-confidence sub-topics across Part 1 and your chosen Part 2 subjects ("
-               + ", ".join(chosen_part2(settings)) + ").")
-    if gaps:
-        with st.expander(f"📭 Material gaps — {len(gaps)} focus sub-topics without linked notes"):
-            st.write(", ".join(f"`{g}`" for g in gaps[:60]) + (" …" if len(gaps) > 60 else ""))
-            if st.button("📚 Open Library"):
-                st.switch_page("views/library.py")
+        if tid in seen or topic_map()[tid]["code"] not in plan_codes:
+            continue
+        ts = ov["subjects"][topic_map()[tid]["code"]]["topics"][tid]
+        if ts["words"] and ts["status"] != "read":
+            rows.append((2, tid, "Unread" if ts["status"] == "not_started" else f"{ts['pct']:.0%} read"))
+    df = pd.DataFrame([{"Topic": f"{tid} {to_plain(topic_map()[tid]['name'])}", "Why": why} for _, tid, why in rows[:10]])
+    if df.empty:
+        st.success("Nothing flagged — keep reading.")
+    else:
+        st.dataframe(df, hide_index=True, width="stretch")
+    st.caption("Revisit flags first, then topics with MCQ accuracy below 60 %, then unread topics in your plan "
+               "subjects (" + ", ".join(chosen_part2(settings)) + " and Part 1).")
 
+log_study_time_form()
 st.info(f"**Codes rule:** {config.CODES_RULE}  \n**{config.OPEN_BOOK}**", icon="📘")

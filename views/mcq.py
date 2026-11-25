@@ -14,8 +14,14 @@ st.title("Part 1 MCQ drill")
 bank = all_mcqs()
 LETTERS = "ABCD"
 
-codes = st.multiselect("Subjects", config.PART1_CODES, default=config.PART1_CODES, format_func=subject_label)
-pool = [q for q in bank if q["code"] in codes]
+_all_codes = list(dict.fromkeys(config.PART1_CODES + [q["code"] for q in bank]))
+_s = st.query_params.get("s")
+_t = st.query_params.get("t")
+codes = st.multiselect("Subjects", _all_codes, default=[_s] if _s in _all_codes else config.PART1_CODES,
+                       format_func=subject_label)
+pool = [q for q in bank if q["code"] in codes and (not _t or q.get("topic") == _t)]
+if _t:
+    st.caption(f"Filtered to topic {topic_label(_t)} · [show all]({'?s=' + _s if _s else '?'})")
 st.caption(f"{len(pool)} questions in pool · {len(bank)} in bank · pace {config.PART1['pace_min']} min/question")
 
 

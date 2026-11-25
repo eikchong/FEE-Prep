@@ -36,7 +36,7 @@ CODES_RULE = ("Only Eurocodes (SS EN) and the relevant Singapore National Annexe
 OPEN_BOOK = "Open book. Design aids (charts/tables) may be provided in some questions."
 
 COLOR_P1 = "#2a78d6"
-COLOR_P2 = "#eb6834"
+COLOR_P2 = "#c4511f"
 PART_COLORS = {1: COLOR_P1, 2: COLOR_P2, "Part 1": COLOR_P1, "Part 2": COLOR_P2}
 
 STATUSES = ["Not started", "Learning", "Revised", "Exam-ready"]
