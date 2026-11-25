@@ -5532,10 +5532,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q1-effect-of-slip-depth-water-cohesion-weak-seams-18": {
+  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q1-infinite-slopes-a-e": {
    "doc": "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf",
    "idx": 0,
-   "title": "Q1 Effect of slip depth, water, cohesion & weak seams ($\\beta = 18^\\circ$)",
+   "title": "Q1 Infinite slopes A–E",
    "pages": [
     2,
     7
@@ -5546,10 +5546,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q2-sand-over-oc-clay-14-17-ec7-da1-c2": {
+  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q2-sand-over-oc-clay-ec7-da1-c2": {
    "doc": "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf",
    "idx": 1,
-   "title": "Q2 Sand over OC clay, $\\beta$ 14–17°, EC7 DA1-C2",
+   "title": "Q2 Sand over OC clay (EC7 DA1-C2)",
    "pages": [
     8,
     10
@@ -5560,10 +5560,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::q1-short-term-seabed-trench-in-soft-clay-cu-17-16-h-3-m-60": {
+  "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::q1-seabed-trench-in-soft-clay": {
    "doc": "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf",
    "idx": 0,
-   "title": "Q1 Short-term seabed trench in soft clay ($c_u$ 17, $\\gamma$ 16, H 3 m, $\\beta$ 60°)",
+   "title": "Q1 Seabed trench in soft clay",
    "pages": [
     2,
     4
@@ -5616,10 +5616,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1a-trial-circle-3-m-tension-crack-50-kpa-surcharge": {
+  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1a-trial-circle-with-tension-crack-and-surcharge": {
    "doc": "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf",
    "idx": 0,
-   "title": "1a Trial circle, 3 m tension crack, 50 kPa surcharge",
+   "title": "1a Trial circle with tension crack and surcharge",
    "pages": [
     3,
     7
@@ -5630,10 +5630,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1b-bed-erosion-of-3-m-da1-c1": {
+  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1b-bed-erosion": {
    "doc": "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf",
    "idx": 1,
-   "title": "1b Bed erosion of 3 m (DA1-C1)",
+   "title": "1b Bed erosion",
    "pages": [
     8,
     10
@@ -5658,40 +5658,12 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::worked-slice-slice-7-c1": {
-   "doc": "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf",
-   "idx": 3,
-   "title": "Worked slice (slice 7, C1)",
-   "pages": [
-    12,
-    13
-   ],
-   "topic": "CE203-01",
-   "overlaps": [
-    "CE203-01"
-   ],
-   "kind": "practice"
-  },
-  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::strategy-slide-da1-c2-50-kpa-footing-2-m-from-crest": {
+  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::stabilisation-at-four-locations-slide": {
    "doc": "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf",
    "idx": 0,
-   "title": "Strategy (SLIDE, DA1-C2, 50 kPa footing 2 m from crest)",
+   "title": "Stabilisation at four locations (SLIDE)",
    "pages": [
     3,
-    4
-   ],
-   "topic": "CE203-01",
-   "overlaps": [
-    "CE203-01"
-   ],
-   "kind": "practice"
-  },
-  "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::results-by-location": {
-   "doc": "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf",
-   "idx": 1,
-   "title": "Results by location",
-   "pages": [
-    5,
     10
    ],
    "topic": "CE203-01",
@@ -5770,33 +5742,19 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::regulatory-terms-gbw-thresholds": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::regulations-wall-choice-wall-types": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf",
    "idx": 0,
-   "title": "Regulatory terms & GBW thresholds",
+   "title": "Regulations, wall choice, wall types",
    "pages": [
     1,
-    2
-   ],
-   "topic": "CE203-04",
-   "overlaps": [
-    "CE203-04"
-   ],
-   "kind": "lecture"
-  },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::choosing-a-wall-wall-types": {
-   "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf",
-   "idx": 1,
-   "title": "Choosing a wall & wall types",
-   "pages": [
-    4,
     5
    ],
    "topic": "CE203-04",
    "overlaps": [
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf::at-rest-pressure-k0": {
    "doc": "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf",
@@ -5908,7 +5866,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q3-q6-concepts-tension-cut-rankine-thrust": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf",
@@ -5922,12 +5880,12 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q7-c-backfill-8-m-c-20-25-17-5": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q7-c-backfill": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf",
    "idx": 2,
-   "title": "Q7 $c'\\text{–}\\phi'$ backfill (8 m, $c'$ 20, $\\phi'$ 25°, $\\gamma$ 17.5)",
+   "title": "Q7 $c'\\text{–}\\phi'$ backfill",
    "pages": [
     4,
     4
@@ -5936,7 +5894,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q8-q10-water-in-the-backfill": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf",
@@ -5950,12 +5908,12 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q11-two-layers-50-kpa-surcharge": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q11-two-layers-with-surcharge": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf",
    "idx": 4,
-   "title": "Q11 Two layers + 50 kPa surcharge",
+   "title": "Q11 Two layers with surcharge",
    "pages": [
     8,
     9
@@ -5964,7 +5922,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q12-passive-with-sloping-backfill": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf",
@@ -5978,7 +5936,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q1-q2-clay-backfill-tension-cracks": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf",
@@ -5992,7 +5950,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q3-q6-coulomb-densification-layered": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf",
@@ -6006,12 +5964,12 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q7-q8-active-vs-passive-moments-about-the-base": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q7-q8-active-vs-passive-moments": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf",
    "idx": 2,
-   "title": "Q7–Q8 Active vs passive moments about the base",
+   "title": "Q7–Q8 Active vs passive moments",
    "pages": [
     9,
     13
@@ -6020,7 +5978,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q9-q10-surcharge-rough-wall-flooding": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf",
@@ -6034,7 +5992,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q11-q13-plane-vs-curved-passive-surfaces": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf",
@@ -6048,7 +6006,7 @@
    "overlaps": [
     "CE203-02"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf::wall-types-failure-modes": {
    "doc": "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf",
@@ -6134,10 +6092,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q1-gravity-wall-6-6-3-2-m-35-no-front-soil": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q1-gravity-wall-no-front-soil": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf",
    "idx": 0,
-   "title": "Q1 Gravity wall 6.6 × 3.2 m, $\\phi'$ 35°, no front soil",
+   "title": "Q1 Gravity wall, no front soil",
    "pages": [
     1,
     2
@@ -6146,12 +6104,12 @@
    "overlaps": [
     "CE203-03"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q2-q3-adding-2-m-of-front-soil-smooth-base": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q2-q3-front-soil-smooth-base": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf",
    "idx": 1,
-   "title": "Q2–Q3 Adding 2 m of front soil; smooth base",
+   "title": "Q2–Q3 Front soil; smooth base",
    "pages": [
     3,
     5
@@ -6160,12 +6118,12 @@
    "overlaps": [
     "CE203-03"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q4-c-backfill-with-20-kpa-surcharge": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q4-c-backfill-with-surcharge": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf",
    "idx": 2,
-   "title": "Q4 $c'\\text{–}\\phi'$ backfill with 20 kPa surcharge",
+   "title": "Q4 $c'\\text{–}\\phi'$ backfill with surcharge",
    "pages": [
     6,
     8
@@ -6174,7 +6132,7 @@
    "overlaps": [
     "CE203-03"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q5-q6-cantilever-gravity-walls-with-heel-soil": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf",
@@ -6188,7 +6146,7 @@
    "overlaps": [
     "CE203-03"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf::why-limit-states": {
    "doc": "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf",
@@ -6246,47 +6204,19 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::equ-overturning": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::ec7-da1-checks-of-ps4-q3": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf",
    "idx": 0,
-   "title": "EQU (overturning)",
+   "title": "EC7 DA1 checks of PS4 Q3",
    "pages": [
     1,
-    2
-   ],
-   "topic": "CE203-03",
-   "overlaps": [
-    "CE203-03"
-   ],
-   "kind": "lecture"
-  },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::geo-da1-c1-sliding-bearing": {
-   "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf",
-   "idx": 1,
-   "title": "GEO DA1-C1 (sliding, bearing)",
-   "pages": [
-    3,
-    5
-   ],
-   "topic": "CE203-03",
-   "overlaps": [
-    "CE203-03"
-   ],
-   "kind": "lecture"
-  },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::geo-da1-c2": {
-   "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf",
-   "idx": 2,
-   "title": "GEO DA1-C2",
-   "pages": [
-    5,
     6
    ],
    "topic": "CE203-03",
    "overlaps": [
     "CE203-03"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::flexible-walls-methods": {
    "doc": "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf",
@@ -6363,10 +6293,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q1-q2-cantilever-in-sand-h-6-m-17-30": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q1-q2-cantilever-in-dry-sand": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf",
    "idx": 0,
-   "title": "Q1–Q2 Cantilever in sand (H 6 m, $\\gamma$ 17, $\\phi$ 30°)",
+   "title": "Q1–Q2 Cantilever in dry sand",
    "pages": [
     1,
     6
@@ -6376,12 +6306,12 @@
     "CE203-03",
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q3-q4-same-wall-with-water-at-3-m-both-sides": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q3-q4-water-both-sides": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf",
    "idx": 1,
-   "title": "Q3–Q4 Same wall with water at 3 m both sides",
+   "title": "Q3–Q4 Water both sides",
    "pages": [
     7,
     11
@@ -6391,12 +6321,12 @@
     "CE203-03",
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q5-layered-sand-limiting-pressure-profile": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q5-layered-sand": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf",
    "idx": 2,
-   "title": "Q5 Layered sand (limiting pressure profile)",
+   "title": "Q5 Layered sand",
    "pages": [
     12,
     15
@@ -6406,12 +6336,12 @@
     "CE203-03",
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q1-free-earth-support-tie-1-m-below-top": {
+  "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q1-free-earth-support": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf",
    "idx": 0,
-   "title": "Q1 Free earth support (tie 1 m below top)",
+   "title": "Q1 Free earth support",
    "pages": [
     1,
     3
@@ -6421,7 +6351,7 @@
     "CE203-03",
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q2-q3-factor-of-safety-on-passive": {
    "doc": "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf",
@@ -6436,7 +6366,7 @@
     "CE203-03",
     "CE203-04"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::multi-propped-walls-overall-failure-modes": {
    "doc": "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf",
@@ -6538,10 +6468,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::gravity-wall-7-m-c-10-28-2-m-front-soil-no-base-friction": {
+  "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::gravity-wall-7-m": {
    "doc": "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf",
    "idx": 2,
-   "title": "Gravity wall 7 m ($c'$ 10, $\\phi'$ 28°, 2 m front soil, no base friction)",
+   "title": "Gravity wall 7 m",
    "pages": [
     6,
     9
@@ -6583,10 +6513,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q1-river-bank-with-bench-tension-crack-bishop-da1-c2": {
+  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q1-river-bank-with-bench-tension-crack": {
    "doc": "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf",
    "idx": 0,
-   "title": "Q1 River bank with bench & tension crack (Bishop, DA1-C2)",
+   "title": "Q1 River bank with bench & tension crack",
    "pages": [
     2,
     5
@@ -6599,10 +6529,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q2-seabed-trench-same-as-tut-2-q1": {
+  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q2-seabed-trench": {
    "doc": "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf",
    "idx": 1,
-   "title": "Q2 Seabed trench (same as Tut 2 Q1)",
+   "title": "Q2 Seabed trench",
    "pages": [
     5,
     6
@@ -6615,10 +6545,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q3-cantilever-wall-layered-backfill-ec7-sliding": {
+  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q3-cantilever-wall-with-layered-backfill": {
    "doc": "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf",
    "idx": 2,
-   "title": "Q3 Cantilever wall, layered backfill, EC7 sliding",
+   "title": "Q3 Cantilever wall with layered backfill",
    "pages": [
     7,
     8
@@ -6631,10 +6561,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q4-sheet-pile-in-clay-su-30-with-sand-backfill": {
+  "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q4-sheet-pile-in-clay-with-sand-backfill": {
    "doc": "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf",
    "idx": 3,
-   "title": "Q4 Sheet pile in clay ($s_u$ 30) with sand backfill",
+   "title": "Q4 Sheet pile in clay with sand backfill",
    "pages": [
     8,
     9
@@ -6874,7 +6804,7 @@
   "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::f-g-compare-su-hvorslev-permeability": {
    "doc": "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf",
    "idx": 3,
-   "title": "f–g) Compare $s_u$; Hvorslev permeability",
+   "title": "f–g) Compare su; Hvorslev permeability",
    "pages": [
     5,
     5
@@ -6899,13 +6829,13 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::a-compaction-curves-zav": {
+  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q1-specification-for-field-compaction": {
    "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
    "idx": 0,
-   "title": "a) Compaction curves & ZAV",
+   "title": "Q1 Specification for field compaction",
    "pages": [
     1,
-    2
+    4
    ],
    "topic": "CE203-05",
    "overlaps": [
@@ -6913,38 +6843,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::b-target-density-from-dr-75": {
+  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q2-truck-trips-water": {
    "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
    "idx": 1,
-   "title": "b) Target density from $D_R = 75\\,\\%$",
-   "pages": [
-    3,
-    4
-   ],
-   "topic": "CE203-05",
-   "overlaps": [
-    "CE203-05"
-   ],
-   "kind": "practice"
-  },
-  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::c-d-rollers-lift-thickness": {
-   "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
-   "idx": 2,
-   "title": "c–d) Rollers & lift thickness",
-   "pages": [
-    4,
-    4
-   ],
-   "topic": "CE203-05",
-   "overlaps": [
-    "CE203-05"
-   ],
-   "kind": "practice"
-  },
-  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::truck-trips-water-to-add": {
-   "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
-   "idx": 3,
-   "title": "Truck trips & water to add",
+   "title": "Q2 Truck trips & water",
    "pages": [
     4,
     6
@@ -6955,10 +6857,10 @@
    ],
    "kind": "practice"
   },
-  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::sand-cone-check": {
+  "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q3-sand-cone-checks": {
    "doc": "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf",
-   "idx": 4,
-   "title": "Sand-cone check",
+   "idx": 2,
+   "title": "Q3 Sand-cone checks",
    "pages": [
     6,
     7
@@ -7053,10 +6955,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q1-square-pad-on-firm-clay-g-800-q-300-kn-d-2-m": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q1-square-pad-on-firm-clay": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf",
    "idx": 0,
-   "title": "Q1 Square pad on firm clay (G 800, Q 300 kN, D 2 m)",
+   "title": "Q1 Square pad on firm clay",
    "pages": [
     1,
     3
@@ -7065,12 +6967,12 @@
    "overlaps": [
     "CE203-06"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q2-inclined-load-g-500-q-1500-h-120-kn": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q2-inclined-load": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf",
    "idx": 1,
-   "title": "Q2 Inclined load (G 500, Q 1500, H 120 kN)",
+   "title": "Q2 Inclined load",
    "pages": [
     3,
     4
@@ -7079,12 +6981,12 @@
    "overlaps": [
     "CE203-06"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q3-tall-column-large-moment-h-75-kn-at-5-m": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q3-tall-column-with-a-large-moment": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf",
    "idx": 2,
-   "title": "Q3 Tall column: large moment (H 75 kN at 5 m)",
+   "title": "Q3 Tall column with a large moment",
    "pages": [
     5,
     6
@@ -7093,7 +6995,7 @@
    "overlaps": [
     "CE203-06"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::components-limits": {
    "doc": "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf",
@@ -7179,10 +7081,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q1-stress-under-an-l-shaped-footing-q-300-kpa-z-4-m": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q1-stress-under-an-l-shaped-footing": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf",
    "idx": 0,
-   "title": "Q1 Stress under an L-shaped footing (q 300 kPa, z 4 m)",
+   "title": "Q1 Stress under an L-shaped footing",
    "pages": [
     2,
     5
@@ -7191,12 +7093,12 @@
    "overlaps": [
     "CE203-09"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2a-immediate-settlement-6-m-tank-200-kpa": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2a-immediate-settlement": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf",
    "idx": 1,
-   "title": "Q2a Immediate settlement — 6 m tank, 200 kPa",
+   "title": "Q2a Immediate settlement",
    "pages": [
     6,
     9
@@ -7205,12 +7107,12 @@
    "overlaps": [
     "CE203-09"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2b-d-e-log-p-casagrande-p-c-schmertmann-correction": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2b-d-compression-curve": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf",
    "idx": 2,
-   "title": "Q2b–d $e\\text{–}\\log p'$, Casagrande $p'_c$, Schmertmann correction",
+   "title": "Q2b–d Compression curve",
    "pages": [
     10,
     13
@@ -7219,12 +7121,12 @@
    "overlaps": [
     "CE203-09"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2e-consolidation-settlement-two-sub-layers": {
+  "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2e-consolidation-settlement": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf",
    "idx": 3,
-   "title": "Q2e Consolidation settlement (two sub-layers)",
+   "title": "Q2e Consolidation settlement",
    "pages": [
     14,
     17
@@ -7233,7 +7135,7 @@
    "overlaps": [
     "CE203-09"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2f-h-secondary-compression-totals": {
    "doc": "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf",
@@ -7247,7 +7149,7 @@
    "overlaps": [
     "CE203-09"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3116/Lectures/2 DeepFoundation.pdf::pile-types-failure-modes": {
    "doc": "CE203/CE3116/Lectures/2 DeepFoundation.pdf",
@@ -7361,10 +7263,10 @@
    ],
    "kind": "lecture"
   },
-  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q1-downdrag-on-an-end-bearing-pile": {
+  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q1-downdrag": {
    "doc": "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf",
    "idx": 0,
-   "title": "Q1 Downdrag on an end-bearing pile",
+   "title": "Q1 Downdrag",
    "pages": [
     1,
     2
@@ -7373,12 +7275,12 @@
    "overlaps": [
     "CE203-07"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q2-resistance-from-static-load-tests-cfa-600-11-m": {
+  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q2-resistance-from-load-tests": {
    "doc": "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf",
    "idx": 1,
-   "title": "Q2 Resistance from static load tests (CFA Ø600, 11 m)",
+   "title": "Q2 Resistance from load tests",
    "pages": [
     3,
     4
@@ -7387,12 +7289,12 @@
    "overlaps": [
     "CE203-07"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
-  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q3-resistance-from-ground-parameters-same-pile": {
+  "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q3-resistance-from-ground-parameters": {
    "doc": "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf",
    "idx": 2,
-   "title": "Q3 Resistance from ground parameters (same pile)",
+   "title": "Q3 Resistance from ground parameters",
    "pages": [
     5,
     6
@@ -7401,7 +7303,7 @@
    "overlaps": [
     "CE203-07"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q4-q5-tension-piles-under-a-flooded-tank": {
    "doc": "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf",
@@ -7415,7 +7317,7 @@
    "overlaps": [
     "CE203-07"
    ],
-   "kind": "lecture"
+   "kind": "practice"
   },
   "CE205/CE2134/1 Intro and FlowViews1.pdf::integral-vs-differential-views-real-vs-ideal": {
    "doc": "CE205/CE2134/1 Intro and FlowViews1.pdf",
@@ -8766,22 +8668,20 @@
     "CE203/CE3115/Lectures/OAP 9 Revision Notes R0.pdf::spencer-stabilisation"
    ],
    "practice": [
-    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q1-effect-of-slip-depth-water-cohesion-weak-seams-18",
-    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q2-sand-over-oc-clay-14-17-ec7-da1-c2",
-    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::q1-short-term-seabed-trench-in-soft-clay-cu-17-16-h-3-m-60",
+    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q1-infinite-slopes-a-e",
+    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 1 - Infinite Slope Solutions R0.pdf::q2-sand-over-oc-clay-ec7-da1-c2",
+    "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::q1-seabed-trench-in-soft-clay",
     "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::q2-two-layer-natural-slope-simplified-bishop",
     "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::how-to-apply-ec7-in-bishop",
     "CE203/CE3115/Tutorial OAP/CE3115 - Tutorial 2 - Slope Stability Solution R0.pdf::ponded-water-other-details",
-    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1a-trial-circle-3-m-tension-crack-50-kpa-surcharge",
-    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1b-bed-erosion-of-3-m-da1-c1",
+    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1a-trial-circle-with-tension-crack-and-surcharge",
+    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1b-bed-erosion",
     "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::1c-falling-water-level",
-    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 1 Solution R0 (1).pdf::worked-slice-slice-7-c1",
-    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::strategy-slide-da1-c2-50-kpa-footing-2-m-from-crest",
-    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::results-by-location",
-    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q1-river-bank-with-bench-tension-crack-bishop-da1-c2",
-    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q2-seabed-trench-same-as-tut-2-q1",
-    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q3-cantilever-wall-layered-backfill-ec7-sliding",
-    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q4-sheet-pile-in-clay-su-30-with-sand-backfill"
+    "CE203/CE3115/Assignment OAP/CE3115 - Assignment 2 Solution R0.pdf::stabilisation-at-four-locations-slide",
+    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q1-river-bank-with-bench-tension-crack",
+    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q2-seabed-trench",
+    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q3-cantilever-wall-with-layered-backfill",
+    "CE203/CE3115/Tutorial OAP/1920SEM2-CE3115 ExamPaper.pdf::q4-sheet-pile-in-clay-with-sand-backfill"
    ],
    "covered_in": []
   },
@@ -8793,23 +8693,23 @@
     "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf::rankine-passive",
     "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf::coulomb-wedge-method-upper-bound-wall-friction",
     "CE203/CE3115/Lectures/ERSS 2 Earth Pressure Theories.pdf::curved-surfaces-caquot-k-risel-ec7-annex-c",
-    "CE203/CE3115/Lectures/ERSS 2a Mohr Circle Pole.pdf::pole-origin-of-planes",
+    "CE203/CE3115/Lectures/ERSS 2a Mohr Circle Pole.pdf::pole-origin-of-planes"
+   ],
+   "practice": [
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q1-q2-at-rest-pressure",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q3-q6-concepts-tension-cut-rankine-thrust",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q7-c-backfill-8-m-c-20-25-17-5",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q7-c-backfill",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q8-q10-water-in-the-backfill",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q11-two-layers-50-kpa-surcharge",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q11-two-layers-with-surcharge",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 2 - Earth Pressure Theory I (Full Solutions).pdf::q12-passive-with-sloping-backfill",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q1-q2-clay-backfill-tension-cracks",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q3-q6-coulomb-densification-layered",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q7-q8-active-vs-passive-moments-about-the-base",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q7-q8-active-vs-passive-moments",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q9-q10-surcharge-rough-wall-flooding",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q11-q13-plane-vs-curved-passive-surfaces"
-   ],
-   "practice": [
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 3 - Earth Pressure Theory II (Full Solutions).pdf::q11-q13-plane-vs-curved-passive-surfaces",
     "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::true-false-concepts",
     "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::k0-from-ocr-mohr-pole",
-    "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::gravity-wall-7-m-c-10-28-2-m-front-soil-no-base-friction",
+    "CE203/CE3115/Assignment ERSS/Past Year Quiz.pdf::gravity-wall-7-m",
     "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::concepts",
     "CE203/CE3115/Lectures/ERSS 7 Quiz key points.pdf::gravity-wall-with-20-sloping-backfill-c-25-20"
    ],
@@ -8823,42 +8723,41 @@
     "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf::bearing-pressure-eccentricity",
     "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf::overall-slip-seepage",
     "CE203/CE3115/Lectures/ERSS 3 Rigid Retaining Structures.pdf::worked-example",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q1-gravity-wall-6-6-3-2-m-35-no-front-soil",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q2-q3-adding-2-m-of-front-soil-smooth-base",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q4-c-backfill-with-20-kpa-surcharge",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q5-q6-cantilever-gravity-walls-with-heel-soil",
     "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf::why-limit-states",
     "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf::limit-states-terminology",
     "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf::partial-factor-sets",
     "CE203/CE3115/Lectures/ERSS 4 Application of EC7 for ERSS.pdf::worked-example-equ-overturning-geo-sliding-bearing",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::equ-overturning",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::geo-da1-c1-sliding-bearing",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::geo-da1-c2",
     "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::flexible-walls-methods",
     "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::cantilever-wall-simplified-method",
     "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::cantilever-wall-net-pressure-more-realistic-method",
     "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::cantilever-to-ec7-da1",
-    "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::single-propped-anchored-walls-free-earth-support",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q1-q2-cantilever-in-sand-h-6-m-17-30",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q3-q4-same-wall-with-water-at-3-m-both-sides",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q5-layered-sand-limiting-pressure-profile",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q1-free-earth-support-tie-1-m-below-top",
+    "CE203/CE3115/Lectures/ERSS 5 Flexible Retaining Structures.pdf::single-propped-anchored-walls-free-earth-support"
+   ],
+   "practice": [
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q1-gravity-wall-no-front-soil",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q2-q3-front-soil-smooth-base",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q4-c-backfill-with-surcharge",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 4 - Rigid Retaining Structures (Full Solutions).pdf::q5-q6-cantilever-gravity-walls-with-heel-soil",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 5 - Analysis of Rigid Retaining Structures using EC7 (Full Solutions).pdf::ec7-da1-checks-of-ps4-q3",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q1-q2-cantilever-in-dry-sand",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q3-q4-water-both-sides",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 6 - Flexible Retaining Structures I (Full Solutions).pdf::q5-layered-sand",
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q1-free-earth-support",
     "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 7 - Flexible Retaining Structures II (Full Solutions).pdf::q2-q3-factor-of-safety-on-passive"
    ],
-   "practice": [],
    "covered_in": []
   },
   "CE203-04": {
    "lecture": [
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::regulatory-terms-gbw-thresholds",
-    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::choosing-a-wall-wall-types",
     "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::multi-propped-walls-overall-failure-modes",
     "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::toe-kick-in",
     "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::basal-heave-terzaghi-shallow-b-he",
     "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::basal-heave-bjerrum-eide-deep-excavations",
     "CE203/CE3115/Lectures/ERSS 6 Introduction to Deep Excavations.pdf::course-wrap-up"
    ],
-   "practice": [],
+   "practice": [
+    "CE203/CE3115/Tutorial ERSS/CE3115 Problem Set 1 - An Introduction to Underground Construction in Singapore (Solutions).pdf::regulations-wall-choice-wall-types"
+   ],
    "covered_in": []
   },
   "CE203-05": {
@@ -8883,11 +8782,9 @@
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::d-e-menard-pressuremeter",
     "CE203/CE3116/Site Investigation/CE3116 Tutorial - Site Investigation Solutions R0.pdf::f-g-compare-su-hvorslev-permeability",
     "CE203/CE3116/Site Investigation/CE3116 Example Problem - Site Investigation R0.pdf::classification-spt-cptu-pmt-hvorslev",
-    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::a-compaction-curves-zav",
-    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::b-target-density-from-dr-75",
-    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::c-d-rollers-lift-thickness",
-    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::truck-trips-water-to-add",
-    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::sand-cone-check"
+    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q1-specification-for-field-compaction",
+    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q2-truck-trips-water",
+    "CE203/CE3116/Compaction/CE3116 Tutorial - Compaction Solutions R0.pdf::q3-sand-cone-checks"
    ],
    "covered_in": []
   },
@@ -8898,12 +8795,13 @@
     "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf::effective-area-undrained-resistance",
     "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf::drained-resistance-ec7-annex-d",
     "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf::eccentric-load-sliding",
-    "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf::worked-examples-sand-pad-stiff-clay-pad",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q1-square-pad-on-firm-clay-g-800-q-300-kn-d-2-m",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q2-inclined-load-g-500-q-1500-h-120-kn",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q3-tall-column-large-moment-h-75-kn-at-5-m"
+    "CE203/CE3116/Lectures/3.1 ShallowFoundation ULS PART1.pdf::worked-examples-sand-pad-stiff-clay-pad"
    ],
-   "practice": [],
+   "practice": [
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q1-square-pad-on-firm-clay",
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q2-inclined-load",
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - ULS.pdf::q3-tall-column-with-a-large-moment"
+   ],
    "covered_in": []
   },
   "CE203-07": {
@@ -8915,13 +8813,14 @@
     "CE203/CE3116/Lectures/2 DeepFoundation.pdf::calculating-resistance",
     "CE203/CE3116/Lectures/2 DeepFoundation.pdf::downdrag-example-spt-based-design",
     "CE203/CE3116/Lectures/2 DeepFoundation.pdf::tension-piles-structural-capacity",
-    "CE203/CE3116/Lectures/2.1 DeepFoundation AdditionalNotes.pdf::spt-and-cpt-correlations-for-piles",
-    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q1-downdrag-on-an-end-bearing-pile",
-    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q2-resistance-from-static-load-tests-cfa-600-11-m",
-    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q3-resistance-from-ground-parameters-same-pile",
+    "CE203/CE3116/Lectures/2.1 DeepFoundation AdditionalNotes.pdf::spt-and-cpt-correlations-for-piles"
+   ],
+   "practice": [
+    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q1-downdrag",
+    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q2-resistance-from-load-tests",
+    "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q3-resistance-from-ground-parameters",
     "CE203/CE3116/Deep Foundation/CE3116 - Tutorial Sol - DEEPFDNS.pdf::q4-q5-tension-piles-under-a-flooded-tank"
    ],
-   "practice": [],
    "covered_in": []
   },
   "CE203-08": {
@@ -8936,14 +8835,15 @@
     "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::footings-on-sand-schmertmann-cpt",
     "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::footings-on-clay-immediate-consolidation",
     "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::stress-distribution",
-    "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::secondary-compression-time",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q1-stress-under-an-l-shaped-footing-q-300-kpa-z-4-m",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2a-immediate-settlement-6-m-tank-200-kpa",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2b-d-e-log-p-casagrande-p-c-schmertmann-correction",
-    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2e-consolidation-settlement-two-sub-layers",
+    "CE203/CE3116/Lectures/3.2 ShallowFoundation SLS PART 2.pdf::secondary-compression-time"
+   ],
+   "practice": [
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q1-stress-under-an-l-shaped-footing",
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2a-immediate-settlement",
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2b-d-compression-curve",
+    "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2e-consolidation-settlement",
     "CE203/CE3116/Shallow Foundation/Tutorial Solution - SLS.pdf::q2f-h-secondary-compression-totals"
    ],
-   "practice": [],
    "covered_in": []
   },
   "CE204-01": {

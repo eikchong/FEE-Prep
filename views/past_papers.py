@@ -158,15 +158,16 @@ with tab_1:
                         st.rerun()
                 show = done is not None
             else:
-                st.caption("Options/answer not fully recalled — work it, then reveal the worked solution.")
-                show = st.toggle("Reveal worked solution", key=f"pp1_rev_{sel}")
+                st.caption("Options/answer not fully recalled — work it first.")
+                show = True
             if show:
                 src = {"computed": "computed & unit-tested", "reasoned": "reasoned",
                        "candidate": "candidate's key (unverified)"}[q["answer_source"]]
-                st.markdown(f"**Worked solution** <small>({src})</small>", unsafe_allow_html=True)
-                st.markdown(q["explain"])
-                if q.get("verify"):
-                    st.warning("⚠ " + q["verify"])
+                with st.expander("Show answer", expanded=done is not None):
+                    st.markdown(q["explain"])
+                    if q.get("verify"):
+                        st.warning(q["verify"], icon=":material/warning:")
+                    st.caption(f"Worked solution — {src}")
             st.caption("Sub-topics: " + ", ".join(topic_label(t) for t in q["topics"]))
             if sel in acc.index:
                 st.caption(f"Your record: {int(acc.loc[sel, 'count'])} attempts · {acc.loc[sel, 'mean']:.0%} correct")
@@ -213,12 +214,13 @@ with tab_2:
         else:
             el = state["elapsed"]
             (st.success if el <= SECS else st.warning)(f"Time taken {fmt_mmss(el)} (target {fmt_mmss(SECS)})")
-            st.markdown("#### Approach outline")
-            for s in q["approach"]:
-                st.markdown(f"- {s}")
-            kr = {k: v for k, v in (q.get("key_results") or {}).items() if k != "note"}
-            if kr:
-                st.caption("Key results (unit-tested): " + " · ".join(f"{k} = {v}" for k, v in kr.items()))
+            with st.expander("Show answer"):
+                st.markdown("**Approach outline**")
+                for s in q["approach"]:
+                    st.markdown(f"- {s}")
+                kr = {k: v for k, v in (q.get("key_results") or {}).items() if k != "note"}
+                if kr:
+                    st.caption("Key results (unit-tested): " + " · ".join(f"{k} = {v}" for k, v in kr.items()))
             if state["phase"] == "mark":
                 scores, pct = rubric_form(f"pp2r_{sel}")
                 notes = st.text_area("Notes — what to fix next time", key=f"pp2n_{sel}")
