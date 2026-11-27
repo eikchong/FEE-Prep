@@ -389,7 +389,7 @@ def test_ce102_m3_m4_examples():
 def test_ce102_m5_examples():
     EI = 16e9 * 1.8e-2
     assert close(6 * 306 / 4, 459, 1e-9) and close(459e3 / EI, 1.59e-3, 0.005e-3)
-    assert close(459 * (6 - 6 / 5) / 1e3 * 1e3 / EI * 1e3, 7.65, 0.01)
+    assert close(459e3 * (6 - 6 / 5) / EI * 1e3, 7.65, 0.01)
     a = (-3 + math.sqrt(21)) / 2
     assert close(3 * a ** 2 + 9 * a - 9, 0, 1e-9) and close(a, 0.791, 0.001)
     a_, L = 0.791, 1.0                      # the two deflections match at that a
