@@ -154,3 +154,95 @@ MOM[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members",
      r"touch B? (b) Find the normal stress in each block.",
      "", src="none", figure="p. 48.")),
 ]}
+
+M2 = "CE102/CE1101_M2_Torsional_Members.pdf"
+
+MOM[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
+ sec("Torsion in circular shafts: assumptions", (2, 5),
+   ("md", "Torsion appears in screwdrivers, soil augers, drive shafts and couplings. For a circular shaft under "
+          "torque: the axis stays straight and does not stretch; each cross-section stays plane and perpendicular "
+          "to the axis; radial lines stay straight and radial as the section rotates."),
+   ("eq", r"\gamma = \frac{r\,d\phi}{dx},\qquad \gamma_{max} = \frac{c\,d\phi}{dx}\ \Rightarrow\ \gamma = \frac{r}{c}\gamma_{max}"),
+   ("md", "Shear strain is zero on the axis and grows linearly to a maximum at the surface (radius c)."),
+ ),
+ sec("The torsion formula and polar moment of area", (6, 9),
+   ("eq", r"T = \int_A r\tau\,dA = G\frac{d\phi}{dx}\int_A r^2dA = GJ\frac{d\phi}{dx}\qquad\Rightarrow\qquad \tau = \frac{Tr}{J},\ \ \tau_{max} = \frac{Tc}{J}"),
+   ("eq", r"J_{solid} = \frac{\pi c^4}{2} = \frac{\pi D^4}{32},\qquad J_{tube} = \frac{\pi}{2}(R_2^4 - R_1^4) = \frac{\pi}{32}(D_2^4 - D_1^4)"),
+   ("md", "Shear stress varies linearly from zero at the centre to its maximum at the outer surface."),
+ ),
+ sec("Angle of twist", (10, 14),
+   ("eq", r"\phi = \frac{TL}{GJ};\qquad \phi = \sum_i\frac{T_iL_i}{G_iJ_i};\qquad \phi = \int_0^L\frac{T(x)}{GJ(x)}dx"),
+   ("md", r"Analogy with axial members: $\phi = TL/GJ \leftrightarrow \delta = FL/EA$; $\tau = T/(J/r) "
+          r"\leftrightarrow \sigma = F/A$.\n\n**Limits:** circular sections only, linear-elastic material, and no "
+          "stress concentrations at abrupt changes of section. **Sign convention:** right-hand rule — a torque "
+          "vector pointing out of the cut face is positive."),
+ ),
+ sec("Statically determinate shafts", (15, 19),
+   ("steps", ["Draw the shaft with torque vectors (right-hand rule).",
+              "Cut each segment and find the internal torque by $\\sum M_x = 0$, assuming it positive.",
+              r"Largest |T| gives $\tau_{\max} = Tc/J$; add $T_iL_i/GJ$ segment by segment for the twist."]),
+   q("CE1101 M2 Example 2.1",
+     r"A 35 mm solid shaft ($G = 80\ \mathrm{GPa}$) carries balanced torques of 30, 25, 40, 65 and 80 Nm at A, B, C, "
+     r"D, E (segments AB 0.3 m, BC 0.2 m, CD 0.3 m, DE 0.15 m). Find the absolute maximum shear stress and the twist "
+     r"of A relative to E.",
+     r"**Internal torques −30, −55, −15, −80 Nm → $\tau_{\max} = 9.503\ \mathrm{MPa}$ (in DE) · $\phi_{A/E} = "
+     r"-0.0031\ \mathrm{rad}$.**",
+     r"$J = \pi \times 35^4/32 = 147\,323.5\ \mathrm{mm^4}$; $\tau = 80 \times 10^3 \times 17.5/J$. $\phi = "
+     r"[(-30)(300) + (-55)(200) + (-15)(300) + (-80)(150)] \times 10^3/(147\,323.5 \times 80 \times 10^3)$.",
+     figure="p. 16.")),
+ sec("Bolted shaft couplings", (20, 23),
+   ("md", "A flange coupling transfers torque through bolts in shear: each of n bolts at radius R carries $F = "
+          "T/(nR)$. Good practice: the connection should be stronger than the members it joins, so the shaft fails "
+          "first (a ductile, visible failure rather than a sudden one at the joint)."),
+   q("CE1101 M2 Example 2.2",
+     r"A bolted coupling joins two solid shafts of radius $r = 30\ \mathrm{mm}$; bolts of $d = 10\ \mathrm{mm}$ sit at "
+     r"$R = 75\ \mathrm{mm}$. Shaft and bolts share $\tau_{\mathrm{ult}} = 60\ \mathrm{MPa}$. How many bolts make "
+     r"the shaft fail first? (Assume uniform bolt shear.)",
+     r"**$n \ge 2r^3/(Rd^2) = 7.2$ → at least 8 bolts.**",
+     r"Shaft: $\tau = 2T/(\pi r^3)$; bolt: $\tau = 4T/(nR\pi d^2)$. Require $\tau_{\mathrm{shaft}} \ge "
+     r"\tau_{\mathrm{bolt}}$.", figure="p. 21.")),
+ sec("Varying torque: drill pipe", (24, 26),
+   q("CE1101 M2 Example 2.3",
+     r"A drill pipe (outer radius $r_o$, inner $r_i$, shear modulus G, length L) meets a resisting torque $T_A$ at "
+     r"its deep end A, and soil friction adds a torque per unit length rising linearly from 0 at the surface B to "
+     r"$t_0$ at A. Find the drive torque $T_B$ and the twist of one end relative to the other as it starts to turn.",
+     r"**$T_B = T_A + t_0L/2$ · $\phi = -\dfrac{2L(t_0L + 3T_A)}{3\pi G(r_o^4 - r_i^4)}$.**",
+     r"Cut at x from B: $T_x = t_0x^2/(2L) - (T_A + t_0L/2)$; $\phi = \int_0^L T_x\,dx/(JG)$ with $J = \tfrac{\pi}{2}"
+     r"(r_o^4 - r_i^4)$.", figure="p. 24.")),
+ sec("Power transmission", (27, 31),
+   ("eq", r"P = T\omega,\qquad \omega = 2\pi f = \frac{2\pi N}{60}\ \text{rad/s},\qquad 1\ \mathrm{hp} = 0.745\ \mathrm{kW}"),
+   q("CE1101 M2 Example 2.4",
+     r"A car drive shaft is a thin-walled tube, outer diameter 55 mm, carrying 180 hp at 1500 rev/min. With "
+     r"$\tau_{\mathrm{ult}} = 120\ \mathrm{MPa}$ and a factor of safety of 2.5, find the minimum wall thickness.",
+     r"**$T = 853.6\ \mathrm{Nm}$, $\tau_{\mathrm{allow}} = 48\ \mathrm{MPa}$ → $d_i \le 45.2\ \mathrm{mm}$ → $t = "
+     r"4.9\ \mathrm{mm}$.**",
+     r"$\omega = 157.1\ \mathrm{rad/s}$, $P = 134.1\ \mathrm{kW}$. $d_i = \sqrt[4]{d_o^4 - 16d_oT/(\pi\tau_{\mathrm{allow}})}$. "
+     r"(The slide also asks whether this keeps the twist under 0.2 rad over 2.8 m with $G = 15\ \mathrm{GPa}$ — "
+     r"not answered there.)", figure="p. 28."),
+   q("CE1101 M2 Example 2.5 (homework)",
+     r"A helicopter engine delivers 600 hp to rotor shaft AB (600 mm long, steel $G = 70\ \mathrm{GPa}$) at 1200 "
+     r"rev/min. Find the shaft diameter for $\tau_{\mathrm{allow}} = 55\ \mathrm{MPa}$ and a twist limit of 0.05 rad.",
+     "", src="none", figure="p. 31.")),
+ sec("Statically indeterminate shafts", (32, 37),
+   ("steps", ["Equilibrium of the whole shaft: the support torques plus applied torques sum to zero.",
+              "Check whether a gap or free rotation closes; if not, the problem is determinate.",
+              r"Compatibility: total twist between the supports equals the gap (often 0); write each segment's "
+              r"internal torque in terms of the unknown reaction and solve."]),
+   q("CE1101 M2 Example 2.6",
+     r"A stainless-steel shower-curtain rail ($G = 74\ \mathrm{GPa}$, outer diameter 30 mm, wall 1.5 mm) should be "
+     r"fixed at both ends, but end A can rotate 0.005 rad before it locks. Torques of 40 Nm at C and 20 Nm at D "
+     r"(segments AC, CD, DB each 0.4 m) are applied. Find (a) the support torques and (b) the maximum shear stress.",
+     r"**Free twist would be 0.012 rad > 0.005, so A locks: (a) $T_A = -11.57\ \mathrm{Nm}$, $T_B = -8.43\ "
+     r"\mathrm{Nm}$ · (b) $\tau_{\max} = 15.59\ \mathrm{MPa}$ in CD ($T = 28.43\ \mathrm{Nm}$).**",
+     r"$J = \tfrac{\pi}{2}(0.015^4 - 0.0135^4)$. Compatibility: $[T_A + (T_A + 40) + (T_A + 20)] \times 0.4/(JG) = "
+     r"0.005$. Equilibrium: $T_A + 40 - 20 + T_B = 0$.", figure="p. 33.")),
+ sec("Rubber torsion spring", (38, 40),
+   q("CE1101 M2 Example 2.7",
+     r"A rubber annulus (inner radius $r_i$, outer $r_o$, thickness h, shear modulus G) is bonded between a rigid "
+     r"shaft and a fixed rigid ring. For a torque T on the shaft, find (a) the maximum shear stress in the rubber and "
+     r"(b) the shaft's rotation.",
+     r"**(a) $\tau_{\max} = \dfrac{T}{2\pi r_i^2h}$ at the inner face · (b) $\phi = \dfrac{T}{4\pi hG}\left(\dfrac{1}"
+     r"{r_i^2} - \dfrac{1}{r_o^2}\right)$.**",
+     r"At radius r the shear force $\tau(2\pi rh)$ times r must equal T, so $\tau = T/(2\pi r^2h)$. With $\gamma\,dr "
+     r"= r\,d\phi$: $d\phi = T\,dr/(2\pi hGr^3)$; integrate from $r_i$ to $r_o$.", figure="p. 38.")),
+]}

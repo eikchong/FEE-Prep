@@ -255,57 +255,7 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
 # M1 lives in utils/study_notes_ce102m.py (full rewrite with worked examples).
 
 # ============================================================== M2 Torsion
-STUDY[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
- sec("Torsion formula & polar second moment", (3, 9),
-   ("md", "Assumptions (circular shafts): axis stays straight, sections stay **plane and circular**, radial "
-          r"lines stay straight, small rotations, linear elastic. Shear strain $\gamma = r\,d\theta/dx$ grows "
-          "linearly with r."),
-   ("eq", r"\tau = \frac{T\,r}{J},\qquad \tau_{max} = \frac{T\,c}{J}"),
-   ("eq", r"J_{solid} = \frac{\pi R^4}{2} = \frac{\pi D^4}{32},\qquad J_{hollow} = \frac{\pi}{2}(R_2^4 - R_1^4) = \frac{\pi}{32}(D_2^4 - D_1^4)"),
- ),
- sec("Angle of twist; axial–torsion analogy; limitations", (10, 14),
-   ("eq", r"\phi = \frac{TL}{GJ},\qquad \phi = \sum_i\frac{T_iL_i}{G_iJ_i},\qquad \phi = \int_0^L\frac{T(x)}{G\,J(x)}dx"),
-   ("md", "| Axial | Torsion |\n|---|---|\n| $\\delta = FL/EA$ | $\\theta = TL/GJ$ |\n| $\\sigma = F/A$ | $\\tau = "
-          "Tr/J$ |\n\nValid only for **circular** sections, linear elastic; ignores stress concentrations at "
-          "abrupt changes. Sign: **right-hand rule** (thumb outward from the cut face = positive)."),
- ),
- sec("Statically determinate shafts; bolted couplings; distributed torque", (15, 26),
-   ("ex", "Example 2.1 — 35 mm shaft, torques 30/25/40/65/80 Nm", "Internal torques by sections: "
-                                                                  r"$T_{\mathrm{AB}} = -30$, $T_{\mathrm{BC}} "
-                                                                  r"= -55$, $T_{\mathrm{CD}} = -15$, "
-                                                                  r"$T_{\mathrm{DE}} = -80\ \mathrm{Nm}$. $J = "
-                                                                  r"147\,324\ \mathrm{mm^4}$; $|T|_{\max} = "
-                                                                  r"80\ \mathrm{Nm}$ → $\tau_{\mathrm{max}} "
-                                                                  r"\approx 9.5\ \mathrm{MPa}$; $\phi_{A/E} = "
-                                                                  r"\sum TL/(JG)$ over the four segments."),
-   ("ex", r"Example 2.2 — bolted coupling (shaft $r = 30\ \mathrm{mm}$, bolts $d = 10\ \mathrm{mm}$ on $R = "
-          r"75\ \mathrm{mm}$)",
-    r"'Shaft fails before bolts': bolts in shear, $T = n \cdot (\tau \cdot \pi d^2/4) \cdot R$ vs shaft $T = "
-    r"\tau \cdot J/c$ → $n \ge 7.2$ → **8 bolts**."),
-   ("ex", "Example 2.3 — drill pipe with end torque $T_A$ and friction torque rising linearly to $t_0$",
-    r"Equilibrium $T_B = T_A + t_0L/2$; internal torque varies along the pipe → $\phi$ by integration."),
- ),
- sec("Power transmission", (27, 31),
-   ("eq", r"P = T\omega,\qquad \omega = \frac{2\pi N}{60}\ \text{rad/s},\qquad 1\ \text{hp} = 0.745\ \text{kW}"),
-   ("ex", r"Example 2.4 — car drive shaft (thin tube, $d_o = 55\ \mathrm{mm}$, 180 hp at 1500 rpm)",
-    r"$\omega = 157.1\ \mathrm{rad/s}$, $P = 134.1\ \mathrm{kW}$ → $T = 853.6\ \mathrm{Nm}$; "
-    r"$\tau_{\mathrm{allow}}$ → $d_i \le 45.2\ \mathrm{mm}$ → minimum wall 4.9 mm; then check the twist limit."),
-   ("ex", "Example 2.5 (homework)", r"Helicopter rotor shaft: 600 hp at 1200 rpm, $\tau_{\mathrm{allow}} = 55\ "
-                                    r"\mathrm{MPa}$ (plus twist limit)."),
- ),
- sec("Statically indeterminate torsion", (32, 40),
-   ("steps", ["Equilibrium: $T_A + T_B$ = applied torques.",
-              "Compatibility: total twist between the fixed ends = 0 (or a known gap/slip).",
-              r"Internal torques by sections; $\phi = \sum TL/GJ$; solve."]),
-   ("ex", r"Example 2.6 — shower-curtain hanger ($d_o = 30\ \mathrm{mm}$, $t = 1.5\ \mathrm{mm}$, $G = 74\ "
-          r"\mathrm{GPa}$, end A free to rotate 0.005 rad)",
-    r"If A were loose the twist would exceed 0.005 rad, so A engages: $T_A = 8.43\ \mathrm{Nm}$, $T_B = 11.57\ "
-    r"\mathrm{Nm}$; $\tau_{\mathrm{max}} = 15.6\ \mathrm{MPa}$ in segment CD (28.4 Nm)."),
-   ("ex", "Example 2.7 — rubber annulus spring", r"Shear stress $\tau = T/(2\pi r^2h)$ decreases with radius; "
-                                                 r"twist of the shaft by integrating $\gamma$ across the "
-                                                 "annulus."),
- ),
-]}
+# M2 lives in utils/study_notes_ce102m.py.
 
 # ============================================================== M3 SFD / BMD
 STUDY[M3] = {"code": "CE102", "title": "M3 · Flexural members (SFD & BMD)", "sections": [

@@ -950,12 +950,26 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M2_Torsional_Members.pdf::torsion-formula-polar-second-moment": {
+  "CE102/CE1101_M2_Torsional_Members.pdf::torsion-in-circular-shafts-assumptions": {
    "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
    "idx": 0,
-   "title": "Torsion formula & polar second moment",
+   "title": "Torsion in circular shafts: assumptions",
    "pages": [
-    3,
+    2,
+    5
+   ],
+   "topic": "CE102-07",
+   "overlaps": [
+    "CE102-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M2_Torsional_Members.pdf::the-torsion-formula-and-polar-moment-of-area": {
+   "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
+   "idx": 1,
+   "title": "The torsion formula and polar moment of area",
+   "pages": [
+    6,
     9
    ],
    "topic": "CE102-07",
@@ -964,10 +978,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M2_Torsional_Members.pdf::angle-of-twist-axial-torsion-analogy-limitations": {
+  "CE102/CE1101_M2_Torsional_Members.pdf::angle-of-twist": {
    "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
-   "idx": 1,
-   "title": "Angle of twist; axial–torsion analogy; limitations",
+   "idx": 2,
+   "title": "Angle of twist",
    "pages": [
     10,
     14
@@ -978,12 +992,40 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M2_Torsional_Members.pdf::statically-determinate-shafts-bolted-couplings-distributed-t": {
+  "CE102/CE1101_M2_Torsional_Members.pdf::statically-determinate-shafts": {
    "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
-   "idx": 2,
-   "title": "Statically determinate shafts; bolted couplings; distributed torque",
+   "idx": 3,
+   "title": "Statically determinate shafts",
    "pages": [
     15,
+    19
+   ],
+   "topic": "CE102-07",
+   "overlaps": [
+    "CE102-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M2_Torsional_Members.pdf::bolted-shaft-couplings": {
+   "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
+   "idx": 4,
+   "title": "Bolted shaft couplings",
+   "pages": [
+    20,
+    23
+   ],
+   "topic": "CE102-07",
+   "overlaps": [
+    "CE102-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M2_Torsional_Members.pdf::varying-torque-drill-pipe": {
+   "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
+   "idx": 5,
+   "title": "Varying torque: drill pipe",
+   "pages": [
+    24,
     26
    ],
    "topic": "CE102-07",
@@ -994,7 +1036,7 @@
   },
   "CE102/CE1101_M2_Torsional_Members.pdf::power-transmission": {
    "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
-   "idx": 3,
+   "idx": 6,
    "title": "Power transmission",
    "pages": [
     27,
@@ -1006,12 +1048,26 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M2_Torsional_Members.pdf::statically-indeterminate-torsion": {
+  "CE102/CE1101_M2_Torsional_Members.pdf::statically-indeterminate-shafts": {
    "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
-   "idx": 4,
-   "title": "Statically indeterminate torsion",
+   "idx": 7,
+   "title": "Statically indeterminate shafts",
    "pages": [
     32,
+    37
+   ],
+   "topic": "CE102-07",
+   "overlaps": [
+    "CE102-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M2_Torsional_Members.pdf::rubber-torsion-spring": {
+   "doc": "CE102/CE1101_M2_Torsional_Members.pdf",
+   "idx": 8,
+   "title": "Rubber torsion spring",
+   "pages": [
+    38,
     40
    ],
    "topic": "CE102-07",
@@ -8934,11 +8990,15 @@
   },
   "CE102-07": {
    "lecture": [
-    "CE102/CE1101_M2_Torsional_Members.pdf::torsion-formula-polar-second-moment",
-    "CE102/CE1101_M2_Torsional_Members.pdf::angle-of-twist-axial-torsion-analogy-limitations",
-    "CE102/CE1101_M2_Torsional_Members.pdf::statically-determinate-shafts-bolted-couplings-distributed-t",
+    "CE102/CE1101_M2_Torsional_Members.pdf::torsion-in-circular-shafts-assumptions",
+    "CE102/CE1101_M2_Torsional_Members.pdf::the-torsion-formula-and-polar-moment-of-area",
+    "CE102/CE1101_M2_Torsional_Members.pdf::angle-of-twist",
+    "CE102/CE1101_M2_Torsional_Members.pdf::statically-determinate-shafts",
+    "CE102/CE1101_M2_Torsional_Members.pdf::bolted-shaft-couplings",
+    "CE102/CE1101_M2_Torsional_Members.pdf::varying-torque-drill-pipe",
     "CE102/CE1101_M2_Torsional_Members.pdf::power-transmission",
-    "CE102/CE1101_M2_Torsional_Members.pdf::statically-indeterminate-torsion"
+    "CE102/CE1101_M2_Torsional_Members.pdf::statically-indeterminate-shafts",
+    "CE102/CE1101_M2_Torsional_Members.pdf::rubber-torsion-spring"
    ],
    "practice": [
     "CE102/CE1101_T2L_Tutorial_4.pdf::q4-geared-shafts-rod-with-distributed-torque"

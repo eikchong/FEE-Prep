@@ -344,3 +344,18 @@ def test_ce102_m1_examples():
     assert close(p0, 266.67, 0.01) and close(dl * 1000, 5.28, 0.01)
     Tbc = 27 * math.sqrt(5) / 20
     assert close(Tbc, 3.02, 0.01) and close(3 * Tbc, 9.06, 0.01)
+
+
+def test_ce102_m2_examples():
+    J = math.pi * 35 ** 4 / 32
+    assert close(80e3 * 17.5 / J, 9.503, 0.001)
+    assert close((-30 * 300 - 55 * 200 - 15 * 300 - 80 * 150) * 1e3 / (J * 80e3), -0.0031, 0.0001)
+    assert close(2 * 30 ** 3 / (75 * 10 ** 2), 7.2, 1e-9)
+    T = 180 * 0.745e3 / (1500 * 2 * math.pi / 60)
+    di = (55 ** 4 - 16 * 55 * T * 1e3 / (math.pi * 48)) ** 0.25
+    assert close(T, 853.6, 0.5) and close((55 - di) / 2, 4.9, 0.05)
+    Jt = math.pi / 2 * (0.015 ** 4 - 0.0135 ** 4)
+    assert close((40 + 20) * 0.4 / (Jt * 74e9), 0.012, 0.0005)
+    TA = (0.005 * Jt * 74e9 / 0.4 - 60) / 3
+    assert close(TA, -11.57, 0.01) and close(-TA - 20, -8.43, 0.01)
+    assert close((TA + 40) * 0.015 / Jt / 1e6, 15.59, 0.01)
