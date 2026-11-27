@@ -1615,6 +1615,10 @@ from utils.study_notes_ce102q import MECHQ as _MECHQ  # noqa: E402
 
 STUDY.update(_MECHQ)
 
+from utils.study_notes_pe import PE as _PE  # noqa: E402
+
+STUDY.update(_PE)
+
 # keep last: give every tutorial question its source doc/page and a stable id
 from utils.qblock import fill_sources as _fill_sources  # noqa: E402
 

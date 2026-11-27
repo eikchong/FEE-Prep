@@ -12,7 +12,7 @@ from __future__ import annotations
 import re
 
 SOURCE_LINE = {
-    "official": "Answer from the tutorial solutions",
+    "official": "Answer from the official solutions",
     "mine": "My solution",
     "claude": "Worked by Claude — numbers checked, please review",
     "claude_unchecked": "Worked by Claude — please review",

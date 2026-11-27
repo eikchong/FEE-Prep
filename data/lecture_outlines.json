@@ -8012,5 +8012,367 @@
     ]
    }
   ]
+ },
+ "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf": {
+  "code": "CE201",
+  "seq": 40,
+  "title": "PE prep: Reinforced & prestressed concrete (Tan K H, BS 8110)",
+  "page_count": 91,
+  "sections": [
+   {
+    "title": "Members, loads and partial factors",
+    "pages": [
+     3,
+     7
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   },
+   {
+    "title": "Bending: singly and doubly reinforced sections",
+    "pages": [
+     8,
+     12
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "Shear",
+    "pages": [
+     13,
+     16
+    ],
+    "topics": [
+     "CE201-03"
+    ]
+   },
+   {
+    "title": "Torsion",
+    "pages": [
+     17,
+     18
+    ],
+    "topics": [
+     "CE201-04"
+    ]
+   },
+   {
+    "title": "Bond, anchorage and laps",
+    "pages": [
+     19,
+     24
+    ],
+    "topics": [
+     "CE201-05"
+    ]
+   },
+   {
+    "title": "Corbels",
+    "pages": [
+     25,
+     26
+    ],
+    "topics": [
+     "CE201-06"
+    ]
+   },
+   {
+    "title": "Durability, deflection and cracking",
+    "pages": [
+     27,
+     28
+    ],
+    "topics": [
+     "CE201-08"
+    ]
+   },
+   {
+    "title": "Durability, deflection and cracking",
+    "pages": [
+     29,
+     37
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "Columns: classification and design",
+    "pages": [
+     38,
+     47
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10"
+    ]
+   },
+   {
+    "title": "Slab systems",
+    "pages": [
+     48,
+     54
+    ],
+    "topics": [
+     "CE201-11"
+    ]
+   },
+   {
+    "title": "Punching shear",
+    "pages": [
+     55,
+     56
+    ],
+    "topics": [
+     "CE201-12"
+    ]
+   },
+   {
+    "title": "Pad footings",
+    "pages": [
+     57,
+     61
+    ],
+    "topics": [
+     "CE201-13"
+    ]
+   },
+   {
+    "title": "Retaining walls",
+    "pages": [
+     62,
+     63
+    ],
+    "topics": [
+     "CE201-14"
+    ]
+   },
+   {
+    "title": "Curtailment and detailing",
+    "pages": [
+     64,
+     66
+    ],
+    "topics": [
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "Worked examples: simply supported beam",
+    "pages": [
+     69,
+     80
+    ],
+    "topics": [
+     "CE201-02",
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "Worked example: restrained two-way slab",
+    "pages": [
+     80,
+     83
+    ],
+    "topics": [
+     "CE201-11"
+    ]
+   },
+   {
+    "title": "Worked examples: columns",
+    "pages": [
+     84,
+     87
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10"
+    ]
+   },
+   {
+    "title": "Worked example: pad footing",
+    "pages": [
+     88,
+     91
+    ],
+    "topics": [
+     "CE201-13"
+    ]
+   }
+  ]
+ },
+ "CE201/CE201_Introduction_to_Beam_Design.pdf": {
+  "code": "CE201",
+  "seq": 41,
+  "title": "PE prep: Introduction to beam and column design (BS 8110)",
+  "page_count": 55,
+  "sections": [
+   {
+    "title": "Limit states, characteristic values and load cases",
+    "pages": [
+     2,
+     6
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   },
+   {
+    "title": "Frame analysis: subframes and coefficients",
+    "pages": [
+     7,
+     9
+    ],
+    "topics": [
+     "CE201-01"
+    ]
+   },
+   {
+    "title": "Moment redistribution",
+    "pages": [
+     9,
+     13
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "Moment redistribution",
+    "pages": [
+     11,
+     12
+    ],
+    "topics": [
+     "CE201-08",
+     "CE201-21"
+    ]
+   },
+   {
+    "title": "Section design for bending",
+    "pages": [
+     14,
+     19
+    ],
+    "topics": [
+     "CE201-02"
+    ]
+   },
+   {
+    "title": "Anchorage, laps and curtailment",
+    "pages": [
+     20,
+     24
+    ],
+    "topics": [
+     "CE201-05",
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "Shear and torsion",
+    "pages": [
+     25,
+     33
+    ],
+    "topics": [
+     "CE201-03",
+     "CE201-04"
+    ]
+   },
+   {
+    "title": "Deflection and crack control",
+    "pages": [
+     34,
+     37
+    ],
+    "topics": [
+     "CE201-07"
+    ]
+   },
+   {
+    "title": "Robustness and ties",
+    "pages": [
+     38,
+     39
+    ],
+    "topics": [
+     "CE201-15"
+    ]
+   },
+   {
+    "title": "Columns",
+    "pages": [
+     40,
+     55
+    ],
+    "topics": [
+     "CE201-09",
+     "CE201-10"
+    ]
+   }
+  ]
+ },
+ "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf": {
+  "code": "CE206",
+  "seq": 1,
+  "title": "PE prep: Wastewater flows, sewers, treatment, activated sludge (Ong S L) — text only",
+  "page_count": 239,
+  "sections": [
+   {
+    "title": "Population projection",
+    "pages": [
+     1,
+     34
+    ],
+    "topics": [
+     "CE206-04"
+    ]
+   },
+   {
+    "title": "Wastewater characteristics and treatment methods",
+    "pages": [
+     35,
+     82
+    ],
+    "topics": [
+     "CE206-05",
+     "CE206-06"
+    ]
+   },
+   {
+    "title": "Preliminary treatment: screens and grit chambers",
+    "pages": [
+     83,
+     110
+    ],
+    "topics": [
+     "CE206-05"
+    ]
+   },
+   {
+    "title": "Microbiology and growth kinetics",
+    "pages": [
+     111,
+     175
+    ],
+    "topics": [
+     "CE206-06"
+    ]
+   },
+   {
+    "title": "Activated sludge process",
+    "pages": [
+     176,
+     239
+    ],
+    "topics": [
+     "CE206-06"
+    ]
+   }
+  ]
  }
 }

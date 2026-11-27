@@ -4778,6 +4778,400 @@
    ],
    "kind": "practice"
   },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::members-loads-and-partial-factors": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 0,
+   "title": "Members, loads and partial factors",
+   "pages": [
+    3,
+    7
+   ],
+   "topic": "CE201-01",
+   "overlaps": [
+    "CE201-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::bending-singly-and-doubly-reinforced-sections": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 1,
+   "title": "Bending: singly and doubly reinforced sections",
+   "pages": [
+    8,
+    12
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-02"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::shear": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 2,
+   "title": "Shear",
+   "pages": [
+    13,
+    16
+   ],
+   "topic": "CE201-03",
+   "overlaps": [
+    "CE201-03"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::torsion": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 3,
+   "title": "Torsion",
+   "pages": [
+    17,
+    18
+   ],
+   "topic": "CE201-04",
+   "overlaps": [
+    "CE201-04"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::bond-anchorage-and-laps": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 4,
+   "title": "Bond, anchorage and laps",
+   "pages": [
+    19,
+    24
+   ],
+   "topic": "CE201-05",
+   "overlaps": [
+    "CE201-05"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::corbels": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 5,
+   "title": "Corbels",
+   "pages": [
+    25,
+    26
+   ],
+   "topic": "CE201-06",
+   "overlaps": [
+    "CE201-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::durability-deflection-and-cracking": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 6,
+   "title": "Durability, deflection and cracking",
+   "pages": [
+    27,
+    37
+   ],
+   "topic": "CE201-07",
+   "overlaps": [
+    "CE201-08",
+    "CE201-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::columns-classification-and-design": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 7,
+   "title": "Columns: classification and design",
+   "pages": [
+    38,
+    47
+   ],
+   "topic": "CE201-09",
+   "overlaps": [
+    "CE201-09",
+    "CE201-10"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::slab-systems": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 8,
+   "title": "Slab systems",
+   "pages": [
+    48,
+    54
+   ],
+   "topic": "CE201-11",
+   "overlaps": [
+    "CE201-11"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::punching-shear": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 9,
+   "title": "Punching shear",
+   "pages": [
+    55,
+    56
+   ],
+   "topic": "CE201-12",
+   "overlaps": [
+    "CE201-12"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::pad-footings": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 10,
+   "title": "Pad footings",
+   "pages": [
+    57,
+    61
+   ],
+   "topic": "CE201-13",
+   "overlaps": [
+    "CE201-13"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::retaining-walls": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 11,
+   "title": "Retaining walls",
+   "pages": [
+    62,
+    63
+   ],
+   "topic": "CE201-14",
+   "overlaps": [
+    "CE201-14"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::curtailment-and-detailing": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 12,
+   "title": "Curtailment and detailing",
+   "pages": [
+    64,
+    66
+   ],
+   "topic": "CE201-15",
+   "overlaps": [
+    "CE201-15"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-examples-simply-supported-beam": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 13,
+   "title": "Worked examples: simply supported beam",
+   "pages": [
+    69,
+    80
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-02",
+    "CE201-07",
+    "CE201-11"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-example-restrained-two-way-slab": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 14,
+   "title": "Worked example: restrained two-way slab",
+   "pages": [
+    80,
+    83
+   ],
+   "topic": "CE201-11",
+   "overlaps": [
+    "CE201-02",
+    "CE201-07",
+    "CE201-11"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-examples-columns": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 15,
+   "title": "Worked examples: columns",
+   "pages": [
+    84,
+    87
+   ],
+   "topic": "CE201-09",
+   "overlaps": [
+    "CE201-09",
+    "CE201-10"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-example-pad-footing": {
+   "doc": "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf",
+   "idx": 16,
+   "title": "Worked example: pad footing",
+   "pages": [
+    88,
+    91
+   ],
+   "topic": "CE201-13",
+   "overlaps": [
+    "CE201-13"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::limit-states-characteristic-values-and-load-cases": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 0,
+   "title": "Limit states, characteristic values and load cases",
+   "pages": [
+    2,
+    6
+   ],
+   "topic": "CE201-01",
+   "overlaps": [
+    "CE201-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::frame-analysis-subframes-and-coefficients": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 1,
+   "title": "Frame analysis: subframes and coefficients",
+   "pages": [
+    7,
+    9
+   ],
+   "topic": "CE201-01",
+   "overlaps": [
+    "CE201-01",
+    "CE201-02"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::moment-redistribution": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 2,
+   "title": "Moment redistribution",
+   "pages": [
+    9,
+    13
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-01",
+    "CE201-02",
+    "CE201-08",
+    "CE201-21"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::durability-and-fire-cover": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 3,
+   "title": "Durability and fire cover",
+   "pages": [
+    11,
+    12
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-02",
+    "CE201-08",
+    "CE201-21"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::section-design-for-bending": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 4,
+   "title": "Section design for bending",
+   "pages": [
+    14,
+    19
+   ],
+   "topic": "CE201-02",
+   "overlaps": [
+    "CE201-02"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::anchorage-laps-and-curtailment": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 5,
+   "title": "Anchorage, laps and curtailment",
+   "pages": [
+    20,
+    24
+   ],
+   "topic": "CE201-05",
+   "overlaps": [
+    "CE201-05",
+    "CE201-15"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::shear-and-torsion": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 6,
+   "title": "Shear and torsion",
+   "pages": [
+    25,
+    33
+   ],
+   "topic": "CE201-03",
+   "overlaps": [
+    "CE201-03",
+    "CE201-04"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::deflection-and-crack-control": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 7,
+   "title": "Deflection and crack control",
+   "pages": [
+    34,
+    37
+   ],
+   "topic": "CE201-07",
+   "overlaps": [
+    "CE201-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::robustness-and-ties": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 8,
+   "title": "Robustness and ties",
+   "pages": [
+    38,
+    39
+   ],
+   "topic": "CE201-15",
+   "overlaps": [
+    "CE201-15"
+   ],
+   "kind": "lecture"
+  },
+  "CE201/CE201_Introduction_to_Beam_Design.pdf::columns": {
+   "doc": "CE201/CE201_Introduction_to_Beam_Design.pdf",
+   "idx": 9,
+   "title": "Columns",
+   "pages": [
+    40,
+    55
+   ],
+   "topic": "CE201-09",
+   "overlaps": [
+    "CE201-09",
+    "CE201-10"
+   ],
+   "kind": "lecture"
+  },
   "CE202/CE3166/1 Introduction.pdf::eurocode-family-ec3-parts": {
    "doc": "CE202/CE3166/1 Introduction.pdf",
    "idx": 0,
@@ -8102,6 +8496,147 @@
     "CE205-01"
    ],
    "kind": "practice"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::population-projection": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 0,
+   "title": "Population projection",
+   "pages": [
+    1,
+    20
+   ],
+   "topic": "CE206-04",
+   "overlaps": [
+    "CE206-04"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::wastewater-flows-and-peaking": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 1,
+   "title": "Wastewater flows and peaking",
+   "pages": [
+    21,
+    28
+   ],
+   "topic": "CE206-04",
+   "overlaps": [
+    "CE206-04"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::sewer-hydraulics": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 2,
+   "title": "Sewer hydraulics",
+   "pages": [
+    29,
+    34
+   ],
+   "topic": "CE206-04",
+   "overlaps": [
+    "CE206-04"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::wastewater-characteristics-and-treatment-methods": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 3,
+   "title": "Wastewater characteristics and treatment methods",
+   "pages": [
+    35,
+    82
+   ],
+   "topic": "CE206-05",
+   "overlaps": [
+    "CE206-05",
+    "CE206-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::preliminary-treatment-screens-and-grit-chambers": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 4,
+   "title": "Preliminary treatment: screens and grit chambers",
+   "pages": [
+    83,
+    103
+   ],
+   "topic": "CE206-05",
+   "overlaps": [
+    "CE206-05"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::primary-sedimentation": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 5,
+   "title": "Primary sedimentation",
+   "pages": [
+    104,
+    110
+   ],
+   "topic": "CE206-05",
+   "overlaps": [
+    "CE206-05"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::process-kinetics-and-reactors": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 6,
+   "title": "Process kinetics and reactors",
+   "pages": [
+    111,
+    141
+   ],
+   "topic": "CE206-06",
+   "overlaps": [
+    "CE206-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::microbiology-and-growth-kinetics": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 7,
+   "title": "Microbiology and growth kinetics",
+   "pages": [
+    142,
+    175
+   ],
+   "topic": "CE206-06",
+   "overlaps": [
+    "CE206-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::activated-sludge-process": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 8,
+   "title": "Activated sludge process",
+   "pages": [
+    176,
+    215
+   ],
+   "topic": "CE206-06",
+   "overlaps": [
+    "CE206-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::aeration-design": {
+   "doc": "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf",
+   "idx": 9,
+   "title": "Aeration design",
+   "pages": [
+    216,
+    239
+   ],
+   "topic": "CE206-06",
+   "overlaps": [
+    "CE206-06"
+   ],
+   "kind": "lecture"
   }
  },
  "topics": {
@@ -8742,7 +9277,10 @@
    "lecture": [
     "CE201/CE3165/1 Design Philosophy.pdf::limit-state-design",
     "CE201/CE3165/1 Design Philosophy.pdf::actions-combinations",
-    "CE201/CE3165/1 Design Philosophy.pdf::concrete-steel"
+    "CE201/CE3165/1 Design Philosophy.pdf::concrete-steel",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::members-loads-and-partial-factors",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::limit-states-characteristic-values-and-load-cases",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::frame-analysis-subframes-and-coefficients"
    ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 1 Analysis for Flexure.pdf::1-1-design-loads-patterns-g-25-q-15-kn-m-two-spans",
@@ -8757,7 +9295,12 @@
     "CE201/CE3165/2 Design for Flexure and Shear.pdf::collapse-uls-with-the-rectangular-stress-block",
     "CE201/CE3165/2 Design for Flexure and Shear.pdf::design-of-rectangular-sections",
     "CE201/CE3165/2 Design for Flexure and Shear.pdf::flanged-sections",
-    "CE201/CE3165/2 Design for Flexure and Shear.pdf::shear-variable-strut-truss"
+    "CE201/CE3165/2 Design for Flexure and Shear.pdf::shear-variable-strut-truss",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::bending-singly-and-doubly-reinforced-sections",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-examples-simply-supported-beam",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::moment-redistribution",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::durability-and-fire-cover",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::section-design-for-bending"
    ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 2 Design for Flexure.pdf::2-1-non-standard-section-at-collapse",
@@ -8772,7 +9315,10 @@
    "covered_in": []
   },
   "CE201-03": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::shear",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::shear-and-torsion"
+   ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 3 Design for Shear.pdf::3-1-300-700-beam-3h25-fck-35",
     "CE201/CE3165/tutorials/Tut 3 Design for Shear.pdf::3-2-links-along-a-simply-supported-beam",
@@ -8781,7 +9327,9 @@
    "covered_in": []
   },
   "CE201-04": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::torsion"
+   ],
    "practice": [],
    "covered_in": []
   },
@@ -8789,7 +9337,9 @@
    "lecture": [
     "CE201/CE3165/4 Detailing of Reinforcement.pdf::cover-durability-fire",
     "CE201/CE3165/4 Detailing of Reinforcement.pdf::bond-anchorage",
-    "CE201/CE3165/4 Detailing of Reinforcement.pdf::laps"
+    "CE201/CE3165/4 Detailing of Reinforcement.pdf::laps",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::bond-anchorage-and-laps",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::anchorage-laps-and-curtailment"
    ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 5 Detailing.pdf::5-1-bent-up-h16-bars-poor-bond",
@@ -8799,7 +9349,9 @@
    "covered_in": []
   },
   "CE201-06": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::corbels"
+   ],
    "practice": [],
    "covered_in": []
   },
@@ -8807,7 +9359,9 @@
    "lecture": [
     "CE201/CE3165/3 Cracking and Deflection.pdf::flexural-cracking-minimum-steel",
     "CE201/CE3165/3 Cracking and Deflection.pdf::crack-control-without-calculation",
-    "CE201/CE3165/3 Cracking and Deflection.pdf::deflection-by-span-effective-depth"
+    "CE201/CE3165/3 Cracking and Deflection.pdf::deflection-by-span-effective-depth",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::durability-deflection-and-cracking",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::deflection-and-crack-control"
    ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 4 Cracking and Deflection.pdf::4-2-8-m-simply-supported-300-600-beam-3h25",
@@ -8819,11 +9373,17 @@
    "lecture": [],
    "practice": [],
    "covered_in": [
-    "CE201-05"
+    "CE201-02",
+    "CE201-05",
+    "CE201-07"
    ]
   },
   "CE201-09": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::columns-classification-and-design",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-examples-columns",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::columns"
+   ],
    "practice": [
     "CE201/CE3165/tutorials/Tut 8 Columns and Bases.pdf::7-1-classify-columns-braced-unbraced-slenderness",
     "CE201/CE3165/tutorials/Tut 8 Columns and Bases.pdf::7-2-short-braced-column-uniaxial-biaxial",
@@ -8839,37 +9399,42 @@
    ]
   },
   "CE201-11": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::slab-systems",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-example-restrained-two-way-slab"
+   ],
    "practice": [],
-   "covered_in": [
-    "CE201-02"
-   ]
+   "covered_in": []
   },
   "CE201-12": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::punching-shear"
+   ],
    "practice": [],
-   "covered_in": [
-    "CE201-09"
-   ]
+   "covered_in": []
   },
   "CE201-13": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::pad-footings",
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::worked-example-pad-footing"
+   ],
    "practice": [],
-   "covered_in": [
-    "CE201-09"
-   ]
+   "covered_in": []
   },
   "CE201-14": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::retaining-walls"
+   ],
    "practice": [],
    "covered_in": []
   },
   "CE201-15": {
-   "lecture": [],
+   "lecture": [
+    "CE201/CE201_Reinforced_Prestressed_Concrete_Structures.pdf::curtailment-and-detailing",
+    "CE201/CE201_Introduction_to_Beam_Design.pdf::robustness-and-ties"
+   ],
    "practice": [],
-   "covered_in": [
-    "CE201-05"
-   ]
+   "covered_in": []
   },
   "CE201-16": {
    "lecture": [
@@ -8913,7 +9478,9 @@
   "CE201-21": {
    "lecture": [],
    "practice": [],
-   "covered_in": []
+   "covered_in": [
+    "CE201-02"
+   ]
   },
   "CE202-01": {
    "lecture": [
@@ -9429,17 +9996,30 @@
    "covered_in": []
   },
   "CE206-04": {
-   "lecture": [],
+   "lecture": [
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::population-projection",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::wastewater-flows-and-peaking",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::sewer-hydraulics"
+   ],
    "practice": [],
    "covered_in": []
   },
   "CE206-05": {
-   "lecture": [],
+   "lecture": [
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::wastewater-characteristics-and-treatment-methods",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::preliminary-treatment-screens-and-grit-chambers",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::primary-sedimentation"
+   ],
    "practice": [],
    "covered_in": []
   },
   "CE206-06": {
-   "lecture": [],
+   "lecture": [
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::process-kinetics-and-reactors",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::microbiology-and-growth-kinetics",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::activated-sludge-process",
+    "CE206/CE206_Wastewater_Flowrates_Sewers_Treatment.pdf::aeration-design"
+   ],
    "practice": [],
    "covered_in": []
   },
