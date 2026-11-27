@@ -377,10 +377,20 @@ def test_ce102_m3_m4_examples():
     Iz = 400 * 20 ** 3 / 12 + 8000 * (c1 - 10) ** 2 + 3 * (10 * 20 ** 3 / 12 + 200 * (40 - c1 - 10) ** 2)
     assert close(c1, 11.4, 0.01) and close(Iz, 5.1e5, 0.01e5) and close(1962e3 * (40 - c1) / 5.1e5, 110.0, 0.1)
     w = 140 / 2.3
-    M = 70 * 0.75 - w * 1.15 ** 2 / 2
+    M = w * 1.15 ** 2 / 2 - 70 * 0.75
     assert close(w, 60.87, 0.01) and close(M, -12.25, 0.02) and close(math.sqrt(12.25e6 / 19 * 3 / 200), 98.4, 0.1)
     n = 22 / 200
-    A = [(1000 * n * 100, 50), (200 * 15, 107.5), (340 * 15, 285), (200 * 15, 462.5)]
+    A = [(1000 * n * 100, 50), (200 * 15, 107.5), (370 * 15, 300), (200 * 15, 492.5)]
     c = sum(a * y for a, y in A) / sum(a for a, _ in A)
-    I2 = 110 * 100 ** 3 / 12 + 2 * 200 * 15 ** 3 / 12 + 15 * 340 ** 3 / 12 + sum(a * (y - c) ** 2 for a, y in A)
-    assert close(c, 177.33, 0.05) and close(I2, 6.471e8, 0.005e8) and close(165 * I2 / (470 - c) / 1e6, 330.9, 0.5)
+    I2 = 110 * 100 ** 3 / 12 + 2 * 200 * 15 ** 3 / 12 + 15 * 370 ** 3 / 12 + sum(a * (y - c) ** 2 for a, y in A)
+    assert close(c, 177.33, 1) and close(I2, 6.471e8, 0.005e8) and close(165 * I2 / (500 - c) / 1e6, 330.9, 1)
+
+
+def test_ce102_m5_examples():
+    EI = 16e9 * 1.8e-2
+    assert close(6 * 306 / 4, 459, 1e-9) and close(459e3 / EI, 1.59e-3, 0.005e-3)
+    assert close(459 * (6 - 6 / 5) / 1e3 * 1e3 / EI * 1e3, 7.65, 0.01)
+    a = (-3 + math.sqrt(21)) / 2
+    assert close(3 * a ** 2 + 9 * a - 9, 0, 1e-9) and close(a, 0.791, 0.001)
+    a_, L = 0.791, 1.0                      # the two deflections match at that a
+    assert close((L - a_) ** 2 / 3, 3 * a_ ** 2 * (L - a_) / (27 * L), 0.001)

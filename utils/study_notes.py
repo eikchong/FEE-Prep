@@ -264,58 +264,7 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
 # M4 lives in utils/study_notes_ce102m.py.
 
 # ============================================================== M5 Deflection
-STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": [
- sec("Elastic curve & direct integration", (3, 13),
-   ("eq", r"\kappa \approx \frac{d^2y}{dx^2} \quad\Rightarrow\quad EI\,y'' = M(x),\quad EI\,y''' = V,\quad EI\,y'''' = -q"),
-   ("steps", ["Write M(x) for each segment (one function per segment).",
-              r"Integrate twice: $EIy' = \int M\,dx + C_1$, $EIy = \iint M\,dx\,dx + C_1x + C_2$.",
-              "Boundary conditions at supports ($y = 0$; $y' = 0$ at fixed ends).",
-              "Continuity of y and $y'$ where segments meet."]),
-   ("ex", "Example 5.1 — garden bench (two equal loads P on overhangs a, span b)",
-    r"Three segments; BCs $y = 0$ at A and B, continuity of slope. Results: $\theta_A = Pab/(2EI)$, "
-    r"$\delta_{\mathrm{mid}} = Pab^2/(8EI)$ (upward), $\delta_{\mathrm{end}} = Pa^2(2a + 3b)/(6EI)$."),
- ),
- sec("Superposition", (14, 14),
-   ("md", "$EIy'' = M$ is **linear**, so deflections/slopes from separate load cases can be **added** (use "
-          "standard tables)."),
- ),
- sec("Moment-area method", (15, 23),
-   ("eq", r"\theta_{B/A} = \int_A^B\frac{M}{EI}dx \qquad t_{B/A} = \int_A^B\frac{M}{EI}\,\bar{x}_B\,dx"),
-   ("md", "1st theorem: change in slope between A and B = **area** of the M/EI diagram. 2nd theorem: deviation of B "
-          "from the tangent at A = **first moment of that area about B**. Angles +ve anticlockwise; B to the right "
-          "of A. Draw M/EI **by parts** (one diagram per load) to use standard shapes:"),
-   ("md", "| Shape | Area | Centroid from the zero end |\n|---|---|---|\n| rectangle | bh | b/2 |\n| triangle | "
-          "bh/2 | 2b/3 |\n| parabolic spandrel ($y \\propto x^2$) | bh/3 | 3b/4 |\n| n-th degree spandrel | "
-          "bh/(n+1) | (n+1)b/(n+2) |"),
- ),
- sec("Applications & examples", (24, 50),
-   ("ex", r"Onshore pipeline span (stainless steel, $d_o = 330\ \mathrm{mm}$, $t = 6\ \mathrm{mm}$, $w = 1.4\ "
-          r"\mathrm{kN/m}$)",
-    "Treat one span as simply supported; M/EI diagram; $t_B/A$ and $t_C/A$ → midspan deflection; maximum span "
-    "from the allowable deflection."),
-   ("ex", "Example 5.3 — fibre-reinforced concrete beam (four-point bending)", "M/EI by parts; deflection at "
-                                                                               "C from $t_D/A$ and $t_E/A$; "
-                                                                               "cross-check with a second "
-                                                                               "measured deflection."),
-   ("ex", "Example 5.4 — RC retaining wall (cantilever, 8.5 kN/m triangular pressure, 6 m)", "Base shear 153 "
-                                                                                             "kN, moment 306 "
-                                                                                             "kNm; M/EI is "
-                                                                                             "cubic → "
-                                                                                             r"$\theta_A$ = "
-                                                                                             r"area, $\delta_A "
-                                                                                             "= t_A/B$."),
-   ("ex", r"Roller position so that $\delta_C = \delta_D$ (overhang tip = max span deflection)", "Max in AB "
-                                                                                                 "where slope "
-                                                                                                 "= 0; equate "
-                                                                                                 "the two "
-                                                                                                 "expressions "
-                                                                                                 "and solve "
-                                                                                                 "the "
-                                                                                                 "quadratic "
-                                                                                                 "for a in "
-                                                                                                 "terms of L."),
- ),
-]}
+# M5 lives in utils/study_notes_ce102m.py.
 
 
 # ============================================================== CE2155 (continuation of CE1101)

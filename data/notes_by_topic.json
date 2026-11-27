@@ -1314,12 +1314,27 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M5_Deflection_of_Beams.pdf::elastic-curve-direct-integration": {
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::differential-equation-of-the-elastic-curve": {
    "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
    "idx": 0,
-   "title": "Elastic curve & direct integration",
+   "title": "Differential equation of the elastic curve",
    "pages": [
-    3,
+    2,
+    4
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08",
+    "CE103-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::direct-integration": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "idx": 1,
+   "title": "Direct integration",
+   "pages": [
+    5,
     13
    ],
    "topic": "CE102-08",
@@ -1331,7 +1346,7 @@
   },
   "CE102/CE1101_M5_Deflection_of_Beams.pdf::superposition": {
    "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
-   "idx": 1,
+   "idx": 2,
    "title": "Superposition",
    "pages": [
     14,
@@ -1345,10 +1360,24 @@
   },
   "CE102/CE1101_M5_Deflection_of_Beams.pdf::moment-area-method": {
    "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
-   "idx": 2,
+   "idx": 3,
    "title": "Moment-area method",
    "pages": [
     15,
+    19
+   ],
+   "topic": "CE103-01",
+   "overlaps": [
+    "CE103-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::moment-diagrams-by-parts-and-area-properties": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "idx": 4,
+   "title": "Moment diagrams by parts and area properties",
+   "pages": [
+    20,
     23
    ],
    "topic": "CE103-01",
@@ -1357,12 +1386,54 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M5_Deflection_of_Beams.pdf::applications-examples": {
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::application-pipeline-support-spacing": {
    "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
-   "idx": 3,
-   "title": "Applications & examples",
+   "idx": 5,
+   "title": "Application: pipeline support spacing",
    "pages": [
     24,
+    30
+   ],
+   "topic": "CE103-01",
+   "overlaps": [
+    "CE103-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-four-point-bend-test": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "idx": 6,
+   "title": "Example: four-point bend test",
+   "pages": [
+    31,
+    35
+   ],
+   "topic": "CE103-01",
+   "overlaps": [
+    "CE103-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-retaining-wall": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "idx": 7,
+   "title": "Example: retaining wall",
+   "pages": [
+    36,
+    39
+   ],
+   "topic": "CE103-01",
+   "overlaps": [
+    "CE103-01"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-overhanging-beam-matching-deflections": {
+   "doc": "CE102/CE1101_M5_Deflection_of_Beams.pdf",
+   "idx": 8,
+   "title": "Example: overhanging beam, matching deflections",
+   "pages": [
+    40,
     50
    ],
    "topic": "CE103-01",
@@ -9128,7 +9199,8 @@
     "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-railway-sleeper",
     "CE102/CE1101_M4_Stress_Strain_Bending.pdf::truss-girders-and-castellated-beams",
     "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-steel-concrete-composite-beam",
-    "CE102/CE1101_M5_Deflection_of_Beams.pdf::elastic-curve-direct-integration",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::differential-equation-of-the-elastic-curve",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::direct-integration",
     "CE102/CE2155_2_Shear_Stress.pdf::transverse-longitudinal-shear",
     "CE102/CE2155_2_Shear_Stress.pdf::the-shear-formula",
     "CE102/CE2155_2_Shear_Stress.pdf::examples-circular-sections-glued-t-beam",
@@ -9165,7 +9237,11 @@
    "lecture": [
     "CE102/CE1101_M5_Deflection_of_Beams.pdf::superposition",
     "CE102/CE1101_M5_Deflection_of_Beams.pdf::moment-area-method",
-    "CE102/CE1101_M5_Deflection_of_Beams.pdf::applications-examples",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::moment-diagrams-by-parts-and-area-properties",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::application-pipeline-support-spacing",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-four-point-bend-test",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-retaining-wall",
+    "CE102/CE1101_M5_Deflection_of_Beams.pdf::example-overhanging-beam-matching-deflections",
     "CE103/CE3155/P1-3 Virtual work.pdf::work-energy",
     "CE103/CE3155/P1-3 Virtual work.pdf::principle-of-virtual-work",
     "CE103/CE3155/P1-3 Virtual work.pdf::trusses-beams-frames"

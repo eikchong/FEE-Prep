@@ -406,11 +406,87 @@ MOM[M4] = {"code": "CE102", "title": "M4 · Stresses and strains in bending", "s
      "", src="none", figure="p. 42.")),
  sec("Example: steel–concrete composite beam", (43, 47),
    q("CE1101 M4 composite beam (in class)",
-     r"A 1000 × 100 mm concrete slab sits on a steel I-beam (370 mm deep, 200 × 15 mm flanges, 15 mm web). "
+     r"A 1000 × 100 mm concrete slab sits on a steel I-beam (200 × 15 mm flanges, 370 × 15 mm web, 400 mm deep). "
      r"$\sigma_{\mathrm{allow}}$ = 15 MPa (concrete) and 165 MPa (steel); $E_c = 22$, $E_s = 200\ \mathrm{GPa}$. "
      r"Find the allowable moment and the stresses and strains through the depth.",
      r"**$n = 0.11$, $b^* = 110\ \mathrm{mm}$; $c_1 = 177.33$, $c_2 = 322.67\ \mathrm{mm}$, $I = 6.471 \times 10^8\ "
      r"\mathrm{mm^4}$ → steel governs: $M_{\max} = 330.9\ \mathrm{kNm}$ · concrete top −9.97 MPa, concrete and steel "
      r"at the interface −4.35 / −39.54 MPa, steel bottom +165 MPa ($\varepsilon = 8.25 \times 10^{-4}$).**",
      r"Concrete limit: $15 = nMc_1/I$; steel limit: $165 = Mc_2/I$; take the smaller M.", figure="p. 44.")),
+]}
+
+M5 = "CE102/CE1101_M5_Deflection_of_Beams.pdf"
+
+MOM[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": [
+ sec("Differential equation of the elastic curve", (2, 4),
+   ("eq", r"\theta \approx \tan\theta = \frac{dy}{dx},\qquad \kappa = \frac{d\theta}{dx} = \frac{d^2y}{dx^2} = \frac{M}{EI}"),
+   ("md", "Small slopes, so $ds \\approx dx$. Deflection y is positive upward and rotation $\\theta$ positive "
+          "anticlockwise."),
+ ),
+ sec("Direct integration", (5, 13),
+   ("eq", r"EIy'' = M,\qquad EIy''' = V,\qquad EIy'''' = -q"),
+   ("md", "Integrate the moment equation twice (or the shear three times, the load four times) and fix the "
+          "constants from **boundary conditions** (zero deflection at supports, zero slope at a fixed end) and "
+          "**continuity** of slope and deflection where one moment function hands over to the next. Each segment "
+          "with a different moment expression needs its own function and coordinate."),
+   q("CE1101 M5 Example 5.1",
+     r"Two people of weight P sit at the ends of a garden bench with overhangs a and span b between legs A and B "
+     r"(vertical reactions only). Find (1) the slope at A, (2) the mid-span deflection, (3) the deflection of the free "
+     r"ends.",
+     r"**$\theta_A = \dfrac{Pab}{2EI}$ · $\delta_{\mathrm{mid}} = \dfrac{Pab^2}{8EI}$ (upward) · $\delta_{\mathrm{end}} "
+     r"= -\dfrac{Pa^2}{6EI}(2a + 3b)$ (downward).**",
+     r"Overhang: $M = -Px_1$; span: $M = -Pa$ (constant). Conditions: $y_1(a) = 0$, $y_2(0) = y_2(b) = 0$, "
+     r"$y_1'(a) = y_2'(0)$ → $C_3 = Pab/2$, $C_4 = 0$, $C_1 = \tfrac{Pa}{2}(a + b)$, $C_2 = -\tfrac{Pa^2}{6}(2a + 3b)$.",
+     figure="p. 7."),
+   q("CE1101 M5 Example 5.2 (homework)",
+     r"Redo Example 5.1 with $x_2$ running from right to left (positive slope clockwise for $x_2$).",
+     "", src="none", figure="p. 13.")),
+ sec("Superposition", (14, 14),
+   ("md", "The deflection equation is linear, so deflections and slopes from separate loads add."),
+   ("eq", r"\text{simply supported, UDL: } \delta_C = \frac{5qL^4}{384EI},\ \theta_A = \frac{qL^3}{24EI};\qquad \text{central point load: } \delta_C = \frac{PL^3}{48EI},\ \theta_A = \frac{PL^2}{16EI}"),
+ ),
+ sec("Moment-area method", (15, 19),
+   ("eq", r"\theta_{B/A} = \theta_B - \theta_A = \int_A^B\frac{M}{EI}dx\qquad(\text{area of the } M/EI \text{ diagram})"),
+   ("eq", r"t_{B/A} = \int_A^B x_1\frac{M}{EI}dx = \bar x\cdot\text{area}\qquad(\text{first moment of the } M/EI \text{ area about B})"),
+   ("md", r"First theorem: the angle between the tangents at A and B equals the area of the M/EI diagram between "
+          r"them. Second theorem: the deviation of B from the tangent at A equals the moment of that area about B "
+          r"(positive when B lies above the tangent). Useful relations: $t_{A/B} + t_{B/A} = \theta_{B/A}L_{B/A}$; "
+          "best for slopes and deflections at particular points."),
+ ),
+ sec("Moment diagrams by parts and area properties", (20, 23),
+   ("md", "Draw the M diagram as separate parts, one per load measured from a convenient point, so each part is a "
+          "simple shape. Spandrel $y = kx^n$: area $bh/(n + 1)$, centroid $b/(n + 2)$ from the vertex (rectangle n = "
+          "0, triangle n = 1, parabola n = 2: area $bh/3$, centroid $b/4$). A parabolic segment under a UDL "
+          r"between zero-slope and end has area $2bh/3$ with centroid $3b/8$."),
+ ),
+ sec("Application: pipeline support spacing", (24, 30),
+   ("md", "A pipeline on regular supports is a continuous beam; analysing one span as simply supported "
+          "over-estimates deflection, so it is conservative. Design limits: bending stress and sag ≤ L/600."),
+   q("CE1101 M5 pipeline (in class)",
+     r"A 15 km pipeline of stainless steel pipe (outer diameter 330 mm, wall 6 mm, $E = 200\ \mathrm{GPa}$) carries "
+     r"1.4 kN/m. With sag ≤ L/600 and simply supported spans, find the largest span and the number of supports.",
+     "", src="none", figure="pp. 26–30 (steps given, values blank).")),
+ sec("Example: four-point bend test", (31, 35),
+   q("CE1101 M5 Example 5.3",
+     r"A fibre-reinforced concrete beam (span L, second moment I) is tested with two loads P at distance a from each "
+     r"support. The mid-span deflection is $\delta$. Find the elastic modulus E.",
+     r"**$\delta = \dfrac{Pa}{24EI}(3L^2 - 4a^2)$ → $E = \dfrac{Pa}{24I\delta}(3L^2 - 4a^2)$.**",
+     r"M/EI diagram: triangles of height $Pa/EI$ over each end a, rectangle between. $\delta = \tfrac12t_{D/A} - "
+     r"t_{E/A}$ by similar triangles.", figure="p. 31.")),
+ sec("Example: retaining wall", (36, 39),
+   q("CE1101 M5 Example 5.4",
+     r"A 6 m RC basement wall (600 mm thick, $E = 16\ \mathrm{GPa}$) is fixed at the base B and carries soil "
+     r"pressure 8.5h kPa at depth h. Per metre of wall, find the slope and deflection at the top A.",
+     r"**Base shear 153 kN, moment 306 kNm; $\theta_A = 1.59 \times 10^{-3}\ \mathrm{rad}$, $\delta_A = 7.65\ "
+     r"\mathrm{mm}$.**",
+     r"$I = 1 \times 0.6^3/12 = 1.8 \times 10^{-2}\ \mathrm{m^4}$. Cubic M/EI: area $= 6 \times 306/(4EI) = "
+     r"459/EI$, centroid $6/5$ m from A. $\theta_A = -\theta_{B/A}$; $\delta_A = A_1(6 - 6/5)$ i.e. $2203.2/EI$.",
+     figure="p. 36.")),
+ sec("Example: overhanging beam, matching deflections", (40, 50),
+   q("CE1101 M5 overhang (in class)",
+     r"A beam AB of length a (pin A, roller B) overhangs to C (total length L) with a load P at C. Find a so that "
+     r"the deflection at C equals the largest deflection within AB (EI constant).",
+     r"**$\delta_C = \dfrac{(L - a)^2}{3}\dfrac{PL}{EI}$, $\delta_D = \dfrac{3a^2(L - a)}{27L}\dfrac{PL}{EI}$ at $x = "
+     r"a/\sqrt3$; equal when $3a^2 + 9aL - 9L^2 = 0$ → $a = \dfrac{-3 + \sqrt{21}}{2}L \approx 0.791L$.**",
+     r"Moment-area with the M/EI diagram by parts; zero slope at D gives $x = a/\sqrt3$.", figure="p. 40.")),
 ]}
