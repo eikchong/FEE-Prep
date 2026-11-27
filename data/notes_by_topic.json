@@ -1076,12 +1076,12 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M3_Flexural_Members.pdf::internal-forces-sign-convention": {
+  "CE102/CE1101_M3_Flexural_Members.pdf::internal-forces-and-sign-convention": {
    "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
    "idx": 0,
-   "title": "Internal forces & sign convention",
+   "title": "Internal forces and sign convention",
    "pages": [
-    3,
+    2,
     6
    ],
    "topic": "CE102-09",
@@ -1090,10 +1090,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M3_Flexural_Members.pdf::load-shear-moment-relations": {
+  "CE102/CE1101_M3_Flexural_Members.pdf::relations-between-load-shear-and-moment": {
    "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
    "idx": 1,
-   "title": "Load–shear–moment relations",
+   "title": "Relations between load, shear and moment",
    "pages": [
     7,
     11
@@ -1118,12 +1118,68 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M3_Flexural_Members.pdf::worked-examples": {
+  "CE102/CE1101_M3_Flexural_Members.pdf::examples-balance-beam-and-engine-crane": {
    "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
    "idx": 3,
-   "title": "Worked examples",
+   "title": "Examples: balance beam and engine crane",
    "pages": [
     13,
+    19
+   ],
+   "topic": "CE102-09",
+   "overlaps": [
+    "CE102-09"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M3_Flexural_Members.pdf::example-chair-frame": {
+   "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
+   "idx": 4,
+   "title": "Example: chair frame",
+   "pages": [
+    20,
+    22
+   ],
+   "topic": "CE102-09",
+   "overlaps": [
+    "CE102-09"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M3_Flexural_Members.pdf::example-bridge-pier-cap": {
+   "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
+   "idx": 5,
+   "title": "Example: bridge pier cap",
+   "pages": [
+    23,
+    27
+   ],
+   "topic": "CE102-09",
+   "overlaps": [
+    "CE102-09"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M3_Flexural_Members.pdf::example-spliced-beam": {
+   "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
+   "idx": 6,
+   "title": "Example: spliced beam",
+   "pages": [
+    29,
+    32
+   ],
+   "topic": "CE102-09",
+   "overlaps": [
+    "CE102-09"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M3_Flexural_Members.pdf::example-ski-on-snow": {
+   "doc": "CE102/CE1101_M3_Flexural_Members.pdf",
+   "idx": 7,
+   "title": "Example: ski on snow",
+   "pages": [
+    34,
     36
    ],
    "topic": "CE102-09",
@@ -1132,12 +1188,12 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::curvature-bending-strain": {
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::curvature-and-bending-strain": {
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "idx": 0,
-   "title": "Curvature & bending strain",
+   "title": "Curvature and bending strain",
    "pages": [
-    3,
+    2,
     7
    ],
    "topic": "CE102-08",
@@ -1146,10 +1202,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::normal-stress-neutral-axis-flexure-formula": {
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::neutral-axis-moment-curvature-and-the-flexure-formula": {
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "idx": 1,
-   "title": "Normal stress, neutral axis & flexure formula",
+   "title": "Neutral axis, moment–curvature and the flexure formula",
    "pages": [
     8,
     12
@@ -1160,10 +1216,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::centroid-second-moment-parallel-axis-superposition": {
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::centroid-and-second-moment-of-area": {
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "idx": 2,
-   "title": "Centroid, second moment, parallel axis & superposition",
+   "title": "Centroid and second moment of area",
    "pages": [
     13,
     16
@@ -1177,7 +1233,7 @@
   "CE102/CE1101_M4_Stress_Strain_Bending.pdf::composite-beams-transformed-section": {
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "idx": 3,
-   "title": "Composite beams — transformed section",
+   "title": "Composite beams: transformed section",
    "pages": [
     17,
     20
@@ -1188,12 +1244,68 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::worked-examples-applications": {
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::examples-hollow-box-and-plank-sections": {
    "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
    "idx": 4,
-   "title": "Worked examples & applications",
+   "title": "Examples: hollow box and plank sections",
    "pages": [
     21,
+    29
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-diving-board": {
+   "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
+   "idx": 5,
+   "title": "Example: diving board",
+   "pages": [
+    30,
+    34
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-railway-sleeper": {
+   "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
+   "idx": 6,
+   "title": "Example: railway sleeper",
+   "pages": [
+    35,
+    37
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::truss-girders-and-castellated-beams": {
+   "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
+   "idx": 7,
+   "title": "Truss girders and castellated beams",
+   "pages": [
+    38,
+    42
+   ],
+   "topic": "CE102-08",
+   "overlaps": [
+    "CE102-08"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-steel-concrete-composite-beam": {
+   "doc": "CE102/CE1101_M4_Stress_Strain_Bending.pdf",
+   "idx": 8,
+   "title": "Example: steel–concrete composite beam",
+   "pages": [
+    43,
     47
    ],
    "topic": "CE102-08",
@@ -9007,11 +9119,15 @@
   },
   "CE102-08": {
    "lecture": [
-    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::curvature-bending-strain",
-    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::normal-stress-neutral-axis-flexure-formula",
-    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::centroid-second-moment-parallel-axis-superposition",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::curvature-and-bending-strain",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::neutral-axis-moment-curvature-and-the-flexure-formula",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::centroid-and-second-moment-of-area",
     "CE102/CE1101_M4_Stress_Strain_Bending.pdf::composite-beams-transformed-section",
-    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::worked-examples-applications",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::examples-hollow-box-and-plank-sections",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-diving-board",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-railway-sleeper",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::truss-girders-and-castellated-beams",
+    "CE102/CE1101_M4_Stress_Strain_Bending.pdf::example-steel-concrete-composite-beam",
     "CE102/CE1101_M5_Deflection_of_Beams.pdf::elastic-curve-direct-integration",
     "CE102/CE2155_2_Shear_Stress.pdf::transverse-longitudinal-shear",
     "CE102/CE2155_2_Shear_Stress.pdf::the-shear-formula",
@@ -9030,10 +9146,14 @@
   },
   "CE102-09": {
    "lecture": [
-    "CE102/CE1101_M3_Flexural_Members.pdf::internal-forces-sign-convention",
-    "CE102/CE1101_M3_Flexural_Members.pdf::load-shear-moment-relations",
+    "CE102/CE1101_M3_Flexural_Members.pdf::internal-forces-and-sign-convention",
+    "CE102/CE1101_M3_Flexural_Members.pdf::relations-between-load-shear-and-moment",
     "CE102/CE1101_M3_Flexural_Members.pdf::sketching-procedure",
-    "CE102/CE1101_M3_Flexural_Members.pdf::worked-examples",
+    "CE102/CE1101_M3_Flexural_Members.pdf::examples-balance-beam-and-engine-crane",
+    "CE102/CE1101_M3_Flexural_Members.pdf::example-chair-frame",
+    "CE102/CE1101_M3_Flexural_Members.pdf::example-bridge-pier-cap",
+    "CE102/CE1101_M3_Flexural_Members.pdf::example-spliced-beam",
+    "CE102/CE1101_M3_Flexural_Members.pdf::example-ski-on-snow",
     "CE102/CE2155_1_MoM_Revision.pdf::sfd-bmd-elastic-curve-moment-curvature"
    ],
    "practice": [

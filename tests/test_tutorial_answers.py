@@ -359,3 +359,28 @@ def test_ce102_m2_examples():
     TA = (0.005 * Jt * 74e9 / 0.4 - 60) / 3
     assert close(TA, -11.57, 0.01) and close(-TA - 20, -8.43, 0.01)
     assert close((TA + 40) * 0.015 / Jt / 1e6, 15.59, 0.01)
+
+
+def test_ce102_m3_m4_examples():
+    s = math.sin(r(68.2))
+    RB = 5 * 1.3 / (s * 0.4)
+    assert close(RB, 17.5, 0.05) and close(RB * s - 5, 11.25, 0.05) and close(11.25 * 0.4, 4.5, 1e-9)
+    assert close((2 * 60 + 3 * 45 + 8 * 9) / 2, 163.5, 1e-9) and close(-(60 + 76) / 2 * 2 + (42.5 + 22.5) / 2 * 2.5, -54.75, 1e-9)
+    assert close(12 * 1.5 - 4 * 1.5 ** 2, 9, 1e-9) and close(0.8 / 1.5, 0.533, 0.001)
+    I = (0.14 ** 4 - 0.1 * 0.1 ** 3) / 12
+    sC, sD = 0.07 / I, 0.05 / I
+    F = 0.5 * (sC + sD) * 0.02 * 0.14
+    yt = (sD * 10 + 0.5 * (sC - sD) * 2 / 3 * 20) / (sD + 0.5 * (sC - sD))
+    assert close(I, 2.368e-5, 0.001e-5) and close(F, 7.10, 0.01) and close(yt, 10.5, 0.1)
+    assert close(F * (0.1 + 2 * yt / 1000), 0.859, 0.002)
+    c1 = (10 * 8000 + 3 * 30 * 200) / 8600
+    Iz = 400 * 20 ** 3 / 12 + 8000 * (c1 - 10) ** 2 + 3 * (10 * 20 ** 3 / 12 + 200 * (40 - c1 - 10) ** 2)
+    assert close(c1, 11.4, 0.01) and close(Iz, 5.1e5, 0.01e5) and close(1962e3 * (40 - c1) / 5.1e5, 110.0, 0.1)
+    w = 140 / 2.3
+    M = 70 * 0.75 - w * 1.15 ** 2 / 2
+    assert close(w, 60.87, 0.01) and close(M, -12.25, 0.02) and close(math.sqrt(12.25e6 / 19 * 3 / 200), 98.4, 0.1)
+    n = 22 / 200
+    A = [(1000 * n * 100, 50), (200 * 15, 107.5), (340 * 15, 285), (200 * 15, 462.5)]
+    c = sum(a * y for a, y in A) / sum(a for a, _ in A)
+    I2 = 110 * 100 ** 3 / 12 + 2 * 200 * 15 ** 3 / 12 + 15 * 340 ** 3 / 12 + sum(a * (y - c) ** 2 for a, y in A)
+    assert close(c, 177.33, 0.05) and close(I2, 6.471e8, 0.005e8) and close(165 * I2 / (470 - c) / 1e6, 330.9, 0.5)

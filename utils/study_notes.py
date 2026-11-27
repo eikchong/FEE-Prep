@@ -258,101 +258,10 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
 # M2 lives in utils/study_notes_ce102m.py.
 
 # ============================================================== M3 SFD / BMD
-STUDY[M3] = {"code": "CE102", "title": "M3 · Flexural members (SFD & BMD)", "sections": [
- sec("Internal forces & sign convention", (3, 6),
-   ("md", "A cut exposes an **axial force N, shear force V and bending moment M** (3 equilibrium equations). "
-          "**Deformation sign convention:** +V turns the element clockwise; **+M sags** (compression on top); "
-          "tension positive. SFD/BMD give the maxima needed for design."),
- ),
- sec("Load–shear–moment relations", (7, 11),
-   ("eq", r"\frac{dV}{dx} = -q \qquad \frac{dM}{dx} = V \qquad V_B - V_A = -\int_A^B q\,dx \qquad M_B - M_A = \int_A^B V\,dx"),
-   ("md", "- $q = 0$ → V constant, M linear. Uniform q → V linear, M parabolic.\n- **Point load P (down):** V "
-          "drops by P; M has a kink (no jump).\n- **Applied couple $M_0$:** V unchanged; M jumps by $M_0$.\n- "
-          "**M is maximum where $V = 0$** (or changes sign)."),
- ),
- sec("Sketching procedure", (12, 12),
-   ("steps", ["FBD with loads, reactions and dimensions.", "Support reactions from equilibrium.",
-              "Vertical construction lines at every load change.",
-              "SFD segment by segment, left to right (start = left reaction).",
-              "BMD from the SFD areas; check $M = 0$ at free/pinned ends."]),
- ),
- sec("Worked examples", (13, 36),
-   ("ex", "Example 3.1 — gymnast P on a 5 m balance beam, 1.5 m from A", "$R_A = 0.7P$, $R_B = 0.3P$; "
-                                                                         r"$M_{\mathrm{max}} = 1.05P$ under "
-                                                                         "the load. Case 2: general position "
-                                                                         r"x → $M_{\mathrm{max}} = P x(5 - "
-                                                                         "x)/5$."),
-   ("ex", "Example 3.2 — engine crane boom (5 kN)", "Hydraulic cylinder is a two-force member at 68.2° → its "
-                                                    r"force from $\sum M_A$ ($\approx 17.5\ \mathrm{kN}$), pin "
-                                                    "A from force equations; SFD/BMD of the boom."),
-   ("ex", "Chair frame ABC–BD (person on the seat)", r"Replace by an equivalent FBD; $M = 495\ \mathrm{Nm}$ at "
-                                                     "B."),
-   ("ex", "Example 3.3 — RC pier cap (stringer loads 60/45 kN, self-weight 8 kN/m)", "Symmetric: reactions "
-                                                                                     "163.5 kN each; $M = "
-                                                                                     r"-136\ \mathrm{kNm}$ "
-                                                                                     "over the supports and "
-                                                                                     "−54.75 kNm at midspan "
-                                                                                     "(hogging throughout)."),
-   ("ex", "Spliced timber beam (8 kN/m)", r"$V = 0$ at 1.5 m from A → $M_{\mathrm{max}}(+) = 9\ \mathrm{kNm}$; "
-                                          "$M = 0$ at 3 m → **best location for the splice**."),
-   ("ex", "Ski on snow (0.8 kN, trapezoidal reaction)", r"Equilibrium → $w = 0.533\ \mathrm{kN/m}$, then "
-                                                        "SFD/BMD."),
- ),
-]}
+# M3 lives in utils/study_notes_ce102m.py.
 
 # ============================================================== M4 Bending stress
-STUDY[M4] = {"code": "CE102", "title": "M4 · Stress & strain due to bending", "sections": [
- sec("Curvature & bending strain", (3, 7),
-   ("md", "Plane sections remain plane and normal to the axis; the beam bends into a circular arc of radius "
-          r"$\rho$. Fibres above the neutral surface shorten, below lengthen (for +M)."),
-   ("eq", r"\kappa = \frac{1}{\rho} = \frac{d\theta}{ds},\qquad \varepsilon_x = -\frac{y}{\rho} = -\kappa y"),
- ),
- sec("Normal stress, neutral axis & flexure formula", (8, 12),
-   ("eq", r"\sigma_x = E\varepsilon_x = -E\kappa y"),
-   ("md", r"$\sum F_x = 0$ (pure bending) ⇒ $\int y\,dA = 0$ ⇒ **neutral axis through the centroid** (linear "
-          r"elastic). $\sum M = M$ gives the moment–curvature relation ($EI$ = flexural rigidity):"),
-   ("eq", r"\kappa = \frac{M}{EI} \qquad \sigma_x = -\frac{My}{I} \qquad \sigma_{max} = \frac{M}{S},\ S = \frac{I}{c}"),
-   ("tip", "+M: tension below the N.A., compression above. Under the same M the section with the larger S has "
-           "the smaller stress."),
- ),
- sec("Centroid, second moment, parallel axis & superposition", (13, 16),
-   ("eq", r"\bar{y} = \frac{\sum A_iy_i}{\sum A_i} \qquad I = \sum\left(I_{c,i} + A_id_i^2\right) \qquad I_{rect} = \frac{bh^3}{12}"),
-   ("md", "About an axis of symmetry you can add/subtract rectangles directly (superposition), e.g. hollow box = "
-          "outer − inner."),
- ),
- sec("Composite beams — transformed section", (17, 20),
-   ("eq", r"n = \frac{E_2}{E_1},\quad b^* = nb \qquad \sigma_1 = -\frac{My}{I_t},\quad \sigma_2 = -n\frac{My}{I_t}"),
-   ("md", "Transform material 2 into material 1 by scaling **widths only** (depth unchanged); find the N.A. "
-          "and $I_t$ of the transformed section. Examples: timber + steel plate, concrete slab on steel beam, "
-          "RC."),
- ),
- sec("Worked examples & applications", (21, 47),
-   ("ex", "Example 4.1 — glued hollow timber box", "Top and bottom boards resist **85.9 %** of M (force resultant "
-          "of the trapezoidal stress block × lever arm) → webs can be thinned."),
-   ("ex", "Built-up 15 mm boards — two layouts for 150 kNm", "Compare section moduli; the larger S gives the lower "
-          "stress."),
-   ("ex", "Example 4.2 — diving board (80 kg at the tip)", r"$M_{\mathrm{max}} = 1962\ \mathrm{Nm}$ at support "
-                                                           "B; T-shaped section: N.A. 11.4 mm from the top, "
-                                                           r"$I = 5.1 \times 10^5\ \mathrm{mm^4}$ → $\sigma = "
-                                                           r"Mc/I \approx 43.9\ \mathrm{MPa}$ at that face "
-                                                           "(check the other face too)."),
-   ("ex", "Example 4.3 — timber railway tie (70 kN rails, uniform ballast reaction 60.87 kN/m)", r"$M_{\mathrm{max}} "
-                                                                                                 r"= 12.25\ "
-                                                                                                 r"\mathrm{kNm}$ "
-                                                                                                 "→ required "
-                                                                                                 "thickness "
-                                                                                                 r"$t = 98.4\ "
-                                                                                                 r"\mathrm{mm}$ "
-                                                                                                 "from "
-                                                                                                 r"$\sigma_{\mathrm{allow}}$ "
-                                                                                                 "and $S = "
-                                                                                                 "bt^2/6$."),
-   ("ex", r"Composite concrete slab on steel I-beam ($\sigma_c \le 15$, $\sigma_s \le 165\ \mathrm{MPa}$)", "Transform concrete into steel "
-          "(b/n); N.A. 177 mm/323 mm; check which material reaches its limit first — the smaller moment governs."),
-   ("md", "Applications: aluminium truss girders (I by parallel-axis of the chord tubes), **castellated beams** "
-          "(cut and re-weld an I-beam → deeper, stiffer for the same steel)."),
- ),
-]}
+# M4 lives in utils/study_notes_ce102m.py.
 
 # ============================================================== M5 Deflection
 STUDY[M5] = {"code": "CE102", "title": "M5 · Deflection of beams", "sections": [

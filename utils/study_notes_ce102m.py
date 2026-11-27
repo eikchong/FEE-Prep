@@ -246,3 +246,171 @@ MOM[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
      r"At radius r the shear force $\tau(2\pi rh)$ times r must equal T, so $\tau = T/(2\pi r^2h)$. With $\gamma\,dr "
      r"= r\,d\phi$: $d\phi = T\,dr/(2\pi hGr^3)$; integrate from $r_i$ to $r_o$.", figure="p. 38.")),
 ]}
+
+M3 = "CE102/CE1101_M3_Flexural_Members.pdf"
+
+MOM[M3] = {"code": "CE102", "title": "M3 · Flexural members: shear force & bending moment", "sections": [
+ sec("Internal forces and sign convention", (2, 6),
+   ("md", "A cut through a member exposes an axial force F, a shear force V and a bending moment M, equal and "
+          "opposite on the two faces. Equilibrium must hold for the whole structure, for every member and for any "
+          "part cut from a member."),
+   ("md", "**Deformation sign convention** (for stress resultants): positive shear tends to rotate the element "
+          "clockwise; positive (sagging) moment compresses the top fibres; tension is positive. The **static** sign "
+          "convention (forces positive in a chosen direction) is used only when writing equilibrium equations."),
+   ("md", "The shear-force diagram (SFD) and bending-moment diagram (BMD) plot V and M along the beam so the "
+          "maximum and minimum values for design can be read off."),
+ ),
+ sec("Relations between load, shear and moment", (7, 11),
+   ("eq", r"\frac{dV}{dx} = -q,\qquad V_B - V_A = -\int_A^B q\,dx;\qquad \frac{dM}{dx} = V,\qquad M_B - M_A = \int_A^B V\,dx"),
+   ("md", "Loads q and P are positive downwards; an applied couple is positive anticlockwise.\n\n"
+          "- No distributed load → V constant, M linear.\n- Uniform load → V linear, M parabolic.\n"
+          "- Where V = 0, M has a maximum or minimum.\n- A **point load P** makes V drop by P (left to right); M "
+          "does not jump.\n- A **couple** $M_0$ (anticlockwise) makes M drop by $M_0$; V does not change."),
+ ),
+ sec("Sketching procedure", (12, 12),
+   ("steps", ["Draw the free-body (load) diagram with dimensions.",
+              "Find the support reactions from equilibrium.",
+              "Draw vertical construction lines at every point load, couple, support, and start/end of distributed load.",
+              "Sketch the SFD segment by segment from left to right using $dV/dx = -q$ and the jumps at point loads.",
+              "Sketch the BMD segment by segment using $dM/dx = V$ (area under the SFD) and the jumps at couples."]),
+ ),
+ sec("Examples: balance beam and engine crane", (13, 19),
+   q("CE1101 M3 Example 3.1",
+     r"A gymnast of weight P does a handstand on a 5 m simply supported balance beam, 1.5 m from A. Draw the SFD and "
+     r"BMD. Then, for an arbitrary distance x from A, find the maximum moment and the most critical position.",
+     r"**$R_A = 0.7P$, $R_B = 0.3P$; V = +0.7P (A–C), −0.3P (C–B); $M_C = 1.05P$ · general: $M_{\max} = Px(5 - "
+     r"x)/5$, largest at mid-span ($x = 2.5\ \mathrm{m}$, $M = 1.25P$).**",
+     r"$\sum M_B$: $5R_A = 3.5P$. The BMD rises linearly over A–C (positive constant V) and falls over C–B.",
+     figure="p. 13."),
+   q("CE1101 M3 Example 3.2",
+     r"An engine crane lifts 5 kN at the tip C of a horizontal boom ABC (pinned at A; hydraulic cylinder BD at "
+     r"68.2° to the boom at B, 0.4 m from A; C a further 0.9 m). Draw the SFD and BMD of the boom.",
+     r"**$R_B = 17.5\ \mathrm{kN}$ (two-force cylinder), $A_y = 11.25\ \mathrm{kN}$ down, $A_x = 6.5\ \mathrm{kN}$ · V "
+     r"= −11.25 kN on AB, +5 kN on BC · $M_B = -4.5\ \mathrm{kNm}$ (hogging), zero at A and C.**",
+     r"$\sum M_A$: $R_B\sin 68.2^\circ(0.4) = 5(1.3)$. Vertical component of $R_B$ is 16.25 kN.", figure="p. 17.")),
+ sec("Example: chair frame", (20, 22),
+   q("CE1101 M3 chair (in class)",
+     r"Members ABC and BD of a chair are rigidly joined at B; the chair is pinned at A and runs in a smooth vertical "
+     r"slot at D. A person (550 N) sits at C. Draw the SFD and BMD of ABC.",
+     r"**Reactions from the slide: $D_x = 1100\ \mathrm{N}$, $A_y = 550\ \mathrm{N}$, $A_x = 1100\ \mathrm{N}$; the "
+     r"collar force acts on ABC as 1100 N axial plus a 495 Nm couple at B.** (The diagrams are left blank on the "
+     "student copy.)",
+     r"Move the collar force from D to B as an equal force plus a couple $1100 \times 0.45 = 495\ \mathrm{Nm}$.",
+     figure="pp. 20–22.")),
+ sec("Example: bridge pier cap", (23, 27),
+   ("md", "Stringers bring point loads onto the pier cap, and the cap's own weight is a uniform load."),
+   q("CE1101 M3 Example 3.3",
+     r"A concrete pier cap (overhangs D–A and B–E of 2 m, span A–B of 5 m with C at mid-span) carries 60 kN at D and "
+     r"E, 45 kN at A, C and B, and 8 kN/m self-weight. Piers A and B give vertical reactions only. Draw the SFD and "
+     r"BMD.",
+     r"**$A_y = B_y = 163.5\ \mathrm{kN}$ · V: −60 → −76 (A left), +42.5 → +22.5 (C left), −22.5 → −42.5 (B left), "
+     r"+76 → +60 · M: 0 (D), −136 (A), −54.75 (C), −136 (B), 0 (E) kNm.**",
+     r"Symmetry: $2A_y = 2(60) + 3(45) + 8(9)$. Moments from areas of the SFD: $M_A = -(60 + 76)/2 \times 2$; $M_C = "
+     r"-136 + (42.5 + 22.5)/2 \times 2.5$.", figure="p. 24."),
+   q("CE1101 M3 Example 3.4 (homework)",
+     r"A basement retaining wall, fixed at A, 6 m high, carries soil pressure rising linearly with depth (8.5h kN/m "
+     r"at depth h). Draw its SFD and BMD.",
+     "", src="none", figure="p. 28.")),
+ sec("Example: spliced beam", (29, 32),
+   q("CE1101 M3 spliced beam (in class)",
+     r"A spliced timber beam (span A–B 4 m, overhang B–C 2 m) carries 8 kN/m. Find the largest sagging moment and "
+     r"where it occurs, and the best place for the splice within A–B.",
+     r"**Reactions 12 kN (A) and 36 kN (B); V = 0 at 1.5 m → $M_{\max} = 9\ \mathrm{kNm}$ · splice where M = 0, 3 m "
+     r"from A.**",
+     r"$\sum M_B$: $4R_A = 8 \times 4 \times 2 - 8 \times 2 \times 1 = 48$ → $R_A = 12$, $R_B = 48 - 12 = 36$. $M = 12x - 4x^2$ is zero at $x = 3$.",
+     figure="p. 29."),
+   q("CE1101 M3 Example 3.5 (homework)",
+     r"Find the position a of the roller support on a beam of length L under w kN/m so that the largest sagging "
+     r"moment equals the largest hogging moment, and draw the SFD and BMD.",
+     "", src="none", figure="p. 33.")),
+ sec("Example: ski on snow", (34, 36),
+   q("CE1101 M3 ski (in class)",
+     r"A ski carries the man's 0.8 kN at its centre; the snow pushes back with a trapezoidal load (rising over 0.5 m "
+     r"to w, constant over the middle 1 m, falling over the last 0.5 m). Find w and draw the SFD and BMD.",
+     r"**$w = 0.533\ \mathrm{kN/m}$.** (The SFD and BMD are left blank on the student copy.)",
+     r"$0.8 = \tfrac12w(0.5) + \tfrac12w(0.5) + w(1)$.", figure="p. 34.")),
+]}
+
+M4 = "CE102/CE1101_M4_Stress_Strain_Bending.pdf"
+
+MOM[M4] = {"code": "CE102", "title": "M4 · Stresses and strains in bending", "sections": [
+ sec("Curvature and bending strain", (2, 7),
+   ("eq", r"\kappa = \frac{1}{\rho} = \frac{d\theta}{ds} \approx \frac{d\theta}{dx},\qquad \varepsilon_x = -\kappa y"),
+   ("md", "Deflections are small, so $ds \\approx dx$. Curvature takes the sign of the bending moment: a sagging "
+          "(positive) moment bends the beam concave upward. In pure bending, plane sections stay plane and normal "
+          "to the axis; fibres below the neutral axis lengthen (tension), fibres above shorten (compression), and "
+          "the strain varies linearly with the distance y from the neutral axis."),
+ ),
+ sec("Neutral axis, moment–curvature and the flexure formula", (8, 12),
+   ("eq", r"\sigma_x = E\varepsilon_x = -E\kappa y;\qquad \int_A\sigma_x\,dA = 0 \Rightarrow \int_A y\,dA = 0"),
+   ("md", "With no axial force and a linear-elastic material, the neutral axis passes through the **centroid** "
+          "of the section."),
+   ("eq", r"M = -\int_A y\sigma_x\,dA = \kappa EI\ \Rightarrow\ \kappa = \frac{1}{\rho} = \frac{M}{EI};\qquad \sigma_x = -\frac{My}{I},\qquad \sigma_{max} = \frac{Mc}{I} = \frac{M}{S}"),
+   ("md", "EI is the flexural rigidity and $S = I/c$ the section modulus. For a positive moment, stress is tensile "
+          "below the neutral axis and compressive above; it varies linearly with y."),
+ ),
+ sec("Centroid and second moment of area", (13, 16),
+   ("eq", r"c_1 = \frac{\sum A_ky_k}{\sum A_k};\qquad I_z = \sum_k\left[\frac{b_kh_k^3}{12} + A_k(c_1 - y_k)^2\right]\ \ \text{(parallel-axis theorem)}"),
+   ("md", "**Superposition:** about an axis of symmetry you may subtract areas, e.g. a hollow box $I = "
+          r"\tfrac{1}{12}(BH^3 - bh^3)$. This is not valid about an axis that is not a symmetry axis of the section."),
+ ),
+ sec("Composite beams: transformed section", (17, 20),
+   ("eq", r"n = \frac{E_2}{E_1},\quad b^* = nb;\qquad (\sigma_x)_1 = -\frac{My}{I},\quad (\sigma_x)_2 = -n\frac{My}{I}"),
+   ("md", "Replace material 2 by an equivalent width of material 1, scaling **only the width** (never the depth, "
+          "since the moment arm y must be kept). Find the centroid and I of the transformed section, then convert "
+          "stresses back with n. Examples: steel plates on timber ($n = E_s/E_w$), a concrete slab on a steel I-beam "
+          "transformed to steel ($n = E_c/E_s$)."),
+ ),
+ sec("Examples: hollow box and plank sections", (21, 29),
+   q("CE1101 M4 Example 4.1",
+     r"Four 20 mm boards form a 140 × 140 mm hollow box (100 mm clear inside). For a moment M, what share of M is "
+     r"carried by the top and bottom boards?",
+     r"**$I = 2.368 \times 10^{-5}\ \mathrm{m^4}$; stresses 2956M (outer face) and 2111.5M Pa (inner face); force "
+     r"in each flange $F = 7.10M$, lever arm $L = 121\ \mathrm{mm}$ → $M' = 0.859M$: 85.9 %.**",
+     r"$I = \tfrac{1}{12}(0.14^4 - 0.1 \times 0.1^3)$. $F = \tfrac12(\sigma_C + \sigma_D)(0.02)(0.14)$. The trapezoid's "
+     r"centroid is 10.5 mm from the inner face, so $L = 100 + 2 \times 10.5$. (The slide then asks what happens with "
+     r"one central web instead of two side boards — not answered there.)", figure="p. 21."),
+   q("CE1101 M4 plank sections (in class)",
+     r"Two beams are built from 15 mm boards, both 300 mm deep and 200 mm wide but arranged differently (a) and (b). "
+     r"Which carries 150 kNm about z with the lower bending stress, and what is that stress?",
+     r"**Section (b) — it has the larger section modulus.** (The values of I, S and the stress are left blank on the student "
+     "copy.)", r"$\sigma = M/S$; find each I by subtracting rectangles about the symmetry axis.", figure="pp. 27–29.")),
+ sec("Example: diving board", (30, 34),
+   q("CE1101 M4 Example 4.2",
+     r"An 80 kg man stands at the end C of a diving board (pin A, roller B 1.5 m from A, overhang 2.5 m). The section "
+     r"is a 400 × 20 mm plank with three 10 × 20 mm ribs below. Find the maximum bending stresses.",
+     r"**$M_{\max} = -1962\ \mathrm{Nm}$ at B; $c_1 = 11.4$, $c_2 = 28.6\ \mathrm{mm}$, $I = 5.1 \times 10^5\ "
+     r"\mathrm{mm^4}$ → tension 43.86 MPa (top), compression −110.0 MPa (bottom of the ribs).**",
+     r"Reactions 1308 N (A, down) and 2092.8 N (B). $c_1 = (10 \times 8000 + 3 \times 30 \times 200)/8600$. $I = "
+     r"2.82 \times 10^5 + 3 \times 7.59 \times 10^4$.", figure="p. 30.")),
+ sec("Example: railway sleeper", (35, 37),
+   q("CE1101 M4 Example 4.3",
+     r"A 400 mm wide timber sleeper (2.3 m long) carries two 70 kN rail loads 1.5 m apart, 0.4 m from each end; the "
+     r"ballast reaction is uniform. With $\sigma_{\mathrm{allow}} = 19\ \mathrm{MPa}$, find the minimum thickness.",
+     r"**$w = 60.87\ \mathrm{kN/m}$, $M_{\max} = -12.25\ \mathrm{kNm}$ at mid-span → $S = 0.645 \times 10^6\ "
+     r"\mathrm{mm^3}$ → $t = 98.4\ \mathrm{mm}$.**",
+     r"$w = 140/2.3$. Moment at the rail: $4.87\ \mathrm{kNm}$; at mid-span $-12.25$. $S = bt^2/6 = 200t^2/3$.",
+     figure="p. 35.")),
+ sec("Truss girders and castellated beams", (38, 42),
+   ("md", "Aluminium stage girders: continuous chords with welded diagonals; for bending, take I of the four chords "
+          "about the centroid with the parallel-axis theorem. Castellated beams are cut along a zig-zag, offset and "
+          "re-welded: deeper, stiffer and stronger for the same steel."),
+   q("CE1101 M4 Example 4.4 (homework)",
+     r"A stage truss girder (four 50 mm tubes, 3 mm wall, at the corners of a 400 × 400 mm square; span 9 m) carries "
+     r"1 kN/m over its middle 3 m. Ignoring the diagonals, find the maximum bending stress.",
+     "", src="none", figure="p. 39."),
+   q("CE1101 M4 Example 4.5 (homework)",
+     r"Beam (b) is made by cutting and re-welding I-beam (a). With $\sigma_{\mathrm{allow}} = 180\ \mathrm{MPa}$, find "
+     r"(1) the ratio of moment capacities of (b) at section b-b and (a); (2) the ratio between sections b-b and c-c "
+     r"of beam (b).",
+     "", src="none", figure="p. 42.")),
+ sec("Example: steel–concrete composite beam", (43, 47),
+   q("CE1101 M4 composite beam (in class)",
+     r"A 1000 × 100 mm concrete slab sits on a steel I-beam (370 mm deep, 200 × 15 mm flanges, 15 mm web). "
+     r"$\sigma_{\mathrm{allow}}$ = 15 MPa (concrete) and 165 MPa (steel); $E_c = 22$, $E_s = 200\ \mathrm{GPa}$. "
+     r"Find the allowable moment and the stresses and strains through the depth.",
+     r"**$n = 0.11$, $b^* = 110\ \mathrm{mm}$; $c_1 = 177.33$, $c_2 = 322.67\ \mathrm{mm}$, $I = 6.471 \times 10^8\ "
+     r"\mathrm{mm^4}$ → steel governs: $M_{\max} = 330.9\ \mathrm{kNm}$ · concrete top −9.97 MPa, concrete and steel "
+     r"at the interface −4.35 / −39.54 MPa, steel bottom +165 MPa ($\varepsilon = 8.25 \times 10^{-4}$).**",
+     r"Concrete limit: $15 = nMc_1/I$; steel limit: $165 = Mc_2/I$; take the smaller M.", figure="p. 44.")),
+]}
