@@ -325,3 +325,22 @@ def test_analysis_answers():
     import math                                                     # plastic: propped cantilever UDL
     a = min((x for x in np.linspace(0.3, 0.5, 20001)), key=lambda a: 2 * (1 + a) / (a * (1 - a)))
     assert abs(a - (math.sqrt(2) - 1)) < 1e-3 and abs(2 * (1 + a) / (a * (1 - a)) - 11.66) < 0.01
+
+
+def test_ce102_m1_examples():
+    s60, c60 = math.sin(r(60)), math.cos(r(60))
+    F = 1800 * 0.5 / (s60 * 0.1 + c60 * 0.03)
+    Dx, Dy = F * c60, F * s60 - 1800
+    assert close(F, 8858, 1) and close(math.sqrt(2 * F * 2 / (math.pi * 150)), 8.67, 0.01)
+    assert close(math.hypot(Dx, Dy), 7354.5, 1) and close(math.sqrt(2 * math.hypot(Dx, Dy) * 2 / (math.pi * 150)), 7.9, 0.01)
+    a, h, d = 30, 100, 10
+    Ab = math.pi * (a / 2 + a / 2 + 2 / 3 * h) * math.sqrt(2) * 2 / 3 * h
+    assert close(Ab, 28631.9, 1) and close(4.5 * math.pi * a * h / 1e3, 42.41, 0.01)
+    assert close((3 * Ab * math.sin(r(45)) + 4.5 * math.pi * a * h / 3) / 1e3, 74.8, 0.2)
+    assert close(620 * math.pi * d ** 2 / 4 / 1e3, 48.69, 0.01)
+    assert close(9375 * 2500 / (100 * 200000) / 0.8, 1.46, 0.01)
+    p0 = 2 * (2000 - 400) / 12
+    dl = (400 * 12 + 11.11 * 12 ** 3 / 3) * 1e3 / (math.pi * 0.15 ** 2 * 30e9)
+    assert close(p0, 266.67, 0.01) and close(dl * 1000, 5.28, 0.01)
+    Tbc = 27 * math.sqrt(5) / 20
+    assert close(Tbc, 3.02, 0.01) and close(3 * Tbc, 9.06, 0.01)

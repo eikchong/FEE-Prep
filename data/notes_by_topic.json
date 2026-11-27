@@ -805,12 +805,12 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::statics-vs-mechanics-of-materials": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::what-mechanics-of-materials-adds-to-statics": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
    "idx": 0,
-   "title": "Statics vs mechanics of materials",
+   "title": "What mechanics of materials adds to statics",
    "pages": [
-    3,
+    1,
     5
    ],
    "topic": "CE102-06",
@@ -819,12 +819,26 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::stress-strain-the-stress-strain-relationship": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::stress-normal-shear-and-sign-convention": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
    "idx": 1,
-   "title": "Stress, strain & the stress–strain relationship",
+   "title": "Stress: normal, shear and sign convention",
    "pages": [
     6,
+    9
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::strain-the-stress-strain-curve-and-hooke-s-law": {
+   "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
+   "idx": 2,
+   "title": "Strain, the stress–strain curve and Hooke's law",
+   "pages": [
+    10,
     13
    ],
    "topic": "CE102-06",
@@ -834,12 +848,26 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::allowable-stress-factor-of-safety-design-examples": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::allowable-stress-factor-of-safety-and-pin-design": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
-   "idx": 2,
-   "title": "Allowable stress & factor of safety; design examples",
+   "idx": 3,
+   "title": "Allowable stress, factor of safety and pin design",
    "pages": [
     14,
+    18
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::cast-in-anchors-comparing-failure-modes": {
+   "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
+   "idx": 4,
+   "title": "Cast-in anchors: comparing failure modes",
+   "pages": [
+    19,
     25
    ],
    "topic": "CE102-06",
@@ -850,7 +878,7 @@
   },
   "CE102/CE1101_M1_Axial_Force_Members.pdf::deformation-of-axially-loaded-members": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
-   "idx": 3,
+   "idx": 5,
    "title": "Deformation of axially loaded members",
    "pages": [
     26,
@@ -862,10 +890,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::statically-indeterminate-members-compatibility": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::indeterminacy-and-compatibility": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
-   "idx": 4,
-   "title": "Statically indeterminate members & compatibility",
+   "idx": 6,
+   "title": "Indeterminacy and compatibility",
    "pages": [
     30,
     31
@@ -877,10 +905,10 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::truss-deflections-by-geometry": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::truss-deflections-from-member-deformations": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
-   "idx": 5,
-   "title": "Truss deflections by geometry",
+   "idx": 7,
+   "title": "Truss deflections from member deformations",
    "pages": [
     32,
     35
@@ -892,12 +920,27 @@
    ],
    "kind": "lecture"
   },
-  "CE102/CE1101_M1_Axial_Force_Members.pdf::pile-foundations-rigid-bars-on-cables": {
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::piles-with-skin-friction": {
    "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
-   "idx": 6,
-   "title": "Pile foundations; rigid bars on cables",
+   "idx": 8,
+   "title": "Piles with skin friction",
    "pages": [
     36,
+    41
+   ],
+   "topic": "CE102-06",
+   "overlaps": [
+    "CE102-06",
+    "CE203-07"
+   ],
+   "kind": "lecture"
+  },
+  "CE102/CE1101_M1_Axial_Force_Members.pdf::rigid-bars-hung-on-cables": {
+   "doc": "CE102/CE1101_M1_Axial_Force_Members.pdf",
+   "idx": 9,
+   "title": "Rigid bars hung on cables",
+   "pages": [
+    42,
     48
    ],
    "topic": "CE102-06",
@@ -8843,7 +8886,7 @@
     "CE102/CE1101_S3_Truss_Structures.pdf::solution-strategy-for-a-whole-truss",
     "CE102/CE1101_S3_Truss_Structures.pdf::real-world-truss-failures-analysis",
     "CE102/CE1101_S3_Truss_Structures.pdf::arch-roof-truss-non-parallel-chords",
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::truss-deflections-by-geometry"
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::truss-deflections-from-member-deformations"
    ],
    "practice": [
     "CE102/CE1101_T2L_Tutorial_1.pdf::q3-water-tank-tower-under-wind",
@@ -8860,12 +8903,15 @@
   },
   "CE102-06": {
    "lecture": [
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::statics-vs-mechanics-of-materials",
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::stress-strain-the-stress-strain-relationship",
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::allowable-stress-factor-of-safety-design-examples",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::what-mechanics-of-materials-adds-to-statics",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::stress-normal-shear-and-sign-convention",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::strain-the-stress-strain-curve-and-hooke-s-law",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::allowable-stress-factor-of-safety-and-pin-design",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::cast-in-anchors-comparing-failure-modes",
     "CE102/CE1101_M1_Axial_Force_Members.pdf::deformation-of-axially-loaded-members",
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::statically-indeterminate-members-compatibility",
-    "CE102/CE1101_M1_Axial_Force_Members.pdf::pile-foundations-rigid-bars-on-cables",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::indeterminacy-and-compatibility",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::piles-with-skin-friction",
+    "CE102/CE1101_M1_Axial_Force_Members.pdf::rigid-bars-hung-on-cables",
     "CE102/CE2155_1_MoM_Revision.pdf::stress-normal-shear-3-d-state-complementary-shear",
     "CE102/CE2155_1_MoM_Revision.pdf::strain-stress-strain-relations",
     "CE102/CE2155_1_MoM_Revision.pdf::axial-load-torsion-bending-revision",

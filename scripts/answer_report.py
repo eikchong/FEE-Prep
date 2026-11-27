@@ -32,6 +32,8 @@ MISMATCHES = [
     ("CE203", "CE3116 Tut 2 (f)–(g)", "$I_c = 2.0$ called 'gravelly sand'; Robertson zone 6 is clean to silty sand."),
     ("CE203", "CE3116 Shallow Q3", "Final width printed '2.m'; 2.64 m + 0.2 m = 2.84 m."),
     ("CE203", "CE3116 Piles Q4–Q5", "Slide divides 2000 instead of 2100 kN; uplift and tank weight netted before factoring."),
+    ("CE102", "CE1101 M1 Example 1.2", "Mode (c) printed as P = 173.3 kN = N; with the 45° component used in (b) it is "
+     "122.5 kN. Mode (a) governs either way."),
     ("CE101", "CE2155 Mat Tut 5 Q5", "75 % pro-eutectoid cementite is impossible in steel (needs 5.2 % C); 7.5 % assumed."),
 ]
 

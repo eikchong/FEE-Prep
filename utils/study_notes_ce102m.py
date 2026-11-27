@@ -1,0 +1,156 @@
+"""CE102 lecture decks rewritten in full (CE1101 Mechanics of Materials M1–M5), slide by slide, with every worked
+example as a q block carrying the slide's own solution. Homework examples without a solution on the slides are
+marked "not provided yet" (src="none")."""
+from utils.qblock import q
+
+M1 = "CE102/CE1101_M1_Axial_Force_Members.pdf"
+
+
+def sec(title, pages, *blocks):
+    return {"title": title, "pages": list(pages), "blocks": list(blocks)}
+
+
+MOM = {}
+
+MOM[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members", "sections": [
+ sec("What mechanics of materials adds to statics", (1, 5),
+   ("md", "In statics a loaded body is assumed rigid: a bar of length L under axial load P stays length L. Real "
+          "bars stretch, and they also get thinner sideways. Mechanics of materials (MOM) describes the **stress** "
+          "and **deformation** in a structure through three links:"),
+   ("steps", ["**Stress–force** relationship (how internal forces spread over a section) — the criterion used in "
+              "design;",
+              "**strain–deformation** relationship (how a change of length or angle relates to strain);",
+              "**stress–strain** relationship of the material (constitutive law)."]),
+   ("md", "Structures covered: bars under axial load (M1), shafts under torsion (M2), beams (M3–M5).\n\n"
+          "- **Statically determinate**: FBDs + equilibrium give the forces; the stress–strain law gives the "
+          "deformation.\n- **Statically indeterminate**: equilibrium alone is not enough — add a **compatibility** "
+          "condition from the geometry of the deformed structure."),
+ ),
+ sec("Stress: normal, shear and sign convention", (6, 9),
+   ("eq", r"\sigma = \lim_{\Delta A \to 0}\frac{\Delta F_n}{\Delta A},\qquad \tau = \lim_{\Delta A \to 0}\frac{\Delta V}{\Delta A}"),
+   ("md", r"At a point the state of stress has three normal stresses ($\sigma_{xx}$, $\sigma_{yy}$, $\sigma_{zz}$) "
+          r"and shear stresses with $\tau_{xy} = \tau_{yx}$, $\tau_{yz} = \tau_{zy}$, $\tau_{zx} = \tau_{xz}$ — so six "
+          r"independent components. In $\tau_{ij}$, i is the face the stress acts on and j its direction."),
+   ("md", "**Sign convention:** a stress on a positive face acting in the positive direction is positive; so is a "
+          "stress on a negative face acting in the negative direction. Mixed (positive face, negative direction or "
+          "the reverse) is negative. Tension is positive."),
+   ("eq", r"\sigma_{avg} = \frac{P}{A};\qquad \text{single shear: } \tau_{avg} = \frac{P}{A};\qquad \text{double shear: } \tau_{avg} = \frac{P}{2A}"),
+   ("md", "A pin in **double shear** is cut on two planes, so each plane carries half the member force."),
+ ),
+ sec("Strain, the stress–strain curve and Hooke's law", (10, 13),
+   ("eq", r"\varepsilon = \frac{\Delta L}{L}\ \text{(engineering normal strain)},\qquad \gamma_{xy} = \frac{\pi}{2} - \theta'\ \text{(rad)}"),
+   ("md", r"Engineering shear strain is the decrease of an originally right angle; $\gamma_{xy}$ is negative if the "
+          r"angle opens beyond $\pi/2$."),
+   ("md", r"Uniaxial test on mild steel: linear elastic with slope **E** to yield (strain about 0.0012), a perfectly "
+          r"plastic plateau to about 0.014, then strain hardening up to the ultimate stress and failure at about 0.25 "
+          "strain."),
+   ("eq", r"\text{Poisson: } \varepsilon_{yy} = \varepsilon_{zz} = -\nu\varepsilon_{xx} = -\nu\frac{\sigma_{xx}}{E}\quad\text{(uniaxial load in x)}"),
+   ("eq", r"\varepsilon_{xx} = \frac{1}{E}\left[\sigma_{xx} - \nu(\sigma_{yy} + \sigma_{zz})\right],\quad \varepsilon_{yy} = \frac{1}{E}\left[\sigma_{yy} - \nu(\sigma_{zz} + \sigma_{xx})\right],\quad \varepsilon_{zz} = \frac{1}{E}\left[\sigma_{zz} - \nu(\sigma_{xx} + \sigma_{yy})\right]"),
+   ("eq", r"\gamma_{xy} = \frac{\tau_{xy}}{G},\quad \gamma_{yz} = \frac{\tau_{yz}}{G},\quad \gamma_{zx} = \frac{\tau_{zx}}{G}"),
+   ("md", "This **generalised Hooke's law** superposes the strains from each normal stress. Shear stresses cause "
+          "only their own shear strain — no normal strain and no shear strain in the other planes."),
+ ),
+ sec("Allowable stress, factor of safety and pin design", (14, 18),
+   ("eq", r"n_s = \frac{\sigma_{failure}}{\sigma_{allowable}} = \frac{P_{failure}}{P_{allowable}} \ge 1"),
+   ("md", r"The value of $n_s$ depends on the material and the application. Pins in pin-jointed mechanisms (e.g. a "
+          "bike's soft-ride suspension) are sized from the shear force they carry."),
+   q("CE1101 M1 Example 1.1",
+     r"A mountain-bike suspension is designed for a maximum load $P = 1800\ \mathrm{N}$. Pins B and D are in double "
+     r"shear, with ultimate shear stress $\tau_{\mathrm{ult}} = 150\ \mathrm{MPa}$ and a factor of safety of 2. Member "
+     r"BC is inclined at 60°; P acts 400 + 100 mm from D, and B is 100 mm from D horizontally and 30 mm vertically. "
+     r"Find the minimum diameters of pins B and D.",
+     r"**$F_{BC} = 8858\ \mathrm{N}$, $D_x = 4429$, $D_y = 5871\ \mathrm{N}$ → $d_B = 8.67\ \mathrm{mm}$, $d_D = "
+     r"7.9\ \mathrm{mm}$.**",
+     r"Moments about D on ABD: $P(0.5) - F_{BC}\sin 60^\circ(0.1) - F_{BC}\cos 60^\circ(0.03) = 0$. Then $\sum F_x$, "
+     r"$\sum F_y$ give $D_x$, $D_y$; $V_D = \sqrt{D_x^2 + D_y^2} = 7354.5\ \mathrm{N}$. Double shear: $\tau = "
+     r"(V/2)/(\pi d^2/4) \le \tau_{\mathrm{ult}}/SF$ → $d = \sqrt{2V \cdot SF/(\pi\tau_{\mathrm{ult}})}$.",
+     figure="p. 16: suspension linkage ABD with link BC.")),
+ sec("Cast-in anchors: comparing failure modes", (19, 25),
+   ("md", "Precast units are lifted on cast-in steel anchors. The anchor can fail by (a) a concrete shear cylinder, "
+          "(b) a concrete cone at 45° in tension to two-thirds depth plus a shear cylinder below, (c) a full concrete "
+          "tension cone, or (d) tension in the bolt. Work out P for each mode from the failure surface and the "
+          "material strength; **the smallest P governs**."),
+   ("eq", r"\text{cone (frustum) side area: } A = \pi(r_1 + r_2)s;\qquad \text{cylinder: } A = \pi a h;\qquad P = N\sin 45^\circ + V"),
+   q("CE1101 M1 Example 1.2",
+     r"A cast-in anchor has $a = 30\ \mathrm{mm}$, embedment $h = 100\ \mathrm{mm}$ and bolt diameter $d = 10\ "
+     r"\mathrm{mm}$. Concrete ultimate tensile and shear stresses are 3 and 4.5 MPa; the bolt's ultimate tensile "
+     r"stress is 620 MPa. Which of the four failure modes (a)–(d) is most likely?",
+     r"**(a) 42.41 kN · (b) 74.8 kN · (c) 173.3 kN · (d) 48.69 kN → (a), concrete shear along the cylinder, governs "
+     r"at 42.4 kN.**",
+     r"(a) $A = \pi ah = 9424.8\ \mathrm{mm^2}$, $P = 4.5A$. (b) cone to $\tfrac23h$: $A = \pi(a/2 + a/2 + \tfrac23h)"
+     r"\sqrt2 \cdot \tfrac23h = 28\,632\ \mathrm{mm^2}$ → $N = 3A$; shear cylinder below: $A = \pi a \cdot h/3 = 3141.6$ "
+     r"→ $V = 4.5A$; $P = N\sin 45^\circ + V$. (c) full cone: $A = 57\,757\ \mathrm{mm^2}$; the slide takes $P = 3A = 173.3\ \mathrm{kN}$ (with the 45° "
+     r"component, as in (b), it would be 122.5 kN — not governing either way). "
+     r"(d) $P = 620 \times \pi \times 10^2/4$.",
+     figure="pp. 20–21: the four failure surfaces.")),
+ sec("Deformation of axially loaded members", (26, 29),
+   ("eq", r"\sigma = \frac{P}{A},\qquad \varepsilon = \frac{\sigma}{E} = \frac{P}{EA},\qquad \delta = \varepsilon L = \frac{PL}{EA}"),
+   ("eq", r"\text{stepped bar: } \delta = \sum_{i=1}^{n}\frac{P_iL_i}{A_iE_i};\qquad \text{varying section or load: } \delta = \int_0^L\frac{P(x)}{A(x)E}\,dx"),
+   ("md", r"Use the **internal** axial force in each segment, found by cutting the bar and drawing an FBD — not the "
+          r"applied loads. Example from the slide: a bar with $P_1$ at the end of part 1 and $P_2$ at the joint has "
+          r"$\delta = (P_2 - P_1)a/(E_1A_1) + P_2b/(E_2A_2)$ with the signs of the internal forces."),
+ ),
+ sec("Indeterminacy and compatibility", (30, 31),
+   ("eq", r"\text{degree of indeterminacy} = \text{number of unknowns} - \text{number of equilibrium equations}"),
+   ("md", "Examples from the slide: a bar fixed at one end (1 unknown, 1 equation) is determinate; a beam with a "
+          "fixed end and a roller (3 unknowns, 2 equations) is indeterminate to the first degree."),
+   ("steps", [r"Equilibrium: $\sum F = 0$ (e.g. $R_A + R_B = P$ for a bar between two walls).",
+              r"Compatibility: the deformed geometry (e.g. total $\delta_{AB} = 0$ between rigid supports).",
+              r"Force–deformation: $\delta = PL/EA$ for each segment; solve the equations together."]),
+ ),
+ sec("Truss deflections from member deformations", (32, 35),
+   ("md", "Truss members only lengthen or shorten, but every member must stay connected at the joints, so the "
+          "joints move to fit all the new member lengths. Find each member force, its change of length "
+          r"$\delta = FL/AE$, then use the geometry of the displaced joint."),
+   q("CE1101 M1 Example 1.3",
+     r"A two-member truss (A and B on supports 3 m apart, apex C 2 m above the midpoint) carries $P = 15\ "
+     r"\mathrm{kN}$ down at C. Members are steel ($E = 200\ \mathrm{GPa}$) with $A = 100\ \mathrm{mm^2}$. Find the "
+     r"vertical displacement of C.",
+     r"**$F_{AC} = F_{BC} = 9.375\ \mathrm{kN}$ (compression), each shortens 1.17 mm → $(\delta_C)_V = 1.17/(4/5) = "
+     r"1.46\ \mathrm{mm}$ down.**",
+     r"$L = \sqrt{2^2 + 1.5^2} = 2.5\ \mathrm{m}$, $\cos\theta = 4/5$ from the vertical. Joint C: $2F\cos\theta = P$. "
+     r"$\delta = 9375 \times 2500/(100 \times 200\,000)$. By symmetry C moves straight down, and the member shortening "
+     r"is the component of that movement along the member.", figure="p. 33.")),
+ sec("Piles with skin friction", (36, 41),
+   ("md", "Piles (driven or bored, onshore or offshore) carry load by skin friction along the shaft and end bearing "
+          "at the toe. A **pile load test** (kentledge of concrete blocks on a steel beam, hydraulic jacks) checks a "
+          "few piles to confirm the calculated capacity. With friction varying along the pile, the internal force "
+          "varies too, so integrate for the shortening."),
+   q("CE1101 M1 Example 1.4",
+     r"Stacked blocks put $P = 2000\ \mathrm{kN}$ on a 300 mm diameter, 12 m bored pile ($E = 30\ \mathrm{GPa}$). "
+     r"Skin friction rises linearly from zero at the toe to $p_0$ (kN/m) at the top, and the end bearing is $F = 400\ "
+     r"\mathrm{kN}$. Find (a) $p_0$ and (b) the elastic shortening (ignore self-weight).",
+     r"**(a) $p_0 = 266.67\ \mathrm{kN/m}$ · (b) $\delta = 5.28\ \mathrm{mm}$.**",
+     r"(a) $2000 = 400 + \tfrac12p_0(12)$. With y up from the toe, $p(y) = 22.22y$ kN/m and the internal force "
+     r"$P(y) = 400 + 11.11y^2$ kN. (b) $\delta = \int_0^{12}(400 + 11.11y^2) \times 10^3\,dy/[\pi(0.15)^2 \times 30 "
+     r"\times 10^9]$.", figure="p. 38."),
+   q("CE1101 M1 Example 1.5 (homework)",
+     r"A wooden sofa leg is a tapered cylinder (radius $r_1 = 10\ \mathrm{mm}$ at the bottom to $r_2 = 25\ "
+     r"\mathrm{mm}$ at the top, $L = 120\ \mathrm{mm}$) loaded by P at the top. (a) Derive its axial deformation. (b) "
+     r"Evaluate it for $P = 500\ \mathrm{N}$, $E = 13\ \mathrm{GPa}$ (ignore self-weight).",
+     "", src="none", figure="p. 41.")),
+ sec("Rigid bars hung on cables", (42, 48),
+   ("md", "A rigid bar on two cables plus a pin has more unknowns than equilibrium equations. Add compatibility: "
+          "the bar rotates about the pin, so the vertical movements of the cable points are proportional to their "
+          r"distances from it; each cable's stretch is the component along the cable, $\delta = \delta_V\cos\theta$."),
+   q("CE1101 M1 Example 1.6",
+     r"Rigid bar ABD (pinned at A; B at 1 m, D at 3 m) carries 6 kN/m over its 3 m length and hangs from cables BC "
+     r"and DC to a point C 2 m above the bar, midway between B and D. Each cable has $A = 140\ \mathrm{mm^2}$, $E = 200\ "
+     r"\mathrm{GPa}$. Find the cable forces.",
+     r"**$T_{CD} = 3T_{BC}$; $T_{BC} = 3.02\ \mathrm{kN}$, $T_{CD} = 9.06\ \mathrm{kN}$.**",
+     r"Moments about A: $T_{BC}(2/\sqrt5)(1) + T_{CD}(2/\sqrt5)(3) = 18 \times 1.5 = 27$. Compatibility: $(\delta_D)_V "
+     r"= 3(\delta_B)_V$ and $\cos\theta_B = \cos\theta_D = 2/\sqrt5$, so $\delta_{CD} = 3\delta_{BC}$; equal cable "
+     r"lengths and stiffness give $T_{CD} = 3T_{BC}$ → $T_{BC} \times 20/\sqrt5 = 27$.", figure="p. 42."),
+   q("CE1101 M1 Example 1.7 (additional)",
+     r"For the same bar and loading, find the elongation of cables BC and CD and the rotation of the bar.",
+     "", src="none", figure="p. 46."),
+   q("CE1101 M1 Example 1.8 (homework)",
+     r"A rigid bar ABD carries 20 kN at E and hangs from cables BC and CD (each $140\ \mathrm{mm^2}$, $E = 200\ "
+     r"\mathrm{GPa}$) as drawn. Find (a) the cable forces, (b) their elongations and (c) the bar's rotation.",
+     "", src="none", figure="p. 47."),
+   q("CE1101 M1 Example 1.9 (homework)",
+     r"A rigid steel beam (self-weight 3 kN/m, 2.5 m long) rests on three rubber blocks A, B, C at 1.25 m spacing "
+     r"($E = 15\ \mathrm{MPa}$, $70 \times 70\ \mathrm{mm}$, 125 mm tall), but B is 5 mm shorter. (a) Does the beam "
+     r"touch B? (b) Find the normal stress in each block.",
+     "", src="none", figure="p. 48.")),
+]}

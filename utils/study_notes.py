@@ -252,88 +252,7 @@ STUDY[S4] = {"code": "CE102", "title": "S4 · Frames, machines & cables", "secti
 ]}
 
 # ============================================================== M1 Axial members
-STUDY[M1] = {"code": "CE102", "title": "M1 · Introduction & axial force members", "sections": [
- sec("Statics vs mechanics of materials", (3, 5),
-   ("md", "**Statics** gives forces from equilibrium (bodies assumed rigid). **Mechanics of materials** adds "
-          "stress–force, strain–deformation and stress–strain relations so we can find deformation.\n\n- "
-          r"Statically **determinate**: FBD + equilibrium → forces; then $\sigma\text{–}\varepsilon$ gives "
-          "deformation.\n- Statically **indeterminate**: also need **compatibility** (geometry of the deformed "
-          "structure)."),
- ),
- sec("Stress, strain & the stress–strain relationship", (6, 13),
-   ("md", r"Stress at a point = limit of $\Delta F/\Delta A$: **normal** $\sigma$ (perpendicular) and "
-          r"**shear** $\tau$ (in-plane). Sign: a stress on a positive face in a positive direction is positive "
-          r"($\tau_{ij}$: i = face, j = direction)."),
-   ("eq", r"\sigma_{avg} = \frac{P}{A} \qquad \tau_{avg} = \frac{V}{A} \qquad \text{double shear: } V = \frac{P}{2}"),
-   ("eq", r"\varepsilon = \frac{\Delta L}{L} \qquad \gamma_{xy} = \text{change of the right angle (rad)}"),
-   ("md", r"Mild steel $\sigma\text{–}\varepsilon$: linear elastic (slope **E**) → yield plateau → strain "
-          "hardening → necking/failure."),
-   ("eq", r"\varepsilon_{yy} = \varepsilon_{zz} = -\nu\,\varepsilon_{xx}\quad\text{(uniaxial)};\qquad "
-          r"\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu(\sigma_y + \sigma_z)\right]"),
-   ("md", "The second form (**generalised Hooke's law**) superposes the strains from normal stresses in all three "
-          "directions."),
- ),
- sec("Allowable stress & factor of safety; design examples", (14, 25),
-   ("eq", r"n_s = \frac{P_{failure}}{P_{allowable}} = \frac{\sigma_{failure}}{\sigma_{allowable}} \geq 1"),
-   ("ex", r"Example 1.1 — mountain-bike suspension pins ($P = 1800\ \mathrm{N}$, $\tau_{\mathrm{ult}} = 150\ "
-          r"\mathrm{MPa}$)",
-    r"Equilibrium of ABD → $F_{\mathrm{BC}} = 8858\ \mathrm{N}$. Pins in **double shear** carry V/2 each: "
-    r"minimum $d_B = 8.67\ \mathrm{mm}$; pin D (resultant 7354.5 N) $d_D = 7.9\ \mathrm{mm}$."),
-   ("ex", r"Example 1.2 — cast-in anchor ($a = 30\ \mathrm{mm}$, $h = 100\ \mathrm{mm}$, $d = 10\ "
-          r"\mathrm{mm}$)",
-    "Check each failure mode — concrete shear (cylinder surface), concrete cone tension + shear (truncated cone, "
-    "45°), concrete tension, bolt tension — compute P for each; the **smallest P governs**."),
- ),
- sec("Deformation of axially loaded members", (26, 29),
-   ("eq", r"\delta = \frac{PL}{EA} \qquad \delta = \sum_i \frac{P_iL_i}{E_iA_i} \qquad \delta = \int_0^L\frac{P(x)}{E\,A(x)}dx"),
-   ("md", "Use internal axial force of each segment (cut and draw an FBD), not the applied loads."),
- ),
- sec("Statically indeterminate members & compatibility", (30, 31),
-   ("eq", r"\text{degree of indeterminacy} = \text{no. of unknowns} - \text{no. of equilibrium equations}"),
-   ("steps", ["Equilibrium equation(s).", r"Compatibility (e.g. total $\delta = 0$ between fixed ends).",
-              r"Force–deformation $\delta = PL/EA$; solve together."]),
- ),
- sec("Truss deflections by geometry", (32, 35),
-   ("md", r"Members elongate/shorten by $\delta = NL/EA$ and the joint must move so that all members stay "
-          "connected."),
-   ("ex", r"Example 1.3 ($P = 15\ \mathrm{kN}$, $A = 100\ \mathrm{mm^2}$, $E = 200\ \mathrm{GPa}$)", "Joint "
-                                                                                                     "C: "
-                                                                                                     r"$F_{\mathrm{AC}} "
-                                                                                                     "= "
-                                                                                                     r"9.375\ "
-                                                                                                     r"\mathrm{kN}$ "
-                                                                                                     "(C), "
-                                                                                                     r"$F_{\mathrm{BC}}$ "
-                                                                                                     "from "
-                                                                                                     r"$\cos\theta "
-                                                                                                     "= 4/5$, "
-                                                                                                     r"$\sin\theta "
-                                                                                                     "= 3/5$; "
-                                                                                                     "member "
-                                                                                                     "shortenings "
-                                                                                                     "→ "
-                                                                                                     "geometry "
-                                                                                                     "of the "
-                                                                                                     "displaced "
-                                                                                                     "joint "
-                                                                                                     "$C'$ → "
-                                                                                                     r"$(\delta_C)_{\mathrm{vert}} "
-                                                                                                     r"\approx "
-                                                                                                     r"1.46\ "
-                                                                                                     r"\mathrm{mm}$."),
- ),
- sec("Pile foundations; rigid bars on cables", (36, 48),
-   ("md", "**Pile load test:** kentledge (concrete blocks) and hydraulic jacks check the calculated capacity on a few "
-          "piles."),
-   ("ex", r"Example 1.4 — 300 mm bored pile, $P = 2000\ \mathrm{kN}$, skin friction increasing linearly with "
-          "depth",
-    "Equilibrium → friction intensity 266.7 kN/m at the toe (22.2y kN/m); internal force P(y) varies → "
-    r"$\delta = \int P(y)dy/AE = 5.28\ \mathrm{mm}$."),
-   ("ex", "Example 1.6 — rigid bar ABD on cables BC and CD (6 kN/m)",
-    "One moment equation + compatibility from the rotated rigid bar (similar triangles) and cable geometry "
-    r"($\delta_{\mathrm{cable}} = \delta_{\mathrm{vertical}} \cos\theta$) → solve the two cable forces."),
- ),
-]}
+# M1 lives in utils/study_notes_ce102m.py (full rewrite with worked examples).
 
 # ============================================================== M2 Torsion
 STUDY[M2] = {"code": "CE102", "title": "M2 · Torsional members", "sections": [
@@ -1618,6 +1537,10 @@ STUDY.update(_MECHQ)
 from utils.study_notes_pe import PE as _PE  # noqa: E402
 
 STUDY.update(_PE)
+
+from utils.study_notes_ce102m import MOM as _MOM  # noqa: E402
+
+STUDY.update(_MOM)
 
 # keep last: give every tutorial question its source doc/page and a stable id
 from utils.qblock import fill_sources as _fill_sources  # noqa: E402
